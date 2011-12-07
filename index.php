@@ -2,19 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 <head profile="http://gmpg.org/xfn/11">
     <title>RAAK | Digital &amp; Social Media Agency London - Putting you in touch with your crowds</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="google-site-verification" content="gopVig1vD9ASr_RMvJGPk5w2Rk9dQ16tJY4v7-5E5dc" />
-	<!--link rel="stylesheet" type="text/css" href="http://wewillraakyou.com/wp-content/themes/RAAK/style.css?ver=1.0" / -->
+    <!--link rel="stylesheet" type="text/css" href="http://wewillraakyou.com/wp-content/themes/RAAK/style.css?ver=1.0" / -->
     <link rel="stylesheet" type="text/css" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
     <!--dynamic-cached-content--><link rel="stylesheet" href="http://wewillraakyou.com/wp-content/themes/RAAK/style_ch10.css?ver=1.0" /><!-- Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2 --><!--/dynamic-cached-content-->
     <!--[if IE]>
-	<link rel="stylesheet" type="text/css" href="http://wewillraakyou.com/wp-content/themes/RAAK/style_ie.css" />
+    <link rel="stylesheet" type="text/css" href="http://wewillraakyou.com/wp-content/themes/RAAK/style_ie.css" />
     <![endif]-->
     <!--[if IE 8]>
-	<link rel="stylesheet" type="text/css" href="http://wewillraakyou.com/wp-content/themes/RAAK/style_ie_8.css" />
+    <link rel="stylesheet" type="text/css" href="http://wewillraakyou.com/wp-content/themes/RAAK/style_ie_8.css" />
     <![endif]-->
     <!--[if IE 7]>
-	<link rel="stylesheet" type="text/css" href="http://wewillraakyou.com/wp-content/themes/RAAK/style_ie_7.css" />
+    <link rel="stylesheet" type="text/css" href="http://wewillraakyou.com/wp-content/themes/RAAK/style_ie_7.css" />
     <![endif]-->
 <!--Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2-->
 
@@ -25,9 +25,9 @@
 <script type='text/javascript'>
 /* <![CDATA[ */
 var shutterSettings = {
-	msgLoading: "L O A D I N G",
-	msgClose: "Click to Close",
-	imageCount: "1"
+    msgLoading: "L O A D I N G",
+        msgClose: "Click to Close",
+        imageCount: "1"
 };
 /* ]]> */
 </script>
@@ -64,130 +64,129 @@ var _wpcf7 = { cached: 1 };
 <script type="text/javascript" src="http://lite.piclens.com/current/piclens_optimized.js"></script>
 <!-- /NextGEN Gallery CoolIris/PicLens support -->
 <meta name='NextGEN' content='1.6.1' />
-	<link rel="alternate" type="application/rss+xml" href="http://wewillraakyou.com/feed/" title="RAAK | Digital &amp; Social Media Agency London latest posts" />
-	<link rel="alternate" type="application/rss+xml" href="http://wewillraakyou.com/comments/feed/" title="RAAK | Digital &amp; Social Media Agency London latest comments" />
-	<link rel="pingback" href="http://wewillraakyou.com/xmlrpc.php" />
+    <link rel="alternate" type="application/rss+xml" href="http://wewillraakyou.com/feed/" title="RAAK | Digital &amp; Social Media Agency London latest posts" />
+    <link rel="alternate" type="application/rss+xml" href="http://wewillraakyou.com/comments/feed/" title="RAAK | Digital &amp; Social Media Agency London latest comments" />
+    <link rel="pingback" href="http://wewillraakyou.com/xmlrpc.php" />
 
     <script type="text/javascript" src="http://wewillraakyou.com/wp-content/themes/RAAK/jquery.min.js"></script>
-    <script type="text/javascript">
-    <!--
-        var active_logos = 'R';
+<script type="text/javascript">
+<!--
+var active_logos = 'R';
 
-        var logo_letters = new Array();
-        logo_letters['R'] = new Array();
-        logo_letters['R'][0] = new Image();
-        logo_letters['R'][0].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/3326823e578cbe72c52ca50e5b338494.jpg&width=35&height=42";
-        logo_letters['R'][1] = new Image();
-        logo_letters['R'][1].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a8b2a4f4c69564aa9f11381c0c260235.jpg&width=35&height=42";
-        logo_letters['R'][2] = new Image();
-        logo_letters['R'][2].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/2dcfb0448f8b53e4a913a16c8f3413f2.jpg&width=35&height=42";
-        logo_letters['R'][3] = new Image();
-        logo_letters['R'][3].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/7832f12fb6b6af543b029481f0b7baa4.png&width=35&height=42";
-        logo_letters['R'][4] = new Image();
-        logo_letters['R'][4].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/5196b17d8503c6ad7a7accfefbdeda83.jpg&width=35&height=42";
-        logo_letters['R'][5] = new Image();
-        logo_letters['R'][5].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&width=35&height=42";
-        logo_letters['R'][6] = new Image();
-        logo_letters['R'][6].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/241eca044d005504eabcaa5d3e6b9068.jpg&width=35&height=42";
-        logo_letters['R'][7] = new Image();
-        logo_letters['R'][7].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/4bd891a62ea023f66c37176c84d4a7fa.png&width=35&height=42";
-        logo_letters['A'] = new Array();
-        logo_letters['A'][0] = new Image();
-        logo_letters['A'][0].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/27027cdc0a51f42ce66c576cb4916fa1.png&width=35&height=42";
-        logo_letters['A'][1] = new Image();
-        logo_letters['A'][1].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/94f1befdbb9439a574a82458d1fffc06.jpg&width=35&height=42";
-        logo_letters['A'][2] = new Image();
-        logo_letters['A'][2].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/51de71bfb5dfe9edc1c73f0ca5a4408a.jpg&width=35&height=42";
-        logo_letters['A'][3] = new Image();
-        logo_letters['A'][3].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/61bc98b99c6340b6be2b151e47d08d28.jpg&width=35&height=42";
-        logo_letters['A'][4] = new Image();
-        logo_letters['A'][4].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/811f9f13a4e7294ee86ff2288d3534a7.jpg&width=35&height=42";
-        logo_letters['A'][5] = new Image();
-        logo_letters['A'][5].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/0387e51d17f01d524c0b07de1469eb6a.png&width=35&height=42";
-        logo_letters['A'][6] = new Image();
-        logo_letters['A'][6].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/45d36d1d36846e6a7210254b7c10b1e0.png&width=35&height=42";
-        logo_letters['A'][7] = new Image();
-        logo_letters['A'][7].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/eb9895b79c7e1cd240cb3960e16ad30b.jpg&width=35&height=42";
-        logo_letters['A'][8] = new Image();
-        logo_letters['A'][8].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/3fe9de8c3f0b3d7286c6f7c97afd46ba.jpg&width=35&height=42";
-        logo_letters['A'][9] = new Image();
-        logo_letters['A'][9].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/7bf62183cb8f5c938b5a0da6bf959647.jpg&width=35&height=42";
-        logo_letters['A'][10] = new Image();
-        logo_letters['A'][10].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/73e0fec8bb33c1cdc59c812d3954bbfb.jpg&width=35&height=42";
-        logo_letters['K'] = new Array();
-        logo_letters['K'][0] = new Image();
-        logo_letters['K'][0].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/ba0c3f6be22d07916abf6ca1f7d37d8a.jpg&width=35&height=42";
-        logo_letters['K'][1] = new Image();
-        logo_letters['K'][1].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/c6a513db33554763c49386bed4673bc3.jpg&width=35&height=42";
-        logo_letters['K'][2] = new Image();
-        logo_letters['K'][2].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/1123dcb9de8cff45074fc0b8029b9751.jpg&width=35&height=42";
-        logo_letters['K'][3] = new Image();
-        logo_letters['K'][3].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/78ce302c784ece3f208eba8152c2bc58.jpg&width=35&height=42";
-        logo_letters['K'][4] = new Image();
-        logo_letters['K'][4].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/93455d62240dc78204038d89fcc4eaaa.png&width=35&height=42";
-        logo_letters['K'][5] = new Image();
-        logo_letters['K'][5].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/94f1cb321eb37b70e6f4a789514aee55.jpg&width=35&height=42";
-        logo_letters['K'][6] = new Image();
-        logo_letters['K'][6].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/0c71b1cbe12da4fdbe88df63f21dbfce.jpg&width=35&height=42";
-        logo_letters['K'][7] = new Image();
-        logo_letters['K'][7].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/adc3d69153a68c25153f5e7cafdb924c.png&width=35&height=42";
-        function cycle_logo_letter (display_letter) {
-            switch (display_letter) {
-            case 'R':
-                var letter_id = 'logo_letter_r1';
-                var letter = 'R';
-                break;
-            case 'A1':
-                var letter_id = 'logo_letter_a2';
-                var letter = 'A';
-                break;
-            case 'A2':
-                var letter_id = 'logo_letter_a3';
-                var letter = 'A';
-                break;
-            case 'K':
-                var letter_id = 'logo_letter_k4';
-                var letter = 'K';
-                break;
-            }
+var logo_letters = new Array();
+logo_letters['R'] = new Array();
+logo_letters['R'][0] = new Image();
+logo_letters['R'][0].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/3326823e578cbe72c52ca50e5b338494.jpg&width=35&height=42";
+logo_letters['R'][1] = new Image();
+logo_letters['R'][1].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a8b2a4f4c69564aa9f11381c0c260235.jpg&width=35&height=42";
+logo_letters['R'][2] = new Image();
+logo_letters['R'][2].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/2dcfb0448f8b53e4a913a16c8f3413f2.jpg&width=35&height=42";
+logo_letters['R'][3] = new Image();
+logo_letters['R'][3].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/7832f12fb6b6af543b029481f0b7baa4.png&width=35&height=42";
+logo_letters['R'][4] = new Image();
+logo_letters['R'][4].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/5196b17d8503c6ad7a7accfefbdeda83.jpg&width=35&height=42";
+logo_letters['R'][5] = new Image();
+logo_letters['R'][5].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&width=35&height=42";
+logo_letters['R'][6] = new Image();
+logo_letters['R'][6].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/241eca044d005504eabcaa5d3e6b9068.jpg&width=35&height=42";
+logo_letters['R'][7] = new Image();
+logo_letters['R'][7].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/4bd891a62ea023f66c37176c84d4a7fa.png&width=35&height=42";
+logo_letters['A'] = new Array();
+logo_letters['A'][0] = new Image();
+logo_letters['A'][0].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/27027cdc0a51f42ce66c576cb4916fa1.png&width=35&height=42";
+logo_letters['A'][1] = new Image();
+logo_letters['A'][1].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/94f1befdbb9439a574a82458d1fffc06.jpg&width=35&height=42";
+logo_letters['A'][2] = new Image();
+logo_letters['A'][2].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/51de71bfb5dfe9edc1c73f0ca5a4408a.jpg&width=35&height=42";
+logo_letters['A'][3] = new Image();
+logo_letters['A'][3].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/61bc98b99c6340b6be2b151e47d08d28.jpg&width=35&height=42";
+logo_letters['A'][4] = new Image();
+logo_letters['A'][4].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/811f9f13a4e7294ee86ff2288d3534a7.jpg&width=35&height=42";
+logo_letters['A'][5] = new Image();
+logo_letters['A'][5].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/0387e51d17f01d524c0b07de1469eb6a.png&width=35&height=42";
+logo_letters['A'][6] = new Image();
+logo_letters['A'][6].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/45d36d1d36846e6a7210254b7c10b1e0.png&width=35&height=42";
+logo_letters['A'][7] = new Image();
+logo_letters['A'][7].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/eb9895b79c7e1cd240cb3960e16ad30b.jpg&width=35&height=42";
+logo_letters['A'][8] = new Image();
+logo_letters['A'][8].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/3fe9de8c3f0b3d7286c6f7c97afd46ba.jpg&width=35&height=42";
+logo_letters['A'][9] = new Image();
+logo_letters['A'][9].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/7bf62183cb8f5c938b5a0da6bf959647.jpg&width=35&height=42";
+logo_letters['A'][10] = new Image();
+logo_letters['A'][10].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/73e0fec8bb33c1cdc59c812d3954bbfb.jpg&width=35&height=42";
+logo_letters['K'] = new Array();
+logo_letters['K'][0] = new Image();
+logo_letters['K'][0].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/ba0c3f6be22d07916abf6ca1f7d37d8a.jpg&width=35&height=42";
+logo_letters['K'][1] = new Image();
+logo_letters['K'][1].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/c6a513db33554763c49386bed4673bc3.jpg&width=35&height=42";
+logo_letters['K'][2] = new Image();
+logo_letters['K'][2].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/1123dcb9de8cff45074fc0b8029b9751.jpg&width=35&height=42";
+logo_letters['K'][3] = new Image();
+logo_letters['K'][3].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/78ce302c784ece3f208eba8152c2bc58.jpg&width=35&height=42";
+logo_letters['K'][4] = new Image();
+logo_letters['K'][4].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/93455d62240dc78204038d89fcc4eaaa.png&width=35&height=42";
+logo_letters['K'][5] = new Image();
+logo_letters['K'][5].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/94f1cb321eb37b70e6f4a789514aee55.jpg&width=35&height=42";
+logo_letters['K'][6] = new Image();
+logo_letters['K'][6].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/0c71b1cbe12da4fdbe88df63f21dbfce.jpg&width=35&height=42";
+logo_letters['K'][7] = new Image();
+logo_letters['K'][7].src = "http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/adc3d69153a68c25153f5e7cafdb924c.png&width=35&height=42";
+function cycle_logo_letter (display_letter) {
+    switch (display_letter) {
+    case 'R':
+        var letter_id = 'logo_letter_r1';
+        var letter = 'R';
+        break;
+    case 'A1':
+        var letter_id = 'logo_letter_a2';
+        var letter = 'A';
+        break;
+    case 'A2':
+        var letter_id = 'logo_letter_a3';
+        var letter = 'A';
+        break;
+    case 'K':
+        var letter_id = 'logo_letter_k4';
+        var letter = 'K';
+        break;
+    }
 
-            $("#"+letter_id+" a img").fadeTo('slow', 0, function () {
-                if (logo_letters[letter].length != 0) {
-                    $("#"+letter_id+" a img").attr('src', logo_letters[letter][Math.floor(Math.random()*logo_letters[letter].length)].src);
-                }
-
-                $("#"+letter_id+" a img").fadeTo('slow', 1);
-            });
-
-            setTimeout ("cycle_logo_letter('"+display_letter+"');", 5000 + Math.floor(Math.random()*5000));
+    $("#"+letter_id+" a img").fadeTo('slow', 0, function () {
+        if (logo_letters[letter].length != 0) {
+            $("#"+letter_id+" a img").attr('src', logo_letters[letter][Math.floor(Math.random()*logo_letters[letter].length)].src);
         }
-        $(document).ready( function () {
-            setTimeout ("cycle_logo_letter('R');", 5000 + Math.floor(Math.random()*5000));
-            setTimeout ("cycle_logo_letter('A1');", 5000 + Math.floor(Math.random()*5000));
-            setTimeout ("cycle_logo_letter('A2');", 5000 + Math.floor(Math.random()*5000));
-            setTimeout ("cycle_logo_letter('K');", 5000 + Math.floor(Math.random()*5000));
-        });
-    //-->
-    </script>
-	<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-350036-10']);
-  _gaq.push(['_trackPageview']);
+        $("#"+letter_id+" a img").fadeTo('slow', 1);
+    });
 
-  (function() {
+    setTimeout ("cycle_logo_letter('"+display_letter+"');", 5000 + Math.floor(Math.random()*5000));
+}
+$(document).ready( function () {
+    setTimeout ("cycle_logo_letter('R');", 5000 + Math.floor(Math.random()*5000));
+    setTimeout ("cycle_logo_letter('A1');", 5000 + Math.floor(Math.random()*5000));
+    setTimeout ("cycle_logo_letter('A2');", 5000 + Math.floor(Math.random()*5000));
+    setTimeout ("cycle_logo_letter('K');", 5000 + Math.floor(Math.random()*5000));
+});
+//-->
+</script>
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-350036-10']);
+_gaq.push(['_trackPageview']);
+
+(function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+})();
 
 </script>
 </head>
 
 <body class="wordpress y2011 m12 d07 h07 home page pageid-4 page-author-admin page-template page-template-home-php">
 <div id="wrapper" class="hfeed">
-    <div id="header">
-        <div id="header_top"></div>
+    <section id="header" class="rounded-corners">
         <div id="blog-title">
             <div id="logo_letter_r1" class="logo_letter">
                 <a href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
@@ -210,90 +209,89 @@ var _wpcf7 = { cached: 1 };
                 </a>
             </div>
         </div>
-		<div id="blog-description">Putting you in touch with your crowds</div>
+        <div id="blog-description">Putting you in touch with your crowds</div>
         <div id="access">
-		    <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
-		    <div id="menu"><ul><li class="first-page-item"><div class="first_topmenu_top"></div><div class="first_topmenu_body"></div></li><li class="page_item page-item-4 current_page_item"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/" title="Home">Home</a></div></li><li class="page_item page-item-1668"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/about/" title="About" rel="nofollow">About</a></div></li><li class="page_item page-item-2720"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/logo-project/" title="Logo Project">Logo Project</a></div></li><li class="page_item page-item-5169"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/our-products/" title="Our Products">Our Products</a></div></li><li class="page_item page-item-36"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/our-work/" title="Our work" rel="nofollow">Our work</a></div></li><li class="page_item page-item-211"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/blog/" title="Blog">Blog</a></div></li><li class="page_item page-item-341"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/contact/" title="Contact" rel="nofollow">Contact</a></div></li></ul></div>
-	    </div><!-- #access -->
-        <div id="header_bottom"></div>
-	</div><!--  #header -->
+            <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+            <div id="menu"><ul><li class="first-page-item"><div class="first_topmenu_top"></div><div class="first_topmenu_body"></div></li><li class="page_item page-item-4 current_page_item"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/" title="Home">Home</a></div></li><li class="page_item page-item-1668"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/about/" title="About" rel="nofollow">About</a></div></li><li class="page_item page-item-2720"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/logo-project/" title="Logo Project">Logo Project</a></div></li><li class="page_item page-item-5169"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/our-products/" title="Our Products">Our Products</a></div></li><li class="page_item page-item-36"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/our-work/" title="Our work" rel="nofollow">Our work</a></div></li><li class="page_item page-item-211"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/blog/" title="Blog">Blog</a></div></li><li class="page_item page-item-341"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/contact/" title="Contact" rel="nofollow">Contact</a></div></li></ul></div>
+        </div><!-- #access -->
+    </section><!--  #header -->
 
 
-    <script type="text/javascript">
-    <!--
-    var post_count = 10;
-    var curr_page = 0;
+<script type="text/javascript">
+<!--
+var post_count = 10;
+var curr_page = 0;
 
-    function expand (id) {
-        var elements_to_hide = new Array();
-        elements_to_hide[0] = 'social-media-ready';
-        elements_to_hide[1] = 'impact-projects';
-        elements_to_hide[2] = 'consulting';
+function expand (id) {
+    var elements_to_hide = new Array();
+    elements_to_hide[0] = 'social-media-ready';
+    elements_to_hide[1] = 'impact-projects';
+    elements_to_hide[2] = 'consulting';
 
-        var element_to_expand = document.getElementById (id);
-        var menu_item_to_activate = document.getElementById ("bluebox_body_nav_"+id);
-        var element_to_hide;
+    var element_to_expand = document.getElementById (id);
+    var menu_item_to_activate = document.getElementById ("bluebox_body_nav_"+id);
+    var element_to_hide;
 
-        for (i = 0; i < 3; i++) {
-            element_to_hide = document.getElementById(elements_to_hide[i]);
-            menu_item_to_deactivate = document.getElementById("bluebox_body_nav_"+elements_to_hide[i]);
-            if (element_to_hide.style.display != 'none') {
-                element_to_hide.style.display = 'none';
-            }
-            if (menu_item_to_deactivate.className == "bluebox_body_nav_item active") {
-                menu_item_to_deactivate.className = "bluebox_body_nav_item";
-            }
+    for (i = 0; i < 3; i++) {
+        element_to_hide = document.getElementById(elements_to_hide[i]);
+        menu_item_to_deactivate = document.getElementById("bluebox_body_nav_"+elements_to_hide[i]);
+        if (element_to_hide.style.display != 'none') {
+            element_to_hide.style.display = 'none';
         }
-
-        element_to_expand.style.display = 'block';
-        menu_item_to_activate.className = "bluebox_body_nav_item active";
+        if (menu_item_to_deactivate.className == "bluebox_body_nav_item active") {
+            menu_item_to_deactivate.className = "bluebox_body_nav_item";
+        }
     }
 
-    function previous () {
+    element_to_expand.style.display = 'block';
+    menu_item_to_activate.className = "bluebox_body_nav_item active";
+}
+
+function previous () {
+    if ((post_count - curr_page) > 2) {
+        var element_to_hide = document.getElementById ("whitebox_primary_body_post_"+curr_page);
+        curr_page += 2;
+        var element_to_show = document.getElementById ("whitebox_primary_body_post_"+curr_page);
+        element_to_hide.style.display = 'none';
+        element_to_show.style.display = 'block';
         if ((post_count - curr_page) > 2) {
-            var element_to_hide = document.getElementById ("whitebox_primary_body_post_"+curr_page);
-            curr_page += 2;
-            var element_to_show = document.getElementById ("whitebox_primary_body_post_"+curr_page);
-            element_to_hide.style.display = 'none';
-            element_to_show.style.display = 'block';
-            if ((post_count - curr_page) > 2) {
-                document.getElementById('whitebox_primary_body_footer_prev_text').className = "whitebox_primary_body_footer_item active";
-            } else {
-                document.getElementById('whitebox_primary_body_footer_prev_text').className = "whitebox_primary_body_footer_item";
-            }
-            if (curr_page > 1) {
-                document.getElementById('whitebox_primary_body_footer_next_text').className = "whitebox_primary_body_footer_item active";
-            } else {
-                document.getElementById('whitebox_primary_body_footer_next_text').className = "whitebox_primary_body_footer_item";
-            }
+            document.getElementById('whitebox_primary_body_footer_prev_text').className = "whitebox_primary_body_footer_item active";
+        } else {
+            document.getElementById('whitebox_primary_body_footer_prev_text').className = "whitebox_primary_body_footer_item";
+        }
+        if (curr_page > 1) {
+            document.getElementById('whitebox_primary_body_footer_next_text').className = "whitebox_primary_body_footer_item active";
+        } else {
+            document.getElementById('whitebox_primary_body_footer_next_text').className = "whitebox_primary_body_footer_item";
         }
     }
+}
 
-    function next () {
-        if (curr_page > 1) { 
-            var element_to_hide = document.getElementById ("whitebox_primary_body_post_"+curr_page);
-            curr_page -= 2;
-            var element_to_show = document.getElementById ("whitebox_primary_body_post_"+curr_page);
-            element_to_hide.style.display = 'none';
-            element_to_show.style.display = 'block';
-            if ((post_count - curr_page) > 2) {
-                document.getElementById('whitebox_primary_body_footer_prev_text').className = "whitebox_primary_body_footer_item active";
-            } else {
-                document.getElementById('whitebox_primary_body_footer_prev_text').className = "whitebox_primary_body_footer_item";
-            }
-            if (curr_page > 1) {
-                document.getElementById('whitebox_primary_body_footer_next_text').className = "whitebox_primary_body_footer_item active";
-            } else {
-                document.getElementById('whitebox_primary_body_footer_next_text').className = "whitebox_primary_body_footer_item";
-            }
+function next () {
+    if (curr_page > 1) { 
+        var element_to_hide = document.getElementById ("whitebox_primary_body_post_"+curr_page);
+        curr_page -= 2;
+        var element_to_show = document.getElementById ("whitebox_primary_body_post_"+curr_page);
+        element_to_hide.style.display = 'none';
+        element_to_show.style.display = 'block';
+        if ((post_count - curr_page) > 2) {
+            document.getElementById('whitebox_primary_body_footer_prev_text').className = "whitebox_primary_body_footer_item active";
+        } else {
+            document.getElementById('whitebox_primary_body_footer_prev_text').className = "whitebox_primary_body_footer_item";
+        }
+        if (curr_page > 1) {
+            document.getElementById('whitebox_primary_body_footer_next_text').className = "whitebox_primary_body_footer_item active";
+        } else {
+            document.getElementById('whitebox_primary_body_footer_next_text').className = "whitebox_primary_body_footer_item";
         }
     }
+}
 
-    //-->
-    </script>
-	<div id="container">
+//-->
+</script>
+    <div id="container">
         <div id="container_top"></div>
-		<div id="content">
+        <div id="content">
             <div id="logox_counter">
                 <div id="logox_counter_top"># OF LOGO COMBINATIONS</div>
                 <div id="logox_counter_number">7744</div>
@@ -734,7 +732,7 @@ If you&#39;re using Internet Explorer, you probably didn&#39;t get this.        
                 <div id="whitebox_secondary_bottom">
                 </div><!-- #whitebox_secondary_bottom -->
             </div><!-- #whitebox_secondary -->
-		</div><!-- #content -->
+        </div><!-- #content -->
             <div id="primary" class="sidebar">
         <div id="mailchimp">
             <div id="mailchimp_top"></div>
@@ -742,13 +740,13 @@ If you&#39;re using Internet Explorer, you probably didn&#39;t get this.        
 <!-- Begin MailChimp Signup Form -->
 <!--[if IE]>
             <style type="text/css" media="screen">
-	            #mc_embed_signup fieldset {position: relative;}
-	            #mc_embed_signup legend {position: absolute; top: -1em; left: .2em;}
+                #mc_embed_signup fieldset {position: relative;}
+                #mc_embed_signup legend {position: absolute; top: -1em; left: .2em;}
             </style>
 <![endif]--> 
 <!--[if IE 7]>
             <style type="text/css" media="screen">
-	            .mc-field-group {overflow:visible;}
+                .mc-field-group {overflow:visible;}
             </style>
 <![endif]-->
             <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
@@ -757,9 +755,9 @@ If you&#39;re using Internet Explorer, you probably didn&#39;t get this.        
 
             <div id="mc_embed_signup" style="font-family: 'helvetica neue', helvetica, arial, sans-serif;">
             <form action="http://wewillraakyou.us1.list-manage.com/subscribe/post?u=898b1ec2bd8b50ddb10f7dfd0&amp;id=1c536f46e3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="font: normal 100% 'helvetica neue';font-size: 12px;">
-	            <fieldset style="-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;border: 0px solid #000000;padding-top: 1.5em;margin: .5em 0;background-color: #FFFFFF;color: #333333;text-align: left;">
-	            <legend style="font-family: 'helvetica neue', helvetica, arial, sans-serif;color: #000000;background: #CCCCCC;padding: .5em 1em;border: 1px solid #000000;-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;font-size: 1.2em;text-align: center;">Sign up to our weekly newsletter</legend>
-	            <div style="font-family: 'helvetica neue', helvetica, arial, sans-serif;color: #FF0087;background: #CCCCCC;padding: .5em 1em;border: 1px solid #000000;-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;font-size: 1.2em;text-align: center; overflow-x:auto;"><span style="color:#ffffff;">** <a href="http://wewillraakyou.com/blog/the-raakonteur/" style="color:#B9E5FB;text-decoration:none;">Read</a> what others have to say about The RAAKonteur</span></div>
+                <fieldset style="-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;border: 0px solid #000000;padding-top: 1.5em;margin: .5em 0;background-color: #FFFFFF;color: #333333;text-align: left;">
+                <legend style="font-family: 'helvetica neue', helvetica, arial, sans-serif;color: #000000;background: #CCCCCC;padding: .5em 1em;border: 1px solid #000000;-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;font-size: 1.2em;text-align: center;">Sign up to our weekly newsletter</legend>
+                <div style="font-family: 'helvetica neue', helvetica, arial, sans-serif;color: #FF0087;background: #CCCCCC;padding: .5em 1em;border: 1px solid #000000;-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;font-size: 1.2em;text-align: center; overflow-x:auto;"><span style="color:#ffffff;">** <a href="http://wewillraakyou.com/blog/the-raakonteur/" style="color:#B9E5FB;text-decoration:none;">Read</a> what others have to say about The RAAKonteur</span></div>
                 <div class="mc-field-group" style="margin: 1.3em 5%;clear: both;overflow: hidden;">
                     <label for="mce-EMAIL" style="display: block;margin: .3em 0;line-height: 1em;font-weight: bold;">Email Address <strong class="note-required">*</strong>
                     </label>
@@ -775,58 +773,58 @@ If you&#39;re using Internet Explorer, you probably didn&#39;t get this.        
                     </label>
                     <input type="text" value="" name="LNAME" class="required" id="mce-LNAME" style="margin-right: 1.5em;padding: .2em .3em;width: 90%;float: left;z-index: 999;">
                 </div>
-		        <div id="mce-responses" style="float: left;top: -1.4em;padding: 0em .5em 0em .5em;overflow: hidden;width: 90%;margin: 0 5%;clear: both;">
-			        <div class="response" id="mce-error-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #FFEEEE;color: #FF0000;"></div>
-			        <div class="response" id="mce-success-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #;color: #529214;"></div>
-		        </div>
-		        <div id="mc-embedded-subscribe-container"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="clear: both;width: auto;display: block;margin: 1em 0 1em 5%;"></div>
+                <div id="mce-responses" style="float: left;top: -1.4em;padding: 0em .5em 0em .5em;overflow: hidden;width: 90%;margin: 0 5%;clear: both;">
+                    <div class="response" id="mce-error-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #FFEEEE;color: #FF0000;"></div>
+                    <div class="response" id="mce-success-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #;color: #529214;"></div>
+                </div>
+                <div id="mc-embedded-subscribe-container"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="clear: both;width: auto;display: block;margin: 1em 0 1em 5%;"></div>
                 <div class="indicate-required" style="text-align: right;font-style: italic;overflow: hidden;color: #333333;margin: 0 9% 0 0;">* denotes required field</div>
-	            </fieldset>	
-	            <a href="#" id="mc_embed_close" class="mc_embed_close" style="display: none;">Close</a>
+                </fieldset>	
+                <a href="#" id="mc_embed_close" class="mc_embed_close" style="display: none;">Close</a>
             </form>
             </div>
-            <script type="text/javascript">
-            var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';var err_style = '';
-            try{
-                err_style = mc_custom_error_style;
-            } catch(e){
-                err_style = 'margin: 1em 0 0 0; padding: 1em 0.5em 0.5em 0.5em; background: FFEEEE none repeat scroll 0% 0%; font-weight: bold; float: left; z-index: 1; width: 80%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: FF0000;';
-            }
-            var mce_jQuery = jQuery.noConflict();
-            mce_jQuery(document).ready( function($) {
-                var options = { errorClass: 'mce_inline_error', errorElement: 'div', errorStyle: err_style, onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
-                var mce_validator = mce_jQuery("#mc-embedded-subscribe-form").validate(options);
-                options = { url: 'http://wewillraakyou.us1.list-manage.com/subscribe/post-json?u=898b1ec2bd8b50ddb10f7dfd0&id=1c536f46e3&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
-                    beforeSubmit: function(){
-                        mce_jQuery('#mce_tmp_error_msg').remove();
-                        mce_jQuery('.datefield','#mc_embed_signup').each(
-                            function(){
-                                var txt = 'filled';
-                                var fields = new Array();
-                                var i = 0;
-                                mce_jQuery(':text', this).each(
-                                    function(){
-                                        fields[i] = this;
-                                        i++;
-                                    });
-                                mce_jQuery(':hidden', this).each(
-                                    function(){
-                                	    if ( fields[0].value=='MM' && fields[1].value=='DD' && fields[2].value=='YYYY' ){
-                                		    this.value = '';
-									    } else if ( fields[0].value=='' && fields[1].value=='' && fields[2].value=='' ){
-                                		    this.value = '';
-									    } else {
-	                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
-	                                    }
-                                    });
-                            });
-                        return mce_validator.form();
-                    }, 
-                    success: mce_success_cb
-                };
-                mce_jQuery('#mc-embedded-subscribe-form').ajaxForm(options);
+<script type="text/javascript">
+var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';var err_style = '';
+try{
+    err_style = mc_custom_error_style;
+} catch(e){
+    err_style = 'margin: 1em 0 0 0; padding: 1em 0.5em 0.5em 0.5em; background: FFEEEE none repeat scroll 0% 0%; font-weight: bold; float: left; z-index: 1; width: 80%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: FF0000;';
+}
+var mce_jQuery = jQuery.noConflict();
+mce_jQuery(document).ready( function($) {
+    var options = { errorClass: 'mce_inline_error', errorElement: 'div', errorStyle: err_style, onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+    var mce_validator = mce_jQuery("#mc-embedded-subscribe-form").validate(options);
+    options = { url: 'http://wewillraakyou.us1.list-manage.com/subscribe/post-json?u=898b1ec2bd8b50ddb10f7dfd0&id=1c536f46e3&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+        beforeSubmit: function(){
+            mce_jQuery('#mce_tmp_error_msg').remove();
+            mce_jQuery('.datefield','#mc_embed_signup').each(
+                function(){
+                    var txt = 'filled';
+                    var fields = new Array();
+                    var i = 0;
+                    mce_jQuery(':text', this).each(
+                        function(){
+                            fields[i] = this;
+                            i++;
+                        });
+                    mce_jQuery(':hidden', this).each(
+                        function(){
+                            if ( fields[0].value=='MM' && fields[1].value=='DD' && fields[2].value=='YYYY' ){
+                                this.value = '';
+                            } else if ( fields[0].value=='' && fields[1].value=='' && fields[2].value=='' ){
+                                this.value = '';
+                            } else {
+                                this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                            }
+                        });
+                });
+            return mce_validator.form();
+        }, 
+            success: mce_success_cb
+    };
+    mce_jQuery('#mc-embedded-subscribe-form').ajaxForm(options);
 
-            });
+});
 function mce_success_cb(resp){
     mce_jQuery('#mce-success-response').hide();
     mce_jQuery('#mce-error-response').hide();
@@ -835,7 +833,7 @@ function mce_success_cb(resp){
         mce_jQuery('#mce-'+resp.result+'-response').html(resp.msg);
         mce_jQuery('#mc-embedded-subscribe-form').each(function(){
             this.reset();
-    	});
+        });
     } else {
         var index = -1;
         var msg;
@@ -864,7 +862,7 @@ function mce_success_cb(resp){
             } else {
                 err_id = 'mce_tmp_error_msg';
                 html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
-                
+
                 var input_id = '#mc_embed_signup';
                 var f = mce_jQuery(input_id);
                 if (ftypes[index]=='address'){
@@ -891,7 +889,7 @@ function mce_success_cb(resp){
         }
     }
 }
-            </script>
+</script>
             <!--End mc_embed_signup-->
             </div><!-- mailchimp_body -->
             <div id="mailchimp_bottom"></div>
@@ -902,45 +900,45 @@ function mce_success_cb(resp){
             <div id="twitter_follow"><a href="http://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a></div>
             <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
             <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-            <script>
+<script>
 new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 6000,
-  width: 200,
-  height: 300,
-  theme: {
-    shell: {
-      background: '#ffffff',
-      color: '#000000'
-    },
-    tweets: {
-      background: '#ffffff',
-      color: '#000000',
-      links: '#555555'
-    }
-  },
-  features: {
-    scrollbar: false,
-    loop: false,
-    live: false,
-    hashtags: true,
-    timestamp: true,
-    avatars: false,
-    behavior: 'all'
-  }
+    version: 2,
+        type: 'profile',
+        rpp: 4,
+        interval: 6000,
+        width: 200,
+        height: 300,
+        theme: {
+            shell: {
+                background: '#ffffff',
+                    color: '#000000'
+            },
+            tweets: {
+                background: '#ffffff',
+                    color: '#000000',
+                    links: '#555555'
+            }
+        },
+            features: {
+                scrollbar: false,
+                    loop: false,
+                    live: false,
+                    hashtags: true,
+                    timestamp: true,
+                    avatars: false,
+                    behavior: 'all'
+            }
 }).render().setUser('RAAKonteurs').start();
-            </script>
+</script>
             </div>
             <div id="twitter_bottom"></div>
         </div><!-- twitter -->
-	</div><!-- #primary .sidebar -->
+    </div><!-- #primary .sidebar -->
         <div id="container_bottom"></div>
-	</div><!-- #container -->
+    </div><!-- #container -->
 
 
-	<div id="footer">
+    <div id="footer">
         <span id="footer_copyright">&copy; RAAK 2011</span>
         <span class="footer_link"><a title="RAAK.it URL shortener" href="http://raak.it">RAAK.it</a></span>
         <span class="footer_seperator">|</span>
@@ -953,7 +951,7 @@ new TWTR.Widget({
         <span class="footer_link"><a rel="nofollow" href="http://www.facebook.com/pages/RAAK/167105176615">RAAK on Facebook</a></span>
         <!--span class="footer_seperator">|</span>
         <span class="footer_link"><a href="http://www.flickr.com">RAAK on Flickr</a></span-->
-	</div><!-- #footer -->
+    </div><!-- #footer -->
 </div><!-- #wrapper .hfeed -->
 
 <script type='text/javascript' src='http://wewillraakyou.com/wp-includes/js/jquery/jquery.form.js?ver=2.02m'></script>

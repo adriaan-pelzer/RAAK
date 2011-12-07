@@ -63,4 +63,13 @@ body {
     background: #8c8c8c;
 }
 
+.rounded-corners {
+    border-radius: 8px;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
 
