@@ -59,6 +59,14 @@ table {
 }
 /* END ERIC MEYER'S CSS RESET */
 
+
+/*********** UNIVERSAL ************/
+
+@font-face {
+ font-family: din_schrift;
+ src: url(fonts/DINMittelschrift.ttf) 
+}
+
 body {
     background: #8c8c8c;
 }
@@ -74,7 +82,7 @@ body {
 
 #header {
     background: #ffffff;
-    padding-top: 25px;
+    padding-top: 35px;
 }
 
 #blog-title {
@@ -93,6 +101,16 @@ body {
 
 .logo_letter img {
     margin: 0 5px;
+}
+
+#blog-description {
+    color: #00aeef;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 20px;
+    width: 296px;
+    font: 10px din_schrift, 'Arial Narrow', sans-serif;
+    letter-spacing: 1px;
 }
 
 
