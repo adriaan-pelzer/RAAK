@@ -74,11 +74,11 @@ body {
 
 #header {
     background: #ffffff;
+    padding-top: 25px;
 }
 
 #blog-title {
     padding-left: 47px;
-    margin-top: 25px;
     font-size: 0;
     line-height: 0;
     border-bottom: 2px solid #00aeef;
@@ -88,6 +88,11 @@ body {
     display: inline-block;
     position: relative;
     bottom: -2px;
+}
+
+
+.logo_letter img {
+    margin: 0 5px;
 }
 
 
