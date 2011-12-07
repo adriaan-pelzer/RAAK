@@ -186,8 +186,8 @@ _gaq.push(['_trackPageview']);
 
 <body class="wordpress y2011 m12 d07 h07 home page pageid-4 page-author-admin page-template page-template-home-php">
 <div id="wrapper" class="hfeed">
-    <section id="header" class="rounded-corners">
-        <div id="blog-title">
+    <header id="header" class="rounded-corners">
+        <section id="blog-title">
             <div id="logo_letter_r1" class="logo_letter">
                 <a href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/4bd891a62ea023f66c37176c84d4a7fa.png&width=35&height=42" />
@@ -208,13 +208,13 @@ _gaq.push(['_trackPageview']);
                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/ba0c3f6be22d07916abf6ca1f7d37d8a.jpg&width=35&height=42" />
                 </a>
             </div>
-        </div>
+        </section>
         <div id="blog-description">Putting you in touch with your crowds</div>
         <div id="access">
             <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
             <div id="menu"><ul><li class="first-page-item"><div class="first_topmenu_top"></div><div class="first_topmenu_body"></div></li><li class="page_item page-item-4 current_page_item"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/" title="Home">Home</a></div></li><li class="page_item page-item-1668"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/about/" title="About" rel="nofollow">About</a></div></li><li class="page_item page-item-2720"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/logo-project/" title="Logo Project">Logo Project</a></div></li><li class="page_item page-item-5169"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/our-products/" title="Our Products">Our Products</a></div></li><li class="page_item page-item-36"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/our-work/" title="Our work" rel="nofollow">Our work</a></div></li><li class="page_item page-item-211"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/blog/" title="Blog">Blog</a></div></li><li class="page_item page-item-341"><div class="topmenu_top"></div><div class="topmenu_body"><a href="http://wewillraakyou.com/contact/" title="Contact" rel="nofollow">Contact</a></div></li></ul></div>
         </div><!-- #access -->
-    </section><!--  #header -->
+    </header><!--  #header -->
 
 
 <script type="text/javascript">

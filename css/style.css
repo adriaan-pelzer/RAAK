@@ -64,12 +64,32 @@ body {
 }
 
 .rounded-corners {
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 #wrapper {
     width: 1000px;
     margin: 0 auto;
 }
+
+#header {
+    background: #ffffff;
+}
+
+#blog-title {
+    padding-left: 47px;
+    margin-top: 25px;
+    font-size: 0;
+    line-height: 0;
+    border-bottom: 2px solid #00aeef;
+}
+
+.logo_letter {
+    display: inline-block;
+    position: relative;
+    bottom: -2px;
+}
+
+
 
 
