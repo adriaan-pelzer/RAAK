@@ -62,6 +62,10 @@ table {
 
 /*********** UNIVERSAL ************/
 
+a {
+    text-decoration: none;
+    color: #00aeef;
+}
 
 @font-face {
  font-family: din_schrift;
@@ -157,6 +161,7 @@ body {
 
 #container {
     background: url(../images/container_background.png);
+    padding: 20px 20px 35px 20px;
 }
 
 
