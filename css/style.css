@@ -87,6 +87,7 @@ body {
 
 .din-schrift {
     font-family: din_schrift, 'Arial Narrow', sans-serif;
+    letter-spacing: 1px;
 }
 
 /************** header ***************/
@@ -94,7 +95,6 @@ body {
 #header {
     background: #ffffff;
     padding: 35px 0 13px;
-    letter-spacing: 1px;
     overflow: hidden;
     
 
@@ -169,6 +169,7 @@ body {
 
 #logox_counter {
     background: #ef8dd9;
+    display: inline-block;
 }
 
 
