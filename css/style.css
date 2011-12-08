@@ -99,14 +99,14 @@ body {
     display: inline-block;
     vertical-align: top;
     color: #444444;
-    padding: 10px 15px;
+    padding: 8px 15px;
 }
 
 /************** header ***************/
 
 #header {
     background: #ffffff;
-    padding: 35px 0 13px;
+    padding: 35px 0 11px;
     overflow: hidden;
     
 
