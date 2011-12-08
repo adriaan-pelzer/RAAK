@@ -184,13 +184,14 @@ body {
 
 #logox_counter_arrow {
     position: absolute;
-    top: -25px;
-    left: 94px;
+    top: -21px;
+    left: 95px;
 }
 
 .point_left {
     border-bottom: 8px solid #ef8dd9;
     border-left: 9px solid rgba(0,0,0,0);
+    margin-right: -1px;
 }
 
 .point_right {
@@ -215,7 +216,7 @@ body {
     display: block;
 }
 
-#read_the_story {
+#read_the_logo_story {
     color: #ffffff;
     margin: 10px 0 9px;
     display-block;
