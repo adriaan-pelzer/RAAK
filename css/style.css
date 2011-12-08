@@ -160,6 +160,7 @@ body {
 .bluebox {
     background: #b9e5fb;
     display: inline-block;
+    vertical-align: top;
 }
 
 
@@ -239,4 +240,14 @@ body {
     margin-top: 10px;
 }
 
+/************* our work container *************/
+
+#bluebox_home_left {
+    width: 255px;
+    margin-left: 17px;
+}
+
+#bluebox_home_left h3 {
+    font-size: 24px;
+}
 
