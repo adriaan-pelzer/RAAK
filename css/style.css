@@ -265,6 +265,10 @@ em {
     font-size: 24px;
 }
 
+#bluebox_home_left hr {
+    position: relative;
+    width: 570px;
+}
 
 #bluebox_home_left p {
     width: 225px;
