@@ -89,7 +89,10 @@ body {
 
 #header {
     background: #ffffff;
-    padding-top: 35px;
+    padding: 35px 0 13px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    
 
 }
 
@@ -115,9 +118,8 @@ body {
     color: #00aeef;
     text-transform: uppercase;
     display: inline-block;
-    margin-left: 20px;
+    margin:11px 0 0 20px;
     font-size: 10px;
-    letter-spacing: 1px;
 }
 
 .skip-link {
@@ -142,7 +144,7 @@ body {
 
 
 .topmenu_body {
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .topmenu_body a {
