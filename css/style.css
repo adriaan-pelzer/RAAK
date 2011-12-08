@@ -96,16 +96,25 @@ body {
 
 .bluebox {
     background: #b9e5fb;
+    color: #444444;
+}
+
+.box {
     display: inline-block;
     vertical-align: top;
-    color: #444444;
     padding: 8px 15px;
 }
 
 hr {
     border: 0;
     border-top: 1px dashed #ffffff;
+    margin: 0;
 }
+
+.bluebox p {
+    line-height: 19px;
+}
+
 /************** header ***************/
 
 #header {

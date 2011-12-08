@@ -302,12 +302,12 @@ function next () {
                 <hr />
                 <a id="upload_a_letter" href="http://wewillraakyou.com/wp-content/themes/RAAK/logo-project/">Upload a letter</a>
             </section><!-- #logox_counter -->
-            <section id="bluebox_home_left" class="bluebox rounded-corners">
+            <section id="bluebox_home_left" class="bluebox box rounded-corners">
                 <h3 class="din-schrift"><a href="http://wewillraakyou.com/our-work/">Our Work</a></h3>
                 <hr />    
                 <p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
             </section><!-- #bluebox_home_left -->
-            <section id="bluebox_home_right" class="bluebox rounded-corners">
+            <section id="bluebox_home_right" class="bluebox box rounded-corners">
                 <div id="bluebox_top"></div>
                 <div id="bluebox_body">
                     <div id="bluebox_body_nav">
