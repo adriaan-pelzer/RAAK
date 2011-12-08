@@ -157,6 +157,10 @@ body {
     color: #a9a9a9;
 }
 
+.bluebox {
+    background: #b9e5fb;
+}
+
 
 /************ body *************/
 
@@ -175,7 +179,7 @@ body {
     display: inline-block;
     position: relative;
     color: #ffffff;
-    padding: 6px 7px;
+    padding: 6px 7px 5px;
     text-align: center;
     width: 124px;
     font-size: 12px;
@@ -231,7 +235,7 @@ body {
 
 #upload_a_letter {
     color:#ff0087;
-    margin-top: 9px;
+    margin-top: 10px;
 }
 
 

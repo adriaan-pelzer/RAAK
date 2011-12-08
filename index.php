@@ -302,17 +302,11 @@ function next () {
                 <hr />
                 <a id="upload_a_letter" href="http://wewillraakyou.com/wp-content/themes/RAAK/logo-project/">Upload a letter</a>
             </section><!-- #logox_counter -->
-            <div id="bluebox_home">
-                <div id="bluebox_home_top"></div>
-                <div id="bluebox_home_body">
-                <div id="bluebox_home_body_header"><a href="http://wewillraakyou.com/our-work/">Our Work</a></div>
-                    <hr />
-                    <div id="bluebox_home_body_content"><p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
-</div>
-                </div>
-                <div id="bluebox_home_bottom"></div>
-            </div><!-- #bluebox_home -->
-            <div id="bluebox">
+            <section id="bluebox_home_left" class="bluebox rounded-corners">
+                <h3><a href="http://wewillraakyou.com/our-work/">Our Work</a></h3>
+                    <p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
+            </section><!-- #bluebox_home_left -->
+            <section id="bluebox_home_right" class="bluebox rounded-corners">
                 <div id="bluebox_top"></div>
                 <div id="bluebox_body">
                     <div id="bluebox_body_nav">
@@ -387,7 +381,7 @@ function next () {
                     </div>
                 </div>
                 <div id="bluebox_bottom"></div>
-            </div><!-- #bluebox -->
+            </section><!-- #bluebox_home_right -->
             <div id="whitebox_primary">
                 <div id="whitebox_primary_tab">
                     <div id="whitebox_primary_tab_top">
