@@ -298,12 +298,8 @@ function next () {
                 </div>
                 <h3># OF LOGO COMBINATIONS</h3>
                 <div id="logox_counter_number">7744</div>
-                <div id="logox_counter_body">
-                    <hr />
                     <a href="http://wewillraakyou.com/2010/11/the-perpetually-changing-crowdsourced-raak-logo/">Read the story behind our logo</a>
-                    <hr />
-                </div>
-                <div id="logox_counter_bottom"><a href="http://wewillraakyou.com/wp-content/themes/RAAK/logo-project/">Upload a letter</a></div>
+                <a href="http://wewillraakyou.com/wp-content/themes/RAAK/logo-project/">Upload a letter</a>
             </section><!-- #logox_counter -->
             <div id="bluebox_home">
                 <div id="bluebox_home_top"></div>
