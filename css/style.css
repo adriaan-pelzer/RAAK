@@ -153,6 +153,13 @@ body {
 }
 
 
+/************ body *************/
+
+#container {
+    background: url(../images/container_background.png);
+}
+
+
 
 
 

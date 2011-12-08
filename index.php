@@ -289,8 +289,7 @@ function next () {
 
 //-->
 </script>
-    <div id="container">
-        <div id="container_top"></div>
+    <div id="container" class="rounded-corners">
         <div id="content">
             <div id="logox_counter">
                 <div id="logox_counter_top"># OF LOGO COMBINATIONS</div>
@@ -934,7 +933,6 @@ new TWTR.Widget({
             <div id="twitter_bottom"></div>
         </div><!-- twitter -->
     </div><!-- #primary .sidebar -->
-        <div id="container_bottom"></div>
     </div><!-- #container -->
 
 
