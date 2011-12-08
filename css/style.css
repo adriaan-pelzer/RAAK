@@ -178,6 +178,8 @@ body {
     padding: 6px 7px;
     text-align: center;
     width: 124px;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 #logox_counter_arrow {
@@ -209,6 +211,26 @@ body {
     border-bottom: 1px dashed #ffffff;
 }
 
+#logox_counter a {
+    display: block;
+}
 
+#read_the_story {
+    color: #ffffff;
+    margin: 10px 0 9px;
+    display-block;
+    line-height: 14px;
+}
+
+#logox_counter hr {
+    border: 0;
+    border-top: 1px dashed #ffffff;
+    line-height: 13px;
+}
+
+#upload_a_letter {
+    color:#ff0087;
+    margin-top: 9px;
+}
 
 
