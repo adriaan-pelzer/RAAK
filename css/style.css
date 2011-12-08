@@ -167,9 +167,28 @@ body {
 
 /******** HOME *********/
 
+/******* logo counter ********/
+
 #logox_counter {
     background: #ef8dd9;
     display: inline-block;
+    position: relative;
+}
+
+#logox_counter_arrow {
+    position: absolute;
+    top: -25px;
+    left: 30px;
+}
+
+.point_left {
+    border-bottom: 8px solid #ef8dd9;
+    border-left: 9px solid rgba(0,0,0,0);
+}
+
+.point_right {
+    border-bottom: 8px solid #ef8dd9;
+    border-right: 9px solid rgba(0,0,0,0);
 }
 
 

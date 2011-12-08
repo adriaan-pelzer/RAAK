@@ -293,8 +293,6 @@ function next () {
         <section id="content">
             <section id="logox_counter" class="rounded-corners din-schrift">
                 <div id="logox_counter_arrow">
-                    <span class="point_left_top"></span>
-                    <span class="point_right_top"></span>
                     <span class="point_left"></span>
                     <span class="point_right"></span>
                 </div>
