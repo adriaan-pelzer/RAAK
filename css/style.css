@@ -102,6 +102,10 @@ body {
     padding: 8px 15px;
 }
 
+hr {
+    border: 0;
+    border-top: 1px dashed #ffffff;
+}
 /************** header ***************/
 
 #header {
@@ -229,12 +233,6 @@ body {
     margin: 10px 0 9px;
     display-block;
     line-height: 14px;
-}
-
-#logox_counter hr {
-    border: 0;
-    border-top: 1px dashed #ffffff;
-    line-height: 13px;
 }
 
 #upload_a_letter {
