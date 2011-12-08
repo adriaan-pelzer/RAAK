@@ -202,7 +202,10 @@ body {
 }
 
 #logox_counter_number {
-    font-size: 24px;
+    font: 24px Georgia, Serif;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+    line-height: 25px;
     border-bottom: 1px dashed #ffffff;
 }
 
