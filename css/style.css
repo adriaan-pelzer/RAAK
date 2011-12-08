@@ -173,12 +173,21 @@ body {
     background: #ef8dd9;
     display: inline-block;
     position: relative;
+    color: #ffffff;
+    padding: 5px 7px;
+    text-align: center;
+    width: 124px;
 }
 
 #logox_counter_arrow {
     position: absolute;
     top: -25px;
-    left: 30px;
+    left: 94px;
+}
+
+#logox_counter h3 {
+    font-size: 9px;
+    line-height: 13px;
 }
 
 .point_left {

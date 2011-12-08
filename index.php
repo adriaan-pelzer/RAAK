@@ -296,7 +296,7 @@ function next () {
                     <span class="point_left"></span>
                     <span class="point_right"></span>
                 </div>
-                <div id="logox_counter_top"># OF LOGO COMBINATIONS</div>
+                <h3># OF LOGO COMBINATIONS</h3>
                 <div id="logox_counter_number">7744</div>
                 <div id="logox_counter_body">
                     <hr />
