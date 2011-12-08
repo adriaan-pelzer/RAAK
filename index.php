@@ -289,9 +289,15 @@ function next () {
 
 //-->
 </script>
-    <div id="container" class="rounded-corners">
-        <div id="content">
-            <div id="logox_counter">
+    <section id="container" class="rounded-corners">
+        <section id="content">
+            <section id="logox_counter" class="rounded-corners">
+                <div id="logox_counter_arrow">
+                    <span class="point_left_top"></span>
+                    <span class="point_right_top"></span>
+                    <span class="point_left"></span>
+                    <span class="point_right"></span>
+                </div>
                 <div id="logox_counter_top"># OF LOGO COMBINATIONS</div>
                 <div id="logox_counter_number">7744</div>
                 <div id="logox_counter_body">
@@ -300,7 +306,7 @@ function next () {
                     <hr />
                 </div>
                 <div id="logox_counter_bottom"><a href="http://wewillraakyou.com/wp-content/themes/RAAK/logo-project/">Upload a letter</a></div>
-            </div><!-- #logox_counter -->
+            </section><!-- #logox_counter -->
             <div id="bluebox_home">
                 <div id="bluebox_home_top"></div>
                 <div id="bluebox_home_body">
@@ -731,7 +737,7 @@ If you&#39;re using Internet Explorer, you probably didn&#39;t get this.        
                 <div id="whitebox_secondary_bottom">
                 </div><!-- #whitebox_secondary_bottom -->
             </div><!-- #whitebox_secondary -->
-        </div><!-- #content -->
+        </section><!-- #content -->
             <div id="primary" class="sidebar">
         <div id="mailchimp">
             <div id="mailchimp_top"></div>
@@ -933,7 +939,7 @@ new TWTR.Widget({
             <div id="twitter_bottom"></div>
         </div><!-- twitter -->
     </div><!-- #primary .sidebar -->
-    </div><!-- #container -->
+    </section><!-- #container -->
 
 
     <div id="footer">
