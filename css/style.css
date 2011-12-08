@@ -62,6 +62,7 @@ table {
 
 /*********** UNIVERSAL ************/
 
+
 @font-face {
  font-family: din_schrift;
  src: url(../fonts/DINMittelschrift.ttf) 
@@ -80,9 +81,16 @@ body {
     margin: 0 auto;
 }
 
+.din-schrift {
+    font-family: din_schrift, 'Arial Narrow', sans-serif;
+}
+
+/************** header ***************/
+
 #header {
     background: #ffffff;
     padding-top: 35px;
+
 }
 
 #blog-title {
@@ -98,13 +106,8 @@ body {
     bottom: -2px;
 }
 
-
 .logo_letter img {
     margin: 0 5px;
-}
-
-.din-schrift {
-    font-family: din_schrift, 'Arial Narrow', sans-serif;
 }
 
 
@@ -113,10 +116,31 @@ body {
     text-transform: uppercase;
     display: inline-block;
     margin-left: 20px;
-    width: 296px;
     font-size: 10px;
     letter-spacing: 1px;
 }
+
+.skip-link {
+    line-height: 0;
+    font-size: 0;
+}
+
+#access {
+    float: right;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.page_item {
+    display: inline-block;
+}
+
+.topmenu_body a {
+    text-decoration: none;
+    color: #a9a9a9;
+}
+
+
 
 
 
