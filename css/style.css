@@ -74,7 +74,8 @@ a {
 
 body {
     background: #8c8c8c;
-    font-family: Georgia, Serif;
+    font: 13px Georgia, Serif;
+
 }
 
 .rounded-corners {
@@ -90,6 +91,15 @@ body {
     font-family: din_schrift, 'Arial Narrow', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+
+.bluebox {
+    background: #b9e5fb;
+    display: inline-block;
+    vertical-align: top;
+    color: #444444;
+    padding: 10px 15px;
 }
 
 /************** header ***************/
@@ -154,12 +164,6 @@ body {
 .topmenu_body a {
     text-decoration: none;
     color: #a9a9a9;
-}
-
-.bluebox {
-    background: #b9e5fb;
-    display: inline-block;
-    vertical-align: top;
 }
 
 
