@@ -135,6 +135,16 @@ body {
     display: inline-block;
 }
 
+.topmenu_top {
+    border-left: 2px solid #00aeef;
+    height: 12px;
+}
+
+
+.topmenu_body {
+    padding: 0 10px;
+}
+
 .topmenu_body a {
     text-decoration: none;
     color: #a9a9a9;
