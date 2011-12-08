@@ -111,6 +111,10 @@ hr {
     margin: 0;
 }
 
+em {
+    font-style: italic;
+}
+
 .bluebox p {
     line-height: 19px;
 }
