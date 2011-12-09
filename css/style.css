@@ -150,6 +150,7 @@ em {
     display: inline-block;
     width: 250px;
     vertical-align: top;
+    line-height: 13px;
 }
 
 strong {
