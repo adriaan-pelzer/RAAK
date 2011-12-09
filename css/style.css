@@ -409,6 +409,14 @@ strong {
 
 .whitebox_primary_body_attr {
     font: 11px arial, sans-serif;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin: 2px 0 20px;
+}
+
+.whitebox_primary_body_attr * {
+    display: inline-block;
+}
+
+
+.whitebox_primary_body_attr .seperator {
+    margin:  0 5px;
 }
