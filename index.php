@@ -309,11 +309,11 @@ function next () {
             </section><!-- #bluebox_home_left -->
             <section id="bluebox_home_right" class="bluebox box rounded-corners">
                     <section id="bluebox_body_nav">
-                        <h3 class="bluebox_body_nav_item"><a onclick="javascript: expand('social-media-ready');">social media ready</a></h3>
+                        <h3 class="bluebox_body_nav_item small_arial_header"><a onclick="javascript: expand('social-media-ready');">social media ready</a></h3>
                         <span class="seperator">|</span>
-                        <h3 class="bluebox_body_nav_item"><a onclick="javascript: expand('impact-projects');">impact projects</a></h3>
+                        <h3 class="bluebox_body_nav_item small_arial_header"><a onclick="javascript: expand('impact-projects');">impact projects</a></h3>
                         <span class="seperator">|</span>
-                        <h3 class="bluebox_body_nav_item active"><a onclick="javascript: expand('consulting');">Consulting</a></h3>
+                        <h3 class="bluebox_body_nav_item active small_arial_header"><a onclick="javascript: expand('consulting');">Consulting</a></h3>
                     </section>
                     <section class="bluebox_body_content" id="social-media-ready" style="display: none">
                         <div class="bluebox_body_content_picture">

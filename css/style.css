@@ -120,6 +120,12 @@ em {
     margin-top: 8px;
 }
 
+.small_arial_header {
+    font: 10px arial, sans-serif;
+    text-transform: uppercase;
+    color: #00aeff;
+}
+
 /************** header ***************/
 
 #header {
@@ -278,5 +284,10 @@ em {
 #bluebox_home_right {
     width: 318px;
     margin-left: -33px;
+}
+
+#bluebox_body_nav * {
+    display: inline-block;
+
 }
 
