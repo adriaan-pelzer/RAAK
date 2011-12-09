@@ -358,25 +358,24 @@ function next () {
                         </div>
                     </section>
                     <section class="bluebox_body_content" id="consulting">
-                        <div class="bluebox_body_content_picture">
-                            <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/">
-<img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png"  width="315" />                            </a>
-                        </div>
-                        <div class="bluebox_body_content_sub">
-                            <span class="bluebox_body_content_sub_title">Client:</span>
-                            <span class="bluebox_body_content_sub_text">World Economic Forum</span>
-                        </div>
-                        <div class="bluebox_body_content_sub">
-                            <span class="bluebox_body_content_sub_title">Project:</span>
-                            <span class="bluebox_body_content_sub_text">WELCOM</span>
-                        </div>
-                        <div class="bluebox_body_content_sub">
-                            <span class="bluebox_body_content_sub_title">Overview:</span>
-                            <span class="bluebox_body_content_sub_text bluebox_body_content_sub_overview">A strategy & functional specification for a social network for the world's most influential people. <br \><strong>Read More >></strong></span>
-                        </div>
-                        <div class="bluebox_body_content_link">
-                            <span class="bluebox_body_content_link_text"><a href="http://wewillraakyou.com/our-work/?category=consulting" rel="nofollow">More Projects</a></span><span class="bluebox_body_content_link_arrow"><a href="http://wewillraakyou.com/our-work/?category=consulting" rel="nofollow">&#9660;</a></span>
-                        </div>
+                        <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/"><img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png"  width="315" /></a>
+                        <ul>
+                            <li class="bluebox_body_content_sub">
+                                <span class="label">Client:</span>
+                                <span class="title">World Economic Forum</span>
+                            </li>
+                            <li class="bluebox_body_content_sub">
+                                <span class="label">Project:</span>
+                                <span class="title">WELCOM</span>
+                            </li>
+                            <li class="bluebox_body_content_sub">
+                                <span class="label">Overview:</span>
+                                <span class="overview">A strategy & functional specification for a social network for the world's most influential people. <br \><strong>Read More >></strong></span>
+                            </li>
+                            <li class="bluebox_body_content_link">
+                                <span class="link"><a href="http://wewillraakyou.com/our-work/?category=consulting" rel="nofollow">More Projects&#9660;</a></span>
+                            </li>
+                        </ul>
                     </section>
             </section><!-- #bluebox_home_right -->
             <div id="whitebox_primary">

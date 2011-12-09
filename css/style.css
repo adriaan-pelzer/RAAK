@@ -128,7 +128,21 @@ em {
 
 .seperator {
     font-size: 9px;
-    margin: 0 6px;
+    margin: 0 7px;
+}
+
+.label {
+    width: 60px;
+    text-transform: uppercase;
+    color: #00aeef;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+strong {
+    font-weight: bold;
 }
 
 /************** header ***************/
@@ -289,10 +303,11 @@ em {
 #bluebox_home_right {
     width: 318px;
     margin-left: -33px;
+    font: 9px arial, sans-serif;
 }
 
 #bluebox_body_nav {
-    margin-top: 4px;
+    margin-top: 7px;
 }
 
 #bluebox_body_nav * {
@@ -301,11 +316,12 @@ em {
 
 }
 
-
-
 #bluebox_body_nav h3.active a {
     display: inline-block;
     color: #00aeef;
 
 }
 
+.bluebox_body_content {
+    margin-top: 22px;
+}
