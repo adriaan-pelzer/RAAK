@@ -400,5 +400,10 @@ strong {
 .whitebox_primary_body_post h3 {
     font-size: 19px;
     line-height: 30px;
-    margin: 3px 0 6px;
+    margin: 5px 0 6px;
+}
+
+.whitebox_primary_body_post h3 a {
+    color: #666666;
+}
 }
