@@ -383,19 +383,18 @@ function next () {
                         Latest Posts
                 </div><!-- .grey_tab -->
                 <section id="whitebox_primary" class="whitebox box rounded-corners">
-                    <div id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
+                    <section id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
                             <h3><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></h3>
                         <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
+                        <section class="whitebox_primary_body_attr">
+                            <span class="whitebox_primary_body_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
                             <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item"> 5 Dec 2011</span>
+                            <span class="whitebox_primary_body_attr_item date"> 5 Dec 2011</span>
                             <span class="seperator">|</span>
-                            <!--span id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item">12:44</span>
+                            <!--span class="whitebox_primary_body_attr_item time">12:44</span>
                             <span class="seperator">|</span-->
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">0 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
+                            <span class="whitebox_primary_body_attr_item comments"><img class="commenticon" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        </section><!-- .whitebox_primary_body_attr -->
                         <div class="whitebox_primary_body_content">
                             <div class="whitebox_primary_body_content_left">
                                 Later this week the Pulitzer Prize Board will <a href="http://www.pulitzer.org/digital_entries">announce the details</a> of their new journalism prize categories, which will emphasize real-time reporting (that&#39;s live-tweeting to us tweeps). Until then, there's the weekly RAAKonteur.                            </div><!-- .whitebox_primary_body_content_left -->
@@ -434,7 +433,7 @@ function next () {
                             </div><!-- .whitebox_primary_body_content_right -->
                         </div><!-- .whitebox_primary_body_content -->
                         <hr class="solid" />
-                    </div>
+                    </section>
                     <div id="whitebox_primary_body_post_2" class="whitebox_primary_body_post" style="display: none;">
                         <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/11/the-raakonteur-64-twitter-now-a-serious-business-and-why-like-is-actually-want/">The RAAKonteur #64 - Twitter now a serious business and why 'Like' is actually 'Want'</a></div>
                         <hr />
