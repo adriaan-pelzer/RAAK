@@ -126,6 +126,11 @@ em {
     color: #00aeff;
 }
 
+.seperator {
+    font-size: 9px;
+    margin: 0 6px;
+}
+
 /************** header ***************/
 
 #header {
@@ -288,6 +293,15 @@ em {
 
 #bluebox_body_nav * {
     display: inline-block;
+    color: #666666;
+
+}
+
+
+
+#bluebox_body_nav h3.active a {
+    display: inline-block;
+    color: #00aeef;
 
 }
 
