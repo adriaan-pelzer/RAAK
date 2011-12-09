@@ -426,7 +426,12 @@ strong {
     margin-right: 6px;
 }
 
+.whitebox_primary_body_content p {
+    width: 159px;
+    display: inline-block;
+}
+
 .whitebox_primary_body_content_right {
-    float:right;
+    display: inline-block;
     text-align:right;
 }
