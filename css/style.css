@@ -168,6 +168,7 @@ strong {
     text-transform: uppercase;
     text-align: center;
     padding-top: 4px;
+    height: 30px;
 }
 
 .grey_tab {
@@ -176,6 +177,10 @@ strong {
 
 .tab104 {
     width: 104px;
+}
+
+#content {
+    width: 760px;
 }
 
 /************** header ***************/

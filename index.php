@@ -378,10 +378,11 @@ function next () {
                         </ul>
                     </section>
             </section><!-- #bluebox_home_right -->
-            <section id="whitebox_primary" class="whitebox box rounded-corners">
+            </section class="tab_container">
                 <div class="grey_tab tab tab104 rounded-corners">
                         Latest Posts
                 </div><!-- .grey_tab -->
+                <section id="whitebox_primary" class="whitebox box rounded-corners">
                     <div id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
                         <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></div>
                         <hr />
@@ -656,7 +657,8 @@ If you&#39;re using Internet Explorer, you probably didn&#39;t get this.        
                             <span id="whitebox_primary_body_footer_next_arrow" class="whitebox_primary_body_footer_item">&#9658;</span>
                         </a>
                     </div><!-- .whitebox_primary_body_footer -->
-            </section><!-- #whitebox_primary -->
+                </section><!-- #whitebox_primary -->
+            </section><!-- tab_container -->
             <div id="whitebox_secondary">
                 <div id="whitebox_secondary_tab">
                     <div id="whitebox_secondary_tab_top">
