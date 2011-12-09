@@ -315,7 +315,7 @@ function next () {
                         <span class="seperator">|</span>
                         <h3 class="bluebox_body_nav_item active small_arial_header"><a onclick="javascript: expand('consulting');">Consulting</a></h3>
                     </section>
-                    <section class="bluebox_body_content" id="social-media-ready" style="display: none">
+                    <!--section class="bluebox_body_content" id="social-media-ready" style="display: none">
                         <div class="bluebox_body_content_picture">
                             <a href="http://wewillraakyou.com/2010/07/can-eu-hear-me-europe/">
 <img alt="" src="http://wewillraakyou.com/wp-content/gallery/caneuhearme/eu-logo_0.png"  width="315" />                            </a>
@@ -356,7 +356,7 @@ function next () {
                         <div class="bluebox_body_content_link">
                             <span class="bluebox_body_content_link_text"><a href="http://wewillraakyou.com/our-work/?category=impact-projects" rel="nofollow">More Projects</a></span><span class="bluebox_body_content_link_arrow"><a href="http://wewillraakyou.com/our-work/?category=impact-projects" rel="nofollow">&#9660;</a></span>
                         </div>
-                    </section>
+                    </section -->
                     <section class="bluebox_body_content" id="consulting">
                         <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/"><img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png"  width="315" /></a>
                         <ul>
@@ -378,17 +378,10 @@ function next () {
                         </ul>
                     </section>
             </section><!-- #bluebox_home_right -->
-            <div id="whitebox_primary">
-                <div id="whitebox_primary_tab">
-                    <div id="whitebox_primary_tab_top">
-                    </div><!-- #whitebox_primary_tab_top -->
-                    <div id="whitebox_primary_tab_body">
+            <section id="whitebox_primary" class="whitebox box rounded-corners">
+                <div class="grey_tab">
                         Latest Posts
-                    </div><!-- #whitebox_primary_tab_body -->
-                </div><!-- #whitebox_primary_tab -->
-                <div id="whitebox_primary_top">
-                </div><!-- #whitebox_primary_top -->
-                <div id="whitebox_primary_body">
+                </div><!-- .grey_tab -->
                     <div id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
                         <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></div>
                         <hr />
@@ -663,9 +656,7 @@ If you&#39;re using Internet Explorer, you probably didn&#39;t get this.        
                             <span id="whitebox_primary_body_footer_next_arrow" class="whitebox_primary_body_footer_item">&#9658;</span>
                         </a>
                     </div><!-- .whitebox_primary_body_footer -->
-                </div><!-- #whitebox_primary_body -->
-                <div id="whitebox_primary_bottom"></div>
-            </div><!-- #whitebox_primary -->
+            </section><!-- #whitebox_primary -->
             <div id="whitebox_secondary">
                 <div id="whitebox_secondary_tab">
                     <div id="whitebox_secondary_tab_top">

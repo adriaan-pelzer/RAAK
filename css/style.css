@@ -157,6 +157,11 @@ strong {
     font-weight: bold;
 }
 
+.whitebox {
+    background: #ffffff;
+    color: #666666;
+}
+
 /************** header ***************/
 
 #header {
@@ -353,3 +358,9 @@ strong {
     text-transform: uppercase;
     text-align: right;
 }
+
+/*************** Latest Posts **************/
+
+#whitebox_primary {
+    width: 362px;
+} 
