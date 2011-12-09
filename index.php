@@ -397,7 +397,8 @@ function next () {
                         </section><!-- .whitebox_primary_body_attr -->
                         <div class="whitebox_primary_body_content">
                             <div class="whitebox_primary_body_content_right">
-                                    <a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/12/friend_request_from_your_unborn_child.jpg" alt="friend_request_from_your_unborn_child" title="friend_request_from_your_unborn_child"  width="162" height="104" /></a>
+                                <a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/12/friend_request_from_your_unborn_child.jpg" alt="friend_request_from_your_unborn_child" title="friend_request_from_your_unborn_child"  width="162" height="104" /></a>
+                                <a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">More &#9658;</a>
                             </div><!-- .whitebox_primary_body_content_right -->
                             <p>
                                 Later this week the Pulitzer Prize Board will <a href="http://www.pulitzer.org/digital_entries">announce the details</a> of their new journalism prize categories, which will emphasize real-time reporting (that&#39;s live-tweeting to us tweeps). Until then, there's the weekly RAAKonteur.
