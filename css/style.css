@@ -135,10 +135,21 @@ em {
     width: 60px;
     text-transform: uppercase;
     color: #00aeef;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .title {
     text-transform: uppercase;
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+}
+
+.overview {
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
 }
 
 strong {
@@ -324,4 +335,20 @@ strong {
 
 .bluebox_body_content {
     margin-top: 22px;
+}
+
+
+.bluebox_body_content img {
+    margin-bottom: 6px;
+}
+
+.bluebox_body_content li {
+    margin-bottom: 5px;
+}
+
+
+.bluebox_body_content_link  {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: right;
 }
