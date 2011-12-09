@@ -189,7 +189,7 @@ strong {
 }
 
 .tab_container {
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 #whitebox_primary {
@@ -406,4 +406,9 @@ strong {
 .whitebox_primary_body_post h3 a {
     color: #666666;
 }
+
+.whitebox_primary_body_attr {
+    font: 11px arial, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
