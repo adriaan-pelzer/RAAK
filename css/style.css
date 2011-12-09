@@ -340,7 +340,7 @@ strong {
 
 
 .bluebox_body_content img {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .bluebox_body_content li {
@@ -348,7 +348,7 @@ strong {
 }
 
 
-.bluebox_body_content_link  {
+.bluebox_body_content li.bluebox_body_content_link  {
     margin-bottom: 0;
     text-transform: uppercase;
     text-align: right;
