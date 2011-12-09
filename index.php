@@ -384,7 +384,9 @@ function next () {
                 </div><!-- .grey_tab -->
                 <section id="whitebox_primary" class="whitebox box rounded-corners">
                     <div id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
-                        <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></div>
+                        <div id="whitebox_primary_body_title">
+                            <a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a>
+                        </div>
                         <hr />
                         <div class="whitebox_primary_body_attr">
                             <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
