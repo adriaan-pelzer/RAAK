@@ -162,6 +162,22 @@ strong {
     color: #666666;
 }
 
+.tab {
+    font: 11px arial, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.grey_tab {
+    background: #bebebe;
+}
+
+.tab104 {
+    width: 104px;
+}
+
 /************** header ***************/
 
 #header {
@@ -299,7 +315,7 @@ strong {
 /************* our work container *************/
 
 #bluebox_home_left {
-    width: 255px;
+    width: 239px;
     margin-left: 17px;
 }
 
@@ -321,6 +337,7 @@ strong {
     width: 318px;
     margin-left: -33px;
     font: 9px arial, sans-serif;
+    float: right;
 }
 
 #bluebox_body_nav {
@@ -363,4 +380,5 @@ strong {
 
 #whitebox_primary {
     width: 362px;
+    float: left;
 } 

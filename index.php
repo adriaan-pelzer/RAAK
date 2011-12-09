@@ -379,7 +379,7 @@ function next () {
                     </section>
             </section><!-- #bluebox_home_right -->
             <section id="whitebox_primary" class="whitebox box rounded-corners">
-                <div class="grey_tab">
+                <div class="grey_tab tab tab104 rounded-corners">
                         Latest Posts
                 </div><!-- .grey_tab -->
                     <div id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
