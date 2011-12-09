@@ -396,13 +396,12 @@ function next () {
                             <span class="whitebox_primary_body_attr_item comments"><img class="commenticon" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                         </section><!-- .whitebox_primary_body_attr -->
                         <div class="whitebox_primary_body_content">
+                            <div class="whitebox_primary_body_content_right">
+                                    <a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/12/friend_request_from_your_unborn_child.jpg" alt="friend_request_from_your_unborn_child" title="friend_request_from_your_unborn_child"  width="162" height="104" /></a>
+                            </div><!-- .whitebox_primary_body_content_right -->
                             <p>
                                 Later this week the Pulitzer Prize Board will <a href="http://www.pulitzer.org/digital_entries">announce the details</a> of their new journalism prize categories, which will emphasize real-time reporting (that&#39;s live-tweeting to us tweeps). Until then, there's the weekly RAAKonteur.
                             </p><!-- .whitebox_primary_body_content_left -->
-                            <!-- div class="whitebox_primary_body_content_right" -->
-                                    <a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/12/friend_request_from_your_unborn_child.jpg" alt="friend_request_from_your_unborn_child" title="friend_request_from_your_unborn_child"  width="162" height="104" /></a>
-                                    <a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">More &#9658;</a>
-                            <!-- /div --><!-- .whitebox_primary_body_content_right -->
                         </div><!-- .whitebox_primary_body_content -->
                         <hr class="solid" />
                         <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/">The RAAKonteur #65 - Kevin Rose's new project, The Facebook Freakyline and more</a></div>

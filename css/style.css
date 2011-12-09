@@ -425,3 +425,8 @@ strong {
     vertical-align: middle;
     margin-right: 6px;
 }
+
+.whitebox_primary_body_content_right {
+    float:right;
+    text-align:right;
+}
