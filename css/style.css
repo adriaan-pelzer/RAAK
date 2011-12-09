@@ -111,6 +111,10 @@ hr {
     margin: 0;
 }
 
+.whitebox hr {
+    border-color: #00aeef;
+}
+
 em {
     font-style: italic;
 }
@@ -187,6 +191,11 @@ strong {
 .tab_container {
     margin-top: 20px;
 }
+
+#whitebox_primary {
+    width: 362px;
+    float: left;
+} 
 
 /************** header ***************/
 
@@ -388,7 +397,8 @@ strong {
 
 /*************** Latest Posts **************/
 
-#whitebox_primary {
-    width: 362px;
-    float: left;
-} 
+.whitebox_primary_body_post h3 {
+    font-size: 19px;
+    line-height: 30px;
+    margin: 3px 0 6px;
+}
