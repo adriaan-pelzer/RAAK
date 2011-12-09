@@ -308,16 +308,14 @@ function next () {
                 <p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
             </section><!-- #bluebox_home_left -->
             <section id="bluebox_home_right" class="bluebox box rounded-corners">
-                <div id="bluebox_top"></div>
-                <div id="bluebox_body">
-                    <div id="bluebox_body_nav">
-                        <span id="bluebox_body_nav_social-media-ready" class="bluebox_body_nav_item"><a onclick="javascript: expand('social-media-ready');"><h3>social media ready</h3></a></span>
+                    <section id="bluebox_body_nav">
+                        <h3 class="bluebox_body_nav_item"><a onclick="javascript: expand('social-media-ready');">social media ready</a></h3>
                         <span class="seperator">|</span>
-                        <span id="bluebox_body_nav_impact-projects" class="bluebox_body_nav_item"><a onclick="javascript: expand('impact-projects');"><h3>impact projects</h3></a></span>
+                        <h3 class="bluebox_body_nav_item"><a onclick="javascript: expand('impact-projects');">impact projects</a></h3>
                         <span class="seperator">|</span>
-                        <span id="bluebox_body_nav_consulting" class="bluebox_body_nav_item active"><a onclick="javascript: expand('consulting');"><h3>Consulting</h3></a></span>
-                    </div>
-                    <div class="bluebox_body_content" id="social-media-ready" style="display: none">
+                        <h3 class="bluebox_body_nav_item active"><a onclick="javascript: expand('consulting');">Consulting</a></h3>
+                    </section>
+                    <section class="bluebox_body_content" id="social-media-ready" style="display: none">
                         <div class="bluebox_body_content_picture">
                             <a href="http://wewillraakyou.com/2010/07/can-eu-hear-me-europe/">
 <img alt="" src="http://wewillraakyou.com/wp-content/gallery/caneuhearme/eu-logo_0.png"  width="315" />                            </a>
@@ -337,8 +335,8 @@ function next () {
                         <div class="bluebox_body_content_link">
                             <span class="bluebox_body_content_link_text"><a href="http://wewillraakyou.com/our-work/?category=social-media-ready" rel="nofollow">More Projects</a></span><span class="bluebox_body_content_link_arrow"><a href="http://wewillraakyou.com/our-work/?category=social-media-ready" rel="nofollow">&#9660;</a></span>
                         </div>
-                    </div>
-                    <div class="bluebox_body_content" id="impact-projects" style="display: none">
+                    </section>
+                    <section class="bluebox_body_content" id="impact-projects" style="display: none">
                         <div class="bluebox_body_content_picture">
                             <a href="http://wewillraakyou.com/2011/11/in-store-instagram-studio-right-onto-facebook-for-ted-baker/">
 <img alt="" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker2.jpg"  width="315" />                            </a>
@@ -358,8 +356,8 @@ function next () {
                         <div class="bluebox_body_content_link">
                             <span class="bluebox_body_content_link_text"><a href="http://wewillraakyou.com/our-work/?category=impact-projects" rel="nofollow">More Projects</a></span><span class="bluebox_body_content_link_arrow"><a href="http://wewillraakyou.com/our-work/?category=impact-projects" rel="nofollow">&#9660;</a></span>
                         </div>
-                    </div>
-                    <div class="bluebox_body_content" id="consulting">
+                    </section>
+                    <section class="bluebox_body_content" id="consulting">
                         <div class="bluebox_body_content_picture">
                             <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/">
 <img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png"  width="315" />                            </a>
@@ -379,9 +377,7 @@ function next () {
                         <div class="bluebox_body_content_link">
                             <span class="bluebox_body_content_link_text"><a href="http://wewillraakyou.com/our-work/?category=consulting" rel="nofollow">More Projects</a></span><span class="bluebox_body_content_link_arrow"><a href="http://wewillraakyou.com/our-work/?category=consulting" rel="nofollow">&#9660;</a></span>
                         </div>
-                    </div>
-                </div>
-                <div id="bluebox_bottom"></div>
+                    </section>
             </section><!-- #bluebox_home_right -->
             <div id="whitebox_primary">
                 <div id="whitebox_primary_tab">
