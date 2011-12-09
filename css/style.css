@@ -291,6 +291,10 @@ em {
     margin-left: -33px;
 }
 
+#bluebox_body_nav {
+    margin-top: 4px;
+}
+
 #bluebox_body_nav * {
     display: inline-block;
     color: #666666;
