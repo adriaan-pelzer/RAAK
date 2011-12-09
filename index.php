@@ -378,7 +378,7 @@ function next () {
                         </ul>
                     </section>
             </section><!-- #bluebox_home_right -->
-            </section class="tab_container">
+            <section class="tab_container">
                 <div class="grey_tab tab tab104 rounded-corners">
                         Latest Posts
                 </div><!-- .grey_tab -->
