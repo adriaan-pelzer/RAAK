@@ -195,7 +195,12 @@ strong {
 #whitebox_primary {
     width: 362px;
     float: left;
-} 
+}
+
+.solid {
+    border-style: solid;
+    margin: 10px 0;
+}
 
 /************** header ***************/
 
