@@ -313,7 +313,7 @@ function next () {
                         <span class="seperator">|</span>
                         <h3 class="bluebox_body_nav_item small_arial_caps"><a onclick="javascript: expand('impact-projects');">impact projects</a></h3>
                         <span class="seperator">|</span>
-                        <h3 class="bluebox_body_nav_item active small_arial_caps"><a onclick="javascript: expand('consulting');">Consulting</a></h3>
+                        <h3 class="bluebox_body_nav_item small_arial_caps"><a class="active" nclick="javascript: expand('consulting');">Consulting</a></h3>
                     </section>
                     <!--section class="bluebox_body_content" id="social-media-ready" style="display: none">
                         <div class="bluebox_body_content_picture">
@@ -427,12 +427,14 @@ function next () {
                         </div><!-- .whitebox_primary_body_content -->
                         <hr class="solid" />
                     </section>
-                    <div class="whitebox_primary_body_footer box_nav small_arial_caps">
+                    <footer class="whitebox_primary_body_footer box_nav small_arial_caps">
                         <a href="http://wewillraakyou.com/blog-archive/">All blog posts</a>
-                        <a onclick="javascript: previous();"><span class="arrow">&#9668;</arrow> Previous</a>
-                        <span class="seperator">|</span>
-                        <a onclick="javascript: next();">Next <span class="arrow">&#9658;</span></a>
-                    </div><!-- .whitebox_primary_body_footer -->
+                        <section class="whitebox_primary_body_footer_right">
+                            <a class="active" onclick="javascript: previous();"><span class="arrow">&#9668;</arrow> Previous</a>
+                            <span class="seperator">|</span>
+                            <a onclick="javascript: next();">Next <span class="arrow">&#9658;</span></a>
+                        </section><!-- .whitebox_primary_body_footer_right -->
+                    </footer><!-- .whitebox_primary_body_footer -->
                 </section><!-- #whitebox_primary -->
             </section><!-- tab_container -->
             <div id="whitebox_secondary">

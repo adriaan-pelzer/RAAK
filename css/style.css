@@ -201,6 +201,10 @@ strong {
     border-style: solid;
 }
 
+a.active {
+    color: #00aeef;
+}
+
 /************** header ***************/
 
 #header {
@@ -373,12 +377,6 @@ strong {
 
 }
 
-#bluebox_body_nav h3.active a {
-    display: inline-block;
-    color: #00aeef;
-
-}
-
 .bluebox_body_content {
     margin-top: 22px;
 }
@@ -456,3 +454,13 @@ strong {
 
 .whitebox_primary_body_post .solid {
 margin: 25px 0 9px;
+}
+
+.whitebox_primary_footer {
+    font-size: 9px;
+}
+
+
+.whitebox_primary_footer_right {
+    float: right;
+}
