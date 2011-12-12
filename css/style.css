@@ -199,7 +199,6 @@ strong {
 
 .solid {
     border-style: solid;
-    margin: 10px 0;
 }
 
 /************** header ***************/
@@ -454,3 +453,6 @@ strong {
 .more_link {
     margin-top: 17px;
 }
+
+#whitebox_primary_body hr.solid {
+margin: 25px 0 9px;
