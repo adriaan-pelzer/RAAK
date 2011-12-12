@@ -201,7 +201,7 @@ strong {
     border-style: solid;
 }
 
-a.active {
+a.active, a.active span {
     color: #00aeef;
 }
 
@@ -456,11 +456,16 @@ a.active {
 margin: 25px 0 9px;
 }
 
-.whitebox_primary_footer {
+.whitebox_primary_body_footer {
     font-size: 9px;
 }
 
 
-.whitebox_primary_footer_right {
+.whitebox_primary_body_footer_right {
     float: right;
+}
+
+
+.whitebox_primary_body_footer_right a .arrow {
+    color: #00aeef;
 }
