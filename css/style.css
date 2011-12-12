@@ -405,7 +405,8 @@ strong {
 .whitebox_primary_body_post h3 {
     font-size: 19px;
     line-height: 30px;
-    margin: 5px 0 6px;
+    margin: 0 0 6px;
+    padding-top: 5px;
 }
 
 .whitebox_primary_body_post h3 a {
