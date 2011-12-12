@@ -124,7 +124,7 @@ em {
     margin-top: 8px;
 }
 
-.small_arial_header {
+.small_arial_caps {
     font: 10px arial, sans-serif;
     text-transform: uppercase;
     color: #00aeff;
@@ -367,7 +367,7 @@ strong {
     margin-top: 7px;
 }
 
-#bluebox_body_nav * {
+.box_nav * {
     display: inline-block;
     color: #666666;
 

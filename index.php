@@ -308,12 +308,12 @@ function next () {
                 <p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
             </section><!-- #bluebox_home_left -->
             <section id="bluebox_home_right" class="bluebox box rounded-corners">
-                    <section id="bluebox_body_nav">
-                        <h3 class="bluebox_body_nav_item small_arial_header"><a onclick="javascript: expand('social-media-ready');">social media ready</a></h3>
+                    <section id="bluebox_body_nav" class="box_nav">
+                        <h3 class="bluebox_body_nav_item small_arial_caps"><a onclick="javascript: expand('social-media-ready');">social media ready</a></h3>
                         <span class="seperator">|</span>
-                        <h3 class="bluebox_body_nav_item small_arial_header"><a onclick="javascript: expand('impact-projects');">impact projects</a></h3>
+                        <h3 class="bluebox_body_nav_item small_arial_caps"><a onclick="javascript: expand('impact-projects');">impact projects</a></h3>
                         <span class="seperator">|</span>
-                        <h3 class="bluebox_body_nav_item active small_arial_header"><a onclick="javascript: expand('consulting');">Consulting</a></h3>
+                        <h3 class="bluebox_body_nav_item active small_arial_caps"><a onclick="javascript: expand('consulting');">Consulting</a></h3>
                     </section>
                     <!--section class="bluebox_body_content" id="social-media-ready" style="display: none">
                         <div class="bluebox_body_content_picture">
@@ -427,227 +427,11 @@ function next () {
                         </div><!-- .whitebox_primary_body_content -->
                         <hr class="solid" />
                     </section>
-                    <div id="whitebox_primary_body_post_2" class="whitebox_primary_body_post" style="display: none;">
-                        <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/11/the-raakonteur-64-twitter-now-a-serious-business-and-why-like-is-actually-want/">The RAAKonteur #64 - Twitter now a serious business and why 'Like' is actually 'Want'</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">21 Nov 2011</span>
-                            <span class="seperator">|</span>
-                            <!--span id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item">11:58</span>
-                            <span class="seperator">|</span-->
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">0 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <div class="whitebox_primary_body_content">
-                            <div class="whitebox_primary_body_content_left">
-                                This week, two notable launches. First:&nbsp;<a href="http://datasift.com/">DataSift</a>&nbsp;- Twitter data on tap, sliced and diced the way you want it. And secondly ... <a href="http://uk.reuters.com/article/2011/11/18/uk-google-music-idUKTRE7AF2HO20111118">Google Music</a>. One of these two are going to struggle. Guess who?<br />
-<br />                            </div><!-- .whitebox_primary_body_content_left -->
-                            <div class="whitebox_primary_body_content_right">
-                                <div class="whitebox_primary_body_content_right_image">
-                                    <a href="http://wewillraakyou.com/2011/11/the-raakonteur-64-twitter-now-a-serious-business-and-why-like-is-actually-want/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/11/adrian_peterson_twitter_assassins_creed.jpg" alt="adrian_peterson_twitter_assassins_creed" title="adrian_peterson_twitter_assassins_creed"  width="162" height="104" /></a>
-                                </div><!-- .whitebox_primary_body_content_right_image -->
-                                <div class="whitebox_primary_body_content_right_link">
-                                    <a href="http://wewillraakyou.com/2011/11/the-raakonteur-64-twitter-now-a-serious-business-and-why-like-is-actually-want/">More &#9658;</a>
-                                </div><!-- .whitebox_primary_body_content_right_link -->
-                            </div><!-- .whitebox_primary_body_content_right -->
-                        </div><!-- .whitebox_primary_body_content -->
-                        <hr class="solid" />
-                        <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/11/the-raakonteur-63-wordpress-is-going-social-google-has-a-minus-and-the-dangerous-world-of-slacktivism/">The RAAKonteur #63 - Wordpress is going Social, Google+ has a minus, and the dangerous world of Slacktivism</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">15 Nov 2011</span>
-                            <span class="seperator">|</span>
-                            <!--span id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item">14:20</span>
-                            <span class="seperator">|</span-->
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">0 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <div class="whitebox_primary_body_content">
-                            <div class="whitebox_primary_body_content_left">
-                                Number 63 of the RAAKonteur looks at how Wordpress is going social, why Twitter does refer more people than Facebook & what Robert Scoble thinks of Google+'s introduction of brand pages.                            </div><!-- .whitebox_primary_body_content_left -->
-                            <div class="whitebox_primary_body_content_right">
-                                <div class="whitebox_primary_body_content_right_image">
-                                    <a href="http://wewillraakyou.com/2011/11/the-raakonteur-63-wordpress-is-going-social-google-has-a-minus-and-the-dangerous-world-of-slacktivism/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/11/matt_mullenweg.jpeg" alt="matt_mullenweg" title="matt_mullenweg"  width="162" height="104" /></a>
-                                </div><!-- .whitebox_primary_body_content_right_image -->
-                                <div class="whitebox_primary_body_content_right_link">
-                                    <a href="http://wewillraakyou.com/2011/11/the-raakonteur-63-wordpress-is-going-social-google-has-a-minus-and-the-dangerous-world-of-slacktivism/">More &#9658;</a>
-                                </div><!-- .whitebox_primary_body_content_right_link -->
-                            </div><!-- .whitebox_primary_body_content_right -->
-                        </div><!-- .whitebox_primary_body_content -->
-                        <hr class="solid" />
-                    </div>
-                    <div id="whitebox_primary_body_post_4" class="whitebox_primary_body_post" style="display: none;">
-                        <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/11/the-raakonteur-62-man-united-goes-for-social-paying-by-just-saying-other-magic/">The RAAKonteur #62 - Man United goes for social, paying by just saying & other Magic</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item"> 8 Nov 2011</span>
-                            <span class="seperator">|</span>
-                            <!--span id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item">23:54</span>
-                            <span class="seperator">|</span-->
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">0 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <div class="whitebox_primary_body_content">
-                            <div class="whitebox_primary_body_content_left">
-                                In history, this year will truly be remembered as a year of revolutions. <a href="http://www.google.co.uk/search?aq=f&gcx=w&sourceid=chrome&ie=UTF-8&q=do+a+barrel+roll">Have you noticed</a>? Read on ...<br /> 
-If you&#39;re using Internet Explorer, you probably didn&#39;t get this.                            </div><!-- .whitebox_primary_body_content_left -->
-                            <div class="whitebox_primary_body_content_right">
-                                <div class="whitebox_primary_body_content_right_image">
-                                    <a href="http://wewillraakyou.com/2011/11/the-raakonteur-62-man-united-goes-for-social-paying-by-just-saying-other-magic/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/11/cardcase.png" alt="cardcase" title="cardcase"  width="162" height="104" /></a>
-                                </div><!-- .whitebox_primary_body_content_right_image -->
-                                <div class="whitebox_primary_body_content_right_link">
-                                    <a href="http://wewillraakyou.com/2011/11/the-raakonteur-62-man-united-goes-for-social-paying-by-just-saying-other-magic/">More &#9658;</a>
-                                </div><!-- .whitebox_primary_body_content_right_link -->
-                            </div><!-- .whitebox_primary_body_content_right -->
-                        </div><!-- .whitebox_primary_body_content -->
-                        <hr class="solid" />
-                        <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/10/the-raakonteur-61-content-marketing-is-king-bots-that-fetch-beer/">The RAAKonteur #61 - Content marketing is King & bots that fetch beer</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">31 Oct 2011</span>
-                            <span class="seperator">|</span>
-                            <!--span id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item">12:23</span>
-                            <span class="seperator">|</span-->
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">0 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <div class="whitebox_primary_body_content">
-                            <div class="whitebox_primary_body_content_left">
-                                This week we're mad as hell as our <a href="http://techcrunch.com/2011/10/26/nobody-gives-a-damn-about-your-klout-score/">Klout scores are down</a> all round. Not that we check our Klout scores, obviously ;)                            </div><!-- .whitebox_primary_body_content_left -->
-                            <div class="whitebox_primary_body_content_right">
-                                <div class="whitebox_primary_body_content_right_image">
-                                    <a href="http://wewillraakyou.com/2011/10/the-raakonteur-61-content-marketing-is-king-bots-that-fetch-beer/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/10/content_is_king.png" alt="content_is_king" title="content_is_king"  width="162" height="104" /></a>
-                                </div><!-- .whitebox_primary_body_content_right_image -->
-                                <div class="whitebox_primary_body_content_right_link">
-                                    <a href="http://wewillraakyou.com/2011/10/the-raakonteur-61-content-marketing-is-king-bots-that-fetch-beer/">More &#9658;</a>
-                                </div><!-- .whitebox_primary_body_content_right_link -->
-                            </div><!-- .whitebox_primary_body_content_right -->
-                        </div><!-- .whitebox_primary_body_content -->
-                        <hr class="solid" />
-                    </div>
-                    <div id="whitebox_primary_body_post_6" class="whitebox_primary_body_post" style="display: none;">
-                        <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/10/the-raakonteur-60-clash-of-the-titans-and-why-you-dont-need-marketeers-in-the-fight/">The RAAKonteur #60 - Clash of the Titans and why you don't need marketeers in the fight</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">22 Oct 2011</span>
-                            <span class="seperator">|</span>
-                            <!--span id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item">20:51</span>
-                            <span class="seperator">|</span-->
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">0 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <div class="whitebox_primary_body_content">
-                            <div class="whitebox_primary_body_content_left">
-                                It's War! This week we invite y'all to join forces with the DARC side. And you can do that with a pseudonym, as Google+ capitulated on their insistence to use real identities.                            </div><!-- .whitebox_primary_body_content_left -->
-                            <div class="whitebox_primary_body_content_right">
-                                <div class="whitebox_primary_body_content_right_image">
-                                    <a href="http://wewillraakyou.com/2011/10/the-raakonteur-60-clash-of-the-titans-and-why-you-dont-need-marketeers-in-the-fight/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/10/160-Features-tech-war-5.jpg" alt="tech-war" title="tech-war"  width="162" height="104" /></a>
-                                </div><!-- .whitebox_primary_body_content_right_image -->
-                                <div class="whitebox_primary_body_content_right_link">
-                                    <a href="http://wewillraakyou.com/2011/10/the-raakonteur-60-clash-of-the-titans-and-why-you-dont-need-marketeers-in-the-fight/">More &#9658;</a>
-                                </div><!-- .whitebox_primary_body_content_right_link -->
-                            </div><!-- .whitebox_primary_body_content_right -->
-                        </div><!-- .whitebox_primary_body_content -->
-                        <hr class="solid" />
-                        <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/10/the-raakonteur-59-facebook-on-the-ipad-twitter-on-ios5-and-instagram-in-the-air/">The RAAKonteur #59: Facebook on the iPad, Twitter on iOS5 and Instagram in the air</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">18 Oct 2011</span>
-                            <span class="seperator">|</span>
-                            <!--span id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item">18:35</span>
-                            <span class="seperator">|</span-->
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">1 comment</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <div class="whitebox_primary_body_content">
-                            <div class="whitebox_primary_body_content_left">
-                                Finally this week the Facebook iPad app arrived. We take a look at that, new Facebook engagement metrics and Instagram and foursquare get a look in as well.                            </div><!-- .whitebox_primary_body_content_left -->
-                            <div class="whitebox_primary_body_content_right">
-                                <div class="whitebox_primary_body_content_right_image">
-                                    <a href="http://wewillraakyou.com/2011/10/the-raakonteur-59-facebook-on-the-ipad-twitter-on-ios5-and-instagram-in-the-air/"><img title="rutting_season" src="http://wewillraakyou.com/wp-content/uploads/2011/10/rutting_season.jpg" alt="Rutting Season"  width="162" height="104" /></a>
-                                </div><!-- .whitebox_primary_body_content_right_image -->
-                                <div class="whitebox_primary_body_content_right_link">
-                                    <a href="http://wewillraakyou.com/2011/10/the-raakonteur-59-facebook-on-the-ipad-twitter-on-ios5-and-instagram-in-the-air/">More &#9658;</a>
-                                </div><!-- .whitebox_primary_body_content_right_link -->
-                            </div><!-- .whitebox_primary_body_content_right -->
-                        </div><!-- .whitebox_primary_body_content -->
-                        <hr class="solid" />
-                    </div>
-                    <div id="whitebox_primary_body_post_8" class="whitebox_primary_body_post" style="display: none;">
-                        <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/10/the-raakonteur-58-a-sad-day-for-tech-facebooks-ad-strategy-and-adobe-bursts-into-html5/">The RAAKonteur #58 - A Sad day for Tech, Facebook's ad strategy and Adobe bursts into HTML5</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">17 Oct 2011</span>
-                            <span class="seperator">|</span>
-                            <!--span id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item">18:43</span>
-                            <span class="seperator">|</span-->
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">0 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <div class="whitebox_primary_body_content">
-                            <div class="whitebox_primary_body_content_left">
-                                This week we take a look at the passing of Steve Jobs. While Facebook is ramping up the functionality of its social ads. Adobe in the meantime is making major strategic moves.                            </div><!-- .whitebox_primary_body_content_left -->
-                            <div class="whitebox_primary_body_content_right">
-                                <div class="whitebox_primary_body_content_right_image">
-                                    <a href="http://wewillraakyou.com/2011/10/the-raakonteur-58-a-sad-day-for-tech-facebooks-ad-strategy-and-adobe-bursts-into-html5/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/10/stabiano1.jpg" alt="Steve Jobs" title="Steve Jobs"  width="162" height="104" /></a>
-                                </div><!-- .whitebox_primary_body_content_right_image -->
-                                <div class="whitebox_primary_body_content_right_link">
-                                    <a href="http://wewillraakyou.com/2011/10/the-raakonteur-58-a-sad-day-for-tech-facebooks-ad-strategy-and-adobe-bursts-into-html5/">More &#9658;</a>
-                                </div><!-- .whitebox_primary_body_content_right_link -->
-                            </div><!-- .whitebox_primary_body_content_right -->
-                        </div><!-- .whitebox_primary_body_content -->
-                        <hr class="solid" />
-                        <div id="whitebox_primary_body_title"><a href="http://wewillraakyou.com/2011/09/the-raakonteur-56-the-end-of-the-social-media-world-as-we-know-it-our-new-twitter-app-much-more/">The RAAKonteur #56 - The end of the Social Media world as we know it, our new Twitter app & much more </a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">26 Sep 2011</span>
-                            <span class="seperator">|</span>
-                            <!--span id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item">13:02</span>
-                            <span class="seperator">|</span-->
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">0 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <div class="whitebox_primary_body_content">
-                            <div class="whitebox_primary_body_content_left">
-                                It&#39;s official: <a href="http://blogs.siliconvalley.com/gmsv/2011/09/quoted-religion-a-superstar-on-social-media.html">Jesus is bigger than Bieber</a>&nbsp;in Social Media. But if that story didn&#39;t make it in the RAAKonteur, you can only imagine how much else happened this week. Read on!                            </div><!-- .whitebox_primary_body_content_left -->
-                            <div class="whitebox_primary_body_content_right">
-                                <div class="whitebox_primary_body_content_right_image">
-                                    <a href="http://wewillraakyou.com/2011/09/the-raakonteur-56-the-end-of-the-social-media-world-as-we-know-it-our-new-twitter-app-much-more/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/09/facebook_timeline.png" alt="facebook_timeline" title="facebook_timeline"  width="162" height="104" /></a>
-                                </div><!-- .whitebox_primary_body_content_right_image -->
-                                <div class="whitebox_primary_body_content_right_link">
-                                    <a href="http://wewillraakyou.com/2011/09/the-raakonteur-56-the-end-of-the-social-media-world-as-we-know-it-our-new-twitter-app-much-more/">More &#9658;</a>
-                                </div><!-- .whitebox_primary_body_content_right_link -->
-                            </div><!-- .whitebox_primary_body_content_right -->
-                        </div><!-- .whitebox_primary_body_content -->
-                        <hr class="solid" />
-                    </div>
-                    <div class="whitebox_primary_body_footer">
-                        <span id="whitebox_primary_body_footer_archive" class="whitebox_primary_body_footer_item"><a href="http://wewillraakyou.com/blog-archive/">All blog posts</a></span>
-                        <a onclick="javascript: previous();">
-                            <span id="whitebox_primary_body_footer_prev_arrow" class="whitebox_primary_body_footer_item">&#9668;</span>
-                            <span id="whitebox_primary_body_footer_prev_text" class="whitebox_primary_body_footer_item active">Previous</span>
-                        </a>
+                    <div class="whitebox_primary_body_footer box_nav">
+                        <a href="http://wewillraakyou.com/blog-archive/">All blog posts</a>
+                        <a onclick="javascript: previous();"><span class="arrow">&#9668;</arrow> Previous</a>
                         <span class="seperator">|</span>
-                        <a onclick="javascript: next();">
-                            <span id="whitebox_primary_body_footer_next_text" class="whitebox_primary_body_footer_item">Next</span>
-                            <span id="whitebox_primary_body_footer_next_arrow" class="whitebox_primary_body_footer_item">&#9658;</span>
-                        </a>
+                        <a onclick="javascript: next();">Next <span class="arrow">&#9658;</span></a>
                     </div><!-- .whitebox_primary_body_footer -->
                 </section><!-- #whitebox_primary -->
             </section><!-- tab_container -->
