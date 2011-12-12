@@ -427,7 +427,7 @@ function next () {
                         </div><!-- .whitebox_primary_body_content -->
                         <hr class="solid" />
                     </section>
-                    <div class="whitebox_primary_body_footer box_nav">
+                    <div class="whitebox_primary_body_footer box_nav small_arial_caps">
                         <a href="http://wewillraakyou.com/blog-archive/">All blog posts</a>
                         <a onclick="javascript: previous();"><span class="arrow">&#9668;</arrow> Previous</a>
                         <span class="seperator">|</span>
