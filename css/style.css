@@ -219,6 +219,14 @@ a.active, a.active span {
     color: #00aeef;
 }
 
+.more_link {
+    margin-top: 17px;
+    color: #00aeef;
+    font: 9px arial, sans-serif;
+    text-transform: uppercase;
+}
+
+
 /************** header ***************/
 
 #header {
@@ -462,7 +470,7 @@ a.active, a.active span {
     display: block;
 }
 
-.more_link {
+#whitebox_primary .more_link {
     margin-top: 17px;
 }
 
@@ -504,15 +512,15 @@ margin: 25px 0 9px;
 
 
 #whitebox_secondary_body_content_one li {
-    background: url(images/whitebox_secondary_body_content_one_list.png) no-repeat 0px 5px;
+    background: url(../images/whitebox_secondary_body_content_one_list.png) no-repeat 0px 5px;
 }
 
 #whitebox_secondary_body_content_two li {
-    background: url(images/whitebox_secondary_body_content_two_list.png) no-repeat 0px 5px;
+    background: url(../images/whitebox_secondary_body_content_two_list.png) no-repeat 0px 5px;
 }
 
 #whitebox_secondary_body_content_three li {
-    background: url(images/whitebox_secondary_body_content_three_list.png) no-repeat 0px 5px;
+    background: url(../images/whitebox_secondary_body_content_three_list.png) no-repeat 0px 5px;
 }
 
 #whitebox_secondary_body_content_one {
@@ -535,4 +543,8 @@ margin: 25px 0 9px;
 #whitebox_secondary_body_content_three {
     width: 150px;
     margin-left: 15px;
+}
+
+#whitebox_secondary a.more_link {
+    color: #00aeef;
 }
