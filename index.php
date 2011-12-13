@@ -452,7 +452,7 @@ function next () {
                             <li><a href="http://wewillraakyou.com/2010/08/big-society-when-a-poke-becomes-a-nudge/">Big Society: When a Poke becomes a Nudge</a></li>
                         </ul>
                         <footer>
-                            <a href="http://wewillraakyou.com/category/must-read/" rel="nofollow">More &#9660;</a>
+                            <a class="more_link" href="http://wewillraakyou.com/category/must-read/" rel="nofollow">More &#9660;</a>
                         </footer>
                     </div><!-- #whitebox_secondary_body_content_one -->
                     <div id="whitebox_secondary_body_content_two">
@@ -463,7 +463,7 @@ function next () {
                             <li><a href="http://wewillraakyou.com/2011/05/curating-your-own-serendipity-filters/">Curating your own serendipity filters</a></li>
                         </ul>
                         <footer>
-                            <a href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">More &#9660;</a>
+                            <a class="more_link" href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">More &#9660;</a>
                         </footer>
                     </div><!-- #whitebox_secondary_body_content_two -->
                     <div id="whitebox_secondary_body_content_three">
@@ -474,7 +474,7 @@ function next () {
                             <li><a href="http://wewillraakyou.com/2011/11/the-raakonteur-64-twitter-now-a-serious-business-and-why-like-is-actually-want/">The RAAKonteur #64 - Twitter now a serious business and why 'Like' is actually 'Want'</a></li>
                         </ul>
                         <footer>
-                            <a href="http://wewillraakyou.com/blog/the-raakonteur/" rel="nofollow">More &#9660;</a>
+                            <a class="more_link" href="http://wewillraakyou.com/blog/the-raakonteur/" rel="nofollow">More &#9660;</a>
                         </footer>
                     </div><!-- #whitebox_secondary_body_content_three -->
                 </div><!-- #whitebox_secondary -->
