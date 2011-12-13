@@ -197,6 +197,10 @@ strong {
     float: left;
 }
 
+.whitebox-secondary {
+    margin-left: 20px;
+}
+
 
 #whitebox_primary {
     width: 362px;
@@ -479,4 +483,38 @@ margin: 25px 0 9px;
 
 .whitebox_primary_body_footer_right a .arrow {
     color: #00aeef;
+}
+
+
+/************** Other Posts ***************/
+
+#whitebox_secondary h3 {
+    font-size: 11px;
+}
+
+
+#whitebox_secondary a {
+    color: #666666;
+}
+
+#whitebox_secondary_body_content_one {
+    border-bottom: 1px dashed #00aeef;
+}
+
+#whitebox_secondary_body_content_two, #whitebox_secondary_body_content_three {
+    display: inline-block;
+    padding-top: 15px;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+#whitebox_secondary_body_content_two {
+    border-right: 1px dashed #00AEEF;
+    width: 145px;
+    padding-right: 5px;
+}
+
+#whitebox_secondary_body_content_three {
+    width: 150px;
+    margin-left: 15px;
 }

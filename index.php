@@ -439,13 +439,11 @@ function next () {
             </section><!-- tab_container -->
             <section class="tab_container whitebox-secondary">
                 <div class="grey_tab tab tab104 rounded-corners">
-                        Latest Posts
+                        Other Posts
                 </div><!-- .grey_tab -->
                 <div id="whitebox_secondary" class="whitebox box rounded-corners">
-                    <div id="whitebox_secondary_body_header">
-                        Must Reads
-                    </div>
                     <div id="whitebox_secondary_body_content_one">
+                        <h3 class="small_arial_caps">Must Reads</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
                             <li><a href="http://wewillraakyou.com/2010/11/the-perpetually-changing-crowdsourced-raak-logo/">The perpetually changing crowdsourced RAAK logo</a></li>
@@ -453,35 +451,31 @@ function next () {
                             <li><a href="http://wewillraakyou.com/2010/10/mad-mixers-brands-ads-the-importance-of-mixing-paid-earned-media/">Mad Mixers: Brands ads & the importance of mixing paid & earned media</a></li>
                             <li><a href="http://wewillraakyou.com/2010/08/big-society-when-a-poke-becomes-a-nudge/">Big Society: When a Poke becomes a Nudge</a></li>
                         </ul>
-                        <div id="whitebox_secondary_body_content_one_footer">
-                            <span class="bluebox_body_content_link_text"><a href="http://wewillraakyou.com/category/must-read/" rel="nofollow">More</a></span><span class="bluebox_body_content_link_arrow"><a href="http://wewillraakyou.com/category/must-read/" rel="nofollow">&#9660;</a></span>
-                        </div>
+                        <footer>
+                            <a href="http://wewillraakyou.com/category/must-read/" rel="nofollow">More &#9660;</a>
+                        </footer>
                     </div><!-- #whitebox_secondary_body_content_one -->
                     <div id="whitebox_secondary_body_content_two">
-                        <div id="whitebox_secondary_body_header">
-                            Worth a Look
-                        </div>
+                        <h3 class="small_arial_caps">Worth a Look</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2011/09/identity-and-location-and-sex-welcome-to-people-discovery/">Identity and location (and sex) - welcome to people discovery </a></li>
                             <li><a href="http://wewillraakyou.com/2011/08/measure-fake-follower-twitter/">Is Newt Gingrich a cheat?</a></li>
                             <li><a href="http://wewillraakyou.com/2011/05/curating-your-own-serendipity-filters/">Curating your own serendipity filters</a></li>
                         </ul>
-                        <div id="whitebox_secondary_body_content_two_footer">
-                            <span class="bluebox_body_content_link_text"><a href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">More</a></span><span class="bluebox_body_content_link_arrow"><a href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">&#9660;</a></span>
-                        </div>
+                        <footer>
+                            <a href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">More &#9660;</a>
+                        </footer>
                     </div><!-- #whitebox_secondary_body_content_two -->
                     <div id="whitebox_secondary_body_content_three">
-                        <div id="whitebox_secondary_body_header">
-                            The RAAKonteur
-                        </div>
+                        <h3 class="small_arial_caps">The RAAKonteur</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></li>
                             <li><a href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/">The RAAKonteur #65 - Kevin Rose's new project, The Facebook Freakyline and more</a></li>
                             <li><a href="http://wewillraakyou.com/2011/11/the-raakonteur-64-twitter-now-a-serious-business-and-why-like-is-actually-want/">The RAAKonteur #64 - Twitter now a serious business and why 'Like' is actually 'Want'</a></li>
                         </ul>
-                        <div id="whitebox_secondary_body_content_three_footer">
-                            <span class="bluebox_body_content_link_text"><a href="http://wewillraakyou.com/blog/the-raakonteur/" rel="nofollow">More</a></span><span class="bluebox_body_content_link_arrow"><a href="http://wewillraakyou.com/blog/the-raakonteur/" rel="nofollow">&#9660;</a></span>
-                        </div>
+                        <footer>
+                            <a href="http://wewillraakyou.com/blog/the-raakonteur/" rel="nofollow">More &#9660;</a>
+                        </footer>
                     </div><!-- #whitebox_secondary_body_content_three -->
                 </div><!-- #whitebox_secondary -->
             </section><!-- tab_container -->
