@@ -437,17 +437,11 @@ function next () {
                     </footer><!-- .whitebox_primary_body_footer -->
                 </section><!-- #whitebox_primary -->
             </section><!-- tab_container -->
-            <div id="whitebox_secondary">
-                <div id="whitebox_secondary_tab">
-                    <div id="whitebox_secondary_tab_top">
-                    </div><!-- #whitebox_secondary_tab_top -->
-                    <div id="whitebox_secondary_tab_body">
-                        Other Posts
-                    </div><!-- #whitebox_secondary_tab_body -->
-                </div><!-- #whitebox_secondary_tab -->
-                <div id="whitebox_secondary_top">
-                </div><!-- #whitebox_secondary_top -->
-                <div id="whitebox_secondary_body">
+            <section class="tab_container">
+                <div class="grey_tab tab tab104 rounded-corners">
+                        Latest Posts
+                </div><!-- .grey_tab -->
+                <div id="whitebox_secondary" class="whitebox box rounded-corners">
                     <div id="whitebox_secondary_body_header">
                         Must Reads
                     </div>
@@ -489,10 +483,8 @@ function next () {
                             <span class="bluebox_body_content_link_text"><a href="http://wewillraakyou.com/blog/the-raakonteur/" rel="nofollow">More</a></span><span class="bluebox_body_content_link_arrow"><a href="http://wewillraakyou.com/blog/the-raakonteur/" rel="nofollow">&#9660;</a></span>
                         </div>
                     </div><!-- #whitebox_secondary_body_content_three -->
-                </div><!-- #whitebox_secondary_body -->
-                <div id="whitebox_secondary_bottom">
-                </div><!-- #whitebox_secondary_bottom -->
-            </div><!-- #whitebox_secondary -->
+                </div><!-- #whitebox_secondary -->
+            </section><!-- tab_container -->
         </section><!-- #content -->
             <div id="primary" class="sidebar">
         <div id="mailchimp">
