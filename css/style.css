@@ -208,7 +208,8 @@ strong {
 
 
 #whitebox_secondary {
-    width: 318px;
+    width: 323px;
+    padding-right: 10px;
 }
 
 .solid {
