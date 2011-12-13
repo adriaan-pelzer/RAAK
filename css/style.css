@@ -190,11 +190,21 @@ strong {
 
 .tab_container {
     margin-top: 18px;
+    display: inline-block;
 }
+
+.whitebox-primary {
+    float: left;
+}
+
 
 #whitebox_primary {
     width: 362px;
-    float: left;
+}
+
+
+#whitebox_secondary {
+    width: 318px;
 }
 
 .solid {

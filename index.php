@@ -378,7 +378,7 @@ function next () {
                         </ul>
                     </section>
             </section><!-- #bluebox_home_right -->
-            <section class="tab_container">
+            <section class="tab_container whitebox-primary">
                 <div class="grey_tab tab tab104 rounded-corners">
                         Latest Posts
                 </div><!-- .grey_tab -->
@@ -437,7 +437,7 @@ function next () {
                     </footer><!-- .whitebox_primary_body_footer -->
                 </section><!-- #whitebox_primary -->
             </section><!-- tab_container -->
-            <section class="tab_container">
+            <section class="tab_container whitebox-secondary">
                 <div class="grey_tab tab tab104 rounded-corners">
                         Latest Posts
                 </div><!-- .grey_tab -->
