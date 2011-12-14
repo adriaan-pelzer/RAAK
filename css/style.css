@@ -694,3 +694,15 @@ font-style: normal!important;
     border-bottom: 2px solid #B9E5FB;
     padding-bottom: 3px;
 }
+
+.twtr-hd h4, .twtr-profile-img-anchor {
+    display: none;
+}
+
+twtr-hd {
+    border-bottom: 1px dotted #dddddd;
+    padding: 0 0 13px 0;
+    width: 160px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
