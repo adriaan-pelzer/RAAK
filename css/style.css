@@ -578,12 +578,12 @@ margin: 25px 0 9px;
 #mailchimp_top {
     background: url(../images/sidebar_raakonteur_top.png);
     height: 41px;
-    margin-bottom: -7px;
+    margin-bottom: -8px;
 }
 
 #mailchimp_body {
     background: #bebebe;
-    padding: 7px 10px 2px;
+    padding: 8px 10px 2px;
 }
 
 /****** mailchimp reset **********/
@@ -653,10 +653,15 @@ font-style: normal!important;
     background: url(../images/sidebar_twitter_top.png);
     height: 26px;
     padding: 15px 0 0 10px;
+    margin-bottom: -8px;
 }
 
 
 #twitter_body {
     background: #bebebe;
     padding: 7px 10px 2px;
+}
+
+.twtr-widget * {
+    color: #ffffff;
 }
