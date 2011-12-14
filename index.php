@@ -644,7 +644,7 @@ function mce_success_cb(resp){
         </div><!-- mailchimp -->
         <div id="twitter">
             <div id="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
-            <div id="twitter_body">
+            <div id="twitter_body" class="rounded-corners">
             <div id="twitter_follow"><a href="http://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a></div>
             <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
             <script src="http://widgets.twimg.com/j/2/widget.js"></script>

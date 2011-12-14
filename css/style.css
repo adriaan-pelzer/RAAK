@@ -654,3 +654,9 @@ font-style: normal!important;
     height: 26px;
     padding: 15px 0 0 10px;
 }
+
+
+#twitter_body {
+    background: #bebebe;
+    padding: 7px 10px 2px;
+}
