@@ -584,16 +584,11 @@ margin: 25px 0 9px;
 #mailchimp_body {
     background: #bebebe;
     padding: 10px 10px 2px;
-    font-size: 11px!important;
-    color: #ffffff!important;
 }
 
-#mailchimp_body a {
-    color: #b9e5fb;
-}
 /****** mailchimp reset **********/
 
-/*#mc_embed_signup * {
+#mc_embed_signup * {
     background: none!important;
     border: 0!important;
     color: #ffffff!important;
@@ -601,9 +596,12 @@ margin: 25px 0 9px;
     text-align: left!important;
     padding: 0!important;
     line-height: 17px;
-}*/
+}
 
 /********* end reset ***********/
 
 
+#mc_embed_signup a {
+    color: #b9e5fb;
+}
 

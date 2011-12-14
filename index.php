@@ -483,7 +483,7 @@ function next () {
             <section class="sidebar">
         <div id="mailchimp">
             <div id="mailchimp_top"></div>
-            <div id="mailchimp_body" class="rounded-corners">
+            <div id="mailchimp_body" class="rounded-corners box">
 <!-- Begin MailChimp Signup Form -->
 <!--[if IE]>
             <style type="text/css" media="screen">
