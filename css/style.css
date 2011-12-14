@@ -234,6 +234,7 @@ a.active, a.active span {
     width: 180px;
     margin-left: 16px;
     display: inline-block;
+    vertical-align: top;
 }
 
 /************** header ***************/
@@ -570,3 +571,15 @@ margin: 25px 0 9px;
     margin-top: 5px;
 }
 
+/************** Sidebar ***************/
+
+/************** Mail Chimp **************/
+
+#mailchimp_top {
+    background: url(../images/sidebar_raakonteur_top.png);
+    height: 41px;
+}
+
+#mailchimp_body {
+    background: #bebebe;
+}

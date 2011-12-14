@@ -480,10 +480,10 @@ function next () {
                 </div><!-- #whitebox_secondary -->
             </section><!-- tab_container -->
         </section><!-- #content -->
-            <div class="sidebar">
+            <section class="sidebar">
         <div id="mailchimp">
             <div id="mailchimp_top"></div>
-            <div id="mailchimp_body">
+            <div id="mailchimp_body" class="rounded-corners">
 <!-- Begin MailChimp Signup Form -->
 <!--[if IE]>
             <style type="text/css" media="screen">
@@ -679,7 +679,7 @@ new TWTR.Widget({
             </div>
             <div id="twitter_bottom"></div>
         </div><!-- twitter -->
-    </div><!-- #primary .sidebar -->
+    </section><!-- .sidebar -->
     </section><!-- #container -->
 
 
