@@ -681,3 +681,12 @@ font-style: normal!important;
 #twitter_body #twtr-widget-1 .twtr-tweet-wrap {
     padding: 0;
 }
+
+#twitter_top a {
+    font: 14px din_schift, arial, sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 10px;
+    border-bottom: 2px solid #B9E5FB;
+    padding-bottom: 3px;
+}
