@@ -699,10 +699,14 @@ font-style: normal!important;
     display: none;
 }
 
-twtr-hd {
+.twtr-hd {
     border-bottom: 1px dotted #dddddd;
     padding: 0 0 13px 0;
     width: 160px;
     margin-bottom: 5px;
     text-transform: uppercase;
+}
+
+#twitter_body #twtr-widget-1 .twtr-widget-profile h3 {
+    margin: 0!important;
 }
