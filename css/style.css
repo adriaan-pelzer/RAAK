@@ -708,6 +708,6 @@ font-style: normal!important;
     text-transform: uppercase;
 }
 
-.twtr-widget h3 {
+.twtr-widget .twtr-doc .twtr-hd h3 {
     margin: 0!important;
 }
