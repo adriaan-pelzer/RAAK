@@ -674,5 +674,10 @@ font-style: normal!important;
 
 
 #twitter_body #twtr-widget-1 .twtr-doc {
-    width: 181px;
+    width: 181px!important;
+}
+
+
+#twitter_body #twtr-widget-1 .twtr-tweet-wrap {
+    padding: 0;
 }
