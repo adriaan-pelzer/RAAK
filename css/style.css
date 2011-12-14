@@ -119,9 +119,15 @@ em {
     font-style: italic;
 }
 
-.box p, .box ul {
+.box p {
     line-height: 19px;
     margin-top: 8px;
+}
+
+
+.box ul {
+    line-height: 19px;
+    margin-top: 5px;
 }
 
 .small_arial_caps {
