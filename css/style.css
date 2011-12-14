@@ -555,3 +555,9 @@ margin: 25px 0 9px;
 #whitebox_secondary a.more_link {
     color: #00aeef;
 }
+
+
+#whitebox_secondary footer {
+    text-align: right;
+    margin: 6px 0 4px;
+}
