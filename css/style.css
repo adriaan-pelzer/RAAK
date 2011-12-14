@@ -119,7 +119,7 @@ em {
     font-style: italic;
 }
 
-.box p {
+.box p, .box li {
     line-height: 19px;
     margin-top: 8px;
 }
