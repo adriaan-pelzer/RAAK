@@ -583,7 +583,7 @@ margin: 25px 0 9px;
 
 #mailchimp_body {
     background: #bebebe;
-    padding: 10px 10px 2px;
+    padding: 7px 10px 2px;
 }
 
 /****** mailchimp reset **********/
@@ -602,6 +602,13 @@ margin: 25px 0 9px;
 
 
 #mc_embed_signup a {
-    color: #b9e5fb;
+    color: #b9e5fb !important;
+}
+
+
+#mc_embed_signup div span {
+    display: block;
+    margin-top: 10px;
+}
 }
 
