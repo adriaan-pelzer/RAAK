@@ -642,3 +642,7 @@ margin: 25px 0 9px;
     text-transform: uppercase;
     font-size: 9px!important;
 }
+
+.indicate-required {
+font-style: normal!important;
+}
