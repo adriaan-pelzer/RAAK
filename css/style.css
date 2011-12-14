@@ -611,8 +611,12 @@ margin: 25px 0 9px;
     margin-top: 10px;
 }
 
+.mc-field-group {
+    margin-left: 0!important;
+}
+
 #mc_embed_signup .mc-field-group label {
-    font-size: 9px;
+    font-size: 9px!important;
     font-family: arial, sans-serif;
     text-transform: uppercase;
     color: white;
