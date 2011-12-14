@@ -646,3 +646,11 @@ margin: 25px 0 9px;
 .indicate-required {
 font-style: normal!important;
 }
+
+/********* Twitter ***********/
+
+#twitter_top {
+    background: url(../images/sidebar_twitter_top.png);
+    height: 26px;
+    padding: 15px 0 0 10px;
+}
