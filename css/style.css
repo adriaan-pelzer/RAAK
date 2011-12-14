@@ -187,6 +187,7 @@ strong {
 
 #content {
     width: 760px;
+    display: inline-block;
 }
 
 .tab_container {
@@ -229,6 +230,11 @@ a.active, a.active span {
     text-transform: uppercase;
 }
 
+.sidebar {
+    width: 181px;
+    margin-left: 18px;
+    display: inline-block;
+}
 
 /************** header ***************/
 

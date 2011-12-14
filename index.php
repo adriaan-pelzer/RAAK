@@ -480,7 +480,7 @@ function next () {
                 </div><!-- #whitebox_secondary -->
             </section><!-- tab_container -->
         </section><!-- #content -->
-            <div id="primary" class="sidebar">
+            <div class="sidebar">
         <div id="mailchimp">
             <div id="mailchimp_top"></div>
             <div id="mailchimp_body">
@@ -639,7 +639,6 @@ function mce_success_cb(resp){
 </script>
             <!--End mc_embed_signup-->
             </div><!-- mailchimp_body -->
-            <div id="mailchimp_bottom"></div>
         </div><!-- mailchimp -->
         <div id="twitter">
             <div id="twitter_top"><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></div>
