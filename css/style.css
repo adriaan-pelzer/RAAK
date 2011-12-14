@@ -125,11 +125,6 @@ em {
 }
 
 
-.box ul {
-    line-height: 19px;
-    margin-top: 5px;
-}
-
 .small_arial_caps {
     font: 10px arial, sans-serif;
     text-transform: uppercase;
@@ -562,3 +557,10 @@ margin: 25px 0 9px;
     text-align: right;
     margin: 6px 0 4px;
 }
+
+
+#whitebox_secondary ul {
+    line-height: 19px;
+    margin-top: 5px;
+}
+
