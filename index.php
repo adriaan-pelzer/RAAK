@@ -187,7 +187,7 @@ _gaq.push(['_trackPageview']);
 <body class="wordpress y2011 m12 d07 h07 home page pageid-4 page-author-admin page-template page-template-home-php">
 <div id="wrapper" class="hfeed">
     <header id="header" class="rounded-corners din-schrift">
-        <section id="blog-title">
+        <h1 id="blog-title">
             <div id="logo_letter_r1" class="logo_letter">
                 <a href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/4bd891a62ea023f66c37176c84d4a7fa.png&width=35&height=42" />
@@ -208,7 +208,7 @@ _gaq.push(['_trackPageview']);
                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/ba0c3f6be22d07916abf6ca1f7d37d8a.jpg&width=35&height=42" />
                 </a>
             </div>
-        </section>
+        </h1>
         <div id="blog-description">Putting you in touch with your crowds</div>
         <div id="access">
             <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
@@ -289,21 +289,23 @@ function next () {
 
 //-->
 </script>
-    <section id="container" class="rounded-corners">
-        <section id="content">
+    <div id="container" class="rounded-corners">
+        <div id="content">
             <section id="logox_counter" class="rounded-corners din-schrift">
                 <div id="logox_counter_arrow">
                     <span class="point_left"></span>
                     <span class="point_right"></span>
                 </div>
-                <h3># OF LOGO COMBINATIONS</h3>
+                <header>
+                    <h2># OF LOGO COMBINATIONS</h2>
+                </header>
                 <div id="logox_counter_number">7744</div>
                 <a id="read_the_logo_story" href="http://wewillraakyou.com/2010/11/the-perpetually-changing-crowdsourced-raak-logo/">Read the story behind our logo</a>
                 <hr />
                 <a id="upload_a_letter" href="http://wewillraakyou.com/wp-content/themes/RAAK/logo-project/">Upload a letter</a>
             </section><!-- #logox_counter -->
             <section id="bluebox_home_left" class="bluebox box rounded-corners">
-                <h3 class="din-schrift"><a href="http://wewillraakyou.com/our-work/">Our Work</a></h3>
+                <h2 class="din-schrift"><a href="http://wewillraakyou.com/our-work/">Our Work</a></h2>
                 <hr />    
                 <p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
             </section><!-- #bluebox_home_left -->
@@ -357,7 +359,7 @@ function next () {
                             <span class="bluebox_body_content_link_text"><a href="http://wewillraakyou.com/our-work/?category=impact-projects" rel="nofollow">More Projects</a></span><span class="bluebox_body_content_link_arrow"><a href="http://wewillraakyou.com/our-work/?category=impact-projects" rel="nofollow">&#9660;</a></span>
                         </div>
                     </section -->
-                    <section class="bluebox_body_content" id="consulting">
+                    <div class="bluebox_body_content" id="consulting">
                         <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/"><img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png"  width="315" /></a>
                         <ul>
                             <li class="bluebox_body_content_sub">
@@ -376,17 +378,17 @@ function next () {
                                 <a href="http://wewillraakyou.com/our-work/?category=consulting" rel="nofollow">More Projects &#9660;</a>
                             </li>
                         </ul>
-                    </section>
+                    </div>
             </section><!-- #bluebox_home_right -->
             <section class="tab_container whitebox-primary">
                 <div class="grey_tab tab tab104 rounded-corners">
-                        Latest Posts
+                        <h2>Latest Posts</h2>
                 </div><!-- .grey_tab -->
-                <section id="whitebox_primary" class="whitebox box rounded-corners">
-                    <section id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
+                <div id="whitebox_primary" class="whitebox box rounded-corners">
+                    <div id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
                             <h3><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></h3>
                         <hr />
-                        <section class="whitebox_primary_body_attr">
+                        <div class="whitebox_primary_body_attr">
                             <span class="whitebox_primary_body_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
                             <span class="seperator">|</span>
                             <span class="whitebox_primary_body_attr_item date"> 5 Dec 2011</span>
@@ -394,7 +396,7 @@ function next () {
                             <!--span class="whitebox_primary_body_attr_item time">12:44</span>
                             <span class="seperator">|</span-->
                             <span class="whitebox_primary_body_attr_item comments"><img class="commenticon" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
-                        </section><!-- .whitebox_primary_body_attr -->
+                        </div><!-- .whitebox_primary_body_attr -->
                         <div class="whitebox_primary_body_content">
                             <p>
                                 Later this week the Pulitzer Prize Board will <a href="http://www.pulitzer.org/digital_entries">announce the details</a> of their new journalism prize categories, which will emphasize real-time reporting (that&#39;s live-tweeting to us tweeps). Until then, there's the weekly RAAKonteur.
@@ -407,7 +409,7 @@ function next () {
                         <hr class="solid" />
                         <h3><a href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/">The RAAKonteur #65 - Kevin Rose's new project, The Facebook Freakyline and more</a></h3>
                         <hr />
-                        <section class="whitebox_primary_body_attr">
+                        <div class="whitebox_primary_body_attr">
                             <span class="whitebox_primary_body_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
                             <span class="seperator">|</span>
                             <span class="whitebox_primary_body_attr_item date">28 Nov 2011</span>
@@ -415,7 +417,7 @@ function next () {
                             <!--span id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item">11:59</span>
                             <span class="seperator">|</span-->
                             <span class="whitebox_primary_body_attr_item comments"><img class="commenticon" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
-                        </section><!-- .whitebox_primary_body_attr -->
+                        </div><!-- .whitebox_primary_body_attr -->
                         <div class="whitebox_primary_body_content">
                             <p>
                                 This week we are trying out a frictionless newsletter, so without further ado...
@@ -426,20 +428,20 @@ function next () {
                             </div><!-- .whitebox_primary_body_content_right -->
                         </div><!-- .whitebox_primary_body_content -->
                         <hr class="solid" />
-                    </section>
+                    </div>
                     <footer class="whitebox_primary_body_footer box_nav small_arial_caps">
                         <a href="http://wewillraakyou.com/blog-archive/">All blog posts</a>
-                        <section class="whitebox_primary_body_footer_right">
+                        <div class="whitebox_primary_body_footer_right">
                             <a class="active" onclick="javascript: previous();"><span class="arrow">&#9668;</arrow> Previous</a>
                             <span class="seperator">|</span>
                             <a onclick="javascript: next();">Next <span class="arrow">&#9658;</span></a>
-                        </section><!-- .whitebox_primary_body_footer_right -->
+                        </div><!-- .whitebox_primary_body_footer_right -->
                     </footer><!-- .whitebox_primary_body_footer -->
-                </section><!-- #whitebox_primary -->
+                </div><!-- #whitebox_primary -->
             </section><!-- tab_container -->
             <section class="tab_container whitebox-secondary">
                 <div class="grey_tab tab tab104 rounded-corners">
-                        Other Posts
+                        <h2>Other Posts</h2>
                 </div><!-- .grey_tab -->
                 <div id="whitebox_secondary" class="whitebox box rounded-corners">
                     <div id="whitebox_secondary_body_content_one">
@@ -479,7 +481,7 @@ function next () {
                     </div><!-- #whitebox_secondary_body_content_three -->
                 </div><!-- #whitebox_secondary -->
             </section><!-- tab_container -->
-        </section><!-- #content -->
+        </div><!-- #content -->
             <section class="sidebar">
         <div id="mailchimp">
             <div id="mailchimp_top"></div>
@@ -641,7 +643,7 @@ function mce_success_cb(resp){
             </div><!-- mailchimp_body -->
         </div><!-- mailchimp -->
         <div id="twitter">
-            <div id="twitter_top"><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></div>
+            <div id="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
             <div id="twitter_body">
             <div id="twitter_follow"><a href="http://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a></div>
             <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
@@ -680,7 +682,7 @@ new TWTR.Widget({
             <div id="twitter_bottom"></div>
         </div><!-- twitter -->
     </section><!-- .sidebar -->
-    </section><!-- #container -->
+    </div><!-- #container -->
 
 
     <div id="footer">
