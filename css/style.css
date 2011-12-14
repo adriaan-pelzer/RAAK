@@ -708,6 +708,6 @@ font-style: normal!important;
     text-transform: uppercase;
 }
 
-#twitter_body #twtr-widget-1 .twtr-widget-profile h3 {
+.twtr-widget-profile h3 {
     margin: 0!important;
 }
