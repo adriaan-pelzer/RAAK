@@ -583,3 +583,13 @@ margin: 25px 0 9px;
 #mailchimp_body {
     background: #bebebe;
 }
+
+/****** mailchimp reset **********/
+
+#mc_embed_signup * {
+    padding-top: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+}
+
