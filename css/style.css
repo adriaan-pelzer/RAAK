@@ -669,6 +669,7 @@ font-style: normal!important;
 #twitter_body #twtr-widget-1 * {
     color: #ffffff!important;
     background: none!important;
+    font: 11px arial, sans-serif;
 }
 
 
