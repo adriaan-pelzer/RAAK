@@ -625,10 +625,20 @@ margin: 25px 0 9px;
 
 
 #mc_embed_signup .mc-field-group input {
-    background: #ffffff;
+    background: #ffffff!important;
     width: 100%!important;
     margin: 0!important;
     height: 25px;
     color: #666666!important;
 }
 
+#mc-embedded-subscribe-container input[type="submit"] {
+    background: #ffffff!important;
+    width: 78px!important;
+    height: 25px;
+    margin: 25px 0 7px!important;
+    color: #00aeef!important;
+    text-align: center!important;
+    text-transform: uppercase;
+    font-size: 9px!important;
+}
