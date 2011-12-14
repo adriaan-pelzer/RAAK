@@ -702,12 +702,12 @@ font-style: normal!important;
 
 .twtr-hd {
     border-bottom: 1px dotted #dddddd;
-    padding: 0 0 13px 0;
+    padding: 0 0 13px 0 !important;
     width: 160px;
     margin-bottom: 5px;
     text-transform: uppercase;
 }
 
-.twtr-widget-profile h3 {
+.twtr-widget h3 {
     margin: 0!important;
 }
