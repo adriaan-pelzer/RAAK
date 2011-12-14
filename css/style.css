@@ -662,6 +662,17 @@ font-style: normal!important;
     padding: 7px 10px 2px;
 }
 
-.twtr-widget * {
-    color: #ffffff;
+#twitter_body #twtr-widget-1 * {
+    color: #ffffff!important;
+    background: none!important;
+}
+
+
+#twitter_body #twtr-widget-1 a {
+    color: #b9e5fb !important;
+}
+
+
+#twitter_body #twtr-widget-1 .twtr-doc {
+    width: 181px;
 }
