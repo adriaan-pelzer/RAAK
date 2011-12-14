@@ -578,20 +578,21 @@ margin: 25px 0 9px;
 #mailchimp_top {
     background: url(../images/sidebar_raakonteur_top.png);
     height: 41px;
+    margin-bottom: -7px;
 }
 
 #mailchimp_body {
     background: #bebebe;
+    padding: 10px 10px 10px;
 }
 
 /****** mailchimp reset **********/
 
 #mc_embed_signup * {
-    padding-top: 0!important;
-    margin: 0!important;
     background: none!important;
     border: 0!important;
     color: #ffffff!important;
     font-size: 11px!important;
+    text-align: left!important;
 }
 
