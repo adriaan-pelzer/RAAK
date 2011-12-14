@@ -649,6 +649,10 @@ font-style: normal!important;
 
 /********* Twitter ***********/
 
+#twitter {
+    margin-top: 14px;
+}
+
 #twitter_top {
     background: url(../images/sidebar_twitter_top.png);
     height: 26px;
