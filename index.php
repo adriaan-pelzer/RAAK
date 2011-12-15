@@ -50,13 +50,13 @@ var _wpcf7 = { cached: 1 };
 </script>
 
 <!-- BEGIN: Open Graph Protocol Tools: http://opengraphprotocol.org/ for more info -->
-<meta property="og:title" content="Home" />
-<meta property="og:type" content="blog" />
-<meta property="og:image" content="http://wewillraakyou.com/wp-content/plugins/open-graph-protocol-tools/default.png" />
-<meta property="og:url" content="http://wewillraakyou.com/" />
-<meta property="og:site_name" content="RAAK | Digital &amp;amp; Social Media Agency London" />
-<meta property="fb:admins" content="544207149" />
-<meta property="fb:appid" content="101262553270969" />
+<!--meta property="og:title" content="Home" /-->
+<!--meta property="og:type" content="blog" /-->
+<!--meta property="og:image" content="http://wewillraakyou.com/wp-content/plugins/open-graph-protocol-tools/default.png" /-->
+<!--meta property="og:url" content="http://wewillraakyou.com/" /-->
+<!--meta property="og:site_name" content="RAAK | Digital &amp;amp; Social Media Agency London" /-->
+<!--meta property="fb:admins" content="544207149" /-->
+<!--meta property="fb:appid" content="101262553270969" /-->
 <!-- End: Open Graph Protocol Tools-->
 <link id='MediaRSS' rel='alternate' type='application/rss+xml' title='NextGEN Gallery RSS Feed' href='http://wewillraakyou.com/wp-content/plugins/nextgen-gallery/xml/media-rss.php' />
 
