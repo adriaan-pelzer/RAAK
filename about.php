@@ -9,12 +9,14 @@ Template Name: About
 		<div class="content">
             <div class="whitebox whitebox_primary box rounded-corners">
                 <div id="whitebox_primary_body">
-                    <div id="whitebox_primary_body_title">About</div>
-                    <div class="whitebox_primary_body_nav">
-                        <span id="whitebox_primary_body_nav_what-we-do" class="whitebox_primary_body_nav_item active"><a onclick="javacsript: expand('what-we-do');">What we do</a></span>
-                        <span class="seperator">|</span>
-                        <span id="whitebox_primary_body_nav_who-we-are" class="whitebox_primary_body_nav_item"><a onclick="javacsript: expand('who-we-are');">Who we are</a></span>
-                    </div><!-- whitebox_primary_body_nav -->
+                    <header>
+                        <h2 class="din-schrift">About</h2>
+                        <div class="whitebox_primary_body_nav">
+                            <span id="whitebox_primary_body_nav_what-we-do" class="whitebox_primary_body_nav_item active"><a onclick="javacsript: expand('what-we-do');">What we do</a></span>
+                            <span class="seperator">|</span>
+                            <span id="whitebox_primary_body_nav_who-we-are" class="whitebox_primary_body_nav_item"><a onclick="javacsript: expand('who-we-are');">Who we are</a></span>
+                        </div><!-- whitebox_primary_body_nav -->
+                    </header>
                     <hr />
                     <div id="what-we-do" class="whitebox_primary_body_content">
                         <p>We consult, train and develop - and yes that includes building - social media solutions.</p>
@@ -174,8 +176,7 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
                     </div><!-- whitebox_primary_body_content -->
                 </div><!-- #whitebox_primary_body -->
             </div><!-- #whitebox_primary -->
-            <div id="bluebox">
-                <div id="bluebox_top"></div>
+            <div id="bluebox" class="bluebox box rounded-corners">
                 <div id="bluebox_body">
                     <div id="bluebox_body_nav">
                         What we do
@@ -192,7 +193,6 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
                             I'm intrigued by innovation.<br />Not very interested in the status quo.<br />                        </div><!-- bluebox_body_content_item -->
                     </div><!-- bluebox_body_content -->
                 </div><!-- bluebox_body -->
-                <div id="bluebox_bottom"></div>
             </div><!-- #bluebox -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>

@@ -462,10 +462,10 @@ a.active, a.active span {
     margin-right: 6px;
 }
 
-.whitebox_primary_body_content p {
+/*.whitebox_primary_body_content p {
     width: 159px;
     display: inline-block;
-}
+}*/
 
 .whitebox_primary_body_content_right {
     display: inline-block;
