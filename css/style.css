@@ -702,12 +702,20 @@ font-style: normal!important;
 
 .twtr-hd {
     border-bottom: 1px dotted #dddddd;
-    padding: 0 0 13px 0 !important;
+    padding: 0 0 10px 0 !important;
     width: 160px;
-    margin-bottom: 5px;
     text-transform: uppercase;
 }
 
 .twtr-widget .twtr-doc .twtr-hd h3 {
     margin: 0!important;
+    font: 9px 'Lucida Green'!important;
+}
+
+.twtr-tweet {
+    padding: 10px 0;
+}
+
+.twtr-widget em {
+font-size: 9px!important;
 }
