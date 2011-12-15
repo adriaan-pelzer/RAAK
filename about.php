@@ -12,9 +12,7 @@ Template Name: About
                     <header>
                         <h2 class="din-schrift">About</h2>
                         <div class="whitebox_primary_body_nav">
-                            <span id="whitebox_primary_body_nav_what-we-do" class="whitebox_primary_body_nav_item active"><a onclick="javacsript: expand('what-we-do');">What we do</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_nav_who-we-are" class="whitebox_primary_body_nav_item"><a onclick="javacsript: expand('who-we-are');">Who we are</a></span>
+                            <a onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
                         </div><!-- whitebox_primary_body_nav -->
                     </header>
                     <hr />
