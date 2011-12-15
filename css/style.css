@@ -719,3 +719,18 @@ font-style: normal!important;
 .twtr-widget em {
 font-size: 9px!important;
 }
+
+.twtr-ft img {
+    display: none;
+}
+
+a.twtr-join-conv {
+color: white!important;
+font: 9px arial, sans-serif;
+background: url(../images/twitter_logo.png) no-repeat left top;
+display: inline-block;
+width: 120px;
+height: 15px;
+padding-left: 40px;
+padding-top: 15px;
+}
