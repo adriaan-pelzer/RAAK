@@ -373,7 +373,7 @@ function next () {
                             </li>
                             <li class="bluebox_body_content_sub">
                                 <span class="label">Overview:</span>
-                                <span class="overview">A strategy & functional specification for a social network for the world's most influential people. <br \><strong>Read More >></strong></span>
+                                <span class="overview">A strategy & functional specification for a social network for the world's most influential people. <br /><strong>Read More >></strong></span>
                             </li>
                             <li class="bluebox_body_content_link">
                                 <a href="http://wewillraakyou.com/our-work/?category=consulting" rel="nofollow">More Projects &#9660;</a>
