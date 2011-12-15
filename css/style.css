@@ -722,12 +722,11 @@ font-size: 9px!important;
 
 .twtr-ft {
     margin-top: 15px!important;
-    padding-top: 5px!important;
     border-top: 1px solid #B9E5FB;
 }
 
 .twtr-ft div {
-    padding: 10px 0!important;
+    padding: 5px 0 10px!important;
 }
 
 .twtr-ft span {
