@@ -709,7 +709,7 @@ font-style: normal!important;
 
 .twtr-widget .twtr-doc .twtr-hd h3 {
     margin: 0!important;
-    font: 9px 'Lucida Green'!important;
+    font: 9px 'Lucida Grande'!important;
 }
 
 .twtr-tweet {
@@ -745,4 +745,24 @@ display: inline-block;
 width: 131px;
 height: 15px;
 padding-top: 15px;
+}
+
+footer {
+    font: 11px arial, sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #ffffff;
+    text-align: right;
+}
+
+.footer_copyright {
+    float: left;
+}
+
+footer a {
+    color: #b9e5fb;
+}
+
+footer seperator {
+    color: #bebebe;
 }
