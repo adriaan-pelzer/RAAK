@@ -25,7 +25,7 @@ Template Name:Home
                 <hr />    
                 <p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
             </section><!-- #bluebox_home_left -->
-            <section id="bluebox_home_right" class="bluebox box rounded-corners">
+            <section id="bluebox_home_right" class="bluebox bluebox_primary box rounded-corners">
                     <section id="bluebox_body_nav" class="box_nav">
                         <h3 class="bluebox_body_nav_item small_arial_caps"><a onclick="javascript: expand('social-media-ready');">social media ready</a></h3>
                         <span class="seperator">|</span>

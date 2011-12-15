@@ -209,6 +209,9 @@ strong {
     width: 362px;
 }
 
+.bluebox_primary {
+    width: 318px;
+}
 
 #whitebox_secondary {
     width: 323px;
@@ -394,7 +397,6 @@ a.active, a.active span {
 
 
 #bluebox_home_right {
-    width: 318px;
     margin-left: -33px;
     font: 9px arial, sans-serif;
     float: right;

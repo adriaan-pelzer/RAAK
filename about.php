@@ -176,7 +176,7 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
                     </div><!-- whitebox_primary_body_content -->
                 </div><!-- #whitebox_primary_body -->
             </div><!-- #whitebox_primary -->
-            <div id="bluebox" class="bluebox box rounded-corners">
+            <div id="bluebox" class="bluebox bluebox_primary box rounded-corners">
                 <div id="bluebox_body">
                     <div id="bluebox_body_nav">
                         What we do
