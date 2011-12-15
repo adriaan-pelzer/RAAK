@@ -716,7 +716,7 @@ font-style: normal!important;
     padding: 10px 0;
 }
 
-.twtr-widget em {
+.twtr-widget em a {
 font-size: 9px!important;
 }
 
@@ -724,7 +724,7 @@ font-size: 9px!important;
     display: none;
 }
 
-a.twtr-join-conv {
+#twitter_body #twtr-widget-1 a.twtr-join-conv {
 color: white!important;
 font: 9px arial, sans-serif;
 background: url(../images/twitter_logo.png) no-repeat left top;
