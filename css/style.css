@@ -186,7 +186,7 @@ strong {
     width: 104px;
 }
 
-#content {
+.content {
     width: 760px;
     display: inline-block;
 }
@@ -305,7 +305,7 @@ a.active, a.active span {
 
 /************ body *************/
 
-#container {
+.container {
     background: url(../images/container_background.png);
     padding: 20px 20px 35px 20px;
 }
