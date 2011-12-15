@@ -720,6 +720,14 @@ font-style: normal!important;
 font-size: 9px!important;
 }
 
+.twtr-ft div {
+    padding: 10px 0;
+}
+
+.twtr-ft span {
+    float: none;
+}
+
 .twtr-ft img {
     display: none;
 }
@@ -729,8 +737,7 @@ color: white!important;
 font: 9px arial, sans-serif;
 background: url(../images/twitter_logo.png) no-repeat left top;
 display: inline-block;
-width: 120px;
+width: 131px;
 height: 15px;
-padding-left: 40px;
 padding-top: 15px;
 }
