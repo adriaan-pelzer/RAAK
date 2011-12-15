@@ -7,9 +7,7 @@ Template Name: About
 
 	<div id="container">
 		<div id="content">
-            <div id="whitebox_primary">
-                <div id="whitebox_primary_top">
-                </div><!-- #whitebox_primary_top -->
+            <div class="whitebox whitebox_primary box rounded-corners">
                 <div id="whitebox_primary_body">
                     <div id="whitebox_primary_body_title">About</div>
                     <div class="whitebox_primary_body_nav">
@@ -175,8 +173,6 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
 <p>After many caffeine and pint fueled discussions over the course of a year it became obvious. He and <a title="Wessel van Rensburg" href="/about/the-founders/wessel-van-rensburg/">WVR</a> would put their combined media skills under one roof.</p>                            </div><!-- .whitebox_primary_body_content_founder_text -->                                        </div><!-- whitebox_primary_body_content_founder -->
                     </div><!-- whitebox_primary_body_content -->
                 </div><!-- #whitebox_primary_body -->
-                <div id="whitebox_primary_bottom">
-                </div><!-- #whitebox_primary_bottom -->
             </div><!-- #whitebox_primary -->
             <div id="bluebox">
                 <div id="bluebox_top"></div>
