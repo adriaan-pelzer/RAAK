@@ -184,7 +184,7 @@ _gaq.push(['_trackPageview']);
 </script>
 </head>
 
-<body class="wordpress y2011 m12 d07 h07 <?php echo get_the_title(); ?> page pageid-4 page-author-admin page-template page-template-home-php">
+<body class="wordpress y2011 m12 d07 h07 <?php echo get_template(); ?> page pageid-4 page-author-admin page-template page-template-home-php">
 <div id="wrapper" class="hfeed">
     <header id="header" class="rounded-corners din-schrift">
         <div id="blog-title">
