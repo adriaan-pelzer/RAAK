@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
-<head profile="http://gmpg.org/xfn/11">
+<head>
     <title>RAAK | Digital &amp; Social Media Agency London - Putting you in touch with your crowds</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="google-site-verification" content="gopVig1vD9ASr_RMvJGPk5w2Rk9dQ16tJY4v7-5E5dc" />
@@ -42,7 +42,7 @@ var shutterSettings = {
 <link rel='canonical' href='http://wewillraakyou.com/' />
 <link rel='shortlink' href='http://wp.me/P10v35-4' />
 
-<script language="javascript" type="text/javascript" src="http://wewillraakyou.com/wp-content/plugins/quicktimepost.js"></script>
+<script type="text/javascript" src="http://wewillraakyou.com/wp-content/plugins/quicktimepost.js"></script>
 <script type="text/javascript">
 //<![CDATA[
 var _wpcf7 = { cached: 1 };
@@ -187,7 +187,8 @@ _gaq.push(['_trackPageview']);
 <body class="wordpress y2011 m12 d07 h07 home page pageid-4 page-author-admin page-template page-template-home-php">
 <div id="wrapper" class="hfeed">
     <header id="header" class="rounded-corners din-schrift">
-        <h1 id="blog-title">
+        <div id="blog-title">
+            <h1>RAAK</h1>
             <div id="logo_letter_r1" class="logo_letter">
                 <a href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/4bd891a62ea023f66c37176c84d4a7fa.png&width=35&height=42" />
@@ -208,7 +209,7 @@ _gaq.push(['_trackPageview']);
                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/ba0c3f6be22d07916abf6ca1f7d37d8a.jpg&width=35&height=42" />
                 </a>
             </div>
-        </h1>
+        </div>
         <div id="blog-description">Putting you in touch with your crowds</div>
         <div id="access">
             <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
@@ -432,7 +433,7 @@ function next () {
                     <footer class="whitebox_primary_body_footer box_nav small_arial_caps">
                         <a href="http://wewillraakyou.com/blog-archive/">All blog posts</a>
                         <div class="whitebox_primary_body_footer_right">
-                            <a class="active" onclick="javascript: previous();"><span class="arrow">&#9668;</arrow> Previous</a>
+                            <a class="active" onclick="javascript: previous();"><span class="arrow">&#9668;</span> Previous</a>
                             <span class="seperator">|</span>
                             <a onclick="javascript: next();">Next <span class="arrow">&#9658;</span></a>
                         </div><!-- .whitebox_primary_body_footer_right -->

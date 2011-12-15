@@ -134,6 +134,7 @@ em {
 .seperator {
     font-size: 9px;
     margin: 0 7px;
+    vertical-align: top;
 }
 
 .label {
