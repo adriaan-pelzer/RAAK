@@ -100,7 +100,7 @@ Template Name:Home
                 <div class="grey_tab tab tab104 rounded-corners">
                         <h2>Latest Posts</h2>
                 </div><!-- .grey_tab -->
-                <div id="whitebox_primary" class="whitebox box rounded-corners">
+                <div class="whitebox whitebox_primary box rounded-corners">
                     <div id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
                             <h3><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></h3>
                         <hr />

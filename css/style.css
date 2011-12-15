@@ -205,7 +205,7 @@ strong {
 }
 
 
-#whitebox_primary {
+.whitebox_primary {
     width: 362px;
 }
 
@@ -481,7 +481,7 @@ a.active, a.active span {
     display: block;
 }
 
-#whitebox_primary .more_link {
+.whitebox_primary .more_link {
     margin-top: 17px;
 }
 
