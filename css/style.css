@@ -721,11 +721,11 @@ font-size: 9px!important;
 }
 
 .twtr-ft div {
-    padding: 10px 0;
+    padding: 10px 0!important;
 }
 
 .twtr-ft span {
-    float: none;
+    float: none!important;
 }
 
 .twtr-ft img {
@@ -735,7 +735,7 @@ font-size: 9px!important;
 #twitter_body #twtr-widget-1 a.twtr-join-conv {
 color: white!important;
 font: 9px arial, sans-serif;
-background: url(../images/twitter_logo.png) no-repeat left top;
+background: url(../images/twitter_logo.png) no-repeat left top!important;
 display: inline-block;
 width: 131px;
 height: 15px;
