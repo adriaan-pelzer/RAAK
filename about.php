@@ -62,15 +62,15 @@ But when you have the right foundation there are times you need to make a splash
                             <div class="whitebox_primary_body_content_founder_social">
                                 <div class="whitebox_primary_body_content_founder_social_title">Follow me&#8230;</div>
                                 <div class="whitebox_primary_body_content_founder_social_right"> 
-                                    <div class="whitebox_primary_body_content_founder_social_linkedin">
+                                    <div class="whitebox_primary_body_content_founder_social_network social_linkedin">
                                         <span class="whitebox_primary_body_content_founder_social_linkedin_icon"><a href="http://za.linkedin.com/pub/adriaan-pelzer/4/874/860"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn" /></a></span>
                                         <span class="whitebox_primary_body_content_founder_social_linkedin_text"><a href="http://za.linkedin.com/pub/adriaan-pelzer/4/874/860">Linked In</a></span>
                                     </div><!-- whitebox_primary_body_content_founder_social_linkedin -->
-                                    <div class="whitebox_primary_body_content_founder_social_facebook">
+                                    <div class="whitebox_primary_body_content_founder_social_network social_facebook">
                                         <span class="whitebox_primary_body_content_founder_social_facebook_icon"><a href="http://www.facebook.com/adriaan.pelzer"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/facebook_icon.png" alt="Facebook" /></a></span>
                                         <span class="whitebox_primary_body_content_founder_social_facebook_text"><a href="http://www.facebook.com/adriaan.pelzer">Facebook</a></span>
                                     </div><!-- whitebox_primary_body_content_founder_social_facebook -->
-                                    <div class="whitebox_primary_body_content_founder_social_twitter">
+                                    <div class="whitebox_primary_body_content_founder_social_network social_twitter">
                                         <span class="whitebox_primary_body_content_founder_social_twitter_icon"><a href="http://www.twitter.com/adriaan_pelzer"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter" /></a></span>
                                         <span class="whitebox_primary_body_content_founder_social_twitter_text"><a href="http://www.twitter.com/adriaan_pelzer">Twitter</a></span>
                                     </div><!-- whitebox_primary_body_content_founder_social_twitter -->

@@ -659,8 +659,10 @@ ol {
 
 .whitebox_primary_body_content_founder_name {
     font: 17px georgia, serif;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     text-transform: none;
+    border-bottom: 1px dashed #00aeff;
+    width: 100%;
 }
 
 
@@ -669,6 +671,33 @@ ol {
     width: 149px;
     margin-right: 10px;
     vertical-align: top;
+}
+
+.whitebox_primary_body_content_founder_social {
+    margin-top: 20px;
+}
+
+.whitebox_primary_body_content_founder_social_title, .whitebox_primary_body_content_founder_social_right {
+    display: inline-block;
+    vertical-align:top;
+}
+
+.whitebox_primary_body_content_founder_social_title {
+    width: 68px;
+    padding-top: 8px;
+}
+
+.whitebox_primary_body_content_founder_social_right {
+    width: 78px;
+}
+
+
+.whitebox_primary_body_content_founder_social_right img {
+    vertical-align: middle;
+}
+
+.whitebox_primary_body_content_founder_social_network {
+    display: block;
 }
 
 
