@@ -488,7 +488,7 @@ a.active, a.active span {
     /*display: inline-block;*/
     text-align: right;
     vertical-align: top;
-    margin: 8px 0 0 38px;
+    margin: 13px 0 0 38px;
     font: 9px arial, sans-serif;
     text-transform: uppercase;
     float: right;
@@ -605,6 +605,10 @@ margin: 25px 0 9px;
 
 .whitebox_primary header {
     padding: 8px 0 6px;
+}
+
+.whitebox_primary_body_content {
+    margin-top: 20px
 }
 
 /************** Sidebar ***************/
