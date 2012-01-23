@@ -93,6 +93,11 @@ body {
     text-transform: uppercase;
 }
 
+.blue_20 {
+    color: #00aeef;
+    font-size: 20px;
+}
+
 
 .bluebox {
     background: #b9e5fb;
