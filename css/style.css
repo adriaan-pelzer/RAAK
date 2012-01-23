@@ -608,13 +608,14 @@ margin: 25px 0 9px;
 }
 
 .whitebox_primary_body_content {
-    margin-top: 20px
+    margin: 20px 0 15px;
 }
 
 ol {
     list-style: decimal;
     padding-left: 20px;
     margin-top: 8px;
+    line-height: 19px;
 }
 
 /************** Sidebar ***************/

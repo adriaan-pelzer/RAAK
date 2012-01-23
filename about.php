@@ -7,7 +7,7 @@ Template Name: About
 
 	<div class="container rounded-corners">
 		<div class="content">
-            <div class="whitebox whitebox_primary box rounded-corners">
+            <section class="whitebox whitebox_primary box rounded-corners">
                 <header>
                     <div class="whitebox_primary_body_nav smaller_arial_caps box_nav">
                         <a class="active" onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
@@ -171,25 +171,25 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
 
 <p>After many caffeine and pint fueled discussions over the course of a year it became obvious. He and <a title="Wessel van Rensburg" href="/about/the-founders/wessel-van-rensburg/">WVR</a> would put their combined media skills under one roof.</p>                            </div><!-- .whitebox_primary_body_content_founder_text -->                                        </div><!-- whitebox_primary_body_content_founder -->
                 </div><!-- whitebox_primary_body_content -->
-            </div><!-- #whitebox_primary -->
-            <div id="bluebox" class="bluebox bluebox_primary box rounded-corners">
-                <div id="bluebox_body">
-                    <div id="bluebox_body_nav">
-                        What we do
-                    </div>
-                    <hr />
-                    <div class="bluebox_body_content">
-                        <div id="bluebox_body_content_what-we-do" class="bluebox_body_content_item">
-                            If advertising is a tax on mediocrity, you've come to a tax free zone.                        </div><!-- bluebox_body_content_item -->
-                        <div id="bluebox_body_content_adriaan" class="bluebox_body_content_item" style="display: none;">
-                            I dream code.<br />I write machine poetry, that make electrons dance.<br />                        </div><!-- bluebox_body_content_item -->
-                        <div id="bluebox_body_content_wessel" class="bluebox_body_content_item" style="display: none;">
-                            I breathe media.<br />I inhale news and exhale content.<br />Marked up, tagged and loaded.                        </div><!-- bluebox_body_content_item -->
-                        <div id="bluebox_body_content_gerrie" class="bluebox_body_content_item" style="display: none;">
-                            I'm intrigued by innovation.<br />Not very interested in the status quo.<br />                        </div><!-- bluebox_body_content_item -->
-                    </div><!-- bluebox_body_content -->
-                </div><!-- bluebox_body -->
-            </div><!-- #bluebox -->
+            </section><!-- #whitebox_primary -->
+            <section class="bluebox bluebox_primary box rounded-corners">
+                <header>
+                    What we do
+                </header>
+                <hr />
+                <div id="bluebox_body_content_what-we-do" class="bluebox_body_content_item">
+                    If advertising is a tax on mediocrity, you've come to a tax free zone.
+                </div><!-- bluebox_body_content_item -->
+                <div id="bluebox_body_content_adriaan" class="bluebox_body_content_item" style="display: none;">
+                    I dream code.<br />I write machine poetry, that make electrons dance.<br />
+                </div><!-- bluebox_body_content_item -->
+                <div id="bluebox_body_content_wessel" class="bluebox_body_content_item" style="display: none;">
+                    I breathe media.<br />I inhale news and exhale content.<br />Marked up, tagged and loaded.
+                </div><!-- bluebox_body_content_item -->
+                <div id="bluebox_body_content_gerrie" class="bluebox_body_content_item" style="display: none;">
+                    I'm intrigued by innovation.<br />Not very interested in the status quo.<br />
+                </div><!-- bluebox_body_content_item -->
+            </section><!-- #bluebox -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
