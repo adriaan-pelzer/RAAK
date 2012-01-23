@@ -136,6 +136,12 @@ em {
     color: #00aeff;
 }
 
+.smaller_arial_caps {
+    font: 9px arial, sans-serif;
+    text-transform: uppercase;
+    color: #00aeff;
+}
+
 .seperator {
     font-size: 9px;
     margin: 0 7px;
@@ -504,6 +510,11 @@ margin: 25px 0 9px;
 
 .whitebox_primary_body_footer_right {
     float: right;
+}
+
+
+.whitebox_primary_body_footer_left {
+    float: left;
 }
 
 
