@@ -618,6 +618,14 @@ ol {
     line-height: 19px;
 }
 
+.blue_hr {
+    border-color: #00aeff;
+}
+
+.bluebox_primary_body_nav {
+    color: #00aeff;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/

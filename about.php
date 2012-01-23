@@ -174,9 +174,11 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
             </section><!-- #whitebox_primary -->
             <section class="bluebox bluebox_primary box rounded-corners">
                 <header>
+                    <div class="bluebox_primary_body_nav box_nav smaller_arial_caps">
                     What we do
+                    </div>
                 </header>
-                <hr />
+                <hr class="blue_hr" />
                 <div id="bluebox_body_content_what-we-do" class="bluebox_body_content_item">
                     If advertising is a tax on mediocrity, you've come to a tax free zone.
                 </div><!-- bluebox_body_content_item -->
