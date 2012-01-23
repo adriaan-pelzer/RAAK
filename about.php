@@ -10,7 +10,7 @@ Template Name: About
             <section class="whitebox whitebox_primary box rounded-corners">
                 <header>
                     <div class="whitebox_primary_body_nav smaller_arial_caps box_nav">
-                        <a class="active" onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
+                        <a class="active" onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator seperator_smaller">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
                     </div><!-- whitebox_primary_body_nav -->
                     <h2 class="din-schrift blue_20">About</h2>
                 </header>
@@ -48,16 +48,16 @@ But when you have the right foundation there are times you need to make a splash
 
                 </div><!-- whitebox_primary_body_content -->
                 <div id="who-we-are" class="whitebox_primary_body_content">
-                    <div class="whitebox_primary_body_content_nav smaller_arial_caps">
+                    <div class="whitebox_primary_body_content_nav smaller_arial_caps box_nav">
                         <a id="whitebox_primary_body_content_nav_gerrie" class="whitebox_primary_body_content_nav_item active" onclick="javascript: expand_person('gerrie');">Gerrie Smits</a>
-                        <span class="seperator">|</span>
+                        <span class="seperator seperator_smaller">|</span>
                         <a id="whitebox_primary_body_content_nav_wessel" class="whitebox_primary_body_content_nav_item" onclick="javascript: expand_person('wessel');">Wessel van Rensburg</a>
-                        <span class="seperator">|</span>
+                        <span class="seperator seperator_smaller">|</span>
                         <a id="whitebox_primary_body_content_nav_adriaan" class="whitebox_primary_body_content_nav_item" onclick="javascript: expand_person('adriaan');">Adriaan Pelzer</a>
                     </div><!-- whitebox_primary_body_content_nav -->
                     <hr class="solid" />
                     <div id="whitebox_primary_body_content_adriaan" class="whitebox_primary_body_content_founder">
-                        <div class="whitebox_primary_body_content_founder_info smaller_arial_caps">
+                        <div class="whitebox_primary_body_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_body_content_founder_name">Adriaan Pelzer</div>
                             <hr />
                             <div class="whitebox_primary_body_content_founder_social">

@@ -148,6 +148,10 @@ em {
     vertical-align: top;
 }
 
+.seperator_smaller {
+    font-size: 8px
+}
+
 .label {
     width: 60px;
     text-transform: uppercase;
@@ -642,6 +646,16 @@ ol {
     letter-spacing: 2px;
     text-transform: uppercase;
     padding-right: 80px;
+}
+
+.whitebox_primary_body_content_nav {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.whitebox_primary_body_content_founder_name {
+    font: 17px georgia, serif;
+    margin-bottom: 10px;
 }
 
 /************** Sidebar ***************/
