@@ -94,21 +94,24 @@ But when you have the right foundation there are times you need to make a splash
 
 <p>In the last few years Adriaan has developed an extensive knowledge of web technologies, especially everything surrounding Social Media. That ranges from API implementations to iPhone apps and building 12,000 lines of bespoke PHP code for a social network.</p>
 
-<p>Add to that his talent for thinking creatively and you have, well, a Creative Technical Dude.</p>                            </div><!-- .whitebox_primary_body_content_founder_text -->                                        </div><!-- whitebox_primary_body_content_founder -->
+<p>Add to that his talent for thinking creatively and you have, well, a Creative Technical Dude.</p>
+                        </div><!-- .whitebox_primary_body_content_founder_text -->
+                    </div><!-- whitebox_primary_body_content_founder -->
                     <div id="whitebox_primary_body_content_wessel" class="whitebox_primary_body_content_founder" style="display: none;">
-                        <div class="whitebox_primary_body_content_founder_info">
+                        <div class="whitebox_primary_body_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_body_content_founder_name">Wessel van Rensburg</div>
-                            <hr />
                             <div class="whitebox_primary_body_content_founder_social">
                                 <div class="whitebox_primary_body_content_founder_social_title">Follow me&#8230;</div>
-                                <div class="whitebox_primary_body_content_founder_social_linkedin">
-                                    <span class="whitebox_primary_body_content_founder_social_linkedin_icon"><a href="http://uk.linkedin.com/in/wesselvanrensburg"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn" /></a></span>
-                                    <span class="whitebox_primary_body_content_founder_social_linkedin_text"><a href="http://uk.linkedin.com/in/wesselvanrensburg">Linked In</a></span>
-                                </div><!-- whitebox_primary_body_content_founder_social_linkedin -->
-                                <div class="whitebox_primary_body_content_founder_social_twitter">
-                                    <span class="whitebox_primary_body_content_founder_social_twitter_icon"><a href="http://twitter.com/wildebees"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter" /></a></span>
-                                    <span class="whitebox_primary_body_content_founder_social_twitter_text"><a href="http://twitter.com/wildebees">Twitter</a></span>
-                                </div><!-- whitebox_primary_body_content_founder_social_twitter -->
+                                <div class="whitebox_primary_body_content_founder_social_right"> 
+                                    <div class="whitebox_primary_body_content_founder_social_linkedin">
+                                        <span class="whitebox_primary_body_content_founder_social_linkedin_icon"><a href="http://uk.linkedin.com/in/wesselvanrensburg"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn" /></a></span>
+                                        <span class="whitebox_primary_body_content_founder_social_linkedin_text"><a href="http://uk.linkedin.com/in/wesselvanrensburg">Linked In</a></span>
+                                    </div><!-- whitebox_primary_body_content_founder_social_linkedin -->
+                                    <div class="whitebox_primary_body_content_founder_social_twitter">
+                                        <span class="whitebox_primary_body_content_founder_social_twitter_icon"><a href="http://twitter.com/wildebees"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter" /></a></span>
+                                        <span class="whitebox_primary_body_content_founder_social_twitter_text"><a href="http://twitter.com/wildebees">Twitter</a></span>
+                                    </div><!-- whitebox_primary_body_content_founder_social_twitter -->
+                                </div><!-- whitebox_primary_body_content_founder_social_right -->
                             </div><!-- whitebox_primary_body_content_founder_social -->
                         </div><!-- whitebox_primary_body_content_founder_info -->
                         <div class="whitebox_primary_body_content_founder_picture">
@@ -135,7 +138,9 @@ Since then Wessel has been consulting on new and particular social media for org
 <p>
 That's until he and Gerrie founded RAAK.</p>
 <p>
-Wessel also makes documenatries in his spare time and keeps a popular blog on South African politics and culture.</p>                            </div><!-- .whitebox_primary_body_content_founder_text -->                                        </div><!-- whitebox_primary_body_content_founder -->
+Wessel also makes documenatries in his spare time and keeps a popular blog on South African politics and culture.</p>
+                        </div><!-- .whitebox_primary_body_content_founder_text -->
+                    </div><!-- whitebox_primary_body_content_founder -->
                     <div id="whitebox_primary_body_content_gerrie" class="whitebox_primary_body_content_founder" style="display: none;">
                         <div class="whitebox_primary_body_content_founder_info">
                             <div class="whitebox_primary_body_content_founder_name">Gerrie Smits</div>
