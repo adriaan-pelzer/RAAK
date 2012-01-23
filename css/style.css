@@ -475,12 +475,12 @@ a.active, a.active span {
     margin-right: 6px;
 }
 
-/*.whitebox_primary_body_post_content p {
+/*.whitebox_primary_body_content p {
     width: 159px;
     display: inline-block;
 }*/
 
-.whitebox_primary_body_post_content_right {
+.whitebox_primary_body_content_right {
     display: inline-block;
     text-align: right;
     vertical-align: top;
@@ -490,7 +490,7 @@ a.active, a.active span {
 }
 
 
-.whitebox_primary_body_post_content_right a {
+.whitebox_primary_body_content_right a {
     display: block;
 }
 
