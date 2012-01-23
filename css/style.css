@@ -698,11 +698,17 @@ ol {
 
 .whitebox_primary_body_content_founder_social_network {
     display: block;
+    margin-bottom:5px;
 }
 
 
 .whitebox_primary_body_content_founder_picture {
     display: inline-block;
+    margin-bottom: 12px;
+}
+
+.whitebox_primary_body_content_founder_texta {
+    margin-top: 21px;
 }
 
 
