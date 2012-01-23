@@ -480,6 +480,10 @@ a.active, a.active span {
     display: inline-block;
 }*/
 
+.whitebox_primary_body_post_content {
+    overflow: auto;
+}
+
 .whitebox_primary_body_post_content_right {
     /*display: inline-block;*/
     text-align: right;
