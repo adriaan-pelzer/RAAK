@@ -93,11 +93,6 @@ body {
     text-transform: uppercase;
 }
 
-.blue_20 {
-    color: #00aeef;
-    font-size: 20px;
-}
-
 
 .bluebox {
     background: #b9e5fb;
@@ -132,12 +127,6 @@ em {
 
 .small_arial_caps {
     font: 10px arial, sans-serif;
-    text-transform: uppercase;
-    color: #00aeff;
-}
-
-.smaller_arial_caps {
-    font: 9px arial, sans-serif;
     text-transform: uppercase;
     color: #00aeff;
 }
@@ -513,11 +502,6 @@ margin: 25px 0 9px;
 }
 
 
-.whitebox_primary_body_footer_left {
-    float: left;
-}
-
-
 .whitebox_primary_body_footer_right a .arrow {
     color: #00aeef;
 }
@@ -588,18 +572,6 @@ margin: 25px 0 9px;
 #whitebox_secondary ul {
     line-height: 19px;
     margin-top: 5px;
-}
-/************** ABOUT *****************/
-
-/************** whitebox **************/
-
-.whitebox_primary_body_nav {
-    float: right;
-    margin-top: 10px;
-}
-
-.whitebox_primary header {
-    padding: 8px 0 6px;
 }
 
 /************** Sidebar ***************/
