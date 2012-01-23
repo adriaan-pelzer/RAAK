@@ -634,6 +634,13 @@ ol {
 .box_nav_no_title {
     margin: 18px 0 10px;
 }
+.bluebox_body_content_item {
+    font: 28px din_schrift, arial, sans-serif;
+    color: #00AEEF;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
 /************** Sidebar ***************/
 
