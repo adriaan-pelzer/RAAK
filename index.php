@@ -104,15 +104,15 @@ Template Name:Home
                     <div id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
                             <h3><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></h3>
                         <hr />
-                        <div class="whitebox_primary_body_post_attr">
-                            <span class="whitebox_primary_body_post_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
+                        <div class="whitebox_primary_body_attr">
+                            <span class="whitebox_primary_body_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
                             <span class="seperator">|</span>
-                            <span class="whitebox_primary_body_post_attr_item date"> 5 Dec 2011</span>
+                            <span class="whitebox_primary_body_attr_item date"> 5 Dec 2011</span>
                             <span class="seperator">|</span>
-                            <!--span class="whitebox_primary_body_post_attr_item time">12:44</span>
+                            <!--span class="whitebox_primary_body_attr_item time">12:44</span>
                             <span class="seperator">|</span-->
-                            <span class="whitebox_primary_body_post_attr_item comments"><img class="commenticon" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
-                        </div><!-- .whitebox_primary_body_post_attr -->
+                            <span class="whitebox_primary_body_attr_item comments"><img class="commenticon" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        </div><!-- .whitebox_primary_body_attr -->
                         <div class="whitebox_primary_body_content">
                             <p>
                                 Later this week the Pulitzer Prize Board will <a href="http://www.pulitzer.org/digital_entries">announce the details</a> of their new journalism prize categories, which will emphasize real-time reporting (that&#39;s live-tweeting to us tweeps). Until then, there's the weekly RAAKonteur.
@@ -125,15 +125,15 @@ Template Name:Home
                         <hr class="solid" />
                         <h3><a href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/">The RAAKonteur #65 - Kevin Rose's new project, The Facebook Freakyline and more</a></h3>
                         <hr />
-                        <div class="whitebox_primary_body_post_attr">
-                            <span class="whitebox_primary_body_post_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
+                        <div class="whitebox_primary_body_attr">
+                            <span class="whitebox_primary_body_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
                             <span class="seperator">|</span>
-                            <span class="whitebox_primary_body_post_attr_item date">28 Nov 2011</span>
+                            <span class="whitebox_primary_body_attr_item date">28 Nov 2011</span>
                             <span class="seperator">|</span>
-                            <!--span id="whitebox_primary_body_attr_post_time" class="whitebox_primary_body_post_attr_item">11:59</span>
+                            <!--span id="whitebox_primary_body_attr_time" class="whitebox_primary_body_attr_item">11:59</span>
                             <span class="seperator">|</span-->
-                            <span class="whitebox_primary_body_post_attr_item comments"><img class="commenticon" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
-                        </div><!-- .whitebox_primary_body_post_attr -->
+                            <span class="whitebox_primary_body_attr_item comments"><img class="commenticon" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        </div><!-- .whitebox_primary_body_attr -->
                         <div class="whitebox_primary_body_content">
                             <p>
                                 This week we are trying out a frictionless newsletter, so without further ado...
