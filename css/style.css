@@ -611,6 +611,12 @@ margin: 25px 0 9px;
     margin-top: 20px
 }
 
+ol {
+    list-style: decimal;
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
