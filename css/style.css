@@ -589,6 +589,14 @@ margin: 25px 0 9px;
     line-height: 19px;
     margin-top: 5px;
 }
+/************** ABOUT *****************/
+
+/************** whitebox **************/
+
+.whitebox_primary_body_nav {
+    float: right;
+    margin-top: 10px;
+}
 
 /************** Sidebar ***************/
 

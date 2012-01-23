@@ -10,10 +10,10 @@ Template Name: About
             <div class="whitebox whitebox_primary box rounded-corners">
                 <div id="whitebox_primary_body">
                     <header>
-                        <h2 class="din-schrift blue_20">About</h2>
-                        <div class="whitebox_primary_body_nav smaller_arial_caps">
+                        <div class="whitebox_primary_body_nav smaller_arial_caps box_nav">
                             <a class="active" onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
                         </div><!-- whitebox_primary_body_nav -->
+                        <h2 class="din-schrift blue_20">About</h2>
                     </header>
                     <hr />
                     <div id="what-we-do" class="whitebox_primary_body_content">
