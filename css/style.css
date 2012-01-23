@@ -481,12 +481,13 @@ a.active, a.active span {
 }*/
 
 .whitebox_primary_body_post_content_right {
-    display: inline-block;
+    /*display: inline-block;*/
     text-align: right;
     vertical-align: top;
-    margin: 13px 0 0 38px;
+    margin: 8px 0 0 38px;
     font: 9px arial, sans-serif;
     text-transform: uppercase;
+    float: right;
 }
 
 
