@@ -5,19 +5,18 @@ Template Name: About
 ?>
 <?php get_header() ?>
 
-	<div class="container" class="rounded-corners">
+	<div class="container rounded-corners">
 		<div class="content">
             <div class="whitebox whitebox_primary box rounded-corners">
-                <div id="whitebox_primary_body">
-                    <header>
-                        <div class="whitebox_primary_body_nav smaller_arial_caps box_nav">
-                            <a class="active" onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
-                        </div><!-- whitebox_primary_body_nav -->
-                        <h2 class="din-schrift blue_20">About</h2>
-                    </header>
-                    <hr />
-                    <div id="what-we-do" class="whitebox_primary_body_content">
-                        <p>We consult, train and develop - and yes that includes building - social media solutions.</p>
+                <header>
+                    <div class="whitebox_primary_body_nav smaller_arial_caps box_nav">
+                        <a class="active" onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
+                    </div><!-- whitebox_primary_body_nav -->
+                    <h2 class="din-schrift blue_20">About</h2>
+                </header>
+                <hr />
+                <div id="what-we-do" class="whitebox_primary_body_content">
+                    <p>We consult, train and develop - and yes that includes building - social media solutions.</p>
 
 <p>Social media can be used to build <em>brand awareness</em>, <em><a title="Dominos success with social media" href="2010/09/dominos-the-raak-social-media-overview/">to shift products</a></em> and for <em>direct response</em>. But also for former <em>PR functions</em>, and even <em>product development</em> &amp; <em>customer service purposes</em>.</p>
 
@@ -25,8 +24,8 @@ Template Name: About
 
 <p>There is another way to look at social media and how it can work for you. We broadly define what we do in two ways.
 <ol>
-	<li>Social Media Ready</li>
-	<li>Impact Projects</li>
+<li>Social Media Ready</li>
+<li>Impact Projects</li>
 </ol></p>
 
 <a href="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Picture-5.png"><img src="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Picture-5.png" alt="Social media ready &amp; Impact projects" title="Social media ready &amp; Impact projects" width="360" height="206" class="size-full wp-image-2527" /></a>
@@ -47,43 +46,43 @@ Building a social media presence takes time. It's not a quick fix. You need to b
 <p>
 But when you have the right foundation there are times you need to make a splash and take a step up. This could be a creative iPhone application that integrates social and location functionality, an viral Twitter app or it could entail reaching out to the world's biggest bloggers.</p>
 
-                    </div><!-- whitebox_primary_body_content -->
-                    <div id="who-we-are" class="whitebox_primary_body_content" style="display: none;">
-                        <div class="whitebox_primary_body_content_nav">
-                            <span id="whitebox_primary_body_content_nav_gerrie" class="whitebox_primary_body_content_nav_item active"><a onclick="javascript: expand_person('gerrie');">Gerrie Smits</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_content_nav_wessel" class="whitebox_primary_body_content_nav_item"><a onclick="javascript: expand_person('wessel');">Wessel van Rensburg</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_content_nav_adriaan" class="whitebox_primary_body_content_nav_item"><a onclick="javascript: expand_person('adriaan');">Adriaan Pelzer</a></span>
-                        </div><!-- whitebox_primary_body_content_nav -->
+                </div><!-- whitebox_primary_body_content -->
+                <div id="who-we-are" class="whitebox_primary_body_content" style="display: none;">
+                    <div class="whitebox_primary_body_content_nav">
+                        <span id="whitebox_primary_body_content_nav_gerrie" class="whitebox_primary_body_content_nav_item active"><a onclick="javascript: expand_person('gerrie');">Gerrie Smits</a></span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_body_content_nav_wessel" class="whitebox_primary_body_content_nav_item"><a onclick="javascript: expand_person('wessel');">Wessel van Rensburg</a></span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_body_content_nav_adriaan" class="whitebox_primary_body_content_nav_item"><a onclick="javascript: expand_person('adriaan');">Adriaan Pelzer</a></span>
+                    </div><!-- whitebox_primary_body_content_nav -->
+                    <hr class="solid" />
+                    <div id="whitebox_primary_body_content_adriaan" class="whitebox_primary_body_content_founder" style="display: none;">
+                        <div class="whitebox_primary_body_content_founder_info">
+                            <div class="whitebox_primary_body_content_founder_name">Adriaan Pelzer</div>
+                            <hr />
+                            <div class="whitebox_primary_body_content_founder_social">
+                                <div class="whitebox_primary_body_content_founder_social_title">Follow me&#8230;</div>
+                                <div class="whitebox_primary_body_content_founder_social_linkedin">
+                                    <span class="whitebox_primary_body_content_founder_social_linkedin_icon"><a href="http://za.linkedin.com/pub/adriaan-pelzer/4/874/860"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn" /></a></span>
+                                    <span class="whitebox_primary_body_content_founder_social_linkedin_text"><a href="http://za.linkedin.com/pub/adriaan-pelzer/4/874/860">Linked In</a></span>
+                                </div><!-- whitebox_primary_body_content_founder_social_linkedin -->
+                                <div class="whitebox_primary_body_content_founder_social_facebook">
+                                    <span class="whitebox_primary_body_content_founder_social_facebook_icon"><a href="http://www.facebook.com/adriaan.pelzer"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/facebook_icon.png" alt="Facebook" /></a></span>
+                                    <span class="whitebox_primary_body_content_founder_social_facebook_text"><a href="http://www.facebook.com/adriaan.pelzer">Facebook</a></span>
+                                </div><!-- whitebox_primary_body_content_founder_social_facebook -->
+                                <div class="whitebox_primary_body_content_founder_social_twitter">
+                                    <span class="whitebox_primary_body_content_founder_social_twitter_icon"><a href="http://www.twitter.com/adriaan_pelzer"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter" /></a></span>
+                                    <span class="whitebox_primary_body_content_founder_social_twitter_text"><a href="http://www.twitter.com/adriaan_pelzer">Twitter</a></span>
+                                </div><!-- whitebox_primary_body_content_founder_social_twitter -->
+                            </div><!-- whitebox_primary_body_content_founder_social -->
+                        </div><!-- whitebox_primary_body_content_founder_info -->
+                        <div class="whitebox_primary_body_content_founder_picture">
+                            <img title="Adriaan Pelzer - Creative technologist" src="http://www.wewillraakyou.com/wp-content/uploads/2010/07/Last-12-Months-11-259x300.jpg" alt="Adriaan Pelzer - Creative technologist"  width="200" height="232" />
+                            <!--img alt="Adriaan Pelzer" src="http://test.wewillraakyou.com/wp-content/uploads/2010/07/Last-12-Months-11.jpg" /-->
+                        </div><!-- whitebox_primary_body_content_founder_picture -->
                         <hr class="solid" />
-                        <div id="whitebox_primary_body_content_adriaan" class="whitebox_primary_body_content_founder" style="display: none;">
-                            <div class="whitebox_primary_body_content_founder_info">
-                                <div class="whitebox_primary_body_content_founder_name">Adriaan Pelzer</div>
-                                <hr />
-                                <div class="whitebox_primary_body_content_founder_social">
-                                    <div class="whitebox_primary_body_content_founder_social_title">Follow me&#8230;</div>
-                                    <div class="whitebox_primary_body_content_founder_social_linkedin">
-                                        <span class="whitebox_primary_body_content_founder_social_linkedin_icon"><a href="http://za.linkedin.com/pub/adriaan-pelzer/4/874/860"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn" /></a></span>
-                                        <span class="whitebox_primary_body_content_founder_social_linkedin_text"><a href="http://za.linkedin.com/pub/adriaan-pelzer/4/874/860">Linked In</a></span>
-                                    </div><!-- whitebox_primary_body_content_founder_social_linkedin -->
-                                    <div class="whitebox_primary_body_content_founder_social_facebook">
-                                        <span class="whitebox_primary_body_content_founder_social_facebook_icon"><a href="http://www.facebook.com/adriaan.pelzer"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/facebook_icon.png" alt="Facebook" /></a></span>
-                                        <span class="whitebox_primary_body_content_founder_social_facebook_text"><a href="http://www.facebook.com/adriaan.pelzer">Facebook</a></span>
-                                    </div><!-- whitebox_primary_body_content_founder_social_facebook -->
-                                    <div class="whitebox_primary_body_content_founder_social_twitter">
-                                        <span class="whitebox_primary_body_content_founder_social_twitter_icon"><a href="http://www.twitter.com/adriaan_pelzer"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter" /></a></span>
-                                        <span class="whitebox_primary_body_content_founder_social_twitter_text"><a href="http://www.twitter.com/adriaan_pelzer">Twitter</a></span>
-                                    </div><!-- whitebox_primary_body_content_founder_social_twitter -->
-                                </div><!-- whitebox_primary_body_content_founder_social -->
-                            </div><!-- whitebox_primary_body_content_founder_info -->
-                            <div class="whitebox_primary_body_content_founder_picture">
-                                <img title="Adriaan Pelzer - Creative technologist" src="http://www.wewillraakyou.com/wp-content/uploads/2010/07/Last-12-Months-11-259x300.jpg" alt="Adriaan Pelzer - Creative technologist"  width="200" height="232" />
-                                <!--img alt="Adriaan Pelzer" src="http://test.wewillraakyou.com/wp-content/uploads/2010/07/Last-12-Months-11.jpg" /-->
-                            </div><!-- whitebox_primary_body_content_founder_picture -->
-                            <hr class="solid" />
-                            <div class="whitebox_primary_body_content_founder_text">
-                                
+                        <div class="whitebox_primary_body_content_founder_text">
+                            
 <p>Adriaan is RAAK's Technical Dude. Creative Technical Dude that is.</p>
 
 <p>He studied electronic engineering at the University of Pretoria in South Africa, after which he started his professional career installing mobile subsystems on site for Vodacom, Ericsson and Siemens in South Africa and Botswana during the mobile boom in late 90s Southern Africa.</p>
@@ -95,29 +94,29 @@ But when you have the right foundation there are times you need to make a splash
 <p>In the last few years Adriaan has developed an extensive knowledge of web technologies, especially everything surrounding Social Media. That ranges from API implementations to iPhone apps and building 12,000 lines of bespoke PHP code for a social network.</p>
 
 <p>Add to that his talent for thinking creatively and you have, well, a Creative Technical Dude.</p>                            </div><!-- .whitebox_primary_body_content_founder_text -->                                        </div><!-- whitebox_primary_body_content_founder -->
-                        <div id="whitebox_primary_body_content_wessel" class="whitebox_primary_body_content_founder" style="display: none;">
-                            <div class="whitebox_primary_body_content_founder_info">
-                                <div class="whitebox_primary_body_content_founder_name">Wessel van Rensburg</div>
-                                <hr />
-                                <div class="whitebox_primary_body_content_founder_social">
-                                    <div class="whitebox_primary_body_content_founder_social_title">Follow me&#8230;</div>
-                                    <div class="whitebox_primary_body_content_founder_social_linkedin">
-                                        <span class="whitebox_primary_body_content_founder_social_linkedin_icon"><a href="http://uk.linkedin.com/in/wesselvanrensburg"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn" /></a></span>
-                                        <span class="whitebox_primary_body_content_founder_social_linkedin_text"><a href="http://uk.linkedin.com/in/wesselvanrensburg">Linked In</a></span>
-                                    </div><!-- whitebox_primary_body_content_founder_social_linkedin -->
-                                    <div class="whitebox_primary_body_content_founder_social_twitter">
-                                        <span class="whitebox_primary_body_content_founder_social_twitter_icon"><a href="http://twitter.com/wildebees"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter" /></a></span>
-                                        <span class="whitebox_primary_body_content_founder_social_twitter_text"><a href="http://twitter.com/wildebees">Twitter</a></span>
-                                    </div><!-- whitebox_primary_body_content_founder_social_twitter -->
-                                </div><!-- whitebox_primary_body_content_founder_social -->
-                            </div><!-- whitebox_primary_body_content_founder_info -->
-                            <div class="whitebox_primary_body_content_founder_picture">
-                                <img title="Wessel van Rensburg - Social media strategist" src="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Wessel-259x300.jpg" alt=""  width="200" height="232" />
-                                <!--img alt="Wessel van Rensburg" src="" /-->
-                            </div><!-- whitebox_primary_body_content_founder_picture -->
-                            <hr class="solid" />
-                            <div class="whitebox_primary_body_content_founder_text">
-                                
+                    <div id="whitebox_primary_body_content_wessel" class="whitebox_primary_body_content_founder" style="display: none;">
+                        <div class="whitebox_primary_body_content_founder_info">
+                            <div class="whitebox_primary_body_content_founder_name">Wessel van Rensburg</div>
+                            <hr />
+                            <div class="whitebox_primary_body_content_founder_social">
+                                <div class="whitebox_primary_body_content_founder_social_title">Follow me&#8230;</div>
+                                <div class="whitebox_primary_body_content_founder_social_linkedin">
+                                    <span class="whitebox_primary_body_content_founder_social_linkedin_icon"><a href="http://uk.linkedin.com/in/wesselvanrensburg"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn" /></a></span>
+                                    <span class="whitebox_primary_body_content_founder_social_linkedin_text"><a href="http://uk.linkedin.com/in/wesselvanrensburg">Linked In</a></span>
+                                </div><!-- whitebox_primary_body_content_founder_social_linkedin -->
+                                <div class="whitebox_primary_body_content_founder_social_twitter">
+                                    <span class="whitebox_primary_body_content_founder_social_twitter_icon"><a href="http://twitter.com/wildebees"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter" /></a></span>
+                                    <span class="whitebox_primary_body_content_founder_social_twitter_text"><a href="http://twitter.com/wildebees">Twitter</a></span>
+                                </div><!-- whitebox_primary_body_content_founder_social_twitter -->
+                            </div><!-- whitebox_primary_body_content_founder_social -->
+                        </div><!-- whitebox_primary_body_content_founder_info -->
+                        <div class="whitebox_primary_body_content_founder_picture">
+                            <img title="Wessel van Rensburg - Social media strategist" src="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Wessel-259x300.jpg" alt=""  width="200" height="232" />
+                            <!--img alt="Wessel van Rensburg" src="" /-->
+                        </div><!-- whitebox_primary_body_content_founder_picture -->
+                        <hr class="solid" />
+                        <div class="whitebox_primary_body_content_founder_text">
+                            
 
 <p>Wessel has more than 12 years experience as digital strategist, product development manager and consultant.
 
@@ -136,29 +135,29 @@ Since then Wessel has been consulting on new and particular social media for org
 That's until he and Gerrie founded RAAK.</p>
 <p>
 Wessel also makes documenatries in his spare time and keeps a popular blog on South African politics and culture.</p>                            </div><!-- .whitebox_primary_body_content_founder_text -->                                        </div><!-- whitebox_primary_body_content_founder -->
-                        <div id="whitebox_primary_body_content_gerrie" class="whitebox_primary_body_content_founder">
-                            <div class="whitebox_primary_body_content_founder_info">
-                                <div class="whitebox_primary_body_content_founder_name">Gerrie Smits</div>
-                                <hr />
-                                <div class="whitebox_primary_body_content_founder_social">
-                                    <div class="whitebox_primary_body_content_founder_social_title">Follow me&#8230;</div>
-                                    <div class="whitebox_primary_body_content_founder_social_linkedin">
-                                        <span class="whitebox_primary_body_content_founder_social_linkedin_icon"><a href="http://uk.linkedin.com/in/gerriesmits"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn" /></a></span>
-                                        <span class="whitebox_primary_body_content_founder_social_linkedin_text"><a href="http://uk.linkedin.com/in/gerriesmits">Linked In</a></span>
-                                    </div><!-- whitebox_primary_body_content_founder_social_linkedin -->
-                                    <div class="whitebox_primary_body_content_founder_social_twitter">
-                                        <span class="whitebox_primary_body_content_founder_social_twitter_icon"><a href="http://twitter.com/grrRAAK"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter" /></a></span>
-                                        <span class="whitebox_primary_body_content_founder_social_twitter_text"><a href="http://twitter.com/grrRAAK">Twitter</a></span>
-                                    </div><!-- whitebox_primary_body_content_founder_social_twitter -->
-                                </div><!-- whitebox_primary_body_content_founder_social -->
-                            </div><!-- whitebox_primary_body_content_founder_info -->
-                            <div class="whitebox_primary_body_content_founder_picture">
-                                <img title="Gerrie Smits - RAAK founder" src="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Last-12-Months-0-259x300.jpg" alt="Gerrie Smits - RAAK founder"  width="200" height="232" />
-                                <!--img alt="Gerrie Smits" src="" /-->
-                            </div><!-- whitebox_primary_body_content_founder_picture -->
-                            <hr class="solid" />
-                            <div class="whitebox_primary_body_content_founder_text">
-                                
+                    <div id="whitebox_primary_body_content_gerrie" class="whitebox_primary_body_content_founder">
+                        <div class="whitebox_primary_body_content_founder_info">
+                            <div class="whitebox_primary_body_content_founder_name">Gerrie Smits</div>
+                            <hr />
+                            <div class="whitebox_primary_body_content_founder_social">
+                                <div class="whitebox_primary_body_content_founder_social_title">Follow me&#8230;</div>
+                                <div class="whitebox_primary_body_content_founder_social_linkedin">
+                                    <span class="whitebox_primary_body_content_founder_social_linkedin_icon"><a href="http://uk.linkedin.com/in/gerriesmits"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn" /></a></span>
+                                    <span class="whitebox_primary_body_content_founder_social_linkedin_text"><a href="http://uk.linkedin.com/in/gerriesmits">Linked In</a></span>
+                                </div><!-- whitebox_primary_body_content_founder_social_linkedin -->
+                                <div class="whitebox_primary_body_content_founder_social_twitter">
+                                    <span class="whitebox_primary_body_content_founder_social_twitter_icon"><a href="http://twitter.com/grrRAAK"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter" /></a></span>
+                                    <span class="whitebox_primary_body_content_founder_social_twitter_text"><a href="http://twitter.com/grrRAAK">Twitter</a></span>
+                                </div><!-- whitebox_primary_body_content_founder_social_twitter -->
+                            </div><!-- whitebox_primary_body_content_founder_social -->
+                        </div><!-- whitebox_primary_body_content_founder_info -->
+                        <div class="whitebox_primary_body_content_founder_picture">
+                            <img title="Gerrie Smits - RAAK founder" src="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Last-12-Months-0-259x300.jpg" alt="Gerrie Smits - RAAK founder"  width="200" height="232" />
+                            <!--img alt="Gerrie Smits" src="" /-->
+                        </div><!-- whitebox_primary_body_content_founder_picture -->
+                        <hr class="solid" />
+                        <div class="whitebox_primary_body_content_founder_text">
+                            
 
 <p>Gerrie started his media career as a music journalist known for his discerning taste and disarming prose.</p>
 
@@ -171,8 +170,7 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
 <p>So what if one could combine the interactive communications capabilities of new digital media with the narrative skills of old media he thought?</p>
 
 <p>After many caffeine and pint fueled discussions over the course of a year it became obvious. He and <a title="Wessel van Rensburg" href="/about/the-founders/wessel-van-rensburg/">WVR</a> would put their combined media skills under one roof.</p>                            </div><!-- .whitebox_primary_body_content_founder_text -->                                        </div><!-- whitebox_primary_body_content_founder -->
-                    </div><!-- whitebox_primary_body_content -->
-                </div><!-- #whitebox_primary_body -->
+                </div><!-- whitebox_primary_body_content -->
             </div><!-- #whitebox_primary -->
             <div id="bluebox" class="bluebox bluebox_primary box rounded-corners">
                 <div id="bluebox_body">

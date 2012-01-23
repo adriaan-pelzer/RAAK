@@ -598,6 +598,10 @@ margin: 25px 0 9px;
     margin-top: 10px;
 }
 
+.whitebox_primary header {
+    padding: 8px 0 6px;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/

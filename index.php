@@ -5,7 +5,7 @@ Template Name:Home
 ?>
 <?php get_header() ?>
 
-    <div class="container" class="rounded-corners">
+    <div class="container rounded-corners">
         <div class="content">
             <section id="logox_counter" class="rounded-corners din-schrift">
                 <div id="logox_counter_arrow">
