@@ -174,7 +174,7 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
             </section><!-- #whitebox_primary -->
             <section class="bluebox bluebox_primary box rounded-corners">
                 <header>
-                    <div class="bluebox_primary_body_nav box_nav smaller_arial_caps">
+                    <div class="box_nav_no_title bluebox_primary_body_nav box_nav smaller_arial_caps">
                     What we do
                     </div>
                 </header>
