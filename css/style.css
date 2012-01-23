@@ -456,17 +456,17 @@ a.active, a.active span {
     color: #666666;
 }
 
-.whitebox_primary_body_attr {
+.whitebox_primary_body_post_attr {
     font: 11px arial, sans-serif;
     margin: 6px 0 12px;
 }
 
-.whitebox_primary_body_attr * {
+.whitebox_primary_body_post_attr * {
     display: inline-block;
 }
 
 
-.whitebox_primary_body_attr .seperator {
+.whitebox_primary_body_post_attr .seperator {
     margin:  0 5px;
 }
 
