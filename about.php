@@ -44,20 +44,20 @@ A new necessity in a world where consumers are identifiable, trackable, transpar
 <p><span><strong>Impact Projects</strong></span>
 Building a social media presence takes time. It's not a quick fix. You need to be on the right platforms doing the right things. It's not a quick fix. </p>
 <p>
-But when you have the right foundation there are times you need to make a splash and take a step up. This could be a creative iPhone application that integrates social and location functionality, an viral Twitter app or it could entail reaching out to the world's biggest bloggers.</p>
+But when you have the right foundation there are times you need to make a splash and take a step up. This could be a creative iPhone application that integrates social and location functionality, a viral Twitter app or it could entail reaching out to the world's biggest bloggers.</p>
 
                 </div><!-- whitebox_primary_body_content -->
                 <div id="who-we-are" class="whitebox_primary_body_content">
-                    <div class="whitebox_primary_body_content_nav">
-                        <span id="whitebox_primary_body_content_nav_gerrie" class="whitebox_primary_body_content_nav_item active"><a onclick="javascript: expand_person('gerrie');">Gerrie Smits</a></span>
+                    <div class="whitebox_primary_body_content_nav smaller_arial_caps">
+                        <a id="whitebox_primary_body_content_nav_gerrie" class="whitebox_primary_body_content_nav_item active" onclick="javascript: expand_person('gerrie');">Gerrie Smits</a>
                         <span class="seperator">|</span>
-                        <span id="whitebox_primary_body_content_nav_wessel" class="whitebox_primary_body_content_nav_item"><a onclick="javascript: expand_person('wessel');">Wessel van Rensburg</a></span>
+                        <a id="whitebox_primary_body_content_nav_wessel" class="whitebox_primary_body_content_nav_item" onclick="javascript: expand_person('wessel');">Wessel van Rensburg</a>
                         <span class="seperator">|</span>
-                        <span id="whitebox_primary_body_content_nav_adriaan" class="whitebox_primary_body_content_nav_item"><a onclick="javascript: expand_person('adriaan');">Adriaan Pelzer</a></span>
+                        <a id="whitebox_primary_body_content_nav_adriaan" class="whitebox_primary_body_content_nav_item" onclick="javascript: expand_person('adriaan');">Adriaan Pelzer</a>
                     </div><!-- whitebox_primary_body_content_nav -->
                     <hr class="solid" />
-                    <div id="whitebox_primary_body_content_adriaan" class="whitebox_primary_body_content_founder" style="display: none;">
-                        <div class="whitebox_primary_body_content_founder_info">
+                    <div id="whitebox_primary_body_content_adriaan" class="whitebox_primary_body_content_founder">
+                        <div class="whitebox_primary_body_content_founder_info smaller_arial_caps">
                             <div class="whitebox_primary_body_content_founder_name">Adriaan Pelzer</div>
                             <hr />
                             <div class="whitebox_primary_body_content_founder_social">
@@ -135,7 +135,7 @@ Since then Wessel has been consulting on new and particular social media for org
 That's until he and Gerrie founded RAAK.</p>
 <p>
 Wessel also makes documenatries in his spare time and keeps a popular blog on South African politics and culture.</p>                            </div><!-- .whitebox_primary_body_content_founder_text -->                                        </div><!-- whitebox_primary_body_content_founder -->
-                    <div id="whitebox_primary_body_content_gerrie" class="whitebox_primary_body_content_founder">
+                    <div id="whitebox_primary_body_content_gerrie" class="whitebox_primary_body_content_founder" style="display: none;">
                         <div class="whitebox_primary_body_content_founder_info">
                             <div class="whitebox_primary_body_content_founder_name">Gerrie Smits</div>
                             <hr />
@@ -179,7 +179,7 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
                     </div>
                 </header>
                 <hr class="blue_hr" />
-                <div id="bluebox_body_content_what-we-do" class="bluebox_body_content_item">
+                <div id="bluebox_body_content_what-we-do" class="bluebox_body_content_item" style="display: none;">
                     If advertising is a tax on mediocrity, you've come to a tax free zone.
                 </div><!-- bluebox_body_content_item -->
                 <div id="bluebox_body_content_adriaan" class="bluebox_body_content_item" style="display: none;">
