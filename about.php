@@ -142,19 +142,21 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
                         </div><!-- .whitebox_primary_body_content_founder_text -->
                     </div><!-- whitebox_primary_body_content_founder -->
                     <div id="whitebox_primary_body_content_gerrie" class="whitebox_primary_body_content_founder" style="display: none;">
-                        <div class="whitebox_primary_body_content_founder_info">
+                        <div class="whitebox_primary_body_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_body_content_founder_name">Gerrie Smits</div>
                             <hr />
                             <div class="whitebox_primary_body_content_founder_social">
                                 <div class="whitebox_primary_body_content_founder_social_title">Follow me&#8230;</div>
-                                <div class="whitebox_primary_body_content_founder_social_linkedin">
-                                    <span class="whitebox_primary_body_content_founder_social_linkedin_icon"><a href="http://uk.linkedin.com/in/gerriesmits"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn" /></a></span>
-                                    <span class="whitebox_primary_body_content_founder_social_linkedin_text"><a href="http://uk.linkedin.com/in/gerriesmits">Linked In</a></span>
-                                </div><!-- whitebox_primary_body_content_founder_social_linkedin -->
-                                <div class="whitebox_primary_body_content_founder_social_twitter">
-                                    <span class="whitebox_primary_body_content_founder_social_twitter_icon"><a href="http://twitter.com/grrRAAK"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter" /></a></span>
-                                    <span class="whitebox_primary_body_content_founder_social_twitter_text"><a href="http://twitter.com/grrRAAK">Twitter</a></span>
-                                </div><!-- whitebox_primary_body_content_founder_social_twitter -->
+                                <div class="whitebox_primary_body_content_founder_social_right"> 
+                                    <div class="whitebox_primary_body_content_founder_social_linkedin">
+                                        <span class="whitebox_primary_body_content_founder_social_linkedin_icon"><a href="http://uk.linkedin.com/in/gerriesmits"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn" /></a></span>
+                                        <span class="whitebox_primary_body_content_founder_social_linkedin_text"><a href="http://uk.linkedin.com/in/gerriesmits">Linked In</a></span>
+                                    </div><!-- whitebox_primary_body_content_founder_social_linkedin -->
+                                    <div class="whitebox_primary_body_content_founder_social_twitter">
+                                        <span class="whitebox_primary_body_content_founder_social_twitter_icon"><a href="http://twitter.com/grrRAAK"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter" /></a></span>
+                                        <span class="whitebox_primary_body_content_founder_social_twitter_text"><a href="http://twitter.com/grrRAAK">Twitter</a></span>
+                                    </div><!-- whitebox_primary_body_content_founder_social_twitter -->
+                                </div><!-- whitebox_primary_body_content_founder_social_right -->
                             </div><!-- whitebox_primary_body_content_founder_social -->
                         </div><!-- whitebox_primary_body_content_founder_info -->
                         <div class="whitebox_primary_body_content_founder_picture">
@@ -175,7 +177,9 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
 
 <p>So what if one could combine the interactive communications capabilities of new digital media with the narrative skills of old media he thought?</p>
 
-<p>After many caffeine and pint fueled discussions over the course of a year it became obvious. He and <a title="Wessel van Rensburg" href="/about/the-founders/wessel-van-rensburg/">WVR</a> would put their combined media skills under one roof.</p>                            </div><!-- .whitebox_primary_body_content_founder_text -->                                        </div><!-- whitebox_primary_body_content_founder -->
+<p>After many caffeine and pint fueled discussions over the course of a year it became obvious. He and <a title="Wessel van Rensburg" href="/about/the-founders/wessel-van-rensburg/">WVR</a> would put their combined media skills under one roof.</p>
+                        </div><!-- .whitebox_primary_body_content_founder_text -->
+                    </div><!-- whitebox_primary_body_content_founder -->
                 </div><!-- whitebox_primary_body_content -->
             </section><!-- #whitebox_primary -->
             <section class="bluebox bluebox_primary box rounded-corners">
