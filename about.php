@@ -182,7 +182,7 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
                 <div id="bluebox_body_content_what-we-do" class="bluebox_body_content_item" style="display: none;">
                     If advertising is a tax on mediocrity, you've come to a tax free zone.
                 </div><!-- bluebox_body_content_item -->
-                <div id="bluebox_body_content_adriaan" class="bluebox_body_content_item" style="display: none;">
+                <div id="bluebox_body_content_adriaan" class="bluebox_body_content_item">
                     I dream code.<br />I write machine poetry, that makes electrons dance.<br />
                 </div><!-- bluebox_body_content_item -->
                 <div id="bluebox_body_content_wessel" class="bluebox_body_content_item" style="display: none;">
