@@ -93,6 +93,11 @@ body {
     text-transform: uppercase;
 }
 
+.blue_20 {
+    color: #00aeef;
+    font-size: 20px;
+}
+
 
 .bluebox {
     background: #b9e5fb;
@@ -127,6 +132,12 @@ em {
 
 .small_arial_caps {
     font: 10px arial, sans-serif;
+    text-transform: uppercase;
+    color: #00aeff;
+}
+
+.smaller_arial_caps {
+    font: 9px arial, sans-serif;
     text-transform: uppercase;
     color: #00aeff;
 }
@@ -445,17 +456,17 @@ a.active, a.active span {
     color: #666666;
 }
 
-.whitebox_primary_body_attr {
+.whitebox_primary_body_post_attr {
     font: 11px arial, sans-serif;
     margin: 6px 0 12px;
 }
 
-.whitebox_primary_body_attr * {
+.whitebox_primary_body_post_attr * {
     display: inline-block;
 }
 
 
-.whitebox_primary_body_attr .seperator {
+.whitebox_primary_body_post_attr .seperator {
     margin:  0 5px;
 }
 
@@ -464,12 +475,12 @@ a.active, a.active span {
     margin-right: 6px;
 }
 
-/*.whitebox_primary_body_content p {
+/*.whitebox_primary_body_post_content p {
     width: 159px;
     display: inline-block;
 }*/
 
-.whitebox_primary_body_content_right {
+.whitebox_primary_body_post_content_right {
     display: inline-block;
     text-align: right;
     vertical-align: top;
@@ -479,7 +490,7 @@ a.active, a.active span {
 }
 
 
-.whitebox_primary_body_content_right a {
+.whitebox_primary_body_post_content_right a {
     display: block;
 }
 
@@ -499,6 +510,11 @@ margin: 25px 0 9px;
 
 .whitebox_primary_body_footer_right {
     float: right;
+}
+
+
+.whitebox_primary_body_footer_left {
+    float: left;
 }
 
 
@@ -572,6 +588,18 @@ margin: 25px 0 9px;
 #whitebox_secondary ul {
     line-height: 19px;
     margin-top: 5px;
+}
+/************** ABOUT *****************/
+
+/************** whitebox **************/
+
+.whitebox_primary_body_nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.whitebox_primary header {
+    padding: 8px 0 6px;
 }
 
 /************** Sidebar ***************/
