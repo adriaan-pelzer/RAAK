@@ -617,7 +617,7 @@ margin: 25px 0 9px;
 }
 
 .whitebox_primary_body_content {
-    margin: 20px 0 15px;
+    margin: 21px 0 15px;
 }
 
 ol {
@@ -653,10 +653,29 @@ ol {
     margin-bottom: 10px;
 }
 
+.whitebox_primary_body_content_founder {
+    padding-top: 11px;
+}
+
 .whitebox_primary_body_content_founder_name {
     font: 17px georgia, serif;
     margin-bottom: 10px;
+    text-transform: none;
 }
+
+
+.whitebox_primary_body_content_founder_info {
+    display: inline-block;
+    width: 149px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+
+.whitebox_primary_body_content_founder_picture {
+    display: inline-block;
+}
+
 
 /************** Sidebar ***************/
 
