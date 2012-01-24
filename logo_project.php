@@ -50,8 +50,7 @@ Or JPF: Just Plain Fun. </p>
 <h1>For inspiration <img src='http://wewillraakyou.com/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' />  </h1>
 <p><object width="360" height="227"><param name="movie" value="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="360" height="227"></embed></object></p>
             </div><!-- #whitebox_primary -->
-            <div id="bluebox">
-                <div id="bluebox_top"></div>
+            <div class="bluebox box rounded-corners">
                 <div id="bluebox_body">
                     <div id="bluebox_body_title">
                         Latest Uploads
