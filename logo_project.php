@@ -8,7 +8,9 @@ Template Name:Logo Project
 	<div class="container rounded-corners">
 		<div class="content">
             <section class="whitebox whitebox_primary box rounded-corners">
-                    <h1>Logo Project</h1>
+                <header>
+                    <h2 class="din-schrift blue_20">Logo Project</h2>
+                </header>
 <hr />Calling all designers, typographers and brand builders. We need your creative help to develop the new RAAK logo.</p>
 <h1>How it works</h1>
 <hr />
@@ -16,7 +18,7 @@ Template Name:Logo Project
 <p>&nbsp;</p>
 <li><strong> Illustrator template</strong> <a href="http://wewillraakyou.com/RAAK-letter-Illustrator-template.zip">here</a>.</li>
 <li><strong>Photoshop template</strong> <a href="http://wewillraakyou.com/raak-letter-PS-template.zip">here</a>.</li>
-<h1>About the project</h1>
+<h3 class="din-schrift blue_20">About the project</h3>
 <hr />
 This is not in the typical crowdsourcing project; oh no, that&#8217;s soooooooooo 2009. In this project you don&#8217;t design the whole logo. And the creation process won&#8217;t have a cut-off date. We really want to make this a co-creation experiment. </p>
 <p>We need our brand to reflect what we&#8217;re about: <strong>open, social, digital, participatory, creative and constantly changing</strong>. This unique branding exercise is about process as well as result. </p>
@@ -27,7 +29,7 @@ Or JPF: Just Plain Fun. </p>
 <p>Each uploaded letter (considering it ticks the technical boxes mentioned below) will get a spot on our <a href="http://wewillraakyou.com/logo-project/logo-archive">letter archive page</a>, where you can <em>include a link to your portfolio</em>. And you&#8217;re welcome, no encouraged even, to use your letter elsewhere.</p>
 <div id="right_float_link"><a href="http://www.wewillraakyou.com/2009/07/the-story-behind-our-crowd-sourced-raak-logo/">Read about our previous logo experiment ►</a></div>
 <hr />
-<h1>Technical notes:</h1>
+<h3 class="din-schrift blue_20">Technical notes:</h3>
 <ul>
 <blockquote>
 <li>Your file needs to be 700 px wide x 840 px high, 72dpi. The version that will appear in the logo is only 35&#215;42 px, but this way we can use it for print, projections,&#8230;</li>
@@ -41,13 +43,13 @@ Or JPF: Just Plain Fun. </p>
 </blockquote>
 </ul>
 <hr/>
-<h1>The crowd, creativity &#038; brand debate</h1>
+<h3 class="din-schrift blue_20">The crowd, creativity &#038; brand debate</h3>
 <p><strong>Wybe Magermans</strong> of <a href="http://creatingdifference.com/blog/">WMH</a> on <a href="http://www.wewillraakyou.com/2010/10/gap-and-the-trouble-with-logos/">The Gap&#8217;s logo fiasco</a>.</p>
 <blockquote><p>Gap’s marketing department should know that their brand is not just their logo. Just like an ad campaign is not a brand. And if you think it is, then you will end up with the likes as FCUK. Any agency, marketing consultant or brand blogger will tell you that a brand in 21st century is much more expansive.</p></blockquote>
 <p><strong>Stuart Lambert</strong> of <a href="http://www.fishburn-hedges.co.uk/">Fishburn Hedges</a> on <a href="http://www.fishburn-hedges.co.uk/news/articles/towards-meaningful-creativity">Meaningful Creativity</a></p>
 <blockquote><p>Opening up the abstruse process of ‘creativity’ to the masses makes the act of creating something for a brand more accessible.  That’s a good thing.  Creativity is one of those attributes that people not only aspire to have and demonstrate but, particularly in a creative profession, measure themselves by. </p></blockquote>
 <hr/>
-<h1>For inspiration <img src='http://wewillraakyou.com/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' />  </h1>
+<h3 class="din-schrift blue_20">For inspiration <img src='http://wewillraakyou.com/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' />  </h3>
 <p><object width="360" height="227"><param name="movie" value="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="360" height="227"></embed></object></p>
             </section><!-- #whitebox_primary -->
             <section class="bluebox bluebox_primary box rounded-corners">
