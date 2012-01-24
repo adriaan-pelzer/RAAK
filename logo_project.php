@@ -89,7 +89,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
             </section><!-- #whitebox_primary -->
             <section class="bluebox bluebox_primary box rounded-corners">
                 <header>
-                    <h4 class="box_nav_no_title bluebox_primary_body_nav box_nav smaller_arial_caps">Latest Uploads</h4>
+                    <h3 class="box_nav_no_title bluebox_primary_body_nav box_nav smaller_arial_caps">Latest Uploads</h3>
                 </header>
                 <hr />
                 <div id="bluebox_body_nav">
