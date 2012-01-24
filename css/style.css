@@ -261,6 +261,12 @@ a.active, a.active span {
     vertical-align: top;
 }
 
+blockquote {
+    font-style: italic;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
 /************** header ***************/
 
 #header {
@@ -720,6 +726,11 @@ ol {
 
 .logo-project .whitebox_primary h3 {
     margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.logo-project ul {
+    list-style: disc;
 }
 
 /************** Sidebar ***************/
