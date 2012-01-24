@@ -7,7 +7,7 @@ Template Name:Logo Project
 
 	<div class="container rounded-corners">
 		<div class="content">
-            <div class="whitebox whitebox_primary box rounded-corners">
+            <section class="whitebox whitebox_primary box rounded-corners">
                     <h1>Logo Project</h1>
 <hr />Calling all designers, typographers and brand builders. We need your creative help to develop the new RAAK logo.</p>
 <h1>How it works</h1>
@@ -49,8 +49,8 @@ Or JPF: Just Plain Fun. </p>
 <hr/>
 <h1>For inspiration <img src='http://wewillraakyou.com/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' />  </h1>
 <p><object width="360" height="227"><param name="movie" value="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="360" height="227"></embed></object></p>
-            </div><!-- #whitebox_primary -->
-            <div class="bluebox box rounded-corners">
+            </section><!-- #whitebox_primary -->
+            <section class="bluebox bluebox_primary box rounded-corners">
                 <div id="bluebox_body">
                     <div id="bluebox_body_title">
                         Latest Uploads
@@ -273,8 +273,7 @@ Or JPF: Just Plain Fun. </p>
                         </div>
                     </div><!-- bluebox_body_content -->
                 </div><!-- bluebox_body -->
-                <div id="bluebox_bottom"></div>
-            </div><!-- #bluebox -->
+            </section><!-- .bluebox_primary -->
             <div id="whitebox_extra">
                 <div id="whitebox_extra_tabs">
                     <div id="whitebox_extra_tabs_download">
