@@ -764,6 +764,35 @@ ol {
     margin: 0 4px;
 }
 
+.bluebox_content_image  {
+    background: #ffffff;
+    width: 71px;
+    height: 85px;
+    padding: 0 10px 6px 10px;
+}
+
+.bluebox_content_blurp {
+    color: #ffffff;
+}
+
+.bluebox_content_name  {
+    color: #666666;
+}
+
+.bluebox_content_name a {
+    color: #00aeff;
+}
+
+.logo_project_letter {
+    display: inline-block;
+    width: 95px;
+    margin-right: 13px;
+}
+
+.bluebox_content_top_right, .bluebox_content_bottom_right {
+    margin: 0;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
