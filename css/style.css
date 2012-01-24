@@ -787,6 +787,8 @@ ol {
     display: inline-block;
     width: 95px;
     margin-right: 13px;
+    vertical-align: top;
+    text-align: top;
 }
 
 .bluebox_content_top_right, .bluebox_content_bottom_right {

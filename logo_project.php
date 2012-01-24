@@ -113,7 +113,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                 <div id="bluebox_content_R" class="bluebox_content smaller_arial_caps">
                     <div class="bluebox_content_top">
                         <div class="bluebox_content_top_left logo_project_letter">
-                            <div class="bluebox_content_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/3326823e578cbe72c52ca50e5b338494.jpg&width=70&height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
@@ -123,7 +123,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <a href="http://www.steve-baker.co.uk">Steve Baker</a>                                </div>
                         </div><!-- bluebox_content_top_left -->
                         <div class="bluebox_content_top_center logo_project_letter">
-                            <div class="bluebox_content_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a8b2a4f4c69564aa9f11381c0c260235.jpg&width=70&height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
@@ -133,7 +133,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 PSED                                </div>
                         </div><!-- bluebox_content_top_center -->
                         <div class="bluebox_content_top_right logo_project_letter">
-                            <div class="bluebox_content_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/2dcfb0448f8b53e4a913a16c8f3413f2.jpg&width=70&height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
@@ -145,7 +145,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     </div><!-- bluebox_content_top -->
                     <div class="bluebox_content_bottom">
                         <div class="bluebox_content_bottom_left logo_project_letter">
-                            <div class="bluebox_content_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/7832f12fb6b6af543b029481f0b7baa4.png&width=70&height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
@@ -155,7 +155,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <a href="http://serdarozyigit.com">Serdar Ozyigit</a>                                </div>
                         </div><!-- bluebox_content_bottom_left -->
                         <div class="bluebox_content_bottom_center logo_project_letter">
-                            <div class="bluebox_content_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/5196b17d8503c6ad7a7accfefbdeda83.jpg&width=70&height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
@@ -165,13 +165,13 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <a href="http://www.prostress.com">Han Hoogerbrugge</a>                                </div>
                         </div><!-- bluebox_content_bottom_center -->
                         <div class="bluebox_content_bottom_right logo_project_letter">
-                            <div class="bluebox_content_bottom_right_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&width=70&height=82" />
                             </div>
-                            <div class="bluebox_content_bottom_right_blurp">
+                            <div class="bluebox_content_blurp">
                                 Submitted by
                             </div>
-                            <div class="bluebox_content_bottom_right_name">
+                            <div class="bluebox_content_name">
                                 <a href="http://www.cowafrica.co.za">Steyn</a>                                </div>
                         </div><!-- bluebox_content_bottom_right -->
                     </div><!-- bluebox_content_bottom -->
@@ -199,7 +199,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <a href="http://www.steve-baker.co.uk">Steve Baker</a>                                </div>
                         </div>
                         <div class="bluebox_content_top_right">
-                            <div class="bluebox_content_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/51de71bfb5dfe9edc1c73f0ca5a4408a.jpg&width=70&height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
@@ -211,7 +211,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     </div>
                     <div class="bluebox_content_bottom">
                         <div class="bluebox_content_bottom_left">
-                            <div class="bluebox_content_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/61bc98b99c6340b6be2b151e47d08d28.jpg&width=70&height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
@@ -221,7 +221,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 PSED                                </div>
                         </div>
                         <div class="bluebox_content_bottom_center">
-                            <div class="bluebox_content_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/811f9f13a4e7294ee86ff2288d3534a7.jpg&width=70&height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
@@ -265,7 +265,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <a href="http://www.steve-baker.co.uk">Steve Baker</a>                                </div>
                         </div>
                         <div class="bluebox_content_top_right">
-                            <div class="bluebox_content_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/1123dcb9de8cff45074fc0b8029b9751.jpg&width=70&height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
@@ -277,7 +277,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     </div>
                     <div class="bluebox_content_bottom">
                         <div class="bluebox_content_bottom_left">
-                            <div class="bluebox_content_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/78ce302c784ece3f208eba8152c2bc58.jpg&width=70&height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
@@ -287,7 +287,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 PSED                                </div>
                         </div>
                         <div class="bluebox_content_bottom_center">
-                            <div class="bluebox_content_image">
+                            <div class="bluebox_content_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/93455d62240dc78204038d89fcc4eaaa.png&width=70&height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
