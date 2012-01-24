@@ -746,6 +746,10 @@ ol {
     padding-bottom: 20px;
 }
 
+.logo_project_bluebox_nav {
+    margin: 8px 0;
+}
+
 .logo_project_bluebox_nav_item {
     width: 64px;
     padding: 0 21px;
