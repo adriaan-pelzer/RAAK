@@ -92,7 +92,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <h3 class="box_nav_no_title bluebox_primary_body_nav box_nav smaller_arial_caps">Latest Uploads</h3>
                 </header>
                 <hr />
-                <div class="smaller_arial_caps">
+                <div class="smaller_arial_caps logo_project_bluebox_nav">
                     <span class="logo_project_bluebox_nav_item">
                         <span id="expand_R" class="logo_project_bluebox_nav_item_left"><a>R</a></span>
                         <span class="seperator">|</span>
