@@ -17,8 +17,11 @@ Calling all designers, typographers and brand builders. We need your creative he
                 </p>
                 <h2 class="din-schrift blue_20">How it works</h2>
                 <hr />
-                <div id="__ss_5502775" style="width: 360px;"><object id="__sse5502775" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="360" height="300" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=raak-logo-project-101020070312-phpapp01&amp;stripped_title=raak-logoproject&amp;userName=raak" /><param name="name" value="__sse5502775" /><param name="allowfullscreen" value="true" /><embed id="__sse5502775" type="application/x-shockwave-flash" width="360" height="300" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=raak-logo-project-101020070312-phpapp01&amp;stripped_title=raak-logoproject&amp;userName=raak" name="__sse5502775" allowscriptaccess="always" allowfullscreen="true"></embed></object>
-                </div>
+                <p>
+                    <div id="__ss_5502775" style="width: 360px;">
+                        <object id="__sse5502775" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="360" height="300" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=raak-logo-project-101020070312-phpapp01&amp;stripped_title=raak-logoproject&amp;userName=raak" /><param name="name" value="__sse5502775" /><param name="allowfullscreen" value="true" /><embed id="__sse5502775" type="application/x-shockwave-flash" width="360" height="300" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=raak-logo-project-101020070312-phpapp01&amp;stripped_title=raak-logoproject&amp;userName=raak" name="__sse5502775" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+                    </div>
+                </p>
                 <p>&nbsp;</p>
                 <ul>
                     <li><strong> Illustrator template</strong> <a href="http://wewillraakyou.com/RAAK-letter-Illustrator-template.zip">here</a>.</li>
