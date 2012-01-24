@@ -5,7 +5,7 @@ Template Name: About
 ?>
 <?php get_header() ?>
 
-	<div class="container rounded-corners">
+	<div class="container rounded-corners about">
 		<div class="content">
             <section class="whitebox whitebox_primary box rounded-corners">
                 <header>

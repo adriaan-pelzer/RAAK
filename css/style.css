@@ -712,6 +712,16 @@ ol {
 }
 
 
+/************** LOGO PROJECT **********/
+
+.logo-project hr {
+    margin-bottom: 16px;
+}
+
+.logo-project .whitebox_primary h2 {
+    margin-top: 15px;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
