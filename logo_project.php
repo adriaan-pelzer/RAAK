@@ -48,9 +48,7 @@ Or JPF: Just Plain Fun.
                 <p>
 Each uploaded letter (considering it ticks the technical boxes mentioned below) will get a spot on our <a href="http://wewillraakyou.com/logo-project/logo-archive">letter archive page</a>, where you can <em>include a link to your portfolio</em>. And you&#8217;re welcome, no encouraged even, to use your letter elsewhere.
                 </p>
-                <div id="right_float_link">
-                    <a href="http://www.wewillraakyou.com/2009/07/the-story-behind-our-crowd-sourced-raak-logo/">Read about our previous logo experiment ►</a>
-                </div>
+                <a class="more_link" href="http://www.wewillraakyou.com/2009/07/the-story-behind-our-crowd-sourced-raak-logo/">Read about our previous logo experiment ►</a>
                 <hr />
                 <h3 class="din-schrift blue_20">Technical notes:</h3>
                 <ul>
