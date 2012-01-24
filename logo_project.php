@@ -5,13 +5,9 @@ Template Name:Logo Project
 ?>
 <?php get_header() ?>
 
-	<div id="container">
-        <div id="container_top"></div>
-		<div id="content">
-            <div id="whitebox_primary">
-                <div id="whitebox_primary_top">
-                </div><!-- #whitebox_primary_top -->
-                <div id="whitebox_primary_body">
+	<div class="container rounded-corners">
+		<div class="content">
+            <div class="whitebox whitebox_primary box rounded-corners">
                     <h1>Logo Project</h1>
 <hr />Calling all designers, typographers and brand builders. We need your creative help to develop the new RAAK logo.</p>
 <h1>How it works</h1>
@@ -53,9 +49,6 @@ Or JPF: Just Plain Fun. </p>
 <hr/>
 <h1>For inspiration <img src='http://wewillraakyou.com/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' />  </h1>
 <p><object width="360" height="227"><param name="movie" value="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="360" height="227"></embed></object></p>
-                </div><!-- #whitebox_primary_body -->
-                <div id="whitebox_primary_bottom">
-                </div><!-- #whitebox_primary_bottom -->
             </div><!-- #whitebox_primary -->
             <div id="bluebox">
                 <div id="bluebox_top"></div>
