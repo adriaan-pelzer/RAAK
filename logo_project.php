@@ -15,7 +15,7 @@ Template Name:Logo Project
                 <p>
 Calling all designers, typographers and brand builders. We need your creative help to develop the new RAAK logo.
                 </p>
-                <h2 class="din-schrift blue_20">How it works</h2>
+                <h3 class="din-schrift blue_20">How it works</h3>
                 <hr />
                 <p>
                     <div id="__ss_5502775" style="width: 360px;">
