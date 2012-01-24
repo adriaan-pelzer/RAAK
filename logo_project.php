@@ -109,7 +109,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         <span class="logo_project_bluebox_nav_item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=K">View All</a></span>
                     </span>
                 </div>
-                <hr class="solid" />
+                <hr class="solid blue_hr" />
                 <div id="bluebox_body_content_R" class="bluebox_body_content">
                     <div id="bluebox_body_top">
                         <div id="bluebox_body_left_top">

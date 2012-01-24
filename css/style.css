@@ -720,7 +720,7 @@ ol {
 
 /************** LOGO PROJECT **********/
 
-.logo-project hr {
+.logo-project .whitebox_primary hr {
     margin-bottom: 16px;
 }
 
@@ -757,7 +757,7 @@ ol {
 
 .logo_project_bluebox_nav_item .seperator {
     color: #ffffff;
-    padding: 0 4px;
+    margin: 0 4px;
 }
 
 /************** Sidebar ***************/
