@@ -773,10 +773,14 @@ ol {
 
 .bluebox_content_blurp {
     color: #ffffff;
+    margin: 7px 0 3px;
 }
 
 .bluebox_content_name  {
     color: #666666;
+    height: 26px;
+    line-height: 13px;
+    margin-bottom: 2px;
 }
 
 .bluebox_content_name a {
@@ -788,11 +792,15 @@ ol {
     width: 95px;
     margin-right: 13px;
     vertical-align: top;
-    text-align: top;
+    text-align: center;
 }
 
 .bluebox_content_top_right, .bluebox_content_bottom_right {
     margin: 0;
+}
+
+.logo_project .bluebox_content_top {
+    margin-top: 10px;
 }
 
 /************** Sidebar ***************/
