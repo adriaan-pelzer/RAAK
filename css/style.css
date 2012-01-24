@@ -746,6 +746,20 @@ ol {
     padding-bottom: 20px;
 }
 
+.logo_project_bluebox_nav_item {
+    width: 64px;
+    padding: 0 21px;
+}
+
+.logo_project .bluebox_body_nav:first-child {
+    padding-left: 0;
+}
+
+.logo_project_bluebox_nav_item .seperator {
+    color: #ffffff;
+    padding: 0 4px;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/

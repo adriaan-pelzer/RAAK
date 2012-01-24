@@ -94,19 +94,19 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                 <hr />
                 <div class="smaller_arial_caps">
                     <span class="logo_project_bluebox_nav_item">
-                        <span id="expand_R" class="item_left"><a>R</a></span>
+                        <span id="expand_R" class="logo_project_bluebox_nav_item_left"><a>R</a></span>
                         <span class="seperator">|</span>
-                        <span class="item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=R">View All</a></span>
+                        <span class="logo_project_bluebox_nav_item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=R">View All</a></span>
                     </span>
                     <span class="logo_project_bluebox_nav_item">
-                        <span id="expand_A" class="item_left"><a>A</a></span>
+                        <span id="expand_A" class="logo_project_bluebox_nav_item_left"><a>A</a></span>
                         <span class="seperator">|</span>
-                        <span class="item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=A">View All</a></span>
+                        <span class="logo_project_bluebox_nav_item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=A">View All</a></span>
                     </span>
                     <span class="logo_project_bluebox_nav_item">
-                        <span id="expand_K" class="item_left"><a>K</a></span>
+                        <span id="expand_K" class="logo_project_bluebox_nav_item_left"><a>K</a></span>
                         <span class="seperator">|</span>
-                        <span class="item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=K">View All</a></span>
+                        <span class="logo_project_bluebox_nav_item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=K">View All</a></span>
                     </span>
                 </div>
                 <hr class="solid" />
