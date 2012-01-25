@@ -834,8 +834,14 @@ ol {
     padding-left: 0;
 }
 
+
+.logo-project .whitebox_secondary  a {
+    color: #00aeff;
+}
+
 .logo-project .whitebox_secondary ul a {
     text-decoration: underline;
+    color: #666666;
 }
 
 .logo-project .multiple_tabs .tab {
@@ -873,7 +879,6 @@ ol {
     border: 1px solid #8CD9FF;
     height: 18px;
     margin-top: 3px;
-    color: #00aeff;
 }
 
 /************** Sidebar ***************/

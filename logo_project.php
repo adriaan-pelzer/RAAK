@@ -337,7 +337,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                 </div><!-- multiple_tabs -->
                 <div class="whitebox_secondary whitebox box rounded-corners">
                     <form method="post" enctype="multipart/form-data" action="">
-                        <div id="whitebox_secondary_upload">
+                        <div id="whitebox_secondary_upload" style="display: none;">
                             <p>Choose the letter you've designed</p>
                             <div id="whitebox_secondary_upload_letters">
                                 <input id="upload_letter" type="hidden" name="upload_letter" value="R" />
@@ -348,8 +348,8 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                             <div id="whitebox_secondary_upload_next">
                                 <a class="smaller_arial_caps" >Next &#9658;</a>
                             </div>
-                        </div><!-- #whitebox_secondary_body_upload -->
-                        <div id="whitebox_secondary_submit" style="display: none;">
+                        </div><!-- whitebox_secondary_upload -->
+                        <div id="whitebox_secondary_submit">
                             <div id="whitebox_secondary_submit_name">
                                 <label for="upload_name">Your Name</label>
                                 <input id="upload_name" name="upload_name" type="text" maxlength="40" />
