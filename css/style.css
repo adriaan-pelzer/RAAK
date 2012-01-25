@@ -922,7 +922,7 @@ ol {
 
 #file_replace {
     background: url(../images/logo_file_replace.png);
-    width: 203px;
+    width: 199px;
     height: 25px;
     display: inline-block;
 }
@@ -936,11 +936,20 @@ ol {
 }
 
     #whitebox_secondary_submit_file label {
-    vertical-align: 7px;
+    vertical-align: -4px;
 }
 
 #whitebox_secondary_submit label[for="upload_agree"] {
     width: 179px;
+    vertical-align: -3px;
+}
+
+#upload_agree {
+    vertical-align: -5px;
+}
+
+.whitebox_secondary_back {
+    height: auto;
 }
 
 
