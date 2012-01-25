@@ -328,10 +328,10 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <div id="letter_submit" class="tab rounded-corners tab75">
                         <h2>Submit</h2>
                     </div>
-                    <div id="letter_preview" class="tab rounded-corners tab75 active">
+                    <div id="letter_preview" class="tab rounded-corners tab75">
                         <h2>Preview</h2>
                     </div>
-                    <div id="letter_finsh" class="tab rounded-corners tab74">
+                    <div id="letter_finsh" class="tab rounded-corners tab74 active">
                         <h2>Finish</h2>
                     </div>
                 </div><!-- multiple_tabs -->
@@ -376,7 +376,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <a>&#9668; Go back</a>
                             </li>
                         </ul><!-- #whitebox_secondary_submit -->
-                        <div id="whitebox_secondary_preview" class="smaller_arial_caps">
+                        <div id="whitebox_secondary_preview" class="smaller_arial_caps" style="display: none;">
                             <div id="whitebox_secondary_preview_letters">
                                 <span id="preview_letter_R"><img alt="R" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&width=70&height=82" /></span>
                                 <span id="preview_letter_A1"><img alt="A" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/45d36d1d36846e6a7210254b7c10b1e0.png&width=70&height=82" /></span>
@@ -390,7 +390,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <a>&#9668; Go back</a>
                             </div>
                         </div><!-- #whitebox_secondary_preview -->
-                        <div id="whitebox_secondary_finish" style="display: none;">
+                        <div id="whitebox_secondary_finish">
                             <h3>THANKS for taking part!</h3>
                             <p>Your letter is now part of the loop.</p>
                             <button id="again">Upload another letter</button>
