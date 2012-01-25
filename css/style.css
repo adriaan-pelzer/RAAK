@@ -961,19 +961,25 @@ input[name="upload_submit"] {
 
 .whitebox_secondary_back {
     height: auto;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+#whitebox_secondary_preview {
+    text-align: center;
 }
 
 #whitebox_secondary_preview_letters {
-    text-align: center;
     border-bottom: 2px solid #00AEEF;
     width: 190px;
-    margin: 0 auto 7px;
+    margin: 0 auto 10px;
 }
 
 #whitebox_secondary_preview_letters img {
     height: 42px;
     width: auto;
-    margin: 0 5px -7px;
+    margin: 0 5px -4px;
 }
 
 
