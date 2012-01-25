@@ -325,13 +325,13 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <div id="letter_upload" class="tab rounded-corners tab112 active">
                         <h2>Upload a letter</h2>
                     </div>
-                    <div id="letter_submit" class="tab rounded-corners tab75">
+                    <div id="letter_submit" class="tab rounded-corners tab74">
                         <h2>Submit</h2>
                     </div>
                     <div id="letter_preview" class="tab rounded-corners tab75">
                         <h2>Preview</h2>
                     </div>
-                    <div id="letter_finsh" class="tab rounded-corners tab75">
+                    <div id="letter_finsh" class="tab rounded-corners tab74">
                         <h2>Finish</h2>
                     </div>
                 </div><!-- multiple_tabs -->
