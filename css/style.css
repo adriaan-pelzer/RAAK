@@ -812,6 +812,15 @@ ol {
     margin-top: 10px;
 }
 
+.logo-project .whitebox_secondary ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.logo-project .whitebox_secondary ul a {
+    text-decoration: underline;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/

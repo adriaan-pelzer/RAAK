@@ -313,7 +313,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                 <div class="tab blue_tab tab112 rounded-corners">
                         <h2>Downloads</h2>
                 </div>
-                <div class="whitebox_secondary">
+                <div class="whitebox_secondary whitebox box rounded-corners">
                     <ul>
                         <li><a href="http://wewillraakyou.com/RAAK-letter-Illustrator-template.zip">Illustrator Template</a></li>
                         <li><a href="http://wewillraakyou.com/raak-letter-PS-template.zip">Photoshop Template</a></li>
