@@ -96,7 +96,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <span class="logo_project_bluebox_nav_item">
                         <span id="expand_R" class="logo_project_bluebox_nav_item_left"><a>R</a></span>
                         <span class="seperator">|</span>
-                        <span class="logo_project_bluebox_nav_item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=R">View All</a></span>
+                        <span class="logo_project_bluebox_nav_item_right"><a href="<?php echo get_page_link(3314); ?>">View All</a></span>
                     </span>
                     <span class="logo_project_bluebox_nav_item">
                         <span id="expand_A" class="logo_project_bluebox_nav_item_left"><a>A</a></span>
