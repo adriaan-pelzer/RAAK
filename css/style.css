@@ -941,22 +941,39 @@ ol {
 
 #whitebox_secondary_submit label[for="upload_agree"] {
     width: 179px;
-    vertical-align: -3px;
+    vertical-align: -4px;
 }
 
 #upload_agree {
     vertical-align: -5px;
 }
 
-input[name="upload_submit"] {
-    width: 59px;
+
+input[name="upload_submit"], #whitebox_secondary_preview_submit input, #whitebox_secondary_finish button {
     height: 26px;
+    padding: 0 6px;
+}
+
+input[name="upload_submit"] {
     float: right;
     margin-right: 4px;
 }
 
 .whitebox_secondary_back {
     height: auto;
+}
+
+#whitebox_secondary_preview_letters {
+    text-align: center;
+    border-bottom: 2px solid #00AEEF;
+    width: 190px;
+    margin: 0 auto 7px;
+}
+
+#whitebox_secondary_preview_letters img {
+    height: 42px;
+    width: auto;
+    margin: 0 5px -7px;
 }
 
 
