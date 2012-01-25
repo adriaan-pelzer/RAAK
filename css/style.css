@@ -913,7 +913,25 @@ ol {
 }
 
 
+#whitebox_secondary_submit input[type="text"] {
+    width: 201px;
+    height: 23px;
+}
 
+#file_replace {
+    background: url(images/logo_file_replace.png);
+    width: 203px;
+    height: 25px;
+    display: inline-block;
+}
+
+#whitebox_secondary_body_submit input#upload_file {
+    width: 25px;
+    height: 23px;
+    vertical-align: top;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
 
 /************** Sidebar ***************/
 
