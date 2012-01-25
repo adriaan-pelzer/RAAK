@@ -293,6 +293,18 @@ input[type="text"] {
     border: 1px solid #8CD9FF;
 }
 
+
+input[type="submit"] {
+    background: #ffffff;
+    color:#00aeff;
+    font: 9px arial, sans-serif;
+    text-transform: uppercase;
+}
+
+label {
+    display: inline-block;
+}
+
 /************** header ***************/
 
 #header {
@@ -840,7 +852,7 @@ ol {
 }
 
 
-.logo-project .whitebox_secondary  a {
+.logo-project .whitebox_secondary  a, .logo-project .whitebox_secondary ul#whitebox_secondary_submit a {
     color: #00aeff;
 }
 
@@ -890,6 +902,17 @@ ol {
     margin-top 10px;
     height: 25px;
 }
+
+#whitebox_secondary_submit {
+    color: #666666;
+}
+
+
+#whitebox_secondary_submit label {
+    width: 113px;
+}
+
+
 
 
 /************** Sidebar ***************/

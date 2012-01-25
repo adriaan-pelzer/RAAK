@@ -322,10 +322,10 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
             </section><!-- whitebox-secondary -->
             <section class="whitebox-secondary tab_container">
                 <div class="multiple_tabs">
-                    <div id="letter_upload" class="tab rounded-corners tab112 active">
+                    <div id="letter_upload" class="tab rounded-corners tab112">
                         <h2>Upload a letter</h2>
                     </div>
-                    <div id="letter_submit" class="tab rounded-corners tab74">
+                    <div id="letter_submit" class="tab rounded-corners tab74 active">
                         <h2>Submit</h2>
                     </div>
                     <div id="letter_preview" class="tab rounded-corners tab75">
