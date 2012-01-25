@@ -866,13 +866,14 @@ ol {
 #whitebox_secondary_body_upload_next {
 }
 
-#whitebox_secondary_body_upload_next a {
+#whitebox_secondary_upload_next a {
     padding: 8px 5px 0;
     display: inline-block;
     text-align: center;
     border: 1px solid #8CD9FF;
     height: 18px;
     margin-top: 3px;
+    color: #00aeff;
 }
 
 /************** Sidebar ***************/
