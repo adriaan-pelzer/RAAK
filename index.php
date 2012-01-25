@@ -155,7 +155,7 @@ Template Name:Home
                     </footer><!-- .whitebox_primary_body_footer -->
                 </div><!-- #whitebox_primary -->
             </section><!-- tab_container -->
-            <section class="tab_container whitebox_secondary_tab_container">
+            <section class="tab_container whitebox_secondary_container">
                 <div class="grey_tab tab tab104 rounded_corners">
                         <h2>Other Posts</h2>
                 </div><!-- .grey_tab -->

@@ -215,7 +215,7 @@ strong {
     float: left;
 }
 
-.whitebox_secondary_tab_container {
+.whitebox_secondary_container {
     margin-left: 20px;
 }
 
@@ -233,7 +233,7 @@ strong {
     width: 318px;
 }
 
-.whitebox_secondary {
+.whitebox_secondary_container {
     width: 323px;
     padding-right: 10px;
     padding-top:13px;
@@ -545,17 +545,17 @@ margin: 25px 0 9px;
 
 /************** Other Posts ***************/
 
-#whitebox_secondary h3 {
+.whitebox_secondary h3 {
     font-size: 11px;
 }
 
 
-#whitebox_secondary a {
+.whitebox_secondary a {
     color: #666666;
 }
 
 
-#whitebox_secondary li {
+.whitebox_secondary li {
     padding-left:16px;
 }
 
@@ -594,18 +594,18 @@ margin: 25px 0 9px;
     margin-left: 15px;
 }
 
-#whitebox_secondary a.more_link {
+.whitebox_secondary a.more_link {
     color: #00aeef;
 }
 
 
-#whitebox_secondary footer {
+.whitebox_secondary footer {
     text-align: right;
     margin: 6px 0 4px;
 }
 
 
-#whitebox_secondary ul {
+.whitebox_secondary ul {
     line-height: 19px;
     margin-top: 5px;
 }
