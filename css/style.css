@@ -78,7 +78,7 @@ body {
 
 }
 
-.rounded_corners {
+.rounded-corners {
     border-radius: 10px;
 }
 
@@ -87,7 +87,7 @@ body {
     margin: 0 auto;
 }
 
-.din_schrift {
+.din-schrift {
     font-family: din_schrift, 'Arial Narrow', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -211,11 +211,11 @@ strong {
     display: inline-block;
 }
 
-.whitebox_primary {
+.whitebox-primary {
     float: left;
 }
 
-.whitebox_secondary_container {
+.whitebox-secondary {
     margin-left: 20px;
 }
 
@@ -233,7 +233,7 @@ strong {
     width: 318px;
 }
 
-.whitebox_secondary_container {
+#whitebox_secondary {
     width: 323px;
     padding-right: 10px;
     padding-top:13px;
@@ -277,7 +277,7 @@ blockquote {
 
 }
 
-#blog_title {
+#blog-title {
     padding-left: 47px;
     font-size: 0;
     line-height: 0;
@@ -295,14 +295,14 @@ blockquote {
 }
 
 
-#blog_description {
+#blog-description {
     color: #00aeef;
     display: inline-block;
     margin:11px 0 0 20px;
     font-size: 10px;
 }
 
-.skip_link {
+.skip-link {
     line-height: 0;
     font-size: 0;
 }
@@ -545,67 +545,67 @@ margin: 25px 0 9px;
 
 /************** Other Posts ***************/
 
-.whitebox_secondary h3 {
+#whitebox_secondary h3 {
     font-size: 11px;
 }
 
 
-.whitebox_secondary a {
+#whitebox_secondary a {
     color: #666666;
 }
 
 
-.whitebox_secondary li {
+#whitebox_secondary li {
     padding-left:16px;
 }
 
 
-#whitebox_secondary_home_content_one li {
-    background: url(../images/whitebox_secondary_home_content_one_list.png) no-repeat 0px 5px;
+#whitebox_secondary_body_content_one li {
+    background: url(../images/whitebox_secondary_body_content_one_list.png) no-repeat 0px 5px;
 }
 
-#whitebox_secondary_home_content_two li {
-    background: url(../images/whitebox_secondary_home_content_two_list.png) no-repeat 0px 5px;
+#whitebox_secondary_body_content_two li {
+    background: url(../images/whitebox_secondary_body_content_two_list.png) no-repeat 0px 5px;
 }
 
-#whitebox_secondary_home_content_three li {
-    background: url(../images/whitebox_secondary_home_content_three_list.png) no-repeat 0px 5px;
+#whitebox_secondary_body_content_three li {
+    background: url(../images/whitebox_secondary_body_content_three_list.png) no-repeat 0px 5px;
 }
 
-#whitebox_secondary_home_content_one {
+#whitebox_secondary_body_content_one {
     border-bottom: 1px dashed #00aeef;
 }
 
-#whitebox_secondary_home_content_two, #whitebox_secondary_home_content_three {
+#whitebox_secondary_body_content_two, #whitebox_secondary_body_content_three {
     display: inline-block;
     padding-top: 15px;
     font-size: 12px;
     vertical-align: top;
 }
 
-#whitebox_secondary_home_content_two {
+#whitebox_secondary_body_content_two {
     border-right: 1px dashed #00AEEF;
     width: 145px;
     padding-right: 5px;
 }
 
-#whitebox_secondary_home_content_three {
+#whitebox_secondary_body_content_three {
     width: 150px;
     margin-left: 15px;
 }
 
-.whitebox_secondary a.more_link {
+#whitebox_secondary a.more_link {
     color: #00aeef;
 }
 
 
-.whitebox_secondary footer {
+#whitebox_secondary footer {
     text-align: right;
     margin: 6px 0 4px;
 }
 
 
-.whitebox_secondary ul {
+#whitebox_secondary ul {
     line-height: 19px;
     margin-top: 5px;
 }
@@ -720,29 +720,29 @@ ol {
 
 /************** LOGO PROJECT **********/
 
-.logo_project .whitebox_primary hr {
+.logo-project .whitebox_primary hr {
     margin-bottom: 16px;
 }
 
-.logo_project .whitebox_primary h3 {
+.logo-project .whitebox_primary h3 {
     margin-top: 15px;
     margin-bottom: 5px;
 }
 
-.logo_project ul {
+.logo-project ul {
     list-style: disc;
     padding-left: 15px;
     line-height: 19px;
 }
 
-.logo_project .whitebox_primary .more_link {
+.logo-project .whitebox_primary .more_link {
     display: block;
     text-align: right;
     margin-bottom: 10px;
     margin-top: 12px;
 }
 
-.logo_project .whitebox_primary {
+.logo-project .whitebox_primary {
     padding-bottom: 20px;
 }
 
@@ -799,7 +799,7 @@ ol {
     margin: 0;
 }
 
-.logo_project .bluebox_content_top {
+.logo-project .bluebox_content_top {
     margin-top: 10px;
 }
 

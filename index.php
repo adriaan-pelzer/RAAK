@@ -5,9 +5,9 @@ Template Name:Home
 ?>
 <?php get_header() ?>
 
-    <div class="container rounded_corners home">
+    <div class="container rounded-corners home">
         <div class="content">
-            <section id="logox_counter" class="rounded_corners din_schrift">
+            <section id="logox_counter" class="rounded-corners din-schrift">
                 <div id="logox_counter_arrow">
                     <span class="point_left"></span>
                     <span class="point_right"></span>
@@ -20,12 +20,12 @@ Template Name:Home
                 <hr />
                 <a id="upload_a_letter" href="http://wewillraakyou.com/wp-content/themes/RAAK/logo-project/">Upload a letter</a>
             </section><!-- #logox_counter -->
-            <section id="bluebox_home_left" class="bluebox box rounded_corners">
-                <h2 class="din_schrift"><a href="http://wewillraakyou.com/our-work/">Our Work</a></h2>
+            <section id="bluebox_home_left" class="bluebox box rounded-corners">
+                <h2 class="din-schrift"><a href="http://wewillraakyou.com/our-work/">Our Work</a></h2>
                 <hr />    
                 <p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
             </section><!-- #bluebox_home_left -->
-            <section id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded_corners">
+            <section id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
                     <section id="bluebox_body_nav" class="box_nav">
                         <h3 class="bluebox_body_nav_item small_arial_caps"><a onclick="javascript: expand('social-media-ready');">social media ready</a></h3>
                         <span class="seperator">|</span>
@@ -96,11 +96,11 @@ Template Name:Home
                         </ul>
                     </div>
             </section><!-- #bluebox_home_right -->
-            <section class="tab_container whitebox_primary">
-                <div class="grey_tab tab tab104 rounded_corners">
+            <section class="tab_container whitebox-primary">
+                <div class="grey_tab tab tab104 rounded-corners">
                         <h2>Latest Posts</h2>
                 </div><!-- .grey_tab -->
-                <div class="whitebox whitebox_primary box rounded_corners">
+                <div class="whitebox whitebox_primary box rounded-corners">
                     <div id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
                             <h3><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></h3>
                         <hr />
@@ -155,12 +155,12 @@ Template Name:Home
                     </footer><!-- .whitebox_primary_body_footer -->
                 </div><!-- #whitebox_primary -->
             </section><!-- tab_container -->
-            <section class="tab_container whitebox_secondary_container">
-                <div class="grey_tab tab tab104 rounded_corners">
+            <section class="tab_container whitebox-secondary">
+                <div class="grey_tab tab tab104 rounded-corners">
                         <h2>Other Posts</h2>
                 </div><!-- .grey_tab -->
-                <div class="whitebox_secondary whitebox box rounded_corners">
-                    <div id="whitebox_secondary_home_content_one">
+                <div id="whitebox_secondary" class="whitebox box rounded-corners">
+                    <div id="whitebox_secondary_body_content_one">
                         <h3 class="small_arial_caps">Must Reads</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
@@ -172,8 +172,8 @@ Template Name:Home
                         <footer>
                             <a class="more_link" href="http://wewillraakyou.com/category/must-read/" rel="nofollow">More &#9660;</a>
                         </footer>
-                    </div><!-- #whitebox_secondary_home_content_one -->
-                    <div id="whitebox_secondary_home_content_two">
+                    </div><!-- #whitebox_secondary_body_content_one -->
+                    <div id="whitebox_secondary_body_content_two">
                         <h3 class="small_arial_caps">Worth a Look</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2011/09/identity-and-location-and-sex-welcome-to-people-discovery/">Identity and location (and sex) - welcome to people discovery </a></li>
@@ -183,8 +183,8 @@ Template Name:Home
                         <footer>
                             <a class="more_link" href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">More &#9660;</a>
                         </footer>
-                    </div><!-- #whitebox_secondary_home_content_two -->
-                    <div id="whitebox_secondary_home_content_three">
+                    </div><!-- #whitebox_secondary_body_content_two -->
+                    <div id="whitebox_secondary_body_content_three">
                         <h3 class="small_arial_caps">The RAAKonteur</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></li>
@@ -194,7 +194,7 @@ Template Name:Home
                         <footer>
                             <a class="more_link" href="http://wewillraakyou.com/blog/the-raakonteur/" rel="nofollow">More &#9660;</a>
                         </footer>
-                    </div><!-- #whitebox_secondary_home_content_three -->
+                    </div><!-- #whitebox_secondary_body_content_three -->
                 </div><!-- #whitebox_secondary -->
             </section><!-- tab_container -->
         </div><!-- #content -->
