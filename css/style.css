@@ -288,6 +288,11 @@ blockquote {
     margin-bottom: 20px;
 }
 
+input[type="text"] {
+    background: #B9E5FB;
+    border: 1px solid #8CD9FF;
+}
+
 /************** header ***************/
 
 #header {
@@ -880,6 +885,12 @@ ol {
     height: 18px;
     margin-top: 3px;
 }
+
+#whitebox_secondary_submit li {
+    margin-top 10px;
+    height: 25px;
+}
+
 
 /************** Sidebar ***************/
 

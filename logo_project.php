@@ -349,33 +349,33 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <a class="smaller_arial_caps" >Next &#9658;</a>
                             </div>
                         </div><!-- whitebox_secondary_upload -->
-                        <div id="whitebox_secondary_submit">
-                            <div id="whitebox_secondary_submit_name">
+                        <ul id="whitebox_secondary_submit" class="smaller_arial_caps">
+                            <li id="whitebox_secondary_submit_name">
                                 <label for="upload_name">Your Name</label>
                                 <input id="upload_name" name="upload_name" type="text" maxlength="40" />
-                            </div>
-                            <div id="whitebox_secondary_submit_email">
+                            </li>
+                            <li id="whitebox_secondary_submit_email">
                                 <label for="upload_email">Email</label>
                                 <input id="upload_email" name="upload_email" type="text" maxlength="255" />
-                            </div>
-                            <div id="whitebox_secondary_submit_url">
+                            </li>
+                            <li id="whitebox_secondary_submit_url">
                                 <label for="upload_url">URL</label>
                                 <input id="upload_url" name="upload_url" type="text" maxlength="255" />
-                            </div>
-                            <div id="whitebox_secondary_submit_file">
+                            </li>
+                            <li id="whitebox_secondary_submit_file">
                                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                 <label for="upload_file">Browse for file</label>
                                 <span id="file_replace"><input id="upload_file" name="upload_file" type="file" /><p id="dummy_file_text"></p></span>
-                            </div>
-                            <div id="whitebox_secondary_submit_agree">
+                            </li>
+                            <li id="whitebox_secondary_submit_agree">
                             <label for="upload_agree">I agree to the <a href="http://wewillraakyou.com/logo-project/terms-and-conditions/">terms & conditions</a></label>
                                 <input id="upload_agree" name="upload_agree" type="checkbox" />
                                 <input name="upload_submit" type="submit" value="Submit &#9658;" />
-                            </div>
-                            <div class="whitebox_secondary_back" id="whitebox_secondary_submit_back">
+                            </li>
+                            <li class="whitebox_secondary_back" id="whitebox_secondary_submit_back">
                                 <a>&#9668; Go back</a>
-                            </div>
-                        </div><!-- #whitebox_secondary_submit -->
+                            </li>
+                        </ul><!-- #whitebox_secondary_submit -->
                         <div id="whitebox_secondary_preview" style="display: none;">
                             <div id="whitebox_secondary_preview_letters">
                                 <span id="preview_letter_R"><img alt="R" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&width=70&height=82" /></span>
