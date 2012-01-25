@@ -205,9 +205,8 @@ strong {
     display: inline-block;
 }
 
-
 .tab74 {
-    width: 75px;
+    width: 74px;
 }
 
 .tab75 {
@@ -837,6 +836,14 @@ ol {
 
 .logo-project .whitebox_secondary ul a {
     text-decoration: underline;
+}
+
+.logo-project .multiple_tabs .tab {
+    margin-left: 1px;
+}
+
+.logo-project .multiple_tabs:first-child  {
+    margin-left: 0;
 }
 
 /************** Sidebar ***************/
