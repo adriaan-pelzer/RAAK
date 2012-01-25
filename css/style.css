@@ -899,7 +899,7 @@ ol {
 }
 
 #whitebox_secondary_submit li {
-    margin-top 10px;
+    margin-top: 10px;
     height: 25px;
 }
 
@@ -919,13 +919,13 @@ ol {
 }
 
 #file_replace {
-    background: url(images/logo_file_replace.png);
+    background: url(../images/logo_file_replace.png);
     width: 203px;
     height: 25px;
     display: inline-block;
 }
 
-#whitebox_secondary_body_submit input#upload_file {
+#whitebox_secondary_submit input#upload_file {
     width: 25px;
     height: 23px;
     vertical-align: top;
