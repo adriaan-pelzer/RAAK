@@ -325,10 +325,10 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <div id="letter_upload" class="tab rounded-corners tab112">
                         <h2>Upload a letter</h2>
                     </div>
-                    <div id="letter_submit" class="tab rounded-corners tab74 active">
+                    <div id="letter_submit" class="tab rounded-corners tab75">
                         <h2>Submit</h2>
                     </div>
-                    <div id="letter_preview" class="tab rounded-corners tab75">
+                    <div id="letter_preview" class="tab rounded-corners tab75 active">
                         <h2>Preview</h2>
                     </div>
                     <div id="letter_finsh" class="tab rounded-corners tab74">
@@ -349,7 +349,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <a class="smaller_arial_caps" >Next &#9658;</a>
                             </div>
                         </div><!-- whitebox_secondary_upload -->
-                        <ul id="whitebox_secondary_submit" class="smaller_arial_caps">
+                        <ul id="whitebox_secondary_submit" class="smaller_arial_caps" style="display: none;">
                             <li id="whitebox_secondary_submit_name">
                                 <label for="upload_name">Your Name</label>
                                 <input id="upload_name" name="upload_name" type="text" maxlength="40" />
@@ -376,7 +376,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <a>&#9668; Go back</a>
                             </li>
                         </ul><!-- #whitebox_secondary_submit -->
-                        <div id="whitebox_secondary_preview" style="display: none;">
+                        <div id="whitebox_secondary_preview">
                             <div id="whitebox_secondary_preview_letters">
                                 <span id="preview_letter_R"><img alt="R" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&width=70&height=82" /></span>
                                 <span id="preview_letter_A1"><img alt="A" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/45d36d1d36846e6a7210254b7c10b1e0.png&width=70&height=82" /></span>
