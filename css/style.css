@@ -846,6 +846,35 @@ ol {
     margin-left: 0;
 }
 
+#whitebox_secondary_upload {
+    text-align: center;
+}
+
+
+#whitebox_secondary_upload p {
+    margin-bottom: 8px;
+}
+
+.letter {
+    display: inline-block;
+}
+
+#letter_R, #letter_A {
+    margin-right: 13px;
+}
+
+#whitebox_secondary_body_upload_next {
+}
+
+#whitebox_secondary_body_upload_next a {
+    padding: 8px 5px 0;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #8CD9FF;
+    height: 18px;
+    margin-top: 3px;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
