@@ -159,7 +159,7 @@ Template Name:Home
                 <div class="grey_tab tab tab104 rounded-corners">
                         <h2>Other Posts</h2>
                 </div><!-- .grey_tab -->
-                <div id="whitebox_secondary" class="whitebox box rounded-corners">
+                <div  class="whitebox_secondary whitebox box rounded-corners">
                     <div id="whitebox_secondary_body_content_one">
                         <h3 class="small_arial_caps">Must Reads</h3>
                         <ul>

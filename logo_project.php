@@ -7,7 +7,7 @@ Template Name:Logo Project
 
 	<div class="container rounded-corners logo-project">
 		<div class="content">
-            <section class="whitebox whitebox_primary box rounded-corners">
+            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Logo Project</h2>
                 </header>
@@ -309,21 +309,16 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     </div>
                 </div><!-- bluebox_content -->
             </section><!-- .bluebox_primary -->
-            <div id="whitebox_extra">
-                <div id="whitebox_extra_tabs">
-                    <div id="whitebox_extra_tabs_download">
-                        <div class="whitebox_extra_tab_top"></div>
-                        <div class="whitebox_extra_tab_body">Downloads</div>
-                    </div>
+            <div class="whitebox-secondary tab_container">
+                <div class="tab blue_tab tab112 rounded-corners">
+                        <h2>Downloads</h2>
                 </div>
-                <div id="whitebox_extra_top"></div>
-                <div id="whitebox_extra_body">
+                <div class="whitebox_secondary">
                     <ul>
                         <li><a href="http://wewillraakyou.com/RAAK-letter-Illustrator-template.zip">Illustrator Template</a></li>
                         <li><a href="http://wewillraakyou.com/raak-letter-PS-template.zip">Photoshop Template</a></li>
                     </ul>
                 </div>
-                <div id="whitebox_extra_bottom"></div>
             </div>
             <div id="whitebox_secondary">
                 <div id="whitebox_secondary_tabs">
