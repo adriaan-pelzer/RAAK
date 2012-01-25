@@ -159,8 +159,8 @@ Template Name:Home
                 <div class="grey_tab tab tab104 rounded_corners">
                         <h2>Other Posts</h2>
                 </div><!-- .grey_tab -->
-                <div id="whitebox_secondary" class="whitebox box rounded_corners">
-                    <div id="whitebox_secondary_body_content_one">
+                <div class="whitebox_secondary whitebox box rounded_corners">
+                    <div id="whitebox_secondary_home_content_one">
                         <h3 class="small_arial_caps">Must Reads</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
@@ -172,8 +172,8 @@ Template Name:Home
                         <footer>
                             <a class="more_link" href="http://wewillraakyou.com/category/must-read/" rel="nofollow">More &#9660;</a>
                         </footer>
-                    </div><!-- #whitebox_secondary_body_content_one -->
-                    <div id="whitebox_secondary_body_content_two">
+                    </div><!-- #whitebox_secondary_home_content_one -->
+                    <div id="whitebox_secondary_home_content_two">
                         <h3 class="small_arial_caps">Worth a Look</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2011/09/identity-and-location-and-sex-welcome-to-people-discovery/">Identity and location (and sex) - welcome to people discovery </a></li>
@@ -183,8 +183,8 @@ Template Name:Home
                         <footer>
                             <a class="more_link" href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">More &#9660;</a>
                         </footer>
-                    </div><!-- #whitebox_secondary_body_content_two -->
-                    <div id="whitebox_secondary_body_content_three">
+                    </div><!-- #whitebox_secondary_home_content_two -->
+                    <div id="whitebox_secondary_home_content_three">
                         <h3 class="small_arial_caps">The RAAKonteur</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></li>
@@ -194,7 +194,7 @@ Template Name:Home
                         <footer>
                             <a class="more_link" href="http://wewillraakyou.com/blog/the-raakonteur/" rel="nofollow">More &#9660;</a>
                         </footer>
-                    </div><!-- #whitebox_secondary_body_content_three -->
+                    </div><!-- #whitebox_secondary_home_content_three -->
                 </div><!-- #whitebox_secondary -->
             </section><!-- tab_container -->
         </div><!-- #content -->

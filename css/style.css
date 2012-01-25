@@ -215,7 +215,7 @@ strong {
     float: left;
 }
 
-.whitebox_secondary {
+.whitebox_secondary_tab_container {
     margin-left: 20px;
 }
 
@@ -233,7 +233,7 @@ strong {
     width: 318px;
 }
 
-#whitebox_secondary {
+.whitebox_secondary {
     width: 323px;
     padding-right: 10px;
     padding-top:13px;
@@ -560,36 +560,36 @@ margin: 25px 0 9px;
 }
 
 
-#whitebox_secondary_body_content_one li {
-    background: url(../images/whitebox_secondary_body_content_one_list.png) no-repeat 0px 5px;
+#whitebox_secondary_home_content_one li {
+    background: url(../images/whitebox_secondary_home_content_one_list.png) no-repeat 0px 5px;
 }
 
-#whitebox_secondary_body_content_two li {
-    background: url(../images/whitebox_secondary_body_content_two_list.png) no-repeat 0px 5px;
+#whitebox_secondary_home_content_two li {
+    background: url(../images/whitebox_secondary_home_content_two_list.png) no-repeat 0px 5px;
 }
 
-#whitebox_secondary_body_content_three li {
-    background: url(../images/whitebox_secondary_body_content_three_list.png) no-repeat 0px 5px;
+#whitebox_secondary_home_content_three li {
+    background: url(../images/whitebox_secondary_home_content_three_list.png) no-repeat 0px 5px;
 }
 
-#whitebox_secondary_body_content_one {
+#whitebox_secondary_home_content_one {
     border-bottom: 1px dashed #00aeef;
 }
 
-#whitebox_secondary_body_content_two, #whitebox_secondary_body_content_three {
+#whitebox_secondary_home_content_two, #whitebox_secondary_home_content_three {
     display: inline-block;
     padding-top: 15px;
     font-size: 12px;
     vertical-align: top;
 }
 
-#whitebox_secondary_body_content_two {
+#whitebox_secondary_home_content_two {
     border-right: 1px dashed #00AEEF;
     width: 145px;
     padding-right: 5px;
 }
 
-#whitebox_secondary_body_content_three {
+#whitebox_secondary_home_content_three {
     width: 150px;
     margin-left: 15px;
 }
