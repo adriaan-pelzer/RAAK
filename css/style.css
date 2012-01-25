@@ -871,7 +871,7 @@ ol {
     margin-left: 0;
 }
 
-#whitebox_secondary_upload {
+#whitebox_secondary_upload, #whitebox_secondary_finish {
     text-align: center;
 }
 
@@ -980,6 +980,15 @@ input[name="upload_submit"] {
     height: 42px;
     width: auto;
     margin: 0 5px -4px;
+}
+
+#whitebox_secondary_finish h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#whitebox_secondary_finish button {
+margin-top: 10px;
 }
 
 
