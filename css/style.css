@@ -916,13 +916,13 @@ ol {
 
 
 #whitebox_secondary_submit input[type="text"] {
-    width: 201px;
+    width: 199px;
     height: 23px;
 }
 
 #file_replace {
     background: url(../images/logo_file_replace.png);
-    width: 199px;
+    width: 203px;
     height: 25px;
     display: inline-block;
 }
@@ -946,6 +946,12 @@ ol {
 
 #upload_agree {
     vertical-align: -5px;
+}
+
+input[name="upload_submit"] {
+    width: 59px;
+    height: 26px;
+    float: right;
 }
 
 .whitebox_secondary_back {
