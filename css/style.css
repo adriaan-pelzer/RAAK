@@ -78,7 +78,7 @@ body {
 
 }
 
-.rounded-corners {
+.rounded_corners {
     border-radius: 10px;
 }
 
@@ -87,7 +87,7 @@ body {
     margin: 0 auto;
 }
 
-.din-schrift {
+.din_schrift {
     font-family: din_schrift, 'Arial Narrow', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -211,11 +211,11 @@ strong {
     display: inline-block;
 }
 
-.whitebox-primary {
+.whitebox_primary {
     float: left;
 }
 
-.whitebox-secondary {
+.whitebox_secondary {
     margin-left: 20px;
 }
 
@@ -277,7 +277,7 @@ blockquote {
 
 }
 
-#blog-title {
+#blog_title {
     padding-left: 47px;
     font-size: 0;
     line-height: 0;
@@ -295,14 +295,14 @@ blockquote {
 }
 
 
-#blog-description {
+#blog_description {
     color: #00aeef;
     display: inline-block;
     margin:11px 0 0 20px;
     font-size: 10px;
 }
 
-.skip-link {
+.skip_link {
     line-height: 0;
     font-size: 0;
 }
@@ -720,29 +720,29 @@ ol {
 
 /************** LOGO PROJECT **********/
 
-.logo-project .whitebox_primary hr {
+.logo_project .whitebox_primary hr {
     margin-bottom: 16px;
 }
 
-.logo-project .whitebox_primary h3 {
+.logo_project .whitebox_primary h3 {
     margin-top: 15px;
     margin-bottom: 5px;
 }
 
-.logo-project ul {
+.logo_project ul {
     list-style: disc;
     padding-left: 15px;
     line-height: 19px;
 }
 
-.logo-project .whitebox_primary .more_link {
+.logo_project .whitebox_primary .more_link {
     display: block;
     text-align: right;
     margin-bottom: 10px;
     margin-top: 12px;
 }
 
-.logo-project .whitebox_primary {
+.logo_project .whitebox_primary {
     padding-bottom: 20px;
 }
 
@@ -799,7 +799,7 @@ ol {
     margin: 0;
 }
 
-.logo-project .bluebox_content_top {
+.logo_project .bluebox_content_top {
     margin-top: 10px;
 }
 

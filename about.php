@@ -5,14 +5,14 @@ Template Name: About
 ?>
 <?php get_header() ?>
 
-	<div class="container rounded-corners about">
+	<div class="container rounded_corners about">
 		<div class="content">
-            <section class="whitebox whitebox_primary box rounded-corners">
+            <section class="whitebox whitebox_primary box rounded_corners">
                 <header>
                     <div class="whitebox_primary_body_nav smaller_arial_caps box_nav">
                         <a class="active" onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator seperator_smaller">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
                     </div><!-- whitebox_primary_body_nav -->
-                    <h2 class="din-schrift blue_20">About</h2>
+                    <h2 class="din_schrift blue_20">About</h2>
                 </header>
                 <hr />
                 <div id="what-we-do" class="whitebox_primary_body_content" style="display: none;">
@@ -182,7 +182,7 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
                     </div><!-- whitebox_primary_body_content_founder -->
                 </div><!-- whitebox_primary_body_content -->
             </section><!-- #whitebox_primary -->
-            <section class="bluebox bluebox_primary box rounded-corners">
+            <section class="bluebox bluebox_primary box rounded_corners">
                 <header>
                     <h3 class="box_nav_no_title bluebox_primary_body_nav box_nav smaller_arial_caps">What we do</h3>
                 </header>

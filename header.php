@@ -186,8 +186,8 @@ _gaq.push(['_trackPageview']);
 
 <body class="wordpress y2011 m12 d07 h07 home page pageid-4 page-author-admin page-template page-template-home-php">
 <div id="wrapper" class="hfeed">
-    <header id="header" class="rounded-corners din-schrift">
-        <div id="blog-title">
+    <header id="header" class="rounded_corners din_schrift">
+        <div id="blog_title">
             <h1>RAAK</h1>
             <div id="logo_letter_r1" class="logo_letter">
                 <a href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
@@ -210,12 +210,12 @@ _gaq.push(['_trackPageview']);
                 </a>
             </div>
         </div>
-        <div id="blog-description">Putting you in touch with your crowds</div>
+        <div id="blog_description">Putting you in touch with your crowds</div>
         <div id="access">
-            <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+            <div class="skip_link"><a href="#content" title="Skip to content">Skip to content</a></div>
             <div id="menu">
                 <ul>
-                    <li class="first-page-item">
+                    <li class="first_page_item">
                         <div class="first_topmenu_top"></div>
                         <div class="first_topmenu_body"></div>
                     </li>
