@@ -193,12 +193,16 @@ strong {
     margin-bottom: -16px;
 }
 
-.grey_tab {
+.grey_tab, .multiple_tabs .tab {
     background: #bebebe;
 }
 
-.blue_tab {
+.blue_tab, .multiple_tabs .active {
     background: #00aeff;
+}
+
+.tab75 {
+    width: 75px;
 }
 
 .tab104 {
@@ -814,6 +818,11 @@ ol {
 
 .logo-project .whitebox_secondary ul {
     list-style: none;
+    padding-left: 0;
+}
+
+
+.logo-project .whitebox_secondary li {
     padding-left: 0;
 }
 

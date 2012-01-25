@@ -309,7 +309,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     </div>
                 </div><!-- bluebox_content -->
             </section><!-- .bluebox_primary -->
-            <div class="whitebox-secondary tab_container">
+            <section class="whitebox-secondary tab_container">
                 <div class="tab blue_tab tab112 rounded-corners">
                         <h2>Downloads</h2>
                 </div>
@@ -319,30 +319,25 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         <li><a href="http://wewillraakyou.com/raak-letter-PS-template.zip">Photoshop Template</a></li>
                     </ul>
                 </div>
-            </div>
-            <div id="whitebox_secondary">
-                <div id="whitebox_secondary_tabs">
-                    <div id="whitebox_secondary_tabs_upload" class="whitebox_secondary_tab active">
-                        <div class="whitebox_secondary_tab_top"></div>
-                        <div class="whitebox_secondary_tab_body">Upload a letter</div>
+            </section><!-- whitebox-secondary -->
+            <section class="whitebox-secondary tab_container">
+                <div class="multiple_tabs">
+                    <div id="letter_upload" class="tab rounded-corners tab112 active">
+                        <h2>Upload a letter</h2>
                     </div>
-                    <div id="whitebox_secondary_tabs_submit" class="whitebox_secondary_tab">
-                        <div class="whitebox_secondary_tab_top"></div>
-                        <div class="whitebox_secondary_tab_body">Submit</div>
+                    <div id="letter_submit" class="tab rounded-corners tab75">
+                        <h2>Submit</h2>
                     </div>
-                    <div id="whitebox_secondary_tabs_preview" class="whitebox_secondary_tab">
-                        <div class="whitebox_secondary_tab_top"></div>
-                        <div class="whitebox_secondary_tab_body">Preview</div>
+                    <div id="letter_preview" class="tab rounded-corners tab75">
+                        <h2>Preview</h2>
                     </div>
-                    <div id="whitebox_secondary_tabs_finish" class="whitebox_secondary_tab">
-                        <div class="whitebox_secondary_tab_top"></div>
-                        <div class="whitebox_secondary_tab_body">Finish</div>
+                    <div id="letter_finsh" class="tab rounded-corners tab75">
+                        <h2>Finish</h2>
                     </div>
-                </div><!-- #whitebox_secondary_tabs -->
-                <div id="whitebox_secondary_top"></div>
-                <div id="whitebox_secondary_body">
+                </div><!-- multiple_tabs -->
+                <div class="whitebox_secondary whitebox box rounded-corners">
                     <form method="post" enctype="multipart/form-data" action="">
-                    <div id="whitebox_secondary_body_upload">
+                        <div id="whitebox_secondary_body_upload">
                             <p>Choose the letter you've designed</p>
                             <div id="whitebox_secondary_body_upload_letters">
                                 <input id="upload_letter" type="hidden" name="upload_letter" value="R" />
@@ -402,8 +397,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div><!-- #whitebox_secondary_body_finish -->
                     </form>
                 </div><!-- #whitebox_secondary_body -->
-                <div id="whitebox_secondary_bottom"></div>
-            </div><!-- #whitebox_secondary -->
+            </section><!-- whitebox_secondary -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
