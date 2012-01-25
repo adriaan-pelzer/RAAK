@@ -299,6 +299,7 @@ input[type="submit"] {
     color:#00aeff;
     font: 9px arial, sans-serif;
     text-transform: uppercase;
+    border: 1px solid #8CD9FF;
 }
 
 label {
@@ -854,6 +855,7 @@ ol {
 
 .logo-project .whitebox_secondary  a, .logo-project .whitebox_secondary ul#whitebox_secondary_submit a {
     color: #00aeff;
+    text-decoration: none;
 }
 
 .logo-project .whitebox_secondary ul a {
@@ -932,6 +934,15 @@ ol {
     opacity: 0;
     filter: alpha(opacity=0);
 }
+
+    #whitebox_secondary_submit_file label {
+    vertical-align: 7px;
+}
+
+#whitebox_secondary_submit label[for="upload_agree"] {
+    width: 179px;
+}
+
 
 /************** Sidebar ***************/
 
