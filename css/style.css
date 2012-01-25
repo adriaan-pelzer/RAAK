@@ -201,6 +201,10 @@ strong {
     background: #00aeff;
 }
 
+.multiple_tabs .tab {
+    display: inline-block;
+}
+
 .tab75 {
     width: 75px;
 }
