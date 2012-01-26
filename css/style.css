@@ -1119,7 +1119,7 @@ h3.expanded_letter {
     margin: 10px 0;
 }
 
-.whitebox_primary_solution .whitebox_primary_section_label {
+.whitebox_primary_solution .whitebox_primary_section_label, .whitebox_primary_brief .whitebox_primary_section_label {
     line-height: 19px;
 }
 

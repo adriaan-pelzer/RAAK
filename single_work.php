@@ -47,64 +47,44 @@ Template Name:Single Work
 <p>The campaign not only drove hundreds of Likes to each bit of Ted Baker content, it raised awareness over all.</p></span>
                 </div><!-- .whitebox_primary_section -->
             </section><!-- whitebox_primary -->
-            <div id="bluebox">
-                <div id="bluebox_top"></div>
-                <div id="bluebox_body">
-                    <div id="bluebox_bigpic"></div>
-                    <hr class="solid" />
-                    <div id="bluebox_thumbpic">
-                        
-<div class="ngg-galleryoverview" id="ngg-gallery-23-5118">
-
-
-	<!-- Piclense link -->
-	<div class="piclenselink">
-		<a class="piclenselink" href="javascript:PicLensLite.start({feedUrl:'http://wewillraakyou.com/wp-content/plugins/nextgen-gallery/xml/media-rss.php?gid=23&amp;mode=gallery'});">
-			[View with PicLens]		</a>
-	</div>
-	
-	<!-- Thumbnails -->
-		
-	<div id="ngg-image-154" class="ngg-gallery-thumbnail-box"  >
-		<div class="ngg-gallery-thumbnail" >
-			<a href="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker2.jpg" title=" " class="shutterset_set_23" >
-								<img title="tedbaker2" alt="tedbaker2" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/thumbs/thumbs_tedbaker2.jpg" width="100" height="75" />
-							</a>
-		</div>
-	</div>
-	
-		
- 		
-	<div id="ngg-image-161" class="ngg-gallery-thumbnail-box"  >
-		<div class="ngg-gallery-thumbnail" >
-			<a href="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker6copy.jpg" title=" " class="shutterset_set_23" >
-								<img title="tedbaker6copy" alt="tedbaker6copy" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/thumbs/thumbs_tedbaker6copy.jpg" width="100" height="75" />
-							</a>
-		</div>
-	</div>
-	
-		
- 		
-	<div id="ngg-image-156" class="ngg-gallery-thumbnail-box"  >
-		<div class="ngg-gallery-thumbnail" >
-			<a href="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker4.jpg" title=" " class="shutterset_set_23" >
-								<img title="tedbaker4" alt="tedbaker4" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/thumbs/thumbs_tedbaker4.jpg" width="100" height="75" />
-							</a>
-		</div>
-	</div>
-	
-		
- 	 	
-	<!-- Pagination -->
- 	<div class='ngg-clear'></div>
- 	
-</div>
-
-
+            <section  class="bluebox bluebox_primary box bluebox-primary rounded-corners">
+                <div id="bluebox_bigpic">
+                    <img width="315px" height="203px" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker2.jpg">
+                </div>
+                <hr class="solid" />
+                <div id="bluebox_thumbpic">
+                    <div class="ngg-galleryoverview" id="ngg-gallery-23-5118">
+                        <!-- Piclense link -->
+                        <div class="piclenselink">
+                            <a class="piclenselink" href="javascript:PicLensLite.start({feedUrl:'http://wewillraakyou.com/wp-content/plugins/nextgen-gallery/xml/media-rss.php?gid=23&amp;mode=gallery'});">[View with PicLens]</a>
+                        </div>
+                        <!-- Thumbnails -->
+                        <div id="ngg-image-154" class="ngg-gallery-thumbnail-box">
+                            <div class="ngg-gallery-thumbnail">
+                                <a href="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker2.jpg" title=" " class="shutterset_set_23" >
+                                    <img title="tedbaker2" alt="tedbaker2" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/thumbs/thumbs_tedbaker2.jpg" width="100" height="75" />
+                                </a>
+                            </div>
+                        </div>
+                        <div id="ngg-image-161" class="ngg-gallery-thumbnail-box"  >
+                            <div class="ngg-gallery-thumbnail" >
+                                <a href="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker6copy.jpg" title=" " class="shutterset_set_23" >
+                                    <img title="tedbaker6copy" alt="tedbaker6copy" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/thumbs/thumbs_tedbaker6copy.jpg" width="100" height="75" />
+                                </a>
+                            </div>
+                        </div>
+                        <div id="ngg-image-156" class="ngg-gallery-thumbnail-box"  >
+                            <div class="ngg-gallery-thumbnail" >
+                                <a href="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker4.jpg" title=" " class="shutterset_set_23" >
+                                    <img title="tedbaker4" alt="tedbaker4" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/thumbs/thumbs_tedbaker4.jpg" width="100" height="75" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Pagination -->
+                        <div class='ngg-clear'></div>
                     </div>
-                </div><!-- #bluebox_body -->
-                <div id="bluebox_bottom"></div>
-            </div><!-- #bluebox -->
+                </div>
+            </section><!-- bluebox -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
