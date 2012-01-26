@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: About
+Template Name: Our Products 
  */
 ?>
 <?php get_header() ?>
