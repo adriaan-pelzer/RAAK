@@ -1134,6 +1134,14 @@ h3.expanded_letter {
     margin: 0!important;
 }
 
+.ngg-gallery-thumbnail-box {
+    display: inline-block;
+    margin-left: 9px;
+}
+
+a.page-numbers, .ngg-navigation span {
+    display: none;
+}
 
 /************** Sidebar ***************/
 
