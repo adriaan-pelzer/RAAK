@@ -5,7 +5,7 @@ Template Name:Single Work
 ?>
 <?php get_header() ?>
 
-	<div  class="container rounded-corners single-product">
+	<div  class="container rounded-corners single-work">
 		<div class="content">
             <section class="whitebox_big whitebox box big_box rounded-corners_top_bottom_right">
                 <header>
@@ -27,17 +27,17 @@ Template Name:Single Work
                     <span class="whitebox_primary_section_label">Client:</span>
                     <span class="whitebox_primary_section_content">Ted Baker / Guided Collective</span>
                 </div><!-- .whitebox_primary_section -->
-                <hr class="solid">
+                <hr class="solid thicker_hr lightblue_hr">
                 <div class="whitebox_primary_project whitebox_primary_section bigger_arial_caps">
                     <span class="whitebox_primary_section_label">Project:</span>
                     <span class="whitebox_primary_section_content">Ted Baker's Rutting Season</span>
                 </div><!-- .whitebox_primary_section -->
-                <hr class="solid">
+                <hr class="solid thicker_hr lightblue_hr">
                 <div class="whitebox_primary_brief whitebox_primary_section">
                     <span class="whitebox_primary_section_label bigger_arial_caps">Brief:</span>
                     <span class="whitebox_primary_section_content">Create more awareness for Ted Baker and Ted Baker's Facebook page.</span>
                 </div><!-- .whitebox_primary_section -->
-                <hr class="solid">
+                <hr class="solid thicker_hr lightblue_hr">
                 <div class="whitebox_primary_solution whitebox_primary_section">
                     <span class="whitebox_primary_section_label bigger_arial_caps">Solution:</span>
                     <span class="whitebox_primary_section_content"><p>So Ted Baker wanted to boost their Facebook presence. But building a Facebook fan page is hard work.</p>
