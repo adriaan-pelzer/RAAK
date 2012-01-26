@@ -9,7 +9,7 @@ Template Name: Our Products
 		<div class="content">
             <section class="whitebox_big whitebox box big_box rounded-corners">
                 <header>
-                    <h2 class="din-schrift blue_20">Our Work</h2>
+                    <h2 class="din-schrift blue_20">Our Products</h2>
                     <nav class="box_nav smaller_arial_caps">
                         <a id="whitebox_big_nav_all-products" class="whitebox_big_nav_item active" onclick="javascript: expand('all-products');">All Products</a>
                     </nav>
