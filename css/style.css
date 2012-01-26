@@ -1143,6 +1143,24 @@ a.page-numbers, .ngg-navigation span {
     display: none;
 }
 
+.ngg-galleryoverview {
+    margin-top: 3px!important;
+    margin-left: -9px;
+    width: 328px!important;
+}
+
+a.next, a.prev {
+    border: none!important;
+    color: #6CF!important;
+    padding: 0!important;
+}
+
+.next {
+    float: right;
+}
+
+
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
