@@ -803,26 +803,26 @@ ol {
     margin: 0 4px;
 }
 
-.bluebox_content_image  {
+.logo_project_letter_image  {
     background: #ffffff;
     width: 71px;
     height: 85px;
     padding: 0 10px 6px 10px;
 }
 
-.bluebox_content_blurp {
+.logo_project_letter_blurp {
     color: #ffffff;
     margin: 7px 0 3px;
 }
 
-.bluebox_content_name  {
+.logo_project_letter_name  {
     color: #666666;
     height: 26px;
     line-height: 13px;
     margin-bottom: 2px;
 }
 
-.bluebox_content_name a {
+.logo_project_letter_name a {
     color: #00aeff;
 }
 

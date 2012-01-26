@@ -113,65 +113,65 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                 <div id="bluebox_content_R" class="bluebox_content smaller_arial_caps">
                     <div class="bluebox_content_top">
                         <div class="bluebox_content_top_left logo_project_letter">
-                            <div class="bluebox_content_image rounded-corners">
+                            <div class="logo_project_letter_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/3326823e578cbe72c52ca50e5b338494.jpg&width=70&height=82" />
                             </div>
-                            <div class="bluebox_content_blurp">
+                            <div class="logo_project_letter_blurp">
                                 Submitted by
                             </div>
-                            <div class="bluebox_content_name">
+                            <div class="logo_project_letter_name">
                                 <a href="http://www.steve-baker.co.uk">Steve Baker</a>                                </div>
                         </div><!-- bluebox_content_top_left -->
                         <div class="bluebox_content_top_center logo_project_letter">
-                            <div class="bluebox_content_image rounded-corners">
+                            <div class="logo_project_letter_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a8b2a4f4c69564aa9f11381c0c260235.jpg&width=70&height=82" />
                             </div>
-                            <div class="bluebox_content_blurp">
+                            <div class="logo_project_letter_blurp">
                                 Submitted by
                             </div>
-                            <div class="bluebox_content_name">
+                            <div class="logo_project_letter_name">
                                 PSED                                </div>
                         </div><!-- bluebox_content_top_center -->
                         <div class="bluebox_content_top_right logo_project_letter">
-                            <div class="bluebox_content_image rounded-corners">
+                            <div class="logo_project_letter_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/2dcfb0448f8b53e4a913a16c8f3413f2.jpg&width=70&height=82" />
                             </div>
-                            <div class="bluebox_content_blurp">
+                            <div class="logo_project_letter_blurp">
                                 Submitted by
                             </div>
-                            <div class="bluebox_content_name">
+                            <div class="logo_project_letter_name">
                                 PSED                                </div>
                         </div><!-- bluebox_content_top_right -->
                     </div><!-- bluebox_content_top -->
                     <div class="bluebox_content_bottom">
                         <div class="bluebox_content_bottom_left logo_project_letter">
-                            <div class="bluebox_content_image rounded-corners">
+                            <div class="logo_project_letter_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/7832f12fb6b6af543b029481f0b7baa4.png&width=70&height=82" />
                             </div>
-                            <div class="bluebox_content_blurp">
+                            <div class="logo_project_letter_blurp">
                                 Submitted by
                             </div>
-                            <div class="bluebox_content_name">
+                            <div class="logo_project_letter_name">
                                 <a href="http://serdarozyigit.com">Serdar Ozyigit</a>                                </div>
                         </div><!-- bluebox_content_bottom_left -->
                         <div class="bluebox_content_bottom_center logo_project_letter">
-                            <div class="bluebox_content_image rounded-corners">
+                            <div class="logo_project_letter_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/5196b17d8503c6ad7a7accfefbdeda83.jpg&width=70&height=82" />
                             </div>
-                            <div class="bluebox_content_blurp">
+                            <div class="logo_project_letter_blurp">
                                 Submitted by
                             </div>
-                            <div class="bluebox_content_name">
+                            <div class="logo_project_letter_name">
                                 <a href="http://www.prostress.com">Han Hoogerbrugge</a>                                </div>
                         </div><!-- bluebox_content_bottom_center -->
                         <div class="bluebox_content_bottom_right logo_project_letter">
-                            <div class="bluebox_content_image rounded-corners">
+                            <div class="logo_project_letter_image rounded-corners">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&width=70&height=82" />
                             </div>
-                            <div class="bluebox_content_blurp">
+                            <div class="logo_project_letter_blurp">
                                 Submitted by
                             </div>
-                            <div class="bluebox_content_name">
+                            <div class="logo_project_letter_name">
                                 <a href="http://www.cowafrica.co.za">Steyn</a>                                </div>
                         </div><!-- bluebox_content_bottom_right -->
                     </div><!-- bluebox_content_bottom -->

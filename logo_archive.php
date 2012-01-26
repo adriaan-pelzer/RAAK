@@ -22,18 +22,19 @@ Template Name:Logo Archive
                 </header>
                 <hr />
                 <h3  id="expanded_letter_r" class="expanded_letter smaller_arial_caps">Letter R</h3>
-                <hr class="solid" />
-                <div id="bluebox_big_content_R" class="bluebox_big_content">
+                <hr class="solid blue_hr" />
+                <div id="bluebox_big_content_R" class="bluebox_big_content smaller_arial_caps">
                     <div class="bluebox_big_content_row">
-                        <div class="bluebox_big_content_row_item">
-                            <div id="bluebox_big_content_row_item_image">
+                        <div class="bluebox_big_content_row_item logo_project_letter">
+                            <div class="logo_project_letter_image">
                                 <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/3326823e578cbe72c52ca50e5b338494.jpg&width=70&height=84" />
                             </div>
-                            <div id="bluebox_big_content_row_item_blurp">
+                            <div class="logo_project_letter_blurp">
                                 Submitted by
                             </div>
-                            <div id="bluebox_big_content_row_item_name">
-                                <a href="http://www.steve-baker.co.uk">Steve Baker</a>                                </div>
+                            <div class="logo_project_letter_name">
+                                <a href="http://www.steve-baker.co.uk">Steve Baker</a>
+                            </div>
                         </div>
                         <div class="bluebox_big_content_row_item">
                             <div id="bluebox_big_content_row_item_image">
