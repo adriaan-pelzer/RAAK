@@ -7,8 +7,8 @@ Template Name:Logo Archive
 
 	<div class="container rounded-corners logo-project">
 		<div class="content">
-            <div id="bluebox_big">
-                <h2>Logo Project</h2>
+            <section class="bluebox_big bluebox box rounded-corners">
+                <h2 class="din-schrift blue_20">Logo Project</h2>
                 <div id="bluebox_big_nav">
                     <span id="expand_R" class="bluebox_big_nav_item active"><a>R</a></span>
                     <span class="bluebox_big_nav_seperator">|</span>
@@ -309,7 +309,7 @@ Template Name:Logo Archive
                         </div>
                     </div><!-- .bluebox_big_content_row -->
                 </div><!-- bluebox_big_content -->
-            </div><!-- #bluebox_big -->
+            </section><!-- bluebox_big -->
 		</div><!-- content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
