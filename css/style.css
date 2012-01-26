@@ -82,6 +82,11 @@ body {
     border-radius: 10px;
 }
 
+
+.rounded-corners_bottom {
+    border-radius: 0 0 10px 10px;
+}
+
 #wrapper {
     width: 1000px;
     margin: 0 auto;
@@ -375,6 +380,11 @@ label {
 .topmenu_body a {
     text-decoration: none;
     color: #a9a9a9;
+}
+
+
+.big_box header {
+    padding: 8px 0 6px;
 }
 
 
@@ -1003,11 +1013,6 @@ margin-top: 10px;
 .bluebox_big_content_row {
     width: 742px;
     margin: 13px -12px 13px 0;
-}
-
-.logo-archive header {
-    overflow: auto;
-    padding: 7px 0;
 }
 
 h3.expanded_letter {

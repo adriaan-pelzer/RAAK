@@ -8,12 +8,12 @@ Template Name:Single Product
 	<div class="container rounded-corners single-product">
 		<div class="content">
             <section class="whitebox_big whitebox box big_box rounded-corners">
+                <header>
                     <h2  class="din-schrift blue_20">Our Products</h2>
+                </header>
                     <hr />
             </section><!-- whitebox_big -->
-            <div id="whitebox_primary">
-                <div id="whitebox_primary_top_outward"><!-- for the sake of the outward-facing corner on the right --></div>
-                <div id="whitebox_primary_body">
+            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
                     <div id="whitebox_primary_body_project" class="whitebox_primary_body_section">
                         <span class="whitebox_primary_body_section_title">Product:</span>
                         <span class="whitebox_primary_body_section_content"><a target="_blank" href="http://m.tweetrewinder.com">Rewinder</a></span>
@@ -26,9 +26,7 @@ Template Name:Single Product
 <p>If you're just quickly catching up with an event, you can play them back at faster than realtime too.</p>
 <p>This is as close to Time Travel you'll ever get, without altering the future!</p></span>
                     </div><!-- .whitebox_primary_body_section -->
-                </div><!-- #whitebox_primary_body -->
-                <div id="whitebox_primary_bottom"></div>
-            </div><!-- #whitebox_primary -->
+            </section><!-- whitebox_primary -->
             <div id="bluebox">
                 <div id="bluebox_top"></div>
                 <div id="bluebox_body">
