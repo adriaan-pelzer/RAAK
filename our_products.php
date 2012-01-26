@@ -29,7 +29,7 @@ Template Name: Our Products
                                     <span class="whitebox_big_category_entry_title_name">Rewinder</span>
                                 </div><!-- .whitebox_big_category_entry_title -->
                                 <hr class="solid" />
-                                <a class="whitebox_big_category_entry_content" href="http://wewillraakyou.com/2011/11/rewinder-timeshift-your-tweets/" onmouseover="javascript: mouse_action ('all-products', 0, 'over');" onmouseout="javascript: mouse_action ('all-products', 0, 'out');">
+                                <a class="whitebox_big_category_entry_content" href="<?php echo get_page_link(5221); ?>" onmouseover="javascript: mouse_action ('all-products', 0, 'over');" onmouseout="javascript: mouse_action ('all-products', 0, 'out');">
                                     <div id="post_all-products_0_picture" class="whitebox_big_category_entry_content_picture">
                                         <img alt="" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder00.png"  width="220"  height="142" />                     </div><!-- #post_0_picture -->
                                     <div id="post_all-products_0_overview" class="whitebox_big_category_entry_content_overview" style="width: 160px; height: 82px; display: none;">
