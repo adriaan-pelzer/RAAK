@@ -48,11 +48,11 @@ Template Name:Single Work
                 </div><!-- .whitebox_primary_section -->
             </section><!-- whitebox_primary -->
             <section  class="bluebox bluebox_primary box bluebox-primary rounded-corners">
-                <div id="bluebox_bigpic">
+                <div class="bluebox_bigpic">
                     <img width="315px" height="203px" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker2.jpg">
                 </div>
-                <hr class="solid" />
-                <div id="bluebox_thumbpic">
+                <hr class="solid blue_hr" />
+                <div class="bluebox_thumbpic">
                     <div class="ngg-galleryoverview" id="ngg-gallery-23-5118">
                         <!-- Piclense link -->
                         <div class="piclenselink">
