@@ -260,6 +260,10 @@ strong {
     width: 362px;
 }
 
+.bluebox-primary {
+    margin-top: 20px
+}
+
 .bluebox_primary {
     width: 318px;
     margin-left: 20px;

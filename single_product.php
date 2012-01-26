@@ -13,7 +13,7 @@ Template Name:Single Product
                 </header>
                     <hr />
             </section><!-- whitebox_big -->
-            <section class="whitebox whitebox_primary box rounded-corners_bottom">
+            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
                     <div class="whitebox_primary_project bigger_arial_caps">
                         <span class="whitebox_primary_project_label">Product:</span>
                         <span class="whitebox_primary_project_name"><a target="_blank" href="http://m.tweetrewinder.com">Rewinder</a></span>
@@ -27,7 +27,7 @@ Template Name:Single Product
 <p>This is as close to Time Travel you'll ever get, without altering the future!</p></span>
                     </div><!-- .whitebox_primary_solution -->
             </section><!-- whitebox_primary -->
-            <section class="bluebox bluebox_primary box rounded-corners">
+            <section class="bluebox bluebox_primary box bluebox-primary rounded-corners">
                 <div id="bluebox_bigpic">
                     <img width="315px" height="203px" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder01.png">
                 </div>
