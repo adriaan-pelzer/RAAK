@@ -7,7 +7,7 @@ Template Name: About
 
 	<div class="container rounded-corners about">
 		<div class="content">
-            <section class="whitebox whitebox_primary box rounded-corners">
+            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
                     <div class="whitebox_primary_body_nav smaller_arial_caps box_nav">
                         <a class="active" onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator seperator_smaller">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
