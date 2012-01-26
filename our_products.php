@@ -25,7 +25,7 @@ Template Name: Our Products
                         </span>
                     </div><!-- .whitebox_big_category_page -->
                     <hr class="solid" />
-                    <div id="whitebox_big_all-products_1" class="whitebox_big_category">
+                    <div id="whitebox_big_all-products_1" class="whitebox_big_category smaller_arial_caps">
                         <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
                                 <div class="whitebox_big_category_entry_title">
