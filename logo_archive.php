@@ -11,13 +11,13 @@ Template Name:Logo Archive
                 <header>
                     <h2 class="din-schrift blue_20">Logo Project</h2>
                     <nav id="bluebox_big_nav" class="smaller_arial_caps box_nav">
-                        <span id="expand_R"><a class="active">R</a></span>
+                        <a id="expand_R" class="active">R</a>
                         <span class="seperator seperator_smaller">|</span>
-                        <span id="expand_A"><a>A</a></span>
+                        <a id="expand_A">A</a>
                         <span class="seperator seperator_smaller">|</span>
-                        <span id="expand_K"><a>K</a></span>
+                        <a id="expand_K">K</a>
                         <span class="seperator seperator_smaller">|</span>
-                        <span id="bluebox_big_nav_back"><a href="http://wewillraakyou.com/logo-project/">Back</a></span>
+                        <a id="bluebox_big_nav_back" href="http://wewillraakyou.com/logo-project/">Back</a>
                     </nav>
                 </header>
                 <hr />

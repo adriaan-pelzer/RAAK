@@ -11,7 +11,7 @@ Template Name: Our Products
                 <header>
                     <h2 class="din-schrift blue_20">Our Work</h2>
                     <nav class="box_nav smaller_arial_caps">
-                        <span id="whitebox_big_body_nav_all-products" class="whitebox_big_body_nav_item active"><a onclick="javascript: expand('all-products');">All Products</a></span>
+                        <a id="whitebox_big_body_nav_all-products" class="whitebox_big_body_nav_item active" onclick="javascript: expand('all-products');">All Products</a>
                     </nav>
                 </header>
                 <hr />
