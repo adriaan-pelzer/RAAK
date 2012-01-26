@@ -1034,6 +1034,10 @@ h3.expanded_letter {
     padding: 0 10px;
 }
 
+.whitebox_big_category_entry_title {
+    margin: 5px 0;
+}
+
 .whitebox_big_category_entry_title_name {
     color: #666666;
 }
