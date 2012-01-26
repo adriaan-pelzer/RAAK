@@ -5,20 +5,20 @@ Template Name:Logo Archive
 ?>
 <?php get_header() ?>
 
-	<div class="container rounded-corners logo-project">
+	<div class="container rounded-corners logo-archive">
 		<div class="content">
             <section class="bluebox_big bluebox box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Logo Project</h2>
                 </header>
-                <nav id="bluebox_big_nav" class="smaller_arial_caps">
-                    <span id="expand_R" class="bluebox_big_nav_item active"><a>R</a></span>
-                    <span class="bluebox_big_nav_seperator">|</span>
-                    <span id="expand_A" class="bluebox_big_nav_item"><a>A</a></span>
-                    <span class="bluebox_big_nav_seperator">|</span>
-                    <span id="expand_K" class="bluebox_big_nav_item"><a>K</a></span>
-                    <span class="bluebox_big_nav_seperator">|</span>
-                    <span class="bluebox_big_nav_item"><a href="http://wewillraakyou.com/logo-project/">Back</a></span>
+                <nav id="bluebox_big_nav" class="smaller_arial_caps box_nav">
+                    <span id="expand_R"><a class="active">R</a></span>
+                    <span class="seperator seperator_smaller">|</span>
+                    <span id="expand_A"><a>A</a></span>
+                    <span class="seperator seperator_smaller">|</span>
+                    <span id="expand_K"><a>K</a></span>
+                    <span class="seperator seperator_smaller">|</span>
+                    <span id="bluebox_big_nav_back"><a href="http://wewillraakyou.com/logo-project/">Back</a></span>
                 </nav>
                 <hr />
                 <span id="expanded_letter">Letter R</span>
