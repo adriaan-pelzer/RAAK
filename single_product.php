@@ -7,32 +7,32 @@ Template Name:Single Product
 
 	<div class="container rounded-corners single-product">
 		<div class="content">
-            <section class="whitebox_big whitebox box big_box rounded-corners">
+            <section class="whitebox_big whitebox box big_box rounded-corners_top_bottom_right">
                 <header>
                     <h2  class="din-schrift blue_20">Our Products</h2>
                 </header>
                     <hr />
             </section><!-- whitebox_big -->
-            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
-                    <div id="whitebox_primary_body_project" class="whitebox_primary_body_section">
-                        <span class="whitebox_primary_body_section_title">Product:</span>
-                        <span class="whitebox_primary_body_section_content"><a target="_blank" href="http://m.tweetrewinder.com">Rewinder</a></span>
-                    </div><!-- .whitebox_primary_body_section -->
-                    <hr class="solid">
-                    <div id="whitebox_primary_body_solution" class="whitebox_primary_body_section">
-                        <span class="whitebox_primary_body_section_title">Descript:</span>
-                        <span class="whitebox_primary_body_section_content"><p>Rewinder is our mobile solution to make Twitter useful with Time-shifted TV</p>
+            <section class="whitebox whitebox_primary box rounded-corners_bottom">
+                    <div class="whitebox_primary_project bigger_arial_caps">
+                        <span class="whitebox_primary_project_label">Product:</span>
+                        <span class="whitebox_primary_project_name"><a target="_blank" href="http://m.tweetrewinder.com">Rewinder</a></span>
+                    </div><!-- whitebox_primary_project -->
+                    <hr class="solid thicker_hr lightblue_hr">
+                    <div class="whitebox_primary_solution">
+                        <span class="whitebox_primary_solution_label bigger_arial_caps">Descript:</span>
+                        <span class="whitebox_primary_solution_content"><p>Rewinder is our mobile solution to make Twitter useful with Time-shifted TV</p>
 <p>Connect your Twitter account, and we'll allow you to view your past Twitter timeline, as well as recorded hashtags, as if they were happening right now!</p>
 <p>If you're just quickly catching up with an event, you can play them back at faster than realtime too.</p>
 <p>This is as close to Time Travel you'll ever get, without altering the future!</p></span>
-                    </div><!-- .whitebox_primary_body_section -->
+                    </div><!-- .whitebox_primary_solution -->
             </section><!-- whitebox_primary -->
             <div id="bluebox">
                 <div id="bluebox_top"></div>
                 <div id="bluebox_body">
-                    <div id="bluebox_body_bigpic"></div>
+                    <div id="bluebox_bigpic"></div>
                     <hr class="solid" />
-                    <div id="bluebox_body_thumbpic">
+                    <div id="bluebox_thumbpic">
                         
 <div class="ngg-galleryoverview" id="ngg-gallery-25-5177">
 

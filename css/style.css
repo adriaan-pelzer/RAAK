@@ -87,6 +87,10 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
+.rounded-corners_top_bottom_right{
+    border-radius: 10px 10px 10px 0;
+}
+
 #wrapper {
     width: 1000px;
     margin: 0 auto;
@@ -143,6 +147,12 @@ em {
 
 .smaller_arial_caps {
     font: 9px arial, sans-serif;
+    text-transform: uppercase;
+    color: #00aeff;
+}
+
+.bigger_arial_caps {
+    font: 11px arial, sans-serif;
     text-transform: uppercase;
     color: #00aeff;
 }
@@ -693,6 +703,14 @@ ol {
     border-color: #00aeff;
 }
 
+.thicker_hr {
+    border-width: 1px;
+}
+
+.lightblue_hr {
+    border-color: #b2e5ff;
+}
+
 .bluebox_primary_body_nav {
     color: #00aeff;
 }
@@ -1065,6 +1083,22 @@ h3.expanded_letter {
     line-height: 16px;
     background: #ffffff;
 }
+
+/************** SINGLE PRODUCT ***********/
+
+.single-product .big_box {
+    width: 730px;
+}
+
+.whitebox_primary_project span, .whitebox_primary_solution span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.whitebox_primary_project_label, .whitebox_primary_solution_label {
+    width: 60px;
+}
+
 
 
 
