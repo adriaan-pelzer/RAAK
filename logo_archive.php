@@ -8,8 +8,10 @@ Template Name:Logo Archive
 	<div class="container rounded-corners logo-project">
 		<div class="content">
             <section class="bluebox_big bluebox box rounded-corners">
-                <h2 class="din-schrift blue_20">Logo Project</h2>
-                <div id="bluebox_big_nav">
+                <header>
+                    <h2 class="din-schrift blue_20">Logo Project</h2>
+                </header>
+                <nav id="bluebox_big_nav" class="smaller_arial_caps">
                     <span id="expand_R" class="bluebox_big_nav_item active"><a>R</a></span>
                     <span class="bluebox_big_nav_seperator">|</span>
                     <span id="expand_A" class="bluebox_big_nav_item"><a>A</a></span>
@@ -17,7 +19,7 @@ Template Name:Logo Archive
                     <span id="expand_K" class="bluebox_big_nav_item"><a>K</a></span>
                     <span class="bluebox_big_nav_seperator">|</span>
                     <span class="bluebox_big_nav_item"><a href="http://wewillraakyou.com/logo-project/">Back</a></span>
-                </div>
+                </nav>
                 <hr />
                 <span id="expanded_letter">Letter R</span>
                 <hr class="solid" />
