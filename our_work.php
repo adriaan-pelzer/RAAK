@@ -43,7 +43,7 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_title -->
                                 <hr class="solid" />
                                 <div class="whitebox_big_category_entry_content">
-                                    <a href="http://wewillraakyou.com/2011/11/in-store-instagram-studio-right-onto-facebook-for-ted-baker/" onmouseover="javascript: mouse_action ('all-projects', 0, 'over');" onmouseout="javascript: mouse_action ('all-projects', 0, 'out');">
+                                    <a href="<?php echo get_page_link(5225); ?>" onmouseover="javascript: mouse_action ('all-projects', 0, 'over');" onmouseout="javascript: mouse_action ('all-projects', 0, 'out');">
                                         <div id="post_all-projects_0_picture" class="whitebox_big_category_entry_content_picture">
                                             <img alt="" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker2.jpg"  width="220"  height="142" />
                                         </div><!-- #post_0_picture -->
