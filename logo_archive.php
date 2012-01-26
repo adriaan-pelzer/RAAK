@@ -21,7 +21,7 @@ Template Name:Logo Archive
                     </nav>
                 </header>
                 <hr />
-                <span id="expanded_letter">Letter R</span>
+                <h3  id="expanded_letter_r" class="expanded_letter smaller_arial_caps">Letter R</h3>
                 <hr class="solid" />
                 <div id="bluebox_big_content_R" class="bluebox_big_content">
                     <div class="bluebox_big_content_row">

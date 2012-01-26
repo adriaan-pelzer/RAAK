@@ -997,6 +997,21 @@ margin-top: 10px;
     width: 733px
 }
 
+.logo-archive header {
+    overflow: auto;
+    padding: 7px 0;
+}
+
+.bluebox_big .box_nav {
+    float: right;
+    margin-top: -13px;
+}
+
+h3.expanded_letter {
+    margin: 16px 0 10px;
+}
+
+
 
 /************** Sidebar ***************/
 
