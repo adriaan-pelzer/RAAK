@@ -1115,16 +1115,16 @@ h3.expanded_letter {
     margin: 10px 0;
 }
 
-.whitebox_primary_solution_label {
+.whitebox_primary_solution .whitebox_primary_section_label {
     line-height: 19px;
 }
 
-.whitebox_primary_solution_content {
+.whitebox_primary_section_content {
     width: 280px;
 }
 
 
-.whitebox_primary_solution_content p:first-child {
+.whitebox_primary_solution .whitebox_primary_section_content p:first-child {
     margin-top: 0;
 }
 
