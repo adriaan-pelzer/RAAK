@@ -707,7 +707,7 @@ ol {
     border-width: 1px;
 }
 
-.lightblue_hr {
+hr.lightblue_hr {
     border-color: #b2e5ff;
 }
 
@@ -1097,6 +1097,19 @@ h3.expanded_letter {
 
 .whitebox_primary_project_label, .whitebox_primary_solution_label {
     width: 60px;
+}
+
+.whitebox_primary_solution_label {
+    line-height: 19px;
+}
+
+.whitebox_primary_solution_content {
+    width: 280px;
+}
+
+
+.whitebox_primary_solution_content p:first-child {
+    margin-top: 0;
 }
 
 
