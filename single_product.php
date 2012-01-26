@@ -31,7 +31,7 @@ Template Name:Single Product
                 <div class="bluebox_bigpic">
                     <img width="315px" height="203px" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder01.png">
                 </div>
-                <hr class="solid" />
+                <hr class="solid blue_hr" />
                 <div id="bluebox_thumbpic">
                     <div class="ngg-galleryoverview" id="ngg-gallery-25-5177">
                         <!-- Piclense link -->
