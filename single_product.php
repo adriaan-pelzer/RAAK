@@ -14,14 +14,14 @@ Template Name:Single Product
                     <hr />
             </section><!-- whitebox_big -->
             <section class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
-                    <div class="whitebox_primary_project bigger_arial_caps">
-                        <span class="whitebox_primary_project_label">Product:</span>
-                        <span class="whitebox_primary_project_name"><a target="_blank" href="http://m.tweetrewinder.com">Rewinder</a></span>
+                    <div class="whitebox_primary_project whitebox_primary_section bigger_arial_caps">
+                        <span class="whitebox_primary_section_label">Product:</span>
+                        <span class="whitebox_primary_section_name"><a target="_blank" href="http://m.tweetrewinder.com">Rewinder</a></span>
                     </div><!-- whitebox_primary_project -->
                     <hr class="solid thicker_hr lightblue_hr">
-                    <div class="whitebox_primary_solution">
-                        <span class="whitebox_primary_solution_label bigger_arial_caps">Descript:</span>
-                        <span class="whitebox_primary_solution_content"><p>Rewinder is our mobile solution to make Twitter useful with Time-shifted TV</p>
+                    <div class="whitebox_primary_solution whitebox_primary_section">
+                        <span class="whitebox_primary_section_label bigger_arial_caps">Descript:</span>
+                        <span class="whitebox_primary_section_content"><p>Rewinder is our mobile solution to make Twitter useful with Time-shifted TV</p>
 <p>Connect your Twitter account, and we'll allow you to view your past Twitter timeline, as well as recorded hashtags, as if they were happening right now!</p>
 <p>If you're just quickly catching up with an event, you can play them back at faster than realtime too.</p>
 <p>This is as close to Time Travel you'll ever get, without altering the future!</p></span>

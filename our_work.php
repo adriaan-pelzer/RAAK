@@ -12,11 +12,11 @@ Template Name: Our Work
                     <h2 class="din-schrift blue_20">Our Work</h2>
                     <nav class="box_nav smaller_arial_caps">
                         <a id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active" onclick="javascript: expand('all-projects');">All Projects</a>
-                        <span class="seperator">|</span>
+                        <span class="seperator seperator_smaller">|</span>
                         <a id="whitebox_big_nav_social-media-ready" class="whitebox_big_nav_item" onclick="javascript: expand('social-media-ready');">social media ready</a>
-                        <span class="seperator">|</span>
+                        <span class="seperator seperator_smaller">|</span>
                         <a id="whitebox_big_nav_impact-projects" class="whitebox_big_nav_item" onclick="javascript: expand('impact-projects');">impact projects</a>
-                        <span class="seperator">|</span>
+                        <span class="seperator seperator_smaller">|</span>
                         <a id="whitebox_big_nav_consulting" class="whitebox_big_nav_item" onclick="javascript: expand('consulting');">Consulting</a>
                     </nav><!-- whitebox_big_nav -->
                 </header>

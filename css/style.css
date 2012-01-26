@@ -1103,7 +1103,7 @@ h3.expanded_letter {
     vertical-align: top;
 }
 
-.whitebox_primary_project_label, .whitebox_primary_solution_label {
+.whitebox_primary_section_label {
     width: 60px;
 }
 
