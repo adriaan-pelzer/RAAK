@@ -5,19 +5,12 @@ Template Name:Single Product
 ?>
 <?php get_header() ?>
 
-	<div id="container">
-        <div id="container_top"></div>
-		<div id="content">
-            <div id="whitebox_big">
-                <div id="whitebox_big_top"></div>
-                <div id="whitebox_big_body">
-                    <div id="whitebox_big_body_title">Our Products</div>
-                    <div class="whitebox_big_body_nav">
-                    </div><!-- #whitebox_big_body_nav -->
+	<div class="container rounded-corners single-product">
+		<div class="content">
+            <section class="whitebox_big whitebox box big_box rounded-corners">
+                    <h2  class="din-schrift blue_20">Our Products</h2>
                     <hr />
-                </div><!-- #whitebox_big_body -->
-                <div id="whitebox_big_bottom"></div>
-            </div><!-- #whitebox_big -->
+            </section><!-- whitebox_big -->
             <div id="whitebox_primary">
                 <div id="whitebox_primary_top_outward"><!-- for the sake of the outward-facing corner on the right --></div>
                 <div id="whitebox_primary_body">
