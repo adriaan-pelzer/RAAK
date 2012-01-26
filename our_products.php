@@ -29,10 +29,10 @@ Template Name: Our Products
                                     <span class="whitebox_big_category_entry_title_name">Rewinder</span>
                                 </div><!-- .whitebox_big_category_entry_title -->
                                 <hr class="solid" />
-                                <a href="http://wewillraakyou.com/2011/11/rewinder-timeshift-your-tweets/" onmouseover="javascript: mouse_action ('all-products', 0, 'over');" onmouseout="javascript: mouse_action ('all-products', 0, 'out');">
-                                    <div id="post_all-products_0_picture" class="whitebox_big_category_entry_picture">
+                                <a class="whitebox_big_category_entry_content" href="http://wewillraakyou.com/2011/11/rewinder-timeshift-your-tweets/" onmouseover="javascript: mouse_action ('all-products', 0, 'over');" onmouseout="javascript: mouse_action ('all-products', 0, 'out');">
+                                    <div id="post_all-products_0_picture" class="whitebox_big_category_entry_content_picture">
                                         <img alt="" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder00.png"  width="220"  height="142" />                     </div><!-- #post_0_picture -->
-                                    <div id="post_all-products_0_overview" class="whitebox_big_category_entry_overview" style="width: 220px; height: 142px; display: none;">
+                                    <div id="post_all-products_0_overview" class="whitebox_big_category_entry_content_overview" style="width: 220px; height: 142px; display: none;">
                                             Rewinder allows you to rewind your Twitter Timeline, or recorded hashtags, as if it was time-shifted TV. Works very well with ... well ... time-shifted TV.<br \><strong>Read More &raquo;</strong>
                                     </div><!-- #post_0_overview -->
                                 </a>
@@ -43,11 +43,11 @@ Template Name: Our Products
                                     <span class="whitebox_big_category_entry_title_name">WOOS.at</span>
                                 </div><!-- .whitebox_big_category_entry_title -->
                                 <hr class="solid" />
-                                <a href="http://wewillraakyou.com/2011/11/woos-at-our-app-for-social-serendipity/" onmouseover="javascript: mouse_action ('all-products', 1, 'over');" onmouseout="javascript: mouse_action ('all-products', 1, 'out');">
-                                    <div id="post_all-products_1_picture" class="whitebox_big_category_entry_picture">
+                                <a class="whitebox_big_category_entry_content" href="http://wewillraakyou.com/2011/11/woos-at-our-app-for-social-serendipity/" onmouseover="javascript: mouse_action ('all-products', 1, 'over');" onmouseout="javascript: mouse_action ('all-products', 1, 'out');">
+                                    <div id="post_all-products_1_picture" class="whitebox_big_category_entry_content_picture">
                                         <img alt="" src="http://wewillraakyou.com/wp-content/gallery/woos-at/woosat00.jpg"  width="220"  height="142" />
                                     </div><!-- #post_1_picture -->
-                                    <div id="post_all-products_1_overview" class="whitebox_big_category_entry_overview" style="width: 220px; height: 142px; display: none;">
+                                    <div id="post_all-products_1_overview" class="whitebox_big_category_entry_content_overview" style="width: 220px; height: 142px; display: none;">
                                         WOOS.at is an app that shows you who else is where you are, and why they might be interesting to you<br \><strong>Read More &raquo;</strong>
                                     </div><!-- #post_1_overview -->
                                 </a>
@@ -57,7 +57,7 @@ Template Name: Our Products
                                     <span class="whitebox_big_category_entry_title_label"></span>
                                     <span class="whitebox_big_category_entry_title_name"></span>
                                 </div><!-- .whitebox_big_category_entry_title -->
-                                <!--div id="post_2_picture" class="whitebox_big_category_entry_picture">
+                                <!--div id="post_2_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
                             </div><!-- .whitebox_big_category_entry -->
@@ -68,7 +68,7 @@ Template Name: Our Products
                                     <span class="whitebox_big_category_entry_title_label"></span>
                                     <span class="whitebox_big_category_entry_title_name"></span>
                                 </div><!-- .whitebox_big_category_entry_title -->
-                                <!--div id="post_3_picture" class="whitebox_big_category_entry_picture">
+                                <!--div id="post_3_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
                             </div><!-- .whitebox_big_category_entry -->
@@ -77,7 +77,7 @@ Template Name: Our Products
                                     <span class="whitebox_big_category_entry_title_label"></span>
                                     <span class="whitebox_big_category_entry_title_name"></span>
                                 </div><!-- .whitebox_big_category_entry_title -->
-                                <!--div id="post_4_picture" class="whitebox_big_category_entry_picture">
+                                <!--div id="post_4_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
                             </div><!-- .whitebox_big_category_entry -->
@@ -86,7 +86,7 @@ Template Name: Our Products
                                     <span class="whitebox_big_category_entry_title_label"></span>
                                     <span class="whitebox_big_category_entry_title_name"></span>
                                 </div><!-- .whitebox_big_category_entry_title -->
-                                <!--div id="post_5_picture" class="whitebox_big_category_entry_picture">
+                                <!--div id="post_5_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
                             </div><!-- .whitebox_big_category_entry -->
@@ -97,7 +97,7 @@ Template Name: Our Products
                                     <span class="whitebox_big_category_entry_title_label"></span>
                                     <span class="whitebox_big_category_entry_title_name"></span>
                                 </div><!-- .whitebox_big_category_entry_title -->
-                                <!--div id="post_6_picture" class="whitebox_big_category_entry_picture">
+                                <!--div id="post_6_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
                             </div><!-- .whitebox_big_category_entry -->
@@ -106,7 +106,7 @@ Template Name: Our Products
                                     <span class="whitebox_big_category_entry_title_label"></span>
                                     <span class="whitebox_big_category_entry_title_name"></span>
                                 </div><!-- .whitebox_big_category_entry_title -->
-                                <!--div id="post_7_picture" class="whitebox_big_category_entry_picture">
+                                <!--div id="post_7_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
                             </div><!-- .whitebox_big_category_entry -->
@@ -115,7 +115,7 @@ Template Name: Our Products
                                     <span class="whitebox_big_category_entry_title_label"></span>
                                     <span class="whitebox_big_category_entry_title_name"></span>
                                 </div><!-- .whitebox_big_category_entry_title -->
-                                <!--div id="post_8_picture" class="whitebox_big_category_entry_picture">
+                                <!--div id="post_8_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
                             </div><!-- .whitebox_big_category_entry -->
