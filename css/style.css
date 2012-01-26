@@ -1124,7 +1124,9 @@ h3.expanded_letter {
     margin-top: 0;
 }
 
-
+.ngg-gallery-thumbnail {
+    margin: 0!important;
+}
 
 
 /************** Sidebar ***************/
