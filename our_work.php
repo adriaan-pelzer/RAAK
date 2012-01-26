@@ -8,16 +8,18 @@ Template Name: Our Work
 	<div class="container rounded-corners our-products">
 		<div class="content">
             <section class="whitebox_big whitebox box big_box rounded-corners">
-                <h2 class="din-schrift blue_20">Our Work</h2>
-                <nav class="box_nav smaller_arial_caps">
-                    <a id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active" onclick="javascript: expand('all-projects');">All Projects</a>
-                    <span class="seperator">|</span>
-                    <a id="whitebox_big_nav_social-media-ready" class="whitebox_big_nav_item" onclick="javascript: expand('social-media-ready');">social media ready</a>
-                    <span class="seperator">|</span>
-                    <a id="whitebox_big_nav_impact-projects" class="whitebox_big_nav_item" onclick="javascript: expand('impact-projects');">impact projects</a>
-                    <span class="seperator">|</span>
-                    <a id="whitebox_big_nav_consulting" class="whitebox_big_nav_item" onclick="javascript: expand('consulting');">Consulting</a>
-                </nav><!-- whitebox_big_nav -->
+                <header>
+                    <h2 class="din-schrift blue_20">Our Work</h2>
+                    <nav class="box_nav smaller_arial_caps">
+                        <a id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active" onclick="javascript: expand('all-projects');">All Projects</a>
+                        <span class="seperator">|</span>
+                        <a id="whitebox_big_nav_social-media-ready" class="whitebox_big_nav_item" onclick="javascript: expand('social-media-ready');">social media ready</a>
+                        <span class="seperator">|</span>
+                        <a id="whitebox_big_nav_impact-projects" class="whitebox_big_nav_item" onclick="javascript: expand('impact-projects');">impact projects</a>
+                        <span class="seperator">|</span>
+                        <a id="whitebox_big_nav_consulting" class="whitebox_big_nav_item" onclick="javascript: expand('consulting');">Consulting</a>
+                    </nav><!-- whitebox_big_nav -->
+                </header>
                 <hr />
                 <div id="whitebox_big_all-projects" class="whitebox_big_category">
                     <!--APdiv class="whitebox_big_category_page">
