@@ -1052,6 +1052,15 @@ h3.expanded_letter {
     margin-top: 3px;
 }
 
+.whitebox_big_category_entry_content_overview {
+    text-transform: none;
+    font-size: 11px;
+    padding: 30px;
+    color: #666666;
+    line-height: 16px;
+    background: #ffffff;
+}
+
 
 
 /************** Sidebar ***************/
