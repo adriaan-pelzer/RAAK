@@ -1144,7 +1144,7 @@ a.page-numbers, .ngg-navigation span {
 }
 
 .ngg-galleryoverview {
-    margin-top: 3px!important;
+    margin-top: 8px!important;
     margin-left: -9px;
     width: 328px!important;
 }
@@ -1157,6 +1157,22 @@ a.next, a.prev {
 
 .next {
     float: right;
+}
+
+.piclenslink {
+    display: none;
+}
+
+.bluebox_bigpic {
+    margin: 4px 0 5px;
+}
+
+.ngg-navigation {
+    font: 11px arial, sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left!important;
+    padding-top: 5px!important;
 }
 
 

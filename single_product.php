@@ -28,7 +28,7 @@ Template Name:Single Product
                     </div><!-- .whitebox_primary_solution -->
             </section><!-- whitebox_primary -->
             <section class="bluebox bluebox_primary box bluebox-primary rounded-corners">
-                <div id="bluebox_bigpic">
+                <div class="bluebox_bigpic">
                     <img width="315px" height="203px" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder01.png">
                 </div>
                 <hr class="solid" />
