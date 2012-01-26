@@ -110,7 +110,7 @@ Template Name:Logo Archive
                         </div>
                     </div><!-- .bluebox_big_content_row -->
                 </div><!-- bluebox_big_content -->
-                <div id="bluebox_big_content_A" class="bluebox_big_content">
+                <div id="bluebox_big_content_A" class="bluebox_big_content smaller_arial_caps" style="display: none;">
                     <div class="bluebox_big_content_row">
                         <div class="bluebox_big_content_row_item logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
@@ -226,7 +226,7 @@ Template Name:Logo Archive
                         </div>
                     </div><!-- .bluebox_big_content_row -->
                 </div><!-- bluebox_big_content -->
-                <div id="bluebox_big_content_K" class="bluebox_big_content">
+                <div id="bluebox_big_content_K" class="bluebox_big_content smaller_arial_caps" style="display: none;">
                     <div class="bluebox_big_content_row">
                         <div class="bluebox_big_content_row_item logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">

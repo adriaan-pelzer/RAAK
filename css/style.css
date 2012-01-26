@@ -994,7 +994,8 @@ margin-top: 10px;
 /************** LOGO ARCHIVE *************/
 
 .bluebox_big_content_row {
-    width: 733px
+    width: 746px;
+    margin-right: -13px;
 }
 
 .logo-archive header {
@@ -1009,6 +1010,10 @@ margin-top: 10px;
 
 h3.expanded_letter {
     margin: 16px 0 10px;
+}
+
+.logo-archive .logo_project_letter {
+    width: 91px;
 }
 
 
