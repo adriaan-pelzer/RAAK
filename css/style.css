@@ -1099,6 +1099,14 @@ h3.expanded_letter {
     width: 60px;
 }
 
+.whitebox_primary_project {
+    margin-bottom: 10px;
+}
+
+.whitebox_primary_solution {
+    margin: 10px 0;
+}
+
 .whitebox_primary_solution_label {
     line-height: 19px;
 }
