@@ -1016,6 +1016,21 @@ h3.expanded_letter {
     width: 91px;
     margin-right: 12px;
 }
+.whitebox_big_body_category_body_entry {
+    width: 220px;
+    height: 175px;
+    background-color: #B9E5FB;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -1px;
+    margin-left: 2px;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+.whitebox_big_category_entry_title_name {
+    color: #666666;
+}
 
 
 
