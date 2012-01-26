@@ -306,6 +306,13 @@ label {
     display: inline-block;
 }
 
+
+.big_box .box_nav {
+    float: right;
+    margin-top: -13px;
+}
+
+
 /************** header ***************/
 
 #header {
@@ -1003,11 +1010,6 @@ margin-top: 10px;
     padding: 7px 0;
 }
 
-.bluebox_big .box_nav {
-    float: right;
-    margin-top: -13px;
-}
-
 h3.expanded_letter {
     margin: 16px 0 10px;
 }
@@ -1016,6 +1018,10 @@ h3.expanded_letter {
     width: 91px;
     margin-right: 12px;
 }
+
+
+/************* OUR PRODUCTS *************/
+
 .whitebox_big_category_entry {
     width: 220px;
     height: 175px;
@@ -1030,6 +1036,11 @@ h3.expanded_letter {
 
 .whitebox_big_category_entry_title_name {
     color: #666666;
+}
+
+.whitebox_big_category_page {
+    text-align: right;
+    margin: 20px 0 10px;
 }
 
 

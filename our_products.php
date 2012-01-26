@@ -7,7 +7,7 @@ Template Name: Our Products
 
 	<div class="container rounded-corners logo-archive">
 		<div class="content">
-            <section class="whitebox_big whitebox box rounded-corners">
+            <section class="whitebox_big whitebox box big_box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Our Work</h2>
                     <nav class="box_nav smaller_arial_caps">
@@ -16,13 +16,9 @@ Template Name: Our Products
                 </header>
                 <hr />
                 <div id="whitebox_big_all-products" class="whitebox_big_category">
-                    <div class="whitebox_big_category_page">
-                        <span id="whitebox_nav_1" class="whitebox_big_category_page_item active">
-                            <a onclick="javascript: page('all-products', 1, 1);">1</a>
-                        </span>
-                        <span class="whitebox_big_category_page_item_arrow">
-                            <a onclick="javascript: page('all-products', current_page + 1, 1);">&#9658;</a>
-                        </span>
+                    <div class="whitebox_big_category_page smaller_arial_caps">
+                        <a id="whitebox_nav_1" class="whitebox_big_category_page_item active" onclick="javascript: page('all-products', 1, 1);">1</a>
+                        <a class="whitebox_big_category_page_item_arrow" onclick="javascript: page('all-products', current_page + 1, 1);">&#9658;</a>
                     </div><!-- .whitebox_big_category_page -->
                     <hr class="solid" />
                     <div id="whitebox_big_all-products_1" class="whitebox_big_category smaller_arial_caps">

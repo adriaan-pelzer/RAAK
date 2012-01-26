@@ -7,7 +7,7 @@ Template Name:Logo Archive
 
 	<div class="container rounded-corners logo-archive">
 		<div class="content">
-            <section class="bluebox_big bluebox box rounded-corners">
+            <section class="bluebox_big bluebox box big_box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Logo Project</h2>
                     <nav id="bluebox_big_nav" class="smaller_arial_caps box_nav">
