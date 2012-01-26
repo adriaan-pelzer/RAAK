@@ -279,6 +279,10 @@ strong {
     padding-top:13px;
 }
 
+.whitebox_big {
+    padding-bottom: 15px;
+}
+
 .solid {
     border-style: solid;
 }
