@@ -24,22 +24,22 @@ Template Name:Single Work
             </section><!-- whitebox_big -->
             <section class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
                 <div class="whitebox_primary_client whitebox_primary_section bigger_arial_caps">
-                    <span class="whitebox_primary_section_title">Client:</span>
+                    <span class="whitebox_primary_section_label">Client:</span>
                     <span class="whitebox_primary_section_content">Ted Baker / Guided Collective</span>
                 </div><!-- .whitebox_primary_section -->
                 <hr class="solid">
                 <div class="whitebox_primary_project whitebox_primary_section bigger_arial_caps">
-                    <span class="whitebox_primary_section_title">Project:</span>
+                    <span class="whitebox_primary_section_label">Project:</span>
                     <span class="whitebox_primary_section_content">Ted Baker's Rutting Season</span>
                 </div><!-- .whitebox_primary_section -->
                 <hr class="solid">
                 <div class="whitebox_primary_brief whitebox_primary_section">
-                    <span class="whitebox_primary_section_title bigger_arial_caps">Brief:</span>
+                    <span class="whitebox_primary_section_label bigger_arial_caps">Brief:</span>
                     <span class="whitebox_primary_section_content">Create more awareness for Ted Baker and Ted Baker's Facebook page.</span>
                 </div><!-- .whitebox_primary_section -->
                 <hr class="solid">
                 <div class="whitebox_primary_solution whitebox_primary_section">
-                    <span class="whitebox_primary_section_title bigger_arial_caps">Solution:</span>
+                    <span class="whitebox_primary_section_label bigger_arial_caps">Solution:</span>
                     <span class="whitebox_primary_section_content"><p>So Ted Baker wanted to boost their Facebook presence. But building a Facebook fan page is hard work.</p>
 <p>Unless you do something extraordinary. We combined Facebook with the power of the photosharing app <strong>Instagram</strong>.</p> 
 <p>So we built an app that allowed Ted Baker to send gorgeous pictures of their customers straight to their Facebook page.</p>

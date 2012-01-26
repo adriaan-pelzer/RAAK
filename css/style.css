@@ -1098,7 +1098,7 @@ h3.expanded_letter {
     width: 730px;
 }
 
-.whitebox_primary_project span, .whitebox_primary_solution span {
+.whitebox_primary_section span {
     display: inline-block;
     vertical-align: top;
 }
