@@ -1098,6 +1098,10 @@ h3.expanded_letter {
     width: 730px;
 }
 
+.whitebox_primary_section {
+    margin: 10px 0;
+}
+
 .whitebox_primary_section span {
     display: inline-block;
     vertical-align: top;
@@ -1107,8 +1111,8 @@ h3.expanded_letter {
     width: 60px;
 }
 
-.whitebox_primary_project {
-    margin-bottom: 10px;
+.single-work .whitebox_primary_client, .single-product .whitebox_primary_project {
+    margin-top: 0px;
 }
 
 .whitebox_primary_solution {
