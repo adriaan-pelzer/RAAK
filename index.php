@@ -26,55 +26,13 @@ Template Name:Home
                 <p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
             </section><!-- #bluebox_home_left -->
             <section id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
-                    <section id="bluebox_nav" class="box_nav">
+                    <nav id="bluebox_nav" class="box_nav">
                         <h3 class="bluebox_nav_item small_arial_caps"><a onclick="javascript: expand('social-media-ready');">social media ready</a></h3>
                         <span class="seperator">|</span>
                         <h3 class="bluebox_nav_item small_arial_caps"><a onclick="javascript: expand('impact-projects');">impact projects</a></h3>
                         <span class="seperator">|</span>
                         <h3 class="bluebox_nav_item small_arial_caps"><a class="active" onclick="javascript: expand('consulting');">Consulting</a></h3>
-                    </section>
-                    <!--section class="bluebox_content" id="social-media-ready" style="display: none">
-                        <div class="bluebox_content_picture">
-                            <a href="http://wewillraakyou.com/2010/07/can-eu-hear-me-europe/">
-<img alt="" src="http://wewillraakyou.com/wp-content/gallery/caneuhearme/eu-logo_0.png"  width="315" />                            </a>
-                        </div>
-                        <div class="bluebox_content_sub">
-                            <span class="bluebox_content_sub_title">Client:</span>
-                            <span class="bluebox_content_sub_text">MTV & European Union</span>
-                        </div>
-                        <div class="bluebox_content_sub">
-                            <span class="bluebox_content_sub_title">Project:</span>
-                            <span class="bluebox_content_sub_text">canEUhearme</span>
-                        </div>
-                        <div class="bluebox_content_sub">
-                            <span class="bluebox_content_sub_title">Overview:</span>
-                            <span class="bluebox_content_sub_text bluebox_content_sub_overview">The first major European political website featuring a Twitter discussion forum and Facebook Connect commenting and voting functionality.<br \><strong>Read More >></strong></span>
-                        </div>
-                        <div class="bluebox_content_link">
-                            <span class="bluebox_content_link_text"><a href="http://wewillraakyou.com/our-work/?category=social-media-ready" rel="nofollow">More Projects</a></span><span class="bluebox_content_link_arrow"><a href="http://wewillraakyou.com/our-work/?category=social-media-ready" rel="nofollow">&#9660;</a></span>
-                        </div>
-                    </section>
-                    <section class="bluebox_content" id="impact-projects" style="display: none">
-                        <div class="bluebox_content_picture">
-                            <a href="http://wewillraakyou.com/2011/11/in-store-instagram-studio-right-onto-facebook-for-ted-baker/">
-<img alt="" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker2.jpg"  width="315" />                            </a>
-                        </div>
-                        <div class="bluebox_content_sub">
-                            <span class="bluebox_content_sub_title">Client:</span>
-                            <span class="bluebox_content_sub_text">Ted Baker / Guided Collective</span>
-                        </div>
-                        <div class="bluebox_content_sub">
-                            <span class="bluebox_content_sub_title">Project:</span>
-                            <span class="bluebox_content_sub_text">Ted Baker's Rutting Season</span>
-                        </div>
-                        <div class="bluebox_content_sub">
-                            <span class="bluebox_content_sub_title">Overview:</span>
-                            <span class="bluebox_content_sub_text bluebox_content_sub_overview">A promotion for Ted Baker, using the power of both Instagram and Facebook. <br \><strong>Read More >></strong></span>
-                        </div>
-                        <div class="bluebox_content_link">
-                            <span class="bluebox_content_link_text"><a href="http://wewillraakyou.com/our-work/?category=impact-projects" rel="nofollow">More Projects</a></span><span class="bluebox_content_link_arrow"><a href="http://wewillraakyou.com/our-work/?category=impact-projects" rel="nofollow">&#9660;</a></span>
-                        </div>
-                    </section -->
+                    </nav>
                     <div class="bluebox_content" id="consulting">
                         <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/"><img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png"  width="315" /></a>
                         <ul>
@@ -111,7 +69,7 @@ Template Name:Home
                             <span class="seperator">|</span>
                             <!--span class="whitebox_primary_post_attr_item time">12:44</span>
                             <span class="seperator">|</span-->
-                            <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" />0 comments</span>
+                            <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                         </div><!-- .whitebox_primary_post_attr -->
                         <div class="whitebox_primary_post_content">
                             <div class="whitebox_primary_post_content_right">
@@ -132,7 +90,7 @@ Template Name:Home
                             <span class="seperator">|</span>
                             <!--span id="whitebox_primary_attr_post_time" class="whitebox_primary_post_attr_item">11:59</span>
                             <span class="seperator">|</span-->
-                            <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" />0 comments</span>
+                            <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                         </div><!-- .whitebox_primary_post_attr -->
                         <div class="whitebox_primary_post_content">
                             <div class="whitebox_primary_post_content_right">

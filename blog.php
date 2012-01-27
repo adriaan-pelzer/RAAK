@@ -15,27 +15,23 @@ Template Name: Blog
             </section><!-- whitebox_big -->
             <section class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <div id="whitebox_primary_post_0" class="whitebox_primary_post">
-                    <h3 id="whitebox_primary_title"><a href="http://wewillraakyou.com/2012/01/with-blocking-functionality-twitter-opens-a-potential-pandoras-box/">With blocking functionality Twitter opens a Pandora's Box</a></h3>
+                    <h3><a href="http://wewillraakyou.com/2012/01/with-blocking-functionality-twitter-opens-a-potential-pandoras-box/">With blocking functionality Twitter opens a Pandora's Box</a></h3>
                     <hr />
-                    <div class="whitebox_primary_attr">
-                        <span id="whitebox_primary_attr_author" class="whitebox_primary_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
+                    <div class="whitebox_primary_post_attr">
+                        <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
                         <span class="seperator">|</span>
-                        <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item">27 Jan 2012</span>
+                        <span class="whitebox_primary_post_attr_item date">27 Jan 2012</span>
                         <span class="seperator">|</span>
-                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                        <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <div class="whitebox_primary_content">
-                        <div class="whitebox_primary_content_left">
-                            RAAK thinks Twitter has opened itself up to governments and corporations of all kinds by introducing country based filtering technology. See a Storify of Tweets on the issue curated by us.                            </div><!-- .whitebox_primary_content_left -->
                         <div class="whitebox_primary_content_right">
-                            <div class="whitebox_primary_content_right_image">
                                 <a href="http://wewillraakyou.com/2012/01/with-blocking-functionality-twitter-opens-a-potential-pandoras-box/"><img src="http://wewillraakyou.com/wp-content/uploads/2012/01/pandora-twitter.jpg" alt="" title="pandora-twitter"  width="162" height="104" /></a>
-                            </div><!-- .whitebox_primary_content_right_image -->
-                            <div class="whitebox_primary_content_right_link">
-                                <a href="http://wewillraakyou.com/2012/01/with-blocking-functionality-twitter-opens-a-potential-pandoras-box/">More &#9658;</a>
-                            </div><!-- .whitebox_primary_content_right_link -->
+                                <a class="more_link" href="http://wewillraakyou.com/2012/01/with-blocking-functionality-twitter-opens-a-potential-pandoras-box/">More &#9658;</a>
                         </div><!-- .whitebox_primary_content_right -->
+                        <div class="whitebox_primary_content_left">
+                            RAAK thinks Twitter has opened itself up to governments and corporations of all kinds by introducing country based filtering technology. See a Storify of Tweets on the issue curated by us.
+                        </div><!-- .whitebox_primary_content_left -->
                     </div><!-- .whitebox_primary_content -->
                     <hr class="solid" />
                     <div id="whitebox_primary_title"><a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/">The RAAKonteur #69 - Apple out to smash textbook publishing & SEO by Celebrity</a></div>
