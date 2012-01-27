@@ -24,8 +24,8 @@ Template Name: Blog
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item comments"><img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
-                    <div class="whitebox_primary_content">
-                        <div class="whitebox_primary_content_right">
+                    <div class="whitebox_primary_post_content">
+                        <div class="whitebox_primary_post_content_right">
                                 <a href="http://wewillraakyou.com/2012/01/with-blocking-functionality-twitter-opens-a-potential-pandoras-box/"><img src="http://wewillraakyou.com/wp-content/uploads/2012/01/pandora-twitter.jpg" alt="" title="pandora-twitter"  width="162" height="104" /></a>
                                 <a class="more_link" href="http://wewillraakyou.com/2012/01/with-blocking-functionality-twitter-opens-a-potential-pandoras-box/">More &#9658;</a>
                         </div><!-- .whitebox_primary_content_right -->
@@ -58,18 +58,18 @@ Template Name: Blog
                     </div><!-- .whitebox_primary_content -->
                     <hr class="solid" />
                 </div>
-                <div class="whitebox_primary_body_footer">
-                    <span id="whitebox_primary_body_footer_archive" class="whitebox_primary_body_footer_item"><a href="http://wewillraakyou.com/blog-archive/">All blog posts</a></span>
+                <div class="whitebox_primary_footer">
+                    <span id="whitebox_primary_footer_archive" class="whitebox_primary_footer_item"><a href="http://wewillraakyou.com/blog-archive/">All blog posts</a></span>
                     <a onclick="javascript: previous();">
-                        <span id="whitebox_primary_body_footer_prev_arrow" class="whitebox_primary_body_footer_item">&#9668;</span>
-                        <span id="whitebox_primary_body_footer_prev_text" class="whitebox_primary_body_footer_item active">Previous</span>
+                        <span id="whitebox_primary_footer_prev_arrow" class="whitebox_primary_footer_item">&#9668;</span>
+                        <span id="whitebox_primary_footer_prev_text" class="whitebox_primary_footer_item active">Previous</span>
                     </a>
                     <span class="seperator">|</span>
                     <a onclick="javascript: next();">
-                        <span id="whitebox_primary_body_footer_next_text" class="whitebox_primary_body_footer_item">Next</span>
-                        <span id="whitebox_primary_body_footer_next_arrow" class="whitebox_primary_body_footer_item">&#9658;</span>
+                        <span id="whitebox_primary_footer_next_text" class="whitebox_primary_footer_item">Next</span>
+                        <span id="whitebox_primary_footer_next_arrow" class="whitebox_primary_footer_item">&#9658;</span>
                     </a>
-                </div><!-- .whitebox_primary_body_footer -->
+                </div><!-- .whitebox_primary_footer -->
             </section><!-- whitebox_primary -->
             <div id="bluebox">
                 <div id="bluebox_tab">
@@ -78,8 +78,8 @@ Template Name: Blog
                 </div><!-- #bluebox_tab -->
                 <div id="bluebox_top"></div>
                 <div id="bluebox_body">
-                    <div id="bluebox_body_mustread">
-                        <div id="bluebox_body_mustread_title">Must Reads</div>
+                    <div id="bluebox_mustread">
+                        <div id="bluebox_mustread_title">Must Reads</div>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2012/01/tweet-discount-klout-miista/">"Bribing your customers to become brand advocates"</a></li>
                             <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
@@ -87,33 +87,33 @@ Template Name: Blog
                             <li><a href="http://wewillraakyou.com/2010/11/edgerank-the-secrets-facebooks-pagerank/">EdgeRank – the secrets of Facebook’s PageRank</a></li>
                             <li><a href="http://wewillraakyou.com/2010/10/mad-mixers-brands-ads-the-importance-of-mixing-paid-earned-media/">Mad Mixers: Brands ads & the importance of mixing paid & earned media</a></li>
                         </ul>
-                        <div id="bluebox_body_mustread_footer">
-                            <span class="bluebox_body_mustread_link_text"><a href="http://wewillraakyou.com/category/must-read/" rel="nofollow">More</a></span><span class="bluebox_body_mustread_link_arrow"><a href="http://wewillraakyou.com/category/must-read/" rel="nofollow">&#9660;</a></span>
+                        <div id="bluebox_mustread_footer">
+                            <span class="bluebox_mustread_link_text"><a href="http://wewillraakyou.com/category/must-read/" rel="nofollow">More</a></span><span class="bluebox_mustread_link_arrow"><a href="http://wewillraakyou.com/category/must-read/" rel="nofollow">&#9660;</a></span>
                         </div>
-                    </div><!-- #bluebox_body_mustread -->
+                    </div><!-- #bluebox_mustread -->
                     <hr />
-                    <div id="bluebox_body_worthalook">
-                        <div id="bluebox_body_worthalook_title">Worth a look</div>
+                    <div id="bluebox_worthalook">
+                        <div id="bluebox_worthalook_title">Worth a look</div>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2011/09/identity-and-location-and-sex-welcome-to-people-discovery/">Identity and location (and sex) - welcome to people discovery </a></li>
                             <li><a href="http://wewillraakyou.com/2011/08/measure-fake-follower-twitter/">Is Newt Gingrich a cheat?</a></li>
                             <li><a href="http://wewillraakyou.com/2011/05/curating-your-own-serendipity-filters/">Curating your own serendipity filters</a></li>
                         </ul>
-                        <div id="bluebox_body_worthalook_footer">
-                            <span class="bluebox_body_worthalook_link_text"><a href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">More</a></span><span class="bluebox_body_worthalook_link_arrow"><a href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">&#9660;</a></span>
+                        <div id="bluebox_worthalook_footer">
+                            <span class="bluebox_worthalook_link_text"><a href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">More</a></span><span class="bluebox_worthalook_link_arrow"><a href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">&#9660;</a></span>
                         </div>
-                    </div><!-- #bluebox_body_worthalook -->
-                    <div id="bluebox_body_inspiration">
-                        <div id="bluebox_body_inspiration_title">The RAAKonteur</div>
+                    </div><!-- #bluebox_worthalook -->
+                    <div id="bluebox_inspiration">
+                        <div id="bluebox_inspiration_title">The RAAKonteur</div>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/">The RAAKonteur #69 - Apple out to smash textbook publishing & SEO by Celebrity</a></li>
                             <li><a href="http://wewillraakyou.com/2012/01/the-raakonteur-68-why-googles-new-personal-search-matters-and-revenge-served-cold/">The RAAKonteur #68 - Why Google's new Personal Search matters, and Revenge served Cold</a></li>
                             <li><a href="http://wewillraakyou.com/2011/12/the-raakonteur-67-we-predict-2012/">The RAAKonteur #67 - We predict 2012</a></li>
                         </ul>
-                        <div id="bluebox_body_inspiration_footer">
-                            <span class="bluebox_body_inspiration_link_text"><a href="http://wewillraakyou.com/category/raakonteur/" rel="nofollow">More</a></span><span class="bluebox_body_inspiration_link_arrow"><a href="http://wewillraakyou.com/category/raakonteur/" rel="nofollow">&#9660;</a></span>
+                        <div id="bluebox_inspiration_footer">
+                            <span class="bluebox_inspiration_link_text"><a href="http://wewillraakyou.com/category/raakonteur/" rel="nofollow">More</a></span><span class="bluebox_inspiration_link_arrow"><a href="http://wewillraakyou.com/category/raakonteur/" rel="nofollow">&#9660;</a></span>
                         </div>
-                    </div><!-- #bluebox_body_inspiration -->
+                    </div><!-- #bluebox_inspiration -->
                 </div><!-- bluebox_body -->
                 <div id="bluebox_bottom"></div>
             </div><!-- #bluebox -->
@@ -130,7 +130,7 @@ Template Name: Blog
                 </div><!-- #whitebox_secondary_tabs -->
                 <div id="whitebox_secondary_top"></div>
                 <div id="whitebox_secondary_body">
-                    <div id="whitebox_secondary_body_mostviewed">
+                    <div id="whitebox_secondary_mostviewed">
                         <ul>
                             <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
                             <li><a href="http://wewillraakyou.com/2011/06/google-plusone-button-howto/">How to add a Google +1 button to your website</a></li>
@@ -139,15 +139,15 @@ Template Name: Blog
                             <li><a href="http://wewillraakyou.com/2011/06/twitter-steals-devnest/">Twitter eats its Babies</a></li>
                             <li><a href="http://wewillraakyou.com/2010/10/how-do-url-shorteners-work/">How do URL shorteners work?</a></li>
                         </ul>
-                    </div><!-- #whitebox_secondary_body_mostviewed -->
-                    <div id="whitebox_secondary_body_category" style="display: none">
+                    </div><!-- #whitebox_secondary_mostviewed -->
+                    <div id="whitebox_secondary_category" style="display: none">
                         <ul>
                             <li><a href="http://wewillraakyou.com/category/Inspiration/">Inspiration</a></li>
                             <li><a href="http://wewillraakyou.com/category/Must Read/">Must Read</a></li>
                             <li><a href="http://wewillraakyou.com/category/RAAKonteur/">RAAKonteur</a></li>
                             <li><a href="http://wewillraakyou.com/category/Worth a look/">Worth a look</a></li>
                         </ul>
-                    </div><!-- #whitebox_secondary_body_category -->
+                    </div><!-- #whitebox_secondary_category -->
                 </div><!-- #whitebox_secondary_body -->
                 <div id="whitebox_secondary_bottom"></div>
             </div><!-- #whitebox_secondary -->
