@@ -245,7 +245,7 @@ _gaq.push(['_trackPageview']);
                     </li>
                     <li class="page_item page-item-341">
                         <div class="topmenu_top"></div>
-                        <div class="topmenu_body"><a href="http://wewillraakyou.com/contact/" title="Contact" rel="nofollow">Contact</a></div>
+                        <div class="topmenu_body"><a href="<?php echo get_page_link(5229); ?>" title="Contact" rel="nofollow">Contact</a></div>
                     </li>
                 </ul>
             </div>
