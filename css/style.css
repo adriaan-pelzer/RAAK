@@ -1198,7 +1198,7 @@ a.next, a.prev {
 
 /************** CONTACT ****************/
 
-.top_margin_22px {
+p.top_margin_22px {
     margin-top: 22px;
 }
 
@@ -1213,9 +1213,17 @@ a.next, a.prev {
 }
 
 
+.contact form p {
+    margin-bottom: -18px;
+}
+
+
 .contact form input[type="submit"] {
     height: 26px;
     width: 52px;
+    left: 139px;
+    top: -12px;
+    position: relative;
 }
 
 .contact form textarea {
