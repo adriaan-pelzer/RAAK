@@ -1202,7 +1202,18 @@ a.next, a.prev {
     margin-top: 22px;
 }
 
+.contact form {
+    font: 10px arial, san-serif;
+    text-transform: uppercase;
+}
 
+.contact form input {
+    height: 25px;
+    width: 219px;
+}
+.contact form textarea {
+    width: 219px;
+}
 
 /************** Sidebar ***************/
 
