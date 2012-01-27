@@ -45,7 +45,7 @@ Template Name: Contact
             </section><!-- whitebox_primary -->
             <section class="bluebox bluebox_primary box rounded-corners">
                 <header>
-                    <h3 class="box_nav_no_title bluebox_primary_body_nav box_nav smaller_arial_caps" id="bluebox_title">Where we are</h3><!--span id="bluebox_title_print"><a href="">Print</a></span><span class="blue"><a href="">&#9658;</a></span-->
+                    <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps" id="bluebox_title">Where we are</h3><!--span id="bluebox_title_print"><a href="">Print</a></span><span class="blue"><a href="">&#9658;</a></span-->
                 </header>
                 <div id="bluebox_print">
                 </div>
