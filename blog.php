@@ -22,7 +22,7 @@ Template Name: Blog
                         <span class="seperator">|</span>
                         <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item">27 Jan 2012</span>
                         <span class="seperator">|</span>
-                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" /></span>
+                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
                         <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <div class="whitebox_primary_content">
@@ -45,7 +45,7 @@ Template Name: Blog
                         <span class="seperator">|</span>
                         <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item">24 Jan 2012</span>
                         <span class="seperator">|</span>
-                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" /></span>
+                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
                         <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <div class="whitebox_primary_content">
