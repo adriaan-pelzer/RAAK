@@ -29,9 +29,9 @@ Template Name: Blog
                                 <a href="http://wewillraakyou.com/2012/01/with-blocking-functionality-twitter-opens-a-potential-pandoras-box/"><img src="http://wewillraakyou.com/wp-content/uploads/2012/01/pandora-twitter.jpg" alt="" title="pandora-twitter"  width="162" height="104" /></a>
                                 <a class="more_link" href="http://wewillraakyou.com/2012/01/with-blocking-functionality-twitter-opens-a-potential-pandoras-box/">More &#9658;</a>
                         </div><!-- .whitebox_primary_content_right -->
-                        <div class="whitebox_primary_content_left">
+                        <p>
                             RAAK thinks Twitter has opened itself up to governments and corporations of all kinds by introducing country based filtering technology. See a Storify of Tweets on the issue curated by us.
-                        </div><!-- .whitebox_primary_content_left -->
+                        </p><!-- .whitebox_primary_content_left -->
                     </div><!-- .whitebox_primary_content -->
                     <hr class="solid" />
                     <div id="whitebox_primary_title"><a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/">The RAAKonteur #69 - Apple out to smash textbook publishing & SEO by Celebrity</a></div>
