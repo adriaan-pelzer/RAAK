@@ -22,7 +22,7 @@ Template Name: Blog
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date">27 Jan 2012</span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <div class="whitebox_primary_post_content">
                         <div class="whitebox_primary_post_content_right">
