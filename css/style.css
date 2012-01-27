@@ -1242,6 +1242,10 @@ p.top_margin_22px {
     top: -23px;
 }
 
+#bluebox_map {
+    margin-top: 10px;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
