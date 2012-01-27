@@ -1222,6 +1222,12 @@ a.next, a.prev {
     width: 219px;
 }
 
+
+.contact form span {
+    left: 139px;
+    top: -23px;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
