@@ -1243,6 +1243,23 @@ p.top_margin_22px {
     margin-top: 10px;
 }
 
+/************** BLOG *******************/
+
+.whitebox_big_body_search a {
+    color: #666666;
+}
+
+.whitebox_big_body_search input {
+    width: 280px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.whitebox_big_body_search {
+    float: right;
+}
+
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/

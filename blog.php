@@ -9,8 +9,8 @@ Template Name: Blog
         <div class="content">
             <section class="whitebox_big whitebox box big_box rounded-corners">
                 <header>
+                    <span class="whitebox_big_body_search smaller_arial_caps"><a onclick="javascript: google_search();">Search</a><input type="text" id="searchtext" /></span>
                     <h2 class="din-schrift blue_20">Our Blog</h2>
-                    <span id="whitebox_big_body_search"><a onclick="javascript: google_search();">Search</a><input type="text" id="searchtext" /></span>
                 </header>
             </section><!-- whitebox_big -->
             <section class="whitebox whitebox_primary whitebox-primary box rounded-corners">
