@@ -111,7 +111,7 @@ Template Name:Home
                             <span class="seperator">|</span>
                             <!--span class="whitebox_primary_body_post_attr_item time">12:44</span>
                             <span class="seperator">|</span-->
-                            <span class="whitebox_primary_body_post_attr_item comments"><img class="commenticon" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                            <span class="whitebox_primary_body_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                         </div><!-- .whitebox_primary_body_post_attr -->
                         <div class="whitebox_primary_body_post_content">
                             <div class="whitebox_primary_body_post_content_right">
@@ -132,7 +132,7 @@ Template Name:Home
                             <span class="seperator">|</span>
                             <!--span id="whitebox_primary_body_attr_post_time" class="whitebox_primary_body_post_attr_item">11:59</span>
                             <span class="seperator">|</span-->
-                            <span class="whitebox_primary_body_post_attr_item comments"><img class="commenticon" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                            <span class="whitebox_primary_body_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                         </div><!-- .whitebox_primary_body_post_attr -->
                         <div class="whitebox_primary_body_post_content">
                             <div class="whitebox_primary_body_post_content_right">
