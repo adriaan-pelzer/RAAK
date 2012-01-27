@@ -1211,6 +1211,13 @@ a.next, a.prev {
     height: 25px;
     width: 219px;
 }
+
+
+.contact form input[type="submit"] {
+    height: 26px;
+    width: 52px;
+}
+
 .contact form textarea {
     width: 219px;
 }
