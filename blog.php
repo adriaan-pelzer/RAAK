@@ -5,17 +5,12 @@ Template Name: Blog
 ?>
 <?php get_header() ?>
 
-    <div id="container">
-        <div id="container_top"></div>
-        <div id="content">
-            <div id="whitebox_big">
-                <div id="whitebox_big_top"></div>
-                <div id="whitebox_big_body">
-                    <span id="whitebox_big_body_title"><h1>Our Blog</h1></span>
-                    <span id="whitebox_big_body_search"><a onclick="javascript: google_search();">Search</a><input type="text" id="searchtext" /></span>
-                </div><!-- #whitebox_big_body -->
-                <div id="whitebox_big_bottom"></div>
-            </div><!-- #whitebox_big -->
+    <div class="container rounded-corners blog">
+        <div class="content">
+            <section class="whitebox_big whitebox box big_box rounded-corners">
+                <h2 class="din-schrift blue_20">Our Blog</h2>
+                <span id="whitebox_big_body_search"><a onclick="javascript: google_search();">Search</a><input type="text" id="searchtext" /></span>
+            </section><!-- whitebox_big -->
             <div id="whitebox_primary">
                 <div id="whitebox_primary_top">
                 </div><!-- #whitebox_primary_top -->
