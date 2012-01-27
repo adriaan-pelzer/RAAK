@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Contanct 
+Template Name: Contact 
  */
 ?>
 <?php get_header() ?>
