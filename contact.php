@@ -6,7 +6,7 @@ Template Name: Contact
 <?php get_header() ?>
 
 
-	<div class="container rounded-corners about">
+	<div class="container rounded-corners contact">
 		<div class="content">
             <section class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>

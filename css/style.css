@@ -335,6 +335,19 @@ label {
     margin-top: -13px;
 }
 
+address {
+    line-height: 21px;
+    margin: 8 0 18px;
+}
+
+address .blue {
+    color: #00aeff;
+}
+
+address a {
+    color: #666666;
+}
+
 
 /************** header ***************/
 
