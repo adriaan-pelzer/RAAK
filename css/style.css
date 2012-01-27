@@ -311,7 +311,7 @@ blockquote {
     margin-bottom: 20px;
 }
 
-input[type="text"] {
+input[type="text"], textarea {
     background: #B9E5FB;
     border: 1px solid #8CD9FF;
 }
@@ -337,7 +337,7 @@ label {
 
 address {
     line-height: 21px;
-    margin: 8 0 18px;
+    margin: 16px 0 18px;
 }
 
 address .blue {
@@ -1194,6 +1194,12 @@ a.next, a.prev {
     margin-left: 10px;
     text-align: left!important;
     padding-top: 5px!important;
+}
+
+/************** CONTACT ****************/
+
+.top_margin_22px {
+    margin-top: 22px;
 }
 
 

@@ -23,7 +23,7 @@ Template Name: Contact
                         <span class="blue">e</span> <a href="mailto:hello@wewillraakyou.com">hello@wewillraakyou.com</a>
                     </address>
                     <hr class="solid" />
-                    <p>Alternatively just complete this form</p>
+                    <p class="top_margin_22px">Alternatively just complete this form</p>
                     <div class="wpcf7" id="wpcf7-f1-p341-o1">
                         <form action="/contact/#wpcf7-f1-p341-o1" method="post" class="wpcf7-form">
                             <div style="display: none;">
