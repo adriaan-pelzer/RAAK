@@ -105,19 +105,16 @@ Template Name: Blog
                     </div><!-- content_three -->
                 </div><!-- bluebox_primary -->
             </section><!-- bluebox-primary -->
-            <div id="whitebox_secondary">
-                <div id="whitebox_secondary_tabs">
-                    <div id="whitebox_secondary_tabs_mostviewed" class="whitebox_secondary_tab active">
-                        <div class="whitebox_secondary_tab_top"></div>
-                        <div class="whitebox_secondary_tab_body"><a onclick="javascript: expand('mostviewed');">Most Viewed</a></div>
+            <section class="whitebox-secondary tab_container">
+                <div class="multiple_tabs">
+                    <div class="tab rounded-corners tab108 active">
+                        <h3><a onclick="javascript: expand('mostviewed');">Most Viewed</a></h3>
                     </div>
-                    <div id="whitebox_secondary_tabs_category" class="whitebox_secondary_tab">
-                        <div class="whitebox_secondary_tab_top"></div>
-                        <div class="whitebox_secondary_tab_body"><a onclick="javascript: expand('category');">Category</a></div>
+                    <div class="tab rounded-corners tab108">
+                        <h3><a onclick="javascript: expand('category');">Category</a></h3>
                     </div>
-                </div><!-- #whitebox_secondary_tabs -->
-                <div id="whitebox_secondary_top"></div>
-                <div id="whitebox_secondary_body">
+                </div><!-- multiple_tabs -->
+                <div class="whitebox_secondary whitebox box rounded-corners">
                     <div id="whitebox_secondary_mostviewed">
                         <ul>
                             <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
@@ -137,8 +134,7 @@ Template Name: Blog
                         </ul>
                     </div><!-- #whitebox_secondary_category -->
                 </div><!-- #whitebox_secondary_body -->
-                <div id="whitebox_secondary_bottom"></div>
-            </div><!-- #whitebox_secondary -->
+            </section><!-- whitebox_secondary -->
         </div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
