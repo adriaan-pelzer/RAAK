@@ -36,7 +36,7 @@ Template Name: Blog
                     <hr class="solid" />
                     <h3><a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/">The RAAKonteur #69 - Apple out to smash textbook publishing & SEO by Celebrity</a></h3>
                     <hr />
-                    <div class="whitebox_primary_attr">
+                    <div class="whitebox_primary_post_attr">
                         <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date">24 Jan 2012</span>
