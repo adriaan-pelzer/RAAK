@@ -63,7 +63,7 @@ Template Name: Blog
                     </div><!-- .whitebox_primary_footer_right -->
                 </footer><!-- .whitebox_primary_footer -->
             </section><!-- whitebox_primary -->
-            <section class="tab_container bluebox-primary">
+            <section class="tab_container bluebox-primary other_posts">
                 <div class="blue_tab tab tab108 rounded-corners">
                     <h2>Other Posts</h2>
                 </div><!-- blue_tab -->

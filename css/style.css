@@ -647,7 +647,7 @@ margin: 25px 0 9px;
 }
 
 
-.whitebox_secondary li {
+.other_posts li {
     padding-left:16px;
 }
 
@@ -909,9 +909,9 @@ hr.lightblue_hr {
 }
 
 
-.logo-project .whitebox_secondary li {
+/*.logo-project .whitebox_secondary li {
     padding-left: 0;
-}
+}*/
 
 
 .logo-project .whitebox_secondary  a, .logo-project .whitebox_secondary ul#whitebox_secondary_submit a {

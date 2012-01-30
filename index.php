@@ -113,7 +113,7 @@ Template Name:Home
                     </footer><!-- .whitebox_primary_footer -->
                 </div><!-- #whitebox_primary -->
             </section><!-- tab_container -->
-            <section class="tab_container whitebox-secondary">
+            <section class="tab_container whitebox-secondary other_posts">
                 <div class="grey_tab tab tab104 rounded-corners">
                         <h2>Other Posts</h2>
                 </div><!-- .grey_tab -->
