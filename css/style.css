@@ -1272,7 +1272,7 @@ p.top_margin_22px {
 }
 
 
-.blog .whitebox_primary_post h3 {
+.blog-single .whitebox_primary_post h3, .blog .whitebox_primary_post h3 {
     font-size: 24px;
 }
 
@@ -1331,6 +1331,11 @@ p.top_margin_22px {
 
 #plusone {
     margin-bottom: 10px;
+}
+
+
+.blog-single .whitebox_primary_post .solid {
+    margin: 0;
 }
 
 /************** Sidebar ***************/
