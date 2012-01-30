@@ -697,7 +697,7 @@ margin: 25px 0 9px;
 }
 
 
-.whitebox_secondary ul {
+.whitebox_secondary ul, .other_posts ul {
     line-height: 19px;
     margin-top: 5px;
 }
@@ -832,7 +832,6 @@ hr.lightblue_hr {
 .logo-project ul {
     list-style: disc;
     padding-left: 15px;
-    line-height: 19px;
 }
 
 .logo-project .whitebox_primary .more_link {
@@ -1274,6 +1273,11 @@ p.top_margin_22px {
 
 .blog .bluebox_primary {
     margin-left: 0;
+}
+
+
+.blog .other_posts_content_three li {
+    background: url(../images/whitebox_secondary_body_content_two_list.png) no-repeat 0px 5px;
 }
 
 
