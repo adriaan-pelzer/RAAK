@@ -1281,6 +1281,9 @@ p.top_margin_22px {
     background: url(../images/whitebox_secondary_body_content_two_list.png) no-repeat 0px 5px;
 }
 
+.blog .other_posts li {
+    color: #666666;
+}
 
 /************** Sidebar ***************/
 
