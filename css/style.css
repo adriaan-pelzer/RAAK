@@ -1304,6 +1304,7 @@ p.top_margin_22px {
 
 .blog-single .whitebox_primary_post_attr div {
     margin-bottom: 5px;
+    display: block;
 }
 
 .whitebox_primary_share {
