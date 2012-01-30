@@ -34,42 +34,34 @@ Template Name: Blog
                         </p><!-- .whitebox_primary_content_left -->
                     </div><!-- .whitebox_primary_content -->
                     <hr class="solid" />
-                    <div id="whitebox_primary_title"><a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/">The RAAKonteur #69 - Apple out to smash textbook publishing & SEO by Celebrity</a></div>
+                    <h3><a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/">The RAAKonteur #69 - Apple out to smash textbook publishing & SEO by Celebrity</a></h3>
                     <hr />
                     <div class="whitebox_primary_attr">
-                        <span id="whitebox_primary_attr_author" class="whitebox_primary_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
+                        <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
                         <span class="seperator">|</span>
-                        <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item">24 Jan 2012</span>
+                        <span class="whitebox_primary_post_attr_item date">24 Jan 2012</span>
                         <span class="seperator">|</span>
-                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                        <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
-                    <div class="whitebox_primary_content">
-                        <div class="whitebox_primary_content_left">
-                            On Wednesday we blacked out in protest against SOPA. For a brilliant summary on how SOPA can destroy the Internet, check out <a href="http://www.ted.com/talks/defend_our_freedom_to_share_or_why_sopa_is_a_bad_idea.html?awesm=on.ted.com_ACxO">this TED talk by Clay Shirky</a>.<br />                            </div><!-- .whitebox_primary_content_left -->
-                        <div class="whitebox_primary_content_right">
-                            <div class="whitebox_primary_content_right_image">
-                                <a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/"><img title="ebooks" src="http://wewillraakyou.com/wp-content/uploads/2012/01/ebooks.jpeg" alt="ebooks"  width="162" height="104" /></a>
-                            </div><!-- .whitebox_primary_content_right_image -->
-                            <div class="whitebox_primary_content_right_link">
-                                <a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/">More &#9658;</a>
-                            </div><!-- .whitebox_primary_content_right_link -->
+                    <div class="whitebox_primary_post_content">
+                        <div class="whitebox_primary_post_content_right">
+                            <a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/"><img title="ebooks" src="http://wewillraakyou.com/wp-content/uploads/2012/01/ebooks.jpeg" alt="ebooks"  width="162" height="104" /></a>
+                            <a class="more_link" href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/">More &#9658;</a>
                         </div><!-- .whitebox_primary_content_right -->
+                        <p>
+                            On Wednesday we blacked out in protest against SOPA. For a brilliant summary on how SOPA can destroy the Internet, check out <a href="http://www.ted.com/talks/defend_our_freedom_to_share_or_why_sopa_is_a_bad_idea.html?awesm=on.ted.com_ACxO">this TED talk by Clay Shirky</a>.
+                        </p><!-- whitebox_primary_content_left -->
                     </div><!-- .whitebox_primary_content -->
                     <hr class="solid" />
                 </div>
-                <div class="whitebox_primary_footer">
-                    <span id="whitebox_primary_footer_archive" class="whitebox_primary_footer_item"><a href="http://wewillraakyou.com/blog-archive/">All blog posts</a></span>
-                    <a onclick="javascript: previous();">
-                        <span id="whitebox_primary_footer_prev_arrow" class="whitebox_primary_footer_item">&#9668;</span>
-                        <span id="whitebox_primary_footer_prev_text" class="whitebox_primary_footer_item active">Previous</span>
-                    </a>
-                    <span class="seperator">|</span>
-                    <a onclick="javascript: next();">
-                        <span id="whitebox_primary_footer_next_text" class="whitebox_primary_footer_item">Next</span>
-                        <span id="whitebox_primary_footer_next_arrow" class="whitebox_primary_footer_item">&#9658;</span>
-                    </a>
-                </div><!-- .whitebox_primary_footer -->
+                <footer class="whitebox_primary_footer box_nav small_arial_caps">
+                    <a class="whitebox_primary_footer_left"  href="http://wewillraakyou.com/blog-archive/">All blog posts</a>
+                    <div class="whitebox_primary_footer_right">
+                        <a onclick="javascript: previous();"><span class="arrow">&#9668;</span>Previous</a>
+                        <span class="seperator">|</span>
+                        <a class="active" onclick="javascript: next();">Next<span class="arrow">&#9658;</span></a>
+                    </div><!-- .whitebox_primary_footer_right -->
+                </footer><!-- .whitebox_primary_footer -->
             </section><!-- whitebox_primary -->
             <div id="bluebox">
                 <div id="bluebox_tab">
