@@ -691,7 +691,7 @@ margin: 25px 0 9px;
 }
 
 
-.whitebox_secondary footer {
+.whitebox_secondary footer, .other_posts footer {
     text-align: right;
     margin: 6px 0 4px;
 }
