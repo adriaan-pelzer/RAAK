@@ -1320,6 +1320,18 @@ p.top_margin_22px {
     margin: 10px 0 0 0px!important;
 }
 
+.fb_iframe_widget {
+    margin: 10px 44px 10px 0;
+}
+
+.twitter-share-button {
+    width: 96px!important;
+}
+
+#plusone {
+    margin-bottom: 10px;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
