@@ -832,6 +832,7 @@ hr.lightblue_hr {
 .logo-project ul {
     list-style: disc;
     padding-left: 15px;
+    line-height: 19px;
 }
 
 .logo-project .whitebox_primary .more_link {
