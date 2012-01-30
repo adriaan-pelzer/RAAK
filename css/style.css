@@ -1281,8 +1281,13 @@ p.top_margin_22px {
     background: url(../images/whitebox_secondary_body_content_two_list.png) no-repeat 0px 5px;
 }
 
-.blog .other_posts li {
+.blog .other_posts li a {
     color: #666666;
+}
+
+.other_posts .bluebox_primary {
+    width: 323px;
+    padding-right: 10px;
 }
 
 /************** Sidebar ***************/
