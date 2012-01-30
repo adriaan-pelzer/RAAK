@@ -22,7 +22,7 @@ Template Name:Single Blog
                             <div class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/adriaan/">Adriaan Pelzer</a></div>
                             <div class="whitebox_primary_post_attr_item date">27 January 2012</div>
                             <div class="whitebox_primary_post_attr_item time">12:38</div>
-                            <div class="whitebox_primary_post_attr_item comments"><img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</div>
+                            <div class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</div>
                         </div><!-- .whitebox_primary_post_attr -->
                         <div class="whitebox_primary_share">
                             <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="adriaan_pelzer" data-related="RAAKonteurs" data-text="No wonder the MPAA is freaking out: Youtube serves 4 billion movies per day &#9733; RAAK">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>

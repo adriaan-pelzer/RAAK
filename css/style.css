@@ -1267,7 +1267,7 @@ p.top_margin_22px {
     float: right;
 }
 
-.blog .whitebox_primary {
+.blog-single .whitebox_primary, .blog .whitebox_primary {
     margin-top: 20px;
 }
 
@@ -1292,6 +1292,32 @@ p.top_margin_22px {
 .other_posts .bluebox_primary {
     width: 323px;
     padding-right: 10px;
+}
+
+/************** BLOG SINGLE ************/
+
+.blog-single .whitebox_primary_post_attr {
+    width: 179px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.blog-single .whitebox_primary_post_attr div {
+    margin-bottom: 5px;
+}
+
+.whitebox_primary_share {
+    width:100px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0 0 75px;
+}
+
+.opengraphprotocoltools-div {
+    width: 92px;
+    height: 20px;
+    padding: 0!important;
+    margin: 10px 0 0 0px!important;
 }
 
 /************** Sidebar ***************/
