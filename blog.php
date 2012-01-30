@@ -107,15 +107,15 @@ Template Name: Blog
             </section><!-- bluebox-primary -->
             <section class="whitebox-secondary tab_container">
                 <div class="multiple_tabs">
-                    <div class="tab rounded-corners tab108 active">
+                    <div class="tab rounded-corners tab108">
                         <h3><a onclick="javascript: expand('mostviewed');">Most Viewed</a></h3>
                     </div>
-                    <div class="tab rounded-corners tab108">
+                    <div class="tab rounded-corners tab108 active">
                         <h3><a onclick="javascript: expand('category');">Category</a></h3>
                     </div>
                 </div><!-- multiple_tabs -->
                 <div class="whitebox_secondary whitebox box rounded-corners">
-                    <div id="whitebox_secondary_mostviewed">
+                    <div id="whitebox_secondary_mostviewed" style="display: none">
                         <ul>
                             <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
                             <li><a href="http://wewillraakyou.com/2011/06/google-plusone-button-howto/">How to add a Google +1 button to your website</a></li>
@@ -125,7 +125,7 @@ Template Name: Blog
                             <li><a href="http://wewillraakyou.com/2010/10/how-do-url-shorteners-work/">How do URL shorteners work?</a></li>
                         </ul>
                     </div><!-- #whitebox_secondary_mostviewed -->
-                    <div id="whitebox_secondary_category" style="display: none">
+                    <div id="whitebox_secondary_category">
                         <ul>
                             <li><a href="http://wewillraakyou.com/category/Inspiration/">Inspiration</a></li>
                             <li><a href="http://wewillraakyou.com/category/Must Read/">Must Read</a></li>
@@ -133,8 +133,8 @@ Template Name: Blog
                             <li><a href="http://wewillraakyou.com/category/Worth a look/">Worth a look</a></li>
                         </ul>
                     </div><!-- #whitebox_secondary_category -->
-                </div><!-- #whitebox_secondary_body -->
-            </section><!-- whitebox_secondary -->
+                </div><!-- whitebox_secondary -->
+            </section><!-- whitebox-secondary -->
         </div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
