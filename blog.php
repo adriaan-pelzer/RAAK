@@ -63,15 +63,13 @@ Template Name: Blog
                     </div><!-- .whitebox_primary_footer_right -->
                 </footer><!-- .whitebox_primary_footer -->
             </section><!-- whitebox_primary -->
-            <div id="bluebox">
-                <div id="bluebox_tab">
-                    <div id="bluebox_tab_top"></div>
-                    <div id="bluebox_tab_body">Other Posts</div>
-                </div><!-- #bluebox_tab -->
-                <div id="bluebox_top"></div>
-                <div id="bluebox_body">
-                    <div id="bluebox_mustread">
-                        <div id="bluebox_mustread_title">Must Reads</div>
+            <section class="tab_container bluebox-primary">
+                <div class="blue_tab tab tab108 rounded-corners">
+                    <h2>Other Posts</h2>
+                </div><!-- blue_tab -->
+                <div class="bluebox_primary bluebox box rounded-corners">
+                    <div class="other_posts_content_one">
+                        <h3 class="small_arial_caps">Must Reads</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2012/01/tweet-discount-klout-miista/">"Bribing your customers to become brand advocates"</a></li>
                             <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
@@ -79,36 +77,34 @@ Template Name: Blog
                             <li><a href="http://wewillraakyou.com/2010/11/edgerank-the-secrets-facebooks-pagerank/">EdgeRank – the secrets of Facebook’s PageRank</a></li>
                             <li><a href="http://wewillraakyou.com/2010/10/mad-mixers-brands-ads-the-importance-of-mixing-paid-earned-media/">Mad Mixers: Brands ads & the importance of mixing paid & earned media</a></li>
                         </ul>
-                        <div id="bluebox_mustread_footer">
-                            <span class="bluebox_mustread_link_text"><a href="http://wewillraakyou.com/category/must-read/" rel="nofollow">More</a></span><span class="bluebox_mustread_link_arrow"><a href="http://wewillraakyou.com/category/must-read/" rel="nofollow">&#9660;</a></span>
-                        </div>
-                    </div><!-- #bluebox_mustread -->
-                    <hr />
-                    <div id="bluebox_worthalook">
-                        <div id="bluebox_worthalook_title">Worth a look</div>
+                        <footer>
+                            <a class="more_link" href="http://wewillraakyou.com/category/must-read/" rel="nofollow">More &#9660;</a>
+                        </footer>
+                    </div><!-- content_one -->
+                    <div class="other_posts_content_two">
+                        <h3 class="small_arial_caps">Worth a look</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2011/09/identity-and-location-and-sex-welcome-to-people-discovery/">Identity and location (and sex) - welcome to people discovery </a></li>
                             <li><a href="http://wewillraakyou.com/2011/08/measure-fake-follower-twitter/">Is Newt Gingrich a cheat?</a></li>
                             <li><a href="http://wewillraakyou.com/2011/05/curating-your-own-serendipity-filters/">Curating your own serendipity filters</a></li>
                         </ul>
-                        <div id="bluebox_worthalook_footer">
-                            <span class="bluebox_worthalook_link_text"><a href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">More</a></span><span class="bluebox_worthalook_link_arrow"><a href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">&#9660;</a></span>
-                        </div>
-                    </div><!-- #bluebox_worthalook -->
-                    <div id="bluebox_inspiration">
-                        <div id="bluebox_inspiration_title">The RAAKonteur</div>
+                        <footer>
+                            <a class="more_link" href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">More &#9660;</a>
+                        </footer>
+                    </div><!-- content_two -->
+                    <div class="other_posts_content_three">
+                        <h3 class="small_arial_caps">The RAAKonteur</h3>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/">The RAAKonteur #69 - Apple out to smash textbook publishing & SEO by Celebrity</a></li>
                             <li><a href="http://wewillraakyou.com/2012/01/the-raakonteur-68-why-googles-new-personal-search-matters-and-revenge-served-cold/">The RAAKonteur #68 - Why Google's new Personal Search matters, and Revenge served Cold</a></li>
                             <li><a href="http://wewillraakyou.com/2011/12/the-raakonteur-67-we-predict-2012/">The RAAKonteur #67 - We predict 2012</a></li>
                         </ul>
-                        <div id="bluebox_inspiration_footer">
-                            <span class="bluebox_inspiration_link_text"><a href="http://wewillraakyou.com/category/raakonteur/" rel="nofollow">More</a></span><span class="bluebox_inspiration_link_arrow"><a href="http://wewillraakyou.com/category/raakonteur/" rel="nofollow">&#9660;</a></span>
-                        </div>
-                    </div><!-- #bluebox_inspiration -->
-                </div><!-- bluebox_body -->
-                <div id="bluebox_bottom"></div>
-            </div><!-- #bluebox -->
+                        <footer>
+                            <a class="more_link" href="http://wewillraakyou.com/category/raakonteur/" rel="nofollow">More &#9660;</a>
+                        </footer>
+                    </div><!-- content_three -->
+                </div><!-- bluebox_primary -->
+            </section><!-- bluebox-primary -->
             <div id="whitebox_secondary">
                 <div id="whitebox_secondary_tabs">
                     <div id="whitebox_secondary_tabs_mostviewed" class="whitebox_secondary_tab active">
