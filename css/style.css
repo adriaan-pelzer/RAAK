@@ -1295,7 +1295,7 @@ p.top_margin_22px {
     font-size: 24px;
 }
 
-.blog .bluebox_primary {
+.blog-single .bluebox_primary, .blog .bluebox_primary {
     margin-left: 0;
 }
 
@@ -1398,6 +1398,12 @@ p.top_margin_22px {
     width: 90px;
     padding: 6px 0;
     margin-left: 100px;
+}
+
+.bluebox_content_quarter, .related_posts_hr {
+    width: 147px;
+    display: inline-block;
+    text-align: center;
 }
 
 
