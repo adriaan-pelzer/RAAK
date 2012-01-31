@@ -54,10 +54,10 @@ Template Name:Single Blog
                         <div class="formcontainer">	
                             <form name="commentform" id="commentform" action="http://wewillraakyou.com/wp-comments-post.php" method="post">
                                 <p class="bigger_arial_no_caps grey_text">Your email is <em>never</em> shared. Required fields are marked <span class="required">*</span></p>
-                                <label class="form-label" for="author">Name</label> <span class="required">*</span><input id="author" name="author" class="text required" type="text" value="" size="30" maxlength="50" tabindex="3" />
-                                <label class="form-label" for="email">Email</label> <span class="required">*</span><input id="email" name="email" class="text required" type="text" value="" size="30" maxlength="50" tabindex="4" />
-                                <label class="form-label" for="url">Website</label><input id="url" name="url" class="text" type="text" value="" size="30" maxlength="50" tabindex="5" />
-                                <label class="form-label" for="comment">Comment</label>
+                                <label class="form-label bigger_arial_caps" for="author">Name</label> <span class="required">*</span><input id="author" name="author" class="text required" type="text" value="" size="30" maxlength="50" tabindex="3" />
+                                <label class="form-label bigger_arial_caps" for="email">Email</label> <span class="required">*</span><input id="email" name="email" class="text required" type="text" value="" size="30" maxlength="50" tabindex="4" />
+                                <label class="form-label bigger_arial_caps" for="url">Website</label><input id="url" name="url" class="text" type="text" value="" size="30" maxlength="50" tabindex="5" />
+                                <label class="form-label bigger_arial_caps" for="comment">Comment</label>
                                 <textarea id="comment" name="comment" class="text required" cols="45" rows="8" tabindex="6"></textarea>
                                 <input type="hidden" name="submit" value="Post Comment" />Post Comment<!--span id="commentform_submit"--><input id="submit" name="submit" class="button" type="submit" value="Post Comment" tabindex="7" /><!--/span--><input type="hidden" name="comment_post_ID" value="5273" />
                                 <div class="form-option"></div>
