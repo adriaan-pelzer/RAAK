@@ -157,6 +157,21 @@ em {
     color: #00aeff;
 }
 
+
+.bigger_arial_no_caps {
+    font: 11px arial, sans-serif;
+    text-transform: none;
+    color: #00aeff;
+}
+
+.grey_text {
+    color: #666666;
+}
+
+.blue_text {
+    color: #00aeff;
+}
+
 .seperator {
     font-size: 9px;
     margin: 0 7px;
@@ -1342,6 +1357,10 @@ p.top_margin_22px {
     font-size: 18px;
     font-weight: normal;
     text-decoration: underline;
+}
+
+.required {
+    color: #c30c30;
 }
 
 /************** Sidebar ***************/

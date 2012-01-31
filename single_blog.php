@@ -53,7 +53,7 @@ Template Name:Single Blog
                         <h4>Leave a Comment</h4>
                         <div class="formcontainer">	
                             <form name="commentform" id="commentform" action="http://wewillraakyou.com/wp-comments-post.php" method="post">
-                                <p>Your email is <em>never</em> shared. Required fields are marked <span class="required">*</span></p>
+                                <p class="bigger_arial_no_caps grey_text">Your email is <em>never</em> shared. Required fields are marked <span class="required">*</span></p>
                                 <label class="form-label" for="author">Name</label> <span class="required">*</span><input id="author" name="author" class="text required" type="text" value="" size="30" maxlength="50" tabindex="3" />
                                 <label class="form-label" for="email">Email</label> <span class="required">*</span><input id="email" name="email" class="text required" type="text" value="" size="30" maxlength="50" tabindex="4" />
                                 <label class="form-label" for="url">Website</label><input id="url" name="url" class="text" type="text" value="" size="30" maxlength="50" tabindex="5" />
