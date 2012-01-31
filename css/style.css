@@ -1427,6 +1427,7 @@ p.top_margin_22px {
     line-height: 19px;
     margin: 0;
     padding: 1px 0 4px;
+    letter-spacing: 1px;
 }
 
 .blog-archive .whitebox_primary h3 a {
