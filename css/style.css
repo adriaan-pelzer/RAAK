@@ -1420,6 +1420,12 @@ p.top_margin_22px {
     margin-top: 5px;
 }
 
+/************** BLOG ARCHIVE ***********/
+
+.blog-archive .whitebox_primary h3 {
+    font-size: 18px;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
