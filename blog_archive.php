@@ -349,15 +349,11 @@ Template Name: Blog Archive
 <a href='http://wewillraakyou.com/tag/youtube/' class='tag-link-376' title='6 topics' style='font-size: 8.95145631068pt;'>youtube</a>                
                 </div><!-- bluebox_primary -->
             </section><!-- bluebox -->
-            <div id="whitebox_secondary">
-                <div id="whitebox_secondary_tabs">
-                    <div id="whitebox_secondary_tabs_mostviewed" class="whitebox_secondary_tab active">
-                        <div class="whitebox_secondary_tab_top"></div>
-                        <div class="whitebox_secondary_tab_body">Authors</div>
-                    </div>
-                </div><!-- #whitebox_secondary_tabs -->
-                <div id="whitebox_secondary_top"></div>
-                <div id="whitebox_secondary_body">
+            <section class="whitebox-secondary tab_container">
+                <div class="blue_tab tab tab108 rounded-corners">
+                    <h2>Authors</h2>
+                </div><!-- blue_tab -->
+                <div class="whitebox_secondary whitebox box rounded-corners">
                     <ul>
                         <!--li></li-->      
                         <li><a href="http://wewillraakyou.com/author/adriaan/">Adriaan Pelzer</a></li>      
@@ -366,9 +362,8 @@ Template Name: Blog Archive
                         <!--li></li-->      
                         <li><a href="http://wewillraakyou.com/author/wessel/">Wessel van Rensburg</a></li>      
                     </ul>
-                </div><!-- #whitebox_secondary_body -->
-                <div id="whitebox_secondary_bottom"></div>
-            </div><!-- #whitebox_secondary -->
+                </div><!-- whitebox_secondary -->
+            </section><!-- whitebox-secondary -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
