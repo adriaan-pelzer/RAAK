@@ -94,20 +94,17 @@ Template Name:Single Blog
                 </div><!-- bluebox_body -->
                 <div id="bluebox_bottom"></div>
             </section><!-- #bluebox -->
-            <div id="whitebox_secondary">
-                <div id="whitebox_secondary_tabs">
-                    <div id="whitebox_secondary_tabs_mostviewed" class="whitebox_secondary_tab active">
-                        <div class="whitebox_secondary_tab_top"></div>
-                        <div class="whitebox_secondary_tab_body"><a onclick="javascript: expand('mostviewed');">Most Viewed</a></div>
+            <section class="whitebox-secondary tab_container">
+                <div class="multiple_tabs">
+                    <div class="tab rounded-corners tab108">
+                        <h3><a onclick="javascript: expand('mostviewed');">Most Viewed</a></h3>
                     </div>
-                    <div id="whitebox_secondary_tabs_category" class="whitebox_secondary_tab">
-                        <div class="whitebox_secondary_tab_top"></div>
-                        <div class="whitebox_secondary_tab_body"><a onclick="javascript: expand('category');">Category</a></div>
+                    <div class="tab rounded-corners tab108 active">
+                        <h3><a onclick="javascript: expand('category');">Category</a></h3>
                     </div>
-                </div><!-- #whitebox_secondary_tabs -->
-                <div id="whitebox_secondary_top"></div>
-                <div id="whitebox_secondary_body">
-                    <div id="whitebox_secondary_mostviewed">
+                </div><!-- multiple_tabs -->
+                <div class="whitebox_secondary whitebox box rounded-corners">
+                    <div id="whitebox_secondary_mostviewed" style="display: none">
                         <ul>
                             <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
                             <li><a href="http://wewillraakyou.com/2011/06/google-plusone-button-howto/">How to add a Google +1 button to your website</a></li>
@@ -117,7 +114,7 @@ Template Name:Single Blog
                             <li><a href="http://wewillraakyou.com/2010/10/how-do-url-shorteners-work/">How do URL shorteners work?</a></li>
                         </ul>
                     </div><!-- #whitebox_secondary_mostviewed -->
-                    <div id="whitebox_secondary_category" style="display: none">
+                    <div id="whitebox_secondary_category">
                         <ul>
                             <li><a href="http://wewillraakyou.com/category/Inspiration/">Inspiration</a></li>
                             <li><a href="http://wewillraakyou.com/category/Must Read/">Must Read</a></li>
@@ -125,9 +122,8 @@ Template Name:Single Blog
                             <li><a href="http://wewillraakyou.com/category/Worth a look/">Worth a look</a></li>
                         </ul>
                     </div><!-- #whitebox_secondary_category -->
-                </div><!-- #whitebox_secondary_body -->
-                <div id="whitebox_secondary_bottom"></div>
-            </div><!-- #whitebox_secondary -->
+                </div><!-- whitebox_secondary -->
+            </section><!-- whitebox-secondary -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
