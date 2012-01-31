@@ -1404,6 +1404,13 @@ p.top_margin_22px {
     width: 147px;
     display: inline-block;
     text-align: center;
+    vertical-align: top;
+    line-height: 19px;
+    margin: 0 5px;
+}
+
+.bluebox_content_quarter img {
+    margin-bottom: 10px;
 }
 
 
