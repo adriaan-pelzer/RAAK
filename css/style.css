@@ -633,7 +633,7 @@ address a {
     margin-top: 17px;
 }
 
-.home .whitebox_primary_post .solid {
+.home .whitebox_primary_post .solid, .blog .whitebox_primary_post .solid {
 margin: 25px 0 9px;
 }
 
