@@ -282,13 +282,11 @@ Template Name: Blog Archive
                     </div><!-- .whitebox_primary_footer_right -->
                 </footer><!-- .whitebox_primary_footer -->
             </section><!-- whitebox_primary -->
-            <div id="bluebox">
-                <div id="bluebox_tab">
-                    <div id="bluebox_tab_top"></div>
-                    <div id="bluebox_tab_body">Tags</div>
-                </div><!-- #bluebox_tab -->
-                <div id="bluebox_top"></div>
-                <div id="bluebox_body">
+            <section class="tab_container bluebox-primary other_posts">
+                <div class="blue_tab tab tab108 rounded-corners">
+                    <h2>Tags</h2>
+                </div><!-- blue_tab -->
+                <div class="bluebox_primary bluebox box rounded-corners">
 <a href='http://wewillraakyou.com/tag/advertising/' class='tag-link-14' title='9 topics' style='font-size: 10.9902912621pt;'>advertising</a>
 <a href='http://wewillraakyou.com/tag/android/' class='tag-link-394' title='7 topics' style='font-size: 9.63106796117pt;'>android</a>
 <a href='http://wewillraakyou.com/tag/api/' class='tag-link-160' title='16 topics' style='font-size: 14.1165048544pt;'>api</a>
@@ -348,9 +346,9 @@ Template Name: Blog Archive
 <a href='http://wewillraakyou.com/tag/web/' class='tag-link-663' title='5 topics' style='font-size: 8pt;'>web</a>
 <a href='http://wewillraakyou.com/tag/web-development/' class='tag-link-143' title='8 topics' style='font-size: 10.3106796117pt;'>web development</a>
 <a href='http://wewillraakyou.com/tag/wordpress/' class='tag-link-315' title='10 topics' style='font-size: 11.5339805825pt;'>wordpress</a>
-<a href='http://wewillraakyou.com/tag/youtube/' class='tag-link-376' title='6 topics' style='font-size: 8.95145631068pt;'>youtube</a>                </div><!-- bluebox_body -->
-                <div id="bluebox_bottom"></div>
-            </div><!-- #bluebox -->
+<a href='http://wewillraakyou.com/tag/youtube/' class='tag-link-376' title='6 topics' style='font-size: 8.95145631068pt;'>youtube</a>                
+                </div><!-- bluebox_primary -->
+            </section><!-- bluebox -->
             <div id="whitebox_secondary">
                 <div id="whitebox_secondary_tabs">
                     <div id="whitebox_secondary_tabs_mostviewed" class="whitebox_secondary_tab active">
