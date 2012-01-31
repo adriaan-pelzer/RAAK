@@ -1422,8 +1422,14 @@ p.top_margin_22px {
 
 /************** BLOG ARCHIVE ***********/
 
-.blog-archive .whitebox_primary h3 a {
+.blog-archive .whitebox_primary h3 {
     font-size: 18px;
+    line-height: 19px;
+    margin: 0;
+    padding: 1px 0 4px;
+}
+
+.blog-archive .whitebox_primary h3 a {
     color: #00aeff;
 }
 
