@@ -1363,18 +1363,34 @@ p.top_margin_22px {
     text-decoration: underline;
 }
 
+
+.blog-single form p {
+    margin-bottom: 15px;
+}
+
 .blog-single form label {
     width: 100px;
     vertical-align: top;
+    margin-top: 8px;
 }
 
 .blog-single input[type="text"], .blog-single textarea {
-    width: 240px;
     margin-bottom: 10px;
+    color: #000000;
 }
 
 .blog-single input[type="text"] {
     height: 20px;
+    width: 240px;
+}
+
+label[for="comment"] {
+    width: 97px;
+}
+
+.blog-single textarea {
+    width: 238px;
+    margin-top:8px;
 }
 
 
