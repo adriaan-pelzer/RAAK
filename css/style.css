@@ -633,7 +633,7 @@ address a {
     margin-top: 17px;
 }
 
-.whitebox_primary_post .solid {
+.home .whitebox_primary_post .solid {
 margin: 25px 0 9px;
 }
 
@@ -1286,7 +1286,7 @@ p.top_margin_22px {
     float: right;
 }
 
-.blog-single .whitebox_primary, .blog .whitebox_primary {
+.blog-archive .whitebox_primary, .blog-single .whitebox_primary, .blog .whitebox_primary {
     margin-top: 20px;
 }
 
@@ -1422,8 +1422,9 @@ p.top_margin_22px {
 
 /************** BLOG ARCHIVE ***********/
 
-.blog-archive .whitebox_primary h3 {
+.blog-archive .whitebox_primary h3 a {
     font-size: 18px;
+    color: #00aeff;
 }
 
 /************** Sidebar ***************/
