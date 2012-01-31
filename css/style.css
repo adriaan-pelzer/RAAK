@@ -1408,11 +1408,17 @@ p.top_margin_22px {
     line-height: 19px;
     margin: 0 5px;
 }
+.related_posts_hr {
+    margin: 10px 5px 15px;
+}
 
 .bluebox_content_quarter img {
     margin-bottom: 10px;
 }
 
+.blog-single .bluebox_content_top {
+    margin-top: 5px;
+}
 
 /************** Sidebar ***************/
 
