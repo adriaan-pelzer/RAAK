@@ -55,7 +55,7 @@ Template Name: Blog
                     <hr class="solid" />
                 </div>
                 <footer class="whitebox_primary_footer box_nav small_arial_caps">
-                    <a class="whitebox_primary_footer_left"  href="http://wewillraakyou.com/blog-archive/">All blog posts</a>
+                    <a class="whitebox_primary_footer_left"  href="<?php echo get_page_link(5238); ?>">All blog posts</a>
                     <div class="whitebox_primary_footer_right">
                         <a onclick="javascript: previous();"><span class="arrow">&#9668;</span>Previous</a>
                         <span class="seperator">|</span>
