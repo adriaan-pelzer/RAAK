@@ -1394,6 +1394,13 @@ label[for="comment"] {
 }
 
 
+.blog-single form #submit {
+    width: 90px;
+    padding: 6px 0;
+    margin-left: 103px;
+}
+
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
