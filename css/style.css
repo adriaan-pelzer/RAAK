@@ -372,6 +372,10 @@ address a {
     color: #666666;
 }
 
+.required {
+    color: #c30c30;
+}
+
 
 /************** header ***************/
 
@@ -1359,9 +1363,20 @@ p.top_margin_22px {
     text-decoration: underline;
 }
 
-.required {
-    color: #c30c30;
+.blog-single form label {
+    width: 100px;
+    vertical-align: top;
 }
+
+.blog-single input[type="text"], .blog-single textarea {
+    width: 240px;
+    margin-bottom: 10px;
+}
+
+.blog-single input[type="text"] {
+    height: 20px;
+}
+
 
 /************** Sidebar ***************/
 
