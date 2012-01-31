@@ -670,12 +670,12 @@ margin: 25px 0 9px;
 }
 
 
-.other_posts li, .blog .whitebox_secondary li {
+.other_posts li, .blog-single .whitebox_secondary li, .blog-archive .whitebox_secondary li, .blog .whitebox_secondary li {
     padding-left:16px;
 }
 
 
-.other_posts_content_one li, .blog .whitebox_secondary li {
+.blog-single .whitebox_secondary li, .blog-archive .whitebox_secondary li, .other_posts_content_one li, .blog .whitebox_secondary li {
     background: url(../images/whitebox_secondary_body_content_one_list.png) no-repeat 0px 5px;
 }
 
