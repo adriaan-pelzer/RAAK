@@ -68,7 +68,7 @@ Template Name:Single Blog
                 <div class="blue_tab tab tab108 rounded-corners">
                     <h2>Related Posts</h2>
                 </div><!-- bluebox_tab -->
-                <div class="bluebox_content">
+                <div class="bluebox_content bluebox_primary bluebox box rounded-corners">
                     <div class="bluebox_content_top">
                         <div class="bluebox_content_top_left">
                             <div class="related_posts_image">
