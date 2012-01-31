@@ -1295,7 +1295,7 @@ p.top_margin_22px {
     font-size: 24px;
 }
 
-.blog-single .bluebox_primary, .blog .bluebox_primary {
+.blog-archive .bluebox_primary, .blog-single .bluebox_primary, .blog .bluebox_primary {
     margin-left: 0;
 }
 
@@ -1432,6 +1432,10 @@ p.top_margin_22px {
 
 .blog-archive .whitebox_primary h3 a {
     color: #00aeff;
+}
+
+.blog-archive .bluebox_primary a {
+    color: #666666;
 }
 
 /************** Sidebar ***************/
