@@ -1384,7 +1384,7 @@ p.top_margin_22px {
     width: 240px;
 }
 
-label[for="comment"] {
+.blog-single form label[for="comment"] {
     width: 97px;
 }
 
@@ -1397,7 +1397,7 @@ label[for="comment"] {
 .blog-single form #submit {
     width: 90px;
     padding: 6px 0;
-    margin-left: 103px;
+    margin-left: 100px;
 }
 
 
