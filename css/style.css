@@ -1432,11 +1432,11 @@ p.top_margin_22px {
     letter-spacing: 1px;
 }
 
-.blog-archive .whitebox_primary h3 a {
+.blog-tag .whitebox_primary h3 a, .blog-archive .whitebox_primary h3 a {
     color: #00aeff;
 }
 
-.blog-archive .bluebox_primary a {
+.blog-tag .bluebox_primary a, .blog-archive .bluebox_primary a {
     color: #484848;
 }
 
