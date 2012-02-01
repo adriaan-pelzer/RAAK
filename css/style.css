@@ -394,17 +394,10 @@ address a {
 
 
 #header a#title {
-    display: inline-block;
-    height: 39px;
+    display: block;
+    height: 42px;
+    width: 192px;
     margin-left; 47px;
-}
-
-
-#blog-title {
-    padding-left: 47px;
-    font-size: 0;
-    line-height: 0;
-    border-bottom: 2px solid #00aeef;
 }
 
 .logo_letter {
@@ -426,7 +419,7 @@ address a {
     float: left;
     border-top: 2px solid #00aeff;
     width: 284px;
-    padding: 11px 0 0 20px;
+    padding: 13px 0 0 20px;
 }
 
 #header nav {
