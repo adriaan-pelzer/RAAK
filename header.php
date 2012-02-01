@@ -188,7 +188,7 @@ _gaq.push(['_trackPageview']);
 <div id="wrapper" class="hfeed">
     <header id="header" class="rounded-corners din-schrift">
         <h1>RAAK</h1>
-        <a href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
+        <a id="title" href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
             <span id="logo_letter_r1" class="logo_letter">
                 <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/r.jpeg" />
             </span>
