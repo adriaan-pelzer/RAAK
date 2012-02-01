@@ -1,7 +1,7 @@
-            <section class="sidebar">
-        <div id="mailchimp">
-            <div id="mailchimp_top"></div>
-            <div id="mailchimp_body" class="rounded-corners box">
+        <div class="sidebar">
+            <aside id="mailchimp">
+                <div id="mailchimp_top"></div>
+                <div id="mailchimp_body" class="rounded-corners box">
 <!-- Begin MailChimp Signup Form -->
 <!--[if IE]>
             <style type="text/css" media="screen">
@@ -14,41 +14,40 @@
                 .mc-field-group {overflow:visible;}
             </style>
 <![endif]-->
-            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-            <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.validate.js"></script>
-            <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.form.js"></script>
-
-            <div id="mc_embed_signup" style="font-family: 'helvetica neue', helvetica, arial, sans-serif;">
-            <form action="http://wewillraakyou.us1.list-manage.com/subscribe/post?u=898b1ec2bd8b50ddb10f7dfd0&amp;id=1c536f46e3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="font: normal 100% 'helvetica neue';font-size: 12px;">
-                <fieldset style="-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;border: 0px solid #000000;padding-top: 1.5em;margin: .5em 0;background-color: #FFFFFF;color: #333333;text-align: left;">
-                <legend style="font-family: 'helvetica neue', helvetica, arial, sans-serif;color: #000000;background: #CCCCCC;padding: .5em 1em;border: 1px solid #000000;-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;font-size: 1.2em;text-align: center;">Sign up to our weekly newsletter</legend>
-                <div style="font-family: 'helvetica neue', helvetica, arial, sans-serif;color: #FF0087;background: #CCCCCC;padding: .5em 1em;border: 1px solid #000000;-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;font-size: 1.2em;text-align: center; overflow-x:auto;"><span style="color:#ffffff;">** <a href="http://wewillraakyou.com/blog/the-raakonteur/" style="color:#B9E5FB;text-decoration:none;">Read</a> what others have to say about The RAAKonteur</span></div>
-                <div class="mc-field-group" style="margin: 1.3em 5%;clear: both;overflow: hidden;">
-                    <label for="mce-EMAIL" style="display: block;margin: .3em 0;line-height: 1em;font-weight: bold;">Email Address <strong class="note-required">*</strong>
-                    </label>
-                    <input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="margin-right: 1.5em;padding: .2em .3em;width: 90%;float: left;z-index: 999;">
-                </div>
-                <div class="mc-field-group" style="margin: 1.3em 5%;clear: both;overflow: hidden;">
-                    <label for="mce-FNAME" style="display: block;margin: .3em 0;line-height: 1em;font-weight: bold;">First Name <strong class="note-required">*</strong>
-                    </label>
-                    <input type="text" value="" name="FNAME" class="required" id="mce-FNAME" style="margin-right: 1.5em;padding: .2em .3em;width: 90%;float: left;z-index: 999;">
-                </div>
-                <div class="mc-field-group" style="margin: 1.3em 5%;clear: both;overflow: hidden;">
-                    <label for="mce-LNAME" style="display: block;margin: .3em 0;line-height: 1em;font-weight: bold;">Last Name <strong class="note-required">*</strong>
-                    </label>
-                    <input type="text" value="" name="LNAME" class="required" id="mce-LNAME" style="margin-right: 1.5em;padding: .2em .3em;width: 90%;float: left;z-index: 999;">
-                </div>
-                <div id="mce-responses" style="float: left;top: -1.4em;padding: 0em .5em 0em .5em;overflow: hidden;width: 90%;margin: 0 5%;clear: both;">
-                    <div class="response" id="mce-error-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #FFEEEE;color: #FF0000;"></div>
-                    <div class="response" id="mce-success-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #;color: #529214;"></div>
-                </div>
-                <div id="mc-embedded-subscribe-container"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="clear: both;width: auto;display: block;margin: 1em 0 1em 5%;"></div>
-                <div class="indicate-required" style="text-align: right;font-style: italic;overflow: hidden;color: #333333;margin: 0 9% 0 0;">* denotes required field</div>
-                </fieldset>	
-                <a href="#" id="mc_embed_close" class="mc_embed_close" style="display: none;">Close</a>
-            </form>
-            </div>
-<script type="text/javascript">
+                    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+                    <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.validate.js"></script>
+                    <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.form.js"></script>
+                    <div id="mc_embed_signup" style="font-family: 'helvetica neue', helvetica, arial, sans-serif;">
+                        <form action="http://wewillraakyou.us1.list-manage.com/subscribe/post?u=898b1ec2bd8b50ddb10f7dfd0&amp;id=1c536f46e3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="font: normal 100% 'helvetica neue';font-size: 12px;">
+                            <fieldset style="-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;border: 0px solid #000000;padding-top: 1.5em;margin: .5em 0;background-color: #FFFFFF;color: #333333;text-align: left;">
+                                <legend style="font-family: 'helvetica neue', helvetica, arial, sans-serif;color: #000000;background: #CCCCCC;padding: .5em 1em;border: 1px solid #000000;-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;font-size: 1.2em;text-align: center;">Sign up to our weekly newsletter</legend>
+                                <div style="font-family: 'helvetica neue', helvetica, arial, sans-serif;color: #FF0087;background: #CCCCCC;padding: .5em 1em;border: 1px solid #000000;-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;font-size: 1.2em;text-align: center; overflow-x:auto;"><span style="color:#ffffff;">** <a href="http://wewillraakyou.com/blog/the-raakonteur/" style="color:#B9E5FB;text-decoration:none;">Read</a> what others have to say about The RAAKonteur</span></div>
+                                <div class="mc-field-group" style="margin: 1.3em 5%;clear: both;overflow: hidden;">
+                                    <label for="mce-EMAIL" style="display: block;margin: .3em 0;line-height: 1em;font-weight: bold;">Email Address <strong class="note-required">*</strong>
+                                    </label>
+                                    <input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="margin-right: 1.5em;padding: .2em .3em;width: 90%;float: left;z-index: 999;">
+                                </div>
+                                <div class="mc-field-group" style="margin: 1.3em 5%;clear: both;overflow: hidden;">
+                                    <label for="mce-FNAME" style="display: block;margin: .3em 0;line-height: 1em;font-weight: bold;">First Name <strong class="note-required">*</strong>
+                                    </label>
+                                    <input type="text" value="" name="FNAME" class="required" id="mce-FNAME" style="margin-right: 1.5em;padding: .2em .3em;width: 90%;float: left;z-index: 999;">
+                                </div>
+                                <div class="mc-field-group" style="margin: 1.3em 5%;clear: both;overflow: hidden;">
+                                    <label for="mce-LNAME" style="display: block;margin: .3em 0;line-height: 1em;font-weight: bold;">Last Name <strong class="note-required">*</strong>
+                                    </label>
+                                    <input type="text" value="" name="LNAME" class="required" id="mce-LNAME" style="margin-right: 1.5em;padding: .2em .3em;width: 90%;float: left;z-index: 999;">
+                                </div>
+                                <div id="mce-responses" style="float: left;top: -1.4em;padding: 0em .5em 0em .5em;overflow: hidden;width: 90%;margin: 0 5%;clear: both;">
+                                    <div class="response" id="mce-error-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #FFEEEE;color: #FF0000;"></div>
+                                    <div class="response" id="mce-success-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #;color: #529214;"></div>
+                                </div>
+                                <div id="mc-embedded-subscribe-container"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="clear: both;width: auto;display: block;margin: 1em 0 1em 5%;"></div>
+                                <div class="indicate-required" style="text-align: right;font-style: italic;overflow: hidden;color: #333333;margin: 0 9% 0 0;">* denotes required field</div>
+                            </fieldset>	
+                            <a href="#" id="mc_embed_close" class="mc_embed_close" style="display: none;">Close</a>
+                        </form>
+                    </div>
+                    <script type="text/javascript">
 var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';var err_style = '';
 try{
     err_style = mc_custom_error_style;
@@ -154,49 +153,48 @@ function mce_success_cb(resp){
         }
     }
 }
-</script>
-            <!--End mc_embed_signup-->
-            </div><!-- mailchimp_body -->
-        </div><!-- mailchimp -->
-        <div id="twitter">
-            <div id="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
-            <div id="twitter_body" class="rounded-corners">
-            <div id="twitter_follow"><a href="http://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a></div>
-            <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-    version: 2,
-        type: 'profile',
-        rpp: 4,
-        interval: 6000,
-        width: 200,
-        height: 300,
-        theme: {
-            shell: {
-                background: '#ffffff',
-                    color: '#000000'
+                    </script>
+                    <!--End mc_embed_signup-->
+                </div><!-- mailchimp_body -->
+            </aside><!-- mailchimp -->
+            <aside id="twitter">
+                <div id="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
+                <div id="twitter_body" class="rounded-corners">
+                    <div id="twitter_follow"><a href="http://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a></div>
+                    <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+                    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+                    <script>
+    new TWTR.Widget({
+        version: 2,
+            type: 'profile',
+            rpp: 4,
+            interval: 6000,
+            width: 200,
+            height: 300,
+            theme: {
+                shell: {
+                    background: '#ffffff',
+                        color: '#000000'
+                },
+                tweets: {
+                    background: '#ffffff',
+                        color: '#000000',
+                        links: '#555555'
+                }
             },
-            tweets: {
-                background: '#ffffff',
-                    color: '#000000',
-                    links: '#555555'
-            }
-        },
-            features: {
-                scrollbar: false,
-                    loop: false,
-                    live: false,
-                    hashtags: true,
-                    timestamp: true,
-                    avatars: false,
-                    behavior: 'all'
-            }
-}).render().setUser('RAAKonteurs').start();
-</script>
-            </div>
-            <div id="twitter_bottom"></div>
-        </div><!-- twitter -->
-    </section><!-- .sidebar -->
+                features: {
+                    scrollbar: false,
+                        loop: false,
+                        live: false,
+                        hashtags: true,
+                        timestamp: true,
+                        avatars: false,
+                        behavior: 'all'
+                }
+    }).render().setUser('RAAKonteurs').start();
+                    </script>
+                </div>
+            </aside><!-- twitter -->
+        </div><!-- .sidebar -->
     </div><!-- #container -->
 
