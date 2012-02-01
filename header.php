@@ -3,7 +3,7 @@
 <head>
     <title>RAAK | Digital &amp; Social Media Agency London - Putting you in touch with your crowds</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="google-site-verification" content="gopVig1vD9ASr_RMvJGPk5w2Rk9dQ16tJY4v7-5E5dc" />
+   <meta name="google-site-verification" content="59Ab_0-HL7eVdNQ4CqiLOeiQisQgb2Vwg8046N__ng0" />
     <!--link rel="stylesheet" type="text/css" href="http://wewillraakyou.com/wp-content/themes/RAAK/style.css?ver=1.0" / -->
     <link rel="stylesheet" type="text/css" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
     <!--dynamic-cached-content--><link rel="stylesheet" href="http://wewillraakyou.com/wp-content/themes/RAAK/style_ch10.css?ver=1.0" /><!-- Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2 --><!--/dynamic-cached-content-->
