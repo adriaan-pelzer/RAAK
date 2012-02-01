@@ -5,16 +5,13 @@ Template Name: Blog Tag
 ?>
 <?php get_header() ?>
 
-	<div id="container">
-        <div id="container_top"></div>
-		<div id="content">
-            <div id="whitebox_big">
-                <div id="whitebox_big_top"></div>
-                <div id="whitebox_big_body">
-                    <span id="whitebox_big_body_title"><h1>Blog Archive: advertising</h1></span>
-                </div><!-- #whitebox_big_body -->
-                <div id="whitebox_big_bottom"></div>
-            </div><!-- #whitebox_big -->
+    <div class="container rounded-corners blog-archive">
+        <div class="content">
+            <section class="whitebox_big whitebox box big_box rounded-corners">
+                <header>
+                    <h2 class="din-schrift blue_20">Blog Archive: advertising</h2>
+                </header>
+            </section><!-- whitebox_big -->
             <div id="whitebox_primary">
                 <div id="whitebox_primary_top">
                 </div><!-- #whitebox_primary_top -->
