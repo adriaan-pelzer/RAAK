@@ -12,138 +12,133 @@ Template Name: Blog Tag
                     <h2 class="din-schrift blue_20">Blog Archive: advertising</h2>
                 </header>
             </section><!-- whitebox_big -->
-            <div id="whitebox_primary">
-                <div id="whitebox_primary_top">
-                </div><!-- #whitebox_primary_top -->
-                <div id="whitebox_primary_body">
-                    <div id="whitebox_primary_body_post_0" class="whitebox_primary_body_post">
-                        <div id="whitebox_primary_body_content" class="archive_fix"><a href="http://wewillraakyou.com/2011/10/the-raakonteur-58-a-sad-day-for-tech-facebooks-ad-strategy-and-adobe-bursts-into-html5/">The RAAKonteur #58 - A Sad day for Tech, Facebook's ad strategy and Adobe bursts into HTML5</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">17 Oct 2011</span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">0 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <hr class="solid" />
-                    </div>
-                    <div id="whitebox_primary_body_post_1" class="whitebox_primary_body_post">
-                        <div id="whitebox_primary_body_content" class="archive_fix"><a href="http://wewillraakyou.com/2011/07/eu-cookie-law-hurts-user-numbers/">The measured impact of the EU cookie insanity</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/adriaan/">Adriaan Pelzer</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item"> 8 Jul 2011</span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">1 comment</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <hr class="solid" />
-                    </div>
-                    <div id="whitebox_primary_body_post_2" class="whitebox_primary_body_post">
-                        <div id="whitebox_primary_body_content" class="archive_fix"><a href="http://wewillraakyou.com/2010/10/raakonteur-13-the-new-facebook-groups-singing-tweets-and-app-building-for-dummies/">The RAAKonteur #13 – the new Facebook Groups, Singing Tweets and app building for dummies</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">18 Oct 2010</span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">0 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <hr class="solid" />
-                    </div>
-                    <div id="whitebox_primary_body_post_3" class="whitebox_primary_body_post">
-                        <div id="whitebox_primary_body_content" class="archive_fix"><a href="http://wewillraakyou.com/2010/10/mad-mixers-brands-ads-the-importance-of-mixing-paid-earned-media/">Mad Mixers: Brands ads & the importance of mixing paid & earned media</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item"> 7 Oct 2010</span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">3 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <hr class="solid" />
-                    </div>
-                    <div id="whitebox_primary_body_post_4" class="whitebox_primary_body_post">
-                        <div id="whitebox_primary_body_content" class="archive_fix"><a href="http://wewillraakyou.com/2010/09/social-media-is-cool-but-who-pays-for-it-brand-pr-digital/">Social media is cool, but who pays for it? Brand? PR? Digital?</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item"> 2 Sep 2010</span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">1 comment</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <hr class="solid" />
-                    </div>
-                    <div id="whitebox_primary_body_post_5" class="whitebox_primary_body_post">
-                        <div id="whitebox_primary_body_content" class="archive_fix"><a href="http://wewillraakyou.com/2009/10/dont-give-me-an-ad-give-me-something-fun/">Don't give me an ad, give me something fun or useful</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">15 Oct 2009</span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">1 comment</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <hr class="solid" />
-                    </div>
-                    <div id="whitebox_primary_body_post_6" class="whitebox_primary_body_post">
-                        <div id="whitebox_primary_body_content" class="archive_fix"><a href="http://wewillraakyou.com/2009/09/experiential-marketing-not-the-same-as-pr-stunts/">Experiential marketing not the same as PR stunts</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">24 Sep 2009</span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">8 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <hr class="solid" />
-                    </div>
-                    <div id="whitebox_primary_body_post_7" class="whitebox_primary_body_post">
-                        <div id="whitebox_primary_body_content" class="archive_fix"><a href="http://wewillraakyou.com/2009/09/the-wood-from-the-trees-on-pr-advertising-the-new-roles-in-communications/">The wood from the trees: on PR, advertising & the new roles in communications</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item">16 Sep 2009</span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">9 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <hr class="solid" />
-                    </div>
-                    <div id="whitebox_primary_body_post_8" class="whitebox_primary_body_post">
-                        <div id="whitebox_primary_body_content" class="archive_fix"><a href="http://wewillraakyou.com/2009/07/jeff-jarvis-on-advertising-and-prs-agencies-changing-role/">Jeff Jarvis on Advertising and PR agencies’ changing role</a></div>
-                        <hr />
-                        <div class="whitebox_primary_body_attr">
-                            <span id="whitebox_primary_body_attr_author" class="whitebox_primary_body_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_date" class="whitebox_primary_body_attr_item"> 7 Jul 2009</span>
-                            <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_attr_commenticon" class="whitebox_primary_body_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /></span>
-                            <span id="whitebox_primary_body_attr_comments" class="whitebox_primary_body_attr_item">0 comments</span>
-                        </div><!-- .whitebox_primary_body_attr -->
-                        <hr class="solid" />
-                    </div>
-                    <div class="whitebox_primary_body_footer">
-                        <span id="whitebox_primary_body_footer_archive" class="whitebox_primary_body_footer_item"><a href="http://wewillraakyou.com/blog-archive/">All blog posts</a></span>
-                            <span id="whitebox_primary_body_footer_prev_arrow" class="whitebox_primary_body_footer_item">&#9668;</span>
-                            <span id="whitebox_primary_body_footer_prev_text" class="whitebox_primary_body_footer_item">Previous</span>
+            <section class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
+                <div id="whitebox_primary_post_0" class="whitebox_primary_post">
+                    <div id="whitebox_primary_content" class="archive_fix"><a href="http://wewillraakyou.com/2011/10/the-raakonteur-58-a-sad-day-for-tech-facebooks-ad-strategy-and-adobe-bursts-into-html5/">The RAAKonteur #58 - A Sad day for Tech, Facebook's ad strategy and Adobe bursts into HTML5</a></div>
+                    <hr />
+                    <div class="whitebox_primary_attr">
+                        <span id="whitebox_primary_attr_author" class="whitebox_primary_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
                         <span class="seperator">|</span>
-                            <span id="whitebox_primary_body_footer_next_text" class="whitebox_primary_body_footer_item">Next</span>
-                            <span id="whitebox_primary_body_footer_next_arrow" class="whitebox_primary_body_footer_item">&#9658;</span>
-                    </div><!-- .whitebox_primary_body_footer -->
-                </div><!-- #whitebox_primary_body -->
-                <div id="whitebox_primary_bottom"></div>
-            </div><!-- #whitebox_primary -->
+                        <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item">17 Oct 2011</span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" /></span>
+                        <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">0 comments</span>
+                    </div><!-- .whitebox_primary_attr -->
+                    <hr class="solid" />
+                </div>
+                <div id="whitebox_primary_post_1" class="whitebox_primary_post">
+                    <div id="whitebox_primary_content" class="archive_fix"><a href="http://wewillraakyou.com/2011/07/eu-cookie-law-hurts-user-numbers/">The measured impact of the EU cookie insanity</a></div>
+                    <hr />
+                    <div class="whitebox_primary_attr">
+                        <span id="whitebox_primary_attr_author" class="whitebox_primary_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/adriaan/">Adriaan Pelzer</a></span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item"> 8 Jul 2011</span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" /></span>
+                        <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">1 comment</span>
+                    </div><!-- .whitebox_primary_attr -->
+                    <hr class="solid" />
+                </div>
+                <div id="whitebox_primary_post_2" class="whitebox_primary_post">
+                    <div id="whitebox_primary_content" class="archive_fix"><a href="http://wewillraakyou.com/2010/10/raakonteur-13-the-new-facebook-groups-singing-tweets-and-app-building-for-dummies/">The RAAKonteur #13 – the new Facebook Groups, Singing Tweets and app building for dummies</a></div>
+                    <hr />
+                    <div class="whitebox_primary_attr">
+                        <span id="whitebox_primary_attr_author" class="whitebox_primary_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item">18 Oct 2010</span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" /></span>
+                        <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">0 comments</span>
+                    </div><!-- .whitebox_primary_attr -->
+                    <hr class="solid" />
+                </div>
+                <div id="whitebox_primary_post_3" class="whitebox_primary_post">
+                    <div id="whitebox_primary_content" class="archive_fix"><a href="http://wewillraakyou.com/2010/10/mad-mixers-brands-ads-the-importance-of-mixing-paid-earned-media/">Mad Mixers: Brands ads & the importance of mixing paid & earned media</a></div>
+                    <hr />
+                    <div class="whitebox_primary_attr">
+                        <span id="whitebox_primary_attr_author" class="whitebox_primary_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item"> 7 Oct 2010</span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" /></span>
+                        <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">3 comments</span>
+                    </div><!-- .whitebox_primary_attr -->
+                    <hr class="solid" />
+                </div>
+                <div id="whitebox_primary_post_4" class="whitebox_primary_post">
+                    <div id="whitebox_primary_content" class="archive_fix"><a href="http://wewillraakyou.com/2010/09/social-media-is-cool-but-who-pays-for-it-brand-pr-digital/">Social media is cool, but who pays for it? Brand? PR? Digital?</a></div>
+                    <hr />
+                    <div class="whitebox_primary_attr">
+                        <span id="whitebox_primary_attr_author" class="whitebox_primary_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item"> 2 Sep 2010</span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" /></span>
+                        <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">1 comment</span>
+                    </div><!-- .whitebox_primary_attr -->
+                    <hr class="solid" />
+                </div>
+                <div id="whitebox_primary_post_5" class="whitebox_primary_post">
+                    <div id="whitebox_primary_content" class="archive_fix"><a href="http://wewillraakyou.com/2009/10/dont-give-me-an-ad-give-me-something-fun/">Don't give me an ad, give me something fun or useful</a></div>
+                    <hr />
+                    <div class="whitebox_primary_attr">
+                        <span id="whitebox_primary_attr_author" class="whitebox_primary_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item">15 Oct 2009</span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" /></span>
+                        <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">1 comment</span>
+                    </div><!-- .whitebox_primary_attr -->
+                    <hr class="solid" />
+                </div>
+                <div id="whitebox_primary_post_6" class="whitebox_primary_post">
+                    <div id="whitebox_primary_content" class="archive_fix"><a href="http://wewillraakyou.com/2009/09/experiential-marketing-not-the-same-as-pr-stunts/">Experiential marketing not the same as PR stunts</a></div>
+                    <hr />
+                    <div class="whitebox_primary_attr">
+                        <span id="whitebox_primary_attr_author" class="whitebox_primary_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item">24 Sep 2009</span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" /></span>
+                        <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">8 comments</span>
+                    </div><!-- .whitebox_primary_attr -->
+                    <hr class="solid" />
+                </div>
+                <div id="whitebox_primary_post_7" class="whitebox_primary_post">
+                    <div id="whitebox_primary_content" class="archive_fix"><a href="http://wewillraakyou.com/2009/09/the-wood-from-the-trees-on-pr-advertising-the-new-roles-in-communications/">The wood from the trees: on PR, advertising & the new roles in communications</a></div>
+                    <hr />
+                    <div class="whitebox_primary_attr">
+                        <span id="whitebox_primary_attr_author" class="whitebox_primary_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item">16 Sep 2009</span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" /></span>
+                        <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">9 comments</span>
+                    </div><!-- .whitebox_primary_attr -->
+                    <hr class="solid" />
+                </div>
+                <div id="whitebox_primary_post_8" class="whitebox_primary_post">
+                    <div id="whitebox_primary_content" class="archive_fix"><a href="http://wewillraakyou.com/2009/07/jeff-jarvis-on-advertising-and-prs-agencies-changing-role/">Jeff Jarvis on Advertising and PR agencies’ changing role</a></div>
+                    <hr />
+                    <div class="whitebox_primary_attr">
+                        <span id="whitebox_primary_attr_author" class="whitebox_primary_attr_item">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_date" class="whitebox_primary_attr_item"> 7 Jul 2009</span>
+                        <span class="seperator">|</span>
+                        <span id="whitebox_primary_attr_commenticon" class="whitebox_primary_attr_item"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_attr_comment_icon.png" /></span>
+                        <span id="whitebox_primary_attr_comments" class="whitebox_primary_attr_item">0 comments</span>
+                    </div><!-- .whitebox_primary_attr -->
+                    <hr class="solid" />
+                </div>
+                <div class="whitebox_primary_footer">
+                    <span id="whitebox_primary_footer_archive" class="whitebox_primary_footer_item"><a href="http://wewillraakyou.com/blog-archive/">All blog posts</a></span>
+                        <span id="whitebox_primary_footer_prev_arrow" class="whitebox_primary_footer_item">&#9668;</span>
+                        <span id="whitebox_primary_footer_prev_text" class="whitebox_primary_footer_item">Previous</span>
+                    <span class="seperator">|</span>
+                        <span id="whitebox_primary_footer_next_text" class="whitebox_primary_footer_item">Next</span>
+                        <span id="whitebox_primary_footer_next_arrow" class="whitebox_primary_footer_item">&#9658;</span>
+                </div><!-- .whitebox_primary_footer -->
+            </section><!-- whitebox_primary -->
             <div id="bluebox">
                 <div id="bluebox_tab">
                     <div id="bluebox_tab_top"></div>
