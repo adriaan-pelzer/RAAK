@@ -353,7 +353,7 @@ Template Name: Blog Archive
                 <div class="blue_tab tab tab108 rounded-corners">
                     <h2>Authors</h2>
                 </div><!-- blue_tab -->
-                <div class="whitebox_secondary whitebox box rounded-corners">
+                <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
                     <ul>
                         <!--li></li-->      
                         <li><a href="http://wewillraakyou.com/author/adriaan/">Adriaan Pelzer</a></li>      

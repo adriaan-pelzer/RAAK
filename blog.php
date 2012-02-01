@@ -114,7 +114,7 @@ Template Name: Blog
                         <h3><a onclick="javascript: expand('category');">Category</a></h3>
                     </div>
                 </div><!-- multiple_tabs -->
-                <div class="whitebox_secondary whitebox box rounded-corners">
+                <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
                     <div id="whitebox_secondary_mostviewed" style="display: none">
                         <ul>
                             <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
