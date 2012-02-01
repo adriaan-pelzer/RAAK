@@ -121,22 +121,20 @@ Template Name: Blog Tag
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
-                <div class="whitebox_primary_footer">
-                    <span id="whitebox_primary_footer_archive" class="whitebox_primary_footer_item"><a href="http://wewillraakyou.com/blog-archive/">All blog posts</a></span>
-                        <span id="whitebox_primary_footer_prev_arrow" class="whitebox_primary_footer_item">&#9668;</span>
-                        <span id="whitebox_primary_footer_prev_text" class="whitebox_primary_footer_item">Previous</span>
-                    <span class="seperator">|</span>
-                        <span id="whitebox_primary_footer_next_text" class="whitebox_primary_footer_item">Next</span>
-                        <span id="whitebox_primary_footer_next_arrow" class="whitebox_primary_footer_item">&#9658;</span>
-                </div><!-- .whitebox_primary_footer -->
+                <footer class="whitebox_primary_footer box_nav small_arial_caps">
+                    <a class="whitebox_primary_footer_left"  href="<?php echo get_page_link(5238); ?>">All blog posts</a>
+                    <div class="whitebox_primary_footer_right">
+                        <a onclick="javascript: previous();"><span class="arrow">&#9668;</span>Previous</a>
+                        <span class="seperator">|</span>
+                        <a class="active" onclick="javascript: next();">Next<span class="arrow">&#9658;</span></a>
+                    </div><!-- .whitebox_primary_footer_right -->
+                </footer><!-- .whitebox_primary_footer -->
             </section><!-- whitebox_primary -->
-            <div id="bluebox">
-                <div id="bluebox_tab">
-                    <div id="bluebox_tab_top"></div>
-                    <div id="bluebox_tab_body">Tags</div>
-                </div><!-- #bluebox_tab -->
-                <div id="bluebox_top"></div>
-                <div id="bluebox_body">
+            <section class="tab_container bluebox-primary other_posts">
+                <div class="blue_tab tab tab108 rounded-corners">
+                    <h2>Tags</h2>
+                </div><!-- blue_tab -->
+                <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <a href='http://wewillraakyou.com/tag/jan25/' class='tag-link-760' title='1 topic' style='font-size: 8pt;'>#jan25</a>
 <a href='http://wewillraakyou.com/tag/1/' class='tag-link-1018' title='1 topic' style='font-size: 8pt;'>+1</a>
 <a href='http://wewillraakyou.com/tag/3g/' class='tag-link-417' title='1 topic' style='font-size: 8pt;'>3g</a>
@@ -1036,26 +1034,24 @@ Template Name: Blog Tag
 <a href='http://wewillraakyou.com/tag/your-hero/' class='tag-link-146' title='1 topic' style='font-size: 8pt;'>your hero</a>
 <a href='http://wewillraakyou.com/tag/youtube/' class='tag-link-376' title='6 topics' style='font-size: 13.0993377483pt;'>youtube</a>
 <a href='http://wewillraakyou.com/tag/zenona/' class='tag-link-779' title='1 topic' style='font-size: 8pt;'>zenona</a>
-<a href='http://wewillraakyou.com/tag/zeynep-tufekci/' class='tag-link-1049' title='2 topics' style='font-size: 9.66887417219pt;'>zeynep tufekci</a>                </div><!-- bluebox_body -->
-                <div id="bluebox_bottom"></div>
-            </div><!-- #bluebox -->
-            <div id="whitebox_secondary">
-                <div id="whitebox_secondary_tabs">
-                    <div id="whitebox_secondary_tabs_mostviewed" class="whitebox_secondary_tab active">
-                        <div class="whitebox_secondary_tab_top"></div>
-                        <div class="whitebox_secondary_tab_body">Authors</div>
-                    </div>
-                </div><!-- #whitebox_secondary_tabs -->
-                <div id="whitebox_secondary_top"></div>
-                <div id="whitebox_secondary_body">
+<a href='http://wewillraakyou.com/tag/zeynep-tufekci/' class='tag-link-1049' title='2 topics' style='font-size: 9.66887417219pt;'>zeynep tufekci</a>             
+                </div><!-- bluebox_primary -->
+            </section><!-- bluebox -->
+            <section class="whitebox-secondary tab_container">
+                <div class="blue_tab tab tab108 rounded-corners">
+                    <h2>Authors</h2>
+                </div><!-- blue_tab -->
+                <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
                     <ul>
+                        <!--li></li-->      
                         <li><a href="http://wewillraakyou.com/author/adriaan/">Adriaan Pelzer</a></li>      
+                        <!--li></li-->      
                         <li><a href="http://wewillraakyou.com/author/gerrie/">Gerrie Smits</a></li>      
+                        <!--li></li-->      
                         <li><a href="http://wewillraakyou.com/author/wessel/">Wessel van Rensburg</a></li>      
                     </ul>
-                </div><!-- #whitebox_secondary_body -->
-                <div id="whitebox_secondary_bottom"></div>
-            </div><!-- #whitebox_secondary -->
+                </div><!-- whitebox_secondary -->
+            </section><!-- whitebox-secondary -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
