@@ -287,7 +287,7 @@ Template Name: Blog Archive
                     <h2>Tags</h2>
                 </div><!-- blue_tab -->
                 <div class="bluebox_primary bluebox box rounded-corners">
-<a href='http://wewillraakyou.com/tag/advertising/' class='tag-link-14' title='9 topics' style='font-size: 10.9902912621pt;'>advertising</a>
+<a href='<?php echo get_page_link(5243); ?>' class='tag-link-14' title='9 topics' style='font-size: 10.9902912621pt;'>advertising</a>
 <a href='http://wewillraakyou.com/tag/android/' class='tag-link-394' title='7 topics' style='font-size: 9.63106796117pt;'>android</a>
 <a href='http://wewillraakyou.com/tag/api/' class='tag-link-160' title='16 topics' style='font-size: 14.1165048544pt;'>api</a>
 <a href='http://wewillraakyou.com/tag/apple/' class='tag-link-347' title='7 topics' style='font-size: 9.63106796117pt;'>apple</a>
