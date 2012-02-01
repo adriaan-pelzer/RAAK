@@ -187,33 +187,24 @@ _gaq.push(['_trackPageview']);
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
 <div id="wrapper" class="hfeed">
     <header id="header" class="rounded-corners din-schrift">
-        <div id="blog-title">
-            <h1>RAAK</h1>
-            <div id="logo_letter_r1" class="logo_letter">
-                <a href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
-                    <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/4bd891a62ea023f66c37176c84d4a7fa.png&width=35&height=42" />
-                </a>
-            </div>
-            <div id="logo_letter_a2" class="logo_letter">
-                <a href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
-                    <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/eb9895b79c7e1cd240cb3960e16ad30b.jpg&width=35&height=42" />
-                </a>
-            </div>
-            <div id="logo_letter_a3" class="logo_letter">
-                <a href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
-                    <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/3fe9de8c3f0b3d7286c6f7c97afd46ba.jpg&width=35&height=42" />
-                </a>
-            </div>
-            <div id="logo_letter_k4" class="logo_letter">
-                <a href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
-                    <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/ba0c3f6be22d07916abf6ca1f7d37d8a.jpg&width=35&height=42" />
-                </a>
-            </div>
-        </div>
+        <h1>RAAK</h1>
+        <a href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
+            <span id="logo_letter_r1" class="logo_letter">
+                <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/r.jpg" />
+            </span>
+            <span id="logo_letter_a2" class="logo_letter">
+                <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/a1.jpg" />
+            </span>
+            <span id="logo_letter_a3" class="logo_letter">
+                <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/a2.jpg" />
+            </span>
+            <span id="logo_letter_k4" class="logo_letter">
+                <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/k.jpg" />
+            </span>
+            </a>
         <div id="blog-description">Putting you in touch with your crowds</div>
-        <div id="access">
             <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
-            <div id="menu">
+            <nav class="menu">
                 <ul>
                     <li class="first-page-item">
                         <div class="first_topmenu_top"></div>
@@ -248,8 +239,7 @@ _gaq.push(['_trackPageview']);
                         <div class="topmenu_body"><a href="<?php echo get_page_link(5229); ?>" title="Contact" rel="nofollow">Contact</a></div>
                     </li>
                 </ul>
-            </div>
-        </div><!-- #access -->
+            </nav>
     </header><!--  #header -->
 
 <script type="text/javascript">
