@@ -7,7 +7,7 @@ Template Name: About
 
 	<div class="container rounded-corners about">
 		<div class="content">
-            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners">
+            <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
                     <div class="whitebox_primary_nav smaller_arial_caps box_nav">
                         <a class="active" onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator seperator_smaller">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
@@ -56,7 +56,7 @@ But when you have the right foundation there are times you need to make a splash
                         <a id="whitebox_primary_content_nav_adriaan" class="whitebox_primary_content_nav_item" onclick="javascript: expand_person('adriaan');">Adriaan Pelzer</a>
                     </div><!-- whitebox_primary_content_nav -->
                     <hr class="solid" />
-                    <div id="whitebox_primary_content_adriaan" class="whitebox_primary_content_founder">
+                    <section id="whitebox_primary_content_adriaan" class="whitebox_primary_content_founder">
                         <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_content_founder_name">Adriaan Pelzer</div>
                             <div class="whitebox_primary_content_founder_social">
@@ -96,8 +96,8 @@ But when you have the right foundation there are times you need to make a splash
 
 <p>Add to that his talent for thinking creatively and you have, well, a Creative Technical Dude.</p>
                         </div><!-- .whitebox_primary_content_founder_text -->
-                    </div><!-- whitebox_primary_content_founder -->
-                    <div id="whitebox_primary_content_wessel" class="whitebox_primary_content_founder" style="display: none;">
+                    </section><!-- whitebox_primary_content_founder -->
+                    <section id="whitebox_primary_content_wessel" class="whitebox_primary_content_founder" style="display: none;">
                         <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_content_founder_name">Wessel van Rensburg</div>
                             <div class="whitebox_primary_content_founder_social">
@@ -140,8 +140,8 @@ That's until he and Gerrie founded RAAK.</p>
 <p>
 Wessel also makes documenatries in his spare time and keeps a popular blog on South African politics and culture.</p>
                         </div><!-- .whitebox_primary_content_founder_text -->
-                    </div><!-- whitebox_primary_content_founder -->
-                    <div id="whitebox_primary_content_gerrie" class="whitebox_primary_content_founder" style="display: none;">
+                    </section><!-- whitebox_primary_content_founder -->
+                    <section id="whitebox_primary_content_gerrie" class="whitebox_primary_content_founder" style="display: none;">
                         <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_content_founder_name">Gerrie Smits</div>
                             <hr />
@@ -179,10 +179,10 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
 
 <p>After many caffeine and pint fueled discussions over the course of a year it became obvious. He and <a title="Wessel van Rensburg" href="/about/the-founders/wessel-van-rensburg/">WVR</a> would put their combined media skills under one roof.</p>
                         </div><!-- .whitebox_primary_content_founder_text -->
-                    </div><!-- whitebox_primary_content_founder -->
+                    </section><!-- whitebox_primary_content_founder -->
                 </div><!-- whitebox_primary_content -->
-            </section><!-- #whitebox_primary -->
-            <section class="bluebox bluebox_primary box rounded-corners">
+            </div><!-- #whitebox_primary -->
+            <aside class="bluebox bluebox_primary box rounded-corners">
                 <header>
                     <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">What we do</h3>
                 </header>
@@ -199,7 +199,7 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
                 <div id="bluebox_content_gerrie" class="bluebox_content_item" style="display: none;">
                     I'm intrigued by innovation.<br />Not very interested in the status quo.<br />
                 </div><!-- bluebox_content_item -->
-            </section><!-- #bluebox -->
+            </aside><!-- #bluebox -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
