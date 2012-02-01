@@ -13,7 +13,7 @@ Template Name:Single Blog
                     <h2 class="din-schrift blue_20">Our Blog</h2>
                 </header>
             </section><!-- whitebox_big -->
-            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners">
+            <section class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
                 <div class="whitebox_primary_post">
                     <h3 id="whitebox_primary_title">No wonder the MPAA is freaking out: Youtube serves 4 billion movies per day</h3>
                     <hr />
@@ -68,7 +68,7 @@ Template Name:Single Blog
                 <div class="blue_tab tab tab108 rounded-corners">
                     <h2>Related Posts</h2>
                 </div><!-- bluebox_tab -->
-                <div class="bluebox_primary bluebox box rounded-corners">
+                <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
                     <div class="bluebox_content_top">
                         <div class="bluebox_content_quarter bluebox_content_top_left">
                             <a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/"><img title="ebooks" src="http://wewillraakyou.com/wp-content/uploads/2012/01/ebooks.jpeg" alt="ebooks"  width="120" height="85" /></a>

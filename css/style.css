@@ -1287,7 +1287,7 @@ p.top_margin_22px {
     float: right;
 }
 
-.blog_whitebox_secondary .whitebox_primary {
+.blog_whitebox_primary {
     margin-top: 20px;
 }
 
@@ -1296,7 +1296,7 @@ p.top_margin_22px {
     font-size: 24px;
 }
 
-.blog_whitebox_secondary .bluebox_primary {
+.blog_bluebox_primary {
     margin-left: 0;
 }
 

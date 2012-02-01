@@ -12,7 +12,7 @@ Template Name: Blog Archive
                     <h2 class="din-schrift blue_20">Blog Archive</h2>
                 </header>
             </section><!-- whitebox_big -->
-            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners">
+            <section class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
                 <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                     <h3><a href="http://wewillraakyou.com/2012/01/5332/"></a></h3>
                     <hr />
@@ -286,7 +286,7 @@ Template Name: Blog Archive
                 <div class="blue_tab tab tab108 rounded-corners">
                     <h2>Tags</h2>
                 </div><!-- blue_tab -->
-                <div class="bluebox_primary bluebox box rounded-corners">
+                <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <a href='<?php echo get_page_link(5243); ?>' class='tag-link-14' title='9 topics' style='font-size: 10.9902912621pt;'>advertising</a>
 <a href='http://wewillraakyou.com/tag/android/' class='tag-link-394' title='7 topics' style='font-size: 9.63106796117pt;'>android</a>
 <a href='http://wewillraakyou.com/tag/api/' class='tag-link-160' title='16 topics' style='font-size: 14.1165048544pt;'>api</a>

@@ -13,7 +13,7 @@ Template Name: Blog
                     <h2 class="din-schrift blue_20">Our Blog</h2>
                 </header>
             </section><!-- whitebox_big -->
-            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners">
+            <section class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
                 <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                     <h3><a href="<?php echo get_page_link(5236); ?>">With blocking functionality Twitter opens a Pandora's Box</a></h3>
                     <hr />
@@ -67,7 +67,7 @@ Template Name: Blog
                 <div class="blue_tab tab tab108 rounded-corners">
                     <h2>Other Posts</h2>
                 </div><!-- blue_tab -->
-                <div class="bluebox_primary bluebox box rounded-corners">
+                <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
                     <div class="other_posts_content_one">
                         <h3 class="small_arial_caps">Must Reads</h3>
                         <ul>
