@@ -276,6 +276,7 @@ strong {
 
 .whitebox-secondary {
     margin-left: 20px;
+    float: right;
 }
 
 
@@ -1438,6 +1439,45 @@ p.top_margin_22px {
 .blog-archive .bluebox_primary a {
     color: #484848;
 }
+
+/************** TAGS ******************/
+
+.blog_bluebox_primary a[title="1 topic"] {
+    color: #989898;
+}
+
+.blog_bluebox_primary a[title="2 topics"] {
+    color: #888888;
+}
+
+.blog_bluebox_primary a[title="3 topics"] {
+    color: #787878;
+}
+
+.blog_bluebox_primary a[title="4 topics"] {
+    color: #787878;
+}
+
+.blog_bluebox_primary a[title="5 topics"] {
+    color: #686868;
+}
+
+.blog_bluebox_primary a[title="6 topics"] {
+    color: #686868;
+}
+
+.blog_bluebox_primary a[title="7 topics"] {
+    color: #585858;
+}
+
+.blog_bluebox_primary a[title="8 topics"] {
+    color: #585858;
+}
+
+.blog_bluebox_primary a {
+    color: #484848;
+}
+
 
 /************** Sidebar ***************/
 
