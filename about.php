@@ -20,13 +20,17 @@ Template Name: About
 
 <p>Social media can be used to build <em>brand awareness</em>, <em><a title="Dominos success with social media" href="2010/09/dominos-the-raak-social-media-overview/">to shift products</a></em> and for <em>direct response</em>. But also for former <em>PR functions</em>, and even <em>product development</em> &amp; <em>customer service purposes</em>.</p>
 
-<p>Which department will pay for that? We have <a title="Brand, PR, Direct response - who does social?" href="2010/09/social-media-is-cool-but-who-pays-for-it-brand-pr-digital/">an answer for that</a>!</p>
+<p>
+Which department will pay for that? We have <a title="Brand, PR, Direct response - who does social?" href="2010/09/social-media-is-cool-but-who-pays-for-it-brand-pr-digital/">an answer for that</a>!
+</p>
 
-<p>There is another way to look at social media and how it can work for you. We broadly define what we do in two ways.
-<ol>
-<li>Social Media Ready</li>
-<li>Impact Projects</li>
-</ol></p>
+<p>
+There is another way to look at social media and how it can work for you. We broadly define what we do in two ways.
+    <ol>
+        <li>Social Media Ready</li>
+        <li>Impact Projects</li>
+    </ol>
+</p>
 
 <a href="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Picture-5.png"><img src="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Picture-5.png" alt="Social media ready &amp; Impact projects" title="Social media ready &amp; Impact projects" width="360" height="206" class="size-full wp-image-2527" /></a>
 
