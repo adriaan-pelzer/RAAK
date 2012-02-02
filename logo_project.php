@@ -84,7 +84,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                 <hr/>
                 <h3 class="din-schrift blue_20">For inspiration <img src='http://wewillraakyou.com/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' />  </h3>
                 <p>
-                    <object width="360" height="227"><param name="movie" value="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="360" height="227"></embed></object>
+                    <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/logo_gap_film.jpg" />
                 </p>
             </div><!-- #whitebox_primary -->
             <div class="bluebox bluebox_primary box rounded-corners">
