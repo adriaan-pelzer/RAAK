@@ -7,7 +7,7 @@ Template Name: Our Products
 
 	<div class="container rounded-corners our-products">
 		<div class="content">
-            <section class="whitebox_big whitebox box big_box rounded-corners">
+            <div class="whitebox_big whitebox box big_box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Our Products</h2>
                     <nav class="box_nav smaller_arial_caps">
@@ -24,10 +24,12 @@ Template Name: Our Products
                     <div id="whitebox_big_all-products_1" class="whitebox_big_category smaller_arial_caps">
                         <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label">Product:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Rewinder</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                        <span class="whitebox_big_category_entry_title_label">Product:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Rewinder</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />
                                 <a class="whitebox_big_category_entry_content" href="<?php echo get_page_link(5221); ?>" onmouseover="javascript: mouse_action ('all-products', 0, 'over');" onmouseout="javascript: mouse_action ('all-products', 0, 'out');">
                                     <div id="post_all-products_0_picture" class="whitebox_big_category_entry_content_picture">
@@ -38,10 +40,12 @@ Template Name: Our Products
                                 </a>
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label">Product:</span>
-                                    <span class="whitebox_big_category_entry_title_name">WOOS.at</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                        <span class="whitebox_big_category_entry_title_label">Product:</span>
+                                        <span class="whitebox_big_category_entry_title_name">WOOS.at</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />
                                 <a class="whitebox_big_category_entry_content" href="http://wewillraakyou.com/2011/11/woos-at-our-app-for-social-serendipity/" onmouseover="javascript: mouse_action ('all-products', 1, 'over');" onmouseout="javascript: mouse_action ('all-products', 1, 'out');">
                                     <div id="post_all-products_1_picture" class="whitebox_big_category_entry_content_picture">
@@ -53,10 +57,12 @@ Template Name: Our Products
                                 </a>
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                        <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <!--div id="post_2_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
@@ -64,28 +70,34 @@ Template Name: Our Products
                         </div><!-- #whitebox_big_category_row1 -->
                         <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                        <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <!--div id="post_3_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                        <h3 class="whitebox_big_category_entry_title">
+                                            <span class="whitebox_big_category_entry_title_label"></span>
+                                            <span class="whitebox_big_category_entry_title_name"></span>
+                                        </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <!--div id="post_4_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                        <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <!--div id="post_5_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
@@ -93,28 +105,34 @@ Template Name: Our Products
                         </div><!-- #whitebox_big_category_row2 -->
                         <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                        <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <!--div id="post_6_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                        <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <!--div id="post_7_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                        <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <!--div id="post_8_picture" class="whitebox_big_category_entry_content_picture">
                                     <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
                                 </div-->
@@ -122,7 +140,7 @@ Template Name: Our Products
                         </div><!-- #whitebox_big_category_row3 -->
                     </div><!-- #whitebox_big_all-products_1 -->
                 </div><!-- #whitebox_big_all-products -->
-            </section><!-- whitebox_big -->
+            </div><!-- whitebox_big -->
 		</div><!-- content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
