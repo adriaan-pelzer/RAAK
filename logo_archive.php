@@ -7,7 +7,7 @@ Template Name:Logo Archive
 
 	<div class="container rounded-corners logo-archive">
 		<div class="content">
-            <section class="bluebox_big bluebox box big_box rounded-corners">
+            <div class="bluebox_big bluebox box big_box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Logo Project</h2>
                     <nav id="bluebox_big_nav" class="smaller_arial_caps box_nav">
@@ -23,7 +23,7 @@ Template Name:Logo Archive
                 <hr />
                 <h3  id="expanded_letter_r" class="expanded_letter smaller_arial_caps">Letter R</h3>
                 <hr class="solid blue_hr" />
-                <div id="bluebox_big_content_R" class="bluebox_big_content smaller_arial_caps">
+                <section id="bluebox_big_content_R" class="bluebox_big_content smaller_arial_caps">
                     <div class="bluebox_big_content_row">
                         <div class="bluebox_big_content_row_item logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
@@ -109,8 +109,8 @@ Template Name:Logo Archive
                                 <a href="http://mhambi.com">Kameraad Mhambi</a>                                </div>
                         </div>
                     </div><!-- .bluebox_big_content_row -->
-                </div><!-- bluebox_big_content -->
-                <div id="bluebox_big_content_A" class="bluebox_big_content smaller_arial_caps" style="display: none;">
+                </section><!-- bluebox_big_content -->
+                <section id="bluebox_big_content_A" class="bluebox_big_content smaller_arial_caps" style="display: none;">
                     <div class="bluebox_big_content_row">
                         <div class="bluebox_big_content_row_item logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
@@ -225,8 +225,8 @@ Template Name:Logo Archive
                                 <a href="http://nul.co.za">NuL</a>                                </div>
                         </div>
                     </div><!-- .bluebox_big_content_row -->
-                </div><!-- bluebox_big_content -->
-                <div id="bluebox_big_content_K" class="bluebox_big_content smaller_arial_caps" style="display: none;">
+                </section><!-- bluebox_big_content -->
+                <section id="bluebox_big_content_K" class="bluebox_big_content smaller_arial_caps" style="display: none;">
                     <div class="bluebox_big_content_row">
                         <div class="bluebox_big_content_row_item logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
@@ -311,8 +311,8 @@ Template Name:Logo Archive
                                 nimosza                                </div>
                         </div>
                     </div><!-- .bluebox_big_content_row -->
-                </div><!-- bluebox_big_content -->
-            </section><!-- bluebox_big -->
+                </section><!-- bluebox_big_content -->
+            </div><!-- bluebox_big -->
 		</div><!-- content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
