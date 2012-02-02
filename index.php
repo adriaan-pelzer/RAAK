@@ -21,7 +21,9 @@ Template Name:Home
                 <a id="upload_a_letter" href="http://wewillraakyou.com/wp-content/themes/RAAK/logo-project/">Upload a letter</a>
             </aside><!-- logox_counter -->
             <div id="bluebox_home_left" class="bluebox box rounded-corners">
-                <h2 class="din-schrift"><a href="http://wewillraakyou.com/our-work/">Our Work</a></h2>
+                <header>
+                    <h2 class="din-schrift"><a href="http://wewillraakyou.com/our-work/">Our Work</a></h2>
+                </header>
                 <hr />    
                 <p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
             </div><!-- #bluebox_home_left -->
@@ -96,12 +98,16 @@ Template Name:Home
             </div><!-- #bluebox_home_right -->
             <div class="tab_container whitebox-primary">
                 <div class="grey_tab tab tab104 rounded-corners">
+                    <header>
                         <h2>Latest Posts</h2>
+                    </header>
                 </div><!-- .grey_tab -->
                 <div class="whitebox whitebox_primary box rounded-corners">
                     <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                         <article>
-                            <h3><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></h3>
+                            <header>
+                                <h3><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></h3>
+                            </header>
                             <hr />
                             <div class="whitebox_primary_post_attr">
                                 <span class="whitebox_primary_post_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
@@ -124,7 +130,9 @@ Template Name:Home
                             <hr class="solid" />
                         </article>
                         <article>
-                            <h3><a href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/">The RAAKonteur #65 - Kevin Rose's new project, The Facebook Freakyline and more</a></h3>
+                            <header>
+                                <h3><a href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/">The RAAKonteur #65 - Kevin Rose's new project, The Facebook Freakyline and more</a></h3>
+                            </header>
                             <hr />
                             <div class="whitebox_primary_post_attr">
                                 <span class="whitebox_primary_post_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
@@ -159,11 +167,15 @@ Template Name:Home
             </div><!-- tab_container -->
             <div class="tab_container whitebox-secondary other_posts">
                 <div class="grey_tab tab tab104 rounded-corners">
+                    <header>
                         <h2>Other Posts</h2>
+                    </header>
                 </div><!-- .grey_tab -->
                 <div class="whitebox_secondary whitebox box rounded-corners">
                     <section class="other_posts_content_one">
-                        <h3 class="small_arial_caps">Must Reads</h3>
+                        <header>
+                            <h3 class="small_arial_caps">Must Reads</h3>
+                        </header>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
                             <li><a href="http://wewillraakyou.com/2010/11/the-perpetually-changing-crowdsourced-raak-logo/">The perpetually changing crowdsourced RAAK logo</a></li>
@@ -176,7 +188,9 @@ Template Name:Home
                         </footer>
                     </section><!-- _content_one -->
                     <section class="other_posts_content_two">
-                        <h3 class="small_arial_caps">Worth a Look</h3>
+                        <header>
+                            <h3 class="small_arial_caps">Worth a Look</h3>
+                        </header>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2011/09/identity-and-location-and-sex-welcome-to-people-discovery/">Identity and location (and sex) - welcome to people discovery </a></li>
                             <li><a href="http://wewillraakyou.com/2011/08/measure-fake-follower-twitter/">Is Newt Gingrich a cheat?</a></li>
@@ -187,7 +201,9 @@ Template Name:Home
                         </footer>
                     </section><!-- content_two -->
                     <section class="other_posts_content_three">
-                        <h3 class="small_arial_caps">The RAAKonteur</h3>
+                        <header>
+                            <h3 class="small_arial_caps">The RAAKonteur</h3>
+                        </header>
                         <ul>
                             <li><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></li>
                             <li><a href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/">The RAAKonteur #65 - Kevin Rose's new project, The Facebook Freakyline and more</a></li>

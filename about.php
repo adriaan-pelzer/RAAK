@@ -9,9 +9,9 @@ Template Name: About
 		<div class="content">
             <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
-                    <div class="whitebox_primary_nav smaller_arial_caps box_nav">
+                    <nav class="whitebox_primary_nav smaller_arial_caps box_nav">
                         <a class="active" onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator seperator_smaller">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
-                    </div><!-- whitebox_primary_nav -->
+                    </nav><!-- whitebox_primary_nav -->
                     <h2 class="din-schrift blue_20">About</h2>
                 </header>
                 <hr />

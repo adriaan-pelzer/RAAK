@@ -7,7 +7,7 @@ Template Name:Logo Project
 
 	<div class="container rounded-corners logo-project">
 		<div class="content">
-            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners">
+            <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Logo Project</h2>
                 </header>
@@ -86,10 +86,10 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                 <p>
                     <object width="360" height="227"><param name="movie" value="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/jEojV_gq9fQ?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="360" height="227"></embed></object>
                 </p>
-            </section><!-- #whitebox_primary -->
-            <section class="bluebox bluebox_primary box rounded-corners">
+            </div><!-- #whitebox_primary -->
+            <div class="bluebox bluebox_primary box rounded-corners">
                 <header>
-                    <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">Latest Uploads</h3>
+                    <h2 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">Latest Uploads</h2>
                 </header>
                 <hr />
                 <div class="smaller_arial_caps logo_project_bluebox_nav">
@@ -308,10 +308,12 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div>
                     </div>
                 </div><!-- bluebox_content -->
-            </section><!-- .bluebox_primary -->
-            <section class="whitebox-secondary tab_container">
+            </div><!-- .bluebox_primary -->
+            <aside class="whitebox-secondary tab_container">
                 <div class="tab blue_tab tab112 rounded-corners">
+                    <header>
                         <h2>Downloads</h2>
+                    </header>
                 </div>
                 <div class="whitebox_secondary whitebox box rounded-corners">
                     <ul>
@@ -319,25 +321,27 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         <li><a href="http://wewillraakyou.com/raak-letter-PS-template.zip">Photoshop Template</a></li>
                     </ul>
                 </div>
-            </section><!-- whitebox-secondary -->
-            <section class="whitebox-secondary tab_container">
+            </aside><!-- whitebox-secondary -->
+            <div class="whitebox-secondary tab_container">
                 <div class="multiple_tabs">
-                    <div id="letter_upload" class="tab rounded-corners tab112">
-                        <h2>Upload a letter</h2>
-                    </div>
-                    <div id="letter_submit" class="tab rounded-corners tab75">
-                        <h2>Submit</h2>
-                    </div>
-                    <div id="letter_preview" class="tab rounded-corners tab75">
-                        <h2>Preview</h2>
-                    </div>
-                    <div id="letter_finsh" class="tab rounded-corners tab74 active">
-                        <h2>Finish</h2>
-                    </div>
+                    <header>
+                        <div id="letter_upload" class="tab rounded-corners tab112">
+                            <h2>Upload a letter</h2>
+                        </div>
+                        <div id="letter_submit" class="tab rounded-corners tab75">
+                            <h2>Submit</h2>
+                        </div>
+                        <div id="letter_preview" class="tab rounded-corners tab75">
+                            <h2>Preview</h2>
+                        </div>
+                        <div id="letter_finsh" class="tab rounded-corners tab74 active">
+                            <h2>Finish</h2>
+                        </div>
+                    </header>
                 </div><!-- multiple_tabs -->
                 <div class="whitebox_secondary whitebox box rounded-corners">
                     <form method="post" enctype="multipart/form-data" action="">
-                        <div id="whitebox_secondary_upload" style="display: none;">
+                        <section id="whitebox_secondary_upload" style="display: none;">
                             <p>Choose the letter you've designed</p>
                             <div id="whitebox_secondary_upload_letters">
                                 <input id="upload_letter" type="hidden" name="upload_letter" value="R" />
@@ -348,35 +352,37 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                             <div id="whitebox_secondary_upload_next">
                                 <a class="smaller_arial_caps" >Next &#9658;</a>
                             </div>
-                        </div><!-- whitebox_secondary_upload -->
-                        <ul id="whitebox_secondary_submit" class="smaller_arial_caps" style="display: none;">
-                            <li id="whitebox_secondary_submit_name">
-                                <label for="upload_name">Your Name</label>
-                                <input id="upload_name" name="upload_name" type="text" maxlength="40" />
-                            </li>
-                            <li id="whitebox_secondary_submit_email">
-                                <label for="upload_email">Email</label>
-                                <input id="upload_email" name="upload_email" type="text" maxlength="255" />
-                            </li>
-                            <li id="whitebox_secondary_submit_url">
-                                <label for="upload_url">URL</label>
-                                <input id="upload_url" name="upload_url" type="text" maxlength="255" />
-                            </li>
-                            <li id="whitebox_secondary_submit_file">
-                                <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
-                                <label for="upload_file">Browse for file</label>
-                                <span id="file_replace"><input id="upload_file" name="upload_file" type="file" /><p id="dummy_file_text"></p></span>
-                            </li>
-                            <li id="whitebox_secondary_submit_agree">
-                            <label for="upload_agree">I agree to the <a href="http://wewillraakyou.com/logo-project/terms-and-conditions/">terms & conditions</a></label>
-                                <input id="upload_agree" name="upload_agree" type="checkbox" />
-                                <input name="upload_submit" type="submit" value="Submit &#9658;" />
-                            </li>
-                            <li class="whitebox_secondary_back" id="whitebox_secondary_submit_back">
-                                <a>&#9668; Go back</a>
-                            </li>
-                        </ul><!-- #whitebox_secondary_submit -->
-                        <div id="whitebox_secondary_preview" class="smaller_arial_caps" style="display: none;">
+                        </section><!-- whitebox_secondary_upload -->
+                        <section id="whitebox_secondary_submit"> 
+                            <ul class="smaller_arial_caps" style="display: none;">
+                                <li id="whitebox_secondary_submit_name">
+                                    <label for="upload_name">Your Name</label>
+                                    <input id="upload_name" name="upload_name" type="text" maxlength="40" />
+                                </li>
+                                <li id="whitebox_secondary_submit_email">
+                                    <label for="upload_email">Email</label>
+                                    <input id="upload_email" name="upload_email" type="text" maxlength="255" />
+                                </li>
+                                <li id="whitebox_secondary_submit_url">
+                                    <label for="upload_url">URL</label>
+                                    <input id="upload_url" name="upload_url" type="text" maxlength="255" />
+                                </li>
+                                <li id="whitebox_secondary_submit_file">
+                                    <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
+                                    <label for="upload_file">Browse for file</label>
+                                    <span id="file_replace"><input id="upload_file" name="upload_file" type="file" /><p id="dummy_file_text"></p></span>
+                                </li>
+                                <li id="whitebox_secondary_submit_agree">
+                                <label for="upload_agree">I agree to the <a href="http://wewillraakyou.com/logo-project/terms-and-conditions/">terms & conditions</a></label>
+                                    <input id="upload_agree" name="upload_agree" type="checkbox" />
+                                    <input name="upload_submit" type="submit" value="Submit &#9658;" />
+                                </li>
+                                <li class="whitebox_secondary_back" id="whitebox_secondary_submit_back">
+                                    <a>&#9668; Go back</a>
+                                </li>
+                            </ul>
+                        </section><!-- #whitebox_secondary_submit -->
+                        <section id="whitebox_secondary_preview" class="smaller_arial_caps" style="display: none;">
                             <div id="whitebox_secondary_preview_letters">
                                 <span id="preview_letter_R"><img alt="R" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&width=70&height=82" /></span>
                                 <span id="preview_letter_A1"><img alt="A" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/45d36d1d36846e6a7210254b7c10b1e0.png&width=70&height=82" /></span>
@@ -389,15 +395,15 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                             <div class="whitebox_secondary_back" id="whitebox_secondary_preview_back">
                                 <a>&#9668; Go back</a>
                             </div>
-                        </div><!-- #whitebox_secondary_preview -->
-                        <div id="whitebox_secondary_finish">
-                            <h3>THANKS for taking part!</h3>
+                        </section><!-- #whitebox_secondary_preview -->
+                        <section id="whitebox_secondary_finish">
+                            <h4>THANKS for taking part!</h4>
                             <p>Your letter is now part of the loop.</p>
                             <button id="again">Upload another letter</button>
-                        </div><!-- #whitebox_secondary_finish -->
+                        </section><!-- #whitebox_secondary_finish -->
                     </form>
                 </div><!-- whitebox_secondary -->
-            </section><!-- whitebox_secondary -->
+            </div><!-- whitebox_secondary -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
