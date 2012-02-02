@@ -47,7 +47,7 @@ Building a social media presence takes time. It's not a quick fix. You need to b
 But when you have the right foundation there are times you need to make a splash and take a step up. This could be a creative iPhone application that integrates social and location functionality, a viral Twitter app or it could entail reaching out to the world's biggest bloggers.</p>
 
                 </div><!-- whitebox_primary_content -->
-                <div id="who-we-are" class="whitebox_primary_content">
+                <div id="who-we-are" class="whitebox_primary_content" style="display: none;">
                     <div class="whitebox_primary_content_nav smaller_arial_caps box_nav">
                         <a id="whitebox_primary_content_nav_gerrie" class="whitebox_primary_content_nav_item active" onclick="javascript: expand_person('gerrie');">Gerrie Smits</a>
                         <span class="seperator seperator_smaller">|</span>
@@ -56,7 +56,7 @@ But when you have the right foundation there are times you need to make a splash
                         <a id="whitebox_primary_content_nav_adriaan" class="whitebox_primary_content_nav_item" onclick="javascript: expand_person('adriaan');">Adriaan Pelzer</a>
                     </div><!-- whitebox_primary_content_nav -->
                     <hr class="solid" />
-                    <section id="whitebox_primary_content_adriaan" class="whitebox_primary_content_founder" style="display: none;">
+                    <section id="whitebox_primary_content_adriaan" class="whitebox_primary_content_founder">
                         <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_content_founder_name">Adriaan Pelzer</div>
                             <div class="whitebox_primary_content_founder_social">
