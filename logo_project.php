@@ -19,7 +19,7 @@ Calling all designers, typographers and brand builders. We need your creative he
                 <hr />
                 <p>
                     <div id="__ss_5502775" style="width: 360px;">
-                        <object id="__sse5502775" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="360" height="300" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=raak-logo-project-101020070312-phpapp01&amp;stripped_title=raak-logoproject&amp;userName=raak" /><param name="name" value="__sse5502775" /><param name="allowfullscreen" value="true" /><embed id="__sse5502775" type="application/x-shockwave-flash" width="360" height="300" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=raak-logo-project-101020070312-phpapp01&amp;stripped_title=raak-logoproject&amp;userName=raak" name="__sse5502775" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+                        <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/logo_slideshow.jpg" />
                     </div>
                 </p>
                 <p>&nbsp;</p>
@@ -51,18 +51,18 @@ Each uploaded letter (considering it ticks the technical boxes mentioned below) 
                 <a class="more_link" href="http://www.wewillraakyou.com/2009/07/the-story-behind-our-crowd-sourced-raak-logo/">Read about our previous logo experiment ►</a>
                 <hr />
                 <h3 class="din-schrift blue_20">Technical notes:</h3>
-                <ul>
-                    <blockquote>
-                    <li>Your file needs to be 700 px wide x 840 px high, 72dpi. The version that will appear in the logo is only 35&#215;42 px, but this way we can use it for print, projections,&#8230;</li>
-                    <li>You can download an<strong> Illustrator template</strong> <a href="http://wewillraakyou.com/RAAK-letter-Illustrator-template.zip">here</a>. And a <strong>Photoshop template</strong> <a href="http://wewillraakyou.com/raak-letter-PS-template.zip">here</a>.</li>
-                    <li>Your final file format needs to be JPG or PNG.</li>
-                    <li>Your letter needs to fully cover the 40&#215;40 pixel squares in the bottom corners of the template. That way it will link to the other letters.</li>
-                    <li>And it needs to touch the top line of the canvas/artboard.</li>
-                    <li>Only use the colour blue as in the template (RGB value is R0 G174 B239), except for any automatic anti-aliasing. And avoid tints please. Any shading should be made up of a dot pattern or hatching with stroked lines.</li>
-                    <li>Suggested minimum line width is 20 pixels &#8211; remember, the version on the homepage logo will be 20 times smaller.</li>
-                    <li>If you have any questions, email us at <a href="mailto: anRanAoraK@wewillraakyou.com">anRanAoraK@wewillraakyou.com</a>.</li>
-                    </blockquote>
-                </ul>
+                <blockquote>
+                    <ul>
+                        <li>Your file needs to be 700 px wide x 840 px high, 72dpi. The version that will appear in the logo is only 35&#215;42 px, but this way we can use it for print, projections,&#8230;</li>
+                        <li>You can download an<strong> Illustrator template</strong> <a href="http://wewillraakyou.com/RAAK-letter-Illustrator-template.zip">here</a>. And a <strong>Photoshop template</strong> <a href="http://wewillraakyou.com/raak-letter-PS-template.zip">here</a>.</li>
+                        <li>Your final file format needs to be JPG or PNG.</li>
+                        <li>Your letter needs to fully cover the 40&#215;40 pixel squares in the bottom corners of the template. That way it will link to the other letters.</li>
+                        <li>And it needs to touch the top line of the canvas/artboard.</li>
+                        <li>Only use the colour blue as in the template (RGB value is R0 G174 B239), except for any automatic anti-aliasing. And avoid tints please. Any shading should be made up of a dot pattern or hatching with stroked lines.</li>
+                        <li>Suggested minimum line width is 20 pixels &#8211; remember, the version on the homepage logo will be 20 times smaller.</li>
+                        <li>If you have any questions, email us at <a href="mailto: anRanAoraK@wewillraakyou.com">anRanAoraK@wewillraakyou.com</a>.</li>
+                    </ul>
+                </blockquote>
                 <hr/>
                 <h3 class="din-schrift blue_20">The crowd, creativity &#038; brand debate</h3>
                 <p>
