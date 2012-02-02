@@ -368,7 +368,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <li id="whitebox_secondary_submit_file">
                                     <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
                                     <label for="upload_file">Browse for file</label>
-                                    <span id="file_replace"><input id="upload_file" name="upload_file" type="file" /><p id="dummy_file_text"></p></span>
+                                    <div id="file_replace"><input id="upload_file" name="upload_file" type="file" /><p id="dummy_file_text"></p></div>
                                 </li>
                                 <li id="whitebox_secondary_submit_agree">
                                 <label for="upload_agree">I agree to the <a href="http://wewillraakyou.com/logo-project/terms-and-conditions/">terms & conditions</a></label>
