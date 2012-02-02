@@ -338,7 +338,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     </header>
                 </div><!-- multiple_tabs -->
                 <div class="whitebox_secondary whitebox box rounded-corners">
-                    <form method="post" enctype="multipart/form-data" action="">
+                    <form method="post" enctype="multipart/form-data">
                         <section id="whitebox_secondary_upload" style="display: none;">
                             <p>Choose the letter you've designed</p>
                             <div id="whitebox_secondary_upload_letters">
