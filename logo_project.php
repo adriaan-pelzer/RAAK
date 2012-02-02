@@ -17,11 +17,9 @@ Calling all designers, typographers and brand builders. We need your creative he
                 </p>
                 <h3 class="din-schrift blue_20">How it works</h3>
                 <hr />
-                <p>
-                    <div id="__ss_5502775" style="width: 360px;">
-                        <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/logo_slideshow.jpg" />
-                    </div>
-                </p>
+                <div id="__ss_5502775" style="width: 360px;">
+                    <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/logo_slideshow.jpg" />
+                </div>
                 <p>&nbsp;</p>
                 <ul>
                     <li><strong> Illustrator template</strong> <a href="http://wewillraakyou.com/RAAK-letter-Illustrator-template.zip">here</a>.</li>
@@ -60,7 +58,7 @@ Each uploaded letter (considering it ticks the technical boxes mentioned below) 
                         <li>And it needs to touch the top line of the canvas/artboard.</li>
                         <li>Only use the colour blue as in the template (RGB value is R0 G174 B239), except for any automatic anti-aliasing. And avoid tints please. Any shading should be made up of a dot pattern or hatching with stroked lines.</li>
                         <li>Suggested minimum line width is 20 pixels &#8211; remember, the version on the homepage logo will be 20 times smaller.</li>
-                        <li>If you have any questions, email us at <a href="mailto: anRanAoraK@wewillraakyou.com">anRanAoraK@wewillraakyou.com</a>.</li>
+                        <li>If you have any questions, email us at <a href="mailto:anRanAoraK@wewillraakyou.com">anRanAoraK@wewillraakyou.com</a>.</li>
                     </ul>
                 </blockquote>
                 <hr/>
@@ -114,7 +112,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <div class="bluebox_content_top">
                         <div class="bluebox_content_top_left logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/3326823e578cbe72c52ca50e5b338494.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/3326823e578cbe72c52ca50e5b338494.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="logo_project_letter_blurp">
                                 Submitted by
@@ -124,7 +122,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div><!-- bluebox_content_top_left -->
                         <div class="bluebox_content_top_center logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a8b2a4f4c69564aa9f11381c0c260235.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a8b2a4f4c69564aa9f11381c0c260235.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="logo_project_letter_blurp">
                                 Submitted by
@@ -134,7 +132,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div><!-- bluebox_content_top_center -->
                         <div class="bluebox_content_top_right logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/2dcfb0448f8b53e4a913a16c8f3413f2.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/2dcfb0448f8b53e4a913a16c8f3413f2.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="logo_project_letter_blurp">
                                 Submitted by
@@ -146,7 +144,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <div class="bluebox_content_bottom">
                         <div class="bluebox_content_bottom_left logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/7832f12fb6b6af543b029481f0b7baa4.png&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/7832f12fb6b6af543b029481f0b7baa4.png&amp;width=70&amp;height=82" />
                             </div>
                             <div class="logo_project_letter_blurp">
                                 Submitted by
@@ -156,7 +154,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div><!-- bluebox_content_bottom_left -->
                         <div class="bluebox_content_bottom_center logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/5196b17d8503c6ad7a7accfefbdeda83.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/5196b17d8503c6ad7a7accfefbdeda83.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="logo_project_letter_blurp">
                                 Submitted by
@@ -166,7 +164,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div><!-- bluebox_content_bottom_center -->
                         <div class="bluebox_content_bottom_right logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&amp;width=70&amp;height=82" />
                             </div>
                             <div class="logo_project_letter_blurp">
                                 Submitted by
@@ -180,7 +178,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <div class="bluebox_content_top">
                         <div class="bluebox_content_top_left">
                             <div class="bluebox_content_top_left_image">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/27027cdc0a51f42ce66c576cb4916fa1.png&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/27027cdc0a51f42ce66c576cb4916fa1.png&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_top_left_blurp">
                                 Submitted by
@@ -190,7 +188,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div>
                         <div class="bluebox_content_top_center">
                             <div class="bluebox_content_top_center_image">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/94f1befdbb9439a574a82458d1fffc06.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/94f1befdbb9439a574a82458d1fffc06.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_top_center_blurp">
                                 Submitted by
@@ -200,7 +198,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div>
                         <div class="bluebox_content_top_right">
                             <div class="bluebox_content_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/51de71bfb5dfe9edc1c73f0ca5a4408a.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/51de71bfb5dfe9edc1c73f0ca5a4408a.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
                                 Submitted by
@@ -212,7 +210,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <div class="bluebox_content_bottom">
                         <div class="bluebox_content_bottom_left">
                             <div class="bluebox_content_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/61bc98b99c6340b6be2b151e47d08d28.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/61bc98b99c6340b6be2b151e47d08d28.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
                                 Submitted by
@@ -222,7 +220,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div>
                         <div class="bluebox_content_bottom_center">
                             <div class="bluebox_content_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/811f9f13a4e7294ee86ff2288d3534a7.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/811f9f13a4e7294ee86ff2288d3534a7.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
                                 Submitted by
@@ -232,7 +230,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div>
                         <div class="bluebox_content_bottom_right">
                             <div class="bluebox_content_bottom_right_image">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/0387e51d17f01d524c0b07de1469eb6a.png&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/0387e51d17f01d524c0b07de1469eb6a.png&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_bottom_right_blurp">
                                 Submitted by
@@ -246,7 +244,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <div class="bluebox_content_top">
                         <div class="bluebox_content_top_left">
                             <div class="bluebox_content_top_left_image">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/ba0c3f6be22d07916abf6ca1f7d37d8a.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/ba0c3f6be22d07916abf6ca1f7d37d8a.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_top_left_blurp">
                                 Submitted by
@@ -256,7 +254,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div>
                         <div class="bluebox_content_top_center">
                             <div class="bluebox_content_top_center_image">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/c6a513db33554763c49386bed4673bc3.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/c6a513db33554763c49386bed4673bc3.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_top_center_blurp">
                                 Submitted by
@@ -266,7 +264,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div>
                         <div class="bluebox_content_top_right">
                             <div class="bluebox_content_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/1123dcb9de8cff45074fc0b8029b9751.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/1123dcb9de8cff45074fc0b8029b9751.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
                                 Submitted by
@@ -278,7 +276,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <div class="bluebox_content_bottom">
                         <div class="bluebox_content_bottom_left">
                             <div class="bluebox_content_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/78ce302c784ece3f208eba8152c2bc58.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/78ce302c784ece3f208eba8152c2bc58.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
                                 Submitted by
@@ -288,7 +286,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div>
                         <div class="bluebox_content_bottom_center">
                             <div class="bluebox_content_image rounded-corners">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/93455d62240dc78204038d89fcc4eaaa.png&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/93455d62240dc78204038d89fcc4eaaa.png&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_blurp">
                                 Submitted by
@@ -298,7 +296,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </div>
                         <div class="bluebox_content_bottom_right">
                             <div class="bluebox_content_bottom_right_image">
-                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/94f1cb321eb37b70e6f4a789514aee55.jpg&width=70&height=82" />
+                                <img src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/94f1cb321eb37b70e6f4a789514aee55.jpg&amp;width=70&amp;height=82" />
                             </div>
                             <div class="bluebox_content_bottom_right_blurp">
                                 Submitted by
@@ -384,10 +382,10 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         </section><!-- #whitebox_secondary_submit -->
                         <section id="whitebox_secondary_preview" class="smaller_arial_caps" style="display: none;">
                             <div id="whitebox_secondary_preview_letters">
-                                <span id="preview_letter_R"><img alt="R" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&width=70&height=82" /></span>
-                                <span id="preview_letter_A1"><img alt="A" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/45d36d1d36846e6a7210254b7c10b1e0.png&width=70&height=82" /></span>
-                                <span id="preview_letter_A2"><img alt="A" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/27027cdc0a51f42ce66c576cb4916fa1.png&width=70&height=82" /></span>
-                                <span id="preview_letter_K"><img alt="K" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/94f1cb321eb37b70e6f4a789514aee55.jpg&width=70&height=82" /></span>
+                                <span id="preview_letter_R"><img alt="R" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&amp;width=70&amp;height=82" /></span>
+                                <span id="preview_letter_A1"><img alt="A" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/45d36d1d36846e6a7210254b7c10b1e0.png&amp;width=70&amp;height=82" /></span>
+                                <span id="preview_letter_A2"><img alt="A" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/27027cdc0a51f42ce66c576cb4916fa1.png&amp;width=70&amp;height=82" /></span>
+                                <span id="preview_letter_K"><img alt="K" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/94f1cb321eb37b70e6f4a789514aee55.jpg&amp;width=70&amp;height=82" /></span>
                             </div>
                             <div id="whitebox_secondary_preview_submit">
                                 <input name="preview_submit" type="submit" value="HAPPY? Then SUBMIT your letter &#9658;" />
