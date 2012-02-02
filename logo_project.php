@@ -397,7 +397,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                             </div>
                         </section><!-- #whitebox_secondary_preview -->
                         <section id="whitebox_secondary_finish">
-                            <h4>THANKS for taking part!</h4>
+                            <p class="big_and_bold">THANKS for taking part!</p>
                             <p>Your letter is now part of the loop.</p>
                             <button id="again">Upload another letter</button>
                         </section><!-- #whitebox_secondary_finish -->

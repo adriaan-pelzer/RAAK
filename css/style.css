@@ -1073,7 +1073,7 @@ input[name="upload_submit"] {
     margin: 0 5px -4px;
 }
 
-#whitebox_secondary_finish h4 {
+#whitebox_secondary_finish .big_and_bold {
     font-size: 15px;
     font-weight: bold;
 }
