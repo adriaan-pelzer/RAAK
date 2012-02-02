@@ -15,7 +15,7 @@ Template Name: About
                     <h2 class="din-schrift blue_20">About</h2>
                 </header>
                 <hr />
-                <div id="what-we-do" class="whitebox_primary_content" style="display: none;">
+                <div id="what-we-do" class="whitebox_primary_content">
                     <p>We consult, train and develop - and yes that includes building - social media solutions.</p>
 
 <p>Social media can be used to build <em>brand awareness</em>, <em><a title="Dominos success with social media" href="2010/09/dominos-the-raak-social-media-overview/">to shift products</a></em> and for <em>direct response</em>. But also for former <em>PR functions</em>, and even <em>product development</em> &amp; <em>customer service purposes</em>.</p>
@@ -56,7 +56,7 @@ But when you have the right foundation there are times you need to make a splash
                         <a id="whitebox_primary_content_nav_adriaan" class="whitebox_primary_content_nav_item" onclick="javascript: expand_person('adriaan');">Adriaan Pelzer</a>
                     </div><!-- whitebox_primary_content_nav -->
                     <hr class="solid" />
-                    <section id="whitebox_primary_content_adriaan" class="whitebox_primary_content_founder">
+                    <section id="whitebox_primary_content_adriaan" class="whitebox_primary_content_founder" style="display: none;">
                         <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_content_founder_name">Adriaan Pelzer</div>
                             <div class="whitebox_primary_content_founder_social">
@@ -187,10 +187,10 @@ Wessel also makes documenatries in his spare time and keeps a popular blog on So
                     <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">What we do</h3>
                 </header>
                 <hr class="blue_hr" />
-                <div id="bluebox_content_what-we-do" class="bluebox_content_item" style="display: none;">
+                <div id="bluebox_content_what-we-do" class="bluebox_content_item">
                     If advertising is a tax on mediocrity, you've come to a tax free zone.
                 </div><!-- bluebox_content_item -->
-                <div id="bluebox_content_adriaan" class="bluebox_content_item">
+                <div id="bluebox_content_adriaan" class="bluebox_content_item" style="display: none;">
                     I dream code.<br />I write machine poetry, that makes electrons dance.<br />
                 </div><!-- bluebox_content_item -->
                 <div id="bluebox_content_wessel" class="bluebox_content_item" style="display: none;">
