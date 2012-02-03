@@ -265,7 +265,7 @@ strong {
     display: inline-block;
 }
 
-.tab_container {
+.tab_container, .bluebox_top_margin {
     margin-top: 20px;
     display: inline-block;
 }

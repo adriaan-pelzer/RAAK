@@ -7,13 +7,13 @@ Template Name:Single Product
 
 	<div class="container rounded-corners single-product">
 		<div class="content">
-            <section class="whitebox_big whitebox box big_box rounded-corners_top_bottom_right">
+            <div class="whitebox_big whitebox box big_box rounded-corners_top_bottom_right">
                 <header>
                     <h2  class="din-schrift blue_20">Our Products</h2>
                 </header>
                     <hr />
-            </section><!-- whitebox_big -->
-            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
+            </div><!-- whitebox_big -->
+            <div class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
                     <div class="whitebox_primary_project whitebox_primary_section bigger_arial_caps">
                         <span class="whitebox_primary_section_label">Product:</span>
                         <span class="whitebox_primary_section_content"><a target="_blank" href="http://m.tweetrewinder.com">Rewinder</a></span>
@@ -27,7 +27,7 @@ Template Name:Single Product
 <p>This is as close to Time Travel you'll ever get, without altering the future!</p></span>
                     </div><!-- .whitebox_primary_solution -->
             </section><!-- whitebox_primary -->
-            <section class="bluebox bluebox_primary box bluebox-primary rounded-corners">
+            <section class="bluebox bluebox_primary box bluebox-primary rounded-corners bluebox_top_margin">
                 <div class="bluebox_bigpic">
                     <img width="315px" height="203px" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder01.png">
                 </div>
@@ -63,7 +63,7 @@ Template Name:Single Product
                         </div> 	
                     </div>
                 </div>
-            </section><!-- #bluebox -->
+            </div><!-- #bluebox -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
