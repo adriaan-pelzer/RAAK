@@ -7,7 +7,7 @@ Template Name:Single Work
 
 	<div  class="container rounded-corners single-work">
 		<div class="content">
-            <section class="whitebox_big whitebox box big_box rounded-corners_top_bottom_right">
+            <div class="whitebox_big whitebox box big_box rounded-corners_top_bottom_right">
                 <header>
                     <h2  class="din-schrift blue_20">Our Work</h2>
                     <nav class="box_nav smaller_arial_caps">
@@ -21,8 +21,8 @@ Template Name:Single Work
                     </nav>
                 </header>
                 <hr />
-            </section><!-- whitebox_big -->
-            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
+            </div><!-- whitebox_big -->
+            <div class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
                 <div class="whitebox_primary_client whitebox_primary_section bigger_arial_caps">
                     <div class="whitebox_primary_section_label">Client:</div>
                     <div class="whitebox_primary_section_content grey_text">Ted Baker / Guided Collective</div>
@@ -47,8 +47,8 @@ Template Name:Single Work
 <p>The campaign not only drove hundreds of Likes to each bit of Ted Baker content, it raised awareness over all.</p>
                     </div>
                 </div><!-- .whitebox_primary_section -->
-            </section><!-- whitebox_primary -->
-            <section  class="bluebox bluebox_primary box bluebox-primary rounded-corners">
+            </div><!-- whitebox_primary -->
+            <div  class="bluebox bluebox_primary box bluebox-primary rounded-corners bluebox_top_margin">
                 <div class="bluebox_bigpic">
                     <img width="315px" height="203px" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker2.jpg">
                 </div>
@@ -85,7 +85,7 @@ Template Name:Single Work
                         <div class='ngg-clear'></div>
                     </div>
                 </div>
-            </section><!-- bluebox -->
+            </div><!-- bluebox -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
