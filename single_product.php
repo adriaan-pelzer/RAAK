@@ -26,8 +26,8 @@ Template Name:Single Product
 <p>If you're just quickly catching up with an event, you can play them back at faster than realtime too.</p>
 <p>This is as close to Time Travel you'll ever get, without altering the future!</p></span>
                     </div><!-- .whitebox_primary_solution -->
-            </section><!-- whitebox_primary -->
-            <section class="bluebox bluebox_primary box bluebox-primary rounded-corners bluebox_top_margin">
+            </div><!-- whitebox_primary -->
+            <div class="bluebox bluebox_primary box bluebox-primary rounded-corners bluebox_top_margin">
                 <div class="bluebox_bigpic">
                     <img width="315px" height="203px" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder01.png">
                 </div>
@@ -55,12 +55,14 @@ Template Name:Single Product
                             </div>
                         </div>
                         <!-- Pagination -->
-                        <div class='ngg-navigation'>
-                            <span>1</span>
-                            <a class="page-numbers" href="/2011/11/rewinder-timeshift-your-tweets/?nggpage=2">2</a>
-                            <a class="page-numbers" href="/2011/11/rewinder-timeshift-your-tweets/?nggpage=3">3</a>
-                            <a class="next" id="ngg-next-2" href="/2011/11/rewinder-timeshift-your-tweets/?nggpage=2">&#9658;</a>
-                        </div> 	
+                        <footer>
+                            <div class='ngg-navigation'>
+                                <span>1</span>
+                                <a class="page-numbers" href="/2011/11/rewinder-timeshift-your-tweets/?nggpage=2">2</a>
+                                <a class="page-numbers" href="/2011/11/rewinder-timeshift-your-tweets/?nggpage=3">3</a>
+                                <a class="next" id="ngg-next-2" href="/2011/11/rewinder-timeshift-your-tweets/?nggpage=2">&#9658;</a>
+                            </div>
+                        </footer>    
                     </div>
                 </div>
             </div><!-- #bluebox -->
