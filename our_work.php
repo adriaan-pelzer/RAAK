@@ -7,7 +7,7 @@ Template Name: Our Work
 
 	<div class="container rounded-corners our-products">
 		<div class="content">
-            <section class="whitebox_big whitebox box big_box rounded-corners">
+            <div class="whitebox_big whitebox box big_box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Our Work</h2>
                     <nav class="box_nav smaller_arial_caps">
@@ -37,10 +37,12 @@ Template Name: Our Work
                     <div id="whitebox_big_all-projects_1" class="whitebox_big_category smaller_arial_caps">
                         <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Ted Baker / Guided Collective</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                        <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Ted Baker / Guided Collective</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />
                                 <div class="whitebox_big_category_entry_content">
                                     <a href="<?php echo get_page_link(5225); ?>" onmouseover="javascript: mouse_action ('all-projects', 0, 'over');" onmouseout="javascript: mouse_action ('all-projects', 0, 'out');">
@@ -52,10 +54,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Lord Sugar / Guided Collective</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                        <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Lord Sugar / Guided Collective</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2011/11/the-world-fist-live-twitter-book-signing/" onmouseover="javascript: mouse_action ('all-projects', 1, 'over');" onmouseout="javascript: mouse_action ('all-projects', 1, 'out');">
                                         <div id="post_all-projects_1_picture" class="whitebox_big_category_entry_content_picture">
@@ -66,10 +70,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                <span class="whitebox_big_category_entry_title_name">NirvanaCPH</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                    <span class="whitebox_big_category_entry_title_name">NirvanaCPH</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />
                                 <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2011/06/social-enabled-site-for-londons-premier-production-agency-nirvanacph/" onmouseover="javascript: mouse_action ('all-projects', 2, 'over');" onmouseout="javascript: mouse_action ('all-projects', 2, 'out');">
@@ -83,10 +89,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row1 -->
                         <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Ted Baker / Guided Collective</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Ted Baker / Guided Collective</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/11/the-worlds-first-ever-live-twitter-style-event/" onmouseover="javascript: mouse_action ('all-projects', 3, 'over');" onmouseout="javascript: mouse_action ('all-projects', 3, 'out');">
                                         <div id="post_all-projects_3_picture" class="whitebox_big_category_entry_content_picture">
@@ -97,10 +105,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Westfield / Guided Collective</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Westfield / Guided Collective</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/09/westfield-guided-collective/" onmouseover="javascript: mouse_action ('all-projects', 4, 'over');" onmouseout="javascript: mouse_action ('all-projects', 4, 'out');">
                                         <div id="post_all-projects_4_picture" class="whitebox_big_category_entry_content_picture">
@@ -111,10 +121,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">MTV & European Union</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">MTV & European Union</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/07/can-eu-hear-me-europe/" onmouseover="javascript: mouse_action ('all-projects', 5, 'over');" onmouseout="javascript: mouse_action ('all-projects', 5, 'out');">
                                         <div id="post_all-projects_5_picture" class="whitebox_big_category_entry_content_picture">
@@ -127,10 +139,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row2 -->
                         <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">World Economic Forum</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">World Economic Forum</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/" onmouseover="javascript: mouse_action ('all-projects', 6, 'over');" onmouseout="javascript: mouse_action ('all-projects', 6, 'out');">
                                         <div id="post_all-projects_6_picture" class="whitebox_big_category_entry_content_picture">
@@ -141,10 +155,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Guided Collective</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Guided Collective</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/05/guided-collective-the-uks-first-talentsourcing-hybrid-agency/" onmouseover="javascript: mouse_action ('all-projects', 7, 'over');" onmouseout="javascript: mouse_action ('all-projects', 7, 'out');">
                                         <div id="post_all-projects_7_picture" class="whitebox_big_category_entry_content_picture">
@@ -155,10 +171,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Flower Council of Holland / Cow</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Flower Council of Holland / Cow</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/05/flower-council-school-heroes/" onmouseover="javascript: mouse_action ('all-projects', 8, 'over');" onmouseout="javascript: mouse_action ('all-projects', 8, 'out');">
                                         <div id="post_all-projects_8_picture" class="whitebox_big_category_entry_content_picture">
@@ -173,10 +191,12 @@ Template Name: Our Work
 <div id="whitebox_big_all-projects_2" class="whitebox_big_category smaller_arial_caps">
                         <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Lipton / Cow Africa</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Lipton / Cow Africa</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/04/lipton-temper-test/" onmouseover="javascript: mouse_action ('all-projects', 9, 'over');" onmouseout="javascript: mouse_action ('all-projects', 9, 'out');">
                                         <div id="post_all-projects_9_picture" class="whitebox_big_category_entry_content_picture">
@@ -187,10 +207,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Han Hoogerbrugge</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Han Hoogerbrugge</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/03/han-hoogerbrugge-prostress/" onmouseover="javascript: mouse_action ('all-projects', 10, 'over');" onmouseout="javascript: mouse_action ('all-projects', 10, 'out');">
                                         <div id="post_all-projects_10_picture" class="whitebox_big_category_entry_content_picture">
@@ -201,10 +223,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Cow PR</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Cow PR</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/01/internal-comms-site-for-cow-pr/" onmouseover="javascript: mouse_action ('all-projects', 11, 'over');" onmouseout="javascript: mouse_action ('all-projects', 11, 'out');">
                                         <div id="post_all-projects_11_picture" class="whitebox_big_category_entry_content_picture">
@@ -217,10 +241,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row1 -->
                         <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Consultifi</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Consultifi</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/01/consultifi-branding-website/" onmouseover="javascript: mouse_action ('all-projects', 12, 'over');" onmouseout="javascript: mouse_action ('all-projects', 12, 'out');">
                                         <div id="post_all-projects_12_picture" class="whitebox_big_category_entry_content_picture">
@@ -231,10 +257,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Salzburg Global Seminar</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Salzburg Global Seminar</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2009/07/social-media-consulting-for-salzburg-global-seminar/" onmouseover="javascript: mouse_action ('all-projects', 13, 'over');" onmouseout="javascript: mouse_action ('all-projects', 13, 'out');">
                                         <div id="post_all-projects_13_picture" class="whitebox_big_category_entry_content_picture">
@@ -245,10 +273,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Where Fashion</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Where Fashion</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2009/06/social-media-management-for-where-fashion/" onmouseover="javascript: mouse_action ('all-projects', 14, 'over');" onmouseout="javascript: mouse_action ('all-projects', 14, 'out');">
                                         <div id="post_all-projects_14_picture" class="whitebox_big_category_entry_content_picture">
@@ -261,10 +291,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row2 -->
                         <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">3voor12</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">3voor12</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2009/04/3voor12-white-noise/" onmouseover="javascript: mouse_action ('all-projects', 15, 'over');" onmouseout="javascript: mouse_action ('all-projects', 15, 'out');">
                                         <div id="post_all-projects_15_picture" class="whitebox_big_category_entry_content_picture">
@@ -275,10 +307,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Ben & Jerry</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Ben & Jerry</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2009/04/ben-jerry-viral-about-climate-change/" onmouseover="javascript: mouse_action ('all-projects', 16, 'over');" onmouseout="javascript: mouse_action ('all-projects', 16, 'out');">
                                         <div id="post_all-projects_16_picture" class="whitebox_big_category_entry_content_picture">
@@ -289,10 +323,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Motorola / MTV International</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Motorola / MTV International</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2009/04/curating-mobile-content/" onmouseover="javascript: mouse_action ('all-projects', 17, 'over');" onmouseout="javascript: mouse_action ('all-projects', 17, 'out');">
                                         <div id="post_all-projects_17_picture" class="whitebox_big_category_entry_content_picture">
@@ -318,10 +354,12 @@ Template Name: Our Work
 <div id="whitebox_big_social-media-ready_1" class="whitebox_big_category smaller_arial_caps">
                         <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">MTV & European Union</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">MTV & European Union</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/07/can-eu-hear-me-europe/" onmouseover="javascript: mouse_action ('social-media-ready', 0, 'over');" onmouseout="javascript: mouse_action ('social-media-ready', 0, 'out');">
                                         <div id="post_social-media-ready_0_picture" class="whitebox_big_category_entry_content_picture">
@@ -332,10 +370,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">World Economic Forum</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">World Economic Forum</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/" onmouseover="javascript: mouse_action ('social-media-ready', 1, 'over');" onmouseout="javascript: mouse_action ('social-media-ready', 1, 'out');">
                                         <div id="post_social-media-ready_1_picture" class="whitebox_big_category_entry_content_picture">
@@ -346,10 +386,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Salzburg Global Seminar</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Salzburg Global Seminar</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2009/07/social-media-consulting-for-salzburg-global-seminar/" onmouseover="javascript: mouse_action ('social-media-ready', 2, 'over');" onmouseout="javascript: mouse_action ('social-media-ready', 2, 'out');">
                                         <div id="post_social-media-ready_2_picture" class="whitebox_big_category_entry_content_picture">
@@ -362,10 +404,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row1 -->
                         <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Where Fashion</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Where Fashion</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2009/06/social-media-management-for-where-fashion/" onmouseover="javascript: mouse_action ('social-media-ready', 3, 'over');" onmouseout="javascript: mouse_action ('social-media-ready', 3, 'out');">
                                         <div id="post_social-media-ready_3_picture" class="whitebox_big_category_entry_content_picture">
@@ -376,10 +420,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_4_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -387,10 +433,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_5_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -400,10 +448,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row2 -->
                         <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_6_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -411,10 +461,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_7_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -422,10 +474,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_8_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -451,10 +505,12 @@ Template Name: Our Work
 <div id="whitebox_big_impact-projects_1" class="whitebox_big_category smaller_arial_caps">
                         <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Ted Baker / Guided Collective</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Ted Baker / Guided Collective</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2011/11/in-store-instagram-studio-right-onto-facebook-for-ted-baker/" onmouseover="javascript: mouse_action ('impact-projects', 0, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 0, 'out');">
                                         <div id="post_impact-projects_0_picture" class="whitebox_big_category_entry_content_picture">
@@ -465,10 +521,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Lord Sugar / Guided Collective</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Lord Sugar / Guided Collective</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2011/11/the-world-fist-live-twitter-book-signing/" onmouseover="javascript: mouse_action ('impact-projects', 1, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 1, 'out');">
                                         <div id="post_impact-projects_1_picture" class="whitebox_big_category_entry_content_picture">
@@ -479,10 +537,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">NirvanaCPH</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">NirvanaCPH</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2011/06/social-enabled-site-for-londons-premier-production-agency-nirvanacph/" onmouseover="javascript: mouse_action ('impact-projects', 2, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 2, 'out');">
                                         <div id="post_impact-projects_2_picture" class="whitebox_big_category_entry_content_picture">
@@ -495,10 +555,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row1 -->
                         <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Ted Baker / Guided Collective</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Ted Baker / Guided Collective</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/11/the-worlds-first-ever-live-twitter-style-event/" onmouseover="javascript: mouse_action ('impact-projects', 3, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 3, 'out');">
                                         <div id="post_impact-projects_3_picture" class="whitebox_big_category_entry_content_picture">
@@ -509,10 +571,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Westfield / Guided Collective</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Westfield / Guided Collective</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/09/westfield-guided-collective/" onmouseover="javascript: mouse_action ('impact-projects', 4, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 4, 'out');">
                                         <div id="post_impact-projects_4_picture" class="whitebox_big_category_entry_content_picture">
@@ -523,10 +587,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">MTV & European Union</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">MTV & European Union</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/07/can-eu-hear-me-europe/" onmouseover="javascript: mouse_action ('impact-projects', 5, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 5, 'out');">
                                         <div id="post_impact-projects_5_picture" class="whitebox_big_category_entry_content_picture">
@@ -539,10 +605,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row2 -->
                         <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Guided Collective</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Guided Collective</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/05/guided-collective-the-uks-first-talentsourcing-hybrid-agency/" onmouseover="javascript: mouse_action ('impact-projects', 6, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 6, 'out');">
                                         <div id="post_impact-projects_6_picture" class="whitebox_big_category_entry_content_picture">
@@ -553,10 +621,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Flower Council of Holland / Cow</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Flower Council of Holland / Cow</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/05/flower-council-school-heroes/" onmouseover="javascript: mouse_action ('impact-projects', 7, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 7, 'out');">
                                         <div id="post_impact-projects_7_picture" class="whitebox_big_category_entry_content_picture">
@@ -567,10 +637,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Lipton / Cow Africa</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Lipton / Cow Africa</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/04/lipton-temper-test/" onmouseover="javascript: mouse_action ('impact-projects', 8, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 8, 'out');">
                                         <div id="post_impact-projects_8_picture" class="whitebox_big_category_entry_content_picture">
@@ -585,10 +657,12 @@ Template Name: Our Work
 <div id="whitebox_big_impact-projects_2" class="whitebox_big_category smaller_arial_caps">
                         <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Cow PR</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Cow PR</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/01/internal-comms-site-for-cow-pr/" onmouseover="javascript: mouse_action ('impact-projects', 9, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 9, 'out');">
                                         <div id="post_impact-projects_9_picture" class="whitebox_big_category_entry_content_picture">
@@ -599,10 +673,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Consultifi</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Consultifi</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/01/consultifi-branding-website/" onmouseover="javascript: mouse_action ('impact-projects', 10, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 10, 'out');">
                                         <div id="post_impact-projects_10_picture" class="whitebox_big_category_entry_content_picture">
@@ -613,10 +689,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">3voor12</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">3voor12</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2009/04/3voor12-white-noise/" onmouseover="javascript: mouse_action ('impact-projects', 11, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 11, 'out');">
                                         <div id="post_impact-projects_11_picture" class="whitebox_big_category_entry_content_picture">
@@ -629,10 +707,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row1 -->
                         <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Ben & Jerry</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Ben & Jerry</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2009/04/ben-jerry-viral-about-climate-change/" onmouseover="javascript: mouse_action ('impact-projects', 12, 'over');" onmouseout="javascript: mouse_action ('impact-projects', 12, 'out');">
                                         <div id="post_impact-projects_12_picture" class="whitebox_big_category_entry_content_picture">
@@ -643,10 +723,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_13_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -654,10 +736,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_14_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -667,10 +751,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row2 -->
                         <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_15_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -678,10 +764,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_16_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -689,10 +777,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_17_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -715,10 +805,12 @@ Template Name: Our Work
 <div id="whitebox_big_consulting_1" class="whitebox_big_category smaller_arial_caps">
                         <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">World Economic Forum</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">World Economic Forum</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/" onmouseover="javascript: mouse_action ('consulting', 0, 'over');" onmouseout="javascript: mouse_action ('consulting', 0, 'out');">
                                         <div id="post_consulting_0_picture" class="whitebox_big_category_entry_content_picture">
@@ -729,10 +821,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Guided Collective</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Guided Collective</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/05/guided-collective-the-uks-first-talentsourcing-hybrid-agency/" onmouseover="javascript: mouse_action ('consulting', 1, 'over');" onmouseout="javascript: mouse_action ('consulting', 1, 'out');">
                                         <div id="post_consulting_1_picture" class="whitebox_big_category_entry_content_picture">
@@ -743,10 +837,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Han Hoogerbrugge</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Han Hoogerbrugge</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2010/03/han-hoogerbrugge-prostress/" onmouseover="javascript: mouse_action ('consulting', 2, 'over');" onmouseout="javascript: mouse_action ('consulting', 2, 'out');">
                                         <div id="post_consulting_2_picture" class="whitebox_big_category_entry_content_picture">
@@ -759,10 +855,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row1 -->
                         <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Salzburg Global Seminar</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Salzburg Global Seminar</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2009/07/social-media-consulting-for-salzburg-global-seminar/" onmouseover="javascript: mouse_action ('consulting', 3, 'over');" onmouseout="javascript: mouse_action ('consulting', 3, 'out');">
                                         <div id="post_consulting_3_picture" class="whitebox_big_category_entry_content_picture">
@@ -773,10 +871,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label">Client:</span>
-                                    <span class="whitebox_big_category_entry_title_name">Motorola / MTV International</span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">Client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">Motorola / MTV International</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                 <hr class="solid" />                                    <div class="whitebox_big_category_entry_content">
                                     <a href="http://wewillraakyou.com/2009/04/curating-mobile-content/" onmouseover="javascript: mouse_action ('consulting', 4, 'over');" onmouseout="javascript: mouse_action ('consulting', 4, 'out');">
                                         <div id="post_consulting_4_picture" class="whitebox_big_category_entry_content_picture">
@@ -787,10 +887,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_5_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -800,10 +902,12 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row2 -->
                         <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_6_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -811,10 +915,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_7_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -822,10 +928,12 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                             <div class="whitebox_big_category_entry">
-                                <div class="whitebox_big_category_entry_title">
-                                <span class="whitebox_big_category_entry_title_label"></span>
-                                    <span class="whitebox_big_category_entry_title_name"></span>
-                                </div><!-- .whitebox_big_category_entry_title -->
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"></span>
+                                        <span class="whitebox_big_category_entry_title_name"></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
                                                                     <div class="whitebox_big_category_entry_content">
                                     <!--div id="post_8_picture" class="whitebox_big_category_entry_content_picture">
                                         <img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/default_post.jpg" />
@@ -835,7 +943,7 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row3 -->
                     </div><!-- #whitebox_big_consulting_1 -->
                 </div><!-- #whitebox_big_consulting -->
-            </section><!-- whitebox_big -->
+            </div><!-- whitebox_big -->
 		</div><!-- content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
