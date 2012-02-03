@@ -25,12 +25,12 @@ Template Name:Single Work
             <section class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
                 <div class="whitebox_primary_client whitebox_primary_section bigger_arial_caps">
                     <div class="whitebox_primary_section_label">Client:</div>
-                    <div class="whitebox_primary_section_content">Ted Baker / Guided Collective</div>
+                    <div class="whitebox_primary_section_content grey_text">Ted Baker / Guided Collective</div>
                 </div><!-- .whitebox_primary_section -->
                 <hr class="solid thicker_hr lightblue_hr">
                 <div class="whitebox_primary_project whitebox_primary_section bigger_arial_caps">
                     <div class="whitebox_primary_section_label">Project:</div>
-                    <div class="whitebox_primary_section_content">Ted Baker's Rutting Season</div>
+                    <div class="whitebox_primary_section_content grey_text">Ted Baker's Rutting Season</div>
                 </div><!-- .whitebox_primary_section -->
                 <hr class="solid thicker_hr lightblue_hr">
                 <div class="whitebox_primary_brief whitebox_primary_section">
