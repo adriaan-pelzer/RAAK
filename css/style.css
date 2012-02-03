@@ -1144,6 +1144,11 @@ h3.expanded_letter {
     background: #ffffff;
 }
 
+
+.whitebox_big_category_entry_content_overview p {
+    margin-top: 0;
+}
+
 /************** SINGLE PRODUCT ***********/
 
 .whitebox_primary_section {

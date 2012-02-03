@@ -35,7 +35,7 @@ Template Name: Our Work
                     </div--><!-- .whitebox_big_category_page -->
                     <!--APhr class="solid" /-->
                     <div id="whitebox_big_all-projects_1" class="whitebox_big_category smaller_arial_caps">
-                        <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row1">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -89,8 +89,8 @@ Template Name: Our Work
                                     </a>
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
-                        </div><!-- #whitebox_big_category_row1 -->
-                        <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
+                        </div><!-- whitebox_big_category_row1 -->
+                        <div class="whitebox_big_category_row whitebox_big_category_row2">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -140,7 +140,7 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                         </div><!-- #whitebox_big_category_row2 -->
-                        <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row3">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -192,7 +192,7 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row3 -->
                     </div><!-- #whitebox_big_all-projects_1 -->
 <div id="whitebox_big_all-projects_2" class="whitebox_big_category smaller_arial_caps">
-                        <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row1">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -241,8 +241,8 @@ Template Name: Our Work
                                     </a>
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
-                        </div><!-- #whitebox_big_category_row1 -->
-                        <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
+                        </div><!-- whitebox_big_category_row1 -->
+                        <div class="whitebox_big_category_row whitebox_big_category_row2">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -292,7 +292,7 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                         </div><!-- #whitebox_big_category_row2 -->
-                        <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row3">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -355,7 +355,7 @@ Template Name: Our Work
                     </div--><!-- .whitebox_big_category_page -->
                     <!--APhr class="solid" /-->
 <div id="whitebox_big_social-media-ready_1" class="whitebox_big_category smaller_arial_caps">
-                        <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row1">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -404,8 +404,8 @@ Template Name: Our Work
                                     </a>
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
-                        </div><!-- #whitebox_big_category_row1 -->
-                        <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
+                        </div><!-- whitebox_big_category_row1 -->
+                        <div class="whitebox_big_category_row whitebox_big_category_row2">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -449,7 +449,7 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                         </div><!-- #whitebox_big_category_row2 -->
-                        <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row3">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -506,7 +506,7 @@ Template Name: Our Work
                     </div--><!-- .whitebox_big_category_page -->
                     <!--APhr class="solid" /-->
 <div id="whitebox_big_impact-projects_1" class="whitebox_big_category smaller_arial_caps">
-                        <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row1">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -555,8 +555,8 @@ Template Name: Our Work
                                     </a>
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
-                        </div><!-- #whitebox_big_category_row1 -->
-                        <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
+                        </div><!-- whitebox_big_category_row1 -->
+                        <div class="whitebox_big_category_row whitebox_big_category_row2">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -606,7 +606,7 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                         </div><!-- #whitebox_big_category_row2 -->
-                        <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row3">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -658,7 +658,7 @@ Template Name: Our Work
                         </div><!-- #whitebox_big_category_row3 -->
                     </div><!-- #whitebox_big_impact-projects_1 -->
 <div id="whitebox_big_impact-projects_2" class="whitebox_big_category smaller_arial_caps">
-                        <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row1">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -707,8 +707,8 @@ Template Name: Our Work
                                     </a>
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
-                        </div><!-- #whitebox_big_category_row1 -->
-                        <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
+                        </div><!-- whitebox_big_category_row1 -->
+                        <div class="whitebox_big_category_row whitebox_big_category_row2">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -752,7 +752,7 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                         </div><!-- #whitebox_big_category_row2 -->
-                        <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row3">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -806,7 +806,7 @@ Template Name: Our Work
                     </div--><!-- .whitebox_big_category_page -->
                     <!--APhr class="solid" /-->
 <div id="whitebox_big_consulting_1" class="whitebox_big_category smaller_arial_caps">
-                        <div id="whitebox_big_category_row1" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row1">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -855,8 +855,8 @@ Template Name: Our Work
                                     </a>
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
-                        </div><!-- #whitebox_big_category_row1 -->
-                        <div id="whitebox_big_category_row2" class="whitebox_big_category_row">
+                        </div><!-- whitebox_big_category_row1 -->
+                        <div class="whitebox_big_category_row whitebox_big_category_row2">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
@@ -903,7 +903,7 @@ Template Name: Our Work
                                 </div><!-- .whitebox_big_category_entry_content -->
                             </div><!-- .whitebox_big_category_entry -->
                         </div><!-- #whitebox_big_category_row2 -->
-                        <div id="whitebox_big_category_row3" class="whitebox_big_category_row">
+                        <div class="whitebox_big_category_row whitebox_big_category_row3">
                             <div class="whitebox_big_category_entry">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
