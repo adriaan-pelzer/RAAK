@@ -1155,7 +1155,7 @@ h3.expanded_letter {
     margin: 10px 0;
 }
 
-.whitebox_primary_section span {
+.whitebox_primary_section span, .whitebox_primary_section div {
     display: inline-block;
     vertical-align: top;
 }
