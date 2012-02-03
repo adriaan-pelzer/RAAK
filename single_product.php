@@ -20,11 +20,11 @@ Template Name:Single Product
                     </div><!-- whitebox_primary_project -->
                     <hr class="solid thicker_hr lightblue_hr">
                     <div class="whitebox_primary_solution whitebox_primary_section">
-                        <span class="whitebox_primary_section_label bigger_arial_caps">Descript:</span>
-                        <span class="whitebox_primary_section_content"><p>Rewinder is our mobile solution to make Twitter useful with Time-shifted TV</p>
+                        <div class="whitebox_primary_section_label bigger_arial_caps">Descript:</div>
+                        <div class="whitebox_primary_section_content"><p>Rewinder is our mobile solution to make Twitter useful with Time-shifted TV</p>
 <p>Connect your Twitter account, and we'll allow you to view your past Twitter timeline, as well as recorded hashtags, as if they were happening right now!</p>
 <p>If you're just quickly catching up with an event, you can play them back at faster than realtime too.</p>
-<p>This is as close to Time Travel you'll ever get, without altering the future!</p></span>
+<p>This is as close to Time Travel you'll ever get, without altering the future!</p></div>
                     </div><!-- .whitebox_primary_solution -->
             </div><!-- whitebox_primary -->
             <div class="bluebox bluebox_primary box bluebox-primary rounded-corners bluebox_top_margin">
