@@ -29,7 +29,7 @@ Template Name:Single Product
             </div><!-- whitebox_primary -->
             <div class="bluebox bluebox_primary box bluebox-primary rounded-corners bluebox_top_margin">
                 <div class="bluebox_bigpic">
-                    <img width="315px" height="203px" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder01.png">
+                    <img width="315" height="203" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder01.png">
                 </div>
                 <hr class="solid blue_hr" />
                 <div class="bluebox_thumbpic">
