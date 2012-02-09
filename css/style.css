@@ -1446,7 +1446,7 @@ p.top_margin_22px {
     letter-spacing: 1px;
 }
 
-.blog-tag .whitebox_primary h3 a, .blog-archive .whitebox_primary h3 a {
+.blog-category .whitebox_primary h3 a,.blog-tag .whitebox_primary h3 a, .blog-archive .whitebox_primary h3 a {
     color: #00aeff;
 }
 
