@@ -7,15 +7,17 @@ Template Name:Single Blog
 
 	<div class="container rounded-corners blog-single">
 		<div class="content">
-            <section class="whitebox_big whitebox box big_box rounded-corners">
+            <div class="whitebox_big whitebox box big_box rounded-corners">
                 <header>
                     <span class="whitebox_big_search smaller_arial_caps"><a onclick="javascript: google_search();">Search</a><input type="text" id="searchtext" /></span>
                     <h2 class="din-schrift blue_20">Our Blog</h2>
                 </header>
-            </section><!-- whitebox_big -->
-            <section class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
-                <div class="whitebox_primary_post">
-                    <h3 id="whitebox_primary_title">No wonder the MPAA is freaking out: Youtube serves 4 billion movies per day</h3>
+            </div><!-- whitebox_big -->
+            <div class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
+                <article class="whitebox_primary_post">
+                    <header>
+                        <h3 id="whitebox_primary_title">No wonder the MPAA is freaking out: Youtube serves 4 billion movies per day</h3>
+                    </header>
                     <hr />
                     <div class="whitebox_primary_post_attr">
                         <div class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/adriaan/">Adriaan Pelzer</a></div>
@@ -47,24 +49,24 @@ Template Name:Single Blog
                         <p><span><em>Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/adriaan/">Adriaan Pelzer</a></em></span><span><a href="http://www.twitter.com/adriaan_pelzer" class="twitter-follow-button" data-show-count="true">Follow @adriaan_pelzer</a></span></p>
                         <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
                     </div>
-                </div><!-- .whitebox_primary_post -->
+                </article><!-- .whitebox_primary_post -->
                 <div class="whitebox_primary_comments">
-                    <div class="respond">
+                    <header>
                         <h4>Leave a Comment</h4>
-                        <form name="commentform" id="commentform" action="http://wewillraakyou.com/wp-comments-post.php" method="post">
-                            <p class="bigger_arial_no_caps grey_text">Your email is <em>never</em> shared. Required fields are marked <span class="required">*</span></p>
-                            <label class="form-label bigger_arial_caps grey_text" for="author">Name <span class="required">*</span></label><input id="author" name="author" class="text required" type="text" value="" size="30" maxlength="50" tabindex="3" />
-                            <label class="form-label bigger_arial_caps grey_text" for="email">Email <span class="required">*</span></label><input id="email" name="email" class="text required" type="text" value="" size="30" maxlength="50" tabindex="4" />
-                            <label class="form-label bigger_arial_caps grey_text" for="url">Website</label><input id="url" name="url" class="text" type="text" value="" size="30" maxlength="50" tabindex="5" />
-                            <label class="form-label bigger_arial_caps grey_text" for="comment">Comment</label>
-                            <textarea id="comment" name="comment" class="text required" cols="45" rows="8" tabindex="6"></textarea>
-                            <input type="hidden" name="submit" value="Post Comment" /><!--span id="commentform_submit"--><input id="submit" name="submit" class="button" type="submit" value="Post Comment" tabindex="7" /><!--/span--><input type="hidden" name="comment_post_ID" value="5273" />
-                            <div class="form-option"></div>
-                        </form><!-- #commentform -->
-                    </div><!-- #respond -->
+                    </header>
+                    <form name="commentform" id="commentform" action="http://wewillraakyou.com/wp-comments-post.php" method="post">
+                        <p class="bigger_arial_no_caps grey_text">Your email is <em>never</em> shared. Required fields are marked <span class="required">*</span></p>
+                        <label class="form-label bigger_arial_caps grey_text" for="author">Name <span class="required">*</span></label><input id="author" name="author" class="text required" type="text" value="" size="30" maxlength="50" tabindex="3" />
+                        <label class="form-label bigger_arial_caps grey_text" for="email">Email <span class="required">*</span></label><input id="email" name="email" class="text required" type="text" value="" size="30" maxlength="50" tabindex="4" />
+                        <label class="form-label bigger_arial_caps grey_text" for="url">Website</label><input id="url" name="url" class="text" type="text" value="" size="30" maxlength="50" tabindex="5" />
+                        <label class="form-label bigger_arial_caps grey_text" for="comment">Comment</label>
+                        <textarea id="comment" name="comment" class="text required" cols="45" rows="8" tabindex="6"></textarea>
+                        <input type="hidden" name="submit" value="Post Comment" /><!--span id="commentform_submit"--><input id="submit" name="submit" class="button" type="submit" value="Post Comment" tabindex="7" /><!--/span--><input type="hidden" name="comment_post_ID" value="5273" />
+                        <div class="form-option"></div>
+                    </form><!-- #commentform -->
                 </div><!-- whitebox_primary_comments -->
-            </section><!-- whitebox_primary -->
-            <section class="tab_container bluebox-primary other_posts">
+            </div><!-- whitebox_primary -->
+            <div class="tab_container bluebox-primary other_posts">
                 <div class="blue_tab tab tab108 rounded-corners">
                     <h2>Related Posts</h2>
                 </div><!-- bluebox_tab -->
@@ -93,8 +95,8 @@ Template Name:Single Blog
                     </div>
                 </div><!-- bluebox_body -->
                 <div id="bluebox_bottom"></div>
-            </section><!-- #bluebox -->
-            <section class="whitebox-secondary tab_container">
+            </div><!-- #bluebox -->
+            <div class="whitebox-secondary tab_container">
                 <div class="multiple_tabs">
                     <div class="tab rounded-corners tab108">
                         <h3><a onclick="javascript: expand('mostviewed');">Most Viewed</a></h3>
@@ -123,7 +125,7 @@ Template Name:Single Blog
                         </ul>
                     </div><!-- #whitebox_secondary_category -->
                 </div><!-- whitebox_secondary -->
-            </section><!-- whitebox-secondary -->
+            </div><!-- whitebox-secondary -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
