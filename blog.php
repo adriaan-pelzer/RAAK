@@ -145,7 +145,7 @@ Template Name: Blog
                     </div><!-- #whitebox_secondary_mostviewed -->
                     <div id="whitebox_secondary_category">
                         <ul>
-                            <li><a href="http://wewillraakyou.com/category/Inspiration/">Inspiration</a></li>
+                            <li><a href="<?php echo get_page_link(5245); ?>">Inspiration</a></li>
                             <li><a href="http://wewillraakyou.com/category/Must%20Read/">Must Read</a></li>
                             <li><a href="http://wewillraakyou.com/category/RAAKonteur/">RAAKonteur</a></li>
                             <li><a href="http://wewillraakyou.com/category/Worth%20a%20look/">Worth a look</a></li>
