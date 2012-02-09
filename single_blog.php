@@ -68,7 +68,9 @@ Template Name:Single Blog
             </div><!-- whitebox_primary -->
             <div class="tab_container bluebox-primary other_posts">
                 <div class="blue_tab tab tab108 rounded-corners">
-                    <h2>Related Posts</h2>
+                    <header>
+                        <h3>Related Posts</h3>
+                    </header>
                 </div><!-- bluebox_tab -->
                 <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
                     <div class="bluebox_content_top">
@@ -98,12 +100,14 @@ Template Name:Single Blog
             </div><!-- #bluebox -->
             <div class="whitebox-secondary tab_container">
                 <div class="multiple_tabs">
-                    <div class="tab rounded-corners tab108">
-                        <h3><a onclick="javascript: expand('mostviewed');">Most Viewed</a></h3>
-                    </div>
-                    <div class="tab rounded-corners tab108 active">
-                        <h3><a onclick="javascript: expand('category');">Category</a></h3>
-                    </div>
+                    <header>
+                        <div class="tab rounded-corners tab108">
+                            <h3><a onclick="javascript: expand('mostviewed');">Most Viewed</a></h3>
+                        </div>
+                        <div class="tab rounded-corners tab108 active">
+                            <h3><a onclick="javascript: expand('category');">Category</a></h3>
+                        </div>
+                    </header>
                 </div><!-- multiple_tabs -->
                 <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
                     <div id="whitebox_secondary_mostviewed" style="display: none">
