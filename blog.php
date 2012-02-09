@@ -146,9 +146,9 @@ Template Name: Blog
                     <div id="whitebox_secondary_category">
                         <ul>
                             <li><a href="http://wewillraakyou.com/category/Inspiration/">Inspiration</a></li>
-                            <li><a href="http://wewillraakyou.com/category/Must Read/">Must Read</a></li>
+                            <li><a href="http://wewillraakyou.com/category/Must%20Read/">Must Read</a></li>
                             <li><a href="http://wewillraakyou.com/category/RAAKonteur/">RAAKonteur</a></li>
-                            <li><a href="http://wewillraakyou.com/category/Worth a look/">Worth a look</a></li>
+                            <li><a href="http://wewillraakyou.com/category/Worth%20a%20look/">Worth a look</a></li>
                         </ul>
                     </div><!-- #whitebox_secondary_category -->
                 </div><!-- whitebox_secondary -->
