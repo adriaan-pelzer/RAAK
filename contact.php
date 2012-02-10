@@ -8,7 +8,7 @@ Template Name: Contact
 
 	<div class="container rounded-corners contact">
 		<div class="content">
-            <section class="whitebox whitebox_primary whitebox-primary box rounded-corners">
+            <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Contact</h2>
                 </header>
@@ -42,8 +42,8 @@ Template Name: Contact
                         <p id="contact_submit"><input type="submit" value="Send" class="wpcf7-submit" /><img class="ajax-loader" style="visibility: hidden;" alt="Sending ..." src="http://wewillraakyou.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" /></p>
                         <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
                 </div><!-- .whitebox_primary_content -->
-            </section><!-- whitebox_primary -->
-            <section class="bluebox bluebox_primary box rounded-corners">
+            </div><!-- whitebox_primary -->
+            <div class="bluebox bluebox_primary box rounded-corners">
                 <header>
                     <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps" id="bluebox_title">Where we are</h3><!--span id="bluebox_title_print"><a href="">Print</a></span><span class="blue"><a href="">&#9658;</a></span-->
                 </header>
@@ -53,7 +53,7 @@ Template Name: Contact
                 <div id="bluebox_map">
                     <a target="_blank" href="http://maps.google.com/maps?hl=en&q=51.539,-0.0554&ie=UTF8&z=14"><!--img id="gimg" src="http://maps.google.com/maps/api/staticmap?center=51.539,-0.0554&zoom=14&size=315x315&sensor=false" /--><img alt="map to RAAK" id="gimg" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/map.png" /></a>
                 </div>
-            </section><!-- bluebox -->
+            </div><!-- bluebox -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
