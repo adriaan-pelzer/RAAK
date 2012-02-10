@@ -82,11 +82,11 @@ Template Name: Blog Category
                     </div><!-- .whitebox_primary_footer_right -->
                 </footer><!-- .whitebox_primary_footer -->
             </div><!-- whitebox_primary -->
-            <div id="bluebox-secondary tab_container">
+            <div class="tab_container bluebox-primary">
                 <div class="blue_tab tab tab108 rounded-corners">
                     <h2>Category</h2>
                 </div><!-- blue_tab -->
-                <div id="bluebox_secondary bluebox box rounded-corners">
+                <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
                     <ul>
                         <li><a href="http://wewillraakyou.com/category/Inspiration/">Inspiration</a></li>
                         <li><a href="http://wewillraakyou.com/category/Must Read/">Must Read</a></li>

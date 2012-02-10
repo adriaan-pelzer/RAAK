@@ -671,7 +671,7 @@ margin: 25px 0 9px;
 }
 
 
-.whitebox_secondary a {
+.blog-category .blog_bluebox_primary a, .whitebox_secondary a {
     color: #666666;
 }
 
@@ -681,7 +681,7 @@ margin: 25px 0 9px;
 }
 
 
-.blog_whitebox_secondary li, .other_posts_content_one li {
+.blog-category .blog_bluebox_primary li, .blog_whitebox_secondary li, .other_posts_content_one li {
     background: url(../images/whitebox_secondary_body_content_one_list.png) no-repeat 0px 5px;
 }
 
