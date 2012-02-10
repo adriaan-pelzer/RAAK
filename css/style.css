@@ -727,7 +727,7 @@ margin: 25px 0 9px;
 }
 
 
-.whitebox_secondary ul, .other_posts ul {
+.blog-category .blog_bluebox_primary ul, .whitebox_secondary ul, .other_posts ul {
     line-height: 19px;
     margin-top: 5px;
 }
