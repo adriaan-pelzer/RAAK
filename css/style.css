@@ -676,7 +676,7 @@ margin: 25px 0 9px;
 }
 
 
-.other_posts li, .blog_whitebox_secondary li {
+.blog-category .blog_bluebox_primary li, .other_posts li, .blog_whitebox_secondary li {
     padding-left:16px;
 }
 
