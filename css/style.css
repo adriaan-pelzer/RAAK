@@ -1438,13 +1438,13 @@ p.top_margin_22px {
 
 /************** BLOG ARCHIVE ***********/
 
-.blog-archive .whitebox_primary h3 {
+/*.blog-category .whitebox_primary h3, .blog-archive .whitebox_primary h3 {
     font-size: 18px;
     line-height: 19px;
     margin: 0;
     padding: 1px 0 4px;
     letter-spacing: 1px;
-}
+}*/
 
 .blog-category .whitebox_primary h3 a,.blog-tag .whitebox_primary h3 a, .blog-archive .whitebox_primary h3 a {
     color: #00aeff;
