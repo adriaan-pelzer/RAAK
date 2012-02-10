@@ -73,14 +73,14 @@ Template Name: Blog Category
                     </div><!-- .whitebox_primary_post_attr -->
                     <hr class="solid" />
                 </div>
-                <div class="whitebox_primary_footer">
-                    <span id="whitebox_primary_footer_archive" class="whitebox_primary_footer_item"><a href="http://wewillraakyou.com/blog-archive/">All blog posts</a></span>
-                        <span id="whitebox_primary_footer_prev_arrow" class="whitebox_primary_footer_item">&#9668;</span>
-                        <span id="whitebox_primary_footer_prev_text" class="whitebox_primary_footer_item">Previous</span>
-                    <span class="seperator">|</span>
-                        <span id="whitebox_primary_footer_next_text" class="whitebox_primary_footer_item">Next</span>
-                        <span id="whitebox_primary_footer_next_arrow" class="whitebox_primary_footer_item">&#9658;</span>
-                </div><!-- .whitebox_primary_footer -->
+                <footer class="whitebox_primary_footer box_nav small_arial_caps">
+                    <a class="whitebox_primary_footer_left"  href="<?php echo get_page_link(5238); ?>">All blog posts</a>
+                    <div class="whitebox_primary_footer_right">
+                        <a onclick="javascript: previous();"><span class="arrow">&#9668;</span>Previous</a>
+                        <span class="seperator">|</span>
+                        <a class="active" onclick="javascript: next();">Next<span class="arrow">&#9658;</span></a>
+                    </div><!-- .whitebox_primary_footer_right -->
+                </footer><!-- .whitebox_primary_footer -->
             </div><!-- whitebox_primary -->
             <div id="bluebox">
                 <div id="bluebox_tab">
