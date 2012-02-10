@@ -1,10 +1,64 @@
+<?php
+require_once('Browser.php');
+
+function browser_specific_stylesheet(){
+    $browser = new Browser ();
+
+    switch ($browser->getBrowser()) {
+    case Browser::BROWSER_OPERA:
+        $stylesheet = 'style_op11.css';
+        break;
+    case Browser::BROWSER_FIREFOX:
+        if ($browser->getVersion() >= 4) {
+            $stylesheet = 'style_ff4.css';
+        } else if ($browser->getVersion() >= 3.6) {
+            $stylesheet = 'style_ff36.css';
+        } else {
+            $stylesheet = 'style_ff35.css';
+        }
+        break;
+    case Browser::BROWSER_IE:
+        if ($browser->getVersion() >= 9) {
+            $stylesheet = 'style_ie9.css';
+        } else if ($browser->getVersion() >= 8) {
+            $stylesheet = 'style_ie8.css';
+        } else {
+            $stylesheet = 'style_ie7.css';
+        }
+        break;
+    case Browser::BROWSER_SAFARI:
+        $stylesheet = 'style_sf5.css';
+        break;
+    case Browser::BROWSER_CHROME:
+        if ($browser->getVersion() >= 13) {
+            $stylesheet = 'style_ch13.css';
+        } else if ($browser->getVersion() >= 12) {
+            $stylesheet = 'style_ch12.css';
+        } else if ($browser->getVersion() >= 11) {
+            $stylesheet = 'style_ch11.css';
+        } else {
+            $stylesheet = 'style_ch10.css';
+        }
+        break;
+    default:
+        break;
+    }
+
+    if ($stylesheet) {
+        return '<link rel="stylesheet" href="'.get_bloginfo ('template_url').'/'.$stylesheet.'?ver=1.0" />';
+    } else {
+        return '<!-- '.$browser->getUserAgent().' -->';
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <title>RAAK | Digital &amp; Social Media Agency London - Putting you in touch with your crowds</title>
     <meta name="google-site-verification" content="59Ab_0-HL7eVdNQ4CqiLOeiQisQgb2Vwg8046N__ng0" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
+    <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
+    <?php echo browser_specific_stylesheet (); ?>
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
 <div id="wrapper" class="hfeed">
