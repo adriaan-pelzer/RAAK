@@ -7,12 +7,12 @@ Template Name: Blog Tag
 
     <div class="container rounded-corners blog-tag">
         <div class="content">
-            <section class="whitebox_big whitebox box big_box rounded-corners">
+            <div class="whitebox_big whitebox box big_box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Blog Archive: advertising</h2>
                 </header>
-            </section><!-- whitebox_big -->
-            <section class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
+            </div><!-- whitebox_big -->
+            <div class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
                 <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                     <h3><a href="http://wewillraakyou.com/2011/10/the-raakonteur-58-a-sad-day-for-tech-facebooks-ad-strategy-and-adobe-bursts-into-html5/">The RAAKonteur #58 - A Sad day for Tech, Facebook's ad strategy and Adobe bursts into HTML5</a></h3>
                     <hr />
@@ -21,7 +21,7 @@ Template Name: Blog Tag
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date">17 Oct 2011</span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -33,7 +33,7 @@ Template Name: Blog Tag
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date"> 8 Jul 2011</span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -45,7 +45,7 @@ Template Name: Blog Tag
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date">18 Oct 2010</span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -57,7 +57,7 @@ Template Name: Blog Tag
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date"> 7 Oct 2010</span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />3 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />3 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -69,7 +69,7 @@ Template Name: Blog Tag
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date"> 2 Sep 2010</span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -81,7 +81,7 @@ Template Name: Blog Tag
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date">15 Oct 2009</span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -93,7 +93,7 @@ Template Name: Blog Tag
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date">24 Sep 2009</span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />8 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />8 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -105,7 +105,7 @@ Template Name: Blog Tag
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date">16 Sep 2009</span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />9 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />9 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -117,7 +117,7 @@ Template Name: Blog Tag
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date"> 7 Jul 2009</span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -129,10 +129,12 @@ Template Name: Blog Tag
                         <a class="active" onclick="javascript: next();">Next<span class="arrow">&#9658;</span></a>
                     </div><!-- .whitebox_primary_footer_right -->
                 </footer><!-- .whitebox_primary_footer -->
-            </section><!-- whitebox_primary -->
-            <section class="tab_container bluebox-primary other_posts">
+            </div><!-- whitebox_primary -->
+            <div class="tab_container bluebox-primary other_posts">
                 <div class="blue_tab tab tab108 rounded-corners">
-                    <h2>Tags</h2>
+                    <header>
+                        <h2>Tags</h2>
+                    </header>
                 </div><!-- blue_tab -->
                 <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <a href='http://wewillraakyou.com/tag/jan25/' class='tag-link-760' title='1 topic' style='font-size: 8pt;'>#jan25</a>
@@ -1036,10 +1038,12 @@ Template Name: Blog Tag
 <a href='http://wewillraakyou.com/tag/zenona/' class='tag-link-779' title='1 topic' style='font-size: 8pt;'>zenona</a>
 <a href='http://wewillraakyou.com/tag/zeynep-tufekci/' class='tag-link-1049' title='2 topics' style='font-size: 9.66887417219pt;'>zeynep tufekci</a>             
                 </div><!-- bluebox_primary -->
-            </section><!-- bluebox -->
-            <section class="whitebox-secondary tab_container">
+            </div><!-- bluebox -->
+            <div class="whitebox-secondary tab_container">
                 <div class="blue_tab tab tab108 rounded-corners">
-                    <h2>Authors</h2>
+                    <header>
+                        <h2>Authors</h2>
+                    </header>
                 </div><!-- blue_tab -->
                 <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
                     <ul>
@@ -1051,7 +1055,7 @@ Template Name: Blog Tag
                         <li><a href="http://wewillraakyou.com/author/wessel/">Wessel van Rensburg</a></li>      
                     </ul>
                 </div><!-- whitebox_secondary -->
-            </section><!-- whitebox-secondary -->
-		</div><!-- #content -->
+            </div><!-- whitebox-secondary -->
+		</div><!-- content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
