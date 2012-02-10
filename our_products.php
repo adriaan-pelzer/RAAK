@@ -35,7 +35,7 @@ Template Name: Our Products
                                     <div id="post_all-products_0_picture" class="whitebox_big_category_entry_content_picture">
                                         <img alt="" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder00.png"  width="220"  height="142" />                     </div><!-- #post_0_picture -->
                                     <div id="post_all-products_0_overview" class="whitebox_big_category_entry_content_overview" style="width: 160px; height: 82px; display: none;">
-                                            Rewinder allows you to rewind your Twitter Timeline, or recorded hashtags, as if it was time-shifted TV. Works very well with ... well ... time-shifted TV.<br \><strong>Read More &raquo;</strong>
+                                        <p>Rewinder allows you to rewind your Twitter Timeline, or recorded hashtags, as if it was time-shifted TV. Works very well with ... well ... time-shifted TV.</p><p><strong>Read More &raquo;</strong></p>
                                     </div><!-- #post_0_overview -->
                                 </a>
                             </div><!-- .whitebox_big_category_entry -->
@@ -52,7 +52,7 @@ Template Name: Our Products
                                         <img alt="" src="http://wewillraakyou.com/wp-content/gallery/woos-at/woosat00.jpg"  width="220"  height="142" />
                                     </div><!-- #post_1_picture -->
                                     <div id="post_all-products_1_overview" class="whitebox_big_category_entry_content_overview" style="width: 160px; height: 82px; display: none;">
-                                        WOOS.at is an app that shows you who else is where you are, and why they might be interesting to you<br \><strong>Read More &raquo;</strong>
+                                        <p>WOOS.at is an app that shows you who else is where you are, and why they might be interesting to you</p><p><strong>Read More &raquo;</strong></p>
                                     </div><!-- #post_1_overview -->
                                 </a>
                             </div><!-- .whitebox_big_category_entry -->
