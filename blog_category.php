@@ -19,7 +19,7 @@ Template Name: Blog Category
                     <div class="whitebox_primary_post_attr">
                         <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_attr_item date">11 Jan 2012</span>
+                        <span class="whitebox_primary_post_attr_item date">11 Jan 2012</span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_post_attr -->
@@ -28,49 +28,49 @@ Template Name: Blog Category
                 <div id="whitebox_primary_post_1" class="whitebox_primary_post">
                     <h3><a href="http://wewillraakyou.com/2011/03/twitter-intents-a-simple-raak-test/">Twitter Intents - a simple RAAK Test</a></h3>
                     <hr />
-                    <div class="whitebox_primary_attr">
+                    <div class="whitebox_primary_post_attr">
                         <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_attr_item date">31 Mar 2011</span>
+                        <span class="whitebox_primary_post_attr_item date">31 Mar 2011</span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
-                    </div><!-- .whitebox_primary_attr -->
+                    </div><!-- .whitebox_primary_post_attr -->
                     <hr class="solid" />
                 </div>
                 <div id="whitebox_primary_post_2" class="whitebox_primary_post">
                     <h3><a href="http://wewillraakyou.com/2010/11/creatives-of-the-week-aaron-koblin-chris-milk/">Creatives of the Week – Aaron Koblin & Chris Milk</a></h3>
                     <hr />
-                    <div class="whitebox_primary_attr">
+                    <div class="whitebox_primary_post_attr">
                         <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_attr_item date"> 4 Nov 2010</span>
+                        <span class="whitebox_primary_post_attr_item date"> 4 Nov 2010</span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
-                    </div><!-- .whitebox_primary_attr -->
+                    </div><!-- .whitebox_primary_post_attr -->
                     <hr class="solid" />
                 </div>
                 <div id="whitebox_primary_post_3" class="whitebox_primary_post">
                     <h3><a href="http://wewillraakyou.com/2010/02/swedish-interesting-interaction-samsung-shakedown-your-hero-film/">Swedish interesting interaction: Samsung Shakedown & Your Hero film</a></h3>
                     <hr />
-                    <div class="whitebox_primary_attr">
+                    <div class="whitebox_primary_post_attr">
                         <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_attr_item date">19 Feb 2010</span>
+                        <span class="whitebox_primary_post_attr_item date">19 Feb 2010</span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />2 comments</span>
-                    </div><!-- .whitebox_primary_attr -->
+                    </div><!-- .whitebox_primary_post_attr -->
                     <hr class="solid" />
                 </div>
                 <div id="whitebox_primary_post_4" class="whitebox_primary_post">
                     <h3><a href="http://wewillraakyou.com/2010/02/camille-scherrer-implements-augmented-reality-for-books/">Camille Scherrer implements Augmented Reality for books</a></h3>
                     <hr />
-                    <div class="whitebox_primary_attr">
+                    <div class="whitebox_primary_post_attr">
                         <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_attr_item date"> 8 Feb 2010</span>
+                        <span class="whitebox_primary_post_attr_item date"> 8 Feb 2010</span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
-                    </div><!-- .whitebox_primary_attr -->
+                    </div><!-- .whitebox_primary_post_attr -->
                     <hr class="solid" />
                 </div>
                 <div class="whitebox_primary_footer">
