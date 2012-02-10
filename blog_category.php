@@ -82,39 +82,31 @@ Template Name: Blog Category
                     </div><!-- .whitebox_primary_footer_right -->
                 </footer><!-- .whitebox_primary_footer -->
             </div><!-- whitebox_primary -->
-            <div id="bluebox">
-                <div id="bluebox_tab">
-                    <div id="bluebox_tab_top"></div>
-                    <div id="bluebox_tab_body">Category</div>
-                </div><!-- #bluebox_tab -->
-                <div id="bluebox_top"></div>
-                <div id="bluebox_body">
+            <div id="bluebox-secondary tab_container">
+                <div class="blue_tab tab tab108 rounded-corners">
+                    <h2>Category</h2>
+                </div><!-- blue_tab -->
+                <div id="bluebox_secondary bluebox box rounded-corners">
                     <ul>
                         <li><a href="http://wewillraakyou.com/category/Inspiration/">Inspiration</a></li>
                         <li><a href="http://wewillraakyou.com/category/Must Read/">Must Read</a></li>
                         <li><a href="http://wewillraakyou.com/category/RAAKonteur/">RAAKonteur</a></li>
                         <li><a href="http://wewillraakyou.com/category/Worth a look/">Worth a look</a></li>
                     </ul>
-                </div><!-- bluebox_body -->
-                <div id="bluebox_bottom"></div>
-            </div><!-- #bluebox -->
-            <div id="whitebox_secondary">
-                <div id="whitebox_secondary_tabs">
-                    <div id="whitebox_secondary_tabs_mostviewed" class="whitebox_secondary_tab active">
-                        <div class="whitebox_secondary_tab_top"></div>
-                        <div class="whitebox_secondary_tab_body">Authors</div>
-                    </div>
-                </div><!-- #whitebox_secondary_tabs -->
-                <div id="whitebox_secondary_top"></div>
-                <div id="whitebox_secondary_body">
+                </div><!-- bluebox_secondary -->
+            </div><!-- bluebox-secondary -->
+            <div class="whitebox-secondary tab_container">
+                <div class="blue_tab tab tab108 rounded-corners">
+                    <h2>Authors</h2>
+                </div><!-- blue_tab -->
+                <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
                     <ul>
                         <li><a href="http://wewillraakyou.com/author/adriaan/">Adriaan Pelzer</a></li>      
                         <li><a href="http://wewillraakyou.com/author/gerrie/">Gerrie Smits</a></li>      
                         <li><a href="http://wewillraakyou.com/author/wessel/">Wessel van Rensburg</a></li>      
                     </ul>
-                </div><!-- #whitebox_secondary_body -->
-                <div id="whitebox_secondary_bottom"></div>
-            </div><!-- #whitebox_secondary -->
-		</div><!-- #content -->
+                </div><!-- whitebox_secondary -->
+            </div><!-- whitebox-secondary -->
+		</div><!-- content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
