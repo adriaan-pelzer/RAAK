@@ -7,12 +7,12 @@ Template Name: Blog Archive
 
     <div class="container rounded-corners blog-archive">
         <div class="content">
-            <section class="whitebox_big whitebox box big_box rounded-corners">
+            <div class="whitebox_big whitebox box big_box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Blog Archive</h2>
                 </header>
-            </section><!-- whitebox_big -->
-            <section class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
+            </div><!-- whitebox_big -->
+            <div class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
                 <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                     <h3><a href="http://wewillraakyou.com/2012/01/5332/"></a></h3>
                     <hr />
@@ -281,10 +281,12 @@ Template Name: Blog Archive
                         <a class="active" onclick="javascript: next();">Next<span class="arrow">&#9658;</span></a>
                     </div><!-- .whitebox_primary_footer_right -->
                 </footer><!-- .whitebox_primary_footer -->
-            </section><!-- whitebox_primary -->
-            <section class="tab_container bluebox-primary other_posts">
+            </div><!-- whitebox_primary -->
+            <div class="tab_container bluebox-primary other_posts">
                 <div class="blue_tab tab tab108 rounded-corners">
-                    <h2>Tags</h2>
+                    <header>
+                        <h2>Tags</h2>
+                    </header>
                 </div><!-- blue_tab -->
                 <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <a href='<?php echo get_page_link(5243); ?>' class='tag-link-14' title='9 topics' style='font-size: 10.9902912621pt;'>advertising</a>
@@ -348,10 +350,12 @@ Template Name: Blog Archive
 <a href='http://wewillraakyou.com/tag/wordpress/' class='tag-link-315' title='10 topics' style='font-size: 11.5339805825pt;'>wordpress</a>
 <a href='http://wewillraakyou.com/tag/youtube/' class='tag-link-376' title='6 topics' style='font-size: 8.95145631068pt;'>youtube</a>                
                 </div><!-- bluebox_primary -->
-            </section><!-- bluebox -->
-            <section class="whitebox-secondary tab_container">
+            </div><!-- bluebox -->
+            <div class="whitebox-secondary tab_container">
                 <div class="blue_tab tab tab108 rounded-corners">
-                    <h2>Authors</h2>
+                    <header>
+                        <h2>Authors</h2>
+                    </header>
                 </div><!-- blue_tab -->
                 <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
                     <ul>
@@ -363,7 +367,7 @@ Template Name: Blog Archive
                         <li><a href="http://wewillraakyou.com/author/wessel/">Wessel van Rensburg</a></li>      
                     </ul>
                 </div><!-- whitebox_secondary -->
-            </section><!-- whitebox-secondary -->
+            </div><!-- whitebox-secondary -->
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
