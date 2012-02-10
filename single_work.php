@@ -50,7 +50,7 @@ Template Name:Single Work
             </div><!-- whitebox_primary -->
             <div  class="bluebox bluebox_primary box bluebox-primary rounded-corners bluebox_top_margin">
                 <div class="bluebox_bigpic">
-                    <img width="315px" height="203px" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker2.jpg">
+                    <img width="315" height="203" alt="tedbaker2" src="http://wewillraakyou.com/wp-content/gallery/ruttingseason/tedbaker2.jpg" />
                 </div>
                 <hr class="solid blue_hr" />
                 <div class="bluebox_thumbpic">
