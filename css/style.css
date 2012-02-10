@@ -1197,7 +1197,7 @@ h3.expanded_letter {
 
 .ngg-gallery-thumbnail-box {
     display: inline-block;
-    margin-left: 9px;
+    margin-left: 5px;
 }
 
 a.page-numbers, .ngg-navigation span {
@@ -1206,7 +1206,7 @@ a.page-numbers, .ngg-navigation span {
 
 .ngg-galleryoverview {
     margin-top: 8px!important;
-    margin-left: -9px;
+    margin-left: -5px;
     width: 328px!important;
 }
 
