@@ -22,7 +22,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">31 Jan 2012</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -35,7 +35,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">27 Jan 2012</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -48,7 +48,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">27 Jan 2012</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -61,7 +61,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">24 Jan 2012</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -74,7 +74,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">17 Jan 2012</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -87,7 +87,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">13 Jan 2012</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />6 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />6 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -100,7 +100,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">11 Jan 2012</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -113,7 +113,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">19 Dec 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />2 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />2 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -126,7 +126,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date"> 5 Dec 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -139,7 +139,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">28 Nov 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -152,7 +152,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">21 Nov 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -165,7 +165,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">15 Nov 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -178,7 +178,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date"> 8 Nov 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -191,7 +191,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">31 Oct 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -204,7 +204,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">22 Oct 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -217,7 +217,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">18 Oct 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />1 comment</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -230,7 +230,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">17 Oct 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -243,7 +243,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">26 Sep 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -256,7 +256,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">19 Sep 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>
@@ -269,7 +269,7 @@ Template Name: Blog Archive
                         <span class="whitebox_primary_post_attr_item date">16 Sep 2011</span>
                         <span class="seperator">|</span>
                         
-                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />2 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />2 comments</span>
                     </div><!-- .whitebox_primary_attr -->
                     <hr class="solid" />
                 </div>

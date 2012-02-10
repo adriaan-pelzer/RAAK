@@ -11,16 +11,16 @@
         <h1>RAAK</h1>
         <a id="title" href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
             <span id="logo_letter_r1" class="logo_letter">
-                <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/r.jpeg" />
+                <img alt="logo r" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/r.jpeg" />
             </span>
             <span id="logo_letter_a2" class="logo_letter">
-                <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/a1.jpeg" />
+                <img alt="logo a" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/a1.jpeg" />
             </span>
             <span id="logo_letter_a3" class="logo_letter">
-                <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/a2.jpeg" />
+                <img alt="logo a" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/a2.jpeg" />
             </span>
             <span id="logo_letter_k4" class="logo_letter">
-                <img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/k.jpeg" />
+                <img alt="logo k" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/k.jpeg" />
             </span>
             </a>
         <div id="blog-description">Putting you in touch with your crowds</div>
