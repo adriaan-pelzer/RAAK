@@ -3,6 +3,7 @@
 <head>
     <title>RAAK | Digital &amp; Social Media Agency London - Putting you in touch with your crowds</title>
     <meta name="google-site-verification" content="59Ab_0-HL7eVdNQ4CqiLOeiQisQgb2Vwg8046N__ng0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
