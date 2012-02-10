@@ -80,7 +80,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     </p>
                 </blockquote>
                 <hr/>
-                <h3 class="din-schrift blue_20">For inspiration <img alt="smiley" src='http://wewillraakyou.com/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' />  </h3>
+                <h3 class="din-schrift blue_20">For inspiration <img src='http://wewillraakyou.com/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' />  </h3>
                 <p>
                     <img alt="temporary vidio reprasentation" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/logo_gap_film.jpg" />
                 </p>
