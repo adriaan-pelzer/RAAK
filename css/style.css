@@ -1280,6 +1280,7 @@ p.top_margin_22px {
 .contact form.wpcf7-form span {
     left: 139px;
     top: -23px;
+    position: relative;
 }
 
 #bluebox_map {
