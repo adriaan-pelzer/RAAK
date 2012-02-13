@@ -1649,6 +1649,7 @@ font-size: 9px!important;
 
 .twtr-ft span {
     float: none!important;
+    text-align:right;
 }
 
 .twtr-ft img {
@@ -1674,6 +1675,14 @@ padding-top: 15px;
     border-bottom: 1px dotted #ddd;
     overflow: hidden;
     zoom: 1;
+}
+
+.twtr-tweet-text em { /***** this is normally in twitter's widget.css *********/
+    display: block;
+}
+
+.twtr-widget .twtr-tweet:last-child { /***** this is normally in twitter's widget.css *********/
+    border-bottom-width: 0;
 }
 
 /*******************footer ******************/
