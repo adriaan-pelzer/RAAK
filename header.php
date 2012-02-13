@@ -59,6 +59,9 @@ function browser_specific_stylesheet(){
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
     <?php echo browser_specific_stylesheet (); ?>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
 <div class="wrapper hfeed">
