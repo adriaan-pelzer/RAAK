@@ -161,7 +161,7 @@ function mce_success_cb(resp){
                 <div id="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
                 <div id="twitter_body" class="rounded-corners">
                     <div id="twitter_follow"><a href="http://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a></div>
-                    <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+                    <!-- script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
                     <script src="http://widgets.twimg.com/j/2/widget.js"></script>
                     <script>
     new TWTR.Widget({
@@ -192,88 +192,89 @@ function mce_success_cb(resp){
                         behavior: 'all'
                 }
     }).render().setUser('RAAKonteurs').start();
-                    </script>
-                </div>
-                <div class="twtr-widget twtr-widget-profile" id="twtr-widget-1"><div class="twtr-doc" style="width: 200px;">
-                    <div class="twtr-hd">
-                        <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs" class="twtr-profile-img-anchor"><img alt="profile" class="twtr-profile-img" src="http://a1.twimg.com/profile_images/1247934466/R-futuro-small_normal.png" /></a>
-                        <h3>RAAK Social Media</h3>
-                        <h4><a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs">RAAKonteurs</a></h4>
-                    </div>
-                    <div class="twtr-bd">
-                        <div class="twtr-timeline" style="height: auto;">
-                            <div class="twtr-tweets">
-                                <div class="twtr-reference-tweet"></div>
-                                <div id="tweet-id-4" class="twtr-tweet">
-                                    <div class="twtr-tweet-wrap">
-                                        <div class="twtr-avatar">
-                                            <div class="twtr-img">
-                                                <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs"><img alt="RAAKonteurs profile" src="http://a1.twimg.com/profile_images/1247934466/R-futuro-small_normal.png"></a>
+                    </script -->
+                    <div class="twtr-widget twtr-widget-profile" id="twtr-widget-1">
+                        <div class="twtr-doc" style="width: 200px;">
+                            <div class="twtr-hd">
+                                <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs" class="twtr-profile-img-anchor"><img alt="profile" class="twtr-profile-img" src="http://a1.twimg.com/profile_images/1247934466/R-futuro-small_normal.png" /></a>
+                                <h3>RAAK Social Media</h3>
+                                <h4><a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs">RAAKonteurs</a></h4>
+                            </div>
+                            <div class="twtr-bd">
+                                <div class="twtr-timeline" style="height: auto;">
+                                    <div class="twtr-tweets">
+                                        <div class="twtr-reference-tweet"></div>
+                                        <div id="tweet-id-4" class="twtr-tweet">
+                                            <div class="twtr-tweet-wrap">
+                                                <div class="twtr-avatar">
+                                                    <div class="twtr-img">
+                                                        <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs"><img alt="RAAKonteurs profile" src="http://a1.twimg.com/profile_images/1247934466/R-futuro-small_normal.png"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="twtr-tweet-text">
+                                                    <p>
+                                                        <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs" class="twtr-user">RAAKonteurs</a> Which is less expensive: Amazon or self-hosted? — Tech News and Analysis <a href="http://t.co/DtI7P5Ud" target="_blank" urlentities="[object Object]" rel="nofollow">bit.ly/yBIVxd</a> cc <a class="tweet-url username" data-screen-name="adriaan_pelzer" href="http://twitter.com/adriaan_pelzer" target="_blank">@adriaan_pelzer</a><em><a target="_blank" class="twtr-timestamp" time="Sun Feb 12 16:15:05 +0000 2012" href="http://twitter.com/RAAKonteurs/status/168729847550574593">16 hours ago</a> · <a target="_blank" class="twtr-reply" href="http://twitter.com/intent/tweet?in_reply_to=168729847550574593">reply</a> · <a target="_blank" class="twtr-rt" href="http://twitter.com/intent/retweet?tweet_id=168729847550574593">retweet</a> · <a target="_blank" class="twtr-fav" href="http://twitter.com/intent/favorite?tweet_id=168729847550574593">favorite</a></em>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="twtr-tweet-text">
-                                            <p>
-                                                <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs" class="twtr-user">RAAKonteurs</a> Which is less expensive: Amazon or self-hosted? — Tech News and Analysis <a href="http://t.co/DtI7P5Ud" target="_blank" urlentities="[object Object]" rel="nofollow">bit.ly/yBIVxd</a> cc <a class="tweet-url username" data-screen-name="adriaan_pelzer" href="http://twitter.com/adriaan_pelzer" target="_blank">@adriaan_pelzer</a><em><a target="_blank" class="twtr-timestamp" time="Sun Feb 12 16:15:05 +0000 2012" href="http://twitter.com/RAAKonteurs/status/168729847550574593">16 hours ago</a> · <a target="_blank" class="twtr-reply" href="http://twitter.com/intent/tweet?in_reply_to=168729847550574593">reply</a> · <a target="_blank" class="twtr-rt" href="http://twitter.com/intent/retweet?tweet_id=168729847550574593">retweet</a> · <a target="_blank" class="twtr-fav" href="http://twitter.com/intent/favorite?tweet_id=168729847550574593">favorite</a></em>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="tweet-id-3" class="twtr-tweet">
-                                    <div class="twtr-tweet-wrap">
-                                        <div class="twtr-avatar">
-                                            <div class="twtr-img">
-                                                <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs"><img alt="RAAKonteurs profile" src="http://a1.twimg.com/profile_images/1247934466/R-futuro-small_normal.png"></a>
+                                        <div id="tweet-id-3" class="twtr-tweet">
+                                            <div class="twtr-tweet-wrap">
+                                                <div class="twtr-avatar">
+                                                    <div class="twtr-img">
+                                                        <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs"><img alt="RAAKonteurs profile" src="http://a1.twimg.com/profile_images/1247934466/R-futuro-small_normal.png"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="twtr-tweet-text">
+                                                    <p>
+                                                        <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs" class="twtr-user">RAAKonteurs</a> Here Are The 17 Radical Ideas From Google's Top Genius Conference That Could Change The World <a href="http://t.co/VVUBSvzO" target="_blank" urlentities="[object Object]" rel="nofollow">read.bi/A8LZvA</a><em><a target="_blank" class="twtr-timestamp" time="Sun Feb 12 16:00:42 +0000 2012" href="http://twitter.com/RAAKonteurs/status/168726230248591361">16 hours ago</a> · <a target="_blank" class="twtr-reply" href="http://twitter.com/intent/tweet?in_reply_to=168726230248591361">reply</a> · <a target="_blank" class="twtr-rt" href="http://twitter.com/intent/retweet?tweet_id=168726230248591361">retweet</a> · <a target="_blank" class="twtr-fav" href="http://twitter.com/intent/favorite?tweet_id=168726230248591361">favorite</a></em>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="twtr-tweet-text">
-                                            <p>
-                                                <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs" class="twtr-user">RAAKonteurs</a> Here Are The 17 Radical Ideas From Google's Top Genius Conference That Could Change The World <a href="http://t.co/VVUBSvzO" target="_blank" urlentities="[object Object]" rel="nofollow">read.bi/A8LZvA</a><em><a target="_blank" class="twtr-timestamp" time="Sun Feb 12 16:00:42 +0000 2012" href="http://twitter.com/RAAKonteurs/status/168726230248591361">16 hours ago</a> · <a target="_blank" class="twtr-reply" href="http://twitter.com/intent/tweet?in_reply_to=168726230248591361">reply</a> · <a target="_blank" class="twtr-rt" href="http://twitter.com/intent/retweet?tweet_id=168726230248591361">retweet</a> · <a target="_blank" class="twtr-fav" href="http://twitter.com/intent/favorite?tweet_id=168726230248591361">favorite</a></em>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="tweet-id-2" class="twtr-tweet">
-                                    <div class="twtr-tweet-wrap">
-                                        <div class="twtr-avatar">
-                                            <div class="twtr-img">
-                                                <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs"><img alt="RAAKonteurs profile" src="http://a1.twimg.com/profile_images/1247934466/R-futuro-small_normal.png"></a>
+                                        <div id="tweet-id-2" class="twtr-tweet">
+                                            <div class="twtr-tweet-wrap">
+                                                <div class="twtr-avatar">
+                                                    <div class="twtr-img">
+                                                        <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs"><img alt="RAAKonteurs profile" src="http://a1.twimg.com/profile_images/1247934466/R-futuro-small_normal.png"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="twtr-tweet-text">
+                                                    <p>
+                                                        <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs" class="twtr-user">RAAKonteurs</a> Jonathan Franzen warns ebooks are corroding values - <a href="http://t.co/m7SVhPve" target="_blank" urlentities="[object Object],[object Object]" rel="nofollow">guardian.co.uk</a> <a href="http://t.co/g4xNX5E9" target="_blank" urlentities="[object Object],[object Object]" rel="nofollow">bit.ly/xQu2Uw</a> Corroding some creating others<em><a target="_blank" class="twtr-timestamp" time="Sun Feb 12 14:36:00 +0000 2012" href="http://twitter.com/RAAKonteurs/status/168704913214423041">17 hours ago</a> · <a target="_blank" class="twtr-reply" href="http://twitter.com/intent/tweet?in_reply_to=168704913214423041">reply</a> · <a target="_blank" class="twtr-rt" href="http://twitter.com/intent/retweet?tweet_id=168704913214423041">retweet</a> · <a target="_blank" class="twtr-fav" href="http://twitter.com/intent/favorite?tweet_id=168704913214423041">favorite</a></em>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="twtr-tweet-text">
-                                            <p>
-                                                <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs" class="twtr-user">RAAKonteurs</a> Jonathan Franzen warns ebooks are corroding values - <a href="http://t.co/m7SVhPve" target="_blank" urlentities="[object Object],[object Object]" rel="nofollow">guardian.co.uk</a> <a href="http://t.co/g4xNX5E9" target="_blank" urlentities="[object Object],[object Object]" rel="nofollow">bit.ly/xQu2Uw</a> Corroding some creating others<em><a target="_blank" class="twtr-timestamp" time="Sun Feb 12 14:36:00 +0000 2012" href="http://twitter.com/RAAKonteurs/status/168704913214423041">17 hours ago</a> · <a target="_blank" class="twtr-reply" href="http://twitter.com/intent/tweet?in_reply_to=168704913214423041">reply</a> · <a target="_blank" class="twtr-rt" href="http://twitter.com/intent/retweet?tweet_id=168704913214423041">retweet</a> · <a target="_blank" class="twtr-fav" href="http://twitter.com/intent/favorite?tweet_id=168704913214423041">favorite</a></em>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="tweet-id-1" class="twtr-tweet">
-                                    <div class="twtr-tweet-wrap">
-                                        <div class="twtr-avatar">
-                                            <div class="twtr-img">
-                                                <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs"><img alt="RAAKonteurs profile" src="http://a1.twimg.com/profile_images/1247934466/R-futuro-small_normal.png"></a>
+                                        <div id="tweet-id-1" class="twtr-tweet">
+                                            <div class="twtr-tweet-wrap">
+                                                <div class="twtr-avatar">
+                                                    <div class="twtr-img">
+                                                        <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs"><img alt="RAAKonteurs profile" src="http://a1.twimg.com/profile_images/1247934466/R-futuro-small_normal.png"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="twtr-tweet-text">
+                                                    <p><a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs" class="twtr-user">RAAKonteurs</a> DEAR TWITTER: Don't Mean To Be Rude, But Maybe It's Time To Hire A Full-Time Product Guy? <a href="http://t.co/iWaeWoKu" target="_blank" urlentities="[object Object]" rel="nofollow">read.bi/z3inKa</a>
+                                                        <em><a target="_blank" class="twtr-timestamp" time="Sun Feb 12 12:31:02 +0000 2012" href="http://twitter.com/RAAKonteurs/status/168673466592137216">19 hours ago</a> · <a target="_blank" class="twtr-reply" href="http://twitter.com/intent/tweet?in_reply_to=168673466592137216">reply</a> · <a target="_blank" class="twtr-rt" href="http://twitter.com/intent/retweet?tweet_id=168673466592137216">retweet</a> · <a target="_blank" class="twtr-fav" href="http://twitter.com/intent/favorite?tweet_id=168673466592137216">favorite</a>
+                                                        </em>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="twtr-tweet-text">
-                                            <p><a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs" class="twtr-user">RAAKonteurs</a> DEAR TWITTER: Don't Mean To Be Rude, But Maybe It's Time To Hire A Full-Time Product Guy? <a href="http://t.co/iWaeWoKu" target="_blank" urlentities="[object Object]" rel="nofollow">read.bi/z3inKa</a>
-                                                <em><a target="_blank" class="twtr-timestamp" time="Sun Feb 12 12:31:02 +0000 2012" href="http://twitter.com/RAAKonteurs/status/168673466592137216">19 hours ago</a> · <a target="_blank" class="twtr-reply" href="http://twitter.com/intent/tweet?in_reply_to=168673466592137216">reply</a> · <a target="_blank" class="twtr-rt" href="http://twitter.com/intent/retweet?tweet_id=168673466592137216">retweet</a> · <a target="_blank" class="twtr-fav" href="http://twitter.com/intent/favorite?tweet_id=168673466592137216">favorite</a>
-                                                </em>
-                                            </p>
-                                        </div>
+                                        <!-- tweets show here -->
                                     </div>
                                 </div>
-                                <!-- tweets show here -->
+                            </div>
+                            <div class="twtr-ft">
+                                <div>
+                                    <a target="_blank" href="http://twitter.com"><img alt="" src="http://widgets.twimg.com/i/widget-logo.png"></a>
+                                    <span>
+                                        <a target="_blank" class="twtr-join-conv" style="color:#000000" href="http://twitter.com/RAAKonteurs">Join the conversation</a>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="twtr-ft">
-                        <div>
-                            <a target="_blank" href="http://twitter.com"><img alt="" src="http://widgets.twimg.com/i/widget-logo.png"></a>
-                            <span>
-                                <a target="_blank" class="twtr-join-conv" style="color:#000000" href="http://twitter.com/RAAKonteurs">Join the conversation</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </aside><!-- twitter -->
         </div><!-- .sidebar -->
