@@ -386,14 +386,14 @@ address a {
     overflow: hidden;
 }
 
-.skip-link, #header h1 {
+.skip-link, .site_header h1 {
     position: absolute;
     left: -9999px;
     top: -9999px;
 }
 
 
-#header a#title {
+.site_header a#title {
     display: block;
     height: 42px;
     width: 192px;
@@ -422,7 +422,7 @@ address a {
     padding: 13px 0 0 20px;
 }
 
-#header nav {
+.site_header nav {
     float: right;
     font-size: 11px;
     border-top: 2px solid #00aeff;
