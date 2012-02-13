@@ -14,16 +14,16 @@
     </footer><!-- #footer -->
 </div><!-- #wrapper .hfeed -->
 
-<script type='text/javascript' src='http://wewillraakyou.com/wp-includes/js/jquery/jquery.form.js?ver=2.02m'></script>
+<!--script type='text/javascript' src='http://wewillraakyou.com/wp-includes/js/jquery/jquery.form.js?ver=2.02m'></script>
 <script type='text/javascript' src='http://wewillraakyou.com/wp-content/plugins/contact-form-7/scripts.js?ver=2.3.1'></script>
-<!--stats_footer_test--><script src="http://stats.wordpress.com/e-201149.js" type="text/javascript"></script>
+<stats_footer_test ><script src="http://stats.wordpress.com/e-201149.js" type="text/javascript"></script>
 <script type="text/javascript">
 st_go({blog:'14895691',v:'ext',post:'4'});
 var load_cmc = function(){linktracker_init(14895691,4,2);};
 if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
 else load_cmc();
 </script>
-<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script -->
 </body>
 </html>
 
