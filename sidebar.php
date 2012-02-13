@@ -47,7 +47,7 @@
                             <a href="#" id="mc_embed_close" class="mc_embed_close" style="display: none;">Close</a>
                         </form>
                     </div>
-                    <script type="text/javascript">
+                    <!--script type="text/javascript">
 var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';var err_style = '';
 try{
     err_style = mc_custom_error_style;
@@ -153,7 +153,7 @@ function mce_success_cb(resp){
         }
     }
 }
-                    </script>
+                    </script -->
                     <!--End mc_embed_signup-->
                 </div><!-- mailchimp_body -->
             </aside><!-- mailchimp -->
@@ -161,7 +161,7 @@ function mce_success_cb(resp){
                 <div id="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
                 <div id="twitter_body" class="rounded-corners">
                     <div id="twitter_follow"><a href="http://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a></div>
-                    <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+                    <!--script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
                     <script src="http://widgets.twimg.com/j/2/widget.js"></script>
                     <script>
     new TWTR.Widget({
@@ -192,7 +192,7 @@ function mce_success_cb(resp){
                         behavior: 'all'
                 }
     }).render().setUser('RAAKonteurs').start();
-                    </script>
+                    </script -->
                 </div>
             </aside><!-- twitter -->
         </div><!-- .sidebar -->
