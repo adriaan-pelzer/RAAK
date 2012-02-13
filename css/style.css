@@ -551,7 +551,7 @@ address a {
     float: right;
 }
 
-#bluebox_nav {
+.bluebox_nav {
     margin-top: 7px;
 }
 
@@ -1707,4 +1707,13 @@ footer a {
 
 footer .seperator {
     color: #bebebe;
+}
+
+
+/****************  XB **********************/
+
+/*************** ie 8 *****************/
+
+.home .bluebox_nav {
+    width: 320px;
 }
