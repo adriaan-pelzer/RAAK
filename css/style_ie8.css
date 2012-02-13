@@ -3,3 +3,17 @@
  src: url(../fonts/DINMittelschrift.eot) 
 }
 
+
+.rounded-corners {
+    behavior: url(PIE.htc);
+}
+
+
+.rounded-corners_bottom {
+    border-radius: 0 0 10px 10px;
+}
+
+.rounded-corners_top_bottom_right{
+    border-radius: 10px 10px 10px 0;
+}
+
