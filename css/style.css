@@ -1072,6 +1072,7 @@ input[name="upload_submit"] {
     border-bottom: 2px solid #00AEEF;
     width: 190px;
     margin: 0 auto 10px;
+    height: 40px\9; /* targetting  ie 8 only */
 }
 
 #whitebox_secondary_preview_letters img {
