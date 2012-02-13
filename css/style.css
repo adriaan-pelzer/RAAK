@@ -1723,3 +1723,7 @@ footer .seperator {
 .home .bluebox_nav {
     width: 324px;
 }
+
+#mc-embedded-subscribe-container {
+    margin-top: 25px;
+}
