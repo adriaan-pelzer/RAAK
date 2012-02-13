@@ -68,9 +68,15 @@ a {
 }
 
 @font-face {
+	font-family: din_schrift;
+	src: url(../fonts/DINMittelschrift.eot?#iefix) format('embedded-opentype'), 
+	     url(../fonts/DINMittelschrift.ttf)  format('truetype');
+	}
+
+/*@font-face {
  font-family: din_schrift;
  src: url(../fonts/DINMittelschrift.ttf) 
-}
+}*/
 
 body {
     background: #8c8c8c;
