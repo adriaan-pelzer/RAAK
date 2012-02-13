@@ -351,8 +351,8 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                                 <a class="smaller_arial_caps" >Next &#9658;</a>
                             </div>
                         </section><!-- whitebox_secondary_upload -->
-                        <section id="whitebox_secondary_submit"> 
-                            <ul class="smaller_arial_caps" style="display: none;">
+                        <section id="whitebox_secondary_submit" style="display: none;"> 
+                            <ul class="smaller_arial_caps">
                                 <li id="whitebox_secondary_submit_name">
                                     <label for="upload_name">Your Name</label>
                                     <input id="upload_name" name="upload_name" type="text" maxlength="40" />

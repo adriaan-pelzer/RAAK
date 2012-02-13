@@ -1077,7 +1077,7 @@ input[name="upload_submit"] {
 #whitebox_secondary_preview_letters img {
     height: 42px;
     width: auto;
-    margin: 0 5px -4px;
+    margin: 0 4px -4px;
 }
 
 #whitebox_secondary_finish .big_and_bold {
@@ -1520,7 +1520,7 @@ p.top_margin_22px {
     text-align: left!important;
     padding: 0!important;
     line-height: 17px;
-    left: 0!important;
+    left: 0!important;  /* for IE 8 */
 }
 
 /********* end reset ***********/
