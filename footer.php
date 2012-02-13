@@ -11,8 +11,8 @@
         <a rel="nofollow" href="http://www.facebook.com/pages/RAAK/167105176615">RAAK on Facebook</a>
         <!--span class="footer_seperator">|</span>
         <span class="footer_link"><a href="http://www.flickr.com">RAAK on Flickr</a></span-->
-    </footer><!-- #footer -->
-</div><!-- #wrapper .hfeed -->
+    </footer><!-- footer -->
+</div><!-- .wrapper .hfeed -->
 
 <!--script type='text/javascript' src='http://wewillraakyou.com/wp-includes/js/jquery/jquery.form.js?ver=2.02m'></script>
 <script type='text/javascript' src='http://wewillraakyou.com/wp-content/plugins/contact-form-7/scripts.js?ver=2.3.1'></script>

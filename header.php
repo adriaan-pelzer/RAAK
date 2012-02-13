@@ -61,7 +61,7 @@ function browser_specific_stylesheet(){
     <?php echo browser_specific_stylesheet (); ?>
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
-<div id="wrapper" class="hfeed">
+<div class="wrapper hfeed">
     <header class="rounded-corners din-schrift site_header">
         <h1>RAAK</h1>
         <a id="title" href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">

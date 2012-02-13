@@ -160,7 +160,9 @@ function mce_success_cb(resp){
             <aside id="twitter">
                 <div id="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
                 <div id="twitter_body" class="rounded-corners">
-                    <div id="twitter_follow"><a href="http://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a></div>
+                    <div id="twitter_follow">
+                        <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.1326407570.html#_=1329124091962&amp;_version=2&amp;enableNewSizing=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=RAAKonteurs&amp;show_count=false&amp;size=m" class="twitter-follow-button" style="height: 20px; width: 300px; " title="Twitter Follow Button"></iframe>
+                    </div>
                     <!-- script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
                     <script src="http://widgets.twimg.com/j/2/widget.js"></script>
                     <script>
