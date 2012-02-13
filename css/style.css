@@ -1087,7 +1087,8 @@ input[name="upload_submit"] {
 }
 
 #whitebox_secondary_finish button {
-margin-top: 10px;
+    margin: 10px auto 0;
+    width: 137px;
 }
 
 /************** LOGO ARCHIVE *************/
