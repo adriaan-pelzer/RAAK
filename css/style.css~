@@ -1156,7 +1156,6 @@ h3.expanded_letter {
 
 .whitebox_big_category_entry_content_overview p {
     margin-top: 0;
-    line-height: 16px;
 }
 
 /************** SINGLE PRODUCT ***********/
