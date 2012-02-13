@@ -1,7 +1,7 @@
         <div class="sidebar">
             <aside id="mailchimp">
                 <div id="mailchimp_top"></div>
-                <div id="mailchimp_body" class="rounded-corners box">
+                <div id="mailchimp_body" class="rounded-corners_bottom box">
 <!-- Begin MailChimp Signup Form -->
 <!--[if IE]>
             <style type="text/css" media="screen">
@@ -159,7 +159,7 @@ function mce_success_cb(resp){
             </aside><!-- mailchimp -->
             <aside id="twitter">
                 <div id="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
-                <div id="twitter_body" class="rounded-corners">
+                <div id="twitter_body" class="rounded-corners_bottom">
                     <div id="twitter_follow">
                         <img class="twitter-follow-button" style="height: 20px; width: 145px;" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/follow_button.jpg" alt="Twitter Follow Button" />
                     </div>

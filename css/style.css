@@ -69,9 +69,8 @@ a {
 
 @font-face {
 	font-family: din_schrift;
-	src: url(../fonts/DINMittelschrift.eot?#iefix) format('embedded-opentype'), 
-	     url(../fonts/DINMittelschrift.ttf)  format('truetype');
-	}
+	src: url(../fonts/DINMittelschrift.eot?#iefix) format('embedded-opentype'), url(../fonts/DINMittelschrift.ttf)  format('truetype');
+}
 
 /*@font-face {
  font-family: din_schrift;
@@ -521,7 +520,7 @@ address a {
 #read_the_logo_story {
     color: #ffffff;
     margin: 10px 0 9px;
-    display-block;
+    display: block;
     line-height: 14px;
 }
 
@@ -1031,7 +1030,7 @@ hr.lightblue_hr {
     height: 23px;
     vertical-align: top;
     opacity: 0;
-    filter: alpha(opacity=0);
+    filter: alpha(opacity = 0);
 }
 
     #whitebox_secondary_submit_file label {
