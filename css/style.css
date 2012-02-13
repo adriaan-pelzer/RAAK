@@ -380,7 +380,7 @@ address a {
 
 /************** header ***************/
 
-#header {
+.site_header {
     background: #ffffff;
     padding: 35px 0 11px;
     overflow: hidden;
