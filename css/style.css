@@ -484,14 +484,14 @@ address a {
 
 .point_left {
     border-bottom: 9px solid #ef8dd9;
-    border-left: 10px solid rgba(0,0,0,0);
+    border-left: 10px solid /*rgba(0,0,0,0)*/ transparent;
     margin-right: -5px;
     display: inline-block;
 }
 
 .point_right {
     border-bottom: 9px solid #ef8dd9;
-    border-right: 10px solid rgba(0,0,0,0);
+    border-right: 10px solid /*rgba(0,0,0,0)*/ transparent;
     display: inline-block;
 }
 
