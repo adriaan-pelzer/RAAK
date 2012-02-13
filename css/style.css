@@ -1665,6 +1665,19 @@ height: 15px;
 padding-top: 15px;
 }
 
+
+#twtr-widget-1 .twtr-avatar {  /***** this is normally in twitter's widget.css *********/
+    display: none;
+}
+
+.twtr-widget .twtr-tweet { /***** this is normally in twitter's widget.css *********/ 
+    border-bottom: 1px dotted #ddd;
+    overflow: hidden;
+    zoom: 1;
+}
+
+/*******************footer ******************/
+
 footer {
     font: 11px arial, sans-serif;
     text-transform: uppercase;
