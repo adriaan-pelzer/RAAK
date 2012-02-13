@@ -1727,3 +1727,7 @@ footer .seperator {
 #mc-embedded-subscribe-container {
     margin-top: 25px;
 }
+
+#tweet-id-1 { /************* will this work? check on dynamic site **********/
+    border-bottom-width: 0;
+}
