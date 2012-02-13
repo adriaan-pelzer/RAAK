@@ -14,9 +14,9 @@
                 .mc-field-group {overflow:visible;}
             </style>
 <![endif]-->
-                    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+                    <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
                     <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.validate.js"></script>
-                    <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.form.js"></script>
+                    <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.form.js"></script-->
                     <div id="mc_embed_signup" style="font-family: 'helvetica neue', helvetica, arial, sans-serif;">
                         <form action="http://wewillraakyou.us1.list-manage.com/subscribe/post?u=898b1ec2bd8b50ddb10f7dfd0&amp;id=1c536f46e3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="font: normal 100% 'helvetica neue';font-size: 12px;">
                             <fieldset style="-moz-border-radius: 4px;border-radius: 4px;-webkit-border-radius: 4px;border: 0px solid #000000;padding-top: 1.5em;margin: .5em 0;background-color: #FFFFFF;color: #333333;text-align: left;">
