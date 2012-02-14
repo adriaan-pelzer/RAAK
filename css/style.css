@@ -1583,7 +1583,7 @@ p.top_margin_22px {
 
 .indicate-required {
     font-style: normal!important;
-    font-family: helvetica;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
 }
 
 /********* Twitter ***********/
@@ -1647,7 +1647,7 @@ p.top_margin_22px {
 
 .twtr-widget .twtr-doc .twtr-hd h3 {
     margin: 0!important;
-    font: 9px 'Lucida Grande'!important;
+    font: 9px 'Lucida Grande', arial, sans-serif!important;
 }
 
 .twtr-tweet {
