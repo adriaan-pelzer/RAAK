@@ -499,6 +499,7 @@ address a {
     position: absolute;
     top: -9px;
     left: 94px;
+    line-height: 0;
 }
 
 .point_right {
@@ -508,6 +509,7 @@ address a {
     position: absolute;
     top: -9px;
     left: 102px;
+    line-height: 0;
 }
 
 #logox_counter h2 {
