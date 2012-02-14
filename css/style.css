@@ -561,6 +561,8 @@ address a {
 
 #bluebox_home_left p {
     width: 225px;
+    margin-top: 0;
+    padding-top: 8px;
 }
 
 
