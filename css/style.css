@@ -1078,13 +1078,13 @@ li#whitebox_secondary_submit_agree {
 input[name="upload_submit"], #whitebox_secondary_preview_submit input, #whitebox_secondary_finish button {
     height: 26px;
     padding: 0 6px;
-    position: absolute;
-    right: 0;
 }
 
 input[name="upload_submit"] {
     float: right;
     margin-right: 4px;
+    position: absolute;
+    right: 0;
 }
 
 .whitebox_secondary_back {
