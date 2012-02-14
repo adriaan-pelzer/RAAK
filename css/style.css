@@ -1026,6 +1026,10 @@ hr.lightblue_hr {
     height: 25px;
 }
 
+li#whitebox_secondary_submit_agree {
+    position: relative;
+}
+
 #whitebox_secondary_submit {
     color: #666666;
 }
@@ -1057,16 +1061,16 @@ hr.lightblue_hr {
 }
 
     #whitebox_secondary_submit_file label {
-    vertical-align: -4px;
+    vertical-align: bottom;
 }
 
 #whitebox_secondary_submit label[for="upload_agree"] {
-    width: 179px;
+    width: auto;
     vertical-align: -4px;
 }
 
 #upload_agree {
-    vertical-align: -5px;
+    vertical-align: bottom;
     border: none;
 }
 
@@ -1074,6 +1078,8 @@ hr.lightblue_hr {
 input[name="upload_submit"], #whitebox_secondary_preview_submit input, #whitebox_secondary_finish button {
     height: 26px;
     padding: 0 6px;
+    position: absolute;
+    right: 0;
 }
 
 input[name="upload_submit"] {
