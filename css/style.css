@@ -487,6 +487,7 @@ address a {
     text-align: center;
     width: 124px;
     font-size: 12px;
+    float: left;
 }
 
 #logox_counter_arrow {
@@ -544,6 +545,7 @@ address a {
 #bluebox_home_left {
     width: 239px;
     margin-left: 17px;
+    float: left;
 }
 
 #bluebox_home_left h2 {
