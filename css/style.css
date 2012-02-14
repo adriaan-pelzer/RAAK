@@ -566,6 +566,7 @@ address a {
     font: 9px arial, sans-serif;
     float: right;
     margin-left: -33px;
+    padding-top: 15px;  /* ie7 */
 }
 
 .bluebox_nav {
@@ -1739,6 +1740,7 @@ footer .seperator {
 
 .home .bluebox_nav {
     width: 324px;
+    margin-top: 0; /* ie 7 */
 }
 
 #mc-embedded-subscribe-container {
