@@ -985,6 +985,7 @@ hr.lightblue_hr {
 
 .logo-project .multiple_tabs .tab {
     margin-left: 1px;
+    *margin-left: 4px;
 }
 
 .logo-project .multiple_tabs #letter_upload {
