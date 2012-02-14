@@ -1785,3 +1785,7 @@ footer .seperator {
 #twitter_body #twtr-widget-1 a.twtr-join-conv {
     text-align: right;
 }
+
+.about .whitebox_primary_content_nav_item {
+    vertical-align: top;
+}
