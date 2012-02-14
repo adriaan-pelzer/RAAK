@@ -1580,7 +1580,8 @@ p.top_margin_22px {
 }
 
 .indicate-required {
-font-style: normal!important;
+    font-style: normal!important;
+    font-family: helvetica;
 }
 
 /********* Twitter ***********/
