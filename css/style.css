@@ -330,9 +330,10 @@ a.active, a.active span {
 
 .sidebar {
     width: 181px;
-    margin-left: 16px;
+    /*margin-left: 16px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: top;*/
+    float: right;
 }
 
 blockquote {
