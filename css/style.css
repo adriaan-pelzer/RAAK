@@ -490,23 +490,24 @@ address a {
     float: left;
 }
 
-#logox_counter_arrow {
-    position: absolute;
-    top: -10px;
-    left: 94px;
-}
 
 .point_left {
     border-bottom: 9px solid #ef8dd9;
     border-left: 10px solid /*rgba(0,0,0,0)*/ transparent;
     margin-right: -5px;
     display: inline-block;
+    position: absolute;
+    top: -9px;
+    left: 94px;
 }
 
 .point_right {
     border-bottom: 9px solid #ef8dd9;
     border-right: 10px solid /*rgba(0,0,0,0)*/ transparent;
     display: inline-block;
+    position: absolute;
+    top: -9px;
+    left: 102px;
 }
 
 #logox_counter h2 {
