@@ -1768,3 +1768,6 @@ footer .seperator {
     color: #ffffff;
 }
 
+.first-page-item {
+    display: inline;
+}
