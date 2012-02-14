@@ -546,6 +546,7 @@ address a {
     width: 239px;
     margin-left: 17px;
     float: left;
+    position: relative; /* ie7 */
 }
 
 #bluebox_home_left h2 {
@@ -553,8 +554,9 @@ address a {
 }
 
 #bluebox_home_left hr {
-    position: relative;
+    position: absolute; /* ie 7 - was relative */
     width: 570px;
+    top: 37px; /* ie 7 */
 }
 
 #bluebox_home_left p {
