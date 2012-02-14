@@ -1755,3 +1755,16 @@ footer .seperator {
     zoom: 1;
     *display: inline; /* display: inline-block for IE 7 */
 }
+
+#logox_counter hr {
+    color: #ef8dd9;
+}
+
+.bluebox hr {
+    color: #b9e5fb;
+}
+
+.whitebox hr {
+    color: #ffffff;
+}
+
