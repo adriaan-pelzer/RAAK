@@ -1789,3 +1789,7 @@ footer .seperator {
 .about .whitebox_primary_content_nav_item {
     vertical-align: top;
 }
+
+hr {
+    *margin: -8px 0;
+}
