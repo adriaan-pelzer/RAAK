@@ -1279,6 +1279,7 @@ p.top_margin_22px {
     width: 52px;
     left: 139px;
     top: -12px;
+    top: 0\9; /* targetting  ie 8 only */
     position: relative;
 }
 
