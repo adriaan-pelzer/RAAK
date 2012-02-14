@@ -517,6 +517,7 @@ address a {
     line-height: 13px;
     width: 138px;
     margin-left: -7px;
+    font-weight: normal;
 }
 
 #logox_counter_number {
