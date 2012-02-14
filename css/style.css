@@ -401,8 +401,10 @@ address a {
 .site_header a#title {
     display: block;
     height: 42px;
-    width: 192px;
+    width: 200px;
     margin-left: 47px;
+    position: relative;
+    z-index: 1;
 }
 
 .logo_letter {
@@ -423,8 +425,10 @@ address a {
     font-size: 10px;
     float: left;
     border-top: 2px solid #00aeff;
-    width: 284px;
+    width: 300px;
     padding: 13px 0 0 20px;
+    position: absolute;
+    z-index: 0;
 }
 
 .site_header nav {
