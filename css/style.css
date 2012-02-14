@@ -1781,3 +1781,7 @@ footer .seperator {
 .first-page-item {
     display: inline;
 }
+
+#twitter_body #twtr-widget-1 a.twtr-join-conv {
+    text-align: right;
+}
