@@ -429,8 +429,9 @@ address a {
     border-top: 2px solid #00aeff;
     width: 300px;
     padding: 13px 0 0 20px;
-    position: absolute;
+    /*position: absolute;*/
     z-index: 0;
+    margin-bottom: -27px;
 }
 
 .site_header nav {
@@ -450,14 +451,12 @@ address a {
 
 
 .topmenu_body {
-    /*padding: 0 20px;*/
+    padding: 0 20px;
 }
 
 .topmenu_body a {
     text-decoration: none;
     color: #a9a9a9;
-    padding: 0 20px;
-    display: block;
 }
 
 
