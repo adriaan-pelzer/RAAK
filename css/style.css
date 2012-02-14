@@ -560,9 +560,9 @@ address a {
 
 
 #bluebox_home_right {
-    margin-left: -33px;
     font: 9px arial, sans-serif;
     float: right;
+    margin-left: -33px;
 }
 
 .bluebox_nav {
