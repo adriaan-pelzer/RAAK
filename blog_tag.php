@@ -12,7 +12,7 @@ Template Name: Blog Tag
                     <h2 class="din-schrift blue_20">Blog Archive: advertising</h2>
                 </header>
             </div><!-- whitebox_big -->
-            <div class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
+            <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
                 <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                     <h3><a href="http://wewillraakyou.com/2011/10/the-raakonteur-58-a-sad-day-for-tech-facebooks-ad-strategy-and-adobe-bursts-into-html5/">The RAAKonteur #58 - A Sad day for Tech, Facebook's ad strategy and Adobe bursts into HTML5</a></h3>
                     <hr />

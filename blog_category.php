@@ -12,7 +12,7 @@ Template Name: Blog Category
                     <h2 class="din-schrift blue_20">Category: Inspiration</h2>
                 </header>
             </div><!-- whitebox_big -->
-            <div class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
+            <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
                 <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                     <h3><a href="http://wewillraakyou.com/2012/01/the-nirvana-twitter-pulse/">The Nirvana Twitter Pulse</a></h3>
                     <hr />
@@ -86,7 +86,7 @@ Template Name: Blog Category
                 <div class="blue_tab tab tab108 rounded-corners">
                     <h2>Category</h2>
                 </div><!-- blue_tab -->
-                <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
+                <div class="bluebox_primary blog_category_bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
                     <ul>
                         <li><a href="http://wewillraakyou.com/category/Inspiration/">Inspiration</a></li>
                         <li><a href="http://wewillraakyou.com/category/Must Read/">Must Read</a></li>

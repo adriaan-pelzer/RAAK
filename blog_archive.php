@@ -12,7 +12,7 @@ Template Name: Blog Archive
                     <h2 class="din-schrift blue_20">Blog Archive</h2>
                 </header>
             </div><!-- whitebox_big -->
-            <div class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
+            <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
                 <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                     <h3><a href="http://wewillraakyou.com/2012/01/5332/"></a></h3>
                     <hr />
