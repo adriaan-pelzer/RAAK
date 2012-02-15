@@ -1065,7 +1065,7 @@ li#whitebox_secondary_submit_agree {
 }
 
 #whitebox_secondary_submit label[for="upload_agree"] {
-    width: auto!important;
+    width: 180px;
     vertical-align: -4px;
 }
 
@@ -1797,3 +1797,8 @@ footer .seperator {
     vertical-align: top;
 }
 
+#whitebox_secondary_preview_submit input {
+    padding: 0;
+    width: 187px;
+    text-align: center;
+}
