@@ -90,3 +90,8 @@ margin-bottom: 7px;
 .logo-archive_logo_project_letter {
     margin-right: 15px;
 }
+
+.whitebox_big_category_entry hr {
+    color: #B9E5FB;
+    margin: -8px 0;
+}
