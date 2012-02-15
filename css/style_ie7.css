@@ -57,7 +57,7 @@ input[name="upload_submit"] {
     text-align: right;
 }
 
-.about .whitebox_primary_content_nav_item {
+#who-we-are .whitebox_primary_content_nav_item {
     vertical-align: top;
 }
 
@@ -67,21 +67,12 @@ input[name="upload_submit"] {
     text-align: center;
 }
 
-.about hr, .logo-project hr {
+hr {
     margin-top: -8px;
     margin-bottom: -8px;
 }
 
 
-.logo-archive hr, .about hr, .logo-project hr {
-    margin-top: -8px;
-    margin-bottom: -8px;
-}
-
-.logo-project .whitebox_primary hr {
-    margin-top: -8px;
-    margin-bottom: -8px;
-}
 
 .about .box_nav_no_title {
 margin-bottom: 7px;
@@ -93,7 +84,6 @@ margin-bottom: 7px;
 
 .whitebox_big_category_entry hr {
     color: #B9E5FB;
-    margin: -8px 0;
 }
 
 .whitebox_big_category_entry_content {
@@ -104,10 +94,3 @@ margin-bottom: 7px;
     height: 39px;
 }
 
-.big_box_short hr {
-    margin: -8px 0;
-}
-
-.whitebox_primary hr {
-    margin: -8px 0;
-}
