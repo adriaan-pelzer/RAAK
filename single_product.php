@@ -7,7 +7,7 @@ Template Name:Single Product
 
 	<div class="container rounded-corners single-product">
 		<div class="content">
-            <div class="whitebox_big whitebox box big_box rounded-corners_top_bottom_right">
+            <div class="whitebox_big whitebox box big_box big_box_short rounded-corners_top_bottom_right">
                 <header>
                     <h2  class="din-schrift blue_20">Our Products</h2>
                 </header>

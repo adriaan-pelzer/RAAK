@@ -99,3 +99,11 @@ margin-bottom: 7px;
 .whitebox_big_category_entry_content {
     margin-top: -15px;
 }
+
+.big_box_short {
+    height: 39px;
+}
+
+.big_box_short hr {
+    margin: -8px 0;
+}
