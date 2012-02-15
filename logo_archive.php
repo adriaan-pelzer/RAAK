@@ -35,7 +35,8 @@ Template Name:Logo Archive
                             <div class="logo_project_letter_name">
                                 <a href="http://www.steve-baker.co.uk">Steve Baker</a>
                             </div>
-                        </div><div class="bluebox_big_content_row_item logo_project_letter">
+                        </div>
+                        <div class="bluebox_big_content_row_item logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
                                 <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a8b2a4f4c69564aa9f11381c0c260235.jpg&amp;width=70&amp;height=84" />
                             </div>
@@ -44,7 +45,8 @@ Template Name:Logo Archive
                             </div>
                             <div class="logo_project_letter_name">
                                 PSED                                </div>
-                        </div><div class="bluebox_big_content_row_item logo_project_letter">
+                        </div>
+                        <div class="bluebox_big_content_row_item logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
                                 <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/2dcfb0448f8b53e4a913a16c8f3413f2.jpg&amp;width=70&amp;height=84" />
                             </div>
@@ -53,7 +55,8 @@ Template Name:Logo Archive
                             </div>
                             <div class="logo_project_letter_name">
                                 PSED                                </div>
-                        </div><div class="bluebox_big_content_row_item logo_project_letter">
+                        </div>
+                        <div class="bluebox_big_content_row_item logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
                                 <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/7832f12fb6b6af543b029481f0b7baa4.png&amp;width=70&amp;height=84" />
                             </div>
@@ -62,7 +65,8 @@ Template Name:Logo Archive
                             </div>
                             <div class="logo_project_letter_name">
                                 <a href="http://serdarozyigit.com">Serdar Ozyigit</a>                                </div>
-                        </div><div class="bluebox_big_content_row_item logo_project_letter">
+                        </div>
+                        <div class="bluebox_big_content_row_item logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
                                 <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/5196b17d8503c6ad7a7accfefbdeda83.jpg&amp;width=70&amp;height=84" />
                             </div>
@@ -71,7 +75,8 @@ Template Name:Logo Archive
                             </div>
                             <div class="logo_project_letter_name">
                                 <a href="http://www.prostress.com">Han Hoogerbrugge</a>                                </div>
-                        </div><div class="bluebox_big_content_row_item logo_project_letter">
+                        </div>
+                        <div class="bluebox_big_content_row_item logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
                                 <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&amp;width=70&amp;height=84" />
                             </div>
@@ -80,7 +85,8 @@ Template Name:Logo Archive
                             </div>
                             <div class="logo_project_letter_name">
                                 <a href="http://www.cowafrica.co.za">Steyn</a>                                </div>
-                        </div><div class="bluebox_big_content_row_item logo_project_letter">
+                        </div>
+                        <div class="bluebox_big_content_row_item logo_project_letter">
                             <div class="logo_project_letter_image rounded-corners">
                                 <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/241eca044d005504eabcaa5d3e6b9068.jpg&amp;width=70&amp;height=84" />
                             </div>
