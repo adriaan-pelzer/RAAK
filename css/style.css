@@ -978,11 +978,11 @@ hr.lightblue_hr {
     color: #666666;
 }
 
-.logo-project .multiple_tabs .tab {
+.multiple_tabs .tab {
     margin-left: 1px;
 }
 
-.logo-project .multiple_tabs #letter_upload {
+.multiple_tabs:first-child {
     margin-left: 0;
 }
 
