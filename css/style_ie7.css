@@ -67,3 +67,7 @@ input[name="upload_submit"] {
     text-align: center;
 }
 
+.logo-project hr {
+    margin-top: -8px;
+}
+
