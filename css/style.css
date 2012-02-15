@@ -1126,6 +1126,7 @@ input[name="upload_submit"] {
 .bluebox_big_content_row {
     width: 742px;
     margin: 13px -12px 13px 0;
+    font-size: 0;
 }
 
 h3.expanded_letter {
@@ -1134,7 +1135,8 @@ h3.expanded_letter {
 
 .logo-archive .logo_project_letter {
     width: 91px;
-    margin-right: 12px;
+    margin-right: 16px;
+    font-size: 9px;
 }
 
 
