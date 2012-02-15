@@ -550,6 +550,7 @@ address a {
     width: 239px;
     margin-left: 17px;
     float: left;
+    position: relative; /* ie7 */
 }
 
 #bluebox_home_left h2 {
@@ -557,12 +558,15 @@ address a {
 }
 
 #bluebox_home_left hr {
-    position: relative;
+    position: absolute; /* ie 7 - was relative */
     width: 570px;
+    top: 37px; /* ie 7 */
 }
 
 #bluebox_home_left p {
     width: 225px;
+    margin-top: 0;
+    padding-top: 8px;
 }
 
 
@@ -570,6 +574,7 @@ address a {
     font: 9px arial, sans-serif;
     float: right;
     margin-left: -33px;
+    padding-top: 15px;  /* ie7 */
 }
 
 .bluebox_nav {
@@ -980,6 +985,7 @@ hr.lightblue_hr {
 
 .logo-project .multiple_tabs .tab {
     margin-left: 1px;
+    *margin-left: 4px;
 }
 
 .logo-project .multiple_tabs #letter_upload {
@@ -1018,6 +1024,10 @@ hr.lightblue_hr {
 #whitebox_secondary_submit li {
     margin-top: 10px;
     height: 25px;
+}
+
+li#whitebox_secondary_submit_agree {
+    position: relative;
 }
 
 #whitebox_secondary_submit {
@@ -1073,6 +1083,8 @@ input[name="upload_submit"], #whitebox_secondary_preview_submit input, #whitebox
 input[name="upload_submit"] {
     float: right;
     margin-right: 4px;
+    position: absolute;
+    right: 0;
 }
 
 .whitebox_secondary_back {
@@ -1114,6 +1126,7 @@ input[name="upload_submit"] {
 .bluebox_big_content_row {
     width: 742px;
     margin: 13px -12px 13px 0;
+    font-size: 0;
 }
 
 h3.expanded_letter {
@@ -1122,7 +1135,8 @@ h3.expanded_letter {
 
 .logo-archive .logo_project_letter {
     width: 91px;
-    margin-right: 12px;
+    margin-right: 16px;
+    font-size: 9px;
 }
 
 
@@ -1743,6 +1757,7 @@ footer .seperator {
 
 .home .bluebox_nav {
     width: 324px;
+    margin-top: 0; /* ie 7 */
 }
 
 #mc-embedded-subscribe-container {
