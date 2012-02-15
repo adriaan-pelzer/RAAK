@@ -73,7 +73,7 @@ input[name="upload_submit"] {
 }
 
 
-.about hr, .logo-project hr {
+.logo-archive hr, .about hr, .logo-project hr {
     margin-top: -8px;
     margin-bottom: -8px;
 }
@@ -87,3 +87,6 @@ input[name="upload_submit"] {
 margin-bottom: 7px;
 }
 
+.logo-archive_logo_project_letter {
+    margin-right: 16px;
+}
