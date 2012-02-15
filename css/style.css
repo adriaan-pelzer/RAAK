@@ -1081,6 +1081,10 @@ input[name="upload_submit"] {
     margin-top: 10px;
 }
 
+.whitebox_secondary_back a {
+    color: #00aeef;
+}
+
 
 #whitebox_secondary_preview {
     text-align: center;
