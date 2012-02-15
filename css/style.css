@@ -982,7 +982,7 @@ hr.lightblue_hr {
     margin-left: 1px;
 }
 
-.multiple_tabs:first-child {
+.multiple_tabs .tab:first-child {
     margin-left: 0;
 }
 
