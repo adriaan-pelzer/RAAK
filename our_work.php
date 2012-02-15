@@ -5,7 +5,7 @@ Template Name: Our Work
 ?>
 <?php get_header() ?>
 
-	<div class="container rounded-corners our-products">
+	<div class="container rounded-corners our_work">
 		<div class="content">
             <div class="whitebox_big whitebox box big_box rounded-corners">
                 <header>
