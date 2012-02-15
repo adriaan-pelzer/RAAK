@@ -1192,7 +1192,7 @@ h3.expanded_letter {
     width: 60px;
 }
 
-.single-work .whitebox_primary_client, .single-product .whitebox_primary_project {
+.whitebox_primary_client, .whitebox_primary_project {
     margin-top: 0px;
 }
 

@@ -5,7 +5,7 @@ Template Name:Single Product
 ?>
 <?php get_header() ?>
 
-	<div class="container rounded-corners single-product">
+	<div class="container rounded-corners single_product">
 		<div class="content">
             <div class="whitebox_big whitebox box big_box big_box_short rounded-corners_top_bottom_right">
                 <header>
