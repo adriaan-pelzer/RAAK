@@ -14,7 +14,7 @@ Template Name:Single Product
                     <hr />
             </div><!-- whitebox_big -->
             <div class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
-                    <div class="whitebox_primary_project whitebox_primary_section bigger_arial_caps">
+                    <div class="product_whitebox_primary_project whitebox_primary_section bigger_arial_caps">
                         <div class="whitebox_primary_section_label">Product:</div>
                         <div class="whitebox_primary_section_content"><a target="_blank" href="http://m.tweetrewinder.com">Rewinder</a></div>
                     </div><!-- whitebox_primary_project -->
