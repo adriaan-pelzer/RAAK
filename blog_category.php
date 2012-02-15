@@ -5,7 +5,7 @@ Template Name: Blog Category
 ?>
 <?php get_header() ?>
 
-    <div class="container rounded-corners blog-category">
+    <div class="container rounded-corners blog_category">
         <div class="content">
             <div class="whitebox_big whitebox box big_box rounded-corners">
                 <header>

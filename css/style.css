@@ -1270,29 +1270,29 @@ p.top_margin_22px {
     margin-top: 22px;
 }
 
-.contact form.wpcf7-form {
+form.wpcf7-form {
     font: 10px arial, san-serif;
     text-transform: uppercase;
     margin-top: 20px;
 }
 
-.contact form.wpcf7-form input {
+form.wpcf7-form input {
     height: 25px;
     width: 219px;
 }
 
 
-.contact form.wpcf7-form p {
+form.wpcf7-form p {
     margin-bottom: -18px;
 }
 
 
-.contact form.wpcf7-form p#contact_submit {
+form.wpcf7-form p#contact_submit {
     margin-bottom: 0;
 }
 
 
-.contact form.wpcf7-form input[type="submit"] {
+form.wpcf7-form input[type="submit"] {
     height: 26px;
     width: 52px;
     left: 139px;
@@ -1301,12 +1301,12 @@ p.top_margin_22px {
     position: relative;
 }
 
-.contact form.wpcf7-form textarea {
+form.wpcf7-form textarea {
     width: 219px;
 }
 
 
-.contact form.wpcf7-form span {
+form.wpcf7-form span {
     left: 139px;
     top: -23px;
     position: relative;
@@ -1468,7 +1468,7 @@ p.top_margin_22px {
 
 /************** BLOG ARCHIVE ***********/
 
-/*.blog-category .whitebox_primary h3, .blog-archive .whitebox_primary h3 {
+/*.blog-category .whitebox_primary h3, .log-archive .whitebox_primary h3 {
     font-size: 18px;
     line-height: 19px;
     margin: 0;

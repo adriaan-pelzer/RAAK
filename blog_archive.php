@@ -5,7 +5,7 @@ Template Name: Blog Archive
 ?>
 <?php get_header() ?>
 
-    <div class="container rounded-corners blog-archive">
+    <div class="container rounded-corners blog_archive">
         <div class="content">
             <div class="whitebox_big whitebox box big_box rounded-corners">
                 <header>
