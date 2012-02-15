@@ -1337,7 +1337,7 @@ p.top_margin_22px {
 }
 
 
-.blog-single .whitebox_primary_post h3, .blog .whitebox_primary_post h3 {
+.blog_whitebox_primary .whitebox_primary_post h3 {
     font-size: 24px;
 }
 
@@ -1346,11 +1346,11 @@ p.top_margin_22px {
 }
 
 
-.blog .other_posts_content_three li {
+.blog_bluebox_primary .other_posts_content_three li {
     background: url(../images/whitebox_secondary_body_content_two_list.png) no-repeat 0px 5px;
 }
 
-.blog .other_posts li a {
+.other_posts li a {
     color: #666666;
 }
 
@@ -1361,13 +1361,13 @@ p.top_margin_22px {
 
 /************** BLOG SINGLE ************/
 
-.blog-single .whitebox_primary_post_attr {
+.blog_single_whitebox_primary .whitebox_primary_post_attr {
     width: 179px;
     display: inline-block;
     vertical-align: top;
 }
 
-.blog-single .whitebox_primary_post_attr div {
+.blog_single_whitebox_primary .whitebox_primary_post_attr div {
     margin-bottom: 5px;
     display: block;
 }
@@ -1410,37 +1410,37 @@ p.top_margin_22px {
 }
 
 
-.blog-single form p {
+#commentform p {
     margin-bottom: 15px;
 }
 
-.blog-single form label {
+#commentform label {
     width: 100px;
     vertical-align: top;
     margin-top: 8px;
 }
 
-.blog-single form input[type="text"], .blog-single textarea {
+#commentform input[type="text"], #commentform textarea {
     margin-bottom: 10px;
     color: #000000;
 }
 
-.blog-single form input[type="text"] {
+#commentform input[type="text"] {
     height: 20px;
     width: 240px;
 }
 
-.blog-single form label[for="comment"] {
+#commentform label[for="comment"] {
     width: 97px;
 }
 
-.blog-single textarea {
+#commentform textarea {
     width: 238px;
     margin-top:8px;
 }
 
 
-.blog-single form #submit {
+#commentform form #submit {
     width: 90px;
     padding: 6px 0;
     margin-left: 100px;
@@ -1462,7 +1462,7 @@ p.top_margin_22px {
     margin-bottom: 10px;
 }
 
-.blog-single .bluebox_content_top {
+.blog_single_bluebox_primary .bluebox_content_top {
     margin-top: 5px;
 }
 
