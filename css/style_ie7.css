@@ -67,7 +67,18 @@ input[name="upload_submit"] {
     text-align: center;
 }
 
-.logo-project hr {
+.about hr, .logo-project hr {
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+
+.about hr, .logo-project hr {
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+.logo-project .whitebox_primary hr {
     margin-top: -8px;
     margin-bottom: -8px;
 }
