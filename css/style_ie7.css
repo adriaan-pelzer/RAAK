@@ -1,11 +1,11 @@
-#bluebox_home_left {
-    position: relative; /* ie7 */
+/*#bluebox_home_left {
+    position: relative;
 }
 
 #bluebox_home_left hr {
-    position: absolute; /* ie 7 - was relative */
-    top: 37px; /* ie 7 */
-}
+    position: absolute;
+    top: 37px;
+}*/
 
 #bluebox_home_left p {
     margin-top: 0;
