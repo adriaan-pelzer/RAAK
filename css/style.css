@@ -1064,7 +1064,7 @@ li#whitebox_secondary_submit_agree {
     vertical-align: bottom;
 }
 
-#whitebox_secondary_submit label[for="upload_agree"] {
+#whitebox_secondary_submit_agree label {
     width: 180px;
     vertical-align: -4px;
 }
