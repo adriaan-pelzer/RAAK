@@ -427,7 +427,7 @@ address a {
     font-size: 10px;
     float: left;
     border-top: 2px solid #00aeff;
-    width: 300px;
+    width: 308px;
     padding: 13px 0 0 20px;
     /*position: absolute;*/
     z-index: 0;
@@ -490,23 +490,26 @@ address a {
     float: left;
 }
 
-#logox_counter_arrow {
-    position: absolute;
-    top: -10px;
-    left: 94px;
-}
 
 .point_left {
     border-bottom: 9px solid #ef8dd9;
     border-left: 10px solid /*rgba(0,0,0,0)*/ transparent;
     margin-right: -5px;
     display: inline-block;
+    position: absolute;
+    top: -9px;
+    left: 94px;
+    line-height: 0;
 }
 
 .point_right {
     border-bottom: 9px solid #ef8dd9;
     border-right: 10px solid /*rgba(0,0,0,0)*/ transparent;
     display: inline-block;
+    position: absolute;
+    top: -9px;
+    left: 102px;
+    line-height: 0;
 }
 
 #logox_counter h2 {
@@ -514,6 +517,7 @@ address a {
     line-height: 13px;
     width: 138px;
     margin-left: -7px;
+    font-weight: normal;
 }
 
 #logox_counter_number {
@@ -1047,16 +1051,16 @@ hr.lightblue_hr {
 }
 
     #whitebox_secondary_submit_file label {
-    vertical-align: -4px;
+    vertical-align: bottom;
 }
 
-#whitebox_secondary_submit label[for="upload_agree"] {
-    width: 179px;
+#whitebox_secondary_submit_agree label {
+    width: 180px;
     vertical-align: -4px;
 }
 
 #upload_agree {
-    vertical-align: -5px;
+    vertical-align: bottom;
     border: none;
 }
 
@@ -1747,11 +1751,4 @@ footer .seperator {
 
 #tweet-id-1 { /************* will this work? check on dynamic site **********/
     border-bottom-width: 0;
-}
-
-/**************** ie 7 ****************/
-
-.box, .label,  .title, .overview, .multiple_tabs .tab, .tab_container, .bluebox_top_margin, label, .logo_letter, #blog-description, .page_item, #logox_counter, .point_left, .point_right, .box_nav *, .whitebox_primary_post_attr *, .other_posts_content_two, .other_posts_content_three, .whitebox_primary_content_founder_info, .whitebox_primary_content_founder_social_title, .whitebox_primary_content_founder_social_right, .whitebox_primary_content_founder_picture, .logo_project_letter, .letter, #whitebox_secondary_upload_next a, #file_replace, .whitebox_big_category_entry, .whitebox_primary_section span, .whitebox_primary_section div, .ngg-gallery-thumbnail-box, .blog-single .whitebox_primary_post_attr, .whitebox_primary_share, .bluebox_content_quarter, .related_posts_hr, #twitter_body #twtr-widget-1 a.twtr-join-conv {
-    zoom: 1;
-    *display: inline; /* display: inline-block for IE 7 */
 }

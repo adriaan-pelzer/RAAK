@@ -5,6 +5,9 @@
     <meta name="google-site-verification" content="59Ab_0-HL7eVdNQ4CqiLOeiQisQgb2Vwg8046N__ng0" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style_ie7.css" />
+    <![endif]-->
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->

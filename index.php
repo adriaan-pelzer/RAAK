@@ -8,10 +8,8 @@ Template Name:Home
     <div class="container rounded-corners home">
         <div class="content">
             <aside id="logox_counter" class="rounded-corners din-schrift">
-                <div id="logox_counter_arrow">
-                    <span class="point_left"></span>
-                    <span class="point_right"></span>
-                </div>
+                <span class="point_left"></span>
+                <span class="point_right"></span>
                 <header>
                     <h2># OF LOGO COMBINATIONS</h2>
                 </header>
