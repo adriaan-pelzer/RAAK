@@ -28,7 +28,7 @@ input[name="upload_submit"] {
     right: 0;
 }
 
-.home .bluebox_nav {
+.bluebox_primary_no_margin .bluebox_nav {
     margin-top: 0; /* ie 7 */
 }
 
