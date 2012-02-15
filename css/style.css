@@ -322,7 +322,7 @@ a.active, a.active span {
     color: #00aeef;
 }
 
-.more_link {
+.more_link, .blog_bluebox_primary a.more_link {
     margin-top: 17px;
     color: #00aeef;
     font: 9px arial, sans-serif;
