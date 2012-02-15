@@ -5,9 +5,9 @@ Template Name:Logo Project
 ?>
 <?php get_header() ?>
 
-	<div class="container rounded-corners logo-project">
+	<div class="container rounded-corners logo_project">
 		<div class="content">
-            <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
+            <div class="whitebox whitebox_primary logo_project_whitebox_primary whitebox-primary box rounded-corners">
                 <header>
                     <h2 class="din-schrift blue_20">Logo Project</h2>
                 </header>
@@ -85,7 +85,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                     <img alt="temporary vidio reprasentation" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/logo_gap_film.jpg" />
                 </p>
             </div><!-- #whitebox_primary -->
-            <div class="bluebox bluebox_primary box rounded-corners">
+            <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
                 <header>
                     <h2 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">Latest Uploads</h2>
                 </header>
@@ -313,7 +313,7 @@ Opening up the abstruse process of ‘creativity’ to the masses makes the act 
                         <h2>Downloads</h2>
                     </header>
                 </div>
-                <div class="whitebox_secondary whitebox box rounded-corners">
+                <div class="whitebox_secondary logo_project-whitebox_secondary whitebox box rounded-corners">
                     <ul>
                         <li><a href="http://wewillraakyou.com/RAAK-letter-Illustrator-template.zip">Illustrator Template</a></li>
                         <li><a href="http://wewillraakyou.com/raak-letter-PS-template.zip">Photoshop Template</a></li>

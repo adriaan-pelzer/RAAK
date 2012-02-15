@@ -874,29 +874,29 @@ hr.lightblue_hr {
 
 /************** LOGO PROJECT **********/
 
-.logo-project .whitebox_primary hr {
+.logo_project_whitebox_primary hr {
     margin-bottom: 16px;
 }
 
-.logo-project .whitebox_primary h3 {
+.logo_project_whitebox_primary h3 {
     margin-top: 15px;
     margin-bottom: 5px;
 }
 
-.logo-project ul {
+.logo_project_whitebox_primary ul {
     list-style: disc;
     padding-left: 15px;
     line-height: 19px;
 }
 
-.logo-project .whitebox_primary .more_link {
+.logo_project_whitebox_primary .more_link {
     display: block;
     text-align: right;
     margin-bottom: 10px;
     margin-top: 12px;
 }
 
-.logo-project .whitebox_primary {
+.logo_project_whitebox_primary {
     padding-bottom: 20px;
 }
 
@@ -953,27 +953,27 @@ hr.lightblue_hr {
     margin: 0;
 }
 
-.logo-project .bluebox_content_top {
+.logo_project_bluebox_primary .bluebox_content_top {
     margin-top: 10px;
 }
 
-.logo-project .whitebox_secondary ul {
+.logo_project-whitebox_secondary ul {
     list-style: none;
     padding-left: 0;
 }
 
 
-/*.logo-project .whitebox_secondary li {
+/*.logo_project-whitebox_secondary li {
     padding-left: 0;
 }*/
 
 
-.logo-project .whitebox_secondary  a, .logo-project .whitebox_secondary ul#whitebox_secondary_submit a {
+.logo_project_whitebox_secondary  a, .logo_project_whitebox_secondary ul#whitebox_secondary_submit a {
     color: #00aeff;
     text-decoration: none;
 }
 
-.logo-project .whitebox_secondary ul a {
+.logo_project_whitebox_secondary ul a {
     text-decoration: underline;
     color: #666666;
 }
