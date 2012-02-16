@@ -138,3 +138,7 @@ margin-bottom: 7px;
     top: -16px;
     left: 74px;
 }
+
+address {
+    font-style: normal;
+}
