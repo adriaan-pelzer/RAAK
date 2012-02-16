@@ -85,15 +85,18 @@ body {
 
 .rounded-corners {
     border-radius: 10px;
+    -moz-border-radius: 10px;
 }
 
 
 .rounded-corners_bottom {
     border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
 }
 
 .rounded-corners_top_bottom_right{
     border-radius: 10px 10px 10px 0;
+    -moz-border-radius: 10px 10px 10px 0;
 }
 
 .wrapper {
