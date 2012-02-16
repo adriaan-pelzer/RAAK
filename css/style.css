@@ -1444,7 +1444,7 @@ form.wpcf7-form span {
 }
 
 
-#commentform form #submit {
+#commentform #submit {
     width: 90px;
     padding: 6px 0;
     margin-left: 100px;
