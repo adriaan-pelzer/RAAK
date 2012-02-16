@@ -107,7 +107,7 @@ margin-bottom: 7px;
     margin-top: 0;
 }
 
-.blog_single_whitebox_primary .whitebox_primary_post h3, .blog_whitebox_primary_title_only h3 {
+.blog_single_bluebox_primary h4, .blog_single_whitebox_primary .whitebox_primary_post h3, .blog_whitebox_primary_title_only h3 {
     font-weight: normal;
 }
 
