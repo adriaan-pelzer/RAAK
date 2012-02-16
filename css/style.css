@@ -432,7 +432,8 @@ address a {
     border-top: 2px solid #00aeff;
     width: 308px;
     padding: 13px 0 0 20px;
-    /*position: absolute;*/
+    position: absolute;
+    top: 77px;
     z-index: 0;
     margin-bottom: -27px;
 }
