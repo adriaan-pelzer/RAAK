@@ -1065,6 +1065,10 @@ hr.lightblue_hr {
     vertical-align: -4px;
 }
 
+#whitebox_secondary_submit_agree label a {
+    text-decoration: underline;
+}
+
 #upload_agree {
     vertical-align: bottom;
     border: none;
