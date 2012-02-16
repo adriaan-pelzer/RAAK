@@ -128,7 +128,7 @@ margin-bottom: 7px;
     left: 74px;
 }
 
-.blog_single_bluebox_primary .related_posts_hr:first-child {
+.blog_single_bluebox_primary hr:first-child {
     left: -83px;
     top: 0;
 }
