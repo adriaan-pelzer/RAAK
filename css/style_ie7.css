@@ -120,3 +120,15 @@ margin-bottom: 7px;
 #commentform #submit {
     margin-left: 103px;
 }
+
+.related_posts_hr {
+    margin: 0;
+    position: relative;
+    top: -16px;
+    left: 74px;
+}
+
+.blog_single_bluebox_primary .related_posts_hr:first-child {
+    left: -83px;
+    top: 0;
+}
