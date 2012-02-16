@@ -16,7 +16,7 @@ Template Name:Single Product
             <div class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
                     <div class="product_whitebox_primary_project whitebox_primary_section bigger_arial_caps">
                         <div class="whitebox_primary_section_label">Product:</div>
-                        <div class="whitebox_primary_section_content grey_text"><a target="_blank" href="http://m.tweetrewinder.com">Rewinder</a></div>
+                        <div class="whitebox_primary_section_content"><a class="grey_text" target="_blank" href="http://m.tweetrewinder.com">Rewinder</a></div>
                     </div><!-- whitebox_primary_project -->
                     <hr class="solid thicker_hr lightblue_hr">
                     <div class="whitebox_primary_solution whitebox_primary_section">
