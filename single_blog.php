@@ -83,8 +83,8 @@ Template Name:Single Blog
                             <h4><a class="grey_text" href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></h4>
                         </div>
                     </div>
-                    <hr class="solid blue_hr related_posts_hr" />
-                    <hr class="solid blue_hr related_posts_hr" />
+                    <hr id="left_related_posts_hr" class="solid blue_hr related_posts_hr" />
+                    <hr id="right_related_posts_hr" class="solid blue_hr related_posts_hr" />
                     <div class="bluebox_content_bottom">
                         <div class="bluebox_content_quarter bluebox_content_bottom_left">
                             <a href="http://wewillraakyou.com/2011/11/the-raakonteur-63-wordpress-is-going-social-google-has-a-minus-and-the-dangerous-world-of-slacktivism/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/11/matt_mullenweg.jpeg" alt="matt_mullenweg" title="matt_mullenweg"  width="120" height="85" /></a>
