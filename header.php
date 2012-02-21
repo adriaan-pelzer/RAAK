@@ -18,7 +18,7 @@
     <header class="rounded-corners din-schrift site_header">
 <?php 
 $images_dir = fopen('http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/', 'r');
-$images = scandir($images_dir);
+$images = opendir($images_dir);
 print_r($images);
 ?>
         <h1>RAAK</h1>
