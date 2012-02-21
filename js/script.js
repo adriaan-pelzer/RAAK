@@ -3,7 +3,7 @@ var letters_r = ['2dcfb0448f8b53e4a913a16c8f3413f2.jpg', '4bd891a62ea023f66c3717
 var letters_k = ['0c71b1cbe12da4fdbe88df63f21dbfce.jpg', '78ce302c784ece3f208eba8152c2bc58.jpg', '94f1cb321eb37b70e6f4a789514aee55.jpg'];
 
 var load_next = function() {
-    var letter = Math.random()*3;
+    var letter = (Math.random()*3);
     console.log(letter);
 }
 
