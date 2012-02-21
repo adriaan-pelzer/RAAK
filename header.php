@@ -12,6 +12,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/js/script.js"></script>
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
 <div class="wrapper hfeed">
