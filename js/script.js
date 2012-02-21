@@ -6,6 +6,7 @@ letters[3] = ['0c71b1cbe12da4fdbe88df63f21dbfce.jpg', '78ce302c784ece3f208eba815
 
 var load_next = function() {
     var letter = Math.ceil(Math.random()*4);
+    console.log(letter);
     switch (letter)
     {
         case 1:
