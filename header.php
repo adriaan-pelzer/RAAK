@@ -4,6 +4,8 @@
     <title>RAAK | Digital &amp; Social Media Agency London - Putting you in touch with your crowds</title>
     <meta name="google-site-verification" content="59Ab_0-HL7eVdNQ4CqiLOeiQisQgb2Vwg8046N__ng0" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/js/script.js"></script>
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style_ie7.css" />
@@ -11,8 +13,6 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-    <script src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/js/script.js"></script>
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
 <div class="wrapper hfeed">
