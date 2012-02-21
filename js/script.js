@@ -26,12 +26,12 @@ var load_next = function() {
             $('#logo_letter_k4 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_letters/k/' + letters[letter][variant] + '&width=35&height=42');
             break;
     }
+    setTimeout(load_next, 3000);
 }
 var load_letter = function() {
-    setTimeout(load_next, 3000);
     load_letter();
 }
 
 $(document).ready(function() {
-    load_letter();
+    load_next();
 });
