@@ -4,7 +4,7 @@
     <title>RAAK | Digital &amp; Social Media Agency London - Putting you in touch with your crowds</title>
     <meta name="google-site-verification" content="59Ab_0-HL7eVdNQ4CqiLOeiQisQgb2Vwg8046N__ng0" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/js/script.js"></script>
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
     <!--[if lt IE 8]>
