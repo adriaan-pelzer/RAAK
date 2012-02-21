@@ -17,9 +17,9 @@
 <div class="wrapper hfeed">
     <header class="rounded-corners din-schrift site_header">
 <?php 
-$images_dir = ".";
-$images = opendir($images_dir);
-print_r(var_dump($images));
+$images_dir = '.';
+$images = scandir($images_dir);
+print_r ($images);
 ?>
         <h1>RAAK</h1>
         <a id="title" href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
