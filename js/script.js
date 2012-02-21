@@ -6,11 +6,12 @@ letters[3] = ['0c71b1cbe12da4fdbe88df63f21dbfce.jpg', '78ce302c784ece3f208eba815
 
 var load_next = function() {
     var letter = (Math.round(Math.random()*3));
-    console.log(letter);
+    console.log('letter:' + letter);
     switch (letter)
     {
         case 1:
             var variant = Math.ceil(Math.random()*((letters[letter]).length));
+            console.log('variant:' + variant);
             $('#logo_letter_r1 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/r/' + letters[letter][variant]);
             break;
         case 2:
