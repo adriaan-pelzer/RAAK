@@ -17,7 +17,7 @@
 <div class="wrapper hfeed">
     <header class="rounded-corners din-schrift site_header">
 <?php 
-$images_dir = '/logo_letters/';
+$images_dir = ".";
 $images = opendir($images_dir);
 print_r($images);
 ?>
