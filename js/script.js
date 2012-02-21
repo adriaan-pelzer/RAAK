@@ -10,7 +10,7 @@ var load_next = function() {
     switch (letter)
     {
         case 1:
-            var variant = Math.ceil(Math.random()*((letters[letter]).length));
+            var variant = Math.round(Math.random()*((letters[letter]).length));
             console.log('variant:' + variant);
             $('#logo_letter_r1 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/r/' + letters[letter][variant]);
             break;
