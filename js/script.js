@@ -8,6 +8,7 @@ var load_next = function() {
 }
 
 $(document).ready(function() {
-    load_next;
+    var letter = (Math.random()*3);
+    console.log(letter);
 });
 
