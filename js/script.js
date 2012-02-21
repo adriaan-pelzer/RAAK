@@ -4,7 +4,7 @@ var letters_k = ['0c71b1cbe12da4fdbe88df63f21dbfce.jpg', '78ce302c784ece3f208eba
 
 var load_next = function() {
     var letter = Math.ceil(Math.random()*3);
-    $('#logo_letter_r1 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/logo_letters/r/' + letters_r[letter]);
+    $('#logo_letter_r1 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/r/' + letters_r[letter]);
 }
 
 $(document).ready(function() {
