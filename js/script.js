@@ -34,5 +34,5 @@ var load_letter = function() {
 }
 
 $(document).ready(function() {
-    load_letter;
+    load_letter();
 });
