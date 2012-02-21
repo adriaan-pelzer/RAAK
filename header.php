@@ -20,6 +20,7 @@
 $images_dir = '/logo_letters';
 $images = scandir($images_dir);
 echo ($images);
+echo ('ping');
 ?>
         <h1>RAAK</h1>
         <a id="title" href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
