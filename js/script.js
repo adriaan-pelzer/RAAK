@@ -8,7 +8,7 @@ var load_next = function() {
 }
 
 $(document).ready(function() {
-    var letter = (Math.random()*3);
+    var letter = Mah.round((Math.random()*3));
     console.log(letter);
 });
 
