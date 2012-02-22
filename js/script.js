@@ -21,18 +21,24 @@ var load_next = function() {
             variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
         }
         oldR = variant;
+        console.log('oldR:' + oldR);
+        consloe.log('variantR:' + variant);
     } else if (letterNumber === 3) {
         letter = 'k';
         while (variant === oldK) {
             variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
         }
         oldK = variant;
+        console.log('oldK:' + oldK);
+        consloe.log('variantK:' + variant);
     } else {
         letter = 'a';
         while (variant === oldA) {
             variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
         }
         oldA = variant;
+        console.log('oldA:' + oldA);
+        consloe.log('variantA:' + variant);
     }
     $('#logo_letter_' + (letterNumber + 1) + ' img').fadeOut('slow',function() {
         $(this).attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/' + letter  + '/' + letters[letterNumber][variant]);
