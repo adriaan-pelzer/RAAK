@@ -63,7 +63,8 @@ var load_next = function() {
     });
 }
 
+preloadImages();
+
 $(document).ready(function() {
-    preloadImages();
     load_next();
 });
