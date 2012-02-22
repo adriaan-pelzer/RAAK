@@ -12,8 +12,7 @@ var oldK;
 
 var preloadImages = function() {
     $.each(letters, function(index, value) {
-        image(index) = new Image();
-        image(index).src = value;
+        $('.preloaded_images').append('<img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/' + value + '" />');
     });
 }
 
