@@ -14,40 +14,31 @@ var load_next = function() {
     while (letterNumber === old) {
         letterNumber = (Math.floor(Math.random()*4));
     }
-    console.log('letter:' + letterNumber);
     var variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
     if (letterNumber === 0) {
         letter = 'r';
-        console.log('oldR:' + oldR);
         while (variant === oldR) {
             variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
         }
         oldR = variant;
-        console.log('variantR:' + variant);
     } else if (letterNumber === 3) {
         letter = 'k';
-        console.log('oldK:' + oldK);
         while (variant === oldK) {
             variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
         }
         oldK = variant;
-        console.log('variantK:' + variant);
     } else {
         letter = 'a';
         if (letterNumber === 2) {
-            console.log('oldA2:' + oldA2);
             while (variant === oldA2) {
                 variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
             }
             oldA2 = variant;
-            console.log('variantA2:' + variant);
         } else {
-            console.log('oldA3:' + oldA3);
             while (variant === oldA3) {
                 variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
             }
             oldA3 = variant;
-            console.log('variantA3:' + variant);
         }
     }
     $('#logo_letter_' + (letterNumber + 1) + ' img').fadeOut('slow',function() {
