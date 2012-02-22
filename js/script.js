@@ -7,7 +7,7 @@ var old;
 var load_next = function() {
     var letter;
     var letterNumber = (Math.floor(Math.random()*4));
-    while (LetterNUmber === old) {
+    while (LetterNumber === old) {
         letterNumber = (Math.floor(Math.random()*4));
     }
     console.log('letter:' + letterNumber);
