@@ -4,6 +4,9 @@ letters[1] =['137f63eaec658cecd6305fa150be320d.jpg', '0387e51d17f01d524c0b07de14
 letters[2] =['137f63eaec658cecd6305fa150be320d.jpg', '0387e51d17f01d524c0b07de1469eb6a.png', '27027cdc0a51f42ce66c576cb4916fa1.png'];
 letters[3] = ['0c71b1cbe12da4fdbe88df63f21dbfce.jpg', '78ce302c784ece3f208eba8152c2bc58.jpg', '94f1cb321eb37b70e6f4a789514aee55.jpg'];
 var old;
+var oldR;
+var oldA;
+var oldK;
 var load_next = function() {
     var letter;
     var letterNumber = (Math.floor(Math.random()*4));
@@ -14,10 +17,22 @@ var load_next = function() {
     var variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
     if (letterNumber === 0) {
         letter = 'r';
+        while (variant === oldR) {
+            variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
+        }
+        oldR = variant;
     } else if (letterNumber === 3) {
         letter = 'k';
+        while (variant === oldK) {
+            variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
+        }
+        oldK = variant;
     } else {
         letter = 'a';
+        while (variant === oldA) {
+            variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
+        }
+        oldA = variant;
     }
     $('#logo_letter_' + (letterNumber + 1) + ' img').fadeOut('slow',function() {
         $(this).attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/' + letter  + '/' + letters[letterNumber][variant]);
