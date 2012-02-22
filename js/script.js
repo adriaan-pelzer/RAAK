@@ -17,27 +17,27 @@ var load_next = function() {
     var variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
     if (letterNumber === 0) {
         letter = 'r';
+        console.log('oldR:' + oldR);
         while (variant === oldR) {
             variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
         }
         oldR = variant;
-        console.log('oldR:' + oldR);
         console.log('variantR:' + variant);
     } else if (letterNumber === 3) {
         letter = 'k';
+        console.log('oldK:' + oldK);
         while (variant === oldK) {
             variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
         }
         oldK = variant;
-        console.log('oldK:' + oldK);
         console.log('variantK:' + variant);
     } else {
         letter = 'a';
+        console.log('oldA:' + oldA);
         while (variant === oldA) {
             variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
         }
         oldA = variant;
-        console.log('oldA:' + oldA);
         console.log('variantA:' + variant);
     }
     $('#logo_letter_' + (letterNumber + 1) + ' img').fadeOut('slow',function() {
