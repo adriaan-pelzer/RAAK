@@ -469,6 +469,10 @@ address a {
     padding: 8px 0 6px;
 }
 
+.preloaded_images {
+    display: none;
+}
+
 
 /************ body *************/
 

@@ -14,6 +14,7 @@ var preloadImages = function() {
     var lettersFolder;
     $.each(letters, function(index, value) {
         $.each(letters[index], function(index, value) {
+            console.log(letters[index]);
             if (letters[index] === 0) {
                 lettersFolder = 'r';
             } else if (letters[index] === 3) {
