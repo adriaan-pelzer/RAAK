@@ -11,8 +11,17 @@ var oldA3;
 var oldK;
 
 var preloadImages = function() {
+    var lettersFolder;
     $.each(letters, function(index, value) {
-        $('.preloaded_images').append('<img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/' + value + '" />');
+        $.each(letters[index], function(index, value) {
+            if (letters[index] === 0) {
+                lettersFolder = 'r';
+            } else if (letters[index] === 3) {
+                lettersFolder = 'k';
+            } else {
+                lettersFolder = 'a';
+            }
+            $('.preloaded_images').append('<img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/' + letersFolder + '/' + value + '" />');
     });
 }
 
