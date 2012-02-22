@@ -21,7 +21,7 @@ var preloadImages = function() {
             } else {
                 lettersFolder = 'a';
             }
-            $('.preloaded_images').append('<img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/' + letersFolder + '/' + value + '" />')
+            $('.preloaded_images').append('<img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/' + lettersFolder + '/' + value + '" />')
         });
     });
 }
