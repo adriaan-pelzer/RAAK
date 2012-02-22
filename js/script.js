@@ -7,29 +7,9 @@ letters[3] = ['0c71b1cbe12da4fdbe88df63f21dbfce.jpg', '78ce302c784ece3f208eba815
 var load_next = function() {
     var letter = (Math.floor(Math.random()*4));
     console.log('letter:' + letter);
-    switch (letter)
-    {
-        case 0:
-            var variant = Math.floor(Math.random()*(((letters[letter]).length)+1));
-            console.log('variant:' + variant);
-            $('#logo_letter_r1 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/r/' + letters[letter][variant]);
-            break;
-        case 1:
-            var variant = Math.floor(Math.random()*(((letters[letter]).length)+1));
-            console.log('variant:' + variant);
-            $('#logo_letter_a2 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/a/' + letters[letter][variant]);
-            break;
-        case 2:
-            var variant = Math.floor(Math.random()*(((letters[letter]).length)+1));
-            console.log('variant:' + variant);
-            $('#logo_letter_a3 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/a/' + letters[letter][variant]);
-            break;
-        case 3:
-            var variant = Math.floor(Math.random()*(((letters[letter]).length)+1));
-            console.log('variant:' + variant);
-            $('#logo_letter_k4 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/k/' + letters[letter][variant]);
-            break;
-    }
+    var variant = Math.floor(Math.random()*(((letters[letter]).length)+1));
+    console.log('variant:' + variant);
+    $('#logo_letter_' + variant + ' img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/k/' + letters[letter][variant]);
     setTimeout(load_next, 3000);
 }
 $(document).ready(function() {
