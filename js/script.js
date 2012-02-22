@@ -5,7 +5,7 @@ letters[2] =['137f63eaec658cecd6305fa150be320d.jpg', '0387e51d17f01d524c0b07de14
 letters[3] = ['0c71b1cbe12da4fdbe88df63f21dbfce.jpg', '78ce302c784ece3f208eba8152c2bc58.jpg', '94f1cb321eb37b70e6f4a789514aee55.jpg'];
 
 var load_next = function() {
-    var letter = (Math.random());
+    var letter = (Math.round(Math.random()*4)) - 1;
     console.log('letter:' + letter);
     switch (letter)
     {
