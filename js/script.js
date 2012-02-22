@@ -9,22 +9,22 @@ var load_next = function() {
     console.log('letter:' + letter);
     switch (letter)
     {
-        case 1:
+        case 0:
             var variant = Math.floor(Math.random()*(((letters[letter]).length)+1));
             console.log('variant:' + variant);
             $('#logo_letter_r1 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/r/' + letters[letter][variant]);
             break;
-        case 2:
+        case 1:
             var variant = Math.floor(Math.random()*(((letters[letter]).length)+1));
             console.log('variant:' + variant);
             $('#logo_letter_a2 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/a/' + letters[letter][variant]);
             break;
-        case 3:
+        case 2:
             var variant = Math.floor(Math.random()*(((letters[letter]).length)+1));
             console.log('variant:' + variant);
             $('#logo_letter_a3 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/a/' + letters[letter][variant]);
             break;
-        case 4:
+        case 3:
             var variant = Math.floor(Math.random()*(((letters[letter]).length)+1));
             console.log('variant:' + variant);
             $('#logo_letter_k4 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/k/' + letters[letter][variant]);
