@@ -10,9 +10,9 @@ var load_next = function() {
     console.log('letter:' + letterNumber);
     var variant = Math.floor(Math.random()*(((letters[letterNumber]).length)+1));
     console.log('variant:' + variant);
-    if (variant === 0) {
+    if (letterNumber === 0) {
         letter = 'r';
-    } else if (variant === 3) {
+    } else if (letterNumber === 3) {
         letter = 'k';
     } else {
         letter = 'a';
