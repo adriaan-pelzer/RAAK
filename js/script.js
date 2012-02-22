@@ -15,7 +15,7 @@ var preloadImages = function() {
         image(index) = new Image();
         image(index).src = value;
     });
-});
+}
 
 var load_next = function() {
     var letter;
