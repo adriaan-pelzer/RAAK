@@ -17,7 +17,11 @@ var load_next = function() {
     } else {
         letter = 'a';
     }
-    $('#logo_letter_' + (letterNumber + 1) + ' img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/' + letter  + '/' + letters[letterNumber][variant]);
+    $('#logo_letter_' + (letterNumber + 1) + ' img').fadeOut('fast',function() {
+        $(this).attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/' + letter  + '/' + letters[letterNumber][variant]);
+        $(this).fadeIn('fast');
+    });
+
     setTimeout(load_next, 3000);
 }
 $(document).ready(function() {
