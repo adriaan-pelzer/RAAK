@@ -15,7 +15,6 @@
     <![endif]-->
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
-<div class="preloaded_images"></div>
 <div class="wrapper hfeed">
     <header class="rounded-corners din-schrift site_header">
         <h1>RAAK</h1>
