@@ -13,11 +13,11 @@ var oldK;
 var preloadImages = function() {
     var lettersFolder;
     $.each(letters, function(index, value) {
-            console.log(index);
+        var letters_folder_number = index;
         $.each(letters[index], function(index, value) {
-            if (letters[index] === 0) {
+            if (letters_folder_number === 0) {
                 lettersFolder = 'r';
-            } else if (letters[index] === 3) {
+            } else if (letters_folder_number === 3) {
                 lettersFolder = 'k';
             } else {
                 lettersFolder = 'a';
