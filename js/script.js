@@ -10,22 +10,22 @@ var load_next = function() {
     switch (letter)
     {
         case 1:
-            var variant = Math.round(Math.random()*((letters[letter]).length));
+            var variant = Math.round(Math.random()*((letters[letter]).length)) - 1;
             console.log('variant:' + variant);
             $('#logo_letter_r1 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/r/' + letters[letter][variant]);
             break;
         case 2:
-            var variant = Math.ceil(Math.random()*((letters[letter]).length));
+            var variant = Math.round(Math.random()*((letters[letter]).length)) - 1;
             console.log('variant:' + variant);
             $('#logo_letter_a2 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/a/' + letters[letter][variant]);
             break;
         case 3:
-            var variant = Math.ceil(Math.random()*((letters[letter]).length));
+            var variant = Math.round(Math.random()*((letters[letter]).length)) - 1;
             console.log('variant:' + variant);
             $('#logo_letter_a3 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/a/' + letters[letter][variant]);
             break;
         case 4:
-            var variant = Math.ceil(Math.random()*((letters[letter]).length));
+            var variant = Math.round(Math.random()*((letters[letter]).length)) - 1;
             console.log('variant:' + variant);
             $('#logo_letter_k4 img').attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/k/' + letters[letter][variant]);
             break;
