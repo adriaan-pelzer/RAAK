@@ -56,7 +56,7 @@ var load_next = function() {
     $('#logo_letter_' + (letterNumber + 1) + ' img').animate({opacity: 0}, 1000, function() {
         $(this).attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/' + letters[letter][variant] + '&width=35&height=42').load(function() {
             $(this).animate({opacity: 1}, 1000, function() {
-                setTimeout(load_next, 1000));
+                setTimeout(load_next, 1000);
             });
         });
     });
