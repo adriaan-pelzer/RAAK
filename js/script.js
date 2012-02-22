@@ -8,7 +8,7 @@ var load_next = function() {
     var letter;
     var letterNumber = (Math.floor(Math.random()*4));
     console.log('letter:' + letterNumber);
-    var variant = Math.floor(Math.random()*(((letters[letterNumber]).length)+1));
+    var variant = Math.floor(Math.random()*(((letters[letterNumber]).length)));
     console.log('variant:' + variant);
     if (letterNumber === 0) {
         letter = 'r';
