@@ -42,7 +42,7 @@ var preloadImages = function() {
         $.each(letters[index], function(index, value) {
             //$('.preloaded_images').append('<img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/' + value + '&width=35&height=42" />')
             images[i] = new Image();
-            images[i].src = "http://stage.wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/' + value + '&width=35&height=42";
+            images[i].src = 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/' + value + '&width=35&height=42';
             i++;
         });
     });
