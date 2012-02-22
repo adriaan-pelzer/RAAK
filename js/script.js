@@ -34,12 +34,16 @@ var letters = {
          'c6a513db33554763c49386bed4673bc3.jpg'
       ]
 };
+var images = Array();
+var i = 0;
 
 var preloadImages = function() {
-    var lettersFolder;
     $.each(letters, function(index, value) {
         $.each(letters[index], function(index, value) {
-            $('.preloaded_images').append('<img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/' + value + '&width=35&height=42" />')
+            //$('.preloaded_images').append('<img src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/' + value + '&width=35&height=42" />')
+            images[i] = new Image();
+            images[i].src = "http://stage.wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/' + value + '&width=35&height=42";
+            i++;
         });
     });
 }
