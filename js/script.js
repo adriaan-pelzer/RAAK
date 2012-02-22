@@ -19,12 +19,12 @@ var load_next = function() {
     } else {
         letter = 'a';
     }
-    $('#logo_letter_' + (letterNumber + 1) + ' img').fadeOut('fast',function() {
+    $('#logo_letter_' + (letterNumber + 1) + ' img').fadeOut('slow',function() {
         $(this).attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/logo_letters/' + letter  + '/' + letters[letterNumber][variant]);
-        $(this).fadeIn('fast');
+        $(this).fadeIn('slow');
     });
     old = letterNumber;
-    setTimeout(load_next, 3000);
+    setTimeout(load_next, (Math.floor(Math.random()*4000) + 1000));
 }
 $(document).ready(function() {
     load_next();
