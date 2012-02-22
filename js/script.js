@@ -64,5 +64,5 @@ var load_next = function() {
 preloadImages();
 
 $(document).ready(function() {
-    setInterval(load_next, 3000);
+    setInterval(load_next, 5000);
 });
