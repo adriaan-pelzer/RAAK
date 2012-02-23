@@ -12,7 +12,7 @@ function logo_call_to_action() {
         <div id="logox_counter_number">7744</div>
         <a id="read_the_logo_story" href="<?php echo get_permalink($logo_story->ID); ?>">Read the story behind our logo</a>
         <hr>
-        <a id="upload_a_letter" href="<?php echo get_bloginfo('url') ?>/<?php echo($logo_project->post_name); ?>">Upload a letter</a>
+        <a id="upload_a_letter" href="<?php echo get_bloginfo('url') ?>/<?php echo($logo_project->post_slug); ?>">Upload a letter</a>
     </aside>
 <?php
 }
