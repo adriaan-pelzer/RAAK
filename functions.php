@@ -1,6 +1,6 @@
 <?php
 function logo_call_to_action() {
-    $logo_story = get_page_by_title('The perpetually changing crowdsourced RAAK logo', 'post');
+    $logo_story = get_page_by_title('The perpetually changing crowdsourced RAAK logo', 'OBJECT', 'post');
     print_r($logo_story);
     echo get_permalink($logo_story->ID);
     $logo_project = get_page_by_title('Logo Project');
