@@ -1,6 +1,8 @@
 <?php
 
 function logo_call_to_action() {
+    $logo_story = get_page_by_title('The perpetually changing crowdsourced RAAK logo');
+    print_r($logo_story);
     $logo_container = '<aside id="logox_counter" class="rounded-corners din-schrift">
     <span class="point_left"></span>
     <span class="point_right"></span>
