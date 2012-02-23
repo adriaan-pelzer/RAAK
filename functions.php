@@ -1,5 +1,4 @@
 <?php
-global $wpdb;
 function logo_call_to_action() {
     $logo_project = get_page_by_title('Logo Project');
     echo get_permalink($logo_story->ID);
