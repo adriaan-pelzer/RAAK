@@ -2,7 +2,7 @@
 global $wpdb;
 function logo_call_to_action() {
     $logo_project = get_page_by_title('Logo Project');
-    echo get_permalink($logo_story=>[ID]);
+    echo get_permalink($logo_story->[ID]);
     $logo_container = '<aside id="logox_counter" class="rounded-corners din-schrift">
     <span class="point_left"></span>
     <span class="point_right"></span>
