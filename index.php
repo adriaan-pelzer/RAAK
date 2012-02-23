@@ -7,7 +7,7 @@ Template Name:Home
 
     <div class="container rounded-corners home">
         <div class="content">
-<?php echo do_shortcode('[logo_call_to_action]'); ?>
+<?php echo do_shortcode('[logo_cta]'); ?>
             <!--aside id="logox_counter" class="rounded-corners din-schrift">
                 <span class="point_left"></span>
                 <span class="point_right"></span>
