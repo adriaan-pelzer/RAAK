@@ -1,5 +1,5 @@
 <?php
-
+global $wpdb;
 function logo_call_to_action() {
     $logo_story = get_page_by_title('The perpetually changing crowdsourced RAAK logo');
     print_r($logo_story);
