@@ -7,7 +7,8 @@ Template Name:Home
 
     <div class="container rounded-corners home">
         <div class="content">
-            <aside id="logox_counter" class="rounded-corners din-schrift">
+<?php echo do_shortcode('[logo_call_to_action]'); ?>
+            <!--aside id="logox_counter" class="rounded-corners din-schrift">
                 <span class="point_left"></span>
                 <span class="point_right"></span>
                 <header>
@@ -17,7 +18,7 @@ Template Name:Home
                 <a id="read_the_logo_story" href="http://wewillraakyou.com/2010/11/the-perpetually-changing-crowdsourced-raak-logo/">Read the story behind our logo</a>
                 <hr />
                 <a id="upload_a_letter" href="http://wewillraakyou.com/wp-content/themes/RAAK/logo-project/">Upload a letter</a>
-            </aside><!-- logox_counter -->
+            </aside--><!-- logox_counter -->
             <div id="bluebox_home_left" class="bluebox box rounded-corners">
                 <header>
                     <h2 class="din-schrift"><a href="http://wewillraakyou.com/our-work/">Our Work</a></h2>
