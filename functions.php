@@ -1,6 +1,6 @@
 <?php
 function logo_call_to_action() {
-    $logo_story = get_page_by_title('The perpetually changing crowdsourced RAAK logo');
+    $logo_story = get_page_by_title('The perpetually changing crowdsourced RAAK logo', 'post');
     echo get_permalink($logo_story->ID);
     $logo_project = get_page_by_title('Logo Project');
     $logo_container = '<aside id="logox_counter" class="rounded-corners din-schrift">
