@@ -35,9 +35,10 @@ function display_latest_posts() {
     foreach($latest_posts as $post_number => $post) {
         setup_postdata($post);
         $author_data = get_userdata($post->post_author);
-        print_r ($author_data);
         $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
+        echo $author_full_name; 
         $author_page = get_page_by_title($user_full_name);
+        print_r ($author_page);
     }
 ?>
                 <article>
