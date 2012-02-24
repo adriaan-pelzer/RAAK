@@ -67,8 +67,9 @@ var pagination = function() {
     $('.pagination .previous').click(function() {
         if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
             $('.whitebox_primary_post.current').css('display', 'none').removeClass('current').next('div').css('display', 'block').addClass('current');
-        } else {
-            $('.pagination .previous').removeClass('active');
+            if (($('.whitebox_primary_post.current').next('div').length) === 0) {
+                $('.pagination .previous').removeClass('active');
+            }
         }
     });
 }
