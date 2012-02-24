@@ -66,7 +66,7 @@ preloadImages();
 var pagination = function() {
     $('.pagination .previous').click(function() {
         if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
-            $('.whitebox_primary_post.current').css('display', 'none').removeClass('current').next('div').css('display', 'block').addClass('current');
+            $('.whitebox_primary_post.current').removeClass('current').next('div').addClass('current');
             if (($('.whitebox_primary_post.current').prev('div').length) !== 0) {
                 $('.pagination .next').addClass('active');
             }
@@ -77,7 +77,7 @@ var pagination = function() {
     });
     $('.pagination .next').click(function() {
         if (($('.whitebox_primary_post.current').prev('div').length) !== 0) {
-            $('.whitebox_primary_post.current').css('display', 'none').removeClass('current').prev('div').css('display', 'block').addClass('current');
+            $('.whitebox_primary_post.current').removeClass('current').prev('div').addClass('current');
             if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
                 $('.pagination .previous').addClass('active');
             }

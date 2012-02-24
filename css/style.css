@@ -608,6 +608,14 @@ address a {
 
 /*************** Latest Posts **************/
 
+.whitebox_primary_post {
+    display: none;
+}
+
+.whitebox_primary_post.current {
+    display: block;
+}
+
 .whitebox_primary_post h3 {
     font-size: 19px;
     line-height: 30px;
