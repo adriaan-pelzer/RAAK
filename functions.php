@@ -38,11 +38,11 @@ function display_latest_posts() {
 ?>
                 <article>
                     <header>
-                    <h3><a href="<?php get_permalink($post->ID); ?>"><?php echo $post->post_title; ?></a></h3>
+                    <h3><a href="<?php echo get_permalink($post->ID); ?>"><?php echo $post->post_title; ?></a></h3>
                     </header>
                     <hr>
                     <div class="whitebox_primary_post_attr">
-                    <span class="whitebox_primary_post_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/"><?php get_the_author(); ?></a></span>
+                    <span class="whitebox_primary_post_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/"><?php echo get_the_author(); ?></a></span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date"> 5 Dec 2011</span>
                         <span class="seperator">|</span>
