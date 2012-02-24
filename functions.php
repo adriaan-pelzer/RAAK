@@ -75,16 +75,15 @@ function display_latest_posts() {
 ?>
             <footer class="whitebox_primary_footer box_nav small_arial_caps">
                 <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
-                <div class="whitebox_primary_footer_right">
-                    <a class="active" onclick="javascript: previous();"><span class="arrow">◄</span> Previous</a>
+                <div class="whitebox_primary_footer_right pagination">
+                    <a class="previous active" onclick="javascript: previous();"><span class="arrow">◄</span> Previous</a>
                     <span class="seperator">|</span>
-                    <a onclick="javascript: next();">Next <span class="arrow">►</span></a>
+                    <a class="next" onclick="javascript: next();">Next <span class="arrow">►</span></a>
                 </div><!-- .whitebox_primary_footer_right -->
             </footer><!-- .whitebox_primary_footer -->
         </div><!-- whitebox_primary -->
     </div><!-- tab_container -->
 <?php
-    echo $post_number;
 }
 
 add_shortcode('latest_posts', 'display_latest_posts');

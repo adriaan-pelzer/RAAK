@@ -63,6 +63,15 @@ var load_next = function() {
 
 preloadImages();
 
+var pagination = function() {
+    $('.pagination .next').click(function() {
+        alert($('.whitebox_primary_post').css('display'));
+    });
+}
+    
+
+
 $(document).ready(function() {
     setInterval(load_next, 5000);
+    pagination();
 });
