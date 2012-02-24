@@ -56,8 +56,7 @@ function display_latest_posts() {
                     </div><!-- .whitebox_primary_post_attr -->
                     <div class="whitebox_primary_post_content">
                         <div class="whitebox_primary_post_content_right">
-                            <a href="<?php echo get_permalink ($post->ID); ?>"><?php echo get_image_or_video ($post->post_content, 162, 104); ?></a>
-                            <a class="more_link" href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">More ►</a>
+                            <a class="more_link" href="<?php the_permalink(); ?>">More ►</a>
                         </div><!-- .whitebox_primary_post_content_right -->
                             <?php echo $post->post_excerpt; ?>
                     </div><!-- .whitebox_primary_post_content -->
@@ -108,57 +107,4 @@ function display_latest_posts() {
 }
 
 add_shortcode('latest_posts', 'display_latest_posts');
-?>
-
-
-
-<?php 
-/********************************** Taken from local_functions.php from old site *************************/
-
-function get_image_or_video ($post_content, $width=NULL, $height=NULL) {
-    $returncode = NULL;
-    $gallerytext = array();
-    $videotext = array();
-    $imagetext = array();
-
-    $gallerymatch = preg_match ("/\[nggallery id=(\d+)\]/", $post_content, $gallerytext, PREG_OFFSET_CAPTURE);
-    $videomatch = preg_match ("/<object.*<\/object>/", $post_content, $videotext, PREG_OFFSET_CAPTURE);
-    $imagematch = preg_match ("/<img[^>]+>/", $post_content, $imagetext, PREG_OFFSET_CAPTURE);
-
-    if ($gallerymatch && $videomatch && $imagematch) {
-        if (($gallerytext[0][1] < $videotext[0][1]) && ($gallerytext[0][1] < $imagetext[0][1])) {
-            return patch_dimensions (mine_gallery ($gallerytext[1][0]), $width, $height);
-        } else if (($videotext[0][1] < $gallerytext[0][1]) && ($videotext[0][1] < $imagetext[0][1])) {
-            return patch_dimensions ($videotext[0][0], $width, $height);
-        } else {
-            return preg_replace ("/ class=\"[^\"]*\"/", "", patch_dimensions ($imagetext[0][0], $width, $height));
-        }
-    } else if ($gallerymatch && $videomatch) {
-        if ($gallerytext[0][1] < $videotext[0][1]) {
-            return patch_dimensions (mine_gallery ($gallerytext[1][0]), $width, $height);
-        } else {
-            return patch_dimensions ($videotext[0][0], $width, $height);
-        }
-    } else if ($gallerymatch && $imagematch) {
-        if ($gallerytext[0][1] < $imagetext[0][1]) {
-            return patch_dimensions (mine_gallery ($gallerytext[1][0]), $width, $height);
-        } else {
-            return preg_replace ("/ class=\"[^\"]*\"/", "", patch_dimensions ($imagetext[0][0], $width, $height));
-        }
-    } else if ($videomatch && $imagematch) {
-        if ($videotext[0][1] < $imagetext[0][1]) {
-            return patch_dimensions ($videotext[0][0], $width, $height);
-        } else {
-            return preg_replace ("/ class=\"[^\"]*\"/", "", patch_dimensions ($imagetext[0][0], $width, $height));
-        }
-    } else if ($gallerymatch) {
-        return patch_dimensions (mine_gallery ($gallerytext[1][0]), $width, $height);
-    } else if ($videomatch) {
-        return patch_dimensions ($videotext[0][0], $width, $height);
-    } else if ($imagematch) {
-        return preg_replace ("/ class=\"[^\"]*\"/", "", patch_dimensions ($imagetext[0][0], $width, $height));
-    } else {
-        return null;
-    }
-}
 ?>
