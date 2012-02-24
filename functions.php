@@ -34,11 +34,7 @@ function display_latest_posts() {
 <?php
     foreach($latest_posts as $post_number => $post) {
         setup_postdata($post);
-        echo $post_number;
-        print_r($post);
     }
-
-    
 ?>
                 <article>
                     <header>
@@ -46,7 +42,7 @@ function display_latest_posts() {
                     </header>
                     <hr>
                     <div class="whitebox_primary_post_attr">
-                        <span class="whitebox_primary_post_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
+                    <span class="whitebox_primary_post_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/"><?php get_the_author(); ?></a></span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date"> 5 Dec 2011</span>
                         <span class="seperator">|</span>
