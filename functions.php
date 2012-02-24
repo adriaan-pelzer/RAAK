@@ -53,8 +53,6 @@ function display_latest_posts() {
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date"><?php echo strftime ('%e %h %Y', strtotime ($post->post_date)); ?></span>
                         <span class="seperator">|</span>
-                        <!--span class="whitebox_primary_post_attr_item time">12:44</span>
-                        <span class="seperator">|</span-->
                         <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php echo $post->comment_count." comment".(($post->comment_count == 1)?"":"s"); ?></span>
                     </div><!-- .whitebox_primary_post_attr -->
                     <div class="whitebox_primary_post_content">
@@ -83,10 +81,10 @@ function display_latest_posts() {
                     <a onclick="javascript: next();">Next <span class="arrow">►</span></a>
                 </div><!-- .whitebox_primary_footer_right -->
             </footer><!-- .whitebox_primary_footer -->
-        </div><!-- #whitebox_primary -->
-    </div>
-
+        </div><!-- whitebox_primary -->
+    </div><!-- tab_container -->
 <?php
+    echo $post_number;
 }
 
 add_shortcode('latest_posts', 'display_latest_posts');
