@@ -90,6 +90,7 @@ add_shortcode('latest_posts', 'display_latest_posts');
 
 function our_work_home_blue()
 {
+    the_content();
     $our_work = get_page_by_title('Our Work');
 ?>
     <div id="bluebox_home_left" class="bluebox box rounded-corners">
