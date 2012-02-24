@@ -31,13 +31,17 @@ function display_latest_posts() {
             </header>
         </div><!-- .grey_tab -->
         <div class="whitebox whitebox_primary box rounded-corners">
-            <div id="whitebox_primary_post_0" class="whitebox_primary_post">
 <?php
     foreach($latest_posts as $post_number => $post) {
         setup_postdata($post);
         $author_data = get_userdata($post->post_author);
         $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
         $author_page = get_page_by_title($author_full_name);
+        if (($post_number % 2) == 0) {
+?>
+            <div id="whitebox_primary_body_post_<?php echo $post_number; ?>" class="whitebox_primary_body_post"<?php if ($post_number != 0) { echo " style=\"display: none;\""; } ?>>
+<?php
+        }
 ?>
                 <article>
                     <header>
@@ -63,10 +67,14 @@ function display_latest_posts() {
                     <hr class="solid">
                 </article>
 <?php
+        if (($post_number % 2) == 0) {
+?>
+            </div>
+<?php
+        }
+
     }
 ?>
-
-            </div>
             <footer class="whitebox_primary_footer box_nav small_arial_caps">
                 <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
                 <div class="whitebox_primary_footer_right">
