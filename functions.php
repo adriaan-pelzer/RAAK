@@ -40,7 +40,7 @@ function display_latest_posts() {
         $author_page = get_page_by_title($author_full_name);
         $image_tag_begin = strpos($post->post_content, '<img');
         $image_tag_end = strpos($post->post_content, '>', $image_tag_begin);
-        $image_tag = substr($post->post_content, $image_tag_begin, ($image_tag_end - $image_tag_begin + 1);
+        $image_tag = substr($post->post_content, $image_tag_begin, ($image_tag_end - $image_tag_begin + 1));
         echo $image_tag;
 ?>
                 <article>
