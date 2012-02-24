@@ -67,7 +67,7 @@ function display_latest_posts() {
                     <hr class="solid">
                 </article>
 <?php
-        if (($post_number % 2) == 0) {
+        if (($post_number % 2) == 1) {
 ?>
             </div>
 <?php
