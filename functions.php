@@ -38,10 +38,6 @@ function display_latest_posts() {
         $author_data = get_userdata($post->post_author);
         $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
         $author_page = get_page_by_title($author_full_name);
-        $image_tag_begin = strpos($post->post_content, '<img');
-        $image_tag_end = strpos($post->post_content, '>', $image_tag_begin);
-        $image_tag = substr($post->post_content, $image_tag_begin, ($image_tag_end - $image_tag_begin + 1));
-        echo $image_tag;
 ?>
                 <article>
                     <header>
@@ -59,6 +55,7 @@ function display_latest_posts() {
                     </div><!-- .whitebox_primary_post_attr -->
                     <div class="whitebox_primary_post_content">
                         <div class="whitebox_primary_post_content_right">
+                                    <a href="<?php echo get_permalink ($post->ID); ?>"><?php echo get_image_or_video ($post->post_content, 162, 104); ?></a>
                             <a class="more_link" href="<?php echo get_permalink($logo_project->ID); ?>">More ►</a>
                         </div><!-- .whitebox_primary_post_content_right -->
                             <?php echo $post->post_excerpt; ?>
@@ -85,4 +82,143 @@ function display_latest_posts() {
 }
 
 add_shortcode('latest_posts', 'display_latest_posts');
+?>
+
+
+<?php 
+/***************************** From local functions on old site **************************/
+
+function patch_dimensions ($code, $width, $height) {
+    $widthtexts = array();
+    $heighttexts = array();
+    $oldwidth = -1;
+    $oldheight = -1;
+
+    if (preg_match ("/width=\"([^\"]+)\"/", $code, $widthtexts)) {
+        $oldwidth = $widthtexts[1];
+    }
+
+    if (preg_match ("/height=\"([^\"]+)\"/", $code, $heighttexts)) {
+        $oldheight = $heighttexts[1];
+    }
+
+    if ($width && $height) {
+        $patchwidth = TRUE;
+        $patchheight = TRUE;
+    } else if ($height) {
+        $patchwidth = FALSE;
+        $patchheight = TRUE;
+    } else if ($width) {
+        $patchwidth = TRUE;
+        $patchheight = FALSE;
+    } else {
+        $patchwidth = FALSE;
+        $patchheight = FALSE;
+    }
+
+    if ($patchwidth && $patchheight) {
+        if ($oldwidth == -1) {
+            $code = preg_replace ("/\/?>$/", " width=\"".$width."\" />", $code);
+        } else {
+            $code = preg_replace ("/width=\"[^\"]+\"/", " width=\"".$width."\"", $code);
+        }
+        if ($oldheight == -1) {
+            $code = preg_replace ("/\/?>$/", " height=\"".$height."\" />", $code);
+        } else {
+            $code = preg_replace ("/height=\"[^\"]+\"/", "height=\"".$height."\"", $code);
+        }
+    } else if ($patchwidth) {
+        if ($oldwidth == -1) {
+            $code = preg_replace ("/\/?>$/", " width=\"".$width."\" />", $code);
+        } else {
+            $code = preg_replace ("/width=\"[^\"]+\"/", " width=\"".$width."\"", $code);
+            if ($oldheight != -1) {
+                $code = preg_replace ("/height=\"[^\"]+\"/", "height=\"".$width*$oldheight/$oldwidth."\"", $code);
+            }
+        }
+    } else if ($patchheight) {
+        if ($oldheight == -1) {
+            $code = preg_replace ("/\/?>$/", " height=\"".$height."\" />", $code);
+        } else {
+            $code = preg_replace ("/height=\"[^\"]+\"/", "height=\"".$height."\"", $code);
+            if ($oldwidth != -1) {
+                $code = preg_replace ("/width=\"[^\"]+\"/", "width=\"".$height*$oldwidth/$oldheight."\"", $code);
+            }
+        }
+    }
+
+    return $code;
+}
+
+function mine_gallery ($id) {
+    global $wpdb;
+
+    $records = $wpdb->get_results ("SELECT path FROM ".$wpdb->nggallery." WHERE gid=".$id);
+
+    $path = $records[0]->path;
+
+    $records = $wpdb->get_results ("SELECT filename FROM ".$wpdb->nggpictures." WHERE galleryid=".$id." ORDER BY `sortorder` LIMIT 1");
+    $filename = $records[0]->filename;
+
+    $returncode = "<img alt=\"".$records[0]->alttext."\" src=\"".get_bloginfo('url')."/".$path."/".$filename."\" ";
+
+    if ($width) {
+        $returncode .= "width=\"".$width."\" ";
+    }
+
+    if ($height) {
+        $returncode .= "height=\"".$height."\" ";
+    }
+
+    $returncode .= "/>";
+
+    return $returncode;
+}
+
+function get_image_or_video ($post_content, $width=NULL, $height=NULL) {
+    $returncode = NULL;
+    $gallerytext = array();
+    $videotext = array();
+    $imagetext = array();
+
+    $gallerymatch = preg_match ("/\[nggallery id=(\d+)\]/", $post_content, $gallerytext, PREG_OFFSET_CAPTURE);
+    $videomatch = preg_match ("/<object.*<\/object>/", $post_content, $videotext, PREG_OFFSET_CAPTURE);
+    $imagematch = preg_match ("/<img[^>]+>/", $post_content, $imagetext, PREG_OFFSET_CAPTURE);
+
+    if ($gallerymatch && $videomatch && $imagematch) {
+        if (($gallerytext[0][1] < $videotext[0][1]) && ($gallerytext[0][1] < $imagetext[0][1])) {
+            return patch_dimensions (mine_gallery ($gallerytext[1][0]), $width, $height);
+        } else if (($videotext[0][1] < $gallerytext[0][1]) && ($videotext[0][1] < $imagetext[0][1])) {
+            return patch_dimensions ($videotext[0][0], $width, $height);
+        } else {
+            return preg_replace ("/ class=\"[^\"]*\"/", "", patch_dimensions ($imagetext[0][0], $width, $height));
+        }
+    } else if ($gallerymatch && $videomatch) {
+        if ($gallerytext[0][1] < $videotext[0][1]) {
+            return patch_dimensions (mine_gallery ($gallerytext[1][0]), $width, $height);
+        } else {
+            return patch_dimensions ($videotext[0][0], $width, $height);
+        }
+    } else if ($gallerymatch && $imagematch) {
+        if ($gallerytext[0][1] < $imagetext[0][1]) {
+            return patch_dimensions (mine_gallery ($gallerytext[1][0]), $width, $height);
+        } else {
+            return preg_replace ("/ class=\"[^\"]*\"/", "", patch_dimensions ($imagetext[0][0], $width, $height));
+        }
+    } else if ($videomatch && $imagematch) {
+        if ($videotext[0][1] < $imagetext[0][1]) {
+            return patch_dimensions ($videotext[0][0], $width, $height);
+        } else {
+            return preg_replace ("/ class=\"[^\"]*\"/", "", patch_dimensions ($imagetext[0][0], $width, $height));
+        }
+    } else if ($gallerymatch) {
+        return patch_dimensions (mine_gallery ($gallerytext[1][0]), $width, $height);
+    } else if ($videomatch) {
+        return patch_dimensions ($videotext[0][0], $width, $height);
+    } else if ($imagematch) {
+        return preg_replace ("/ class=\"[^\"]*\"/", "", patch_dimensions ($imagetext[0][0], $width, $height));
+    } else {
+        return null;
+    }
+}
 ?>
