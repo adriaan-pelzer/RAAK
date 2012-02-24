@@ -90,16 +90,16 @@ add_shortcode('latest_posts', 'display_latest_posts');
 
 function our_work_home_blue()
 {
-    the_content();
+    $home = get_page_by_title('Home');
     $our_work = get_page_by_title('Our Work');
 ?>
     <div id="bluebox_home_left" class="bluebox box rounded-corners">
         <header>
             <h2 class="din-schrift"><a href="<?php get_permalink($our_work->ID); ?>">Our Work</a></h2>
         </header>
-        <hr>    
-        <p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
-    </div>
+        <hr>
+        <?php echo $home->post_content; ?>    
+            </div>
     <div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
         <nav class="bluebox_nav box_nav">
             <h3 class="bluebox_nav_item small_arial_caps"><a onclick="javascript: expand('social-media-ready');">social media ready</a></h3>
