@@ -84,7 +84,7 @@ Template Name:Home
                         </ul>
                     </section>
             </div><!-- #bluebox_home_right -->
-<?php do_shortcode(['latest_posts']); ?>
+<?php do_shortcode('[latest_posts]'); ?>
             <div class="tab_container whitebox-secondary other_posts">
                 <div class="grey_tab tab tab104 rounded-corners">
                     <header>
