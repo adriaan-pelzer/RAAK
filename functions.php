@@ -92,7 +92,6 @@ function our_work_home_blue()
     $home = get_page_by_title('Home');
     $our_work = get_page_by_title('Our Work');
     $work_categories = get_categories(array('child_of'=>get_cat_id ('RAAK projects'), 'order'=>'desc'));
-    print_r($work_categories);
 ?>
     <div id="bluebox_home_left" class="bluebox box rounded-corners">
         <header>
@@ -104,11 +103,11 @@ function our_work_home_blue()
     <div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
         <nav class="bluebox_nav box_nav">
 <?php
-    foreach($work_categories as $work_category)
+    foreach($work_categories as $cat_number => $work_category)
     {
 ?>
-            <h3 class="bluebox_nav_item small_arial_caps"><a onclick="javascript: expand('<?php echo $work_category->category_nice_name; ?>');"><?php echo $work_category->name; ?></a></h3>
-            <span class="seperator">|</span>
+            <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
+            <h3 class="bluebox_nav_item small_arial_caps"><a <?php if($cat_number = 0){?>class="active"<?php } ?>onclick="javascript: expand('<?php echo $work_category->category_nice_name; ?>');"><?php echo $work_category->name; ?></a></h3>
 <?php
     }
 ?>
