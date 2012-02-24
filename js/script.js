@@ -65,11 +65,7 @@ preloadImages();
 
 var pagination = function() {
     $('.pagination .previous').click(function() {
-        if ($('.whitebox_primary_post').css('display') != 'none'); {
-            var currentId = $('.whitebox_primary_post');
-            $(currentId).css('display', 'none');
-            $(currentId).next().css('display', 'block');
-        }
+            $('.whitebox_primary_post current').css('display', 'none').removeClass('current').next().css('display', 'block').addClass('current');
     });
 }
     
