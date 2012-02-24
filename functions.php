@@ -20,7 +20,9 @@ function logo_call_to_action() {
 add_shortcode('logo_cta', 'logo_call_to_action');
 
 function display_latest_posts() {
-    $latest_posts = get_posts("numberposts=10&category=".get_cat_id ('Blog')");
+    $args = array('numberposts' => 20, 'category' => get_cat_id ('Blog'));
+    print_r($args);
+    $latest_posts = get_posts($args);
     $blog_archive_page = get_page_by_title('Blog Archive');
 ?>
     <div class="tab_container whitebox-primary">
