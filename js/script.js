@@ -64,8 +64,10 @@ var load_next = function() {
 preloadImages();
 
 var pagination = function() {
-    $('.pagination .next').click(function() {
-        alert($('.whitebox_primary_post').css('display'));
+    $('.pagination .previous').click(function() {
+        if ($('.whitebox_primary_post').css('display') != 'none'); {
+            alert ($('.whitebox_primary_post').attr('id'));
+        }
     });
 }
     
