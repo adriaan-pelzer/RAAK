@@ -91,7 +91,7 @@ function our_work_home_blue()
 {
     $home = get_page_by_title('Home');
     $our_work = get_page_by_title('Our Work');
-    $work_categories = get_categories(array('child_of'=>get_cat_id ('RAAK projects'));
+    $work_categories = get_categories(array('child_of'=>get_cat_id ('RAAK projects')));
     print_r($work_categories);
 ?>
     <div id="bluebox_home_left" class="bluebox box rounded-corners">
