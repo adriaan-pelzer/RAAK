@@ -20,8 +20,7 @@ function logo_call_to_action() {
 add_shortcode('logo_cta', 'logo_call_to_action');
 
 function display_latest_posts() {
-    $args = array('numberposts' => 20, 'category' => get_cat_id ('Blog'));
-    $latest_posts = get_posts($args);
+    $latest_posts = get_posts(array('numberposts' => 20, 'category' => get_cat_id ('Blog')));
     $blog_archive_page = get_page_by_title('Blog Archive');
 ?>
     <div class="tab_container whitebox-primary">
@@ -92,6 +91,8 @@ function our_work_home_blue()
 {
     $home = get_page_by_title('Home');
     $our_work = get_page_by_title('Our Work');
+    $work_categories = get_categories(array('child_of'=>get_cat_id ('RAAK projects'));
+    print_r($work_categories);
 ?>
     <div id="bluebox_home_left" class="bluebox box rounded-corners">
         <header>
