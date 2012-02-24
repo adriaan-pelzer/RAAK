@@ -66,7 +66,8 @@ preloadImages();
 var pagination = function() {
     $('.pagination .previous').click(function() {
         if ($('.whitebox_primary_post').css('display') != 'none'); {
-            alert ($('.whitebox_primary_post').attr('id'));
+            $(this).css('display', 'none');
+            $(this).next().css('display', 'block');
         }
     });
 }
