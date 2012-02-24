@@ -1252,13 +1252,13 @@ a.page-numbers, .ngg-navigation span {
     width: 328px!important;
 }
 
-a.next, a.prev {
+.ngg-navigation a.next, .ngg-navigation a.prev {
     border: none!important;
     color: #6CF!important;
     padding: 0!important;
 }
 
-.next {
+.ngg-navigation .next {
     float: right;
 }
 
