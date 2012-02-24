@@ -90,10 +90,11 @@ add_shortcode('latest_posts', 'display_latest_posts');
 
 function our_work_home_blue()
 {
+    $our_work = get_page_by_title('Our Work');
 ?>
     <div id="bluebox_home_left" class="bluebox box rounded-corners">
         <header>
-            <h2 class="din-schrift"><a href="http://wewillraakyou.com/our-work/">Our Work</a></h2>
+            <h2 class="din-schrift"><a href="<?php get_permalink($our_work->ID); ?>">Our Work</a></h2>
         </header>
         <hr>    
         <p>RAAK is a social &amp; digital media <em>plug-in</em>. We put you in touch with people, be it your customers, your suppliers, or employees.</p>
@@ -173,8 +174,6 @@ function our_work_home_blue()
 
 add_shortcode('OW_home', 'our_work_home_blue');
 ?>
-
-
 <?php 
 /***************************** From local functions on old site **************************/
 
