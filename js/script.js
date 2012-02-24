@@ -67,9 +67,8 @@ var pagination = function() {
     $('.pagination .previous').click(function() {
         if ($('.whitebox_primary_post').css('display') != 'none'); {
             var currentId = $('.whitebox_primary_post').attr('id');
-            alert (currentId);
-            $(currentId).css('display', 'none');
-            $(currentId).next().css('display', 'block');
+            $('.whitebox_primary_post').css('display', 'none');
+            $('.whitebox_primary_post').next().css('display', 'block');
         }
     });
 }
