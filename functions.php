@@ -34,10 +34,8 @@ function display_latest_posts() {
 <?php
     foreach($latest_posts as $post_number => $post) {
         setup_postdata($post);
-        print_r($post);
         $author_data = get_userdata($post->post_author);
         $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
-        echo $author_full_name; 
         $author_page = get_page_by_title($author_full_name);
 ?>
                 <article>
@@ -66,31 +64,6 @@ function display_latest_posts() {
     }
 ?>
 
-                <article>
-                    <header>
-                        <h3><a href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/">The RAAKonteur #65 - Kevin Rose's new project, The Facebook Freakyline and more</a></h3>
-                    </header>
-                    <hr>
-                    <div class="whitebox_primary_post_attr">
-                        <span class="whitebox_primary_post_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
-                        <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item date">28 Nov 2011</span>
-                        <span class="seperator">|</span>
-                        <!--span id="whitebox_primary_attr_post_time" class="whitebox_primary_post_attr_item">11:59</span>
-                        <span class="seperator">|</span-->
-                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png">0 comments</span>
-                    </div><!-- .whitebox_primary_post_attr -->
-                    <div class="whitebox_primary_post_content">
-                        <div class="whitebox_primary_post_content_right">
-                            <a href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/11/Picture_39.png" alt="etsy-recommendations" title="etsy-recommendations" width="162" height="104"></a>
-                            <a class="more_link" href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/">More ►</a>
-                        </div><!-- .whitebox_primary_post_content_right -->
-                        <p>
-                            This week we are trying out a frictionless newsletter, so without further ado...
-                        </p>
-                    </div><!-- .whitebox_primary_post_content -->
-                    <hr class="solid">
-                </article>
             </div>
             <footer class="whitebox_primary_footer box_nav small_arial_caps">
                 <a class="whitebox_primary_footer_left" href="http://wewillraakyou.com/blog-archive/">All blog posts</a>
