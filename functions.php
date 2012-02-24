@@ -34,11 +34,12 @@ function display_latest_posts() {
 <?php
     foreach($latest_posts as $post_number => $post) {
         setup_postdata($post);
+        print_r($post);
     }
 ?>
                 <article>
                     <header>
-                    <h3><a href="<?php echo get_permalink($post->ID); ?>"><?php echo $post->post_title; ?></a></h3>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title; ?></a></h3>
                     </header>
                     <hr>
                     <div class="whitebox_primary_post_attr">
