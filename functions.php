@@ -34,6 +34,7 @@ function display_latest_posts() {
     foreach($latest_posts as $post) {
         setup_postdata($post);
         print_r($post);
+    }
 
     
 ?>
