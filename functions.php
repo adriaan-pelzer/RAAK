@@ -107,7 +107,7 @@ function our_work_home_blue()
     {
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
-            <h3 class="bluebox_nav_item small_arial_caps"><a <?php if($cat_number = 0){?>class="active"<?php } ?>onclick="javascript: expand('<?php echo $work_category->category_nice_name; ?>');"><?php echo $work_category->name; ?></a></h3>
+            <h3 class="bluebox_nav_item small_arial_caps"><a <?php if($cat_number == 0){?>class="active"<?php } ?>onclick="javascript: expand('<?php echo $work_category->category_nice_name; ?>');"><?php echo $work_category->name; ?></a></h3>
 <?php
     }
 ?>
