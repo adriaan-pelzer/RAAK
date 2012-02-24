@@ -39,7 +39,6 @@ function display_latest_posts() {
         echo $author_full_name; 
         $author_page = get_page_by_title($user_full_name);
         print_r ($author_page);
-    }
 ?>
                 <article>
                     <header>
@@ -66,6 +65,10 @@ function display_latest_posts() {
                     </div><!-- .whitebox_primary_post_content -->
                     <hr class="solid">
                 </article>
+<?php
+    }
+?>
+
                 <article>
                     <header>
                         <h3><a href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/">The RAAKonteur #65 - Kevin Rose's new project, The Facebook Freakyline and more</a></h3>
