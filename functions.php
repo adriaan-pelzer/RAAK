@@ -22,6 +22,7 @@ add_shortcode('logo_cta', 'logo_call_to_action');
 function display_latest_posts() {
     $args = array('numberposts' => 20);
     $latest_posts = get_posts($args);
+    $blog_archive_page = get_page_by_title('Blog Archive');
 ?>
     <div class="tab_container whitebox-primary">
         <div class="grey_tab tab tab104 rounded-corners">
@@ -40,7 +41,7 @@ function display_latest_posts() {
 ?>
                 <article>
                     <header>
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                    <h3><a href="<?php echo get_permalink($logo_project->ID); ?>"><?php echo $post->post_title; ?></a></h3>
                     </header>
                     <hr>
                     <div class="whitebox_primary_post_attr">
@@ -54,7 +55,7 @@ function display_latest_posts() {
                     </div><!-- .whitebox_primary_post_attr -->
                     <div class="whitebox_primary_post_content">
                         <div class="whitebox_primary_post_content_right">
-                            <a class="more_link" href="<?php the_permalink(); ?>">More ►</a>
+                            <a class="more_link" href="<?php echo get_permalink($logo_project->ID); ?>">More ►</a>
                         </div><!-- .whitebox_primary_post_content_right -->
                             <?php echo $post->post_excerpt; ?>
                     </div><!-- .whitebox_primary_post_content -->
@@ -66,7 +67,7 @@ function display_latest_posts() {
 
             </div>
             <footer class="whitebox_primary_footer box_nav small_arial_caps">
-                <a class="whitebox_primary_footer_left" href="http://wewillraakyou.com/blog-archive/">All blog posts</a>
+                <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
                 <div class="whitebox_primary_footer_right">
                     <a class="active" onclick="javascript: previous();"><span class="arrow">◄</span> Previous</a>
                     <span class="seperator">|</span>
