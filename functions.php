@@ -21,7 +21,6 @@ add_shortcode('logo_cta', 'logo_call_to_action');
 
 function display_latest_posts() {
     $args = array('numberposts' => 20, 'category' => get_cat_id ('Blog'));
-    print_r($args);
     $latest_posts = get_posts($args);
     $blog_archive_page = get_page_by_title('Blog Archive');
 ?>
@@ -39,6 +38,7 @@ function display_latest_posts() {
         $author_data = get_userdata($post->post_author);
         $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
         $author_page = get_page_by_title($author_full_name);
+        print_r($post);
 ?>
                 <article>
                     <header>
