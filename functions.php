@@ -34,7 +34,9 @@ function display_latest_posts() {
 <?php
     foreach($latest_posts as $post_number => $post) {
         setup_postdata($post);
-        print_r($post);
+        $author_data = get_user_data($post->post_author);
+        $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
+        $author_page = get_page_by_title($user_full_name);
     }
 ?>
                 <article>
@@ -43,7 +45,7 @@ function display_latest_posts() {
                     </header>
                     <hr>
                     <div class="whitebox_primary_post_attr">
-                    <span class="whitebox_primary_post_attr_item author">Posted by <a href="http://wewillraakyou.com/about/the-founders/gerrie/"><?php echo get_the_author(); ?></a></span>
+                    <span class="whitebox_primary_post_attr_item author">Posted by <a href="<?php echo get_permalink($author_page->ID); ?>"><?php echo $author_full_name; ?></a></span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date"> 5 Dec 2011</span>
                         <span class="seperator">|</span>
