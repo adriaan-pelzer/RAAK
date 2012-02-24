@@ -67,8 +67,22 @@ var pagination = function() {
     $('.pagination .previous').click(function() {
         if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
             $('.whitebox_primary_post.current').css('display', 'none').removeClass('current').next('div').css('display', 'block').addClass('current');
+            if (($('.whitebox_primary_post.current').previous('div').length) !== 0) {
+                $('.whitebox_primary_post.current').previous('div').addClass('active');
+            }
             if (($('.whitebox_primary_post.current').next('div').length) === 0) {
                 $('.pagination .previous').removeClass('active');
+            }
+        }
+    });
+    $('.pagination .next').click(function() {
+        if (($('.whitebox_primary_post.current').previous('div').length) !== 0) {
+            $('.whitebox_primary_post.current').css('display', 'none').removeClass('current').previous('div').css('display', 'block').addClass('current');
+            if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
+                $('.whitebox_primary_post.current').previous('div').addClass('active');
+            }
+            if (($('.whitebox_primary_post.current').previous('div').length) === 0) {
+                $('.pagination .next').removeClass('active');
             }
         }
     });
