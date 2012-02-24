@@ -98,7 +98,7 @@ function our_work_home_blue()
             <h2 class="din-schrift"><a href="<?php get_permalink($our_work->ID); ?>">Our Work</a></h2>
         </header>
         <hr>
-        <?php echo $home->post_content; ?>    
+        <?php echo $home->post_content; print_r($home); ?>    
             </div>
     <div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
         <nav class="bluebox_nav box_nav">
