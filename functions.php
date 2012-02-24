@@ -30,18 +30,19 @@ function display_latest_posts() {
             </header>
         </div><!-- .grey_tab -->
         <div class="whitebox whitebox_primary box rounded-corners">
+            <div id="whitebox_primary_post_0" class="whitebox_primary_post">
 <?php
-    foreach($latest_posts as $post) {
+    foreach($latest_posts as $post_number => $post) {
         setup_postdata($post);
+        echo $post_number;
         print_r($post);
     }
 
     
 ?>
-            <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                 <article>
                     <header>
-                        <h3><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></h3>
+                    <h3><a href="<?php get_permalink($post->ID); ?>"><?php echo $post->post_title; ?></a></h3>
                     </header>
                     <hr>
                     <div class="whitebox_primary_post_attr">
@@ -106,5 +107,3 @@ function display_latest_posts() {
 
 add_shortcode('latest_posts', 'display_latest_posts');
 ?>
-
-
