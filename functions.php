@@ -34,11 +34,11 @@ function display_latest_posts() {
 <?php
     foreach($latest_posts as $post_number => $post) {
         setup_postdata($post);
+        print_r($post);
         $author_data = get_userdata($post->post_author);
         $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
         echo $author_full_name; 
         $author_page = get_page_by_title($author_full_name);
-        print_r ($author_page);
 ?>
                 <article>
                     <header>
@@ -48,20 +48,18 @@ function display_latest_posts() {
                     <div class="whitebox_primary_post_attr">
                     <span class="whitebox_primary_post_attr_item author">Posted by <a href="<?php echo get_permalink($author_page->ID); ?>"><?php echo $author_full_name; ?></a></span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item date"> 5 Dec 2011</span>
+                        <span class="whitebox_primary_post_attr_item date"><?php echo strftime ('%e %h %Y', strtotime ($post->post_date)); ?></span>
                         <span class="seperator">|</span>
                         <!--span class="whitebox_primary_post_attr_item time">12:44</span>
                         <span class="seperator">|</span-->
-                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png">0 comments</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php echo $post->comment_count." comment".(($post->comment_count == 1)?"":"s"); ?></span>
                     </div><!-- .whitebox_primary_post_attr -->
                     <div class="whitebox_primary_post_content">
                         <div class="whitebox_primary_post_content_right">
-                            <a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/"><img src="http://wewillraakyou.com/wp-content/uploads/2011/12/friend_request_from_your_unborn_child.jpg" alt="friend_request_from_your_unborn_child" title="friend_request_from_your_unborn_child" width="162" height="104"></a>
+                            <a href="<?php echo get_permalink ($post->ID); ?>"><?php echo get_image_or_video ($post->post_content, 162, 104); ?></a>
                             <a class="more_link" href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">More ►</a>
                         </div><!-- .whitebox_primary_post_content_right -->
-                        <p>
-                            Later this week the Pulitzer Prize Board will <a href="http://www.pulitzer.org/digital_entries">announce the details</a> of their new journalism prize categories, which will emphasize real-time reporting (that's live-tweeting to us tweeps). Until then, there's the weekly RAAKonteur.
-                        </p>
+                            <?php echo $post->post_excerpt; ?>
                     </div><!-- .whitebox_primary_post_content -->
                     <hr class="solid">
                 </article>
