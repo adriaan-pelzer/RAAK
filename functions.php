@@ -39,7 +39,7 @@ function display_latest_posts() {
         $author_page = get_page_by_title($author_full_name);
         if (($post_number % 2) == 0) {
 ?>
-            <div id="whitebox_primary_post_<?php echo $post_number; ?>" class="whitebox_primary_post<?php if ($post_number == 0) { echo " current"; } ?>"<?php if ($post_number != 0) { echo " style=\"display: none;\""; } ?>>
+            <div id="whitebox_primary_post_<?php echo $post_number; ?>" class="whitebox_primary_post<?php if ($post_number == 0) { echo " current"; } ?>">
 <?php
         }
 ?>
