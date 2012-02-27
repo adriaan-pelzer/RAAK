@@ -32,7 +32,11 @@ function display_latest_posts($atts) {
         <div class="whitebox whitebox_primary box rounded-corners">
 <?php
     for($page = 1; $page <= $num_pages; $page++) {
-
+        if (($page % $posts_per_page) == 0) {
+?>
+            <div id="whitebox_primary_post_<?php echo $post_number; ?>" class="whitebox_primary_post<?php if ($post_number == 0) { echo " current"; } ?>">
+<?php
+        }
     $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $posts_per_page . '&paged=' . $page);
         while ($latest_posts_loop->have_posts()) {
             $latest_posts_loop->the_post();
@@ -47,7 +51,7 @@ function display_latest_posts($atts) {
                     <div class="whitebox_primary_post_attr">
                     <span class="whitebox_primary_post_attr_item author">Posted by <a href="<?php echo get_permalink($author_page->ID);  ?>"><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></a></span>
                         <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item date"><?php the_date('%e %h %Y'); ?></span>
+                        <span class="whitebox_primary_post_attr_item date"><?php the_date(); ?></span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php comments_number(); ?></span>
                     </div><!-- .whitebox_primary_post_attr -->
@@ -62,6 +66,10 @@ function display_latest_posts($atts) {
                     </div><!-- .whitebox_primary_post_content -->
                     <hr class="solid">
                 </article>
+<?php
+        if (($page % 2) == 1) {
+?>
+            </div>
 <?php
         }
     }
