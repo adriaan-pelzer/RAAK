@@ -71,6 +71,7 @@ function display_latest_posts($atts) {
             </div><!-- whitebox_primary_post -->
 <?php
         }
+        wp_reset_post_data();
         wp_reset_query();
     
     }
