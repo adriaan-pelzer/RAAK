@@ -20,7 +20,7 @@ function logo_call_to_action() {
 add_shortcode('logo_cta', 'logo_call_to_action');
 
 function display_latest_posts($atts) {
-    extract(shortcode_atts(array('category' => '0', 'post_per_page' => '0', 'num_pages' => '-1'), $atts));
+    extract(shortcode_atts(array('category' => '0', 'posts_per_page' => '0', 'num_pages' => '-1'), $atts));
     $blog_archive_page = get_page_by_title('Blog Archive');
 ?>
     <div class="tab_container whitebox-primary">
@@ -37,8 +37,8 @@ function display_latest_posts($atts) {
             <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 0) { echo " current"; } ?>">
 <?php
         }
-        $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $post_per_page . '&paged=' . $page);
-        echo ('posts per page' . $post_per_page );
+        $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $posts_per_page . '&paged=' . $page);
+        echo ('posts per page' . $posts_per_page );
         echo ('page' . $page);
         echo ('number of pages' . $num_pages);
 
