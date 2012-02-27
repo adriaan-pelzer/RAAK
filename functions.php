@@ -38,8 +38,9 @@ function display_latest_posts($atts) {
 <?php
         }
         $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $post_per_page . '&paged=' . $page);
-        echo ('posts per page' . $posts_per_page);
+        echo ('posts per page' . $post_per_page );
         echo ('page' . $page);
+        echo ('number of pages' . $num_pages);
 
         while ($latest_posts_loop->have_posts()) {
             $latest_posts_loop->the_post();
