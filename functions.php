@@ -59,7 +59,9 @@ function display_latest_posts() {
                                     <a href="<?php echo get_permalink ($post->ID); ?>"><?php echo get_image_or_video ($post->post_content, 162, 104); ?></a>
                             <a class="more_link" href="<?php echo get_permalink($logo_project->ID); ?>">More ►</a>
                         </div><!-- .whitebox_primary_post_content_right -->
+                        <p>
                             <?php echo $post->post_excerpt; ?>
+                        </p>
                     </div><!-- .whitebox_primary_post_content -->
                     <hr class="solid">
                 </article>
