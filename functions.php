@@ -36,6 +36,7 @@ function display_latest_posts($atts) {
     $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $posts_per_page . '&paged=' . $page);
         while ($latest_posts_loop->have_posts()) {
             $latest_posts_loop->the_post();
+            print_r($latest_posts_loop);
         }
     }
 
