@@ -39,7 +39,7 @@ function display_latest_posts($atts) {
         }
         $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $posts_per_page . '&paged=' . $page);
         while ($latest_posts_loop->have_posts()) {
-            //$latest_posts_loop->the_post();
+            $latest_posts_loop->the_post();
             $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
             $author_page = get_page_by_title($author_full_name);
 ?>
