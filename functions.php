@@ -113,7 +113,7 @@ function our_work_home_blue()
             <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <?php
         $our_work_bluebox_content = '<section class="bluebox_content our_work_bluebox_content';
-        if($cat_number == 0){
+        if($cat_number == 10000){
             $our_work_bluebox_content =+ ' current" id="' . $work_category->category_nicename . '">';
             $our_work_bluebox_content =+ '<a href="';
         }
