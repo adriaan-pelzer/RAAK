@@ -23,7 +23,6 @@ function display_latest_posts($atts) {
     extract(shortcode_atts(array('category' => '0', 'posts_per_page' => '0', 'num_posts' => '0'), $atts));
     $latest_posts = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $num_posts . '');
     $blog_archive_page = get_page_by_title('Blog Archive');
-    print_r ($latest_posts);
 ?>
     <div class="tab_container whitebox-primary">
         <div class="grey_tab tab tab104 rounded-corners">
