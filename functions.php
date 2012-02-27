@@ -24,6 +24,7 @@ function display_latest_posts($atts) {
     $latest_posts = get_posts(array('numberposts' => $num_posts, 'category' => get_cat_id ($category)));
     $latest_posts = new WP_Query('cat=' . $current_our_work_post_cat .'&posts_per_page=20');
     $blog_archive_page = get_page_by_title('Blog Archive');
+    print_r ($latest_posts);
 ?>
     <div class="tab_container whitebox-primary">
         <div class="grey_tab tab tab104 rounded-corners">
