@@ -107,7 +107,7 @@ function our_work_home_blue()
 <?php
     foreach($work_categories as $cat_number => $work_category)
     {
-        $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => get_cat_id ($work_category->category_nicename)));
+        $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => get_cat_id ($work_category->name)));
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
             <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
