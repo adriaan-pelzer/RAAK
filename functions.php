@@ -122,66 +122,6 @@ function our_work_home_blue()
     }
 ?>
         </nav>
-        <!-- section class="bluebox_content our_work_bluebox_content current" id="social-media-ready">
-            <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/"><img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png" width="315"></a>
-            <ul>
-                <li class="bluebox_content_sub">
-                    <span class="label">Client:</span>
-                    <span class="title">World Economic Forum</span>
-                </li>
-                <li class="bluebox_content_sub">
-                    <span class="label">Project:</span>
-                    <span class="title">WELCOM</span>
-                </li>
-                <li class="bluebox_content_sub">
-                    <span class="label">Overview:</span>
-                    <span class="overview">A strategy &amp; functional specification for a social network for the world's most influential people. <br><strong>Read More &gt;&gt;</strong></span>
-                </li>
-                <li class="bluebox_content_link">
-                    <a href="http://wewillraakyou.com/our-work/?category=consulting" rel="nofollow">More Projects ▼</a>
-                </li>
-            </ul>
-        </section>
-        <section class="bluebox_content our_work_bluebox_content" id="impact-projects">
-            <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/"><img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png" width="315"></a>
-            <ul>
-                <li class="bluebox_content_sub">
-                    <span class="label">Client:</span>
-                    <span class="title">World Economic Forum</span>
-                </li>
-                <li class="bluebox_content_sub">
-                    <span class="label">Project:</span>
-                    <span class="title">WELCOM</span>
-                </li>
-                <li class="bluebox_content_sub">
-                    <span class="label">Overview:</span>
-                    <span class="overview">A strategy &amp; functional specification for a social network for the world's most influential people. <br><strong>Read More &gt;&gt;</strong></span>
-                </li>
-                <li class="bluebox_content_link">
-                    <a href="http://wewillraakyou.com/our-work/?category=consulting" rel="nofollow">More Projects ▼</a>
-                </li>
-            </ul>
-        </section>
-        <section class="bluebox_content our_work_bluebox_content" id="consulting">
-            <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/"><img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png" width="315"></a>
-            <ul>
-                <li class="bluebox_content_sub">
-                    <span class="label">Client:</span>
-                    <span class="title">World Economic Forum</span>
-                </li>
-                <li class="bluebox_content_sub">
-                    <span class="label">Project:</span>
-                    <span class="title">WELCOM</span>
-                </li>
-                <li class="bluebox_content_sub">
-                    <span class="label">Overview:</span>
-                    <span class="overview">A strategy &amp; functional specification for a social network for the world's most influential people. <br><strong>Read More &gt;&gt;</strong></span>
-                </li>
-                <li class="bluebox_content_link">
-                    <a href="http://wewillraakyou.com/our-work/?category=consulting" rel="nofollow">More Projects ▼</a>
-                </li>
-            </ul>
-        </section-->
     </div>
 
 <?php
