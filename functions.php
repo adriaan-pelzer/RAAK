@@ -117,6 +117,7 @@ function our_work()
         $current_our_work_post_cat = get_cat_id ($work_category->name);
         $current_our_work_query = new WP_Query('cat=' . get_cat_id($work_category->name) .'&posts_per_page=1');
         $current_our_work_post = $current_our_work_query->post;
+        print_r($current_our_work_post);
         $current_our_work_post_id = ($current_our_work_post->ID);
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
         if($cat_number == 0){
