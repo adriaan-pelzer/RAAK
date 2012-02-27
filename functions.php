@@ -118,10 +118,11 @@ function our_work_home_blue()
             $our_work_bluebox_content =+ '<a href="';
         }
         print_r ($current_work_post);
+        echo $our_work_bluebox_content;
     }
 ?>
         </nav>
-        <section class="bluebox_content our_work_bluebox_content current" id="social-media-ready">
+        <!-- section class="bluebox_content our_work_bluebox_content current" id="social-media-ready">
             <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/"><img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png" width="315"></a>
             <ul>
                 <li class="bluebox_content_sub">
@@ -180,7 +181,7 @@ function our_work_home_blue()
                     <a href="http://wewillraakyou.com/our-work/?category=consulting" rel="nofollow">More Projects ▼</a>
                 </li>
             </ul>
-        </section>
+        </section-->
     </div>
 
 <?php
