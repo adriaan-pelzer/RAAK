@@ -33,7 +33,7 @@ function display_latest_posts($atts) {
         </div><!-- .grey_tab -->
         <div class="whitebox whitebox_primary box rounded-corners">
 <?php
-    foreach($latest_posts=>posts as $post_number => $latest_post) {
+    foreach($latest_posts->posts as $post_number => $latest_post) {
         setup_postdata($latest_post);
         $author_data = get_userdata($latest_post->post_author);
         $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
