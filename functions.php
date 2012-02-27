@@ -112,6 +112,7 @@ function our_work_home_blue()
             <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <?php
         $current_our_work_post_cat = get_cat_id ($work_category->name);
+        echo  $current_our_work_post_cat;
         $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => $current_our_work_post_cat));
         $current_our_work_post_id = ($current_our_work_post->ID);
         echo  $current_our_work_post_id;
