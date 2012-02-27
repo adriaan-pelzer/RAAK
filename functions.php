@@ -31,7 +31,7 @@ function display_latest_posts($atts) {
         </div><!-- .grey_tab -->
         <div class="whitebox whitebox_primary box rounded-corners">
 <?php
-    for($page = 1; $page <= $num_pages; $page++) {
+    for($page = 0; $page <= ($num_pages-1); $page++) {
         echo($page % 2);
         if (($page % 2) == 0) {
 ?>
