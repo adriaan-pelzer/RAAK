@@ -67,56 +67,13 @@ function display_latest_posts($atts) {
                     <hr class="solid">
                 </article>
 <?php
+        }
         if (($page % 2) == 1) {
 ?>
             </div>
 <?php
         }
     }
-
-
-    /*foreach($latest_posts->posts as $post_number => $latest_post) {
-        setup_postdata($latest_post);
-        $author_data = get_userdata($latest_post->post_author);
-        $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
-        $author_page = get_page_by_title($author_full_name);
-        if (($post_number % $posts_per_page) == 0) {
-?>
-            <div id="whitebox_primary_post_<?php echo $post_number; ?>" class="whitebox_primary_post<?php if ($post_number == 0) { echo " current"; } ?>">
-<?php
-        }
-?>
-                <article>
-                    <header>
-                    <h3><a href="<?php echo get_permalink($logo_project->ID); ?>"><?php echo $latest_post->post_title; ?></a></h3>
-                    </header>
-                    <hr>
-                    <div class="whitebox_primary_post_attr">
-                    <span class="whitebox_primary_post_attr_item author">Posted by <a href="<?php echo get_permalink($author_page->ID); ?>"><?php echo $author_full_name; ?></a></span>
-                        <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item date"><?php echo strftime ('%e %h %Y', strtotime ($latest_post->post_date)); ?></span>
-                        <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php echo $latest_post->comment_count." comment".(($latest_post->comment_count == 1)?"":"s"); ?></span>
-                    </div><!-- .whitebox_primary_post_attr -->
-                    <div class="whitebox_primary_post_content">
-                        <div class="whitebox_primary_post_content_right">
-                                    <a href="<?php echo get_permalink ($latest_post->ID); ?>"><?php echo get_image_or_video ($latest_post->post_content, 162, 104); ?></a>
-                            <a class="more_link" href="<?php echo get_permalink($logo_project->ID); ?>">More ►</a>
-                        </div><!-- .whitebox_primary_post_content_right -->
-                        <p>
-                            <?php echo $latest_post->post_excerpt; ?>
-                        </p>
-                    </div><!-- .whitebox_primary_post_content -->
-                    <hr class="solid">
-                </article>
-<?php
-        if (($post_number % 2) == 1) {
-?>
-            </div>
-<?php
-        }
-
-    }*/
 ?>
             <footer class="whitebox_primary_footer box_nav small_arial_caps">
                 <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
