@@ -115,17 +115,14 @@ function our_work_home_blue()
 <?php
         $current_our_work_post_cat = get_cat_id ($work_category->name);
         $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => $current_our_work_post_cat));
-        setup_postdata($current_our_work_post);
-        print_r($current_our_work_post);
         $current_our_work_post_id = ($current_our_work_post[0]->ID);
-        echo  $current_our_work_post_id;
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
         if($cat_number == 0){
             $our_work_bluebox_content .= ' current';
         }
         $our_work_bluebox_content .= '" id="' . $work_category->category_nicename . '">';
         $our_work_bluebox_content .= '<a href="' . get_permalink($current_our_work_post_id) . '">';
-        $our_work_bluebox_content .= get_image_or_video ($current_our_work_post->post_content, 315) . '</a>';
+        $our_work_bluebox_content .= get_image_or_video ($current_our_work_post[0]->post_content, 315) . '</a>';
         $our_work_bluebox_content .= '<ul><li class="bluebox_content_sub"><span class="label">Client:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Client', true) . '</span></li>';
         $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Project:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Project', true) . '</span></li>';
         $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Overview:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Overview', true) . '</span></li>';
