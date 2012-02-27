@@ -9,7 +9,7 @@ Template Name:Home
         <div class="content">
 <?php do_shortcode('[logo_cta]'); ?>
 <?php do_shortcode('[OW_home]'); ?>
-<?php do_shortcode('[latest_posts category="Blog" posts_per_page="2" num_posts="20" ]'); ?>
+<?php do_shortcode('[latest_posts category=Blog posts_per_page=2 num_posts=20 ]'); ?>
             <div class="tab_container whitebox-secondary other_posts">
                 <div class="grey_tab tab tab104 rounded-corners">
                     <header>
