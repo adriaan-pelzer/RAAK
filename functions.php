@@ -118,7 +118,7 @@ function our_work_home_blue()
             $our_work_bluebox_content .= ' current';
         }
         $our_work_bluebox_content .= '" id="' . $work_category->category_nicename . '">';
-        print_r($current_our_work_post);
+        print_r($current_our_work_post->ID);
         $our_work_bluebox_content .= '<a href="' . get_permalink($current_our_work_post->ID) . '">';
         $our_work_bluebox_content .= get_image_or_video ($current_our_work_post->post_content, 315) . '</a>';
         $our_work_bluebox_content .= '<ul><li class="bluebox_content_sub"><span class="label">Client:</span><span class="title">' . get_post_meta ($current_our_work_post->ID, 'Client', true) . '</span></li>';
