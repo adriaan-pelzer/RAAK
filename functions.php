@@ -20,7 +20,7 @@ function logo_call_to_action() {
 add_shortcode('logo_cta', 'logo_call_to_action');
 
 function display_latest_posts($atts) {
-    extract(shortcode_atts(array('category' => '0', 'posts_per_page' => '0', 'num_posts' => '0'), $atts));
+    extract(shortcode_atts(array('category' => '0', 'posts_per_page' => '0', 'num_posts' => '-1'), $atts));
     $latest_posts = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $num_posts . '');
     $blog_archive_page = get_page_by_title('Blog Archive');
 ?>
@@ -90,7 +90,7 @@ function display_latest_posts($atts) {
 
 add_shortcode('latest_posts', 'display_latest_posts');
 
-function our_work_home_blue()
+function our_work()
 {
     $home = get_page_by_title('Home');
     $our_work = get_page_by_title('Our Work');
@@ -115,7 +115,8 @@ function our_work_home_blue()
             <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <?php
         $current_our_work_post_cat = get_cat_id ($work_category->name);
-        $current_our_work_post = /*new WP_Query('cat=' . $current_our_work_post_cat .'');*/ get_posts(array('numberposts' => 1, 'category' => $current_our_work_post_cat));
+        $current_our_work_post = new WP_Query('cat=' . get_cat_id($work_category->name) .'&posts_per_page=1');
+        print_r($current_our_work_post);
         $current_our_work_post_id = ($current_our_work_post[0]->ID);
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
         if($cat_number == 0){
@@ -140,7 +141,7 @@ function our_work_home_blue()
 <?php
 }
 
-add_shortcode('OW_home', 'our_work_home_blue');
+add_shortcode('our_work', 'our_work');
 ?>
 <?php 
 /***************************** From local functions on old site **************************/
