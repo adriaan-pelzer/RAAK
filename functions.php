@@ -60,9 +60,7 @@ function display_latest_posts($atts) {
                                     <a href="<?php echo get_permalink (get_the_ID()); ?>"><?php echo get_image_or_video (get_the_content(), 162, 104); ?></a>
                             <a class="more_link" href="<?php echo get_permalink(get_the_ID()); ?>">More ►</a>
                         </div><!-- .whitebox_primary_post_content_right -->
-                        <p>
                             <?php the_excerpt(); ?>
-                        </p>
                     </div><!-- .whitebox_primary_post_content -->
                     <hr class="solid">
                 </article>
@@ -70,7 +68,7 @@ function display_latest_posts($atts) {
         }
         if (($page % 2) == 1) {
 ?>
-            </div>
+            </div><!-- whitebox_primary_post -->
 <?php
         }
     }
