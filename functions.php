@@ -32,7 +32,7 @@ function display_latest_posts($atts) {
         <div class="whitebox whitebox_primary box rounded-corners">
 <?php
     for($page = 1; $page <= $num_pages; $page++) {
-        if (($page % $posts_per_page) == 0) {
+        if (($page % 2) == 0) {
 ?>
             <div id="whitebox_primary_post_<?php echo $post_number; ?>" class="whitebox_primary_post<?php if ($post_number == 0) { echo " current"; } ?>">
 <?php
