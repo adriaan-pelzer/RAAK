@@ -63,7 +63,7 @@ var load_next = function() {
 
 preloadImages();
 
-var pagination = function() {
+var latestPostsPagination = function() {
     $('.pagination .previous').click(function() {
         if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
             $('.whitebox_primary_post.current').removeClass('current').next('div').addClass('current');
@@ -92,5 +92,5 @@ var pagination = function() {
 
 $(document).ready(function() {
     setInterval(load_next, 5000);
-    pagination();
+    latestPostsPagination();
 });

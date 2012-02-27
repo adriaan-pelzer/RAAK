@@ -92,6 +92,8 @@ function our_work_home_blue()
     $home = get_page_by_title('Home');
     $our_work = get_page_by_title('Our Work');
     $work_categories = get_categories(array('child_of'=>get_cat_id ('RAAK projects'), 'order'=>'desc'));
+    $our_work_bluebox_content = '';
+    
 ?>
     <div id="bluebox_home_left" class="bluebox box rounded-corners">
         <header>
@@ -105,14 +107,21 @@ function our_work_home_blue()
 <?php
     foreach($work_categories as $cat_number => $work_category)
     {
+        $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => get_cat_id ($work_category->category_nicename)));
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
             <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <?php
+        $our_work_bluebox_content = '<section class="bluebox_content our_work_bluebox_content';
+        if($cat_number == 0){
+            $our_work_bluebox_content =+ ' current" id="' . $work_category->category_nicename . '">';
+            $our_work_bluebox_content =+ '<a href="';
+        }
+        print_r ($current_work_post);
     }
 ?>
         </nav>
-        <section class="bluebox_content" id="social-media-ready" style="display: none;">
+        <section class="bluebox_content our_work_bluebox_content current" id="social-media-ready">
             <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/"><img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png" width="315"></a>
             <ul>
                 <li class="bluebox_content_sub">
@@ -132,7 +141,7 @@ function our_work_home_blue()
                 </li>
             </ul>
         </section>
-        <section class="bluebox_content" id="impact-projects" style="display: none;">
+        <section class="bluebox_content our_work_bluebox_content" id="impact-projects">
             <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/"><img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png" width="315"></a>
             <ul>
                 <li class="bluebox_content_sub">
@@ -152,7 +161,7 @@ function our_work_home_blue()
                 </li>
             </ul>
         </section>
-        <section class="bluebox_content" id="consulting">
+        <section class="bluebox_content our_work_bluebox_content" id="consulting">
             <a href="http://wewillraakyou.com/2010/06/social-media-strategy-for-the-world-economic-forum/"><img alt="" src="http://wewillraakyou.com/wp-content/gallery/wef/davos-2.png" width="315"></a>
             <ul>
                 <li class="bluebox_content_sub">
