@@ -108,7 +108,7 @@ function our_work_home_blue()
     foreach($work_categories as $cat_number => $work_category)
     {
         $current_our_work_post_cat = get_cat_id ($work_category->name);
-        $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => $current_our_work_post_cat));
+        $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => get_cat_id ($work_category->name)));
         print_r ($current_our_work_post);
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
