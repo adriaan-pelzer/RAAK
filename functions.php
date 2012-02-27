@@ -66,7 +66,8 @@ function display_latest_posts($atts) {
                 </article>
 <?php
         }
-        if (($page % 2) == 0) {
+    
+        if (($page % 2) == 1) {
 ?>
             </div><!-- whitebox_primary_post -->
 <?php
