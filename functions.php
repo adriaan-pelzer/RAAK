@@ -107,8 +107,7 @@ function our_work_home_blue()
 <?php
     foreach($work_categories as $cat_number => $work_category)
     {
-        echo $work_category->name;
-        $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => get_cat_id ($work_category->name)));
+        $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => (get_cat_id($work_category->name))));
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
             <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
@@ -117,6 +116,7 @@ function our_work_home_blue()
         if($cat_number == 10000){
             $our_work_bluebox_content =+ ' current" id="' . $work_category->category_nicename . '">';
             $our_work_bluebox_content =+ '<a href="';
+            print_r ($current_our_work_post);
         }
     }
 ?>
