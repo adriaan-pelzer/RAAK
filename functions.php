@@ -37,6 +37,7 @@ function display_latest_posts($atts) {
             <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 0) { echo " current"; } ?>">
 <?php
         }
+        wp_reset_query();
         $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $posts_per_page . '&paged=' . $page);
         while ($latest_posts_loop->have_posts()) {
             $latest_posts_loop->the_post();
@@ -71,8 +72,6 @@ function display_latest_posts($atts) {
             </div><!-- whitebox_primary_post -->
 <?php
         }
-        wp_reset_postdata();
-        wp_reset_query();
     
     }
 ?>
