@@ -19,8 +19,9 @@ function logo_call_to_action() {
 
 add_shortcode('logo_cta', 'logo_call_to_action');
 
-function display_latest_posts() {
-    $latest_posts = get_posts(array('numberposts' => 20, 'category' => get_cat_id ('Blog')));
+function display_latest_posts($args) {
+    extract(shortcode_atts(array('category' => '0', 'posts_per_page' => 0, 'num_posts' => '0'), $args));
+    $latest_posts = get_posts(array('numberposts' => $num_posts, 'category' => get_cat_id ($category)));
     $blog_archive_page = get_page_by_title('Blog Archive');
 ?>
     <div class="tab_container whitebox-primary">
@@ -36,7 +37,7 @@ function display_latest_posts() {
         $author_data = get_userdata($latest_post->post_author);
         $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
         $author_page = get_page_by_title($author_full_name);
-        if (($post_number % 2) == 0) {
+        if (($post_number % $posts_per_page) == 0) {
 ?>
             <div id="whitebox_primary_post_<?php echo $post_number; ?>" class="whitebox_primary_post<?php if ($post_number == 0) { echo " current"; } ?>">
 <?php
@@ -114,7 +115,7 @@ function our_work_home_blue()
             <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <?php
         $current_our_work_post_cat = get_cat_id ($work_category->name);
-        $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => $current_our_work_post_cat));
+        $current_our_work_post = new WP_Query('cat=' . $current_our_work_post_cat .'', ); get_posts(array('numberposts' => 1, 'category' => $current_our_work_post_cat));
         $current_our_work_post_id = ($current_our_work_post[0]->ID);
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
         if($cat_number == 0){
