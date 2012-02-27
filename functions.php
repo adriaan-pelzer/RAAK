@@ -114,10 +114,10 @@ function our_work_home_blue()
         $current_our_work_post_cat = get_cat_id ($work_category->name);
         $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => $current_our_work_post_cat));
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
+        print_r($current_our_work_post -> ID);
         if($cat_number == 0){
             $our_work_bluebox_content .= ' current';
         }
-        print_r($current_our_work_post -> ID);
         $our_work_bluebox_content .= '" id="' . $work_category->category_nicename . '">';
         $our_work_bluebox_content .= '<a href="' . get_permalink($current_our_work_post->ID) . '">';
         $our_work_bluebox_content .= get_image_or_video ($current_our_work_post->post_content, 315) . '</a>';
