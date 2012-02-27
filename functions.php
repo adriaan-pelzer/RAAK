@@ -117,7 +117,7 @@ function our_work_home_blue()
         if($cat_number == 0){
             $our_work_bluebox_content .= ' current';
         }
-        print_r($current_our_work_post->[ID]);
+        print_r($current_our_work_post -> ID);
         $our_work_bluebox_content .= '" id="' . $work_category->category_nicename . '">';
         $our_work_bluebox_content .= '<a href="' . get_permalink($current_our_work_post->ID) . '">';
         $our_work_bluebox_content .= get_image_or_video ($current_our_work_post->post_content, 315) . '</a>';
