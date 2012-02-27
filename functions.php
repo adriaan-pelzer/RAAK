@@ -24,7 +24,6 @@ function display_latest_posts($atts) {
     $latest_posts = get_posts(array('numberposts' => $num_posts, 'category' => get_cat_id ($category)));
     $latest_posts = new WP_Query('cat=' . $category .'&posts_per_page=' . $posts_per_page . '');
     $blog_archive_page = get_page_by_title('Blog Archive');
-    print_r ($latest_posts);
 ?>
     <div class="tab_container whitebox-primary">
         <div class="grey_tab tab tab104 rounded-corners">
@@ -34,7 +33,7 @@ function display_latest_posts($atts) {
         </div><!-- .grey_tab -->
         <div class="whitebox whitebox_primary box rounded-corners">
 <?php
-    foreach($latest_posts['posts'] as $post_number => $latest_post) {
+    foreach($latest_posts=>posts as $post_number => $latest_post) {
         setup_postdata($latest_post);
         $author_data = get_userdata($latest_post->post_author);
         $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
