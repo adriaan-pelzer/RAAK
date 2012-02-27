@@ -20,8 +20,7 @@ function logo_call_to_action() {
 add_shortcode('logo_cta', 'logo_call_to_action');
 
 function display_latest_posts($atts) {
-    extract(shortcode_atts(array('category' => '0', 'posts_per_page' => '0', 'num_posts' => '-1'), $atts));
-    $latest_posts = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $num_posts . '');
+    extract(shortcode_atts(array('category' => '0', 'posts_per_page' => '0', 'num_pages' => '-1'), $atts));
     $blog_archive_page = get_page_by_title('Blog Archive');
 ?>
     <div class="tab_container whitebox-primary">
@@ -32,7 +31,16 @@ function display_latest_posts($atts) {
         </div><!-- .grey_tab -->
         <div class="whitebox whitebox_primary box rounded-corners">
 <?php
-    foreach($latest_posts->posts as $post_number => $latest_post) {
+    for($page = 1; $page =< $num_pages; $page++) {
+
+    $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $posts_per_page . '&paged=' . $page);
+        while ($latest_posts_loop->have_posts()) {
+            $latest_posts_loop->the_post();
+        }
+    }
+
+
+    /*foreach($latest_posts->posts as $post_number => $latest_post) {
         setup_postdata($latest_post);
         $author_data = get_userdata($latest_post->post_author);
         $author_full_name = $author_data->first_name . ' ' . $author_data->last_name;
@@ -73,7 +81,7 @@ function display_latest_posts($atts) {
 <?php
         }
 
-    }
+    }*/
 ?>
             <footer class="whitebox_primary_footer box_nav small_arial_caps">
                 <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
