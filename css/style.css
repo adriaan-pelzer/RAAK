@@ -607,6 +607,14 @@ address a {
     text-align: right;
 }
 
+.our_work_bluebox_content {
+    display: none;
+}
+
+.our_work_bluebox_content.current {
+    display: block;
+}
+
 /*************** Latest Posts **************/
 
 .whitebox_primary_post {
