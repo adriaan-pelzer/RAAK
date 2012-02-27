@@ -101,27 +101,36 @@ function our_work_home_blue()
         </header>
         <hr>
         <?php echo $home->post_content; ?>    
-            </div>
+    </div>
     <div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
         <nav class="bluebox_nav box_nav">
 <?php
     foreach($work_categories as $cat_number => $work_category)
     {
-        $current_our_work_post_cat = get_cat_id ($work_category->name);
-        $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => get_cat_id ($work_category->name)));
-        print_r ($current_our_work_post);
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
             <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <?php
-        $our_work_bluebox_content = '<section class="bluebox_content our_work_bluebox_content';
-        if($cat_number == 10000){
-            $our_work_bluebox_content =+ ' current" id="' . $work_category->category_nicename . '">';
-            $our_work_bluebox_content =+ '<a href="';
+        $current_our_work_post_cat = get_cat_id ($work_category->name);
+        $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => $current_our_work_post_cat));
+        $our_work_bluebox_content =+ '<section class="bluebox_content our_work_bluebox_content';
+        if($cat_number == 0){
+            $our_work_bluebox_content =+ ' current"';
         }
+        $our_work_bluebox_content =+ ' id="' . $work_category->category_nicename . '">';
+        $our_work_bluebox_content =+ '<a href="' . get_permalink($current_our_work_post->ID) . '">';
+        $our_work_bluebox_content =+ get_image_or_video ($current_our_work_post->post_content, 315) . '</a>';
+        $our_work_bluebox_content =+ '<ul><li class="bluebox_content_sub"><span class="label">Client:</span><span class="title">' . get_post_meta ($current_our_work_post->ID, 'Client', true) . '</span></li>';
+        $our_work_bluebox_content =+ '<ul><li class="bluebox_content_sub"><span class="label">Project:</span><span class="title">' . get_post_meta ($current_our_work_post->ID, 'Project', true) . '</span></li>';
+        $our_work_bluebox_content =+ '<ul><li class="bluebox_content_sub"><span class="label">Overview:</span><span class="title">' . get_post_meta ($current_our_work_post->ID, 'Overview', true) . '</span></li>';
+        $our_work_bluebox_content =+ '<ul><li class="bluebox_content_link"><a href="' . get_category_link($current_our_work_post_cat) . '</li></ul></section>';
     }
 ?>
         </nav>
+<?php
+    echo $our_work_bluebox_content;
+?>
+    
     </div>
 
 <?php
