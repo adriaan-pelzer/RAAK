@@ -31,7 +31,7 @@ function display_latest_posts($atts) {
         </div><!-- .grey_tab -->
         <div class="whitebox whitebox_primary box rounded-corners">
 <?php
-    for($page = 1; $page =< $num_pages; $page++) {
+    for($page = 1; $page <= $num_pages; $page++) {
 
     $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $posts_per_page . '&paged=' . $page);
         while ($latest_posts_loop->have_posts()) {
