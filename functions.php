@@ -115,8 +115,7 @@ function our_work_home_blue()
 <?php
         $current_our_work_post_cat = get_cat_id ($work_category->name);
         $current_our_work_post = get_posts(array('numberposts' => 1, 'category' => $current_our_work_post_cat));
-        setup_postdata($current_our_work_post);
-        $current_our_work_post_id = ($current_our_work_post['ID']);
+        $current_our_work_post_id = 362;
         echo  $current_our_work_post_id;
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
         if($cat_number == 0){
