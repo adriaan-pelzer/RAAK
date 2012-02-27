@@ -22,7 +22,7 @@ add_shortcode('logo_cta', 'logo_call_to_action');
 function display_latest_posts($atts) {
     extract(shortcode_atts(array('category' => '0', 'posts_per_page' => '0', 'num_posts' => '0'), $atts));
     $latest_posts = get_posts(array('numberposts' => $num_posts, 'category' => get_cat_id ($category)));
-    $latest_posts = new WP_Query('cat=' . $current_our_work_post_cat .'&posts_per_page=20')
+    $latest_posts = new WP_Query('cat=' . $current_our_work_post_cat .'&posts_per_page=20');
     $blog_archive_page = get_page_by_title('Blog Archive');
 ?>
     <div class="tab_container whitebox-primary">
