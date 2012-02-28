@@ -43,6 +43,7 @@ function display_latest_posts($atts) {
 <?php
         }
         $latest_posts_loop = new WP_Query(array('cat' => get_cat_id($category), 'posts_per_page' => $posts_per_page, 'paged' => $page));
+        print_r($latest_posts_loop);
         while ($latest_posts_loop->have_posts()) {
             $latest_posts_loop->the_post();
             $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
@@ -54,7 +55,7 @@ function display_latest_posts($atts) {
                     </header>
                     <hr>
                     <div class="whitebox_primary_post_attr">
-                    <span class="whitebox_primary_post_attr_item author">Posted by <a href="<?php echo get_permalink($author_page->ID);  ?>"><?php the_author_meta('first_name'); ?> <?php echo $author_full_name; ?></a></span>
+                    <span class="whitebox_primary_post_attr_item author">Posted by <a href="<?php echo get_permalink($author_page->ID);  ?>"><?php echo $author_full_name; ?></a></span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date"><?php the_date(); ?></span>
                         <span class="seperator">|</span>
