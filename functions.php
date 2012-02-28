@@ -156,7 +156,6 @@ add_shortcode('our_work', 'our_work');
 function display_other_posts() {
     $must_reads_cat_id = get_cat_id('Must Read');
     echo $must_reads_cat_id;
-    $must_reads = new WP_Query(array('cat'=> $must_reads_cat_id, 'posts_per_page'=> 5, 'paged'=> 1));
 ?>
 
 <div class="tab_container whitebox-secondary other_posts">
@@ -172,9 +171,11 @@ function display_other_posts() {
                         </header>
                         <ul>
 <?php
-    foreach($must_reads->posts as $must_read) {
+    $must_reads = new WP_Query(array('cat'=> $must_reads_cat_id, 'posts_per_page'=> 5, 'paged'=> 1));
+ while ($must_reads->have_posts()) {
+            $must_reads->the_post();
 ?>
-                            <li><a href="<?php echo get_permalink($must_read->ID); ?>"><?php echo $must_read->post_title; ?></a></li>
+                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 <?php
     }
 ?>
