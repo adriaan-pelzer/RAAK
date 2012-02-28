@@ -165,6 +165,7 @@ function display_other_posts($atts) {
                 <div class="whitebox_secondary whitebox box rounded-corners">
 <?php
     foreach($atts as $cat_num => $cat) {
+        echo $cat_num;
         if($cat_num == 0) {
 ?>
                     <section class="other_posts_content_one">
