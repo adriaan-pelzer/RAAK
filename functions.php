@@ -37,13 +37,33 @@ function display_latest_posts($atts) {
             <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 0) { echo " current"; } ?>">
 <?php
         }
-        $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $posts_per_page . '&paged=' . $page);
+        $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $posts_per_page . '&page=' . $page);
         while ($latest_posts_loop->have_posts()) {
             $latest_posts_loop->the_post();
             $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
             $author_page = get_page_by_title($author_full_name);
-            the_title();
 ?>
+                <article>
+                    <header>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                    </header>
+                    <hr>
+                    <div class="whitebox_primary_post_attr">
+                    <span class="whitebox_primary_post_attr_item author">Posted by <a href="<?php echo get_permalink($author_page->ID);  ?>"><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></a></span>
+                        <span class="seperator">|</span>
+                        <span class="whitebox_primary_post_attr_item date"><?php the_date(); ?></span>
+                        <span class="seperator">|</span>
+                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php comments_number(); ?></span>
+                    </div><!-- .whitebox_primary_post_attr -->
+                    <div class="whitebox_primary_post_content">
+                        <div class="whitebox_primary_post_content_right">
+                                    <a href="<?php echo get_permalink (get_the_ID()); ?>"><?php echo get_image_or_video (get_the_content(), 162, 104); ?></a>
+                            <a class="more_link" href="<?php echo get_permalink(get_the_ID()); ?>">More ►</a>
+                        </div><!-- .whitebox_primary_post_content_right -->
+                            <?php the_excerpt(); ?>
+                    </div><!-- .whitebox_primary_post_content -->
+                    <hr class="solid">
+                </article>
 <?php
         }
         if (($page % 2) == 1) {
