@@ -76,6 +76,7 @@ function display_latest_posts($atts) {
             </div><!-- whitebox_primary_post -->
 <?php
         }
+        wp_reset_query();
     
     }
 ?>
@@ -135,6 +136,7 @@ function our_work()
         $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Project:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Project', true) . '</span></li>';
         $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Overview:</span><span class="overview">' . get_post_meta ($current_our_work_post_id, 'Overview', true) . '</span></li>';
         $our_work_bluebox_content .= '<li class="bluebox_content_link"><a href="' . get_category_link($current_our_work_post_cat) . '" rel="nofollow">More Projects &#9660;</a></li></ul></section>';
+        wp_reset_query();
     }
 ?>
         </nav>
@@ -210,7 +212,7 @@ function display_other_posts() {
                 </div><!-- #whitebox_secondary -->
             </div>
 <?php
-
+wp_reset_query();
 }
 add_shortcode('other_posts', 'display_other_posts');
 ?>
