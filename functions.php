@@ -75,10 +75,10 @@ function display_latest_posts($atts) {
 ?>
             </div><!-- whitebox_primary_post -->
 <?php
-        }*/
+        }
         wp_reset_query();
     
-    }
+    }*/
 ?>
             <footer class="whitebox_primary_footer box_nav small_arial_caps">
                 <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
