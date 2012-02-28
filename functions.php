@@ -121,7 +121,7 @@ function our_work()
             <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <?php
         $current_our_work_post_cat = get_cat_id ($work_category->name);
-        $current_our_work_query = new WP_Query('cat=' . get_cat_id($work_category->name) .'&posts_per_page=1');
+        $current_our_work_query = new WP_Query('cat=' . get_cat_id($work_category->name) .'&posts_per_page=1$paged=1');
         $current_our_work_post = $current_our_work_query->post;
         $current_our_work_post_id = ($current_our_work_post->ID);
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
@@ -142,7 +142,7 @@ function our_work()
     echo $our_work_bluebox_content;
 ?>
     
-    </div><! -- bluebox_home_right -->
+    </div><!-- bluebox_home_right -->
 
 <?php
 }
@@ -152,6 +152,8 @@ add_shortcode('our_work', 'our_work');
 /*******************************/
 
 function display_other_posts() {
+    $must_reads_cat_id = get_cat_id('Must Read');
+    $must_reads = new WP_Query(array('cat'=> $must_reads_cat_id, 'posts_per_page'=> 5, 'paged'=> 1));
 ?>
 
 <div class="tab_container whitebox-secondary other_posts">
@@ -166,14 +168,16 @@ function display_other_posts() {
                             <h3 class="small_arial_caps">Must Reads</h3>
                         </header>
                         <ul>
-                            <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
-                            <li><a href="http://wewillraakyou.com/2010/11/the-perpetually-changing-crowdsourced-raak-logo/">The perpetually changing crowdsourced RAAK logo</a></li>
-                            <li><a href="http://wewillraakyou.com/2010/11/edgerank-the-secrets-facebooks-pagerank/">EdgeRank – the secrets of Facebook’s PageRank</a></li>
-                            <li><a href="http://wewillraakyou.com/2010/10/mad-mixers-brands-ads-the-importance-of-mixing-paid-earned-media/">Mad Mixers: Brands ads &amp; the importance of mixing paid &amp; earned media</a></li>
-                            <li><a href="http://wewillraakyou.com/2010/08/big-society-when-a-poke-becomes-a-nudge/">Big Society: When a Poke becomes a Nudge</a></li>
+<?php
+    foreach($must_reads as $must_read) {
+?>
+                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+<?php
+    }
+?>
                         </ul>
                         <footer>
-                            <a class="more_link" href="http://wewillraakyou.com/category/must-read/" rel="nofollow">More ▼</a>
+                            <a class="more_link" href="<?php get_category_link($must_reads_cat_id); ?>" rel="nofollow">More ▼</a>
                         </footer>
                     </section><!-- _content_one -->
                     <section class="other_posts_content_two">
