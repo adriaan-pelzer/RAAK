@@ -31,10 +31,10 @@ function display_latest_posts($atts) {
         </div><!-- .grey_tab -->
         <div class="whitebox whitebox_primary box rounded-corners">
 <?php
-    for($page = 0; $page <= ($num_pages-1); $page++) {
-        if (($page % 2) == 0) {
+    for($page = 1; $page <= $num_pages; $page++) {
+        if ((($page - 1) % 2) == 0) {
 ?>
-            <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 0) { echo " current"; } ?>">
+            <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 1) { echo " current"; } ?>">
 <?php
         }
         $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $posts_per_page . '&paged=' . $page);
@@ -67,7 +67,7 @@ function display_latest_posts($atts) {
                 </article>
 <?php
         }
-        if (($page % 2) == 1) {
+        if ((($page - 1) % 2) == 1) {
 ?>
             </div><!-- whitebox_primary_post -->
 <?php
