@@ -36,12 +36,12 @@ function display_latest_posts($atts) {
         </div><!-- .grey_tab -->
         <div class="whitebox whitebox_primary box rounded-corners">
 <?php
-    for($page = 1; $page <= $num_pages; $page++) {
+    /*for($page = 1; $page <= $num_pages; $page++) {
         if ((($page - 1) % 2) == 0) {
 ?>
             <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 1) { echo " current"; } ?>">
 <?php
-        }
+        }*/
         $latest_posts_loop = new WP_Query(array('cat' => get_cat_id($category), 'posts_per_page' => $posts_per_page, 'paged' => $page));
         while ($latest_posts_loop->have_posts()) {
             $latest_posts_loop->the_post();
@@ -71,11 +71,11 @@ function display_latest_posts($atts) {
                 </article>
 <?php
         }
-        if ((($page - 1) % 2) == 1) {
+        /*if ((($page - 1) % 2) == 1) {
 ?>
             </div><!-- whitebox_primary_post -->
 <?php
-        }
+        }*/
         wp_reset_query();
     
     }
