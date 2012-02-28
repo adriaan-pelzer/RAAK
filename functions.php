@@ -123,7 +123,7 @@ function our_work()
 <?php
         $current_our_work_post_cat = get_cat_id ($work_category->name);
         $current_our_work_query = new WP_Query('cat=' . get_cat_id($work_category->name) .'&posts_per_page=1$paged=1');
-        $current_our_work_post = $current_our_work_query->posts;
+        $current_our_work_post = $current_our_work_query->post;
         $current_our_work_post_id = ($current_our_work_post->ID);
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
         if($cat_number == 0){
@@ -153,7 +153,11 @@ add_shortcode('our_work', 'our_work');
 
 /*******************************/
 
-function display_other_posts() {
+function display_other_posts($atts) {
+    extract(shortcode_atts(array('category1' => '', 'category2' => '', 'category3' => ''), $atts));
+    foreach($atts as $cat) {
+        echo $cat;
+    }
     $must_reads_cat_id = get_cat_id('Must Read');
     echo $must_reads_cat_id;
 ?>
