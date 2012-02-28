@@ -38,15 +38,14 @@ function display_latest_posts($atts) {
 <?php
         }
         $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page=' . $posts_per_page . '&paged=' . $page);
-        print_r ($latest_posts_loop->post);
         while ($latest_posts_loop->have_posts()) {
-            $latest_posts_loop->get_the_post();
+            $latest_posts_loop->the_post();
             $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
             $author_page = get_page_by_title($author_full_name);
 ?>
                 <article>
                     <header>
-                    <h3><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></h3>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     </header>
                     <hr>
                     <div class="whitebox_primary_post_attr">
