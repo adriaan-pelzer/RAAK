@@ -90,10 +90,10 @@ var latestPostsPagination = function() {
 
 var ourWorkPagination = function() {
     $('.our_work_nav h3 a').click(function() {
-        if($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        } else {
+        if(!$(this).hasClass('active')) {
             $(this).addClass('active');
+        } else {
+            $(this).removeClass('active');
         }
     });
 }
