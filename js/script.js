@@ -87,6 +87,12 @@ var latestPostsPagination = function() {
         }
     });
 }
+
+var ourWorkPagination = function() {
+    $('.our_work_nav a').click(function() {
+        alert ($(this).class());
+    });
+}
     
 
 

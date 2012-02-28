@@ -105,7 +105,7 @@ function our_work()
         <?php echo $home->post_content; ?>    
     </div>
     <div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
-        <nav class="bluebox_nav box_nav">
+        <nav class="bluebox_nav box_nav our_work_nav">
 <?php
     foreach($work_categories as $cat_number => $work_category)
     {
