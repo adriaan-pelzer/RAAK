@@ -44,7 +44,7 @@ function display_latest_posts($atts) {
             $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
             $author_page = get_page_by_title($author_full_name);
 ?>
-                <article>
+                <!--article>
                     <header>
                     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><?php echo $test_var ?></h3>
                     </header>
@@ -65,7 +65,7 @@ function display_latest_posts($atts) {
                     </div><!-- .whitebox_primary_post_content -->
                     <hr class="solid">
 <?php $test_var++; ?>
-                </article>
+                </article-->
 <?php
         }
         if (($page % 2) == 1) {
