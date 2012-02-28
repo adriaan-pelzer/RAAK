@@ -99,4 +99,5 @@ var ourWorkPagination = function() {
 $(document).ready(function() {
     setInterval(load_next, 5000);
     latestPostsPagination();
+    ourWorkPagination();
 });
