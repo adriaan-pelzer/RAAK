@@ -36,12 +36,12 @@ function display_latest_posts($atts) {
         </div><!-- .grey_tab -->
         <div class="whitebox whitebox_primary box rounded-corners">
 <?php
-    /*for($page = 1; $page <= $num_pages; $page++) {
-        if ((($page - 1) % 2) == 0) {
+    for($page = 1; $page <= $num_pages; $page++) {
+        if (($page % 2) == 1) {
 ?>
             <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 1) { echo " current"; } ?>">
 <?php
-        }*/
+        }
         $latest_posts_loop = new WP_Query(array('cat' => get_cat_id($category), 'posts_per_page' => $posts_per_page, 'paged' => $page));
         while ($latest_posts_loop->have_posts()) {
             $latest_posts_loop->the_post();
@@ -54,7 +54,7 @@ function display_latest_posts($atts) {
                     </header>
                     <hr>
                     <div class="whitebox_primary_post_attr">
-                    <span class="whitebox_primary_post_attr_item author">Posted by <a href="<?php echo get_permalink($author_page->ID);  ?>"><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></a></span>
+                    <span class="whitebox_primary_post_attr_item author">Posted by <a href="<?php echo get_permalink($author_page->ID);  ?>"><?php the_author_meta('first_name'); ?> <?php echo $author_full_name; ?></a></span>
                         <span class="seperator">|</span>
                         <span class="whitebox_primary_post_attr_item date"><?php the_date(); ?></span>
                         <span class="seperator">|</span>
@@ -71,14 +71,14 @@ function display_latest_posts($atts) {
                 </article>
 <?php
         }
-        /*if ((($page - 1) % 2) == 1) {
+        if (($page % 2) == 0) {
 ?>
             </div><!-- whitebox_primary_post -->
 <?php
         }
         wp_reset_query();
     
-    }*/
+    }
 ?>
             <footer class="whitebox_primary_footer box_nav small_arial_caps">
                 <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
