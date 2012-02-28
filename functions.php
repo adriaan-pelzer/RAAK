@@ -164,9 +164,8 @@ function display_other_posts($atts) {
                 </div><!-- .grey_tab -->
                 <div class="whitebox_secondary whitebox box rounded-corners">
 <?php
-    print_r($atts);
     foreach($atts as $cat_num => $cat) {
-        if($cat_num == 0) {
+        if($cat_num == 'category1') {
 ?>
                     <section class="other_posts_content_one">
                         <header>
@@ -191,9 +190,9 @@ function display_other_posts($atts) {
             wp_reset_query();
         } else {
 ?>
-                    <section class="other_posts_content_<?php echo ($cat_num == 1) ? 'two' : 'three'; ?>">
+                    <section class="other_posts_content_<?php echo ($cat_num == 'category2') ? 'two' : 'three'; ?>">
                         <header>
-                            <h3 class="small_arial_caps"><?php echo ($cat_num == 1) ? $category2 : $category3; ?></h3>
+                            <h3 class="small_arial_caps"><?php echo ($cat_num == 'category2') ? $category2 : $category3; ?></h3>
                         </header>
                         <ul>
 <?php
@@ -209,7 +208,7 @@ function display_other_posts($atts) {
                         <footer>
                             <a class="more_link" href="<?php get_category_link(get_cat_id($cat)); ?>" rel="nofollow">More ▼</a>
                         </footer>
-                    </section><!-- other_posts_content_<?php echo ($cat_num == 1) ? 'two' : 'three'; ?> -->
+                    </section><!-- other_posts_content_<?php echo ($cat_num == 'category2') ? 'two' : 'three'; ?> -->
 <?php
             wp_reset_query();
         }
