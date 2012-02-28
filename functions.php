@@ -39,7 +39,6 @@ function display_latest_posts($atts) {
         }
         $latest_posts_loop = new WP_Query('cat=' . get_cat_id($category) .'&posts_per_page= 1' . '&paged=' . $page);
         while ($latest_posts_loop->have_posts()) {
-            $latest_posts_loop->the_post();
             $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
             $author_page = get_page_by_title($author_full_name);
 ?>
@@ -65,6 +64,7 @@ function display_latest_posts($atts) {
                     <hr class="solid">
                 </article>
 <?php
+            $latest_posts_loop->the_post();
         }
         if ((($page - 1) % 2) == 1) {
 ?>
