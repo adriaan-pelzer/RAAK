@@ -170,7 +170,7 @@ function display_other_posts() {
                         </header>
                         <ul>
 <?php
-    foreach($must_reads as $must_read) {
+    foreach($must_reads->post as $must_read) {
 ?>
                             <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 <?php
