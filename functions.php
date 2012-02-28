@@ -155,13 +155,7 @@ add_shortcode('our_work', 'our_work');
 
 function display_other_posts($atts) {
     extract(shortcode_atts(array('category1' => '', 'category2' => '', 'category3' => ''), $atts));
-    foreach($atts as $cat) {
-        echo $cat;
-    }
-    $must_reads_cat_id = get_cat_id('Must Read');
-    echo $must_reads_cat_id;
 ?>
-
 <div class="tab_container whitebox-secondary other_posts">
                 <div class="grey_tab tab tab104 rounded-corners">
                     <header>
@@ -169,55 +163,60 @@ function display_other_posts($atts) {
                     </header>
                 </div><!-- .grey_tab -->
                 <div class="whitebox_secondary whitebox box rounded-corners">
+<?php
+    foreach($atts as $cat_num => $cat) {
+        if($cat_num == 0) {
+?>
                     <section class="other_posts_content_one">
                         <header>
-                            <h3 class="small_arial_caps">Must Reads</h3>
+                        <h3 class="small_arial_caps"><?php echo $category1; ?></h3>
                         </header>
                         <ul>
 <?php
-    $must_reads = new WP_Query(array('cat'=> $must_reads_cat_id, 'posts_per_page'=> 5, 'paged'=> 1));
- while ($must_reads->have_posts()) {
-            $must_reads->the_post();
+            $other_posts_query = new WP_Query(array('cat'=> get_cat_id($cat), 'posts_per_page'=> 5, 'paged'=> 1));
+                while($other_posts_query->have_posts()) {
+                    $other_posts_query->the_post();
 ?>
                             <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 <?php
-    }
+                }
 ?>
                         </ul>
                         <footer>
-                            <a class="more_link" href="<?php get_category_link($must_reads_cat_id); ?>" rel="nofollow">More ▼</a>
+                            <a class="more_link" href="<?php get_category_link(get_cat_id($cat)); ?>" rel="nofollow">More ▼</a>
                         </footer>
-                    </section><!-- _content_one -->
-                    <section class="other_posts_content_two">
+                    </section><!-- other_posts_content_one -->
+<?php
+            wp_reset_query();
+        } else {
+?>
+                    <section class="other_posts_content_<?php echo ($cat_num == 1) ? 'two' : 'three'; ?>">
                         <header>
-                            <h3 class="small_arial_caps">Worth a Look</h3>
+                            <h3 class="small_arial_caps"><?php echo ($cat_num == 1) ? $category2 : $category3; ?></h3>
                         </header>
                         <ul>
-                            <li><a href="http://wewillraakyou.com/2011/09/identity-and-location-and-sex-welcome-to-people-discovery/">Identity and location (and sex) - welcome to people discovery </a></li>
-                            <li><a href="http://wewillraakyou.com/2011/08/measure-fake-follower-twitter/">Is Newt Gingrich a cheat?</a></li>
-                            <li><a href="http://wewillraakyou.com/2011/05/curating-your-own-serendipity-filters/">Curating your own serendipity filters</a></li>
+<?php
+            $other_posts_query = new WP_Query(array('cat'=> get_cat_id($cat), 'posts_per_page'=> 3, 'paged'=> 1));
+                while($other_posts_query->have_posts()) {
+            $other_posts_query->the_post();
+?>
+                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+<?php
+                }
+?>
                         </ul>
                         <footer>
-                            <a class="more_link" href="http://wewillraakyou.com/category/worth-a-look/" rel="nofollow">More ▼</a>
+                            <a class="more_link" href="<?php get_category_link(get_cat_id($cat)); ?>" rel="nofollow">More ▼</a>
                         </footer>
-                    </section><!-- content_two -->
-                    <section class="other_posts_content_three">
-                        <header>
-                            <h3 class="small_arial_caps">The RAAKonteur</h3>
-                        </header>
-                        <ul>
-                            <li><a href="http://wewillraakyou.com/2011/12/the-raakonteur-66-the-spotify-platform-how-people-look-at-your-facebook-profile-wordpress-ads-and-more/">The RAAKonteur #66 - Spotify Platform, How people look at your Facebook profile, Wordpress Ads and more</a></li>
-                            <li><a href="http://wewillraakyou.com/2011/11/the-raakonteur-65-kevin-roses-new-project-the-facebook-freakyline-and-more/">The RAAKonteur #65 - Kevin Rose's new project, The Facebook Freakyline and more</a></li>
-                            <li><a href="http://wewillraakyou.com/2011/11/the-raakonteur-64-twitter-now-a-serious-business-and-why-like-is-actually-want/">The RAAKonteur #64 - Twitter now a serious business and why 'Like' is actually 'Want'</a></li>
-                        </ul>
-                        <footer>
-                            <a class="more_link" href="http://wewillraakyou.com/blog/the-raakonteur/" rel="nofollow">More ▼</a>
-                        </footer>
-                    </section><!-- content_three -->
+                    </section><!-- other_posts_content_<?php echo ($cat_num == 1) ? 'two' : 'three'; ?> -->
+<?php
+            wp_reset_query();
+        }
+    }
+?>
                 </div><!-- #whitebox_secondary -->
             </div>
 <?php
-wp_reset_query();
 }
 add_shortcode('other_posts', 'display_other_posts');
 ?>
