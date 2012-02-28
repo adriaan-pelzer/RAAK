@@ -37,17 +37,11 @@ function display_latest_posts($atts) {
         <div class="whitebox whitebox_primary box rounded-corners">
 <?php
     for($page = 1; $page <= $num_pages; $page++) {
-        echo $posts_per_page;
-        $latest_posts_loop = new WP_Query(array('cat' => get_cat_id($category), 'posts_per_page' => $posts_per_page, 'paged' => $page));
-        while ($latest_posts_loop->have_posts()) {
-            $latest_posts_loop->the_post();
-            $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
-            $author_page = get_page_by_title($author_full_name);
-            if (($page % 2) == 1) {
+        if (($page % 2) == 1) {
 ?>
             <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 1) { echo " current"; } ?>">
 <?php
-            }
+        }
 ?>
                 <article>
                     <header>
@@ -71,11 +65,11 @@ function display_latest_posts($atts) {
                     <hr class="solid">
                 </article>
 <?php
-            if (($page % 2) == 0) {
+        }
+        if (($page % 2) == 0) {
 ?>
             </div><!-- whitebox_primary_post -->
 <?php
-            }
         }
         wp_reset_query();
     
