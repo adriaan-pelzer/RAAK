@@ -92,6 +92,9 @@ var ourWorkPagination = function() {
     $('.our_work_nav h3 a').click(function() {
         if(!$(this).hasClass('active')) {
             $('.our_work_nav h3 a.active').removeClass('active');
+            $('.our_work_bluebox_content.current').removeClass('current');
+            var current_class = $(this).attr('class');
+            $('.our_work_bluebox_content#' + current_class).addClass('current');
             $(this).addClass('active');
         } 
     });
