@@ -173,9 +173,8 @@ function display_other_posts() {
                         <ul>
 <?php
     foreach($must_reads->posts as $must_read) {
-        print_r($must_read->post_title);
 ?>
-                            <!-- li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li -->
+                            <li><a href="<?php echo get_permalink($must_read->ID); ?>"><?php echo $must_read->post_title; ?></a></li>
 <?php
     }
 ?>
