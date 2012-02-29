@@ -9,5 +9,6 @@ Template Name: About
 		<div class="content">
 <?php do_shortcode('[who_what]'); ?>
 <?php do_shortcode('[quotes]'); ?>
+		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
