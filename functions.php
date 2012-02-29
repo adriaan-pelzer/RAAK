@@ -244,14 +244,13 @@ function who_we_are_what_we_do() {
         
 ?>
 
-                        <?php echo ($founder != 0) ? '<span class="seperator seperator_smaller">|</span>'; ?><a id="whitebox_primary_content_nav_<?php echo $post->post_name; ?>" class="whitebox_primary_content_nav_item <?php echo ($founder == 0) ? 'active' : ''; ?>" ><?php the_title(); ?></a>
+                        <?php echo ($founder != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_<?php echo $post->post_name; ?>" class="whitebox_primary_content_nav_item <?php echo ($founder == 0) ? 'active' : ''; ?>" ><?php the_title(); ?></a>
 <?php
         $founder++;
 ?>
                     </nav><!-- whitebox_primary_content_nav -->
                     <hr class="solid">
 <?php
-        print_r($who_we_are_query);
     $who_we_are_content .= '<section id="whitebox_primary_content_' . $post->post_name . '" class="whitebox_primary_content_founder">
                         <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_content_founder_name">Adriaan Pelzer</div>
