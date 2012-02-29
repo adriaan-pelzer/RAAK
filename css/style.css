@@ -835,6 +835,11 @@ hr.lightblue_hr {
     letter-spacing: 2px;
     text-transform: uppercase;
     padding-right: 80px;
+    display: none;
+}
+
+.bluebox_content_item.current {
+    display: block;
 }
 
 .whitebox_primary_content_nav {
