@@ -217,9 +217,10 @@ function display_other_posts($atts) {
 add_shortcode('other_posts', 'display_other_posts');
 
 /*******************************/
-
+i
 function who_we_are_what_we_do() {
     $what_we_do = get_page_by_title('What we do');
+    $who_we_are = get_page_by_title('Who we are');
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
@@ -229,12 +230,19 @@ function who_we_are_what_we_do() {
                     <h2 class="din-schrift blue_20">About</h2>
                 </header>
                 <hr>
-                <div id="what-we-do" class="whitebox_primary_content">
+                <div id="what-we-do" class="whitebox_primary_content" style="display: none;">
 <?php echo $what_we_do->post_content; ?>
                 </div><!-- whitebox_primary_content -->
-                <div id="who-we-are" class="whitebox_primary_content" style="display: none;">
+                <div id="who-we-are" class="whitebox_primary_content">
                     <div class="whitebox_primary_content_nav smaller_arial_caps box_nav">
-                        <a id="whitebox_primary_content_nav_gerrie" class="whitebox_primary_content_nav_item active" onclick="javascript: expand_person('gerrie');">Gerrie Smits</a>
+<?php
+    $who_we_are_query = new WP_Query('post_parent=' . $who_we_are->ID);
+    foreach($who_we_are as $founder_num -> $founder) {
+        while($founder->have_posts()) {
+            $founder->the_post();
+?>
+
+                        <?php echo ($founder_num != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_gerrie" class="whitebox_primary_content_nav_item active" ><?php the_title(); ?></a>
                         <span class="seperator seperator_smaller">|</span>
                         <a id="whitebox_primary_content_nav_wessel" class="whitebox_primary_content_nav_item" onclick="javascript: expand_person('wessel');">Wessel van Rensburg</a>
                         <span class="seperator seperator_smaller">|</span>
