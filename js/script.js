@@ -105,7 +105,7 @@ var aboutPagination = function() {
         if(!$(this).hasClass('active')) {
             $('.about_nav a.active').removeClass('active');
             $('.our_work_bluebox_content.current').removeClass('current');
-            var current_id = $(this).html();
+            var current_id = $(this).html().toLowerCase();
             current_id = current_id.replace(/ /g , '-');
             alert(current_id);
             $('#' + current_id).addClass('current');
