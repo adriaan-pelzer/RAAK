@@ -264,7 +264,7 @@ function who_we_are_what_we_do() {
                                         <span class="whitebox_primary_content_founder_social_facebook_text"><a href="http://' . get_post_meta($post->ID, 'facebook', TRUE) . '">Facebook</a></span>
                                         </div><!-- whitebox_primary_content_founder_social_facebook -->';
         }
-        if (get_post_meta(get_post_meta($post->ID, 'twitter', TRUE)) {
+        if (get_post_meta($post->ID, 'twitter', TRUE)) {
             $who_we_are_content .= '<div class="whitebox_primary_content_founder_social_network social_twitter">
                                         <span class="whitebox_primary_content_founder_social_twitter_icon"><a href="http://' . get_post_meta($post->ID, 'twitter', TRUE) . '"><img src="' . get_bloginfo("template_url") . '/images/twitter_icon.png" alt="Twitter"></a></span>
                                         <span class="whitebox_primary_content_founder_social_twitter_text"><a href="http://' . get_post_meta($post->ID, 'twitter', TRUE) . '">Twitter</a></span>
