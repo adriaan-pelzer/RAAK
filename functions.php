@@ -242,8 +242,6 @@ function who_we_are_what_we_do() {
     $who_we_are_query = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page');
     while($who_we_are_query->have_posts()) {
         $who_we_are_query->the_post();
-        print_r($post);
-        
 ?>
 
                         <?php echo ($founder != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_<?php echo $post->post_name; ?>" class="whitebox_primary_content_nav_item <?php echo ($founder == 0) ? 'active' : ''; ?>" ><?php the_title(); ?></a>
