@@ -219,46 +219,18 @@ add_shortcode('other_posts', 'display_other_posts');
 /*******************************/
 
 function who_we_are_what_we_do() {
+    $what_we_do = get_post_by_title('What we do');
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
                     <nav class="whitebox_primary_nav smaller_arial_caps box_nav">
-                        <a class="active" onclick="javacsript: expand('what-we-do');">What we do</a><span class="seperator seperator_smaller">|</span><a onclick="javacsript: expand('who-we-are');">Who we are</a>
+                        <a class="active">What we do</a><span class="seperator seperator_smaller">|</span><a>Who we are</a>
                     </nav><!-- whitebox_primary_nav -->
                     <h2 class="din-schrift blue_20">About</h2>
                 </header>
                 <hr>
                 <div id="what-we-do" class="whitebox_primary_content">
-                    <p>We consult, train and develop - and yes that includes building - social media solutions.</p>
-
-<p>Social media can be used to build <em>brand awareness</em>, <em><a title="Dominos success with social media" href="2010/09/dominos-the-raak-social-media-overview/">to shift products</a></em> and for <em>direct response</em>. But also for former <em>PR functions</em>, and even <em>product development</em> &amp; <em>customer service purposes</em>.</p>
-
-<p>Which department will pay for that? We have <a title="Brand, PR, Direct response - who does social?" href="2010/09/social-media-is-cool-but-who-pays-for-it-brand-pr-digital/">an answer for that</a>!</p>
-
-<p>There is another way to look at social media and how it can work for you. We broadly define what we do in two ways.</p>
-<ol>
-<li>Social Media Ready</li>
-<li>Impact Projects</li>
-</ol>
-
-<a href="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Picture-5.png"><img src="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Picture-5.png" alt="Social media ready &amp; Impact projects" title="Social media ready &amp; Impact projects" width="360" height="206" class="size-full wp-image-2527"></a>
-
-<p><span><strong>Social Media Ready</strong></span>
-A new necessity in a world where consumers are identifiable, trackable, transparent, and easily accessible. Many businesses can now jump the supply chain and build direct-to-consumer relationships. </p>
-
-<p>We consult, train &amp; help you to set up your social media presence. We help you choose the right tools and advise you on who is best in your organisation to use them. We also do Social Media Management on your behalf.</p>
-<p>These are long term relationships and not a quick fix. This means that you already have the audience before you even launch a product or the service.
-
-
-</p>
-
-
-
-<p><span><strong>Impact Projects</strong></span>
-Building a social media presence takes time. It's not a quick fix. You need to be on the right platforms doing the right things. It's not a quick fix. </p>
-<p>
-But when you have the right foundation there are times you need to make a splash and take a step up. This could be a creative iPhone application that integrates social and location functionality, a viral Twitter app or it could entail reaching out to the world's biggest bloggers.</p>
-
+<?php echo $what_we_do->post_content; ?>
                 </div><!-- whitebox_primary_content -->
                 <div id="who-we-are" class="whitebox_primary_content" style="display: none;">
                     <div class="whitebox_primary_content_nav smaller_arial_caps box_nav">
