@@ -248,13 +248,13 @@ function who_we_are_what_we_do() {
 <?php
     $who_we_are_content .= '<section id="whitebox_primary_content_' . $post->post_name . '" class="whitebox_primary_content_founder">
                         <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
-                            <div class="whitebox_primary_content_founder_name">Adriaan Pelzer</div>
+                            <div class="whitebox_primary_content_founder_name">' . the_title() . '</div>
                             <div class="whitebox_primary_content_founder_social">
                                 <div class="whitebox_primary_content_founder_social_title">Follow me…</div>
                                 <div class="whitebox_primary_content_founder_social_right"> 
                                     <div class="whitebox_primary_content_founder_social_network social_linkedin">
-                                        <span class="whitebox_primary_content_founder_social_linkedin_icon"><a href="http://za.linkedin.com/pub/adriaan-pelzer/4/874/860"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn"></a></span>
-                                        <span class="whitebox_primary_content_founder_social_linkedin_text"><a href="http://za.linkedin.com/pub/adriaan-pelzer/4/874/860">Linked In</a></span>
+                                        <span class="whitebox_primary_content_founder_social_linkedin_icon"><a href="' . get_post_meta('linkedin') . '"><img src="' . blog_info(theme_url) . '/images/linked_in_icon.png" alt="LinkedIn"></a></span>
+                                        <span class="whitebox_primary_content_founder_social_linkedin_text"><a href="' . get_post_meta('linkedin') . '">Linked In</a></span>
                                     </div><!-- whitebox_primary_content_founder_social_linkedin -->
                                     <div class="whitebox_primary_content_founder_social_network social_facebook">
                                         <span class="whitebox_primary_content_founder_social_facebook_icon"><a href="http://www.facebook.com/adriaan.pelzer"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/facebook_icon.png" alt="Facebook"></a></span>
