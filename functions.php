@@ -311,7 +311,7 @@ function founder_quotes() {
 <?php
     $about = get_page_by_title('About');
     $about_pages = new WP_Query('post_parent=' . $about->ID . '&post_type=page');
-        while ($about_pages->have_posts() {
+        while ($about_pages->have_posts()) {
             $about_pages->the_post();
 ?>
         <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps"><?php the_title(); ?></h3>
