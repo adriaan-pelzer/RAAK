@@ -780,6 +780,14 @@ margin: 25px 0 9px;
 
 /************** whitebox **************/
 
+.about_content {
+    display: none;
+}
+
+.about_content.current {
+    display: block;
+}
+
 .whitebox_primary_nav {
     float: right;
     margin-top: 11px;

@@ -100,10 +100,22 @@ var ourWorkPagination = function() {
     });
 }
     
+var aboutPagination = function() {
+    $('.about_nav a').click(function() {
+        if(!$(this).hasClass('active')) {
+            $('.about_nav h3 a.active').removeClass('active');
+            $('.our_work_bluebox_content.current').removeClass('current');
+            var current_id = $(this).innerHTML();
+            $('#' + current_id).addClass('current');
+            $(this).addClass('active');
+        } 
+    });
+}
 
 
 $(document).ready(function() {
     setInterval(load_next, 5000);
     latestPostsPagination();
     ourWorkPagination();
+    aboutPagination();
 });

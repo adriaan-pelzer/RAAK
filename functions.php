@@ -226,16 +226,16 @@ function who_we_are_what_we_do() {
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
-                    <nav class="whitebox_primary_nav smaller_arial_caps box_nav">
+                    <nav class="whitebox_primary_nav smaller_arial_caps about_nav box_nav">
                         <a class="active">What we do</a><span class="seperator seperator_smaller">|</span><a>Who we are</a>
                     </nav><!-- whitebox_primary_nav -->
                     <h2 class="din-schrift blue_20">About</h2>
                 </header>
                 <hr>
-                <div id="what-we-do" class="whitebox_primary_content" style="display: none;">
+                <div id="what-we-do" class="whitebox_primary_content about_content current">
 <?php echo $what_we_do->post_content; ?>
                 </div><!-- whitebox_primary_content -->
-                <div id="who-we-are" class="whitebox_primary_content">
+                <div id="who-we-are" class="whitebox_primary_content about_content">
                     <nav class="whitebox_primary_content_nav smaller_arial_caps box_nav">
 <?php
     $founder = 0;
