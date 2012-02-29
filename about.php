@@ -7,7 +7,7 @@ Template Name: About
 
 	<div class="container rounded-corners about">
 		<div class="content">
-<?php do_shortcode(['who_what']); ?>
+<?php do_shortcode('[who_what]'); ?>
             <aside class="bluebox bluebox_primary box rounded-corners">
                 <header>
                     <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">What we do</h3>
