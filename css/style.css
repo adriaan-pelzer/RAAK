@@ -213,7 +213,7 @@ em {
     line-height: 13px;
 }
 
-strong {
+strong, .bold {
     font-weight: bold;
 }
 
