@@ -248,7 +248,7 @@ function who_we_are_what_we_do() {
 <?php
         $who_we_are_content .= '<section id="whitebox_primary_content_' . $post->post_name . '" class="whitebox_primary_content_founder'; 
         if($founder == 0) {
-            $who_we_are_content .= 'current';
+            $who_we_are_content .= ' current';
         }
         $who_we_are_content .= '"><div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_content_founder_name">' . $post->post_title . '</div>
