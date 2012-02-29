@@ -246,8 +246,11 @@ function who_we_are_what_we_do() {
 
                         <?php echo ($founder != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_<?php echo $post->post_name; ?>" class="whitebox_primary_content_nav_item <?php echo ($founder == 0) ? 'active' : ''; ?>" ><?php the_title(); ?></a>
 <?php
-    $who_we_are_content .= '<section id="whitebox_primary_content_' . $post->post_name . '" class="whitebox_primary_content_founder' . return ($founder == 0) ? 'current' : '' . '">
-                        <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
+        $who_we_are_content .= '<section id="whitebox_primary_content_' . $post->post_name . '" class="whitebox_primary_content_founder'; 
+        if($founder == 0) {
+            $who_we_are_content .= 'current';
+        }
+        $who_we_are_content .= '<div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_content_founder_name">' . $post->post_title . '</div>
                             <div class="whitebox_primary_content_founder_social">
                                 <div class="whitebox_primary_content_founder_social_title">Follow me…</div>
