@@ -103,7 +103,7 @@ var ourWorkPagination = function() {
 var aboutPagination = function() {
     $('.about_nav a').click(function() {
         if(!$(this).hasClass('active')) {
-            $('.about_nav h3 a.active').removeClass('active');
+            $('.about_nav a.active').removeClass('active');
             $('.our_work_bluebox_content.current').removeClass('current');
             var current_id = $(this).html();
             $('#' + current_id).addClass('current');
