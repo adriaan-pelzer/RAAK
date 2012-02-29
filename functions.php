@@ -269,11 +269,11 @@ function who_we_are_what_we_do() {
                         </div><!-- whitebox_primary_content_founder_info -->
                         <div class="whitebox_primary_content_founder_picture">';
 
-        $who_we_are_content .= get_image_or_video ($founder_post->post_content, 200);
+        $who_we_are_content .= get_image_or_video ($post->post_content, 200);
         $who_we_are_content .= '</div><!-- whitebox_primary_content_founder_picture -->
                         <hr class="solid">
                         <div class="whitebox_primary_content_founder_text">';
-        $who_we_are_content .= $post->the_content;
+        $who_we_are_content .= $post->post_content;
         $who_we_are_content .= '</div><!-- .whitebox_primary_content_founder_text -->
                         </section><!-- whitebox_primary_content_founder -->';
         $founder++;
