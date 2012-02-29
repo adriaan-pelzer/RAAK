@@ -251,20 +251,26 @@ function who_we_are_what_we_do() {
                             <div class="whitebox_primary_content_founder_name">' . $post->post_title . '</div>
                             <div class="whitebox_primary_content_founder_social">
                                 <div class="whitebox_primary_content_founder_social_title">Follow me…</div>
-                                <div class="whitebox_primary_content_founder_social_right"> 
-                                    <div class="whitebox_primary_content_founder_social_network social_linkedin">
+                                <div class="whitebox_primary_content_founder_social_right">'; 
+        if (get_post_meta($post->ID, 'linkedin', TRUE)) {
+            $who_we_are_content .= '<div class="whitebox_primary_content_founder_social_network social_linkedin">
                                         <span class="whitebox_primary_content_founder_social_linkedin_icon"><a href="http://' . get_post_meta($post->ID, 'linkedin', TRUE) . '"><img src="' . get_bloginfo("template_url") . '/images/linked_in_icon.png" alt="LinkedIn"></a></span>
                                         <span class="whitebox_primary_content_founder_social_linkedin_text"><a href="http://' . get_post_meta($post->ID, 'linkedin', TRUE) . '">Linked In</a></span>
-                                    </div><!-- whitebox_primary_content_founder_social_linkedin -->
-                                    <div class="whitebox_primary_content_founder_social_network social_facebook">
+                                    </div><!-- whitebox_primary_content_founder_social_linkedin -->';
+        }
+        if (get_post_meta($post->ID, 'facebook', TRUE)){
+            $who_we_are_content .= '<div class="whitebox_primary_content_founder_social_network social_facebook">
                                         <span class="whitebox_primary_content_founder_social_facebook_icon"><a href="http://' . get_post_meta($post->ID, 'facebook', TRUE) . '"><img src="' . get_bloginfo("template_url") . '/images/facebook_icon.png" alt="Facebook"></a></span>
                                         <span class="whitebox_primary_content_founder_social_facebook_text"><a href="http://' . get_post_meta($post->ID, 'facebook', TRUE) . '">Facebook</a></span>
-                                    </div><!-- whitebox_primary_content_founder_social_facebook -->
-                                    <div class="whitebox_primary_content_founder_social_network social_twitter">
+                                        </div><!-- whitebox_primary_content_founder_social_facebook -->';
+        }
+        if (get_post_meta(get_post_meta($post->ID, 'twitter', TRUE)) {
+            $who_we_are_content .= '<div class="whitebox_primary_content_founder_social_network social_twitter">
                                         <span class="whitebox_primary_content_founder_social_twitter_icon"><a href="http://' . get_post_meta($post->ID, 'twitter', TRUE) . '"><img src="' . get_bloginfo("template_url") . '/images/twitter_icon.png" alt="Twitter"></a></span>
                                         <span class="whitebox_primary_content_founder_social_twitter_text"><a href="http://' . get_post_meta($post->ID, 'twitter', TRUE) . '">Twitter</a></span>
-                                    </div><!-- whitebox_primary_content_founder_social_twitter -->
-                                </div><!-- whitebox_primary_content_founder_social_right -->
+                                        </div><!-- whitebox_primary_content_founder_social_twitter -->';
+        }
+        $who_we_are_content .= '</div><!-- whitebox_primary_content_founder_social_right -->
                             </div><!-- whitebox_primary_content_founder_social -->
                         </div><!-- whitebox_primary_content_founder_info -->
                         <div class="whitebox_primary_content_founder_picture">';
