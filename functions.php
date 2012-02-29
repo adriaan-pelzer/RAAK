@@ -248,7 +248,7 @@ function who_we_are_what_we_do() {
 <?php
     $who_we_are_content .= '<section id="whitebox_primary_content_' . $post->post_name . '" class="whitebox_primary_content_founder">
                         <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
-                            <div class="whitebox_primary_content_founder_name">' . the_title() . '</div>
+                            <div class="whitebox_primary_content_founder_name">' . $post->post_title . '</div>
                             <div class="whitebox_primary_content_founder_social">
                                 <div class="whitebox_primary_content_founder_social_title">Follow me…</div>
                                 <div class="whitebox_primary_content_founder_social_right"> 
@@ -257,35 +257,23 @@ function who_we_are_what_we_do() {
                                         <span class="whitebox_primary_content_founder_social_linkedin_text"><a href="http://' . get_post_meta($post->ID, 'linkedin', TRUE) . '">Linked In</a></span>
                                     </div><!-- whitebox_primary_content_founder_social_linkedin -->
                                     <div class="whitebox_primary_content_founder_social_network social_facebook">
-                                        <span class="whitebox_primary_content_founder_social_facebook_icon"><a href="http://www.facebook.com/adriaan.pelzer"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/facebook_icon.png" alt="Facebook"></a></span>
-                                        <span class="whitebox_primary_content_founder_social_facebook_text"><a href="http://www.facebook.com/adriaan.pelzer">Facebook</a></span>
+                                        <span class="whitebox_primary_content_founder_social_facebook_icon"><a href="http://' . get_post_meta($post->ID, 'facebook', TRUE) . '"><img src="' . get_bloginfo("template_url") . '/images/facebook_icon.png" alt="Facebook"></a></span>
+                                        <span class="whitebox_primary_content_founder_social_facebook_text"><a href="http://' . get_post_meta($post->ID, 'facebook', TRUE) . '">Facebook</a></span>
                                     </div><!-- whitebox_primary_content_founder_social_facebook -->
                                     <div class="whitebox_primary_content_founder_social_network social_twitter">
-                                        <span class="whitebox_primary_content_founder_social_twitter_icon"><a href="http://www.twitter.com/adriaan_pelzer"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter"></a></span>
-                                        <span class="whitebox_primary_content_founder_social_twitter_text"><a href="http://www.twitter.com/adriaan_pelzer">Twitter</a></span>
+                                        <span class="whitebox_primary_content_founder_social_twitter_icon"><a href="http://' . get_post_meta($post->ID, 'twitter', TRUE) . '"><img src="' . get_bloginfo("template_url") . '/images/twitter_icon.png" alt="Twitter"></a></span>
+                                        <span class="whitebox_primary_content_founder_social_twitter_text"><a href="http://' . get_post_meta($post->ID, 'twitter', TRUE) . '">Twitter</a></span>
                                     </div><!-- whitebox_primary_content_founder_social_twitter -->
                                 </div><!-- whitebox_primary_content_founder_social_right -->
                             </div><!-- whitebox_primary_content_founder_social -->
                         </div><!-- whitebox_primary_content_founder_info -->
-                        <div class="whitebox_primary_content_founder_picture">
-                            <img title="Adriaan Pelzer - Creative technologist" src="http://www.wewillraakyou.com/wp-content/uploads/2010/07/Last-12-Months-11-259x300.jpg" alt="Adriaan Pelzer - Creative technologist" width="200" height="232">
-                            <!--img alt="Adriaan Pelzer" src="http://test.wewillraakyou.com/wp-content/uploads/2010/07/Last-12-Months-11.jpg" /-->
-                        </div><!-- whitebox_primary_content_founder_picture -->
+                        <div class="whitebox_primary_content_founder_picture">'
+                           . get_image_or_video ($founder_post->post_content, 200) .
+                        '</div><!-- whitebox_primary_content_founder_picture -->
                         <hr class="solid">
-                        <div class="whitebox_primary_content_founder_text">
-                            
-<p>Adriaan is RAAK\'s Technical Dude. Creative Technical Dude that is.</p>
-
-<p>He studied electronic engineering at the University of Pretoria in South Africa, after which he started his professional career installing mobile subsystems on site for Vodacom, Ericsson and Siemens in South Africa and Botswana during the mobile boom in late 90s Southern Africa.</p>
-
-<p>In 2000 Adriaan started working first as a QA engineer and later as a software developer at a Cryptographic Software house called Trispen Technologies. With his wife, Mareli, Adriaan started up sound studio &amp; video production house PIT Productions, which, amongst others, produced two TV series for South African TV. One of them, Kompleks, was quite a bit of a cult hit.</p>
-
-<p>Adriaan also fronts the South African Industrial Metal band NuL.</p>
-
-<p>In the last few years Adriaan has developed an extensive knowledge of web technologies, especially everything surrounding Social Media. That ranges from API implementations to iPhone apps and building 12,000 lines of bespoke PHP code for a social network.</p>
-
-<p>Add to that his talent for thinking creatively and you have, well, a Creative Technical Dude.</p>
-                        </div><!-- .whitebox_primary_content_founder_text -->
+                        <div class="whitebox_primary_content_founder_text">'
+                        . $post->the_content .
+                        '</div><!-- .whitebox_primary_content_founder_text -->
                         </section><!-- whitebox_primary_content_founder -->';
         $founder++;
     }
