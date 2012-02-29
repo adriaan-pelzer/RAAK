@@ -238,7 +238,7 @@ function who_we_are_what_we_do() {
 <?php
     $who_we_are_query = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page');
     print_r ($who_we_are_query);
-    foreach($who_we_are_query=>posts as $founder_num -> $founder) {
+    foreach($who_we_are_query->posts as $founder_num => $founder) {
         while($founder->have_posts()) {
             $founder->the_post();
 ?>
