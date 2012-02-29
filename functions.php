@@ -237,6 +237,7 @@ function who_we_are_what_we_do() {
                     <div class="whitebox_primary_content_nav smaller_arial_caps box_nav">
 <?php
     $who_we_are_query = new WP_Query('post_parent=' . $who_we_are->ID);
+    print_r ($who_we_are_query);
     foreach($who_we_are_query as $founder_num -> $founder) {
         while($founder->have_posts()) {
             $founder->the_post();
