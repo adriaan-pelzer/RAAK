@@ -844,6 +844,11 @@ hr.lightblue_hr {
 
 .whitebox_primary_content_founder {
     padding-top: 11px;
+    display: none;
+}
+
+.whitebox_primary_content_founder.current {
+    display: block;
 }
 
 .whitebox_primary_content_founder_name {

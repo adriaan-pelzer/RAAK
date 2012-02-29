@@ -239,14 +239,14 @@ function who_we_are_what_we_do() {
                     <nav class="whitebox_primary_content_nav smaller_arial_caps box_nav">
 <?php
     $founder = 0;
-    $who_we_are_query = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page');
+    $who_we_are_query = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page&order=ASC');
     while($who_we_are_query->have_posts()) {
         $who_we_are_query->the_post();
 ?>
 
                         <?php echo ($founder != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_<?php echo $post->post_name; ?>" class="whitebox_primary_content_nav_item <?php echo ($founder == 0) ? 'active' : ''; ?>" ><?php the_title(); ?></a>
 <?php
-    $who_we_are_content .= '<section id="whitebox_primary_content_' . $post->post_name . '" class="whitebox_primary_content_founder">
+    $who_we_are_content .= '<section id="whitebox_primary_content_' . $post->post_name . '" class="whitebox_primary_content_founder' . ($founder == 0) ? 'current' : '' . '">
                         <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_content_founder_name">' . $post->post_title . '</div>
                             <div class="whitebox_primary_content_founder_social">
