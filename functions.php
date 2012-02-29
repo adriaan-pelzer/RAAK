@@ -273,7 +273,7 @@ function who_we_are_what_we_do() {
         $who_we_are_content .= '</div><!-- whitebox_primary_content_founder_picture -->
                         <hr class="solid">
                         <div class="whitebox_primary_content_founder_text">';
-        $who_we_are_content .= $post->post_content;
+        $who_we_are_content .= preg_replace ("/<a[^>]+><img[^>]+><\/a>/", "", $post->post_content);
         $who_we_are_content .= '</div><!-- .whitebox_primary_content_founder_text -->
                         </section><!-- whitebox_primary_content_founder -->';
         $founder++;
