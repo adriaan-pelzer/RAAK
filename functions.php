@@ -319,8 +319,6 @@ function founder_quotes() {
 
         }
 ?>
-                <header>
-                    <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">What we do</h3>
                 </header>
                 <hr class="blue_hr">
                 <div id="bluebox_content_what-we-do" class="bluebox_content_item">
