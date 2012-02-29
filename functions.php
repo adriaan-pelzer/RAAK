@@ -310,7 +310,7 @@ function founder_quotes() {
     <header>
 <?php
     $about = get_page_by_title('About');
-    $about_pages = new WP_Query('post_parent=' . $about->ID . '&post_type=page')
+    $about_pages = new WP_Query('post_parent=' . $about->ID . '&post_type=page');
         while ($about_pages->have_posts() {
             $about_pages->the_post();
 ?>
