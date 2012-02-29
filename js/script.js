@@ -120,6 +120,7 @@ var aboutPagination = function() {
             $('#whitebox_primary_content_' + current_id).addClass('current');
             $(this).addClass('active');
         }
+    });
 }
 
 
