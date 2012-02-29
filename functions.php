@@ -221,6 +221,7 @@ add_shortcode('other_posts', 'display_other_posts');
 function who_we_are_what_we_do() {
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
+    $who_we_are_content = '';
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
@@ -234,24 +235,24 @@ function who_we_are_what_we_do() {
 <?php echo $what_we_do->post_content; ?>
                 </div><!-- whitebox_primary_content -->
                 <div id="who-we-are" class="whitebox_primary_content">
-                    <div class="whitebox_primary_content_nav smaller_arial_caps box_nav">
+                    <nav class="whitebox_primary_content_nav smaller_arial_caps box_nav">
 <?php
+    $founder = 0;
     $who_we_are_query = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page');
     while($who_we_are_query->have_posts()) {
         $who_we_are_query->the_post();
+        
 ?>
 
-                        <?php echo ($founder_num != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_gerrie" class="whitebox_primary_content_nav_item active" ><?php the_title(); ?></a>
+                        <?php echo ($founder != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_gerrie" class="whitebox_primary_content_nav_item <?php echo ($founder == 0) ? 'active' : ''; ?>" ><?php the_title(); ?></a>
 <?php
-    }
+        $founder++;
 ?>
-                        <span class="seperator seperator_smaller">|</span>
-                        <a id="whitebox_primary_content_nav_wessel" class="whitebox_primary_content_nav_item" onclick="javascript: expand_person('wessel');">Wessel van Rensburg</a>
-                        <span class="seperator seperator_smaller">|</span>
-                        <a id="whitebox_primary_content_nav_adriaan" class="whitebox_primary_content_nav_item" onclick="javascript: expand_person('adriaan');">Adriaan Pelzer</a>
-                    </div><!-- whitebox_primary_content_nav -->
+                    </nav><!-- whitebox_primary_content_nav -->
                     <hr class="solid">
-                    <section id="whitebox_primary_content_adriaan" class="whitebox_primary_content_founder">
+<?php
+        print_r($who_we_are_query);
+    $who_we_are_content .= '<section id="whitebox_primary_content_adriaan" class="whitebox_primary_content_founder">
                         <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
                             <div class="whitebox_primary_content_founder_name">Adriaan Pelzer</div>
                             <div class="whitebox_primary_content_founder_social">
@@ -279,7 +280,7 @@ function who_we_are_what_we_do() {
                         <hr class="solid">
                         <div class="whitebox_primary_content_founder_text">
                             
-<p>Adriaan is RAAK's Technical Dude. Creative Technical Dude that is.</p>
+<p>Adriaan is RAAK\'s Technical Dude. Creative Technical Dude that is.</p>
 
 <p>He studied electronic engineering at the University of Pretoria in South Africa, after which he started his professional career installing mobile subsystems on site for Vodacom, Ericsson and Siemens in South Africa and Botswana during the mobile boom in late 90s Southern Africa.</p>
 
@@ -291,90 +292,10 @@ function who_we_are_what_we_do() {
 
 <p>Add to that his talent for thinking creatively and you have, well, a Creative Technical Dude.</p>
                         </div><!-- .whitebox_primary_content_founder_text -->
-                    </section><!-- whitebox_primary_content_founder -->
-                    <section id="whitebox_primary_content_wessel" class="whitebox_primary_content_founder" style="display: none;">
-                        <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
-                            <div class="whitebox_primary_content_founder_name">Wessel van Rensburg</div>
-                            <div class="whitebox_primary_content_founder_social">
-                                <div class="whitebox_primary_content_founder_social_title">Follow me…</div>
-                                <div class="whitebox_primary_content_founder_social_right"> 
-                                    <div class="whitebox_primary_content_founder_social_linkedin">
-                                        <span class="whitebox_primary_content_founder_social_linkedin_icon"><a href="http://uk.linkedin.com/in/wesselvanrensburg"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn"></a></span>
-                                        <span class="whitebox_primary_content_founder_social_linkedin_text"><a href="http://uk.linkedin.com/in/wesselvanrensburg">Linked In</a></span>
-                                    </div><!-- whitebox_primary_content_founder_social_linkedin -->
-                                    <div class="whitebox_primary_content_founder_social_twitter">
-                                        <span class="whitebox_primary_content_founder_social_twitter_icon"><a href="http://twitter.com/wildebees"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter"></a></span>
-                                        <span class="whitebox_primary_content_founder_social_twitter_text"><a href="http://twitter.com/wildebees">Twitter</a></span>
-                                    </div><!-- whitebox_primary_content_founder_social_twitter -->
-                                </div><!-- whitebox_primary_content_founder_social_right -->
-                            </div><!-- whitebox_primary_content_founder_social -->
-                        </div><!-- whitebox_primary_content_founder_info -->
-                        <div class="whitebox_primary_content_founder_picture">
-                            <img title="Wessel van Rensburg - Social media strategist" src="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Wessel-259x300.jpg" alt="" width="200" height="232">
-                            <!--img alt="Wessel van Rensburg" src="" /-->
-                        </div><!-- whitebox_primary_content_founder_picture -->
-                        <hr class="solid">
-                        <div class="whitebox_primary_content_founder_text">
-                            
-
-<p>Wessel has more than 12 years experience as digital strategist, product development manager and consultant.
-
-</p><p>His love affair with media started when a rightwing nutter &amp; his senior at university residence, warned him of the evils of the local lefty student newspaper. Wessel joined said paper the next day.</p>
-
-<p>After becoming editor of said paper, and completing a law degree he was honoured to be appointed an investigator for the historic South African Truth and Reconciliation Commission.</p>
-
-<p>But Wessel loved media, and he left South Africa to do a masters degree in Hypermedia in London. He programmed interactive multi-media toys in Macromedia Director and learned about virtual communities and the history of the computing, media and telecoms industry.</p>
-<p>
-He was part of the dot.com excitement and ultimately its bust after being hired by internet start-up eCountries.com.</p>
-<p>
-But he survived the experience all the better for it. And for the next 5 years served as Lycos Europe Senior Mobile Producer, Product Manager and Manager of New Product Development Manager respectively. Here he managed the UK's largest youth orientated mobile community website, and brought numerous products to market. Including a blogging platform and LycosIQ, a knowledge sharing community.</p>
-<p>
-Since then Wessel has been consulting on new and particular social media for organisations like the World Economic Forum (WEF).</p>
-<p>
-That's until he and Gerrie founded RAAK.</p>
-<p>
-Wessel also makes documenatries in his spare time and keeps a popular blog on South African politics and culture.</p>
-                        </div><!-- .whitebox_primary_content_founder_text -->
-                    </section><!-- whitebox_primary_content_founder -->
-                    <section id="whitebox_primary_content_gerrie" class="whitebox_primary_content_founder" style="display: none;">
-                        <div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
-                            <div class="whitebox_primary_content_founder_name">Gerrie Smits</div>
-                            <hr>
-                            <div class="whitebox_primary_content_founder_social">
-                                <div class="whitebox_primary_content_founder_social_title">Follow me…</div>
-                                <div class="whitebox_primary_content_founder_social_right"> 
-                                    <div class="whitebox_primary_content_founder_social_linkedin">
-                                        <span class="whitebox_primary_content_founder_social_linkedin_icon"><a href="http://uk.linkedin.com/in/gerriesmits"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/linked_in_icon.png" alt="LinkedIn"></a></span>
-                                        <span class="whitebox_primary_content_founder_social_linkedin_text"><a href="http://uk.linkedin.com/in/gerriesmits">Linked In</a></span>
-                                    </div><!-- whitebox_primary_content_founder_social_linkedin -->
-                                    <div class="whitebox_primary_content_founder_social_twitter">
-                                        <span class="whitebox_primary_content_founder_social_twitter_icon"><a href="http://twitter.com/grrRAAK"><img src="http://wewillraakyou.com/wp-content/themes/RAAK/images/twitter_icon.png" alt="Twitter"></a></span>
-                                        <span class="whitebox_primary_content_founder_social_twitter_text"><a href="http://twitter.com/grrRAAK">Twitter</a></span>
-                                    </div><!-- whitebox_primary_content_founder_social_twitter -->
-                                </div><!-- whitebox_primary_content_founder_social_right -->
-                            </div><!-- whitebox_primary_content_founder_social -->
-                        </div><!-- whitebox_primary_content_founder_info -->
-                        <div class="whitebox_primary_content_founder_picture">
-                            <img title="Gerrie Smits - RAAK founder" src="http://www.wewillraakyou.com/wp-content/uploads/2009/06/Last-12-Months-0-259x300.jpg" alt="Gerrie Smits - RAAK founder" width="200" height="232">
-                            <!--img alt="Gerrie Smits" src="" /-->
-                        </div><!-- whitebox_primary_content_founder_picture -->
-                        <hr class="solid">
-                        <div class="whitebox_primary_content_founder_text">
-                            
-
-<p>Gerrie started his media career as a music journalist known for his discerning taste and disarming prose.</p>
-
-<p>He had studied visual communication, so when opportunity beckoned with MTV it was a natural next step up. That step turned into a 7-year career that encompassed script writing and early experiments with nascent interactive TV to launching new local channels.</p>
-
-<p>He then founded Pixelspew, a production company that soon developed into a creative agency. It curated mobile content, conceptualised virals, creative-directed tv campaigns, directed music videos and repositioned tv &amp; internet channels.</p>
-
-<p>Still, it wasn't enough. Aware of the massive changes in media and intrigued by innovation, Gerrie was restless. The emerging power of what was being labeled Web 2.0 was a confirmation of a lot of the principles and ways of doing media that Gerrie had come to do. Things like the importance of authenticity in media and truly remarkable content.</p>
-
-<p>So what if one could combine the interactive communications capabilities of new digital media with the narrative skills of old media he thought?</p>
-
-<p>After many caffeine and pint fueled discussions over the course of a year it became obvious. He and <a title="Wessel van Rensburg" href="/about/the-founders/wessel-van-rensburg/">WVR</a> would put their combined media skills under one roof.</p>
-                        </div><!-- .whitebox_primary_content_founder_text -->
-                    </section><!-- whitebox_primary_content_founder -->
+                        </section><!-- whitebox_primary_content_founder -->';
+    }
+    echo $who_we_are_content;
+?>
                 </div><!-- whitebox_primary_content -->
             </div>
 
