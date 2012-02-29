@@ -243,6 +243,10 @@ function who_we_are_what_we_do() {
 ?>
 
                         <?php echo ($founder_num != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_gerrie" class="whitebox_primary_content_nav_item active" ><?php the_title(); ?></a>
+<?php
+        }
+    }
+?>
                         <span class="seperator seperator_smaller">|</span>
                         <a id="whitebox_primary_content_nav_wessel" class="whitebox_primary_content_nav_item" onclick="javascript: expand_person('wessel');">Wessel van Rensburg</a>
                         <span class="seperator seperator_smaller">|</span>
