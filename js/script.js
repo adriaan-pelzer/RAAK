@@ -107,6 +107,7 @@ var aboutPagination = function() {
             $('.our_work_bluebox_content.current').removeClass('current');
             var current_id = $(this).html();
             current_id = current_id.replace(/ /g , '-');
+            alert(current_id);
             $('#' + current_id).addClass('current');
             $(this).addClass('active');
         } 
