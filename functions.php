@@ -217,7 +217,7 @@ function display_other_posts($atts) {
 add_shortcode('other_posts', 'display_other_posts');
 
 /*******************************/
-i
+
 function who_we_are_what_we_do() {
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
