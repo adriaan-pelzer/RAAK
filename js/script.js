@@ -107,11 +107,19 @@ var aboutPagination = function() {
             $('.about_content.current').removeClass('current');
             var current_id = $(this).html().toLowerCase();
             current_id = current_id.replace(/ /g , '-');
-            alert(current_id);
             $('#' + current_id).addClass('current');
             $(this).addClass('active');
-        } 
+        }
     });
+    $('#who-we-are nav a').click(function() {
+        if(!$(this).hasClass('active')) {
+            $('#who-we-are nav a.active').removeClass('active');
+            $('.whitebox_primary_content_founder.current').removeClass('current');
+            var current_id = $(this).html().toLowerCase();
+            current_id = current_id.replace(/ /g , '-');
+            $('#whitebox_primary_content_' + current_id).addClass('current');
+            $(this).addClass('active');
+        }
 }
 
 
