@@ -306,7 +306,7 @@ add_shortcode('who_what', 'who_we_are_what_we_do');
 
 function founder_quotes() {
 ?>
-<aside class="bluebox bluebox_primary box rounded-corners">
+<aside class="bluebox bluebox_primary about_bluebox box rounded-corners">
                 <header>
                     <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">What we do</h3>
                 </header>
@@ -323,7 +323,7 @@ function founder_quotes() {
 ?>
                 <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item">
 <?php
-            echo get_post_meta(the_ID(), 'excerpt', TRUE);
+            echo get_post_meta(get_the_ID(), 'excerpt', TRUE);
 ?> 
                 </div><!-- bluebox_content_item -->
 <?php
