@@ -320,7 +320,7 @@ function founder_quotes() {
     $who_we_are_pages = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page&meta_key=excerpt');
         while ($who_we_are_pages->have_posts()) {
             $who_we_are_pages->the_post();
-            print_r $post;
+            print_r ($post);
 ?>
                 <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item">
                 </div><!-- bluebox_content_item -->
