@@ -237,15 +237,12 @@ function who_we_are_what_we_do() {
                     <div class="whitebox_primary_content_nav smaller_arial_caps box_nav">
 <?php
     $who_we_are_query = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page');
-    print_r ($who_we_are_query);
-    foreach($who_we_are_query as $founder) {
-        while($founder->have_posts()) {
-            $founder->the_post();
+    while($who_we_are_query->have_posts()) {
+        $founder->the_post();
 ?>
 
                         <?php echo ($founder_num != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_gerrie" class="whitebox_primary_content_nav_item active" ><?php the_title(); ?></a>
 <?php
-        }
     }
 ?>
                         <span class="seperator seperator_smaller">|</span>
