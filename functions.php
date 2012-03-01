@@ -362,7 +362,7 @@ function whitebox_primary() {
     </header>
     <hr />
 <?php
-    echo $logo_project->post_contents;
+    echo $logo_project->post_content;
 ?>
 </div><!-- whitebox_primary -->
 <?php
