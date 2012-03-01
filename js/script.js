@@ -127,6 +127,7 @@ var aboutPagination = function() {
                 $('.sidebar .twitter.current').removeClass('current');
                 $('#twitter_'+ current_id).addClass('current');
             } else if (!($('#twitter_raakonteur').hasClass('current'))) {
+                $('.sidebar .twitter.current').removeClass('current');
                 $('#twitter_raakonteur').addClass('current');
             }
             $(this).addClass('active');
