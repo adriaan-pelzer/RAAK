@@ -157,10 +157,10 @@ function mce_success_cb(resp){
                     <!--End mc_embed_signup-->
                 </div><!-- mailchimp_body -->
             </aside><!-- mailchimp -->
-            <aside class="twitter current" id="raakonteurs">
+            <aside class="twitter current" id="twitter_raakonteurs">
                 <div class="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
                 <div class="twitter_body rounded-corners_bottom">
-                    <div calss="twitter_follow">
+                    <div class="twitter_follow">
                         <a href="https://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div>
@@ -204,8 +204,8 @@ if(is_page_template('about.php')) {
 ?>
     <aside class="twitter" id="twitter_<?php echo $post->post_name; ?>">
     <div class="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/<?php echo $twitter_handle; ?>"><?php echo $twitter_handle; ?></a></h2></div>
-                <div class="twitter_body" class="rounded-corners_bottom">
-                    <div calss="twitter_follow">
+                <div class="twitter_body rounded-corners_bottom">
+                    <div class="twitter_follow">
                         <a href="https://twitter.com/<?php echo $twitter_handle; ?>" class="twitter-follow-button" data-show-count="false">Follow @<?php echo $twitter_handle; ?></a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div>

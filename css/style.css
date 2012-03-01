@@ -1672,24 +1672,24 @@ form.wpcf7-form span {
     padding: 7px 10px 2px;
 }
 
-.twitter_body #twtr-widget-3 *, .twitter_body .twtr-widget *, .twitter_body #twtr-widget-1 * {
+.twitter_body .twtr-widget * {
     color: #ffffff!important;
     background: none!important;
     font: 11px arial, sans-serif;
 }
 
 
-.twitter_body #twtr-widget-3 a, .twitter_body .twtr-widget a, .twitter_body #twtr-widget-1 a {
+.twitter_body .twtr-widget a {
     color: #b9e5fb !important;
 }
 
 
-.twitter_body #twtr-widget-3 .twtr-doc, .twitter_body .twtr-widget .twtr-doc, .twitter_body #twtr-widget-1 .twtr-doc {
+.twitter_body .twtr-widget .twtr-doc {
     width: 161px!important;
 }
 
 
-.twitter_body #twtr-widget-3 .twtr-tweet-wrap, .twitter_body .twtr-widget .twtr-tweet-wrap, .twitter_body #twtr-widget-1 .twtr-tweet-wrap {
+.twitter_body .twtr-widget .twtr-tweet-wrap {
     padding: 0;
 }
 
@@ -1744,7 +1744,7 @@ font-size: 9px!important;
     display: none;
 }
 
-.twitter_body #twtr-widget-3 a.twtr-join-conv, .twitter_body .twtr-widget a.twtr-join-conv, .twitter_body #twtr-widget-1 a.twtr-join-conv {
+.twitter_body .twtr-widget a.twtr-join-conv {
     color: white!important;
     font: 9px arial, sans-serif;
     background: url(../images/twitter_logo.png) no-repeat left top!important;
