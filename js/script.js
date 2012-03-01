@@ -123,7 +123,7 @@ var aboutPagination = function() {
             current_id = current_id.replace(/ /g , '-');
             $('#whitebox_primary_content_' + current_id).addClass('current');
             $('#bluebox_content_' + current_id).addClass('current');
-            if ($('.sidebar .twitter').attr('id') === ('twitter_' + current_id) {
+            if ($('.sidebar .twitter').attr('id') === ('twitter_' + current_id)) {
                 $('.sidebar .twitter.current').removeClass('current');
                 $('#twitter_'+ current_id).addClass('current');
             } else if (!($('#twitter_raakonteur').hasClass('current'))) {
