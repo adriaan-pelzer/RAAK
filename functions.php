@@ -179,7 +179,7 @@ function display_other_posts($atts) {
 ?>
                         </ul>
                         <footer>
-                            <a class="more_link" href="<?php get_category_link(get_cat_id($cat)); ?>" rel="nofollow">More ▼</a>
+                            <a class="more_link" href="<?php echo get_category_link(get_cat_id($cat)); ?>" rel="nofollow">More ▼</a>
                         </footer>
                     </section><!-- other_posts_content_one -->
 <?php
@@ -202,7 +202,7 @@ function display_other_posts($atts) {
 ?>
                         </ul>
                         <footer>
-                            <a class="more_link" href="<?php get_category_link(get_cat_ID($cat)); ?>" rel="nofollow">More ▼</a>
+                            <a class="more_link" href="<?php echo get_category_link(get_cat_ID($cat)); ?>" rel="nofollow">More ▼</a>
                         </footer>
                     </section><!-- other_posts_content_<?php echo ($cat_num == 'category2') ? 'two' : 'three'; ?> -->
 <?php
