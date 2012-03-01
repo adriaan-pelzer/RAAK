@@ -111,6 +111,11 @@ var aboutPagination = function() {
             current_id = current_id.replace(/ /g , '-');
             $('#' + current_id).addClass('current');
             $('#bluebox_content_' + current_id).addClass('current');
+            if (current_id === 'what-we-do') {
+                if (!($('#twitter_raakonteurs').hasClass('current'))) {
+                    $('#twitter_raakonteurs').addClass('current');
+                }
+            }
             $(this).addClass('active');
         }
     });
