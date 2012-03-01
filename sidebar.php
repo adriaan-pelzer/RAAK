@@ -187,7 +187,7 @@ function mce_success_cb(resp){
                       features: {
                         scrollbar: false,
                         loop: false,
-                        live: true,
+                        live: false
                         behavior: 'all'
                       }
                     }).render().setUser('RAAKonteurs').start();
