@@ -126,7 +126,7 @@ var aboutPagination = function() {
             if($('#twitter_' + current_id).length) {
                 $('.twitter.current').removeClass('current');
                 $('#twitter_' + current_id).addClass('current');
-            } else if !($('#twitter_raakonteur').hasClass('current')) {
+            } else if (!($('#twitter_raakonteur').hasClass('current'))) {
                 $('#twitter_raakonteur').addClass('current');
             }
             $(this).addClass('active');
