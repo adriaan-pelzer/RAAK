@@ -323,7 +323,7 @@ function founder_quotes() {
         while ($who_we_are_pages->have_posts()) {
             $who_we_are_pages->the_post();
 ?>
-                    <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item<?php echo($founder == 0) ? ' current' : ''; ?>">
+                    <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item<?php echo ($founder == 0) ? ' current' : ''; ?>">
 <?php
             echo get_post_meta(get_the_ID(), 'excerpt', TRUE);
 ?> 
