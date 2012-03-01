@@ -163,39 +163,35 @@ function mce_success_cb(resp){
                     <div id="twitter_follow">
                         <img class="twitter-follow-button" style="height: 20px; width: 145px;" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/follow_button.jpg" alt="Twitter Follow Button" />
                     </div>
-                    <!-- script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-                    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-                    <script>
-    new TWTR.Widget({
-        version: 2,
-            type: 'profile',
-            rpp: 4,
-            interval: 6000,
-            width: 200,
-            height: 300,
-            theme: {
-                shell: {
-                    background: '#ffffff',
-                        color: '#000000'
-                },
-                tweets: {
-                    background: '#ffffff',
-                        color: '#000000',
-                        links: '#555555'
-                }
-            },
-                features: {
-                    scrollbar: false,
-                        loop: false,
-                        live: false,
-                        hashtags: true,
-                        timestamp: true,
-                        avatars: false,
-                        behavior: 'all'
-                }
-    }).render().setUser('RAAKonteurs').start();
-                    </script -->
-                    <div class="twtr-widget twtr-widget-profile" id="twtr-widget-1">
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 181,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#bebebe',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#bebebe',
+      color: '#ffffff',
+      links: '#b9e5fb'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: true,
+    behavior: 'all'
+  }
+}).render().setUser('RAAKonteurs').start();
+</script>
+                    <!--div class="twtr-widget twtr-widget-profile" id="twtr-widget-1">
                         <div class="twtr-doc" style="width: 200px;">
                             <div class="twtr-hd">
                                 <a target="_blank" href="http://twitter.com/intent/user?screen_name=RAAKonteurs" class="twtr-profile-img-anchor"><img alt="profile" class="twtr-profile-img" src="http://a1.twimg.com/profile_images/1247934466/R-futuro-small_normal.png" /></a>
@@ -263,7 +259,6 @@ function mce_success_cb(resp){
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- tweets show here -->
                                     </div>
                                 </div>
                             </div>
@@ -277,7 +272,7 @@ function mce_success_cb(resp){
                             </div>
                         </div>
                     </div>
-                </div>
+                </div -->
             </aside><!-- twitter -->
         </div><!-- .sidebar -->
     </div><!-- #container -->
