@@ -195,7 +195,7 @@ function mce_success_cb(resp){
                 </div>
             </aside><!-- twitter -->
 <?php
-if(is_page_template('about.php') {
+if(is_page_template('about.php')) {
     global $post;
     $founders_twitter = new WP_query('post_type=page&meta_key=twitterhandle');
     while($founders_twitter->have_posts()) {
