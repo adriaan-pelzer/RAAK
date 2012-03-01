@@ -319,7 +319,7 @@ function founder_quotes() {
     $who_we_are = get_page_by_title('Who we are');
     global $post;
     $founder = 0;
-    $who_we_are_pages = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page&meta_key=excerpt');
+    $who_we_are_pages = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page&meta_key=excerpt&order=ASC');
         while ($who_we_are_pages->have_posts()) {
             $who_we_are_pages->the_post();
 ?>
