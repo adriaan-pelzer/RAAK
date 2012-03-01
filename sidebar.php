@@ -172,7 +172,7 @@ function mce_success_cb(resp){
                       rpp: 4,
                       interval: 30000,
                       width: 181,
-                      height: 300,
+                      height: auto,
                       theme: {
                         shell: {
                           background: '#bebebe',
