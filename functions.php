@@ -311,9 +311,10 @@ function founder_quotes() {
                     <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">What we do</h3>
                 </header>
                 <hr class="blue_hr">
-                <div id="bluebox_content_what-we-do" class="bluebox_content_item current">
+                <div id="bluebox_content_what-we-do" class="bluebox_content_item bluebox_container current">
                     If advertising is a tax on mediocrity, you've come to a tax free zone.
                 </div><!-- bluebox_content_item -->
+                <div id="bluebox_content_who-we-are" class="bluebox_container founder_quotes">
 <?php
     $who_we_are = get_page_by_title('Who we are');
     global $post;
@@ -321,11 +322,12 @@ function founder_quotes() {
         while ($who_we_are_pages->have_posts()) {
             $who_we_are_pages->the_post();
 ?>
-                <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item">
+                    <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item">
 <?php
             echo get_post_meta(get_the_ID(), 'excerpt', TRUE);
 ?> 
-                </div><!-- bluebox_content_item -->
+                    </div><!-- bluebox_content_item -->
+                </div>
 <?php
 
         }

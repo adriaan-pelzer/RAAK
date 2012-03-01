@@ -105,7 +105,7 @@ var aboutPagination = function() {
         if(!$(this).hasClass('active')) {
             $('.about_nav a.active').removeClass('active');
             $('.about_content.current').removeClass('current');
-            $('.bluebox_content_item.current').removeClass('current');
+            $('.bluebox_container.current').removeClass('current');
             var current_id = $(this).html().toLowerCase();
             $('.about_bluebox h3').html(current_id);
             current_id = current_id.replace(/ /g , '-');
@@ -118,9 +118,11 @@ var aboutPagination = function() {
         if(!$(this).hasClass('active')) {
             $('#who-we-are nav a.active').removeClass('active');
             $('.whitebox_primary_content_founder.current').removeClass('current');
+            $('.founder_quotes .bluebox_content_item.current').removeClass('current');
             var current_id = $(this).html().toLowerCase();
             current_id = current_id.replace(/ /g , '-');
             $('#whitebox_primary_content_' + current_id).addClass('current');
+            $('#bluebox_content_' + current_id).addClass('current');
             $(this).addClass('active');
         }
     });
