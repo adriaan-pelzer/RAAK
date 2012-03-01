@@ -105,10 +105,12 @@ var aboutPagination = function() {
         if(!$(this).hasClass('active')) {
             $('.about_nav a.active').removeClass('active');
             $('.about_content.current').removeClass('current');
+            $('.bluebox_content_item.current').removeClass('current');
             var current_id = $(this).html().toLowerCase();
             $('.about_bluebox h3').html(current_id);
             current_id = current_id.replace(/ /g , '-');
             $('#' + current_id).addClass('current');
+            $('#bluebox_content_' + current_id).addClass('current');
             $(this).addClass('active');
         }
     });
