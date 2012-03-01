@@ -838,6 +838,16 @@ hr.lightblue_hr {
     display: none;
 }
 
+.founder_quotes .current {
+    display: none;
+}
+
+.founder_quotes.current .current {
+    display: block;
+}
+
+
+
 .bluebox_content_item.current {
     display: block;
 }
