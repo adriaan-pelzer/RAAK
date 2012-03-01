@@ -327,11 +327,11 @@ function founder_quotes() {
             echo get_post_meta(get_the_ID(), 'excerpt', TRUE);
 ?> 
                     </div><!-- bluebox_content_item -->
-                </div>
 <?php
 
         }
 ?>
+                </div>
                 <!--div id="bluebox_content_adriaan" class="bluebox_content_item" style="display: none;">
                     I dream code.<br>I write machine poetry, that makes electrons dance.<br>
                 </div>
