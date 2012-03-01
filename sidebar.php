@@ -157,9 +157,9 @@ function mce_success_cb(resp){
                     <!--End mc_embed_signup-->
                 </div><!-- mailchimp_body -->
             </aside><!-- mailchimp -->
-            <aside class="twitter">
+            <aside class="twitter current" id="raakonteurs">
                 <div class="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
-                <div class="twitter_body" class="rounded-corners_bottom">
+                <div class="twitter_body rounded-corners_bottom">
                     <div calss="twitter_follow">
                         <a href="https://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
