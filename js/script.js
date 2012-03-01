@@ -121,6 +121,7 @@ var aboutPagination = function() {
             $('.founder_quotes .bluebox_content_item.current').removeClass('current');
             var current_id = $(this).html().toLowerCase();
             current_id = current_id.replace(/ /g , '-');
+            console.log(current_id);
             $('#whitebox_primary_content_' + current_id).addClass('current');
             $('#bluebox_content_' + current_id).addClass('current');
             $(this).addClass('active');
