@@ -350,6 +350,24 @@ function founder_quotes() {
 
 add_shortcode('quotes', 'founder_quotes');
 
+/*************************/
+
+function whitebox_primary() {
+    $logo_project = get_page_by_title('Logo Project');
+?>
+
+<div class="whitebox whitebox_primary logo_project_whitebox_primary whitebox-primary box rounded-corners">
+    <header>
+        <h2 class="din-schrift blue_20">Logo Project</h2>
+    </header>
+    <hr />
+<?php
+    echo $logo_project->post_contents;
+?>
+</div><!-- whitebox_primary -->
+<?php
+}
+add_shortcode('whitebox', 'whitebox_primary');
 ?>
 <?php 
 /***************************** From local functions on old site **************************/
