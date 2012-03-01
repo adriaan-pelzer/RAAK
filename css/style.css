@@ -838,11 +838,11 @@ hr.lightblue_hr {
     display: none;
 }
 
-.founder_quotes .current {
+.founder_quotes .bluebox_content_item.current {
     display: none;
 }
 
-.founder_quotes.current .current {
+.founder_quotes.current .bluebox_content_item.current {
     display: block;
 }
 
