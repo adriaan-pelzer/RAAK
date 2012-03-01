@@ -318,11 +318,12 @@ function founder_quotes() {
 <?php
     $who_we_are = get_page_by_title('Who we are');
     global $post;
+    $founder = 0;
     $who_we_are_pages = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page&meta_key=excerpt');
         while ($who_we_are_pages->have_posts()) {
             $who_we_are_pages->the_post();
 ?>
-                    <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item">
+                    <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item<?php echo($founder == 0) ? ' current' : ''; ?>">
 <?php
             echo get_post_meta(get_the_ID(), 'excerpt', TRUE);
 ?> 
@@ -330,6 +331,7 @@ function founder_quotes() {
 <?php
 
         }
+    wp_reset_query();
 ?>
                 </div>
                 <!--div id="bluebox_content_adriaan" class="bluebox_content_item" style="display: none;">
