@@ -1745,15 +1745,18 @@ font-size: 9px!important;
 }
 
 #twitter_body #twtr-widget-1 a.twtr-join-conv {
-color: white!important;
-font: 9px arial, sans-serif;
-background: url(../images/twitter_logo.png) no-repeat left top!important;
-display: inline-block;
-width: 131px;
-height: 15px;
-padding-top: 15px;
+    color: white!important;
+    font: 9px arial, sans-serif;
+    background: url(../images/twitter_logo.png) no-repeat left top!important;
+    display: inline-block;
+    width: 131px;
+    height: 15px;
+    padding-top: 15px;
 }
 
+.twtr-timeline {
+    height: auto!important;
+}
 
 #twtr-widget-1 .twtr-avatar {  /***** this is normally in twitter's widget.css *********/
     display: none;
