@@ -169,7 +169,7 @@ function display_other_posts($atts) {
                         </header>
                         <ul>
 <?php
-            $other_posts_query = new WP_Query(array('cat'=> get_cat_id($cat), 'posts_per_page'=> 5, 'paged'=> 1));
+            $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> 5, 'paged'=> 1));
             echo 'cat: ' . $cat;
                 while($other_posts_query->have_posts()) {
                     $other_posts_query->the_post();
@@ -193,7 +193,7 @@ function display_other_posts($atts) {
                         </header>
                         <ul>
 <?php
-            $other_posts_query = new WP_Query(array('cat'=> get_cat_id($cat), 'posts_per_page'=> 3, 'paged'=> 1));
+            $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> 3, 'paged'=> 1));
                 while($other_posts_query->have_posts()) {
             $other_posts_query->the_post();
 ?>
@@ -204,7 +204,7 @@ function display_other_posts($atts) {
                         </ul>
                         <footer>
                             <a class="more_link" href="<?php get_category_link(get_cat_id($cat)); ?>" rel="nofollow">More ▼</a>
-<?php echo 'cat: ' . $cat; ?>
+<?php echo 'cat id: ' . get_cat_ID($cat); ?>
                         </footer>
                     </section><!-- other_posts_content_<?php echo ($cat_num == 'category2') ? 'two' : 'three'; ?> -->
 <?php
