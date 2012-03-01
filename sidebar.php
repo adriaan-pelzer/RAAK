@@ -235,8 +235,6 @@ if(is_page_template('about.php')) {
                 </div>
             </aside><!-- twitter -->
 <?php
-    }
-
 }
 ?>
         </div><!-- .sidebar -->
