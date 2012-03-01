@@ -1757,6 +1757,18 @@ font-size: 9px!important;
 .twtr-timeline {
     height: auto!important;
 }
+
+.sidebar .twitter {
+    display: none;
+}
+
+.sidebar .twitter.current {
+    display: block;
+}    
+
+
+
+
 /***** this is normally in twitter's widget.css *********/
 
 /*#twtr-widget-1 .twtr-avatar {  
