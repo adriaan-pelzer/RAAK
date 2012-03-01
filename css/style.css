@@ -1656,44 +1656,44 @@ form.wpcf7-form span {
 
 /********* Twitter ***********/
 
-#twitter {
+.twitter {
     margin-top: 14px;
 }
 
-#twitter_top {
+.twitter_top {
     background: url(../images/sidebar_twitter_top.png);
     height: 26px;
     padding: 15px 0 0 10px;
 }
 
 
-#twitter_body {
+.twitter_body {
     background: #bebebe;
     padding: 7px 10px 2px;
 }
 
-#twitter_body #twtr-widget-1 * {
+.twitter_body #twtr-widget-1 * {
     color: #ffffff!important;
     background: none!important;
     font: 11px arial, sans-serif;
 }
 
 
-#twitter_body #twtr-widget-1 a {
+.twitter_body #twtr-widget-1 a {
     color: #b9e5fb !important;
 }
 
 
-#twitter_body #twtr-widget-1 .twtr-doc {
+.twitter_body #twtr-widget-1 .twtr-doc {
     width: 161px!important;
 }
 
 
-#twitter_body #twtr-widget-1 .twtr-tweet-wrap {
+.twitter_body #twtr-widget-1 .twtr-tweet-wrap {
     padding: 0;
 }
 
-#twitter_top a {
+.twitter_top a {
     font: 14px din_schift, arial, sans-serif;
     letter-spacing: 1px;
     color: white;
@@ -1744,7 +1744,7 @@ font-size: 9px!important;
     display: none;
 }
 
-#twitter_body #twtr-widget-1 a.twtr-join-conv {
+.twitter_body #twtr-widget-1 a.twtr-join-conv {
     color: white!important;
     font: 9px arial, sans-serif;
     background: url(../images/twitter_logo.png) no-repeat left top!important;
