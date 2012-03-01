@@ -123,11 +123,10 @@ var aboutPagination = function() {
             current_id = current_id.replace(/ /g , '-');
             $('#whitebox_primary_content_' + current_id).addClass('current');
             $('#bluebox_content_' + current_id).addClass('current');
-            if ($('.sidebar .twitter').attr('id') === ('twitter_' + current_id)) {
-                $('.sidebar .twitter.current').removeClass('current');
-                $('#twitter_'+ current_id).addClass('current');
-            } else if (!($('#twitter_raakonteur').hasClass('current'))) {
-                $('.sidebar .twitter.current').removeClass('current');
+            if($('#twitter_' + current_id).length) {
+                $('.twitter.current').removeClass('current');
+                $('#twitter_' + current_id).addClass('current');
+            } else if !($('#twitter_raakonteur').hasClass('current')) {
                 $('#twitter_raakonteur').addClass('current');
             }
             $(this).addClass('active');
