@@ -329,6 +329,7 @@ function founder_quotes() {
 ?> 
                     </div><!-- bluebox_content_item -->
 <?php
+            $founder++;
 
         }
     wp_reset_query();
