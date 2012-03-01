@@ -187,7 +187,7 @@ function mce_success_cb(resp){
                       features: {
                         scrollbar: false,
                         loop: false,
-                        live: false
+                        live: false,
                         behavior: 'all'
                       }
                     }).render().setUser('RAAKonteurs').start();
@@ -232,7 +232,7 @@ if(is_page_template('about.php')) {
                       features: {
                         scrollbar: false,
                         loop: false,
-                        live: false
+                        live: false,
                         behavior: 'all'
                       }
                     }).render().setUser('<?php echo $twitter_handle; ?>').start();
