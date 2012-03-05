@@ -540,7 +540,7 @@ function big_whitebox($atts) {
                     <hr class="solid">
 <?php
     $item_count = 0;
-    for($page_count = 0; $page_count < $total_pages; $page_count) {
+    for($page_count = 0; $page_count < $total_pages; $page_count++) {
         echo $page_count;
        echo $total_pages; 
 ?>
