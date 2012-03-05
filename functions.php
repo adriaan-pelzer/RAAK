@@ -572,6 +572,7 @@ function big_whitebox($atts) {
                             <div class="whitebox_big_category_entry">
                             </div><!-- .whitebox_big_category_entry -->
 <?php
+            }
             $item_count++;
         }
 ?>
