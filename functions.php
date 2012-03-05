@@ -490,6 +490,7 @@ function contact_whitebox() {
     if (have_posts()) {
         while(have_posts()) {
             the_post();
+?>
                 <header>
                     <h2 class="din-schrift blue_20"><?php the_title(); ?></h2>
                 </header>
