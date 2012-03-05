@@ -516,7 +516,8 @@ function big_whitebox($atts) {
     extract(shortcode_atts(array('page' => ''), $atts));
     $current_page = get_page_by_title($page);
     $current_page_posts_loop = new WP_Query(array('cat' => get_cat_id('RAAK Products')));
-    print_r($current_page_posts_loop);
+    $total_pages = (floor($current_page_posts_loop->post_count / 18)) +1;
+    echo 'total pages: ' . $total_pages;
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
@@ -560,11 +561,11 @@ function big_whitebox($atts) {
                                 </header>
                                 <hr class="solid">
                                 <a class="whitebox_big_category_entry_content" href="http://stage.wewillraakyou.com/our-products-2/single-product/">
-                                    <div id="post_all-products_0_picture" class="whitebox_big_category_entry_content_picture">
+                                    <div id="post_all-products_<?php echo $item_count; ?>_picture" class="whitebox_big_category_entry_content_picture">
                                         <img alt="" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder00.png" width="220" height="142">                     </div><!-- #post_0_picture -->
-                                    <div id="post_all-products_0_overview" class="whitebox_big_category_entry_content_overview" style="width: 160px; height: 82px; display: none;">
-                                        <p>Rewinder allows you to rewind your Twitter Timeline, or recorded hashtags, as if it was time-shifted TV. Works very well with ... well ... time-shifted TV.</p><p><strong>Read More »</strong></p>
-                                    </div><!-- #post_0_overview -->
+                                    <div id="post_all-products_<?php echo $item_count; ?>_overview" class="whitebox_big_category_entry_content_overview" style="width: 160px; height: 82px; display: none;">
+                                        <p><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Overview', TRUE); ?></p><p><strong>Read More »</strong></p>
+                                    </div><!-- #post_<?php echo $item_count; ?>_overview -->
                                 </a>
                             </div><!-- .whitebox_big_category_entry -->
 <?php
@@ -577,11 +578,11 @@ function big_whitebox($atts) {
             $item_count++;
         }
 ?>
-                        </div><!-- #whitebox_big_category_row3 -->
+                        </div><!-- #whitebox_big_category_row<?php echo $row_count; ?> -->
 <?php
     }
 ?>
-                    </div><!-- #whitebox_big_all-products_1 -->
+                    </div><!-- #whitebox_big_all-products_<?php echo $page_count; ?> -->
                 </div><!-- #whitebox_big_all-products -->
             </div>
 <?php
