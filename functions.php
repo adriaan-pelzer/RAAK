@@ -507,7 +507,7 @@ function contact_bluebox() {
 function big_whitebox($atts) {
     extract(shortcode_atts(array('page' => ''), $atts));
     $current_page = get_page_by_title($page);
-    print_r($current_page
+    print_r($current_page);
 
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
