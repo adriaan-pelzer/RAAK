@@ -516,6 +516,7 @@ function big_whitebox($atts) {
     extract(shortcode_atts(array('page' => ''), $atts));
     $current_page = get_page_by_title($page);
     $current_page_posts_loop = new WP_Query(array('cat' => get_cat_id('RAAK Products')));
+    print_r($current_page_posts_loop);
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
