@@ -488,6 +488,9 @@ function contact_whitebox() {
 
 add_shortcode('contactwb', 'contact_whitebox');
 
+
+/*************************/
+
 function contact_bluebox() {
     $contact_page = get_page_by_title('Contact');
 
@@ -505,6 +508,9 @@ function contact_bluebox() {
 }
 
 add_shortcode('contactbb', 'contact_bluebox');
+
+
+/*************************/
 
 function big_whitebox($atts) {
     extract(shortcode_atts(array('page' => ''), $atts));
