@@ -554,7 +554,7 @@ function big_whitebox($atts) {
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
                                         <span class="whitebox_big_category_entry_title_label">Product:</span>
-                                        <span class="whitebox_big_category_entry_title_name"><?php echo $current_page_posts_loop->posts[$item_count]->post_title; ?></span>
+                                        <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Product', TRUE); ?></span>
                                     </h3><!-- .whitebox_big_category_entry_title -->
                                 </header>
                                 <hr class="solid">
