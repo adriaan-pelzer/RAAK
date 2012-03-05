@@ -502,6 +502,7 @@ function contact_bluebox() {
     </div>
 </div>
 <?php
+}
 
 ?>
 <?php 
