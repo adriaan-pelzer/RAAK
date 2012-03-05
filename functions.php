@@ -374,11 +374,8 @@ add_shortcode('wblp', 'whitebox_logo_project');
 function logo_project_latest_uploads() {
     global $wpdb;
 
-$uploads = $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM $wpdb->users;" ) );
+$uploads = $wpdb->get_results ('SELECT * FROM $wpdb->wp_logo_uploads ORDER BY `timestamp` DESC');
 print_r($uploads);
-foreach($uploads as $upload) {
-    print_r($upload);
-}
 ?>
 <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
                 <header>
