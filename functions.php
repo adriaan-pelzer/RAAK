@@ -484,8 +484,7 @@ add_shortcode('lplu', 'logo_project_latest_uploads');
 /*************************/
 
 function contact_whitebox() {
-    global $post;
-    print_r($post);
+    if (have_posts()) : while(have_posts()) : the_post();
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
