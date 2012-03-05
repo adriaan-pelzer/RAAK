@@ -483,7 +483,7 @@ add_shortcode('lplu', 'logo_project_latest_uploads');
 
 /*************************/
 
-function contact_whitebox {
+function contact_whitebox() {
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
