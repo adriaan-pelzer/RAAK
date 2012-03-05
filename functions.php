@@ -377,6 +377,7 @@ function logo_project_latest_uploads() {
 $uploads = $wpdb->get_results ('SELECT * FROM $wpdb->wp_logo_uploads ORDER BY `timestamp` DESC');
 print_r($uploads);
 ?>
+<?php $wpdb->print_error(); ?>
 <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
                 <header>
                     <h2 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">Latest Uploads</h2>
