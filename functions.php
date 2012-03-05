@@ -372,12 +372,8 @@ add_shortcode('wblp', 'whitebox_logo_project');
 /*************************/
 
 function logo_project_latest_uploads() {
-    global $wpdb;
 
-$uploads = $wpdb->get_results ('SELECT * FROM $wpdb->wp_logo_uploads ORDER BY `timestamp` DESC');
-print_r($uploads);
 ?>
-<?php $wpdb->print_error(); ?>
 <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
                 <header>
                     <h2 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">Latest Uploads</h2>
@@ -484,6 +480,52 @@ add_shortcode('lplu', 'logo_project_latest_uploads');
         break;
     }
 }*/
+
+/*************************/
+
+function contact_whitebox {
+?>
+<div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
+                <header>
+                    <h2 class="din-schrift blue_20"><?php the_title(); ?></h2>
+                </header>
+                <hr>
+                <div class="whitebox_primary_content">
+                    <address>
+                        RAAK LTD<br>
+                        45a Tudor Road<br>
+                        Unit 2<br>
+                        London E9 7SN<br>
+                        <span class="blue">t</span> +44 20 8986 5115<br>
+                        <span class="blue">e</span> <a href="mailto:hello@wewillraakyou.com">hello@wewillraakyou.com</a>
+                    </address>
+                    <hr class="solid">
+                    <p class="top_margin_22px">Alternatively just complete this form</p>
+                    <div class="wpcf7" id="wpcf7-f1-p341-o1">
+                        <form action="/contact/#wpcf7-f1-p341-o1" method="post" class="wpcf7-form">
+                            <div style="display: none;">
+                                <input type="hidden" name="_wpcf7" value="1">
+                                <input type="hidden" name="_wpcf7_version" value="2.3.1">
+                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1-p341-o1">
+                            </div>
+                        <p>
+                            Your Name (required)<br><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" class="wpcf7-text wpcf7-validates-as-required" size="40"></span> </p>
+                        <p>Your Email (required)<br>
+                            <span class="wpcf7-form-control-wrap your-email"><input type="text" name="your-email" value="" class="wpcf7-text wpcf7-validates-as-email wpcf7-validates-as-required" size="40"></span> </p>
+                        <p>Subject<br>
+                            <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" class="wpcf7-text" size="40"></span> </p>
+                        <p>Your Message<br>
+                            <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10"></textarea></span> </p>
+                        <p id="contact_submit"><input type="submit" value="Send" class="wpcf7-submit"><img class="ajax-loader" style="visibility: hidden;" alt="Sending ..." src="http://wewillraakyou.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif"></p>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
+                </div><!-- .whitebox_primary_content -->
+            </div>
+
+<?php
+}
+
+add_shortcode('contactwb', 'contact_whitebox');
+
 ?>
 <?php 
 /***************************** From local functions on old site **************************/
