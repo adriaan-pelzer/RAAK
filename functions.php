@@ -374,7 +374,7 @@ add_shortcode('wblp', 'whitebox_logo_project');
 function logo_project_latest_uploads() {
     global $wpdb;
 
-$uploads = $wpdb->get_results ('SELECT * FROM * ORDER BY `timestamp` DESC');
+$uploads = $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM $wpdb->users;" ) );
 print_r($uploads);
 foreach($uploads as $upload) {
     print_r($upload);
