@@ -539,6 +539,7 @@ function big_whitebox($atts) {
                     <hr class="solid">
 <?php
     $page_count = 1;
+    $item_count = 0; 
 ?>
                     <div id="whitebox_big_all-products_<?php echo $page_count; ?>" class="whitebox_big_category smaller_arial_caps">
 <?php
@@ -547,12 +548,13 @@ function big_whitebox($atts) {
                         <div id="whitebox_big_category_row<?php echo $row_count; ?>" class="whitebox_big_category_row">
 <?php
         for($row_item = 0; $row_item < 3; $row_item++) {
+            if ($current_page_posts_loop->posts[$item_count]) {
 ?>
                             <div class="whitebox_big_category_entry" id="category_entry_<?echo $item_count; ?>">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
                                         <span class="whitebox_big_category_entry_title_label">Product:</span>
-                                        <span class="whitebox_big_category_entry_title_name">Rewinder</span>
+                                        <span class="whitebox_big_category_entry_title_name"><?php echo $current_page_posts_loop->posts[$item_count]->post_title; ?></span>
                                     </h3><!-- .whitebox_big_category_entry_title -->
                                 </header>
                                 <hr class="solid">
@@ -565,6 +567,12 @@ function big_whitebox($atts) {
                                 </a>
                             </div><!-- .whitebox_big_category_entry -->
 <?php
+            } else {
+?>
+                            <div class="whitebox_big_category_entry">
+                            </div><!-- .whitebox_big_category_entry -->
+<?php
+            $item_count++;
         }
 ?>
                         </div><!-- #whitebox_big_category_row3 -->
