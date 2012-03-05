@@ -484,19 +484,24 @@ add_shortcode('lplu', 'logo_project_latest_uploads');
 /*************************/
 
 function contact_whitebox() {
-    if (have_posts()) : while(have_posts()) : the_post();
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
+<?php
+    if (have_posts()) {
+        while(have_posts()) {
+            the_post();
                 <header>
-                    <h2 class="din-schrift blue_20"><?php the_title();the_content(); ?></h2>
+                    <h2 class="din-schrift blue_20"><?php the_title(); ?></h2>
                 </header>
                 <hr>
                 <div class="whitebox_primary_content">
-<?php the_content(); the_title(); ?>
+<?php the_content(); ?>
                 </div><!-- .whitebox_primary_content -->
             </div>
 
 <?php
+        }
+    }
 }
 
 add_shortcode('contactwb', 'contact_whitebox');
