@@ -6,17 +6,17 @@ function logo_call_to_action() {
     $logo_story = get_page_by_title('The perpetually changing crowdsourced RAAK logo', 'OBJECT', 'post');
     $logo_project = get_page_by_title('Logo Project');
 ?>
-    <aside id="logox_counter" class="rounded-corners din-schrift">
-        <span class="point_left"></span>
-        <span class="point_right"></span>
-        <header>
-            <h2># OF LOGO COMBINATIONS</h2>
-        </header>
-        <div id="logox_counter_number">7744</div>
-        <a id="read_the_logo_story" href="<?php echo get_permalink($logo_story->ID); ?>">Read the story behind our logo</a>
-        <hr>
-        <a id="upload_a_letter" href="<?php echo get_permalink($logo_project->ID); ?>">Upload a letter</a>
-    </aside>
+<aside id="logox_counter" class="rounded-corners din-schrift">
+    <span class="point_left"></span>
+    <span class="point_right"></span>
+    <header>
+        <h2># OF LOGO COMBINATIONS</h2>
+    </header>
+    <div id="logox_counter_number">7744</div>
+    <a id="read_the_logo_story" href="<?php echo get_permalink($logo_story->ID); ?>">Read the story behind our logo</a>
+    <hr>
+    <a id="upload_a_letter" href="<?php echo get_permalink($logo_project->ID); ?>">Upload a letter</a>
+</aside>
 <?php
 }
 
@@ -28,17 +28,17 @@ function display_latest_posts($atts) {
     extract(shortcode_atts(array('category' => '0', 'posts_per_page' => '2', 'num_pages' => '10'), $atts));
     $blog_archive_page = get_page_by_title('Blog Archive');
 ?>
-    <div class="tab_container whitebox-primary">
-        <div class="grey_tab tab tab104 rounded-corners">
-            <header>
-                <h2>Latest Posts</h2>
-            </header>
-        </div><!-- .grey_tab -->
-        <div class="whitebox whitebox_primary box rounded-corners">
+<div class="tab_container whitebox-primary">
+    <div class="grey_tab tab tab104 rounded-corners">
+        <header>
+            <h2>Latest Posts</h2>
+        </header>
+    </div><!-- .grey_tab -->
+    <div class="whitebox whitebox_primary box rounded-corners">
 <?php
     for($page = 1; $page <= $num_pages; $page++) {
 ?>
-            <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 1) { echo " current"; } ?>">
+        <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 1) { echo " current"; } ?>">
 <?php
         $latest_posts_loop = new WP_Query(array('cat' => get_cat_id($category), 'posts_per_page' => $posts_per_page, 'paged' => $page));
         while ($latest_posts_loop->have_posts()) {
@@ -46,46 +46,46 @@ function display_latest_posts($atts) {
             $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
             $author_page = get_page_by_title($author_full_name);
 ?>
-                <article>
-                    <header>
+            <article>
+                <header>
                     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                    </header>
-                    <hr>
-                    <div class="whitebox_primary_post_attr">
+                </header>
+                <hr />
+                <div class="whitebox_primary_post_attr">
                     <span class="whitebox_primary_post_attr_item author">Posted by <a href="<?php echo get_permalink($author_page->ID);  ?>"><?php echo $author_full_name; ?></a></span>
-                        <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item date"><?php the_date(); ?></span>
-                        <span class="seperator">|</span>
-                        <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php comments_number(); ?></span>
-                    </div><!-- .whitebox_primary_post_attr -->
-                    <div class="whitebox_primary_post_content">
-                        <div class="whitebox_primary_post_content_right">
-                                    <a href="<?php echo get_permalink (get_the_ID()); ?>"><?php echo get_image_or_video (get_the_content(), 162, 104); ?></a>
-                            <a class="more_link" href="<?php echo get_permalink(get_the_ID()); ?>">More ►</a>
-                        </div><!-- .whitebox_primary_post_content_right -->
-                            <?php the_excerpt(); ?>
-                    </div><!-- .whitebox_primary_post_content -->
-                    <hr class="solid">
-                </article>
+                    <span class="seperator">|</span>
+                    <span class="whitebox_primary_post_attr_item date"><?php the_date(); ?></span>
+                    <span class="seperator">|</span>
+                    <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php comments_number(); ?></span>
+                </div><!-- .whitebox_primary_post_attr -->
+                <div class="whitebox_primary_post_content">
+                    <div class="whitebox_primary_post_content_right">
+                        <a href="<?php echo get_permalink (get_the_ID()); ?>"><?php echo get_image_or_video (get_the_content(), 162, 104); ?></a>
+                        <a class="more_link" href="<?php echo get_permalink(get_the_ID()); ?>">More ►</a>
+                    </div><!-- .whitebox_primary_post_content_right -->
+                        <?php the_excerpt(); ?>
+                </div><!-- .whitebox_primary_post_content -->
+                <hr class="solid" />
+            </article>
 <?php
         }
 ?>
-            </div><!-- whitebox_primary_post -->
+        </div><!-- whitebox_primary_post -->
 <?php
         wp_reset_query();
     
     }
 ?>
-            <footer class="whitebox_primary_footer box_nav small_arial_caps">
-                <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
-                <div class="whitebox_primary_footer_right pagination">
-                    <a class="previous active"><span class="arrow">◄</span> Previous</a>
-                    <span class="seperator">|</span>
-                    <a class="next">Next <span class="arrow">►</span></a>
-                </div><!-- .whitebox_primary_footer_right -->
-            </footer><!-- .whitebox_primary_footer -->
-        </div><!-- whitebox_primary -->
-    </div><!-- tab_container -->
+        <footer class="whitebox_primary_footer box_nav small_arial_caps">
+            <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
+            <div class="whitebox_primary_footer_right pagination">
+                <a class="previous active"><span class="arrow">◄</span> Previous</a>
+                <span class="seperator">|</span>
+                <a class="next">Next <span class="arrow">►</span></a>
+            </div><!-- .whitebox_primary_footer_right -->
+        </footer><!-- .whitebox_primary_footer -->
+    </div><!-- whitebox_primary -->
+</div><!-- tab_container -->
 <?php
 }
 
@@ -101,21 +101,21 @@ function our_work()
     $our_work_bluebox_content = '';
     
 ?>
-    <div id="bluebox_home_left" class="bluebox box rounded-corners">
-        <header>
-            <h2 class="din-schrift"><a href="<?php get_permalink($our_work->ID); ?>">Our Work</a></h2>
-        </header>
-        <hr>
-        <?php echo $home->post_content; ?>    
-    </div><!-- bluebox_home_left -->
-    <div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
-        <nav class="bluebox_nav box_nav our_work_nav">
+<div id="bluebox_home_left" class="bluebox box rounded-corners">
+    <header>
+        <h2 class="din-schrift"><a href="<?php get_permalink($our_work->ID); ?>">Our Work</a></h2>
+    </header>
+    <hr>
+<?php echo $home->post_content; ?>    
+</div><!-- bluebox_home_left -->
+<div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
+    <nav class="bluebox_nav box_nav our_work_nav">
 <?php
     foreach($work_categories as $cat_number => $work_category)
     {
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
-            <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
+        <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <?php
         $current_our_work_post_cat = get_cat_id ($work_category->name);
         $current_our_work_query = new WP_Query('cat=' . get_cat_id($work_category->name) .'&posts_per_page=1$paged=1');
@@ -135,12 +135,12 @@ function our_work()
         wp_reset_query();
     }
 ?>
-        </nav>
+    </nav>
 <?php
     echo $our_work_bluebox_content;
 ?>
     
-    </div><!-- bluebox_home_right -->
+</div><!-- bluebox_home_right -->
 
 <?php
 }
@@ -153,65 +153,65 @@ function display_other_posts($atts) {
     extract(shortcode_atts(array('category1' => '', 'category2' => '', 'category3' => ''), $atts));
 ?>
 <div class="tab_container whitebox-secondary other_posts">
-                <div class="grey_tab tab tab104 rounded-corners">
-                    <header>
-                        <h2>Other Posts</h2>
-                    </header>
-                </div><!-- .grey_tab -->
-                <div class="whitebox_secondary whitebox box rounded-corners">
+    <div class="grey_tab tab tab104 rounded-corners">
+        <header>
+            <h2>Other Posts</h2>
+        </header>
+    </div><!-- .grey_tab -->
+    <div class="whitebox_secondary whitebox box rounded-corners">
 <?php
     foreach($atts as $cat_num => $cat) {
         if($cat_num == 'category1') {
 ?>
-                    <section class="other_posts_content_one">
-                        <header>
-                        <h3 class="small_arial_caps"><?php echo $category1; ?></h3>
-                        </header>
-                        <ul>
+        <section class="other_posts_content_one">
+            <header>
+                <h3 class="small_arial_caps"><?php echo $category1; ?></h3>
+            </header>
+            <ul>
 <?php
             $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> 5, 'paged'=> 1));
                 while($other_posts_query->have_posts()) {
                     $other_posts_query->the_post();
 ?>
-                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 <?php
                 }
 ?>
-                        </ul>
-                        <footer>
-                            <a class="more_link" href="<?php echo get_category_link(get_cat_id($cat)); ?>" rel="nofollow">More ▼</a>
-                        </footer>
-                    </section><!-- other_posts_content_one -->
+            </ul>
+            <footer>
+                <a class="more_link" href="<?php echo get_category_link(get_cat_id($cat)); ?>" rel="nofollow">More ▼</a>
+            </footer>
+        </section><!-- other_posts_content_one -->
 <?php
             wp_reset_query();
         } else {
 ?>
-                    <section class="other_posts_content_<?php echo ($cat_num == 'category2') ? 'two' : 'three'; ?>">
-                        <header>
-                            <h3 class="small_arial_caps"><?php echo ($cat_num == 'category2') ? $category2 : $category3; ?></h3>
-                        </header>
-                        <ul>
+        <section class="other_posts_content_<?php echo ($cat_num == 'category2') ? 'two' : 'three'; ?>">
+            <header>
+                <h3 class="small_arial_caps"><?php echo ($cat_num == 'category2') ? $category2 : $category3; ?></h3>
+            </header>
+            <ul>
 <?php
             $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> 3, 'paged'=> 1));
                 while($other_posts_query->have_posts()) {
             $other_posts_query->the_post();
 ?>
-                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 <?php
                 }
 ?>
-                        </ul>
-                        <footer>
-                            <a class="more_link" href="<?php echo get_category_link(get_cat_ID($cat)); ?>" rel="nofollow">More ▼</a>
-                        </footer>
-                    </section><!-- other_posts_content_<?php echo ($cat_num == 'category2') ? 'two' : 'three'; ?> -->
+            </ul>
+            <footer>
+                <a class="more_link" href="<?php echo get_category_link(get_cat_ID($cat)); ?>" rel="nofollow">More ▼</a>
+            </footer>
+        </section><!-- other_posts_content_<?php echo ($cat_num == 'category2') ? 'two' : 'three'; ?> -->
 <?php
             wp_reset_query();
         }
     }
 ?>
-                </div><!-- #whitebox_secondary -->
-            </div>
+    </div><!-- #whitebox_secondary -->
+</div>
 <?php
 }
 add_shortcode('other_posts', 'display_other_posts');
@@ -225,18 +225,18 @@ function who_we_are_what_we_do() {
     $who_we_are_content = '';
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
-                <header>
-                    <nav class="whitebox_primary_nav smaller_arial_caps about_nav box_nav">
-                        <a class="active">What we do</a><span class="seperator seperator_smaller">|</span><a>Who we are</a>
-                    </nav><!-- whitebox_primary_nav -->
-                    <h2 class="din-schrift blue_20">About</h2>
-                </header>
-                <hr>
-                <div id="what-we-do" class="whitebox_primary_content about_content current">
+    <header>
+        <nav class="whitebox_primary_nav smaller_arial_caps about_nav box_nav">
+            <a class="active">What we do</a><span class="seperator seperator_smaller">|</span><a>Who we are</a>
+        </nav><!-- whitebox_primary_nav -->
+        <h2 class="din-schrift blue_20">About</h2>
+    </header>
+    <hr>
+    <div id="what-we-do" class="whitebox_primary_content about_content current">
 <?php echo $what_we_do->post_content; ?>
-                </div><!-- whitebox_primary_content -->
-                <div id="who-we-are" class="whitebox_primary_content about_content">
-                    <nav class="whitebox_primary_content_nav smaller_arial_caps box_nav">
+    </div><!-- whitebox_primary_content -->
+    <div id="who-we-are" class="whitebox_primary_content about_content">
+        <nav class="whitebox_primary_content_nav smaller_arial_caps box_nav">
 <?php
     $founder = 0;
     $who_we_are_query = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page&order=ASC');
@@ -288,13 +288,13 @@ function who_we_are_what_we_do() {
         $founder++;
     }
 ?>
-                    </nav><!-- whitebox_primary_content_nav -->
-                    <hr class="solid">
+        </nav><!-- whitebox_primary_content_nav -->
+        <hr class="solid" />
 <?php
     echo $who_we_are_content;
 ?>
-                </div><!-- whitebox_primary_content -->
-            </div>
+    </div><!-- whitebox_primary_content -->
+</div>
 
 <?php
     wp_reset_query();
@@ -307,14 +307,14 @@ add_shortcode('who_what', 'who_we_are_what_we_do');
 function founder_quotes() {
 ?>
 <aside class="bluebox bluebox_primary about_bluebox box rounded-corners">
-                <header>
-                    <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">What we do</h3>
-                </header>
-                <hr class="blue_hr">
-                <div id="bluebox_content_what-we-do" class="bluebox_content_item bluebox_container current">
-                    If advertising is a tax on mediocrity, you've come to a tax free zone.
-                </div><!-- bluebox_content_item -->
-                <div id="bluebox_content_who-we-are" class="bluebox_container founder_quotes">
+    <header>
+        <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">What we do</h3>
+    </header>
+    <hr class="blue_hr">
+    <div id="bluebox_content_what-we-do" class="bluebox_content_item bluebox_container current">
+        If advertising is a tax on mediocrity, you've come to a tax free zone.
+    </div><!-- bluebox_content_item -->
+    <div id="bluebox_content_who-we-are" class="bluebox_container founder_quotes">
 <?php
     $who_we_are = get_page_by_title('Who we are');
     global $post;
@@ -323,28 +323,19 @@ function founder_quotes() {
         while ($who_we_are_pages->have_posts()) {
             $who_we_are_pages->the_post();
 ?>
-                    <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item<?php echo ($founder == 0) ? ' current' : ''; ?>">
+        <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item<?php echo ($founder == 0) ? ' current' : ''; ?>">
 <?php
             echo get_post_meta(get_the_ID(), 'excerpt', TRUE);
 ?> 
-                    </div><!-- bluebox_content_item -->
+        </div><!-- bluebox_content_item -->
 <?php
             $founder++;
 
         }
     wp_reset_query();
 ?>
-                </div>
-                <!--div id="bluebox_content_adriaan" class="bluebox_content_item" style="display: none;">
-                    I dream code.<br>I write machine poetry, that makes electrons dance.<br>
-                </div>
-                <div id="bluebox_content_wessel" class="bluebox_content_item" style="display: none;">
-                    I breathe media.<br>I inhale news and exhale content.<br>Marked up, tagged and loaded.
-                </div>
-                <div id="bluebox_content_gerrie" class="bluebox_content_item" style="display: none;">
-                    I'm intrigued by innovation.<br>Not very interested in the status quo.<br>
-                </div>< bluebox_content_item -->
-            </aside>
+    </div>
+</aside>
 <?php
 }
 
@@ -471,16 +462,6 @@ function logo_project_latest_uploads() {
 
 add_shortcode('lplu', 'logo_project_latest_uploads');
 
-/*function whitebox_primary($atts) {
-    extract(shortcode_atts(array('page' => ''), $atts));
-    $current_page = get_page_by_title($page);
-    switch ($page) {
-    case 'Logo Project':
-        whitebox_logo_project();
-        break;
-    }
-}*/
-
 /*************************/
 
 function contact_whitebox() {
@@ -506,6 +487,21 @@ function contact_whitebox() {
 }
 
 add_shortcode('contactwb', 'contact_whitebox');
+
+function contact_bluebox() {
+    $contact_page = get_page_by_title('Contact');
+
+?>
+<div class="bluebox bluebox_primary box rounded-corners">
+    <header>
+        <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps" id="bluebox_title">Where we are</h3>
+    </header>
+    <hr />
+    <div id="bluebox_map">
+        <a target="_blank" href="http://maps.google.com/maps?hl=en&q=<?php echo get_post_meta ($contact_page->ID, 'latitude', true); ?>,<?php echo get_post_meta ($contact_page->ID, 'longitude', true); ?>&ie=UTF8&z=14"><img alt="map to RAAK" id="gimg" src="<?php echo get_bloginfo ('template_directory'); ?>/images/map.png" /></a>
+    </div>
+</div>
+<?php
 
 ?>
 <?php 
