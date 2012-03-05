@@ -352,7 +352,7 @@ add_shortcode('quotes', 'founder_quotes');
 
 /*************************/
 
-function whitebox_primary() {
+function whitebox_logo_project() {
     $logo_project = get_page_by_title('Logo Project');
 ?>
 
@@ -367,7 +367,18 @@ function whitebox_primary() {
 </div><!-- whitebox_primary -->
 <?php
 }
-add_shortcode('whitebox', 'whitebox_primary');
+add_shortcode('wblp', 'whitebox_logo_project');
+
+
+/*function whitebox_primary($atts) {
+    extract(shortcode_atts(array('page' => ''), $atts));
+    $current_page = get_page_by_title($page);
+    switch ($page) {
+    case 'Logo Project':
+        whitebox_logo_project();
+        break;
+    }
+}*/
 ?>
 <?php 
 /***************************** From local functions on old site **************************/

@@ -7,7 +7,7 @@ Template Name:Logo Project
 
 	<div class="container rounded-corners logo_project">
 		<div class="content">
-<?php do_shortcode('[whitebox]'); ?>
+<?php do_shortcode('[wblp]'); ?>
             <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
                 <header>
                     <h2 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">Latest Uploads</h2>
