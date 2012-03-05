@@ -515,17 +515,21 @@ add_shortcode('contactbb', 'contact_bluebox');
 function big_whitebox($atts) {
     extract(shortcode_atts(array('page' => ''), $atts));
     $current_page = get_page_by_title($page);
-    print_r($current_page);
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
     <h2 class="din-schrift blue_20"><?php echo $current_page->post_title; ?></h2>
         <nav class="box_nav smaller_arial_caps">
-            <a id="whitebox_big_nav_all-products" class="whitebox_big_nav_item active" onclick="javascript: expand('all-products');">All Products</a>
+<?php if($page == 'Our Products') {
+?>
+            <a id="whitebox_big_nav_all-products" class="whitebox_big_nav_item active">All Products</a>
+<?php
+}
+?>
         </nav>
     </header>
     <hr>
-    <a class="whitebox_big_category_entry_content" href="http://stage.wewillraakyou.com/our-products-2/single-product/" onmouseover="javascript: mouse_action ('all-products', 0, 'over');" onmouseout="javascript: mouse_action ('all-products', 0, 'out');">
+    <a class="whitebox_big_category_entry_content" href="http://stage.wewillraakyou.com/our-products-2/single-product/">
         <div id="post_all-products_0_picture" class="whitebox_big_category_entry_content_picture">
             <img alt="" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder00.png" width="220" height="142">                     </div><!-- #post_0_picture -->
         <div id="post_all-products_0_overview" class="whitebox_big_category_entry_content_overview" style="width: 160px; height: 82px; display: none;">
