@@ -484,14 +484,16 @@ add_shortcode('lplu', 'logo_project_latest_uploads');
 /*************************/
 
 function contact_whitebox() {
+    global $post;
+    print_r($post);
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
                 <header>
-                    <h2 class="din-schrift blue_20"><?php the_title(); ?></h2>
+                    <h2 class="din-schrift blue_20"><?php the_title();the_content(); ?></h2>
                 </header>
                 <hr>
                 <div class="whitebox_primary_content">
-<?php the_content(); ?>
+<?php the_content(); the_title(); ?>
                 </div><!-- .whitebox_primary_content -->
             </div>
 
