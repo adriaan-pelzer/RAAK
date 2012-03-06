@@ -607,6 +607,7 @@ function single_project_whitebox() {
             for($count = 0; $count <= $num_cats; $count++) {
                 $poss_cats[$count] = $cats[$count]->cat_name;
             }
+            print_r($poss_cats);
             if (in_array('RAAK Products', $poss_cats)) {
                 $page_title = 'Our Products';
             } else {
