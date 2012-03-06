@@ -155,7 +155,7 @@ var galleryShowImg = function() {
         var imgSrc = $(this).attr('src');
         var imgTitle = $(this).attr('title');
         var imgAlt = $(this).attr('alt');
-        $('.bluebox_bigpic').html('<img title="' + imgTitle + ' alt="' + imgAlt + '" src="' + imgSrc + '">');
+        $('.bluebox_bigpic').html('<img width="315" height="203" title="' + imgTitle + ' alt="' + imgAlt + '" src="' + imgSrc + '">');
     });
 }
 
