@@ -646,7 +646,7 @@ function single_project_bluebox() {
 ?>
 <div class="bluebox bluebox_primary box bluebox-primary rounded-corners bluebox_top_margin">
     <div class="bluebox_bigpic">
-<?php get_image_or_video(the_content()); ?>
+<?php do_shortcode('[id=' . get_post_meta(get_the_ID(), 'picID', TRUE) . ' w=315 h= 203]'); ?>
     </div>
     <hr class="solid blue_hr" />
     <div class="bluebox_thumbpic">
