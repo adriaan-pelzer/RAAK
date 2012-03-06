@@ -154,7 +154,7 @@ var galleryShowImg = function() {
     $('.ngg-gallery-thumbnail a').mouseover(function() {
         var imgSrc = $(this).attr('href');
         var imgTitle = $(this).find('img').attr('title');
-        var imgAlt = $(this)find('img').attr('alt');
+        var imgAlt = $(this).find('img').attr('alt');
         $('.bluebox_bigpic').html('<img width="315" height="203" title="' + imgTitle + ' alt="' + imgAlt + '" src="' + imgSrc + '">');
     });
 }
