@@ -1236,12 +1236,12 @@ h3.expanded_letter {
     line-height: 16px;
 }
 
-.whitebox_big_category_entry_content div {
+.whitebox_big_category_entry_content_picture img, .whitebox_big_category_entry_content_overview {
     display: none;
 }
 
 
-.whitebox_big_category_entry_content div.current {
+.whitebox_big_category_entry_content_picture img.current, .whitebox_big_category_entry_content_overview.current {
     display: block;
 }
 
