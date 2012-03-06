@@ -544,7 +544,7 @@ function big_whitebox($atts) {
 ?>
                     <div id="whitebox_big_all-products_<?php echo $page_count; ?>" class="whitebox_big_category smaller_arial_caps">
 <?php
-        for($row_count = 0; $row_count < (($page == 'Our Products') ? '3' : '6';); $row_count++) {
+        for($row_count = 0; $row_count < (($page == 'Our Products') ? '3' : '6'); $row_count++) {
 ?>
                         <div id="whitebox_big_category_row<?php echo $row_count; ?>" class="whitebox_big_category_row">
 <?php
