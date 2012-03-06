@@ -147,6 +147,15 @@ var projectHover = function() {
     });
 }
 
+var galleryShowImg = function() {
+    $('.ngg-gallery-thumbnail a').click().preventDefault();
+    $('.ngg-gallery-thumbnail a img').mouseover(function() {
+        var imgSrc = $(this).attr('src');
+        var imgTitle = $(this).attr('title');
+        var imgAlt = $(this).attr('alt');
+        $('.bluebox_bigpic').html('<img title="' + imgTitle + ' alt="' + imgAlt + '" src="' + imgSrc + '">');
+    });
+}
 
 $(document).ready(function() {
     setInterval(load_next, 5000);
@@ -154,4 +163,5 @@ $(document).ready(function() {
     ourWorkPagination();
     aboutPagination();
     projectHover();
+    galleryShowImg();
 });
