@@ -516,7 +516,7 @@ function big_whitebox($atts) {
     extract(shortcode_atts(array('page' => ''), $atts));
     $current_page = get_page_by_title($page);
     $current_page_posts_loop = new WP_Query(array('cat' => get_cat_id('RAAK Products')));
-    $total_pages = (floor($current_page_posts_loop->post_count / 18)) +1;
+    $total_pages = (floor($current_page_posts_loop->post_count / 9)) +1;
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
@@ -541,12 +541,10 @@ function big_whitebox($atts) {
 <?php
     $item_count = 0;
     for($page_count = 0; $page_count < $total_pages; $page_count++) {
-        echo $page_count;
-       echo $total_pages; 
 ?>
                     <div id="whitebox_big_all-products_<?php echo $page_count; ?>" class="whitebox_big_category smaller_arial_caps">
 <?php
-        for($row_count = 0; $row_count < 6; $row_count++) {
+        for($row_count = 0; $row_count < (($page == 'Our Products') : '3' ? '6';); $row_count++) {
 ?>
                         <div id="whitebox_big_category_row<?php echo $row_count; ?>" class="whitebox_big_category_row">
 <?php
@@ -556,14 +554,15 @@ function big_whitebox($atts) {
                             <div class="whitebox_big_category_entry" id="category_entry_<?echo $item_count; ?>">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
-                                        <span class="whitebox_big_category_entry_title_label">Product:</span>
+                                    <span class="whitebox_big_category_entry_title_label"><?php echo ($page == 'Our Products') : 'product' ? 'project'; ?>:</span>
                                         <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Product', TRUE); ?></span>
                                     </h3><!-- .whitebox_big_category_entry_title -->
                                 </header>
                                 <hr class="solid">
                                 <a class="whitebox_big_category_entry_content" href="http://stage.wewillraakyou.com/our-products-2/single-product/">
                                     <div id="post_all-products_<?php echo $item_count; ?>_picture" class="whitebox_big_category_entry_content_picture">
-                                        <img alt="" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder00.png" width="220" height="142">                     </div><!-- #post_0_picture -->
+                                        <?php echo get_image ($this_post->post_content, 220, 142); ?>
+                                    </div><!-- post_all-products_<?php echo $item_count; ?>_picture -->
                                     <div id="post_all-products_<?php echo $item_count; ?>_overview" class="whitebox_big_category_entry_content_overview" style="width: 160px; height: 82px; display: none;">
                                         <p><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Overview', TRUE); ?></p><p><strong>Read More »</strong></p>
                                     </div><!-- #post_<?php echo $item_count; ?>_overview -->
