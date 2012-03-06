@@ -148,14 +148,14 @@ var projectHover = function() {
 }
 
 var galleryShowImg = function() {
+    $('.bluebox_bigpic').html('<img width="315" height="203" title="' + $('.ngg-gallery-thumbnail a img').first().attr('title') + '" alt="' + $('.ngg-gallery-thumbnail a img').first().attr('alt') + '" src="' + + $('.ngg-gallery-thumbnail a').first().attr('href') + '">');
+    
+
     $('.ngg-gallery-thumbnail a').click(function(event){
         event.preventDefault();
     });
     $('.ngg-gallery-thumbnail a').mouseover(function() {
-        var imgSrc = $(this).attr('href');
-        var imgTitle = $(this).find('img').attr('title');
-        var imgAlt = $(this).find('img').attr('alt');
-        $('.bluebox_bigpic').html('<img width="315" height="203" title="' + imgTitle + ' alt="' + imgAlt + '" src="' + imgSrc + '">');
+        $('.bluebox_bigpic').html('<img width="315" height="203" title="' + $(this).find('img').attr('title') + '" alt="' + $(this).find('img').attr('alt') + '" src="' + $(this).attr('href') + '">');
     });
 }
 
