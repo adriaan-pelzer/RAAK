@@ -142,11 +142,10 @@ var aboutPagination = function() {
 }
 
 var projectHover = function() {
-    $('.whitebox_big_category_entry_content_picture img').addClass('current');
-    $('.whitebox_big_category_entry_content_picture img').hover(function() {
-        $(this).removeClass('current').parent().next('.whitebox_big_category_entry_content_overview').addClass('current');
+    $('.whitebox_big_category_entry_content_picture').hover(function() {
+        $(this).css('display', 'none').next('.whitebox_big_category_entry_content_overview').css('display', 'block');
     }, function() {
-        $(this).addClass('current').parent().next('.whitebox_big_category_entry_content_overview').removeClass('current');
+        $(this).css('display', 'block').next('.whitebox_big_category_entry_content_overview').css('display', 'none');
     });
 }
 
