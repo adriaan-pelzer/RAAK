@@ -602,8 +602,13 @@ function single_project_whitebox() {
         while(have_posts()) {
             the_post();
             $cats = get_the_category();
-            if (in_array('RAAK Products', $cats)) {
-                echo 'yes';
+            foreach($cats as $cat) {
+                if (in_array('RAAK Products', $cat)) {
+                    $page_title = 'Our Products';
+                    break;
+                } else {
+                    $page_title = 'Our Work';
+                }
             }
 
             
@@ -611,7 +616,7 @@ function single_project_whitebox() {
 
 <div class="whitebox_big whitebox box big_box big_box_short rounded-corners_top_bottom_right">
     <header>
-        <h2  class="din-schrift blue_20">Our Products</h2>
+    <h2  class="din-schrift blue_20"><?php echo $page_title; ?></h2>
     </header>
         <hr />
 </div><!-- whitebox_big -->
