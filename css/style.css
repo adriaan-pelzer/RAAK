@@ -1227,7 +1227,9 @@ h3.expanded_letter {
     padding: 30px;
     color: #666666;
     line-height: 16px;
-    background: #ffffff;
+    width: 160px;
+    height: 82px;
+   background: #ffffff;
 }
 
 
@@ -1236,11 +1238,14 @@ h3.expanded_letter {
     line-height: 16px;
 }
 
-.whitebox_big_category_entry_content_overview {
+.whitebox_big_category_entry_content div {
     display: none;
 }
 
 
+.whitebox_big_category_entry_content div.current {
+    display: block;
+}
 
 /************** SINGLE PRODUCT ***********/
 

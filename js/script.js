@@ -143,9 +143,9 @@ var aboutPagination = function() {
 
 var projectHover = function() {
     $('.whitebox_big_category_entry_content_picture').hover(function() {
-        $(this).css('display', 'none').next('.whitebox_big_category_entry_content_overview').css('display', 'block');
+        $(this).removeClass('current').next('.whitebox_big_category_entry_content_overview').addClass('current');
     }, function() {
-        $(this).css('display', 'block').next('.whitebox_big_category_entry_content_overview').css('display', 'none');
+        $(this).addClass('current').next('.whitebox_big_category_entry_content_overview').removeClass('current');
     });
 }
 
