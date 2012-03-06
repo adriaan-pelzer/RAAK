@@ -607,7 +607,6 @@ function single_project_whitebox() {
             for($count = 0; $count < $num_cats; $count++) {
                 $poss_cats[$count] = $cats[$count]->cat_name;
             }
-            print_r($poss_cats);
             if (in_array('RAAK products', $poss_cats)) {
                 $page_title = 'Our Products';
             } else {
@@ -625,16 +624,13 @@ function single_project_whitebox() {
 </div><!-- whitebox_big -->
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
     <div class="product_whitebox_primary_project whitebox_primary_section bigger_arial_caps">
-        <div class="whitebox_primary_section_label">Product:</div>
-        <div class="whitebox_primary_section_content"><a class="grey_text" target="_blank" href="http://m.tweetrewinder.com">Rewinder</a></div>
+    <div class="whitebox_primary_section_label"><?php echo ($page_title == 'Our Products') ? 'Product' : 'Project'; ?>:</div>
+    <div class="whitebox_primary_section_content"><a class="grey_text" target="_blank" href="<?php get_post_meta(get_the_ID(), 'link', TRUE); ?>"><?php get_post_meta(get_the_ID(), 'Product', TRUE); ?></a></div>
     </div><!-- whitebox_primary_project -->
     <hr class="solid thicker_hr lightblue_hr">
     <div class="whitebox_primary_solution whitebox_primary_section">
         <div class="whitebox_primary_section_label bigger_arial_caps">Descript:</div>
-        <div class="whitebox_primary_section_content"><p>Rewinder is our mobile solution to make Twitter useful with Time-shifted TV</p>
-            <p>Connect your Twitter account, and we'll allow you to view your past Twitter timeline, as well as recorded hashtags, as if they were happening right now!</p>
-            <p>If you're just quickly catching up with an event, you can play them back at faster than realtime too.</p>
-            <p>This is as close to Time Travel you'll ever get, without altering the future!</p></div>
+<?php get_post_meta(get_the_ID(), 'Descript', TRUE); ?>
         </div><!-- .whitebox_primary_solution -->
 </div><!-- whitebox_primary -->
 <?php
