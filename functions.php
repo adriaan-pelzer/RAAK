@@ -560,7 +560,7 @@ function big_whitebox($atts) {
                                 </header>
                                 <hr class="solid">
                                 <a class="whitebox_big_category_entry_content" href="<?php get_permalink($current_page_posts_loop->posts[$item_count]->ID); ?>">
-                                    <div id="post_all-products_<?php echo $item_count; ?>_picture" class="whitebox_big_category_entry_content_picture current">
+                                    <div id="post_all-products_<?php echo $item_count; ?>_picture" class="whitebox_big_category_entry_content_picture">
                                         <?php echo get_image ($current_page_posts_loop->posts[$item_count]->post_content, 220, 142); ?>
                                     </div><!-- post_all-products_<?php echo $item_count; ?>_picture -->
                                     <div id="post_all-products_<?php echo $item_count; ?>_overview" class="whitebox_big_category_entry_content_overview">
