@@ -630,7 +630,7 @@ function single_project_whitebox() {
     <hr class="solid thicker_hr lightblue_hr">
     <div class="whitebox_primary_solution whitebox_primary_section">
         <div class="whitebox_primary_section_label bigger_arial_caps">Descript:</div>
-<?php echo get_post_meta(get_the_ID(), 'Descript', TRUE); ?>
+<div class="whitebox_primary_section_content"><?php echo get_post_meta(get_the_ID(), 'Descript', TRUE); ?></div><!-- .whitebox_primary_section_content -->
         </div><!-- .whitebox_primary_solution -->
 </div><!-- whitebox_primary -->
 <?php
