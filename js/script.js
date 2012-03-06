@@ -141,10 +141,19 @@ var aboutPagination = function() {
     });
 }
 
+var projectHover = function() {
+    $('.whitebox_big_category_entry_content_picture').hover(function() {
+        $(this).removeClass('current').next('.whitebox_big_category_entry_content_overview').addClass('current');
+    }, function() {
+        $(this).addClass('current').next('.whitebox_big_category_entry_content_overview').removeClass('current');
+    });
+}
+
 
 $(document).ready(function() {
     setInterval(load_next, 5000);
     latestPostsPagination();
     ourWorkPagination();
     aboutPagination();
+    projectHover();
 });

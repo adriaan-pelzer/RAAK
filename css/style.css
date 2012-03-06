@@ -1236,6 +1236,15 @@ h3.expanded_letter {
     line-height: 16px;
 }
 
+.whitebox_big_category_entry_content div {
+    display: none;
+}
+
+
+.whitebox_big_category_entry_content div.current {
+    display: block;
+}
+
 /************** SINGLE PRODUCT ***********/
 
 .whitebox_primary_section {
