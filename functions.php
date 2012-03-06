@@ -604,11 +604,11 @@ function single_project_whitebox() {
             $poss_cats = array();
             $cats = get_the_category();
             $num_cats = count($cats);
-            for($count = 0; $count <= $num_cats; $count++) {
+            echo $num_cats;
+            for($count = 0; $count < $num_cats; $count++) {
                 $poss_cats[$count] = $cats[$count]->cat_name;
             }
-            print_r($poss_cats);
-            if (in_array('RAAK Products', $poss_cats)) {
+            if (in_array('RAAK products', $poss_cats)) {
                 $page_title = 'Our Products';
             } else {
                 $page_title = 'Our Work';
