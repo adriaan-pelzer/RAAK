@@ -561,7 +561,7 @@ function big_whitebox($atts) {
                                 <hr class="solid">
                                 <a class="whitebox_big_category_entry_content" href="http://stage.wewillraakyou.com/our-products-2/single-product/">
                                     <div id="post_all-products_<?php echo $item_count; ?>_picture" class="whitebox_big_category_entry_content_picture">
-                                        <?php echo get_image ($this_post->post_content, 220, 142); ?>
+                                        <?php echo get_image_or_video ($this_post->post_content, 220, 142); ?>
                                     </div><!-- post_all-products_<?php echo $item_count; ?>_picture -->
                                     <div id="post_all-products_<?php echo $item_count; ?>_overview" class="whitebox_big_category_entry_content_overview" style="width: 160px; height: 82px; display: none;">
                                         <p><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Overview', TRUE); ?></p><p><strong>Read More »</strong></p>
