@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name Posts: Single Product
+Template Name Posts: Single Project
  */
 ?>
 <?php get_header() ?>
