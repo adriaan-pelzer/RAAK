@@ -646,7 +646,7 @@ function single_project_bluebox() {
 ?>
 <div class="bluebox bluebox_primary box bluebox-primary rounded-corners bluebox_top_margin">
     <div class="bluebox_bigpic">
-        <img alt="rewinder01" width="315" height="203" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder01.png">
+<?php get_image(the_content(); ?>
     </div>
     <hr class="solid blue_hr" />
     <div class="bluebox_thumbpic">
