@@ -602,7 +602,7 @@ function single_project_whitebox() {
         while(have_posts()) {
             the_post();
             $cats = get_the_category();
-            if (in_array('RAAK Products', $cats) {
+            if (in_array('RAAK Products', $cats)) {
                 echo 'yes';
             }
 
