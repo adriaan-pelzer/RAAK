@@ -601,14 +601,16 @@ function single_project_whitebox() {
     if (have_posts()) {
         while(have_posts()) {
             the_post();
+            $poss_cats = array();
             $cats = get_the_category();
-            foreach($cats as $cat) {
-                if (in_array('RAAK Products', $cat)) {
-                    $page_title = 'Our Products';
-                    break;
-                } else {
-                    $page_title = 'Our Work';
-                }
+            $num_cats = count($cats);
+            for($count = 0; $count <= $num_cats; $count++) {
+                $poss_cats[$count] = $cats[$count]->cat_name;
+            }
+            if (in_array('RAAK Products', $poss_cats)) {
+                $page_title = 'Our Products';
+            } else {
+                $page_title = 'Our Work';
             }
 
             
