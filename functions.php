@@ -544,7 +544,7 @@ function big_whitebox($atts) {
 ?>
                     <div id="whitebox_big_all-products_<?php echo $page_count; ?>" class="whitebox_big_category smaller_arial_caps">
 <?php
-        for($row_count = 0; $row_count < 3; $row_count++) {
+        for($row_count = 0; $row_count < (($page == 'Our Products') ? '3' : '6';); $row_count++) {
 ?>
                         <div id="whitebox_big_category_row<?php echo $row_count; ?>" class="whitebox_big_category_row">
 <?php
@@ -554,7 +554,7 @@ function big_whitebox($atts) {
                             <div class="whitebox_big_category_entry" id="category_entry_<?echo $item_count; ?>">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label"><?php echo ($page == 'Our Products') : 'product' ? 'project'; ?>:</span>
+                                    <span class="whitebox_big_category_entry_title_label"><?php echo ($page == 'Our Products') ? 'product' : 'project'; ?>:</span>
                                         <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Product', TRUE); ?></span>
                                     </h3><!-- .whitebox_big_category_entry_title -->
                                 </header>
