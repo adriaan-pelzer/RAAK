@@ -589,6 +589,7 @@ function big_whitebox($atts) {
                 </div><!-- #whitebox_big_all-items -->
             </div>
 <?php
+    wp_reset_query();
 }
 
 add_shortcode('bwb', 'big_whitebox');
@@ -596,6 +597,12 @@ add_shortcode('bwb', 'big_whitebox');
 /*************************/
 
 function single_project_whitebox() {
+    global $post;
+    if (have_posts()) {
+        while(have_posts()) {
+            the_post();
+            print_r ($post);
+            
 ?>
 
 <div class="whitebox_big whitebox box big_box big_box_short rounded-corners_top_bottom_right">
@@ -619,6 +626,8 @@ function single_project_whitebox() {
         </div><!-- .whitebox_primary_solution -->
 </div><!-- whitebox_primary -->
 <?php
+        }
+    }
 }
 
 add_shortcode('sp_wb', 'single_project_whitebox');
