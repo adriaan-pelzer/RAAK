@@ -639,6 +639,24 @@ function single_project_whitebox() {
 }
 
 add_shortcode('sp_wb', 'single_project_whitebox');
+
+/*************************/
+
+function single_project_bluebox() {
+?>
+<div class="bluebox bluebox_primary box bluebox-primary rounded-corners bluebox_top_margin">
+    <div class="bluebox_bigpic">
+        <img alt="rewinder01" width="315" height="203" src="http://wewillraakyou.com/wp-content/gallery/rewinder/rewinder01.png">
+    </div>
+    <hr class="solid blue_hr" />
+    <div class="bluebox_thumbpic">
+<?php the_content(); ?>
+    </div>
+</div><!-- #bluebox -->
+<?php
+}
+
+add_shortcode('sp_bb', 'single_project_bluebox');
 ?>
 <?php 
 /***************************** From local functions on old site **************************/
