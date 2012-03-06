@@ -148,7 +148,7 @@ var projectHover = function() {
 }
 
 var galleryShowImg = function() {
-    $('.bluebox_bigpic').html('<img width="315" height="203" title="' + $('.ngg-gallery-thumbnail a img').first().attr('title') + '" alt="' + $('.ngg-gallery-thumbnail a img').first().attr('alt') + '" src="' + + $('.ngg-gallery-thumbnail a').first().attr('href') + '">');
+    $('.bluebox_bigpic').html('<img width="315" height="203" title="' + $('.ngg-gallery-thumbnail a img').first().attr('title') + '" alt="' + $('.ngg-gallery-thumbnail a img').first().attr('alt') + '" src="' + $('.ngg-gallery-thumbnail a').first().attr('href') + '">');
     
 
     $('.ngg-gallery-thumbnail a').click(function(event){
