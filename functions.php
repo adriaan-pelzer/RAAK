@@ -625,12 +625,12 @@ function single_project_whitebox() {
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
     <div class="product_whitebox_primary_project whitebox_primary_section bigger_arial_caps">
     <div class="whitebox_primary_section_label"><?php echo ($page_title == 'Our Products') ? 'Product' : 'Project'; ?>:</div>
-    <div class="whitebox_primary_section_content"><a class="grey_text" target="_blank" href="<?php get_post_meta(get_the_ID(), 'link', TRUE); ?>"><?php get_post_meta(get_the_ID(), 'Product', TRUE); ?></a></div>
+    <div class="whitebox_primary_section_content"><a class="grey_text" target="_blank" href="<?php echo get_post_meta(get_the_ID(), 'link', TRUE); ?>"><?php echo get_post_meta(get_the_ID(), 'Product', TRUE); ?></a></div>
     </div><!-- whitebox_primary_project -->
     <hr class="solid thicker_hr lightblue_hr">
     <div class="whitebox_primary_solution whitebox_primary_section">
         <div class="whitebox_primary_section_label bigger_arial_caps">Descript:</div>
-<?php get_post_meta(get_the_ID(), 'Descript', TRUE); ?>
+<?php echo get_post_meta(get_the_ID(), 'Descript', TRUE); ?>
         </div><!-- .whitebox_primary_solution -->
 </div><!-- whitebox_primary -->
 <?php
