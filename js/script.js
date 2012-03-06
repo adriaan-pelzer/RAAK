@@ -143,7 +143,7 @@ var aboutPagination = function() {
 
 var projectHover = function() {
     $('.whitebox_big_category_entry_content').hover(function() {
-        $('.whitebox_big_category_entry_content div').toggleClass('current');
+        $(this + ' div').toggleClass('current');
     });
 }
 
