@@ -561,7 +561,7 @@ function big_whitebox($atts) {
                                 <hr class="solid">
                                 <a class="whitebox_big_category_entry_content" href="http://stage.wewillraakyou.com/our-products-2/single-product/">
                                     <div id="post_all-products_<?php echo $item_count; ?>_picture" class="whitebox_big_category_entry_content_picture">
-                                        <?php echo get_image_or_video ($this_post->post_content, 220, 142); ?>
+                                        <?php echo get_image ($this_post->post_content, 220, 142); ?>
                                     </div><!-- post_all-products_<?php echo $item_count; ?>_picture -->
                                     <div id="post_all-products_<?php echo $item_count; ?>_overview" class="whitebox_big_category_entry_content_overview" style="width: 160px; height: 82px; display: none;">
                                         <p><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Overview', TRUE); ?></p><p><strong>Read More »</strong></p>
@@ -679,6 +679,30 @@ function mine_gallery ($id) {
     }
 
     $returncode .= "/>";
+
+    return $returncode;
+}
+
+
+function get_image ($post_content, $width=NULL, $height=NULL) {
+    $returncode = NULL;
+    $gallerytext = array();
+    $matches_img = array();
+    $matches_gal = array();
+
+    if (preg_match ("/<img[^>]+>/", $post_content, $matches_img, PREG_OFFSET_CAPTURE)) {
+        if (preg_match ("/\[nggallery id=(\d+)\]/", $post_content, $matches_gal, PREG_OFFSET_CAPTURE) && ($matches_gal[0][1] < $matches_img[0][1])) {
+            return patch_dimensions (mine_gallery ($matches_gal[1][0]), $width, $height);
+        } else {
+            $returncode = $matches_img[0][0];
+
+            $returncode = patch_dimensions ($returncode, $width, $height);
+
+            $returncode = preg_replace ("/ class=\"[^\"]*\"/", "", $returncode);
+        }
+    } else if (preg_match ("/\[nggallery id=(\d+)\]/", $post_content, $matches_gal, PREG_OFFSET_CAPTURE)) {
+        return patch_dimensions (mine_gallery ($matches_gal[1][0]), $width, $height);
+    }
 
     return $returncode;
 }
