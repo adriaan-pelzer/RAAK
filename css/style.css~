@@ -1314,10 +1314,6 @@ a.page-numbers, .ngg-navigation span {
     padding: 0!important;
 }
 
-.ngg-navigation a.next:hover, .ngg-navigation a.prev:hover {
-    color: #ffffff!important;
-}
-
 .ngg-navigation .next {
     float: right;
 }
