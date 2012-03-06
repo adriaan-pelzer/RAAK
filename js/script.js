@@ -148,7 +148,9 @@ var projectHover = function() {
 }
 
 var galleryShowImg = function() {
-    $('.ngg-gallery-thumbnail a').click().preventDefault();
+    $('.ngg-gallery-thumbnail a').click(function(event){
+        event.preventDefault();
+    });
     $('.ngg-gallery-thumbnail a img').mouseover(function() {
         var imgSrc = $(this).attr('src');
         var imgTitle = $(this).attr('title');
