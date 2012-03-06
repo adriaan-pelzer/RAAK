@@ -1,6 +1,6 @@
 <?php
 /*
-Single Post Template: Product
+Single Post Template:  Single Product
  */
 ?>
 <?php get_header() ?>
