@@ -544,7 +544,7 @@ function big_whitebox_products() {
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
                                     <span class="whitebox_big_category_entry_title_label">product:</span>
-                                        <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, (($page == 'Product') ? 'Product' : 'Client'), TRUE); ?></span>
+                                        <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Product', TRUE); ?></span>
                                     </h3><!-- .whitebox_big_category_entry_title -->
                                 </header>
                                 <hr class="solid">
