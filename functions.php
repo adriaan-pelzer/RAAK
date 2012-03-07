@@ -545,11 +545,11 @@ function big_whitebox($atts) {
 ?>
                     <div id="whitebox_big_all-products" class="whitebox_big_category smaller_arial_caps">
 <?php
-    for($row_count = 0; $row_count < ; $row_count++) {
+    for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
 ?>
                         <div id="whitebox_big_category_row<?php echo $row_count; ?>" class="whitebox_big_category_row">
 <?php
-        for($row_item = 0; $row_item < (($total_rows > 3) ? $total_rows : 3); $row_item++) {
+        for($row_item = 0; $row_item < 3; $row_item++) {
             if ($current_page_posts_loop->posts[$item_count]) {
 ?>
                             <div class="whitebox_big_category_entry" id="category_entry_<?echo $item_count; ?>">
