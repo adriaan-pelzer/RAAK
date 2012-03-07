@@ -159,6 +159,20 @@ var galleryShowImg = function() {
     });
 }
 
+var ourWorkCatDisplay = function() {
+    $('a.whitebox_big_nav_item').click(function() {
+        if(!$(this).hasClass('active')) {
+            $('a.whitebox_big_nav_item.active').removeClass('active');
+            $(this).addClass('active');
+            var splitPoint = $(this).attr('id').lastIndexOf('_');
+            var currentID = $(this).attr('id').substring(splitPoint);
+            $('.whitebox_big_category.current').removeClass('current');
+            $('#whitebox_big_' + currentID).addClass('current');
+        }
+    });
+}
+
+
 $(document).ready(function() {
     setInterval(load_next, 5000);
     latestPostsPagination();
@@ -166,4 +180,5 @@ $(document).ready(function() {
     aboutPagination();
     projectHover();
     galleryShowImg();
+    ourWorkCatDisplay();
 });
