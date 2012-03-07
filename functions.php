@@ -543,7 +543,7 @@ function big_whitebox_products() {
                             <div class="whitebox_big_category_entry" id="category_entry_<?echo $item_count; ?>">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label"><?php echo ($page == 'Our Products') ? 'product' : 'client'; ?>:</span>
+                                    <span class="whitebox_big_category_entry_title_label">product:</span>
                                         <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, (($page == 'Product') ? 'Product' : 'Client'), TRUE); ?></span>
                                     </h3><!-- .whitebox_big_category_entry_title -->
                                 </header>
@@ -588,15 +588,12 @@ function big_whitebox_projects() {
     <header>
     <h2 class="din-schrift blue_20"><?php echo $current_page->post_title; ?></h2>
 <?php
-    if($page == 'Our Work') {
         $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
-        print_r($work_categories);
 
 ?>
         <nav class="box_nav smaller_arial_caps">
             <a id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active">All Projects</a>
 <?php 
-        $cat_show = '<div id="whitebox_big_all_items" class="whitebox_big_category">';
         foreach ($work_categories as $work_category) {
 ?>
             <span class="seperator seperator_smaller">|</span>
