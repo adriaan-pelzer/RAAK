@@ -1266,6 +1266,9 @@ h3.expanded_letter {
     display: inline-block;
     vertical-align: top;
 }
+.whitebox_primary_section div {
+    line-height: 19px;
+}
 
 .whitebox_primary_section_label {
     width: 60px;
