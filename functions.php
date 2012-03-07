@@ -609,7 +609,7 @@ function big_whitebox_projects() {
             $current_cat_loop = new WP_Query(array('category_name' => ($work_category->name), 'posts_per_page' => -1));
             $total_rows = (ceil($all_projects_loop->post_count / 3));
             $children_cats_item_count = 0;
-            $children_cats .= '<div id="whitebox_big_' . $work_category->category_nicename . '" class="whitebox_big_category smaller_arial_caps'. ($active == $work_category->category_nicename) ? 'current' : '' . '">';
+            $children_cats .= '<div id="whitebox_big_' . $work_category->category_nicename . '" class="whitebox_big_category smaller_arial_caps'. (($active == $work_category->category_nicename) ? ' current' : '') . '">';
             for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
                 $children_cats .= '<div id="whitebox_big_category_row' . $row_count . '" class="whitebox_big_category_row">';
                 for($row_item = 0; $row_item < 3; $row_item++) {
@@ -656,7 +656,7 @@ function big_whitebox_projects() {
     $total_rows = (ceil($all_projects_loop->post_count / 3));
     $item_count = 0;
 ?>
-                    <div id="whitebox_big_all-projects" class="whitebox_big_category smaller_arial_caps <?php echo ($active == 'all-projects') ? 'current' : ''; ?>">
+                    <div id="whitebox_big_all-projects" class="whitebox_big_category smaller_arial_caps<?php echo ($active == 'all-projects') ? ' current' : ''; ?>">
 <?php
     for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
 ?>
@@ -737,7 +737,7 @@ function single_project_whitebox() {
 
 ?>
         <nav class="box_nav smaller_arial_caps">
-        <a href="<?php echo get_permalink($our_work->ID); ?>?category=all-projects" id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active">All Projects</a>
+        <a href="<?php echo get_permalink($our_work->ID); ?>?category=all-projects" id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item">All Projects</a>
 <?php 
                 foreach ($work_categories as $work_category) {
 ?>
