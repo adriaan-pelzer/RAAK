@@ -732,14 +732,42 @@ function single_project_whitebox() {
 </div><!-- whitebox_big -->
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
     <div class="product_whitebox_primary_project whitebox_primary_section bigger_arial_caps">
-    <div class="whitebox_primary_section_label"><?php echo ($page_title == 'Our Products') ? 'Product' : 'Project'; ?>:</div>
+<?php if ($page_title == 'Our Products') 
+            {
+?>
+    <div class="whitebox_primary_section_label">Product:</div>
     <div class="whitebox_primary_section_content"><a class="grey_text" target="_blank" href="<?php echo get_post_meta(get_the_ID(), 'link', TRUE); ?>"><?php echo get_post_meta(get_the_ID(), 'Product', TRUE); ?></a></div>
-    </div><!-- whitebox_primary_project -->
+    </div><!-- whitebox_primary_section -->
     <hr class="solid thicker_hr lightblue_hr">
     <div class="whitebox_primary_solution whitebox_primary_section">
         <div class="whitebox_primary_section_label bigger_arial_caps">Descript:</div>
 <div class="whitebox_primary_section_content"><?php echo get_post_meta(get_the_ID(), 'Descript', TRUE); ?></div><!-- .whitebox_primary_section_content -->
-        </div><!-- .whitebox_primary_solution -->
+        </div><!-- .whitebox_primary_section -->
+<?php
+            } else {
+?>
+<div class="whitebox_primary_client whitebox_primary_section bigger_arial_caps">
+    <div class="whitebox_primary_section_label">Client:</div>
+    <div class="whitebox_primary_section_content grey_text"><?php echo get_post_meta(get_the_ID(), 'Client', TRUE); ?></div>
+</div><!-- .whitebox_primary_section -->
+<hr class="solid thicker_hr lightblue_hr">
+<div class="whitebox_primary_project whitebox_primary_section bigger_arial_caps">
+    <div class="whitebox_primary_section_label">Project:</div>
+    <div class="whitebox_primary_section_content grey_text"><?php echo get_post_meta(get_the_ID(), 'Project', TRUE); ?></div>
+</div><!-- .whitebox_primary_section -->
+<hr class="solid thicker_hr lightblue_hr">
+<div class="whitebox_primary_brief whitebox_primary_section">
+    <div class="whitebox_primary_section_label bigger_arial_caps">Brief:</div>
+    <div class="whitebox_primary_section_content"><?php echo get_post_meta(get_the_ID(), 'Brief', TRUE); ?></div>
+</div><!-- .whitebox_primary_section -->
+<hr class="solid thicker_hr lightblue_hr">
+<div class="whitebox_primary_solution whitebox_primary_section">
+    <div class="whitebox_primary_section_label bigger_arial_caps">Solution:</div>
+    <div class="whitebox_primary_section_content"><?php echo get_post_meta(get_the_ID(), 'Solution', TRUE); ?></div>
+</div><!-- .whitebox_primary_section -->
+<?php
+            }
+?>
 </div><!-- whitebox_primary -->
 <?php
         }
