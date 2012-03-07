@@ -729,19 +729,22 @@ function single_project_whitebox() {
 <div class="whitebox_big whitebox box big_box big_box_short rounded-corners_top_bottom_right">
     <header>
         <h2 class="din-schrift blue_20"><?php echo $page_title; ?></h2>
-<?php if ($page_title == 'Our Work') {
-    $our_work = get_page_by_title('Our Work');
-
-    $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
+<?php 
+            if ($page_title == 'Our Work') {
+                $our_work = get_page_by_title('Our Work');
+                $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
 
 ?>
         <nav class="box_nav smaller_arial_caps">
         <a href=<?php echo get_the_permalink($our_work->ID); ?>/?category=all-projects" id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active">All Projects</a>
 <?php 
-        foreach ($work_categories as $work_category) {
+                foreach ($work_categories as $work_category) {
 ?>
             <span class="seperator seperator_smaller">|</span>
             <a href="<?php echo get_the_permalink($our_work->ID); ?>/?category=<?php echo $work_category->nicename; ?>" id="whitebox_big_nav_<?php echo $work_category->category_nicename; ?>" class="whitebox_big_nav_item"><?php echo $work_category->name; ?></a>
+<?php
+                }
+            }
         </nav>
     </header>
         <hr />
