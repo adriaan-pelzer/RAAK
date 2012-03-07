@@ -518,7 +518,7 @@ function big_whitebox($atts) {
     $current_page_posts_loop = new WP_Query(array('cat' => get_cat_id((($page == 'Our Products') ? 'RAAK Products' : 'RAAK Projects'))));
 
     $total_pages = (floor($current_page_posts_loop->post_count / 9)) +1;
-    echo $total_pages;
+    print_r($current_page_posts_loop);
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
