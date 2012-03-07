@@ -515,7 +515,7 @@ add_shortcode('contactbb', 'contact_bluebox');
 function big_whitebox($atts) {
     extract(shortcode_atts(array('page' => ''), $atts));
     $current_page = get_page_by_title($page);
-    $current_page_posts_loop = new WP_Query(array('cat' => get_cat_id((($page == 'Our Products') ? 'RAAK Products' : 'RAAK Projects'))));
+    $current_page_posts_loop = new WP_Query(array('cat' => get_cat_id((($page == 'Our Products') ? 'RAAK Products' : 'RAAK Projects')), 'posts_per_page' => 18));
 
     $total_pages = (floor($current_page_posts_loop->post_count / 9)) +1;
     print_r($current_page_posts_loop);
