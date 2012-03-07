@@ -587,6 +587,7 @@ function big_whitebox_projects() {
     $current_page = get_page_by_title('Our Work');
     if($_GET['category']) {
         $active = $_GET['category'];
+    }
 
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
@@ -752,7 +753,8 @@ function single_project_whitebox() {
 </div><!-- whitebox_big -->
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners_bottom">
     <div class="product_whitebox_primary_project whitebox_primary_section bigger_arial_caps">
-<?php if ($page_title == 'Our Products') 
+<?php
+            if ($page_title == 'Our Products') 
             {
 ?>
         <div class="whitebox_primary_section_label">Product:</div>
