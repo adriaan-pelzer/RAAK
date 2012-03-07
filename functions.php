@@ -585,6 +585,9 @@ add_shortcode('bwb_prod', 'big_whitebox_products');
 
 function big_whitebox_projects() {
     $current_page = get_page_by_title('Our Work');
+    if($_GET['category']) {
+        $active = $_GET['category'];
+
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
@@ -594,18 +597,18 @@ function big_whitebox_projects() {
 
 ?>
         <nav class="box_nav smaller_arial_caps">
-            <a id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active">All Projects</a>
+        <a id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item <?php echo ($active == 'all-projects') ? 'active' : ''; ?>">All Projects</a>
 <?php 
     $children_cats = '';
         foreach ($work_categories as $work_category) {
 ?>
             <span class="seperator seperator_smaller">|</span>
-            <a id="whitebox_big_nav_<?php echo $work_category->category_nicename; ?>" class="whitebox_big_nav_item"><?php echo $work_category->name; ?></a>
+            <a id="whitebox_big_nav_<?php echo $work_category->category_nicename; ?>" class="whitebox_big_nav_item <?php echo ($active == $work_category->category_nicename) ? 'active' : ''; ?>"><?php echo $work_category->name; ?></a>
 <?php
             $current_cat_loop = new WP_Query(array('category_name' => ($work_category->name), 'posts_per_page' => -1));
             $total_rows = (ceil($all_projects_loop->post_count / 3));
             $children_cats_item_count = 0;
-            $children_cats .= '<div id="whitebox_big_' . $work_category->category_nicename . '" class="whitebox_big_category smaller_arial_caps">';
+            $children_cats .= '<div id="whitebox_big_' . $work_category->category_nicename . '" class="whitebox_big_category smaller_arial_caps'. ($active == $work_category->category_nicename) ? 'current' : '' . '">';
             for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
                 $children_cats .= '<div id="whitebox_big_category_row' . $row_count . '" class="whitebox_big_category_row">';
                 for($row_item = 0; $row_item < 3; $row_item++) {
@@ -652,7 +655,7 @@ function big_whitebox_projects() {
     $total_rows = (ceil($all_projects_loop->post_count / 3));
     $item_count = 0;
 ?>
-                    <div id="whitebox_big_all-projects" class="whitebox_big_category smaller_arial_caps current">
+                    <div id="whitebox_big_all-projects" class="whitebox_big_category smaller_arial_caps <?php echo ($active == 'all-projects') ? 'current' : ''; ?>">
 <?php
     for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
 ?>
@@ -705,7 +708,6 @@ add_shortcode('bwb_proj', 'big_whitebox_projects');
 /*************************/
 
 function single_project_whitebox() {
-    global $post;
     if (have_posts()) {
         while(have_posts()) {
             the_post();
@@ -727,6 +729,20 @@ function single_project_whitebox() {
 <div class="whitebox_big whitebox box big_box big_box_short rounded-corners_top_bottom_right">
     <header>
         <h2 class="din-schrift blue_20"><?php echo $page_title; ?></h2>
+<?php if ($page_title == 'Our Work') {
+    $our_work = get_page_by_title('Our Work');
+
+    $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
+
+?>
+        <nav class="box_nav smaller_arial_caps">
+        <a href=<?php echo get_the_permalink($our_work->ID); ?>/?category=all-projects" id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active">All Projects</a>
+<?php 
+        foreach ($work_categories as $work_category) {
+?>
+            <span class="seperator seperator_smaller">|</span>
+            <a href="<?php echo get_the_permalink($our_work->ID); ?>/?category=<?php echo $work_category->nicename; ?>" id="whitebox_big_nav_<?php echo $work_category->category_nicename; ?>" class="whitebox_big_nav_item"><?php echo $work_category->name; ?></a>
+        </nav>
     </header>
         <hr />
 </div><!-- whitebox_big -->
