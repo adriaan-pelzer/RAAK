@@ -579,6 +579,8 @@ function big_whitebox_products() {
 }
 
 add_shortcode('bwb_prod', 'big_whitebox_products');
+
+
 /*************************/
 
 function big_whitebox_projects() {
@@ -594,11 +596,37 @@ function big_whitebox_projects() {
         <nav class="box_nav smaller_arial_caps">
             <a id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active">All Projects</a>
 <?php 
+    $children_cats = '';
         foreach ($work_categories as $work_category) {
 ?>
             <span class="seperator seperator_smaller">|</span>
             <a id="whitebox_big_nav_<?php echo $work_category->category_nicename; ?>" class="whitebox_big_nav_item"><?php echo $work_category->name; ?></a>
 <?php
+            $current_cat_loop = new WP_Query(array('category_name' => ($work_category->name), 'posts_per_page' => -1));
+            $total_rows = (ceil($all_projects_loop->post_count / 3));
+            $children_cats_item_count = 0;
+            $children_cats .= '<div id="whitebox_big_' . $work_category->category_nicename . '" class="whitebox_big_category smaller_arial_caps current">';
+            for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
+                $children_cats .= '<div id="whitebox_big_category_row' . $row_count . '" class="whitebox_big_category_row">';
+                for($row_item = 0; $row_item < 3; $row_item++) {
+                    if ($current_cat_loop->posts[$item_count]) {
+                        $children_cats .= '<div class="whitebox_big_category_entry" id="category_entry_' .$item_count . '">
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label">client:</span>
+                                        <span class="whitebox_big_category_entry_title_name">' . get_post_meta($current_cat_loop->posts[$item_count]->ID, 'Client', TRUE) . '</span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
+                                <hr class="solid">
+                                <a class="whitebox_big_category_entry_content" href="' . get_permalink($current_cat_loop->posts[$item_count]->ID) . '">
+                                    <div id="post_all-products_' . $item_count . '_picture" class="whitebox_big_category_entry_content_picture current">';
+                        $children_cats .= get_image ($current_cat_loop->posts[$item_count]->post_content, 220, 142);
+                        $children_cats .= '</div><!-- post_all-products_' . $item_count . '_picture -->
+                                    <div id="post_all-products_' . $item_count . '_overview" class="whitebox_big_category_entry_content_overview">
+                                        <p>' . get_post_meta($current_cat_loop->posts[$item_count]->ID, 'Overview', TRUE) . '</p>
+                                    </div><!-- #post_' . $item_count . '_overview -->
+                                </a>
+                            </div><!-- .whitebox_big_category_entry -->';
 }
 ?>
         </nav>
@@ -619,19 +647,19 @@ function big_whitebox_projects() {
                         <div id="whitebox_big_category_row<?php echo $row_count; ?>" class="whitebox_big_category_row">
 <?php
         for($row_item = 0; $row_item < 3; $row_item++) {
-            if ($current_page_posts_loop->posts[$item_count]) {
+            if ($all_projects_loop->posts[$item_count]) {
 ?>
                             <div class="whitebox_big_category_entry" id="category_entry_<?echo $item_count; ?>">
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label"><?php echo ($page == 'Our Products') ? 'product' : 'client'; ?>:</span>
-                                        <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, (($page == 'Product') ? 'Product' : 'Client'), TRUE); ?></span>
+                                    <span class="whitebox_big_category_entry_title_label">client:</span>
+                                        <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($all_projects_loop->posts[$item_count]->ID, 'Client', TRUE); ?></span>
                                     </h3><!-- .whitebox_big_category_entry_title -->
                                 </header>
                                 <hr class="solid">
-                                <a class="whitebox_big_category_entry_content" href="<?php echo get_permalink($current_page_posts_loop->posts[$item_count]->ID); ?>">
+                                <a class="whitebox_big_category_entry_content" href="<?php echo get_permalink($all_projects_loop->posts[$item_count]->ID); ?>">
                                     <div id="post_all-products_<?php echo $item_count; ?>_picture" class="whitebox_big_category_entry_content_picture current">
-                                        <?php echo get_image ($current_page_posts_loop->posts[$item_count]->post_content, 220, 142); ?>
+                                        <?php echo get_image ($all_projects_loop->posts[$item_count]->post_content, 220, 142); ?>
                                     </div><!-- post_all-products_<?php echo $item_count; ?>_picture -->
                                     <div id="post_all-products_<?php echo $item_count; ?>_overview" class="whitebox_big_category_entry_content_overview">
                                         <p><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Overview', TRUE); ?></p>
