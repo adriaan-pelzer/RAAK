@@ -518,27 +518,31 @@ function big_whitebox($atts) {
     $current_page_posts_loop = new WP_Query(array('category_name' => (($page == 'Our Products') ? 'RAAK Products' : 'RAAK Projects'), 'posts_per_page' => -1));
 
     $total_rows = (ceil($current_page_posts_loop->post_count / 3));
-    print_r($current_page_posts_loop);
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
     <h2 class="din-schrift blue_20"><?php echo $current_page->post_title; ?></h2>
-        <nav class="box_nav smaller_arial_caps">
 <?php
-    if($page == 'Our Products') {
+    if($page == 'Our Work') {
+        $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
+        print_r($work_categories);
+
 ?>
-            <a id="whitebox_big_nav_all-products" class="whitebox_big_nav_item active">All Products</a>
+        <nav class="box_nav smaller_arial_caps">
+            <a id="whitebox_big_nav_all-products" class="whitebox_big_nav_item active">All Projects</a>
+            <span class="seperator seperator_smaller">|</span>
+            <a id="whitebox_big_nav_social-media-ready" class="whitebox_big_nav_item" onclick="javascript: expand('social-media-ready');">social media ready</a>
+            <span class="seperator seperator_smaller">|</span>
+            <a id="whitebox_big_nav_impact-projects" class="whitebox_big_nav_item" onclick="javascript: expand('impact-projects');">impact projects</a>
+            <span class="seperator seperator_smaller">|</span>
+            <a id="whitebox_big_nav_consulting" class="whitebox_big_nav_item" onclick="javascript: expand('consulting');">Consulting</a>
+        </nav>
 <?php
     }
 ?>
-        </nav>
     </header>
     <hr />
     <div id="whitebox_big_all_items" class="whitebox_big_category">
-                    <div class="whitebox_big_category_page smaller_arial_caps">
-                        <a id="whitebox_nav_1" class="whitebox_big_category_page_item active">1</a>
-                        <a class="whitebox_big_category_page_item_arrow">►</a>
-                    </div><!-- .whitebox_big_category_page -->
                     <hr class="solid">
 <?php
     $item_count = 0;
@@ -556,7 +560,7 @@ function big_whitebox($atts) {
                                 <header>
                                     <h3 class="whitebox_big_category_entry_title">
                                     <span class="whitebox_big_category_entry_title_label"><?php echo ($page == 'Our Products') ? 'product' : 'client'; ?>:</span>
-                                        <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, (($page == 'Product') ? 'RAAK Products' : 'Client'), TRUE); ?></span>
+                                        <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, (($page == 'Product') ? 'Product' : 'Client'), TRUE); ?></span>
                                     </h3><!-- .whitebox_big_category_entry_title -->
                                 </header>
                                 <hr class="solid">
