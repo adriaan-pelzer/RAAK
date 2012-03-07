@@ -526,7 +526,7 @@ function big_whitebox_products() {
         </nav>
     </header>
     <hr />
-    <div id="whitebox_big_all_items" class="whitebox_big_category">
+    <div class="whitebox_big_all_items">
                     <!-- hr class="solid" -->
 <?php
     $item_count = 0;
@@ -644,7 +644,7 @@ function big_whitebox_projects() {
         </nav>
     </header>
     <hr />
-    <div id="whitebox_big_all_items" class="whitebox_big_category">
+    <div class="whitebox_big_all_items">
                     <!-- hr class="solid" -->
 <?php
     $all_projects_loop = new WP_Query(array('category_name' => 'RAAK Projects', 'posts_per_page' => -1));
