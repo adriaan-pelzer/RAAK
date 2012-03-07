@@ -166,6 +166,7 @@ var ourWorkCatDisplay = function() {
             $(this).addClass('active');
             var splitPoint = $(this).attr('id').lastIndexOf('_');
             var currentID = $(this).attr('id').substring(splitPoint);
+            console.log(currentID);
             $('.whitebox_big_category.current').removeClass('current');
             $('#whitebox_big_' + currentID).addClass('current');
         }
