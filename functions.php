@@ -515,9 +515,9 @@ add_shortcode('contactbb', 'contact_bluebox');
 function big_whitebox($atts) {
     extract(shortcode_atts(array('page' => ''), $atts));
     $current_page = get_page_by_title($page);
-    $current_page_posts_loop = new WP_Query(array('cat' => get_cat_id((($page == 'Our Products') ? 'RAAK Products' : 'RAAK Projects')), 'posts_per_page' => 18));
+    $current_page_posts_loop = new WP_Query(array('category_name' => (($page == 'Our Products') ? 'RAAK Products' : 'RAAK Projects'), 'posts_per_page' => -1));
 
-    $total_pages = (floor($current_page_posts_loop->post_count / 9)) +1;
+    $total_rows = (ceil($current_page_posts_loop->post_count / 3));
     print_r($current_page_posts_loop);
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
@@ -542,16 +542,15 @@ function big_whitebox($atts) {
                     <hr class="solid">
 <?php
     $item_count = 0;
-    for($page_count = 0; $page_count < $total_pages; $page_count++) {
 ?>
-                    <div id="whitebox_big_all-products_<?php echo $page_count; ?>" class="whitebox_big_category smaller_arial_caps">
+                    <div id="whitebox_big_all-products" class="whitebox_big_category smaller_arial_caps">
 <?php
-        for($row_count = 0; $row_count < (($page == 'Our Products') ? '3' : '6'); $row_count++) {
+    for($row_count = 0; $row_count < ; $row_count++) {
 ?>
                         <div id="whitebox_big_category_row<?php echo $row_count; ?>" class="whitebox_big_category_row">
 <?php
-            for($row_item = 0; $row_item < 3; $row_item++) {
-                if ($current_page_posts_loop->posts[$item_count]) {
+        for($row_item = 0; $row_item < (($total_rows > 3) ? $total_rows : 3); $row_item++) {
+            if ($current_page_posts_loop->posts[$item_count]) {
 ?>
                             <div class="whitebox_big_category_entry" id="category_entry_<?echo $item_count; ?>">
                                 <header>
@@ -571,23 +570,20 @@ function big_whitebox($atts) {
                                 </a>
                             </div><!-- .whitebox_big_category_entry -->
 <?php
-                } else {
+            } else {
 ?>
                             <div class="whitebox_big_category_entry">
                             </div><!-- .whitebox_big_category_entry -->
 <?php
-                }
-                $item_count++;
             }
+            $item_count++;
+        }
 ?>
                         </div><!-- #whitebox_big_category_row<?php echo $row_count; ?> -->
 <?php
-        }
-?>
-                    </div><!-- #whitebox_big_all-products_<?php echo $page_count; ?> -->
-<?php
     }
 ?>
+                    </div><!-- #whitebox_big_all-products -->
                 </div><!-- #whitebox_big_all-items -->
             </div>
 <?php
