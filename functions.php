@@ -602,9 +602,6 @@ function big_whitebox_projects() {
 }
 ?>
         </nav>
-<?php
-    }
-?>
     </header>
     <hr />
     <div id="whitebox_big_all_items" class="whitebox_big_category">
