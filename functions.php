@@ -524,9 +524,6 @@ function big_whitebox_products() {
         <nav class="box_nav smaller_arial_caps">
             <a id="whitebox_big_nav_all-products" class="whitebox_big_nav_item active">All Products</a>
         </nav>
-<?php
-    }
-?>
     </header>
     <hr />
     <div id="whitebox_big_all_items" class="whitebox_big_category">
