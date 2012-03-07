@@ -745,6 +745,7 @@ function single_project_whitebox() {
 <?php
                 }
             }
+?>
         </nav>
     </header>
         <hr />
