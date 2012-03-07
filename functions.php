@@ -674,7 +674,7 @@ function big_whitebox_projects() {
                                         <?php echo get_image ($all_projects_loop->posts[$item_count]->post_content, 220, 142); ?>
                                     </div><!-- post_all-products_<?php echo $item_count; ?>_picture -->
                                     <div id="post_all-products_<?php echo $item_count; ?>_overview" class="whitebox_big_category_entry_content_overview">
-                                        <p><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Overview', TRUE); ?></p>
+                                        <p><?php echo get_post_meta($all_projects_loop->posts[$item_count]->ID, 'Overview', TRUE); ?></p>
                                     </div><!-- #post_<?php echo $item_count; ?>_overview -->
                                 </a>
                             </div><!-- .whitebox_big_category_entry -->
