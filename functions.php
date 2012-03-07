@@ -626,7 +626,8 @@ function big_whitebox_projects() {
                                         <p>' . get_post_meta($current_cat_loop->posts[$children_cats_item_count]->ID, 'Overview', TRUE) . '</p>
                                     </div><!-- #post_' . $children_cats_item_count . '_overview -->
                                 </a>
-                                </div><!-- .whitebox_big_category_entry -->';
+                                </div><!-- .whitebox_big_category_entry -->
+                                ';
                     } else {
                         $children_cats .= '<div class="whitebox_big_category_entry">
                             </div><!-- .whitebox_big_category_entry -->
