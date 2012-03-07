@@ -737,12 +737,12 @@ function single_project_whitebox() {
 
 ?>
         <nav class="box_nav smaller_arial_caps">
-        <a href=<?php echo get_permalink($our_work->ID); ?>/?category=all-projects" id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active">All Projects</a>
+        <a href="<?php echo get_permalink($our_work->ID); ?>?category=all-projects" id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active">All Projects</a>
 <?php 
                 foreach ($work_categories as $work_category) {
 ?>
             <span class="seperator seperator_smaller">|</span>
-            <a href="<?php echo get_permalink($our_work->ID); ?>/?category=<?php echo $work_category->category_nicename; ?>" id="whitebox_big_nav_<?php echo $work_category->category_nicename; ?>" class="whitebox_big_nav_item"><?php echo $work_category->name; ?></a>
+            <a href="<?php echo get_permalink($our_work->ID); ?>?category=<?php echo $work_category->category_nicename; ?>" id="whitebox_big_nav_<?php echo $work_category->category_nicename; ?>" class="whitebox_big_nav_item"><?php echo $work_category->name; ?></a>
 <?php
                 }
             }
