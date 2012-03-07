@@ -531,7 +531,7 @@ function big_whitebox_products() {
 <?php
     $item_count = 0;
 ?>
-                    <div id="whitebox_big_all-products" class="whitebox_big_category smaller_arial_caps">
+                    <div id="whitebox_big_all-products" class="whitebox_big_category smaller_arial_caps current">
 <?php
     for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
 ?>
@@ -605,7 +605,7 @@ function big_whitebox_projects() {
             $current_cat_loop = new WP_Query(array('category_name' => ($work_category->name), 'posts_per_page' => -1));
             $total_rows = (ceil($all_projects_loop->post_count / 3));
             $children_cats_item_count = 0;
-            $children_cats .= '<div id="whitebox_big_' . $work_category->category_nicename . '" class="whitebox_big_category smaller_arial_caps current">';
+            $children_cats .= '<div id="whitebox_big_' . $work_category->category_nicename . '" class="whitebox_big_category smaller_arial_caps">';
             for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
                 $children_cats .= '<div id="whitebox_big_category_row' . $row_count . '" class="whitebox_big_category_row">';
                 for($row_item = 0; $row_item < 3; $row_item++) {
@@ -629,7 +629,8 @@ function big_whitebox_projects() {
                                 </div><!-- .whitebox_big_category_entry -->';
                     } else {
                         $children_cats .= '<div class="whitebox_big_category_entry">
-                            </div><!-- .whitebox_big_category_entry -->';
+                            </div><!-- .whitebox_big_category_entry -->
+                            ';
                     }
                     $children_cats_item_count++;
                 }

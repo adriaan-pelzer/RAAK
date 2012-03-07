@@ -1247,6 +1247,15 @@ h3.expanded_letter {
     display: block;
 }
 
+.whitebox_big_category {
+   display: none;
+}
+
+
+.whitebox_big_category.current {
+   display: block;
+} 
+
 /************** SINGLE PRODUCT ***********/
 
 .whitebox_primary_section {
