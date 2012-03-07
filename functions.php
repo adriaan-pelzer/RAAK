@@ -512,30 +512,17 @@ add_shortcode('contactbb', 'contact_bluebox');
 
 /*************************/
 
-function big_whitebox($atts) {
-    extract(shortcode_atts(array('page' => ''), $atts));
-    $current_page = get_page_by_title($page);
-    $current_page_posts_loop = new WP_Query(array('category_name' => (($page == 'Our Products') ? 'RAAK Products' : 'RAAK Projects'), 'posts_per_page' => -1));
+function big_whitebox_products() {
+    $current_page = get_page_by_title('Our Products');
+    $current_page_posts_loop = new WP_Query(array('category_name' => 'RAAK Products', 'posts_per_page' => -1));
 
     $total_rows = (ceil($current_page_posts_loop->post_count / 3));
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
     <h2 class="din-schrift blue_20"><?php echo $current_page->post_title; ?></h2>
-<?php
-    if($page == 'Our Work') {
-        $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
-        print_r($work_categories);
-
-?>
         <nav class="box_nav smaller_arial_caps">
-            <a id="whitebox_big_nav_all-products" class="whitebox_big_nav_item active">All Projects</a>
-            <span class="seperator seperator_smaller">|</span>
-            <a id="whitebox_big_nav_social-media-ready" class="whitebox_big_nav_item" onclick="javascript: expand('social-media-ready');">social media ready</a>
-            <span class="seperator seperator_smaller">|</span>
-            <a id="whitebox_big_nav_impact-projects" class="whitebox_big_nav_item" onclick="javascript: expand('impact-projects');">impact projects</a>
-            <span class="seperator seperator_smaller">|</span>
-            <a id="whitebox_big_nav_consulting" class="whitebox_big_nav_item" onclick="javascript: expand('consulting');">Consulting</a>
+            <a id="whitebox_big_nav_all-products" class="whitebox_big_nav_item active">All Products</a>
         </nav>
 <?php
     }
@@ -543,7 +530,7 @@ function big_whitebox($atts) {
     </header>
     <hr />
     <div id="whitebox_big_all_items" class="whitebox_big_category">
-                    <hr class="solid">
+                    <!-- hr class="solid" -->
 <?php
     $item_count = 0;
 ?>
@@ -594,7 +581,94 @@ function big_whitebox($atts) {
     wp_reset_query();
 }
 
-add_shortcode('bwb', 'big_whitebox');
+add_shortcode('bwb_prod', 'big_whitebox_products');
+/*************************/
+
+function big_whitebox_projects() {
+    $current_page = get_page_by_title('Our Work');
+?>
+<div class="whitebox_big whitebox box big_box rounded-corners">
+    <header>
+    <h2 class="din-schrift blue_20"><?php echo $current_page->post_title; ?></h2>
+<?php
+    if($page == 'Our Work') {
+        $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
+        print_r($work_categories);
+
+?>
+        <nav class="box_nav smaller_arial_caps">
+            <a id="whitebox_big_nav_all-projects" class="whitebox_big_nav_item active">All Projects</a>
+<?php 
+        $cat_show = '<div id="whitebox_big_all_items" class="whitebox_big_category">';
+        foreach ($work_categories as $work_category) {
+?>
+            <span class="seperator seperator_smaller">|</span>
+            <a id="whitebox_big_nav_<?php echo $work_category->category_nicename; ?>" class="whitebox_big_nav_item"><?php echo $work_category->name; ?></a>
+<?php
+}
+?>
+        </nav>
+<?php
+    }
+?>
+    </header>
+    <hr />
+    <div id="whitebox_big_all_items" class="whitebox_big_category">
+                    <!-- hr class="solid" -->
+<?php
+    $all_projects_loop = new WP_Query(array('category_name' => 'RAAK Projects', 'posts_per_page' => -1));
+
+    $total_rows = (ceil($all_projects_loop->post_count / 3));
+    $item_count = 0;
+?>
+                    <div id="whitebox_big_all-projects" class="whitebox_big_category smaller_arial_caps current">
+<?php
+    for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
+?>
+                        <div id="whitebox_big_category_row<?php echo $row_count; ?>" class="whitebox_big_category_row">
+<?php
+        for($row_item = 0; $row_item < 3; $row_item++) {
+            if ($current_page_posts_loop->posts[$item_count]) {
+?>
+                            <div class="whitebox_big_category_entry" id="category_entry_<?echo $item_count; ?>">
+                                <header>
+                                    <h3 class="whitebox_big_category_entry_title">
+                                    <span class="whitebox_big_category_entry_title_label"><?php echo ($page == 'Our Products') ? 'product' : 'client'; ?>:</span>
+                                        <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, (($page == 'Product') ? 'Product' : 'Client'), TRUE); ?></span>
+                                    </h3><!-- .whitebox_big_category_entry_title -->
+                                </header>
+                                <hr class="solid">
+                                <a class="whitebox_big_category_entry_content" href="<?php echo get_permalink($current_page_posts_loop->posts[$item_count]->ID); ?>">
+                                    <div id="post_all-products_<?php echo $item_count; ?>_picture" class="whitebox_big_category_entry_content_picture current">
+                                        <?php echo get_image ($current_page_posts_loop->posts[$item_count]->post_content, 220, 142); ?>
+                                    </div><!-- post_all-products_<?php echo $item_count; ?>_picture -->
+                                    <div id="post_all-products_<?php echo $item_count; ?>_overview" class="whitebox_big_category_entry_content_overview">
+                                        <p><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Overview', TRUE); ?></p>
+                                    </div><!-- #post_<?php echo $item_count; ?>_overview -->
+                                </a>
+                            </div><!-- .whitebox_big_category_entry -->
+<?php
+            } else {
+?>
+                            <div class="whitebox_big_category_entry">
+                            </div><!-- .whitebox_big_category_entry -->
+<?php
+            }
+            $item_count++;
+        }
+?>
+                        </div><!-- #whitebox_big_category_row<?php echo $row_count; ?> -->
+<?php
+    }
+?>
+                    </div><!-- #whitebox_big_all-products -->
+                </div><!-- #whitebox_big_all-items -->
+            </div>
+<?php
+    wp_reset_query();
+}
+
+add_shortcode('bwb_proj', 'big_whitebox_projects');
 
 /*************************/
 

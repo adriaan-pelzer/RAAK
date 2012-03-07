@@ -7,7 +7,7 @@ Template Name: Our Work
 
 	<div class="container rounded-corners our_work">
 		<div class="content">
-<?php do_shortcode('[bwb page="Our Work"]'); ?>
+<?php do_shortcode('[bwb_proj]'); ?>
 		</div><!-- content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
