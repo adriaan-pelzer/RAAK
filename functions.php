@@ -820,7 +820,6 @@ function search_box() {
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
-<?php get_search_form(); ?>
         <form method="get" action="http://www.google.com/search">
             <input class="whitebox_big_search smaller_arial_caps" type="submit" value="Search" />
             <input type="text" id="searchtext" name="q" maxlength="255" value="" />
