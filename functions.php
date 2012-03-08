@@ -37,11 +37,11 @@ function display_latest_posts($atts) {
             <h2>Latest Posts</h2>
         </header>
     </div><!-- .grey_tab -->
-    <div class="whitebox whitebox-primary whitebox_primary box rounded-corners">
+    <div class="whitebox whitebox_primary box rounded-corners">
 <?php
     } else {
 ?>
-    <div class="whitebox_top_margin whitebox whitebox_primary box rounded-corners">
+    <div class="whitebox_top_margin whitebox-primary whitebox whitebox_primary box rounded-corners">
 <?php
     }
     for($page = 1; $page <= $num_pages; $page++) {
