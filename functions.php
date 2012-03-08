@@ -27,6 +27,9 @@ add_shortcode('logo_cta', 'logo_call_to_action');
 function display_latest_posts($atts) {
     extract(shortcode_atts(array('category' => '0', 'posts_per_page' => '2', 'num_pages' => '10'), $atts));
     $blog_archive_page = get_page_by_title('Blog Archive');
+    $current_page_title = get_the_title();
+    if !($current_page_title == 'Our Blog') {
+
 ?>
 <div class="tab_container whitebox-primary">
     <div class="grey_tab tab tab104 rounded-corners">
@@ -34,6 +37,9 @@ function display_latest_posts($atts) {
             <h2>Latest Posts</h2>
         </header>
     </div><!-- .grey_tab -->
+<?php
+    }
+?>
     <div class="whitebox whitebox_primary box rounded-corners">
 <?php
     for($page = 1; $page <= $num_pages; $page++) {
@@ -85,8 +91,12 @@ function display_latest_posts($atts) {
             </div><!-- .whitebox_primary_footer_right -->
         </footer><!-- .whitebox_primary_footer -->
     </div><!-- whitebox_primary -->
+<?php
+    if !($current_page_title == 'Our Blog') {
+?>
 </div><!-- tab_container -->
 <?php
+    }
 }
 
 add_shortcode('latest_posts', 'display_latest_posts');

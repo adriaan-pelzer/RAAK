@@ -8,64 +8,7 @@ Template Name: Blog
     <div class="container rounded-corners blog">
         <div class="content">
 <?php do_shortcode('[sb]'); ?>
-            <div class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
-                <div id="whitebox_primary_post_0" class="whitebox_primary_post">
-                    <article>
-                        <header>
-                            <h3><a href="<?php echo get_page_link(5236); ?>">With blocking functionality Twitter opens a Pandora's Box</a></h3>
-                        </header>
-                        <hr />
-                        <div class="whitebox_primary_post_attr">
-                            <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/wessel/">Wessel van Rensburg</a></span>
-                            <span class="seperator">|</span>
-                            <span class="whitebox_primary_post_attr_item date">27 Jan 2012</span>
-                            <span class="seperator">|</span>
-                            <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
-                        </div><!-- .whitebox_primary_attr -->
-                        <div class="whitebox_primary_post_content">
-                            <div class="whitebox_primary_post_content_right">
-                                    <a href="<?php echo get_page_link(5236); ?>"><img src="http://wewillraakyou.com/wp-content/uploads/2012/01/pandora-twitter.jpg" alt="" title="pandora-twitter"  width="162" height="104" /></a>
-                                    <a class="more_link" href="<?php echo get_page_link(5236); ?>">More &#9658;</a>
-                            </div><!-- .whitebox_primary_content_right -->
-                            <p>
-                                RAAK thinks Twitter has opened itself up to governments and corporations of all kinds by introducing country based filtering technology. See a Storify of Tweets on the issue curated by us.
-                            </p><!-- .whitebox_primary_content_left -->
-                        </div><!-- .whitebox_primary_content -->
-                        <hr class="solid" />
-                    </article>
-                    <article>
-                        <header>
-                            <h3><a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/">The RAAKonteur #69 - Apple out to smash textbook publishing & SEO by Celebrity</a></h3>
-                        </header>
-                        <hr />
-                        <div class="whitebox_primary_post_attr">
-                            <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
-                            <span class="seperator">|</span>
-                            <span class="whitebox_primary_post_attr_item date">24 Jan 2012</span>
-                            <span class="seperator">|</span>
-                            <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
-                        </div><!-- .whitebox_primary_attr -->
-                        <div class="whitebox_primary_post_content">
-                            <div class="whitebox_primary_post_content_right">
-                                <a href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/"><img title="ebooks" src="http://wewillraakyou.com/wp-content/uploads/2012/01/ebooks.jpeg" alt="ebooks"  width="162" height="104" /></a>
-                                <a class="more_link" href="http://wewillraakyou.com/2012/01/the-raakonteur-69-apple-out-to-smash-textbook-publishing-seo-by-celebrity/">More &#9658;</a>
-                            </div><!-- .whitebox_primary_content_right -->
-                            <p>
-                                On Wednesday we blacked out in protest against SOPA. For a brilliant summary on how SOPA can destroy the Internet, check out <a href="http://www.ted.com/talks/defend_our_freedom_to_share_or_why_sopa_is_a_bad_idea.html?awesm=on.ted.com_ACxO">this TED talk by Clay Shirky</a>.
-                            </p><!-- whitebox_primary_content_left -->
-                        </div><!-- .whitebox_primary_content -->
-                        <hr class="solid" />
-                    </article>
-                </div>
-                <footer class="whitebox_primary_footer box_nav small_arial_caps">
-                    <a class="whitebox_primary_footer_left"  href="<?php echo get_page_link(5238); ?>">All blog posts</a>
-                    <div class="whitebox_primary_footer_right">
-                        <a onclick="javascript: previous();"><span class="arrow">&#9668;</span>Previous</a>
-                        <span class="seperator">|</span>
-                        <a class="active" onclick="javascript: next();">Next<span class="arrow">&#9658;</span></a>
-                    </div><!-- .whitebox_primary_footer_right -->
-                </footer><!-- .whitebox_primary_footer -->
-            </div><!-- whitebox_primary -->
+<?php do_shortcode('[latest_posts]'); ?>
             <div class="tab_container bluebox-primary other_posts">
                 <div class="blue_tab tab tab108 rounded-corners">
                     <header>
