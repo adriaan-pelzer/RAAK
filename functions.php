@@ -164,7 +164,7 @@ function display_other_posts($atts) {
     extract(shortcode_atts(array('category1' => '', 'category2' => '', 'category3' => '', 'colourscheme' => 'white'), $atts));
     $cats_array = array();
     foreach($atts as $key => $value) {
-        if (strpos($key, 'category')) {
+        if ((strpos($key, 'category')) != FALSE) {
         $cats_array[$key] = $value;
         }
     }
