@@ -181,8 +181,8 @@ function display_other_posts($atts) {
         <header>
             <h2>Other Posts</h2>
         </header>
-    </div><!-- .grey_tab -->
-    <div class="<?php echo ($box_colour == 'white') ? 'whitebox_secondary' : 'bluebox_primary'; ?> <?php echo $box_colour; ?>box box rounded-corners">
+    </div><!-- .<?php echo $tab_colour; ?>_tab -->
+    <div class="<?php echo ($box_colour == 'white') ? 'whitebox_secondary' : 'bluebox_primary blog_bluebox_primary'; ?> <?php echo $box_colour; ?>box box rounded-corners">
 <?php
     foreach($cats_array as $cat_num => $cat) {
         if($cat_num == 'category1') {
@@ -234,7 +234,7 @@ function display_other_posts($atts) {
         }
     }
 ?>
-    </div><!-- #<?php echo $box_colour; ?>_secondary -->
+    </div><!-- <?php echo ($box_colour == 'white') ? 'whitebox_secondary' : 'bluebox_primary'; ?> -->
 </div><!-- tab_container -->
 <?php
 }
