@@ -8,7 +8,7 @@ Template Name: Blog
     <div class="container rounded-corners blog">
         <div class="content">
 <?php do_shortcode('[sb]'); ?>
-<?php do_shortcode('[latest_posts]'); ?>
+<?php do_shortcode('[latest_posts category="Blog" posts_per_page="2" num_pages="10" ]'); ?>
             <div class="tab_container bluebox-primary other_posts">
                 <div class="blue_tab tab tab108 rounded-corners">
                     <header>
