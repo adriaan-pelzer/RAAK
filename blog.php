@@ -7,12 +7,7 @@ Template Name: Blog
 
     <div class="container rounded-corners blog">
         <div class="content">
-            <div class="whitebox_big whitebox box big_box rounded-corners">
-                <header>
-                    <span class="whitebox_big_search smaller_arial_caps"><a onclick="javascript: google_search();">Search</a><input type="text" id="searchtext" /></span>
-                    <h2 class="din-schrift blue_20">Our Blog</h2>
-                </header>
-            </div><!-- whitebox_big -->
+<?php do_shortcode('sb'); ?>
             <div class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
                 <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                     <article>

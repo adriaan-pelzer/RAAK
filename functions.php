@@ -813,6 +813,35 @@ function single_project_bluebox() {
 }
 
 add_shortcode('sp_bb', 'single_project_bluebox');
+
+/*************************/
+
+function search_box() {
+?>
+<div class="whitebox_big whitebox box big_box rounded-corners">
+    <header>
+<?php /*get_search_form(); */?>
+<div id="cse" style="width: 100%;">Loading</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+  google.load('search', '1', {language : 'en'});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+      '002484704682158685660:pp9vm_v9zdi', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    customSearchControl.draw('cse');
+  }, true);
+</script>
+<link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
+      
+        <!--span class="whitebox_big_search smaller_arial_caps"><a onclick="javascript: google_search();">Search</a><input type="text" id="searchtext"></span -->
+            <h2 class="din-schrift blue_20"><?php the_title(); ?></h2>
+    </header>
+</div><!-- whitebox_big -->
+
+<?php
+}
+add_shortcode('sb', 'search_box');
 ?>
 <?php 
 /***************************** From local functions on old site **************************/
