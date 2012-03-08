@@ -833,6 +833,8 @@ function search_box() {
 
 <?php
 }
+
+add_shortcode('sb', 'search_box');
 ?>
 <?php 
 /***************************** From local functions on old site **************************/
