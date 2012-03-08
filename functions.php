@@ -182,7 +182,7 @@ function display_other_posts($atts) {
             <h2>Other Posts</h2>
         </header>
     </div><!-- .grey_tab -->
-    <div class="<?php echo $box_colour; ?>box_secondary <?php echo $box_colour; ?>box box rounded-corners">
+    <div class="<?php echo ($box_colour == 'white') ? 'whitebox_secondary' : 'bluebox_primary'; ?> <?php echo $box_colour; ?>box box rounded-corners">
 <?php
     foreach($cats_array as $cat_num => $cat) {
         if($cat_num == 'category1') {
