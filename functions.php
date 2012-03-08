@@ -863,6 +863,8 @@ add_shortcode('sb', 'search_box');
 
 function category_box() {
     extract(shortcode_atts(array('tab1' => '', 'tab2' => ''), $atts));
+    echo $tab1;
+    echo $tab2;
 ?>
 <div class="whitebox-secondary tab_container">
 <?php
@@ -895,6 +897,7 @@ function category_box() {
 <?php
     
     $most_viewed = new WP_Query(array('orderby' => 'meta_value', 'meta_key' => 'postviews', 'posts_per_page' => 6, 'paged' => 1));
+    print_r($most_viewed);
     foreach($most_viewed as $viewed_post) {
 ?>
 
