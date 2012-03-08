@@ -898,7 +898,7 @@ function category_box() {
     foreach($most_viewed as $viewed_post) {
 ?>
 
-                <li><a href="<?php echo get_permalink($viewed_post->ID); ?>"><?php echo the_title(); ?></a></li>
+                <li><a href="<?php echo get_permalink($viewed_post->ID); ?>"><?php echo $viewed_post->post_title; ?></a></li>
 <?php
     }
     wp_reset_query();
