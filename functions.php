@@ -858,8 +858,88 @@ function search_box() {
 }
 
 add_shortcode('sb', 'search_box');
+
+/*************************/
+
+function category_box() {
+    extract(shortcode_atts(array('tab1' => '', 'tab2' => ''), $atts));
+?>
+<div class="whitebox-secondary tab_container">
+<?php
+    if ($tab2 != '') {
+?>
+    <div class="multiple_tabs">
+        <header>
+            <div class="tab rounded-corners tab108 active">
+            <h3><a id="<?php echo $tab1; ?>"></a><?php echo str_replace('-', ' ', $tab1); ?></a></h3>
+            </div>
+            <div class="tab rounded-corners tab108">
+                <h3><a id="<?php echo $tab2; ?>"></a><?php echo str_replace('-', ' ', $tab2); ?></a></h3>
+            </div>
+        </header>
+    </div><!-- multiple_tabs -->
+<?php
+    } else {
+?>
+    <div class="tab rounded-corners tab108 active">
+        <header>
+            <h3><a id="<?php echo $tab1; ?>"></a><?php echo str_replace('-', ' ', $tab1); ?></a></h3>
+        </header>
+<?php
+    }
+?>
+    </div>
+    <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
+        <div id="whitebox_secondary_mostviewed" class="currnet">
+            <ul>
+<?php
+    
+    $most_viewed = new WP_Query(array('orderby' => 'meta_value', 'meta_key' => 'views', 'posts_per_page' => 5, 'paged' => 1);
+    print_r($most_viewed);
+?>
+
+                <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
+                <li><a href="http://wewillraakyou.com/2011/06/google-plusone-button-howto/">How to add a Google +1 button to your website</a></li>
+                <li><a href="http://wewillraakyou.com/2010/02/the-answer-to-die-antwoords-marketing-social-media/">The answer to Die Antwoord's marketing success</a></li>
+                <li><a href="http://wewillraakyou.com/2010/07/facebook-extended-permissions-theyre-not-as-bad-as-you-think-they-are/">Facebook Extended Permissions – they're not as bad as you think they are</a></li>
+                <li><a href="http://wewillraakyou.com/2011/06/twitter-steals-devnest/">Twitter eats its Babies</a></li>
+                <li><a href="http://wewillraakyou.com/2010/10/how-do-url-shorteners-work/">How do URL shorteners work?</a></li>
+            </ul>
+        </div><!-- #whitebox_secondary_mostviewed -->
+        <div id="whitebox_secondary_category">
+            <ul>
+                <li><a href="http://stage.wewillraakyou.com/blog-2/blog-category/">Inspiration</a></li>
+                <li><a href="http://wewillraakyou.com/category/Must%20Read/">Must Read</a></li>
+                <li><a href="http://wewillraakyou.com/category/RAAKonteur/">RAAKonteur</a></li>
+                <li><a href="http://wewillraakyou.com/category/Worth%20a%20look/">Worth a look</a></li>
+            </ul>
+        </div><!-- #whitebox_secondary_category -->
+    </div><!-- whitebox_secondary -->
+</div>
+
+<?php
+}
+
+add_shortcode('cat_box', 'category_box');
+
 ?>
 <?php 
+
+/***************************** copy/paste from net to track post views as meta **************************/
+
+function setPostViews($postID) {
+    $count_key = 'views';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+
 /***************************** From local functions on old site **************************/
 
 function patch_dimensions ($code, $width, $height) {
