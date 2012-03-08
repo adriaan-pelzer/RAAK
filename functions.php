@@ -162,7 +162,9 @@ add_shortcode('our_work', 'our_work');
 
 function display_other_posts($atts) {
     extract(shortcode_atts(array('category1' => '', 'category2' => '', 'category3' => '', 'colourscheme' => 'white'), $atts));
-    print_r($atts);
+    for($element = 0; $element <= sizeof($atts); $element++) {
+        echo $element . ':' . $atts[$element];
+    }
     if($colourscheme == 'white') {
         $box_colour = 'white';
         $tab_colour = 'grey';
