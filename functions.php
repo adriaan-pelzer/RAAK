@@ -168,7 +168,6 @@ function display_other_posts($atts) {
         $cats_array[$key] = $value;
         }
     }
-    print_r ($cats_array);
     if($colourscheme == 'white') {
         $box_colour = 'white';
         $tab_colour = 'grey';
@@ -185,7 +184,7 @@ function display_other_posts($atts) {
     </div><!-- .grey_tab -->
     <div class="<?php echo $box_colour; ?>box_secondary <?php echo $box_colour; ?>box box rounded-corners">
 <?php
-    foreach($atts as $cat_num => $cat) {
+    foreach($cats_array as $cat_num => $cat) {
         if($cat_num == 'category1') {
 ?>
         <section class="other_posts_content_one">
