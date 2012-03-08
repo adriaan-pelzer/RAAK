@@ -162,8 +162,8 @@ add_shortcode('our_work', 'our_work');
 
 function display_other_posts($atts) {
     extract(shortcode_atts(array('category1' => '', 'category2' => '', 'category3' => '', 'colourscheme' => 'white'), $atts));
-    for($element = 0; $element <= sizeof($atts); $element++) {
-        echo $element . ':' . $atts[$element];
+    foreach($atts as $key => $value) {
+        echo $key;
     }
     if($colourscheme == 'white') {
         $box_colour = 'white';
