@@ -162,6 +162,7 @@ add_shortcode('our_work', 'our_work');
 
 function display_other_posts($atts) {
     extract(shortcode_atts(array('category1' => '', 'category2' => '', 'category3' => '', 'colourscheme' => 'white'), $atts));
+    print_r($atts);
     if($colourscheme == 'white') {
         $box_colour = 'white';
         $tab_colour = 'grey';
@@ -170,13 +171,13 @@ function display_other_posts($atts) {
         $tab_colour = 'blue';
     }
 ?>
-<div class="tab_container <?php echo $box_colour; ?>box-secondary other_posts">
+<div class="tab_container <?php echo ($box_colour == 'white') ? 'whitebox-secondary' : 'bluebox-primary'; ?> other_posts">
     <div class="<?php echo $tab_colour; ?>_tab tab tab104 rounded-corners">
         <header>
             <h2>Other Posts</h2>
         </header>
     </div><!-- .grey_tab -->
-    <div class="<?php echo $box_colour; ?>box_secondary whitebox box rounded-corners">
+    <div class="<?php echo $box_colour; ?>box_secondary <?php echo $box_colour; ?>box box rounded-corners">
 <?php
     foreach($atts as $cat_num => $cat) {
         if($cat_num == 'category1') {
