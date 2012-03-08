@@ -826,7 +826,7 @@ function search_box() {
             <input type="hidden"  name="sitesearch" value="wewillraakyou.com" />
         </form>
         <!-- span class="whitebox_big_search smaller_arial_caps"><a onclick="javascript: google_search();">Search</a><input type="text" id="searchtext"></span -->
-        <h2 class="din-schrift blue_20">Our Blog</h2>
+        <h2 class="din-schrift blue_20"><?php the_title(); ?></h2>
     </header>
 </div>
 
