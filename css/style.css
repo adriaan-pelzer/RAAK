@@ -1404,11 +1404,11 @@ form.wpcf7-form span {
 
 /************** BLOG *******************/
 
-.whitebox_big_search .sumbit_button, .whitebox_big_search a {
+.whitebox_big_search .submit_button, .whitebox_big_search a {
     color: #666666;
 }
 
-.whitebox_big_search .sumbit_button {
+.whitebox_big_search .submit_button {
     border-color: #ffffff;
     width: auto;
 }
