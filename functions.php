@@ -168,7 +168,7 @@ function display_other_posts($atts) {
         $cats_array[$key] = $value;
         }
     }
-    print_r $cats_array;
+    print_r ($cats_array);
     if($colourscheme == 'white') {
         $box_colour = 'white';
         $tab_colour = 'grey';
