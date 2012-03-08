@@ -28,7 +28,7 @@ function display_latest_posts($atts) {
     extract(shortcode_atts(array('category' => '0', 'posts_per_page' => '2', 'num_pages' => '10'), $atts));
     $blog_archive_page = get_page_by_title('Blog Archive');
     $current_page_title = get_the_title();
-    if !($current_page_title == 'Our Blog') {
+    if ($current_page_title != 'Our Blog') {
 
 ?>
 <div class="tab_container whitebox-primary">
@@ -92,7 +92,7 @@ function display_latest_posts($atts) {
         </footer><!-- .whitebox_primary_footer -->
     </div><!-- whitebox_primary -->
 <?php
-    if !($current_page_title == 'Our Blog') {
+    if ($current_page_title != 'Our Blog') {
 ?>
 </div><!-- tab_container -->
 <?php
