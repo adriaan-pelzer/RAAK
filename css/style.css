@@ -1404,11 +1404,20 @@ form.wpcf7-form span {
 
 /************** BLOG *******************/
 
-.whitebox_big_search a {
+.whitebox_big_search .sumbit_button, .whitebox_big_search a {
     color: #666666;
 }
 
-.whitebox_big_search input {
+.whitebox_big_search .sumbit_button {
+    border-color: #ffffff;
+    width: auto;
+}
+
+.whitebox_big_search .sumbit_button:hover {
+    cursor: pointer;
+}
+
+.whitebox_big_search input#searchtext {
     width: 280px;
     height: 25px;
     margin-left: 10px;

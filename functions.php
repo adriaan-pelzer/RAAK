@@ -820,8 +820,8 @@ function search_box() {
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
-        <form method="get" action="http://www.google.com/search">
-            <input class="whitebox_big_search smaller_arial_caps" type="submit" value="Search" />
+        <form class="whitebox_big_search smaller_arial_caps" method="get" action="http://www.google.com/search">
+            <input class="submit_button" type="submit" value="Search" />
             <input type="text" id="searchtext" name="q" maxlength="255" value="" />
             <input type="hidden"  name="sitesearch" value="wewillraakyou.com" />
         </form>
