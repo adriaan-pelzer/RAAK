@@ -7,7 +7,7 @@ Template Name: Blog
 
     <div class="container rounded-corners blog">
         <div class="content">
-<?php do_shortcode('sb'); ?>
+<?php do_shortcode('[sb]'); ?>
             <div class="whitebox whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
                 <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                     <article>
