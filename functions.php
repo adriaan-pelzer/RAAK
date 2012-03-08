@@ -36,8 +36,8 @@ function display_latest_posts($atts) {
         <header>
             <h2>Latest Posts</h2>
         </header>
-    <div class="whitebox whitebox_primary box rounded-corners">
     </div><!-- .grey_tab -->
+    <div class="whitebox whitebox_primary box rounded-corners">
 <?php
     } else {
 ?>
