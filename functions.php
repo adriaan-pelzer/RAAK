@@ -894,17 +894,17 @@ function category_box() {
             <ul>
 <?php
     
-    $most_viewed = new WP_Query(array('orderby' => 'meta_value', 'meta_key' => 'views', 'posts_per_page' => 5, 'paged' => 1));
-    print_r($most_viewed);
+    $most_viewed = new WP_Query(array('orderby' => 'meta_value', 'meta_key' => 'views', 'posts_per_page' => 6, 'paged' => 1));
+    foreach($most_viewed as $viewed_post) {
 ?>
 
-                <li><a href="http://wewillraakyou.com/2010/12/klout-is-broken/">Klout is broken</a></li>
-                <li><a href="http://wewillraakyou.com/2011/06/google-plusone-button-howto/">How to add a Google +1 button to your website</a></li>
-                <li><a href="http://wewillraakyou.com/2010/02/the-answer-to-die-antwoords-marketing-social-media/">The answer to Die Antwoord's marketing success</a></li>
-                <li><a href="http://wewillraakyou.com/2010/07/facebook-extended-permissions-theyre-not-as-bad-as-you-think-they-are/">Facebook Extended Permissions – they're not as bad as you think they are</a></li>
-                <li><a href="http://wewillraakyou.com/2011/06/twitter-steals-devnest/">Twitter eats its Babies</a></li>
-                <li><a href="http://wewillraakyou.com/2010/10/how-do-url-shorteners-work/">How do URL shorteners work?</a></li>
+                <li><a href="<?php echo get_permalink($viewed_post->ID); ?>"><?php echo the_title(); ?></a></li>
+<?php
+    }
+    wp_reset_query();
+?>
             </ul>
+
         </div><!-- #whitebox_secondary_mostviewed -->
         <div id="whitebox_secondary_category">
             <ul>
