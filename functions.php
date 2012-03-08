@@ -36,12 +36,14 @@ function display_latest_posts($atts) {
         <header>
             <h2>Latest Posts</h2>
         </header>
+    <div class="whitebox whitebox_primary box rounded-corners">
     </div><!-- .grey_tab -->
 <?php
-    }
+    } else {
 ?>
-    <div class="whitebox whitebox_primary box rounded-corners">
+    <div class="whitebox_top_margin whitebox whitebox_primary box rounded-corners">
 <?php
+    }
     for($page = 1; $page <= $num_pages; $page++) {
 ?>
         <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 1) { echo " current"; } ?>">

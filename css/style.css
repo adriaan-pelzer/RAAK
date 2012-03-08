@@ -275,7 +275,7 @@ strong, .bold {
     float: left;
 }
 
-.tab_container, .bluebox_top_margin {
+.tab_container, .bluebox_top_margin, .whitebox_top_margin {
     margin-top: 20px;
     display: inline-block;
 }
