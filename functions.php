@@ -896,7 +896,7 @@ function category_box() {
             <ul>
 <?php
     
-    $most_viewed = new WP_Query(array('orderby' => 'meta_value', 'meta_key' => 'postviews', 'posts_per_page' => 6, 'paged' => 1));
+    $most_viewed = new WP_Query(array('orderby' => 'meta_value', 'meta_key' => 'postviews', 'posts_per_page' => 6));
     print_r($most_viewed);
     foreach($most_viewed as $viewed_post) {
 ?>
@@ -931,7 +931,7 @@ add_shortcode('cat_box', 'category_box');
 /***************************** copy/paste from net to track post views as meta **************************/
 
 function setPostViews($postID) {
-    $count_key = 'views';
+    $count_key = 'postviews';
     $count = get_post_meta($postID, $count_key, true);
     if($count==''){
         $count = 0;
