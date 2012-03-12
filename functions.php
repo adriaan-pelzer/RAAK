@@ -897,8 +897,7 @@ function category_box() {
 <?php
     
     $most_viewed = new WP_Query(array('orderby' => 'meta_value', 'meta_key' => 'postviews', 'posts_per_page' => 6, 'paged' => 1));
-    print_r($most_viewed);
-    foreach($most_viewed as $posts => $viewed_post) {
+    foreach($most_viewed->$posts as $viewed_post) {
 ?>
 
                 <li><a href="<?php echo get_permalink($viewed_post->ID); ?>"><?php echo $viewed_post->post_title; ?></a></li>
