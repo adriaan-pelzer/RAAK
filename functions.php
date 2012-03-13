@@ -950,9 +950,9 @@ function single_blog_post() {
                     <hr>
                     <div class="whitebox_primary_post_attr">
                         <div class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="<?php echo get_permalink($author_page->ID);  ?>"><?php echo $author_full_name; ?></a></div>
-                        <div class="whitebox_primary_post_attr_item date"><?php the_date(); ?></div>
-                        <div class="whitebox_primary_post_attr_item time"><?php the_time(); ?></div>
-                        <div class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png">0 comments</div>
+                        <div class="whitebox_primary_post_attr_item date"><?php the_date('j F Y'); ?></div>
+                        <div class="whitebox_primary_post_attr_item time"><?php the_time('G:i'); ?></div>
+                        <div class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php comments_number('0 comments', '1 comment', '% comments'); ?></div>
                     </div><!-- .whitebox_primary_post_attr -->
                     <div class="whitebox_primary_share">
                         <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1329256447.html#_=1329402252634&amp;_version=2&amp;count=horizontal&amp;enableNewSizing=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fstage.wewillraakyou.com%2Fblog-2%2Fsingle-blog%2F&amp;related=RAAKonteurs&amp;size=m&amp;text=No%20wonder%20the%20MPAA%20is%20freaking%20out%3A%20Youtube%20serves%204%20billion%20movies%20per%20day%20%E2%98%85%20RAAK&amp;url=http%3A%2F%2Fstage.wewillraakyou.com%2Fblog-2%2Fsingle-blog%2F&amp;via=adriaan_pelzer" class="twitter-share-button twitter-count-horizontal" style="height: 20px; width: 110px; " title="Twitter Tweet Button"></iframe><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
