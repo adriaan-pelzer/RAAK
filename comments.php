@@ -9,7 +9,7 @@ if (have_comments()) {
         if ($comment->comment_approved == 1) {
             $timestamp = strtotime($comment->comment_date);
             if ($comment->comment_type != ('pingback' || 'trackback')) {
-                $comment_content = get_comment_text($comment->comment_ID)
+                $comment_content = get_comment_text($comment->comment_ID);
                 $comments_html .= '
                 <li id="comment-' . $comment->comment_ID . '" class="' . get_comment_type() . '">
                     <div class="comment-author vcard">' . get_avatar((($comment->user_id != 0) ? $comment->user_id : $comment->comment_author_email), $size = '32') . '
