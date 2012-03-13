@@ -149,8 +149,6 @@ var projectHover = function() {
 
 var galleryShowImg = function() {
     $('.bluebox_bigpic').html('<img width="315" height="203" title="' + $('.ngg-gallery-thumbnail a img').first().attr('title') + '" alt="' + $('.ngg-gallery-thumbnail a img').first().attr('alt') + '" src="' + $('.ngg-gallery-thumbnail a').first().attr('href') + '">');
-    
-
     $('.ngg-gallery-thumbnail a').click(function(event){
         event.preventDefault();
     });
@@ -173,11 +171,25 @@ var ourWorkCatDisplay = function() {
     });
 }
 
+var blogHomeCatBoxPagination = function() {
+    $('.whitebox-secondary .multiple_tabs .tab').click(function() {
+        if (!$(this).hasClass('active')) {
+            $('.whitebox-secondary .multiple_tabs .tab.active').removeClass('active');
+            var current_ID = $(this).attr('id');
+            $('.whitebox_secondary_item.current').removeClass('current');
+            $('#whitebox_secondary_item_' + currentID).addClass('current');
+        }
+    });
+}
+
+
+
 
 $(document).ready(function() {
     setInterval(load_next, 5000);
     latestPostsPagination();
     ourWorkPagination();
+    blogHomeCatBoxPagination();
     aboutPagination();
     projectHover();
     galleryShowImg();

@@ -870,11 +870,11 @@ function category_box($atts) {
 ?>
     <div class="multiple_tabs">
         <header>
-            <div class="tab rounded-corners tab108 active">
-            <h3><a id="<?php echo $tab1; ?>"></a><?php echo str_replace('-', ' ', $tab1); ?></a></h3>
+            <div class="tab rounded-corners tab108 active" id="<?php echo $tab1; ?>">
+            <h3><a><?php echo str_replace('-', ' ', $tab1); ?></a></h3>
             </div>
-            <div class="tab rounded-corners tab108">
-                <h3><a id="<?php echo $tab2; ?>"></a><?php echo str_replace('-', ' ', $tab2); ?></a></h3>
+            <div class="tab rounded-corners tab108" id="<?php echo $tab2; ?>">
+                <h3><a><?php echo str_replace('-', ' ', $tab2); ?></a></h3>
             </div>
         </header>
     </div><!-- multiple_tabs -->
