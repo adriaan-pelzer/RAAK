@@ -1008,19 +1008,7 @@ function single_blog_post() {
                     </div>
                 </article><!-- .whitebox_primary_post -->
                 <div class="whitebox_primary_comments">
-                    <header>
-                        <h4>Leave a Comment</h4>
-                    </header>
-                    <form name="commentform" id="commentform" action="http://wewillraakyou.com/wp-comments-post.php" method="post">
-                        <p class="bigger_arial_no_caps grey_text">Your email is <em>never</em> shared. Required fields are marked <span class="required">*</span></p>
-                        <label class="form-label bigger_arial_caps grey_text" for="author">Name <span class="required">*</span></label><input id="author" name="author" class="text required" type="text" value="" size="30" maxlength="50" tabindex="3">
-                        <label class="form-label bigger_arial_caps grey_text" for="email">Email <span class="required">*</span></label><input id="email" name="email" class="text required" type="text" value="" size="30" maxlength="50" tabindex="4">
-                        <label class="form-label bigger_arial_caps grey_text" for="url">Website</label><input id="url" name="url" class="text" type="text" value="" size="30" maxlength="50" tabindex="5">
-                        <label class="form-label bigger_arial_caps grey_text" for="comment">Comment</label>
-                        <textarea id="comment" name="comment" class="text required" cols="45" rows="8" tabindex="6"></textarea>
-                        <input type="hidden" name="submit" value="Post Comment"><!--span id="commentform_submit"--><input id="submit" name="submit" class="button" type="submit" value="Post Comment" tabindex="7"><!--/span--><input type="hidden" name="comment_post_ID" value="5273">
-                        <div class="form-option"></div>
-                    </form><!-- #commentform -->
+<?php comments_template(); ?>
                 </div><!-- whitebox_primary_comments -->
             </div>
 <?php
