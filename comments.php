@@ -12,7 +12,7 @@ if (have_comments()) {
             if ($comment->comment_type != ('pingback' || 'trackback')) {
                 $comments_html .= '
                 <li id="comment-' . $comment->comment_ID . '" class="' . get_comment_type() . '">
-                    <div class="comment-author vcard">' . get_avatar(($comment->$comment_author_email), $size = '32') . '
+                    <div class="comment-author vcard">' . get_avatar((($comment->user_id != 0) ? $comment->user_id : $comment->comment_author_email), $size = '32') . '
                     </div>
                     <div class="comment-meta">
                         <div class="comment-meta-author">Posted by <a href="' . $comment->comment_author_url . '" rel="external nofollow" class="url">' . $comment->comment_author . '</a>
