@@ -7,7 +7,7 @@ if (have_comments()) {
     $trackbacks_num = 0;
     foreach($commments as $comment) {
         if ($comment->comment_approved == 1) {
-            $timestamp = strtotime($comment->comment_date;
+            $timestamp = strtotime($comment->comment_date);
             if ($comment->comment_type != ('pingback' || 'trackback')) {
                 $comments .= '
                 <li id="comment-' . $comment->comment_ID . '" class="' . get_comment_type() . '">
