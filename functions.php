@@ -885,10 +885,10 @@ function category_box($atts) {
         <header>
             <h3><a id="<?php echo $tab1; ?>"></a><?php echo str_replace('-', ' ', $tab1); ?></a></h3>
         </header>
+    </div><!-- tab -->
 <?php
     }
 ?>
-    </div>
     <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
         <div id="whitebox_secondary_mostviewed" class="currnet">
             <ul>
