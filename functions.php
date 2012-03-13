@@ -841,7 +841,6 @@ add_shortcode('sp_bb', 'single_project_bluebox');
 /*************************/
 
 function search_box() {
-    $blog_page = get_page_by_title('Our Blog');
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
@@ -851,7 +850,7 @@ function search_box() {
             <input type="hidden"  name="sitesearch" value="wewillraakyou.com" />
         </form>
         <!-- span class="whitebox_big_search smaller_arial_caps"><a onclick="javascript: google_search();">Search</a><input type="text" id="searchtext"></span -->
-        <h2 class="din-schrift blue_20"><?php echo $blog_page->post_title; ?></h2>
+        <h2 class="din-schrift blue_20">Our Blog</h2>
     </header>
 </div>
 

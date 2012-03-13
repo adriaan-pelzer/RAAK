@@ -1431,6 +1431,10 @@ form.wpcf7-form span {
     margin-top: 20px;
 }
 
+.blog_single_whitebox_primary .whitebox_primary_post {
+    display: block;
+}
+
 
 .blog_whitebox_primary .whitebox_primary_post h3 {
     font-size: 24px;
