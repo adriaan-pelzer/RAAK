@@ -11,7 +11,11 @@ if (have_comments()) {
             if ($comment->comment_type != ('pingback' || 'trackback')) {
                 $comment_content = $comment->comment_content;
                 if (preg_match_all('/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/', $comment_content, $urls)) {
-                    print_r($urls);
+                    foreach($urls[0] as $url) {
+                        $current_pos =strpos($comment_content, ' '.$url)+1;
+                        $comment_content = substr_replace($comment_content, '', $current_pos, strlen($url));
+                        $comment_content = substr_replace($text,'' . $url . '', $current_pos, 0);
+                    }
                 }
                 $comments_html .= '
                 <li id="comment-' . $comment->comment_ID . '" class="' . get_comment_type() . '">
@@ -22,7 +26,7 @@ if (have_comments()) {
                         </div>
                         <div class="comment-meta-date">' . date('F j, Y \a\t g:i a', $timestamp) . ' <span class="separator>|</span> <a href="' . get_comment_link($comment->comment_ID) . '" title="Permalink to this comment">Permalink</a>
                         </div>
-                    </div>' . $comment->comment_content . '
+                    </div>' . $comment_content . '
                     </li>';
                 $comments_num++;
             } else {
