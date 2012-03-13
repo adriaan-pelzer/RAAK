@@ -939,17 +939,19 @@ function single_blog_post() {
     if(have_posts()) {
         while(have_posts()) {
             the_post();
+            $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
+            $author_page = get_page_by_title($author_full_name);
 ?>
 <div class="whitebox whitebox_primary blog_single_whitebox_primary blog_whitebox_primary whitebox-primary box rounded-corners">
                 <article class="whitebox_primary_post">
                     <header>
-                        <h3 id="whitebox_primary_title">No wonder the MPAA is freaking out: Youtube serves 4 billion movies per day</h3>
+                        <h3 id="whitebox_primary_title"><?php the_title(); ?></h3>
                     </header>
                     <hr>
                     <div class="whitebox_primary_post_attr">
-                        <div class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/adriaan/">Adriaan Pelzer</a></div>
-                        <div class="whitebox_primary_post_attr_item date">27 January 2012</div>
-                        <div class="whitebox_primary_post_attr_item time">12:38</div>
+                        <div class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="<?php echo get_permalink($author_page->ID);  ?>"><?php echo $author_full_name; ?></a></div>
+                        <div class="whitebox_primary_post_attr_item date"><?php the_date(); ?></div>
+                        <div class="whitebox_primary_post_attr_item time"><?php the_time(); ?></div>
                         <div class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png">0 comments</div>
                     </div><!-- .whitebox_primary_post_attr -->
                     <div class="whitebox_primary_share">
