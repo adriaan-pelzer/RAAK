@@ -12,8 +12,7 @@ if (have_comments()) {
                 $comment_content = $comment->comment_content;
                 if (preg_match_all('/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/', $comment_content, $urls)) {
                     foreach($urls[0] as $url) {
-                        $current_pos =strpos($comment_content, ' '.$url)+1;
-                        $comment_content = substr_replace($comment_content, '<a href="' . $url . '">' . $url . '</a>', $current_pos, strlen($url));
+                        $comment_content = preg_replace('/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/', '<a href="' . $url . '">' . $url . '</a>', $comment_content);
                     }
                 }
                 $comments_html .= '
