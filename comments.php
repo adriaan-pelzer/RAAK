@@ -12,7 +12,7 @@ if (have_comments()) {
             if ($comment->comment_type != ('pingback' || 'trackback')) {
                 echo $comment->user_id;
                 echo $comment->comment_author_email;
-                if(function_exists('get_avatar') {
+                if(function_exists('get_avatar')) {
                     echo 'get_avatar exists';
                 }
                 $comments_html .= '
