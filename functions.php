@@ -916,7 +916,7 @@ function category_box($atts) {
         foreach ($cat_array as $category) {
 ?>
 
-                <li><a href="<?php get_category_link(get_cat_id($category)); ?>"><?php echo $category; ?></a></li>
+                <li><a href="<?php echo get_category_link(get_cat_id($category)); ?>"><?php echo $category; ?></a></li>
 <?php 
         }
 ?>
