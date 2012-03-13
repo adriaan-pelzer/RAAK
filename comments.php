@@ -33,7 +33,7 @@ if (have_comments()) {
     if($comments_num != 0) {
 ?>
     <div id="comments-list" class="comments">
-        <h3><?php echo $comments_num; ?> Comment<?php echo ($comments_num == 1 ? 's') : ''; ?></h3>
+        <h3><?php echo $comments_num; ?> Comment<?php echo ($comments_num == 1) ? 's' : ''; ?></h3>
             <ul>
 <?php
         echo $comments;
