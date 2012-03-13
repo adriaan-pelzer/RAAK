@@ -5,6 +5,7 @@ if (have_comments()) {
     $comments_num = 0;
     $trackbacks = '';
     $trackbacks_num = 0;
+    print_r($comments);
     foreach($commments as $comment) {
         if ($comment->comment_approved == 1) {
             $timestamp = strtotime($comment->comment_date);
