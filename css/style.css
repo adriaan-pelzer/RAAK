@@ -1494,7 +1494,7 @@ form.wpcf7-form span {
 }
 
 .fb_iframe_widget {
-    margin: 10px 44px 10px 0;
+    margin: 6px 44px 4px 0;
 }
 
 .twitter-share-button {
@@ -1503,6 +1503,10 @@ form.wpcf7-form span {
 
 #plusone {
     margin-bottom: 10px;
+}
+
+#___plusone_0 {
+    margin-top: 5px;
 }
 
 
