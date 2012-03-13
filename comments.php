@@ -19,7 +19,7 @@ if (have_comments()) {
                         </div>
                         <div class="comment-meta-date">' . date('F j, Y \a\t g:i a', $timestamp) . ' <span class="separator>|</span> <a href="#comment-' . $comment->comment_ID . '" title="Permalink to this comment">Permalink</a>
                         </div>
-                    </div>' . $comment_content . '
+                    </div><p>' . $comment_content . '</p>
                     </li>';
                 $comments_num++;
             } else {
