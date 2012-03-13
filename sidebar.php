@@ -196,45 +196,50 @@ function mce_success_cb(resp){
             </aside><!-- twitter -->
 <?php
 if(is_page_template('about.php')) {
+    $founders = new WP_Query(array('meta_key' => 'twitterhandle'));
+    foreach($founders as $founder) {
+        $twitter_handle = get_post_meta($founder->ID, 'twitterhandle', TRUE);
    ?>
     <aside class="twitter" id="twitter_<?php echo $post->post_name; ?>">
-    <div class="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/<?php echo $twitter_handle; ?>"><?php echo $twitter_handle; ?></a></h2></div>
-                <div class="twitter_body rounded-corners_bottom">
-                    <div class="twitter_follow">
-                        <a href="https://twitter.com/<?php echo $twitter_handle; ?>" class="twitter-follow-button" data-show-count="false">Follow @<?php echo $twitter_handle; ?></a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                    </div>
-                    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-                    <script>
-                    new TWTR.Widget({
-                      version: 2,
-                      type: 'profile',
-                      rpp: 4,
-                      interval: 30000,
-                      width: 181,
-                      height: 300,
-                      theme: {
-                        shell: {
-                          background: '#bebebe',
-                          color: '#ffffff'
-                        },
-                        tweets: {
-                          background: '#bebebe',
-                          color: '#ffffff',
-                          links: '#b9e5fb'
-                        }
-                      },
-                      features: {
-                        scrollbar: false,
-                        loop: false,
-                        live: false,
-                        behavior: 'all'
-                      }
-                    }).render().setUser('<?php echo $twitter_handle; ?>').start();
-                    </script>
-                </div>
-            </aside><!-- twitter -->
+        <div class="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/<?php echo $twitter_handle; ?>"><?php echo $twitter_handle; ?></a></h2></div>
+        <div class="twitter_body rounded-corners_bottom">
+            <div class="twitter_follow">
+                <a href="https://twitter.com/<?php echo $twitter_handle; ?>" class="twitter-follow-button" data-show-count="false">Follow @<?php echo $twitter_handle; ?></a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+            new TWTR.Widget({
+              version: 2,
+              type: 'profile',
+              rpp: 4,
+              interval: 30000,
+              width: 181,
+              height: 300,
+              theme: {
+                shell: {
+                  background: '#bebebe',
+                  color: '#ffffff'
+                },
+                tweets: {
+                  background: '#bebebe',
+                  color: '#ffffff',
+                  links: '#b9e5fb'
+                }
+              },
+              features: {
+                scrollbar: false,
+                loop: false,
+                live: false,
+                behavior: 'all'
+              }
+            }).render().setUser('<?php echo $twitter_handle; ?>').start();
+            </script>
+        </div>
+    </aside><!-- twitter -->
 <?php
+    }
+    reset_wp_query();
 }
 ?>
         </div><!-- .sidebar -->
