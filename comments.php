@@ -8,13 +8,9 @@ if (have_comments()) {
     foreach($comments as $comment) {
         if ($comment->comment_approved == 1) {
             $timestamp = strtotime($comment->comment_date);
+            $comment_content = comment_text($comment->comment_ID)
             if ($comment->comment_type != ('pingback' || 'trackback')) {
-                $comment_content = $comment->comment_content;
-                if (preg_match_all('/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/', $comment_content, $urls)) {
-                    foreach($urls[0] as $url) {
-                        $comment_content = preg_replace('/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/', '<a href="' . $url . '">' . $url . '</a>', $comment_content);
-                    }
-                }
+            $comment_content = comment_text($comment->comment_ID)
                 $comments_html .= '
                 <li id="comment-' . $comment->comment_ID . '" class="' . get_comment_type() . '">
                     <div class="comment-author vcard">' . get_avatar((($comment->user_id != 0) ? $comment->user_id : $comment->comment_author_email), $size = '32') . '
@@ -24,7 +20,7 @@ if (have_comments()) {
                         </div>
                         <div class="comment-meta-date">' . date('F j, Y \a\t g:i a', $timestamp) . ' <span class="separator>|</span> <a href="#comment-' . $comment->comment_ID . '" title="Permalink to this comment">Permalink</a>
                         </div>
-                    </div>' . comment_text($comment->comment_ID) . '
+                    </div>' . $comment_content . '
                     </li>';
                 $comments_num++;
             } else {
