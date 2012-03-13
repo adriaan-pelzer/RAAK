@@ -1454,6 +1454,14 @@ form.wpcf7-form span {
     padding-right: 10px;
 }
 
+.whitebox_secondary_item {
+    display: none;
+}
+
+.whitebox_secondary_item.current {
+    display: block;
+}
+
 /************** BLOG SINGLE ************/
 
 .blog_single_whitebox_primary .whitebox_primary_post_attr {

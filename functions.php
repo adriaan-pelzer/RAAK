@@ -890,7 +890,7 @@ function category_box($atts) {
     }
 ?>
     <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
-        <div id="whitebox_secondary_mostviewed" class="currnet">
+        <div id="most-viewed" class="whitebox_secondary_item currnet">
             <ul>
 <?php
     
@@ -910,7 +910,7 @@ function category_box($atts) {
     if ($tab2 == 'category') {
         $cat_array = array('Inspiration', 'Must Read', 'Raakonteur', 'Worth a look');
 ?>
-        <div id="whitebox_secondary_category">
+        <div id="category" class="whitebox_secondary_item">
             <ul>
 <?php
         foreach ($cat_array as $category) {
