@@ -196,7 +196,7 @@ function mce_success_cb(resp){
             </aside><!-- twitter -->
 <?php
 if(is_page_template('about.php')) {
-    $founders = new WP_Query(array('meta_key' => 'twitterhandle'));
+    $founders = new WP_Query(array('meta_key' => 'twitterhandle', 'post_type' => 'page'));
     print_r($founders);
     foreach($founders as $founder) {
         $twitter_handle = get_post_meta($founder->ID, 'twitterhandle', TRUE);
