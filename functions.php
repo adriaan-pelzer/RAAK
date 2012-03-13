@@ -995,21 +995,16 @@ function single_blog_post() {
                     </div><!-- .whitebox_primary_share -->
                     <hr class="solid">
                     <div class="whitebox_primary_content">
-                        <p>Youtube released a set of  extremely impressive stats this week. Not only does it serve a staggering <a href="http://www.engadget.com/2012/01/23/youtube-hit-4-billion-views-per-day-deals-with-60-hours-of-uplo/">4 billion videos per day</a>, 60 hours of new content is uploaded every minute. This is massive.</p>
-<p>Now, let’s have a look at where this leaves the MPAA:</p>
-<p><img src="http://wewillraakyou.com/wp-content/uploads/2012/01/youtube-censored-2.png" alt="Youtube vs MPAA" title="Youtube vs MPAA" width="360" height="232" class="alignnone size-full wp-image-5275"></p>
-<p>The MPAA represents the big content resellers of the 20th century, whose business model used to be valid in a world where content was scarce. That used to be the case in almost the entire 20th century. Clay Shirky explains this quite well in a <a href="http://www.intellitics.com/blog/2012/01/18/clay-shirky-ted-talk-defend-our-freedom-to-share-or-why-sopa-is-a-bad-idea/">brilliant Ted Talk</a> on the subject.</p>
-<p>The fact that content is not scarce anymore, the MPAA feels, is the Internet’s fault, and this is why they are actively, and desperately trying to break the Internet. In <a href="http://www.launch.is/blog/we-need-to-empower-hollywood-not-kill-hollywood.html">a heartfelt post</a> Jason Calacanis explains that proponents of the Internet should not see this as a threat:</p>
-<blockquote><p>The internet is more powerful than any of us thought — and it’s getting more powerful every day. Hollywood brings a lot to the party and while it can be misguided at times, it’s not productive to say we’re going to kill it. </p>
-<p>Silicon Valley’s job is to empower Hollywood and make it appreciate what we’ve built. In the same way it makes us appreciate its products — even garbage like “Transformers” 1, 2 and 3 which, sadly, most of us have wasted money on.</p></blockquote>
-<p>If that sentiment will be reciprocal remains to be seen, however.</p>
-<p>The only product the MPAA have is a channel. A channel to market and distribute content on. And they are still using that same old channel. They are still showing you advertisements for their next movies before the movie you’re trying to watch.</p>
-<p>Now, this very channel of theirs, has been replaced. By the Internet.</p>
-<p><em>This</em> is why the MPAA is spending millions of dollars to actively break the Internet.</p>
+<?php
+            the_content();
+?>
                     </div><!-- .whitebox_primary_content -->
                     <div class="whitebox_primary_flwbtn">
-                        <p><span><em>Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/adriaan/">Adriaan Pelzer</a></em></span><span><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.1329256447.html#_=1329402252637&amp;_version=2&amp;enableNewSizing=false&amp;id=twitter-widget-2&amp;lang=en&amp;screen_name=adriaan_pelzer&amp;show_count=true&amp;size=m" class="twitter-follow-button" style="height: 20px; width: 300px; " title="Twitter Follow Button"></iframe></span></p>
-                        <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+                        <p>
+                            <span><em>Posted by <a rel="author" href="<?php echo get_permalink($author_page->ID);  ?>"><?php echo $author_full_name; ?></a></em></span>
+                            <a href="https://twitter.com/<?php echo get_post_meta($athour_page->ID, 'twitterhandle', TRUE); ?>" class="twitter-follow-button" data-show-count="true">Follow @<?php echo get_post_meta($athour_page->ID, 'twitterhandle', TRUE); ?></a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </p>
                     </div>
                 </article><!-- .whitebox_primary_post -->
                 <div class="whitebox_primary_comments">
