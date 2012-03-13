@@ -1,16 +1,16 @@
 <div class="comments">
 <?php
 if (have_comments()) {
-    $comments = '';
+    $comments_html = '';
     $comments_num = 0;
-    $trackbacks = '';
+    $trackbacks_html = '';
     $trackbacks_num = 0;
     print_r($comments);
-    foreach($commments as $comment) {
+    foreach($comments as $comment) {
         if ($comment->comment_approved == 1) {
             $timestamp = strtotime($comment->comment_date);
             if ($comment->comment_type != ('pingback' || 'trackback')) {
-                $comments .= '
+                $comments_html .= '
                 <li id="comment-' . $comment->comment_ID . '" class="' . get_comment_type() . '">
                     <div class="comment-author vcard">' . get_avatar(($comment->user_id != 0) ? $comment->user_id : $comment->$comment_author_email, $size = '32') . '
                     </div>
@@ -23,7 +23,7 @@ if (have_comments()) {
                     </li>';
                 $comments_num++;
             } else {
-                $trackbacks .= '
+                $trackbacks_html .= '
                 <li id="comment-' . $comment->comment_ID . '" class="' . get_comment_type() . '">
                     <div class="comment-author">By <a href="' . $comment->comment_author_url . '" rel="external nofollow" class="url">' . $comment->comment_author . '</a> on ' . date('F j, Y \a\t g:i a', $timestamp) . '</div>' . $comment->comment_content . '
                 </li>';
@@ -37,7 +37,7 @@ if (have_comments()) {
         <h3><?php echo $comments_num; ?> Comment<?php echo ($comments_num == 1) ? 's' : ''; ?></h3>
             <ul>
 <?php
-        echo $comments;
+        echo $comments_html;
 ?>
             </ul>
     </div><!-- #comments-list .comments -->
@@ -49,7 +49,7 @@ if (have_comments()) {
         <h3><span><?php echo $trackbacks_num; ?></span> Trackback<?php echo ($trackbacks_num == 1) ? 's' : ''; ?></h3>
         <ul>
 <?php
-        echo $trackbacks;
+        echo $trackbacks_html;
 ?>
         </ul>
     </div><!-- #trackbacks-list .comments -->
