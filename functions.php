@@ -861,11 +861,8 @@ add_shortcode('sb', 'search_box');
 
 /*************************/
 
-function category_box() {
+function category_box($atts) {
     extract(shortcode_atts(array('tab1' => '', 'tab2' => ''), $atts));
-    print_r($atts);
-    echo $tab1;
-    echo $tab2;
 ?>
 <div class="whitebox-secondary tab_container">
 <?php
