@@ -197,11 +197,10 @@ function mce_success_cb(resp){
 <?php
 if(is_page_template('about.php')) {
     $founders = new WP_Query(array('meta_key' => 'twitterhandle', 'post_type' => 'page'));
-    print_r($founders);
     foreach($founders->posts as $founder) {
         $twitter_handle = get_post_meta($founder->ID, 'twitterhandle', TRUE);
    ?>
-    <aside class="twitter" id="twitter_<?php echo $twitter_handle; ?>">
+    <aside class="twitter" id="twitter_<?php echo $founder->post_name; ?>">
         <div class="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/<?php echo $twitter_handle; ?>"><?php echo $twitter_handle; ?></a></h2></div>
         <div class="twitter_body rounded-corners_bottom">
             <div class="twitter_follow">
