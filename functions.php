@@ -1002,9 +1002,9 @@ function single_blog_post() {
                     <div class="whitebox_primary_flwbtn">
                         <p>
                             <span><em>Posted by <a rel="author" href="<?php echo get_permalink($author_page->ID);  ?>"><?php echo $author_full_name; ?></a></em></span>
+                        </p>
                             <a href="https://twitter.com/<?php echo get_post_meta($athour_page->ID, 'twitterhandle', TRUE); ?>" class="twitter-follow-button" data-show-count="true">Follow @<?php echo get_post_meta($athour_page->ID, 'twitterhandle', TRUE); ?></a>
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                        </p>
                     </div>
                 </article><!-- .whitebox_primary_post -->
                 <div class="whitebox_primary_comments">
