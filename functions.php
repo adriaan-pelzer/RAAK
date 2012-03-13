@@ -908,7 +908,7 @@ function category_box($atts) {
         </div><!-- #whitebox_secondary_mostviewed -->
 <?php
     if ($tab2 == 'category') {
-        $cat_array = ('Inspiration', 'Must Read', 'Raakonteur', 'Worth a look');
+        $cat_array = ['Inspiration', 'Must Read', 'Raakonteur', 'Worth a look'];
 ?>
         <div id="whitebox_secondary_category">
             <ul>
