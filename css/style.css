@@ -1607,6 +1607,11 @@ form.wpcf7-form span {
     font: 11px arial, sans-serif;
     display: inline-block;
 }
+
+.comment-meta-author {
+    margin-bottom: 5px;
+}
+
 /************** BLOG ARCHIVE ***********/
 
 /*.blog-category .whitebox_primary h3, .log-archive .whitebox_primary h3 {

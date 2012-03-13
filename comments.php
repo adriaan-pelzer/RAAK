@@ -25,7 +25,7 @@ if (have_comments()) {
             } else {
                 $trackbacks_html .= '
                 <li id="comment-' . $comment->comment_ID . '" class="' . get_comment_type() . '">
-                    <div class="comment-author">By <a href="' . $comment->comment_author_url . '" rel="external nofollow" class="url">' . $comment->comment_author . '</a> on ' . date('F j, Y \a\t g:i a', $timestamp) . '</div>' . $comment->comment_content . '
+                    <div class="comment-author">By <a href="' . $comment->comment_author_url . '" rel="external nofollow" class="url">' . $comment->comment_author . '</a> on ' . date('F j, Y \a\t g:i a', $timestamp) . '</div><p>' . $comment->comment_content . '</p>
                 </li>';
                 $trackbacks_num++;
             }
