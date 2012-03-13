@@ -9,6 +9,10 @@ if (have_comments()) {
         if ($comment->comment_approved == 1) {
             $timestamp = strtotime($comment->comment_date);
             if ($comment->comment_type != ('pingback' || 'trackback')) {
+                $comment_content = $comment->comment_content;
+                if (preg_match_all('/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/', $comment_content, $urls) {
+                    print_r($urls);
+                }
                 $comments_html .= '
                 <li id="comment-' . $comment->comment_ID . '" class="' . get_comment_type() . '">
                     <div class="comment-author vcard">' . get_avatar((($comment->user_id != 0) ? $comment->user_id : $comment->comment_author_email), $size = '32') . '
