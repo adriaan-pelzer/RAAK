@@ -1582,6 +1582,32 @@ form.wpcf7-form span {
     margin-top: 10px;
 }
 
+/************** COMMENTS ****************/
+
+.comments {
+    margin-top: 20px;
+}
+
+.comments ul {
+    margin: 20px 0;
+}
+
+
+.comments li {
+    margin: 0 0 15px;
+}
+
+.comments h3 {
+    font-size: 18px;
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+
+.comment-author, .comment-meta {
+    font: 11px arial, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
 /************** BLOG ARCHIVE ***********/
 
 /*.blog-category .whitebox_primary h3, .log-archive .whitebox_primary h3 {

@@ -10,7 +10,7 @@ if (have_comments()) {
             $timestamp = strtotime($comment->comment_date);
             if ($comment->comment_type != ('pingback' || 'trackback')) {
                 $comment_content = $comment->comment_content;
-                if (preg_match_all('/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/', $comment_content, $urls) {
+                if (preg_match_all('/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/', $comment_content, $urls)) {
                     print_r($urls);
                 }
                 $comments_html .= '
