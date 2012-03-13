@@ -197,6 +197,7 @@ function mce_success_cb(resp){
 <?php
 if(is_page_template('about.php')) {
     $founders = new WP_Query(array('meta_key' => 'twitterhandle'));
+    print_r($founders);
     foreach($founders as $founder) {
         $twitter_handle = get_post_meta($founder->ID, 'twitterhandle', TRUE);
    ?>
@@ -239,7 +240,7 @@ if(is_page_template('about.php')) {
     </aside><!-- twitter -->
 <?php
     }
-    reset_wp_query();
+    wp_reset_query();
 }
 ?>
         </div><!-- .sidebar -->
