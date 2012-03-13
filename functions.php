@@ -906,14 +906,25 @@ function category_box($atts) {
             </ul>
 
         </div><!-- #whitebox_secondary_mostviewed -->
+<?php
+    if ($tab2 == 'category') {
+        $cat_array = ('Inspiration', 'Must Read', 'Raakonteur', 'Worth a look');
+?>
         <div id="whitebox_secondary_category">
             <ul>
-            <li><a href="<?php get_category_link(get_cat_id('Insparation')); ?>">Inspiration</a></li>
-                <li><a href="http://wewillraakyou.com/category/Must%20Read/">Must Read</a></li>
-                <li><a href="http://wewillraakyou.com/category/RAAKonteur/">RAAKonteur</a></li>
-                <li><a href="http://wewillraakyou.com/category/Worth%20a%20look/">Worth a look</a></li>
+<?php
+        foreach ($cat_array as $category) {
+?>
+
+                <li><a href="<?php get_category_link(get_cat_id($category)); ?>"><?php echo $category; ?></a></li>
+<?php 
+        }
+?>
             </ul>
         </div><!-- #whitebox_secondary_category -->
+<?php
+    }
+?>
     </div><!-- whitebox_secondary -->
 </div>
 
