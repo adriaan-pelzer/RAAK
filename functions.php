@@ -866,59 +866,6 @@ function category_box() {
     echo $tab1;
     echo $tab2;
 ?>
-<div class="whitebox-secondary tab_container">
-<?php
-    if ($tab2 != '') {
-?>
-    <div class="multiple_tabs">
-        <header>
-            <div class="tab rounded-corners tab108 active">
-            <h3><a id="<?php echo $tab1; ?>"></a><?php echo str_replace('-', ' ', $tab1); ?></a></h3>
-            </div>
-            <div class="tab rounded-corners tab108">
-                <h3><a id="<?php echo $tab2; ?>"></a><?php echo str_replace('-', ' ', $tab2); ?></a></h3>
-            </div>
-        </header>
-    </div><!-- multiple_tabs -->
-<?php
-    } else {
-?>
-    <div class="tab rounded-corners tab108 active">
-        <header>
-            <h3><a id="<?php echo $tab1; ?>"></a><?php echo str_replace('-', ' ', $tab1); ?></a></h3>
-        </header>
-<?php
-    }
-?>
-    </div>
-    <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
-        <div id="whitebox_secondary_mostviewed" class="currnet">
-            <ul>
-<?php
-    
-    $most_viewed = new WP_Query(array('orderby' => 'meta_value', 'meta_key' => 'postviews', 'posts_per_page' => 6, 'paged' => 1));
-    foreach(($most_viewed->posts) as $viewed_post) {
-?>
-
-                <li><a href="<?php echo get_permalink($viewed_post->ID); ?>"><?php echo $viewed_post->post_title; ?></a></li>
-<?php
-    }
-    wp_reset_query();
-?>
-            </ul>
-
-        </div><!-- #whitebox_secondary_mostviewed -->
-        <div id="whitebox_secondary_category">
-            <ul>
-                <li><a href="http://stage.wewillraakyou.com/blog-2/blog-category/">Inspiration</a></li>
-                <li><a href="http://wewillraakyou.com/category/Must%20Read/">Must Read</a></li>
-                <li><a href="http://wewillraakyou.com/category/RAAKonteur/">RAAKonteur</a></li>
-                <li><a href="http://wewillraakyou.com/category/Worth%20a%20look/">Worth a look</a></li>
-            </ul>
-        </div><!-- #whitebox_secondary_category -->
-    </div><!-- whitebox_secondary -->
-</div>
-
 <?php
 }
 
