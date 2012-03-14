@@ -1125,12 +1125,13 @@ function blog_archive_post_list() {
 ?>
 <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
 <?php
+    $post_num = 0;
     while($archive_posts->have_posts()) {
         $archive_posts->the_post();
             $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
             $author_page = get_page_by_title($author_full_name);
 ?>
-    <div id="whitebox_primary_post_<?php echo $number; ?>" class="whitebox_primary_post">
+    <div id="whitebox_primary_post_<?php echo $post_num; ?>" class="whitebox_primary_post">
     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <hr />
         <div class="whitebox_primary_post_attr">
@@ -1144,15 +1145,16 @@ function blog_archive_post_list() {
         <hr class="solid" />
     </div>
 <?php
+            $post_num++;
     }
 ?>
     <footer class="whitebox_primary_footer box_nav small_arial_caps">
         <a class="whitebox_primary_footer_left"  href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
         <div class="whitebox_primary_footer_right">
 <?php
-    if($page > 1) {
+    if($page_num > 1) {
 ?>
-            <a class="active" href="?page=<?php echo ($page - 1); ?>"><span class="arrow">&#9668;</span>Previous</a>
+            <a class="active" href="?page=<?php echo ($page_num - 1); ?>"><span class="arrow">&#9668;</span>Previous</a>
 <?php
     } else {
 ?>
@@ -1162,10 +1164,10 @@ function blog_archive_post_list() {
 ?>
 <span class="seperator">|</span>
 <?php
-    if($page < $archive_posts->max_num_pages) {
+    if($page_num < $archive_posts->max_num_pages) {
 ?>
 
-            <a class="active" href="?page=<?php echo ($page + 1); ?>">Next<span class="arrow">&#9658;</span></a>
+            <a class="active" href="?page=<?php echo ($page_num + 1); ?>">Next<span class="arrow">&#9658;</span></a>
 <?php
     } else {
 ?>

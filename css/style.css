@@ -1629,6 +1629,10 @@ h2.subTitle {
     letter-spacing: 1px;
 }
 
+.blog_whitebox_primary_title_only .whitebox_primary_post {
+    display: block;
+}
+
 .blog_whitebox_primary_title_only h3 a {
     color: #00aeff;
 }
