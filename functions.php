@@ -1139,7 +1139,7 @@ function blog_archive_post_list() {
             <span class="whitebox_primary_post_attr_item date"><?php the_date('j F Y'); ?></span>
             <span class="seperator">|</span>
             
-            <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /><?php comments_number('0 comments', '1 comment', '% comments'); ?></span>
+            <span class="whitebox_primary_post_attr_item comments_count"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /><?php comments_number('0 comments', '1 comment', '% comments'); ?></span>
         </div><!-- .whitebox_primary_attr -->
         <hr class="solid" />
     </div>
