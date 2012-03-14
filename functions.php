@@ -1187,10 +1187,6 @@ add_shortcode('archive_list', 'blog_archive_post_list');
 /*************************/
 
 function blog_tag_box() {
-    ob_start();
-    wp_tag_cloud('number=60');
-    $tag_cloud = ob_get_contents();
-    ob_end_clean();
 ?>
 <div class="tab_container bluebox-primary other_posts">
     <div class="blue_tab tab tab108 rounded-corners">
@@ -1200,7 +1196,7 @@ function blog_tag_box() {
     </div><!-- blue_tab -->
     <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <?php
-    echo $tag_cloud;
+    wp_tag_cloud('number=60');
 ?>
     </div><!-- bluebox_primary -->
 </div><!-- bluebox-primary -->
