@@ -1207,8 +1207,7 @@ add_shortcode('tags', 'blog_tag_box');
 /*************************/
 
 function post_authors() {
-    $authors = get_users(array('who' => 'authors'));
-    print_r($authors);
+    wp_list_authors();
 ?>
 <div class="whitebox-secondary tab_container">
                 <div class="blue_tab tab tab108 rounded-corners">
