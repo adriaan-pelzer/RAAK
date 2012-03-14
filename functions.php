@@ -1149,9 +1149,30 @@ function blog_archive_post_list() {
     <footer class="whitebox_primary_footer box_nav small_arial_caps">
         <a class="whitebox_primary_footer_left"  href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
         <div class="whitebox_primary_footer_right">
-            <a onclick="javascript: previous();"><span class="arrow">&#9668;</span>Previous</a>
-            <?php echo get_previous_posts_link(); ?><span class="seperator">|</span><?php echo get_next_posts_link(); ?>
-            <a class="active" onclick="javascript: next();">Next<span class="arrow">&#9658;</span></a>
+<?php
+    if($page > 1) {
+?>
+            <a class="active" href="?page=<?php echo ($page - 1); ?>"><span class="arrow">&#9668;</span>Previous</a>
+<?php
+    } else {
+?>
+            <a href=""><span class="arrow">&#9668;</span>Previous</a>
+<?php
+    }
+?>
+<span class="seperator">|</span>
+<?php
+    if($page < $archive_posts->max_num_pages) {
+?>
+
+            <a class="active" href="?page=<?php echo ($page + 1); ?>">Next<span class="arrow">&#9658;</span></a>
+<?php
+    } else {
+?>
+            <a href="">Next<span class="arrow">&#9658;</span></a>
+<?php
+    }
+?>
         </div><!-- .whitebox_primary_footer_right -->
     </footer><!-- .whitebox_primary_footer -->
 </div><!-- whitebox_primary -->
