@@ -1139,6 +1139,9 @@ function blog_archive_post_list() {
         </div><!-- .whitebox_primary_attr -->
         <hr class="solid" />
     </div>
+<?php
+    }
+?>
     <footer class="whitebox_primary_footer box_nav small_arial_caps">
         <a class="whitebox_primary_footer_left"  href="<?php echo get_page_link(5238); ?>">All blog posts</a>
         <div class="whitebox_primary_footer_right">
