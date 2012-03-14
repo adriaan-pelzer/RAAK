@@ -1119,13 +1119,15 @@ add_shortcode('title', 'big_title_box');
 /*************************/
 
 function blog_archive_post_list() {
-    $num_posts = wp_count_posts();
-    print_r($num_posts);
-    //$archive_posts = new WP_Query(array('category_name' => 'Blog',
+    $archive_posts = new WP_Query(array('category_name' => 'Blog', 'posts_per_page' => '20',));
+    print_r($archive_posts);
 ?>
 <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
-    <div id="whitebox_primary_post_0" class="whitebox_primary_post">
-        <h3><a href="http://wewillraakyou.com/2012/01/5332/"></a></h3>
+<?php
+    foreach($archive_posts->posts as $number -> $current_post) {
+?>
+    <div id="whitebox_primary_post_<?php echo $number; ?>" class="whitebox_primary_post">
+    <h3><a href="<?php echo get_permalink($current_post->ID); ?>"><?php echo $current_post->post_title; ?></a></h3>
         <hr />
         <div class="whitebox_primary_post_attr">
             <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
