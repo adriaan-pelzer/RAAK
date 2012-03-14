@@ -1034,7 +1034,7 @@ function related_blog_posts() {
                 $page_name = $slug;
             }
         }
-        array_push ($r_posts, get_post_by_title ($page_name));
+        array_push ($r_posts, get_post_by_name ($page_name));
     }
 ?>
 <div class="tab_container bluebox-primary other_posts">
@@ -1105,6 +1105,16 @@ add_shortcode('rel_posts', 'related_blog_posts');
 <?php 
 
 /***************************** copy/paste from net to track post views as meta **************************/
+
+function get_post_by_name($page_name) {
+    global $wpdb;
+
+    $post = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE `post_name` = '%s' AND `post_type`='post'", $page_name ));
+    if ( $post )
+        return get_post($post);
+
+    return null;
+}
 
 function setPostViews($postID) {
     $count_key = 'postviews';
