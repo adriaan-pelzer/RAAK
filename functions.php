@@ -1207,7 +1207,7 @@ add_shortcode('tags', 'blog_tag_box');
 /*************************/
 
 function post_authors() {
-    wp_list_authors('show_fullname=1&optioncount=1&orderby=post_count&order=DESC');
+    wp_list_authors('show_fullname=1&orderby=post_count&order=DESC');
 ?>
 <div class="whitebox-secondary tab_container">
                 <div class="blue_tab tab tab108 rounded-corners">
