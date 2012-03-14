@@ -1621,13 +1621,13 @@ h2.subTitle {
 
 /************** BLOG ARCHIVE ***********/
 
-/*.blog-category .whitebox_primary h3, .log-archive .whitebox_primary h3 {
+.blog_whitebox_primary_title_only .whitebox_primary_post h3/*, .log-archive .whitebox_primary h3*/ {
     font-size: 18px;
     line-height: 19px;
     margin: 0;
     padding: 1px 0 4px;
     letter-spacing: 1px;
-}*/
+}
 
 .blog_whitebox_primary_title_only h3 a {
     color: #00aeff;
