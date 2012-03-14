@@ -1119,7 +1119,7 @@ add_shortcode('title', 'big_title_box');
 /*************************/
 
 function blog_archive_post_list($atts) {
-    extract(shortcode_atts(array('page_type' => ''));
+    extract(shortcode_atts(array('page_type' => ''), $atts);
     $page_num = (get_query_var('page')) ? get_query_var('page') : 1; 
     $blog_archive_page = get_page_by_title('Blog Archive');
     $archive_posts = new WP_Query(array('category_name' => 'Blog', ($page_type == 'tag') ? "'tag' => '"single_tag_title(FALSE)"' : "''," 'posts_per_page' => '20', 'paged' => $page_num));
