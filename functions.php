@@ -1123,7 +1123,7 @@ function blog_archive_post_list($atts) {
     $page_num = (get_query_var('page')) ? get_query_var('page') : 1; 
     $blog_archive_page = get_page_by_title('Blog Archive');
     if($page_type == 'tag') {
-        $tag = single_tag_title(FALSE);
+        $tag = single_tag_title('', FALSE);
     } else {
         $tag = '';
     }
