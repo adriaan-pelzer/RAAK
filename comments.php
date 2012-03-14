@@ -61,7 +61,6 @@ if (have_comments()) {
 if ( 'open' == $post->comment_status ) {
     do_action('populate_options');
     $req = get_option('require_name_email'); // Checks if fields are required. Thanks, Adam. ;-)
-    echo $req
 ?>
 
                 <div id="whitebox_primary_comments">
@@ -94,13 +93,13 @@ if ( 'open' == $post->comment_status ) {
         } else {
 ?>
 
-							<p class="bigger_arial_no_caps grey_text">Your email is <em>never</em> shared. <?php if ($req) 'Required fields are marked <span class="required">*</span>' ?></p>
+							<p class="bigger_arial_no_caps grey_text">Your email is <em>never</em> shared. <?php echo ($req) ? 'Required fields are marked <span class="required">*</span>' : ''; ?></p>
 
-							<label class="form-label bigger_arial_caps grey_text" for="author">Name</label> <?php if ($req) '<span class="required">*</span>' ?>
-							<input id="author" name="author" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author ?>" size="30" maxlength="50" tabindex="3" />
+							<label class="form-label bigger_arial_caps grey_text" for="author">Name</label> <?php echo ($req) ? '<span class="required">*</span>' : ''; ?>
+							<input id="author" name="author" class="text<?php echo ($req) ? ' required' : ''; ?>" type="text" value="<?php echo $comment_author ?>" size="30" maxlength="50" tabindex="3" />
 
 							<label class="form-label bigger_arial_caps grey_text" for="email">Email</label> <?php if ($req) '<span class="required">*</span>' ?>
-							<input id="email" name="email" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author_email ?>" size="30" maxlength="50" tabindex="4" />
+							<input id="email" name="email" class="text<?php echo ($req) ? ' required' : ''; ?>" type="text" value="<?php echo $comment_author_email ?>" size="30" maxlength="50" tabindex="4" />
 
 							<label class="form-label bigger_arial_caps grey_text" for="url">Website</label>
 							<input id="url" name="url" class="text" type="text" value="<?php echo $comment_author_url ?>" size="30" maxlength="50" tabindex="5" />
@@ -112,7 +111,7 @@ if ( 'open' == $post->comment_status ) {
 							<label class="form-label bigger_arial_caps grey_text" for="comment">Comment</label>
 							<textarea id="comment" name="comment" class="text required" cols="45" rows="8" tabindex="6"></textarea>
 
-							<div class="form-submit"><input type="hidden" name="submit" value="Post Comment" />Post Comment<!--span id="commentform_submit"--><input id="submit" name="submit" class="button" type="submit" value="Post Comment" tabindex="7" /><!--/span--><input type="hidden" name="comment_post_ID" value="<?php echo $id ?>" /></div>
+							<input type="hidden" name="submit" value="Post Comment" /><!--span id="commentform_submit"--><input id="submit" name="submit" class="button" type="submit" value="Post Comment" tabindex="7" /><!--/span--><input type="hidden" name="comment_post_ID" value="<?php echo $id ?>" />
 
 							<div class="form-option"><?php do_action( 'comment_form', $post->ID ) ?></div>
 
