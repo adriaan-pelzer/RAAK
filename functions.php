@@ -1034,7 +1034,7 @@ function related_blog_posts() {
                 $page_name = $slug;
             }
         }
-        array_push ($r_posts, get_post_by_name ($page_name));
+        array_push ($r_posts, get_post_by_title ($page_name));
     }
 ?>
 <div class="tab_container bluebox-primary other_posts">
