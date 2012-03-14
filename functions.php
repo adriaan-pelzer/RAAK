@@ -1202,7 +1202,7 @@ function blog_tag_box() {
     </div><!-- blue_tab -->
     <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <?php
-    wp_tag_cloud('number=60');
+    wp_tag_cloud('number=60&taxonomy=post_tag');
 ?>
     </div><!-- bluebox_primary -->
 </div><!-- bluebox-primary -->
