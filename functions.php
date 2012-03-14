@@ -1119,23 +1119,27 @@ add_shortcode('title', 'big_title_box');
 /*************************/
 
 function blog_archive_post_list() {
-    $archive_posts = new WP_Query(array('category_name' => 'Blog', 'posts_per_page' => '20',));
-    print_r($archive_posts);
+    $page_num = (get_query_var('page')) ? get_query_var('page') : 1; 
+    $blog_archive_page = get_page_by_title('Blog Archive');
+    $archive_posts = new WP_Query(array('category_name' => 'Blog', 'posts_per_page' => '20', 'paged' => $page_num));
 ?>
 <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
 <?php
-    foreach($archive_posts->posts as $number -> $current_post) {
+    while($archive_posts->have_posts()) {
+        $archive_posts->the_post();
+            $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
+            $author_page = get_page_by_title($author_full_name);
 ?>
     <div id="whitebox_primary_post_<?php echo $number; ?>" class="whitebox_primary_post">
-    <h3><a href="<?php echo get_permalink($current_post->ID); ?>"><?php echo $current_post->post_title; ?></a></h3>
+    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <hr />
         <div class="whitebox_primary_post_attr">
-            <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
+        <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="<?php echo get_permalink($author_page->ID); ?>"><?php echo $author_full_name; ?></a></span>
             <span class="seperator">|</span>
-            <span class="whitebox_primary_post_attr_item date">31 Jan 2012</span>
+            <span class="whitebox_primary_post_attr_item date"><?php the_date('j F Y'); ?></span>
             <span class="seperator">|</span>
             
-            <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+            <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" /><?php comments_number('0 comments', '1 comment', '% comments'); ?></span>
         </div><!-- .whitebox_primary_attr -->
         <hr class="solid" />
     </div>
@@ -1143,10 +1147,10 @@ function blog_archive_post_list() {
     }
 ?>
     <footer class="whitebox_primary_footer box_nav small_arial_caps">
-        <a class="whitebox_primary_footer_left"  href="<?php echo get_page_link(5238); ?>">All blog posts</a>
+        <a class="whitebox_primary_footer_left"  href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
         <div class="whitebox_primary_footer_right">
             <a onclick="javascript: previous();"><span class="arrow">&#9668;</span>Previous</a>
-            <span class="seperator">|</span>
+            <?php echo get_previous_posts_link(); ?><span class="seperator">|</span><?php echo get_next_posts_link(); ?>
             <a class="active" onclick="javascript: next();">Next<span class="arrow">&#9658;</span></a>
         </div><!-- .whitebox_primary_footer_right -->
     </footer><!-- .whitebox_primary_footer -->
