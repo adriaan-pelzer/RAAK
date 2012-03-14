@@ -7,9 +7,8 @@ Template Name: Tag Archive
 
     <div class="container rounded-corners blog_archive">
         <div class="content">
-<?php print_r($_POST); ?>
 <?php do_shortcode('[tag_title]'); ?>
-<?php do_shortcode('[archive_list]'); ?>
+<?php do_shortcode('[archive_list page_type="tag"]'); ?>
 <?php do_shortcode('[tags]'); ?>
             <div class="whitebox-secondary tab_container">
                 <div class="blue_tab tab tab108 rounded-corners">
