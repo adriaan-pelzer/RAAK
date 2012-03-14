@@ -95,10 +95,10 @@ if ( 'open' == $post->comment_status ) {
 
 							<p class="bigger_arial_no_caps grey_text">Your email is <em>never</em> shared. <?php echo ($req) ? 'Required fields are marked <span class="required">*</span>' : ''; ?></p>
 
-							<label class="form-label bigger_arial_caps grey_text" for="author">Name</label> <?php echo ($req) ? '<span class="required">*</span>' : ''; ?>
+							<label class="form-label bigger_arial_caps grey_text" for="author">Name<?php echo ($req) ? '<span class="required">*</span>' : ''; ?></label> 
 							<input id="author" name="author" class="text<?php echo ($req) ? ' required' : ''; ?>" type="text" value="<?php echo $comment_author ?>" size="30" maxlength="50" tabindex="3" />
 
-							<label class="form-label bigger_arial_caps grey_text" for="email">Email</label> <?php if ($req) '<span class="required">*</span>' ?>
+							<label class="form-label bigger_arial_caps grey_text" for="email">Email<?php echo ($req) ? '<span class="required">*</span>' : ''; ?></label>
 							<input id="email" name="email" class="text<?php echo ($req) ? ' required' : ''; ?>" type="text" value="<?php echo $comment_author_email ?>" size="30" maxlength="50" tabindex="4" />
 
 							<label class="form-label bigger_arial_caps grey_text" for="url">Website</label>
