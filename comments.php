@@ -61,13 +61,15 @@ if (have_comments()) {
 if ( 'open' == $post->comment_status ) {
     $req = get_option('require_name_email'); // Checks if fields are required. Thanks, Adam. ;-) ?>
 
-				<div id="respond">
-					<h3>Leave a Comment</h3>
+                <div id="whitebox_primary_comments">
+                    <header>
+					    <h4>Leave a Comment</h4>
+                    </header>
 
 <?php
     if ( get_option('comment_registration') && !$user_ID ) { 
 ?>
-					<p id="login-req"><?php printf(__('You must be <a href="%s" title="Log in">logged in</a> to post a comment.', 'sandbox'),
+					<p id="login-req"><?php printf(__('You must be <a href="%s" title="Log in">logged in</a> to post a comment.'),
 					get_bloginfo('wpurl') . '/wp-login.php?redirect_to=' . get_permalink() ) ?></p>
 
 <?php
@@ -89,23 +91,23 @@ if ( 'open' == $post->comment_status ) {
         } else {
 ?>
 
-							<p id="comment-notes">Your email is <em>never</em> shared. <?php if ($req) 'Required fields are marked <span class="required">*</span>' ?></p>
+							<p class="bigger_arial_no_caps grey_text">Your email is <em>never</em> shared. <?php if ($req) 'Required fields are marked <span class="required">*</span>' ?></p>
 
-							<div class="form-label"><label for="author">Name</label> <?php if ($req) '<span class="required">*</span>' ?></div>
-							<div class="form-input"><input id="author" name="author" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author ?>" size="30" maxlength="50" tabindex="3" /></div>
+							<label class="form-label bigger_arial_caps grey_text" for="author">Name</label> <?php if ($req) '<span class="required">*</span>' ?>
+							<input id="author" name="author" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author ?>" size="30" maxlength="50" tabindex="3" />
 
-							<div class="form-label"><label for="email">Email</label> <?php if ($req) '<span class="required">*</span>' ?></div>
-							<div class="form-input"><input id="email" name="email" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author_email ?>" size="30" maxlength="50" tabindex="4" /></div>
+							<label class="form-label bigger_arial_caps grey_text" for="email">Email</label> <?php if ($req) '<span class="required">*</span>' ?>
+							<input id="email" name="email" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author_email ?>" size="30" maxlength="50" tabindex="4" />
 
-							<div class="form-label"><label for="url">Website</label></div>
-							<div class="form-input"><input id="url" name="url" class="text" type="text" value="<?php echo $comment_author_url ?>" size="30" maxlength="50" tabindex="5" /></div>
+							<label class="form-label bigger_arial_caps grey_text" for="url">Website</label>
+							<input id="url" name="url" class="text" type="text" value="<?php echo $comment_author_url ?>" size="30" maxlength="50" tabindex="5" />
 
 <?php
         }
  // REFERENCE: * if ( $user_ID ) ?>
 
-							<div class="form-label"><label for="comment">Comment</label></div>
-							<div class="form-textarea"><textarea id="comment" name="comment" class="text required" cols="45" rows="8" tabindex="6"></textarea></div>
+							<label class="form-label bigger_arial_caps grey_text" for="comment">Comment</label>
+							<textarea id="comment" name="comment" class="text required" cols="45" rows="8" tabindex="6"></textarea>
 
 							<div class="form-submit"><input type="hidden" name="submit" value="Post Comment" />Post Comment<!--span id="commentform_submit"--><input id="submit" name="submit" class="button" type="submit" value="Post Comment" tabindex="7" /><!--/span--><input type="hidden" name="comment_post_ID" value="<?php echo $id ?>" /></div>
 
