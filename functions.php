@@ -63,7 +63,7 @@ function display_latest_posts($atts) {
                     <span class="seperator">|</span>
                     <span class="whitebox_primary_post_attr_item date"><?php the_date('j F Y'); ?></span>
                     <span class="seperator">|</span>
-                    <span class="whitebox_primary_post_attr_item comments"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php comments_number('0 comments', '1 comment', '% comments'); ?></span>
+                    <span class="whitebox_primary_post_attr_item comments_count"><img alt="comment icon" class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php comments_number('0 comments', '1 comment', '% comments'); ?></span>
                 </div><!-- .whitebox_primary_post_attr -->
                 <div class="whitebox_primary_post_content">
                     <div class="whitebox_primary_post_content_right">
@@ -952,7 +952,7 @@ function single_blog_post() {
                         <div class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="<?php echo get_permalink($author_page->ID);  ?>"><?php echo $author_full_name; ?></a></div>
                         <div class="whitebox_primary_post_attr_item date"><?php the_date('j F Y'); ?></div>
                         <div class="whitebox_primary_post_attr_item time"><?php the_time('G:i'); ?></div>
-                        <div class="whitebox_primary_post_attr_item comments"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php comments_number('0 comments', '1 comment', '% comments'); ?></div>
+                        <div class="whitebox_primary_post_attr_item comments_count"><img class="commenticon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png"><?php comments_number('0 comments', '1 comment', '% comments'); ?></div>
                     </div><!-- .whitebox_primary_post_attr -->
                     <div class="whitebox_primary_share">
                         <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-via="<?php echo $twittername; ?>" data-related="RAAKonteurs" data-text="<?php the_title(); ?> &#9733; RAAK">Tweet</a>

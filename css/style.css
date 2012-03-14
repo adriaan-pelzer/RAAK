@@ -360,6 +360,7 @@ input[type="submit"], button {
     font: 9px arial, sans-serif;
     text-transform: uppercase;
     border: 1px solid #8CD9FF;
+    cursor: pointer;
 }
 
 label {
@@ -1542,9 +1543,9 @@ form.wpcf7-form span {
     width: 240px;
 }
 
-#commentform label[for="comment"] {
+/*#commentform label[for="comment"] {
     width: 97px;
-}
+}*/
 
 #commentform textarea {
     width: 238px;
@@ -1555,7 +1556,7 @@ form.wpcf7-form span {
 #commentform #submit {
     width: 90px;
     padding: 6px 0;
-    margin-left: 100px;
+    margin-left: 102px;
 }
 
 .bluebox_content_quarter, .related_posts_hr {
