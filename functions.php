@@ -1108,8 +1108,7 @@ function big_title_box() {
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
-    <h2 class="din-schrift blue_20">Blog Archive</h2>
-<?php the_title(); ?>
+    <h2 class="din-schrift blue_20"><?php the_title(); ?></h2>
     </header>
 </div>
 <?php
@@ -1124,6 +1123,29 @@ function blog_archive_post_list() {
     print_r($num_posts);
     //$archive_posts = new WP_Query(array('category_name' => 'Blog',
 ?>
+<div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
+    <div id="whitebox_primary_post_0" class="whitebox_primary_post">
+        <h3><a href="http://wewillraakyou.com/2012/01/5332/"></a></h3>
+        <hr />
+        <div class="whitebox_primary_post_attr">
+            <span class="whitebox_primary_post_attr_item author">Posted by <a rel="author" href="http://wewillraakyou.com/about/the-founders/gerrie/">Gerrie Smits</a></span>
+            <span class="seperator">|</span>
+            <span class="whitebox_primary_post_attr_item date">31 Jan 2012</span>
+            <span class="seperator">|</span>
+            
+            <span class="whitebox_primary_post_attr_item comments"><img class="commenticon" alt="comment icon" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/whitebox_primary_body_attr_comment_icon.png" />0 comments</span>
+        </div><!-- .whitebox_primary_attr -->
+        <hr class="solid" />
+    </div>
+    <footer class="whitebox_primary_footer box_nav small_arial_caps">
+        <a class="whitebox_primary_footer_left"  href="<?php echo get_page_link(5238); ?>">All blog posts</a>
+        <div class="whitebox_primary_footer_right">
+            <a onclick="javascript: previous();"><span class="arrow">&#9668;</span>Previous</a>
+            <span class="seperator">|</span>
+            <a class="active" onclick="javascript: next();">Next<span class="arrow">&#9658;</span></a>
+        </div><!-- .whitebox_primary_footer_right -->
+    </footer><!-- .whitebox_primary_footer -->
+</div><!-- whitebox_primary -->
 <?php
 }
 
