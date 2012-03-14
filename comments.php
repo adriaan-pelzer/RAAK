@@ -59,6 +59,7 @@ if (have_comments()) {
 ?>
 <?php
 if ( 'open' == $post->comment_status ) {
+    populate_options();
     do_action('populate_options');
     $req = get_option('require_name_email'); // Checks if fields are required. Thanks, Adam. ;-) ?>
 
