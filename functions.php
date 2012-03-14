@@ -1101,6 +1101,33 @@ function related_blog_posts() {
 }
 
 add_shortcode('rel_posts', 'related_blog_posts');
+
+/*************************/
+
+function big_title_box() {
+    $current_page = get_page();
+?>
+<div class="whitebox_big whitebox box big_box rounded-corners">
+    <header>
+    <h2 class="din-schrift blue_20"><?echo $current_page->post_title; ?></h2>
+    </header>
+</div>
+<?php
+}
+
+add_shortcode('title', 'big_title_box');
+
+/*************************/
+
+function blog_archive_post_list() {
+    $num_posts = wp_post_count();
+    print_r($num_posts);
+    //$archive_posts = new WP_Query(array('category_name' => 'Blog',
+?>
+<?php
+}
+
+add_shortcode('archive_list', 'blog_archive_post_list');
 ?>
 <?php 
 

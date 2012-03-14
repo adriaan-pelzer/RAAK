@@ -7,11 +7,7 @@ Template Name: Blog Archive
 
     <div class="container rounded-corners blog_archive">
         <div class="content">
-            <div class="whitebox_big whitebox box big_box rounded-corners">
-                <header>
-                    <h2 class="din-schrift blue_20">Blog Archive</h2>
-                </header>
-            </div><!-- whitebox_big -->
+<?php do_shortcode('[title]'); ?>
             <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
                 <div id="whitebox_primary_post_0" class="whitebox_primary_post">
                     <h3><a href="http://wewillraakyou.com/2012/01/5332/"></a></h3>
