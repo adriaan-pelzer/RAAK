@@ -1119,7 +1119,7 @@ add_shortcode('title', 'big_title_box');
 /*************************/
 
 function blog_archive_post_list() {
-    $num_posts = wp_post_count();
+    $num_posts = wp_count_posts();
     print_r($num_posts);
     //$archive_posts = new WP_Query(array('category_name' => 'Blog',
 ?>
