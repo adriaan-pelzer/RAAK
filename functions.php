@@ -1207,25 +1207,21 @@ add_shortcode('tags', 'blog_tag_box');
 /*************************/
 
 function post_authors() {
-    wp_list_authors('show_fullname=1&orderby=post_count&order=DESC');
 ?>
 <div class="whitebox-secondary tab_container">
-                <div class="blue_tab tab tab108 rounded-corners">
-                    <header>
-                        <h2>Authors</h2>
-                    </header>
-                </div><!-- blue_tab -->
-                <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
-                    <ul>
-                        <!--li></li-->      
-                        <li><a href="http://wewillraakyou.com/author/adriaan/">Adriaan Pelzer</a></li>      
-                        <!--li></li-->      
-                        <li><a href="http://wewillraakyou.com/author/gerrie/">Gerrie Smits</a></li>      
-                        <!--li></li-->      
-                        <li><a href="http://wewillraakyou.com/author/wessel/">Wessel van Rensburg</a></li>      
-                    </ul>
-                </div><!-- whitebox_secondary -->
-            </div>
+    <div class="blue_tab tab tab108 rounded-corners">
+        <header>
+            <h2>Authors</h2>
+        </header>
+    </div><!-- blue_tab -->
+    <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
+        <ul>
+<?php
+    wp_list_authors('show_fullname=1&orderby=post_count&order=DESC');
+?>
+        </ul>
+    </div><!-- whitebox_secondary -->
+</div>
 <?php
 }
 add_shortcode ('authors', 'post_authors');
