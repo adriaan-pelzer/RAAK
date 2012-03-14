@@ -1191,6 +1191,7 @@ function blog_tag_box() {
     wp_tag_cloud("number=0");
     $tag_cloud = ob_get_contents();
     ob_end_clean();
+    echo $tag_cloud;
 ?>
 <div class="tab_container bluebox-primary other_posts">
     <div class="blue_tab tab tab108 rounded-corners">
