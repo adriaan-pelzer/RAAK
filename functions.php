@@ -1182,6 +1182,31 @@ function blog_archive_post_list() {
 }
 
 add_shortcode('archive_list', 'blog_archive_post_list');
+
+
+/*************************/
+
+function blog_tag_box() {
+    ob_start();
+    wp_tag_cloud("number=0");
+    $tag_cloud = ob_get_contents();
+    ob_end_clean();
+?>
+<div class="tab_container bluebox-primary other_posts">
+    <div class="blue_tab tab tab108 rounded-corners">
+        <header>
+            <h2>Tags</h2>
+        </header>
+    </div><!-- blue_tab -->
+    <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
+<?php
+    echo str_replace ("/'", "'", str_replace ("tag/", "blog-archive/?thistag=", $tag_cloud));
+?>
+    </div><!-- bluebox_primary -->
+</div><!-- bluebox-primary -->
+<?php
+}
+add_shortcode('tags', 'blog_tag_box');
 ?>
 <?php 
 
