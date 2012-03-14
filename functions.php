@@ -1105,11 +1105,11 @@ add_shortcode('rel_posts', 'related_blog_posts');
 /*************************/
 
 function big_title_box() {
-    $current_page = get_page();
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
-    <h2 class="din-schrift blue_20"><?echo $current_page->post_title; ?></h2>
+    <h2 class="din-schrift blue_20">Blog Archive</h2>
+<?php the_title(); ?>
     </header>
 </div>
 <?php
