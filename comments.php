@@ -57,4 +57,70 @@ if (have_comments()) {
     }
 }
 ?>
+<?php
+if ( 'open' == $post->comment_status ) {
+    $req = get_option('require_name_email'); // Checks if fields are required. Thanks, Adam. ;-) ?>
+
+				<div id="respond">
+					<h3>Leave a Comment</h3>
+
+<?php
+    if ( get_option('comment_registration') && !$user_ID ) { 
+?>
+					<p id="login-req"><?php printf(__('You must be <a href="%s" title="Log in">logged in</a> to post a comment.', 'sandbox'),
+					get_bloginfo('wpurl') . '/wp-login.php?redirect_to=' . get_permalink() ) ?></p>
+
+<?php
+    } 
+    else {
+?>
+					<div class="formcontainer">	
+						<form name="commentform" id="commentform" action="<?php bloginfo('wpurl') ?>/wp-comments-post.php" method="post">
+
+<?php
+        if ( $user_ID ) {
+?>
+							<p id="login"><?php printf( __( '<span class="loggedin">Logged in as <a href="%1$s" title="Logged in as %2$s">%2$s</a>.</span> <span class="logout"><a href="%3$s" title="Log out of this account">Log out?</a></span>', 'sandbox' ),
+								get_bloginfo('wpurl') . '/wp-admin/profile.php',
+								wp_specialchars( $user_identity, 1 ),
+								get_bloginfo('wpurl') . '/wp-login.php?action=logout&amp;redirect_to=' . get_permalink() ) ?></p>
+
+<?php
+        } else {
+?>
+
+							<p id="comment-notes">Your email is <em>never</em> shared. <?php if ($req) 'Required fields are marked <span class="required">*</span>' ?></p>
+
+							<div class="form-label"><label for="author">Name</label> <?php if ($req) '<span class="required">*</span>' ?></div>
+							<div class="form-input"><input id="author" name="author" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author ?>" size="30" maxlength="50" tabindex="3" /></div>
+
+							<div class="form-label"><label for="email">Email</label> <?php if ($req) '<span class="required">*</span>' ?></div>
+							<div class="form-input"><input id="email" name="email" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author_email ?>" size="30" maxlength="50" tabindex="4" /></div>
+
+							<div class="form-label"><label for="url">Website</label></div>
+							<div class="form-input"><input id="url" name="url" class="text" type="text" value="<?php echo $comment_author_url ?>" size="30" maxlength="50" tabindex="5" /></div>
+
+<?php
+        }
+ // REFERENCE: * if ( $user_ID ) ?>
+
+							<div class="form-label"><label for="comment">Comment</label></div>
+							<div class="form-textarea"><textarea id="comment" name="comment" class="text required" cols="45" rows="8" tabindex="6"></textarea></div>
+
+							<div class="form-submit"><input type="hidden" name="submit" value="Post Comment" />Post Comment<!--span id="commentform_submit"--><input id="submit" name="submit" class="button" type="submit" value="Post Comment" tabindex="7" /><!--/span--><input type="hidden" name="comment_post_ID" value="<?php echo $id ?>" /></div>
+
+							<div class="form-option"><?php do_action( 'comment_form', $post->ID ) ?></div>
+
+						</form><!-- #commentform -->
+					</div><!-- .formcontainer -->
+<?php
+    }
+ // REFERENCE: if ( get_option('comment_registration') && !$user_ID ) ?>
+
+				</div><!-- #respond -->
+<?php
+}
+// REFERENCE: if ( 'open' == $post->comment_status ) ?>
+
+
 </div><!-- comments -->
