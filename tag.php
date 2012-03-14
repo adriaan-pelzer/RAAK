@@ -7,6 +7,7 @@ Template Name: Tag Archive
 
     <div class="container rounded-corners blog_archive">
         <div class="content">
+<?php print_r($_GET); ?>
 <?php do_shortcode('[title]'); ?>
 <?php do_shortcode('[archive_list]'); ?>
 <?php do_shortcode('[tags]'); ?>
