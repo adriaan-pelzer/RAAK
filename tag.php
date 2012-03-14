@@ -1,22 +1,32 @@
-<?php /*
+<?php
+/*
 Template Name: Tag Archive
-*/ ?>
-<div>
+ */
+?>
 <?php get_header(); ?>
-<h2>Tag Archive</h2>
-<?php wp_tag_cloud(''); ?>
-	<div class="navigation">
-<div class="alignleft"><?php next_posts_link('« Older Entries') ?></div>
-<div class="alignright"><?php previous_posts_link('Newer Entries »') ?></div>
-	</div>
-<?php if (have_posts()) : ?>
-		<?php while (have_posts()) : the_post(); ?>
-		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
-	<div class="entry">
-	<?php the_content('Read the rest of this entry »'); ?>
-	</div>
 
-	<?php endwhile; ?>
-	<?php endif; ?>
-</div>
-<?php get_footer(); ?>
+    <div class="container rounded-corners blog_archive">
+        <div class="content">
+<?php do_shortcode('[title]'); ?>
+<?php do_shortcode('[archive_list]'); ?>
+<?php do_shortcode('[tags]'); ?>
+            <div class="whitebox-secondary tab_container">
+                <div class="blue_tab tab tab108 rounded-corners">
+                    <header>
+                        <h2>Authors</h2>
+                    </header>
+                </div><!-- blue_tab -->
+                <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
+                    <ul>
+                        <!--li></li-->      
+                        <li><a href="http://wewillraakyou.com/author/adriaan/">Adriaan Pelzer</a></li>      
+                        <!--li></li-->      
+                        <li><a href="http://wewillraakyou.com/author/gerrie/">Gerrie Smits</a></li>      
+                        <!--li></li-->      
+                        <li><a href="http://wewillraakyou.com/author/wessel/">Wessel van Rensburg</a></li>      
+                    </ul>
+                </div><!-- whitebox_secondary -->
+            </div><!-- whitebox-secondary -->
+		</div><!-- #content -->
+<?php get_sidebar() ?>
+<?php get_footer() ?>
