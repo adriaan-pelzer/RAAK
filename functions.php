@@ -1200,7 +1200,7 @@ function blog_tag_box() {
     </div><!-- blue_tab -->
     <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <?php
-    echo str_replace ("/'", "'", str_replace ("tag/", "blog-archive/?thistag=", $tag_cloud));
+    echo $tag_cloud;
 ?>
     </div><!-- bluebox_primary -->
 </div><!-- bluebox-primary -->
