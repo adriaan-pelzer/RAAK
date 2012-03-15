@@ -389,7 +389,7 @@ add_shortcode('wblp', 'whitebox_logo_project');
 function logo_project_latest_uploads() {
 
 global $wpdb;
-    $result = $wpdb->get_results("SELECT ID, post_title FROM $wpdb->posts WHERE post_status = 'publish' AND post_type='post'");
+    $result = $wpdb->get_results("SELECT * FROM $wpdb");
     
     
     print_r($result);
