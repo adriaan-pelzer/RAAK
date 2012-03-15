@@ -388,7 +388,7 @@ add_shortcode('wblp', 'whitebox_logo_project');
 
 function logo_project_latest_uploads() {
 
-    $result = mysql_query('SELECT DATABASE()');
+    $result = mysql_query('SELECT * FROM 'raakstg_wp');
     
     $ping = mysql_fetch_assoc($result);
     print_r($ping);
