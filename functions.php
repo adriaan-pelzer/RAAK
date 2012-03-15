@@ -388,9 +388,10 @@ add_shortcode('wblp', 'whitebox_logo_project');
 
 function logo_project_latest_uploads() {
 
-    $result = mysql_query('SELECT DATABASE()');
-    $ping = mysql_fetch_assoc($result);
-    print_r($ping);
+    $result = $wpdb->get_results ('SELECT * FROM *');
+    
+    $uploads = $wpdb->get_results ('SELECT * FROM `wp_logo_uploads` ORDER BY `timestamp` DESC');
+    print_r($result);
 
 ?>
 <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
