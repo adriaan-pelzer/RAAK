@@ -1115,7 +1115,8 @@ function big_title_box($atts) {
         $page_title = 'Author: ' . $curauth->display_name;
         break;
     case 'category' :
-        $page_title = 
+        $page_title = 'Category: ' . single_cat_title('', FALSE);
+        break; 
     default:
         $page_title = get_the_title();
         break;
