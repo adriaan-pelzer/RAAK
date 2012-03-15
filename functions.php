@@ -1142,9 +1142,12 @@ function blog_archive_post_list($atts) {
         $tag = '';
     }
     if ($page_type == 'author') {
-        print_r($curauth);
-    } 
-    $archive_posts = new WP_Query(array('category_name' => 'Blog', 'tag' => $tag, 'posts_per_page' => '20', 'paged' => $page_num));
+        $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
+        $author = $curauth->ID;
+    } else {
+        $author = '';
+    }
+    $archive_posts = new WP_Query(array('category_name' => 'Blog', 'tag' => $tag, 'author' => $author, 'posts_per_page' => '20', 'paged' => $page_num));
 ?>
 <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
 <?php
