@@ -389,7 +389,7 @@ add_shortcode('wblp', 'whitebox_logo_project');
 function logo_project_latest_uploads() {
 
 global $wpdb;
-    $result = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM $wpdb->posts"), ARRAY_A);
+    $result = $wpdb->get_results("SELECT ID, post_title FROM $wpdb->posts WHERE post_status = 'publish' AND post_type='post' ORDER BY comment_count DESC LIMIT 0,4");
     
     
     print_r($result);
