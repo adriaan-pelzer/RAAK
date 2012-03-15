@@ -10,20 +10,8 @@ Template Name:Logo Project
 <?php
 do_shortcode('[wblp]');
 do_shortcode('[lplu]');
+do_shortcode('[tmplt_dl_b]');
 ?>
-            <aside class="whitebox-secondary tab_container">
-                <div class="tab blue_tab tab112 rounded-corners">
-                    <header>
-                        <h2>Downloads</h2>
-                    </header>
-                </div>
-                <div class="whitebox_secondary logo_project_whitebox_secondary whitebox box rounded-corners">
-                    <ul>
-                        <li><a href="http://wewillraakyou.com/RAAK-letter-Illustrator-template.zip">Illustrator Template</a></li>
-                        <li><a href="http://wewillraakyou.com/raak-letter-PS-template.zip">Photoshop Template</a></li>
-                    </ul>
-                </div>
-            </aside><!-- whitebox-secondary -->
             <div class="whitebox-secondary tab_container">
                 <div class="multiple_tabs">
                     <header>

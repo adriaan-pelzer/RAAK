@@ -388,12 +388,6 @@ add_shortcode('wblp', 'whitebox_logo_project');
 
 function logo_project_latest_uploads() {
 
-global $wpdb;
-    $result = $wpdb->get_results("SELECT * FROM  *");
-    
-    
-    print_r($result);
-
 ?>
 <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
                 <header>
@@ -493,6 +487,29 @@ global $wpdb;
 add_shortcode('lplu', 'logo_project_latest_uploads');
 
 /*************************/
+
+function template_download_box() {
+?>
+<aside class="whitebox-secondary tab_container">
+    <div class="tab blue_tab tab112 rounded-corners">
+        <header>
+            <h2>Downloads</h2>
+        </header>
+    </div>
+    <div class="whitebox_secondary logo_project_whitebox_secondary whitebox box rounded-corners">
+        <ul>
+            <li><a href="<?php echo get_blog_info('template_url'); ?>/templates/RAAK-letter-Illustrator-template.zip">Illustrator Template</a></li>
+            <li><a href="<?php echo get_blog_info('template_url'); ?>/raak-letter-PS-template.zip">Photoshop Template</a></li>
+        </ul>
+    </div>
+</aside><!-- whitebox-secondary -->
+
+<?php
+}
+
+add_shortcode('tmplt_dl_b', 'template_download_box');
+
+/************************/
 
 function contact_whitebox() {
 ?>
