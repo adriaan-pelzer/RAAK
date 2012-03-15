@@ -388,7 +388,7 @@ add_shortcode('wblp', 'whitebox_logo_project');
 
 function logo_project_latest_uploads() {
 
-    $result = $wpdb->get_results ('SELECT * FROM $wpdb->posts  WHERE post_type = ‘post’ LIMIT 1');
+    $result = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE `post_type`='post'" ));
     
     
     print_r($result);
