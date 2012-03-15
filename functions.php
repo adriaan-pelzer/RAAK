@@ -497,9 +497,9 @@ function template_download_box() {
         </header>
     </div>
     <div class="whitebox_secondary logo_project_whitebox_secondary whitebox box rounded-corners">
-        <ul><?php echo get_blog_info('template_url'); ?>
-            <li><a href="<?php echo get_blog_info('template_url'); ?>/templates/RAAK-letter-Illustrator-template.zip">Illustrator Template</a></li>
-            <li><a href="<?php echo get_blog_info('template_url'); ?>/templates/raak-letter-PS-template.zip">Photoshop Template</a></li>
+        <ul>
+            <li><a href="<?php echo get_bloginfo('template_url'); ?>/templates/RAAK-letter-Illustrator-template.zip">Illustrator Template</a></li>
+            <li><a href="<?php echo get_bloginfo('template_url'); ?>/templates/raak-letter-PS-template.zip">Photoshop Template</a></li>
         </ul>
     </div>
 </aside><!-- whitebox-secondary -->
