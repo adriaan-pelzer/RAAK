@@ -388,7 +388,7 @@ add_shortcode('wblp', 'whitebox_logo_project');
 
 function logo_project_latest_uploads() {
 
-    $result = mysql_query('SELECT * FROM *');
+    $result = mysql_query('SELECT * FROM table');
     print_r($result);
 
 ?>
