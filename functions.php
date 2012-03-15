@@ -388,7 +388,8 @@ add_shortcode('wblp', 'whitebox_logo_project');
 
 function logo_project_latest_uploads() {
 
-    $result = mysql_query('SHOW COLUMNS');
+    $result = mysql_query('SELECT * FROM raakstg_wp_posts WHERE post_type = ‘post’ LIMIT 1');
+    
     
     $ping = mysql_fetch_assoc($result);
     print_r($ping);
