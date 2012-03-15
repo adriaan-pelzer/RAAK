@@ -1128,6 +1128,7 @@ function blog_archive_post_list($atts) {
         $tag = '';
     }
     if ($page_type == 'author') {
+        print_r($_GET);
         $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
         print_r($curauth);
     } 
