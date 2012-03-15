@@ -9,7 +9,7 @@ Template Name: Tag Archive
         <div class="content">
 <?php do_shortcode('[tag_title]'); ?>
 <?php do_shortcode('[archive_list page_type="tag"]'); ?>
-<?php do_shortcode('[tags]'); ?>
+<?php do_shortcode('[tags page_type="tag"]'); ?>
             <div class="whitebox-secondary tab_container">
                 <div class="blue_tab tab tab108 rounded-corners">
                     <header>

@@ -1192,7 +1192,13 @@ add_shortcode('archive_list', 'blog_archive_post_list');
 
 /*************************/
 
-function blog_tag_box() {
+function blog_tag_box($atts) {
+    extract(shortcode_atts(array('page_type' => ''), $atts));
+    if($page_type == 'tag') {
+        $tag_num = 0;
+    } else {
+        $tag_num = 60;
+    }
 ?>
 <div class="tab_container bluebox-primary other_posts">
     <div class="blue_tab tab tab108 rounded-corners">
@@ -1202,7 +1208,7 @@ function blog_tag_box() {
     </div><!-- blue_tab -->
     <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <?php
-    wp_tag_cloud('number=60&taxonomy=post_tag');
+    wp_tag_cloud('number=' . $tag_num . '');
 ?>
     </div><!-- bluebox_primary -->
 </div><!-- bluebox-primary -->
