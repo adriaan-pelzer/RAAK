@@ -390,7 +390,6 @@ function logo_project_latest_uploads() {
 
     $result = mysql_query('SELECT DATABASE()');
     
-    $uploads = $wpdb->get_results ('SELECT * FROM `wp_logo_uploads` ORDER BY `timestamp` DESC');
     $ping = mysql_fetch_assoc($result);
     print_r($ping);
 
