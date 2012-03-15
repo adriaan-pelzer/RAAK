@@ -1104,7 +1104,7 @@ add_shortcode('rel_posts', 'related_blog_posts');
 
 /*************************/
 
-function big_title_box() {
+function big_title_box($atts) {
     extract(shortcode_atts(array('page_type' => ''), $atts));
     switch($page_type) {
     case 'tag':
