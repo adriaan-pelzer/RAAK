@@ -387,7 +387,7 @@ add_shortcode('wblp', 'whitebox_logo_project');
 /*************************/
 
 function logo_project_latest_uploads() {
-
+global $wpdb;
 $comment_count = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $wpdb->comments;")); 
 echo '<p>Total comments: ' . $comment_count . '</p>';
 
