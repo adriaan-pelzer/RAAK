@@ -1139,18 +1139,24 @@ function blog_archive_post_list($atts) {
     extract(shortcode_atts(array('page_type' => ''), $atts));
     $page_num = (get_query_var('page')) ? get_query_var('page') : 1; 
     $blog_archive_page = get_page_by_title('Blog Archive');
-    if($page_type == 'tag') {
+    $tag = '';
+    $author = '';
+    $cat = '';
+    switch($page_type) {
+    case 'tag' :
         $tag = single_tag_title('', FALSE);
-    } else {
-        $tag = '';
-    }
-    if ($page_type == 'author') {
+        break;
+    case 'author' :
         $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
         $author = $curauth->ID;
-    } else {
-        $author = '';
+        break;
+    case 'category' :
+        $cat = single_cat_title('', FALSE);
+        break;
+    default:
+        break;
     }
-    $archive_posts = new WP_Query(array('category_name' => 'Blog', 'tag' => $tag, 'author' => $author, 'posts_per_page' => '20', 'paged' => $page_num));
+    $archive_posts = new WP_Query(array('category_name' => 'Blog, ' . $cat . '', 'tag' => $tag, 'author' => $author, 'posts_per_page' => '20', 'paged' => $page_num));
 ?>
 <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
 <?php
@@ -1266,20 +1272,9 @@ add_shortcode ('authors', 'post_authors');
 <?php 
 /***************************** copy/paste from net to track post views as meta **************************/
 
-function get_post_by_name($page_name) {
-    global $wpdb;
-
-    $post = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE `post_name` = '%s' AND `post_type`='post'", $page_name ));
-    if ( $post )
-        return get_post($post);
-
-    return null;
-}
-
 function setPostViews($postID) {
     $count_key = 'postviews';
     $count = get_post_meta($postID, $count_key, true);
-    $count = intval($count);
     if($count==''){
         $count = 0;
         delete_post_meta($postID, $count_key);
@@ -1291,6 +1286,16 @@ function setPostViews($postID) {
 }
 
 /***************************** From local functions on old site **************************/
+
+function get_post_by_name($page_name) {
+    global $wpdb;
+
+    $post = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE `post_name` = '%s' AND `post_type`='post'", $page_name ));
+    if ( $post )
+        return get_post($post);
+
+    return null;
+}
 
 function patch_dimensions ($code, $width, $height) {
     $widthtexts = array();
