@@ -7,26 +7,10 @@ Template Name: Author Archive
 
     <div class="container rounded-corners blog_archive">
         <div class="content">
-<?php do_shortcode('[tag_title]'); ?>
+<?php do_shortcode('[title page_type="author"]'); ?>
 <?php do_shortcode('[archive_list page_type="author"]'); ?>
 <?php do_shortcode('[tags all_tags="1"]'); ?>
-            <div class="whitebox-secondary tab_container">
-                <div class="blue_tab tab tab108 rounded-corners">
-                    <header>
-                        <h2>Authors</h2>
-                    </header>
-                </div><!-- blue_tab -->
-                <div class="whitebox_secondary blog_whitebox_secondary whitebox box rounded-corners">
-                    <ul>
-                        <!--li></li-->      
-                        <li><a href="http://wewillraakyou.com/author/adriaan/">Adriaan Pelzer</a></li>      
-                        <!--li></li-->      
-                        <li><a href="http://wewillraakyou.com/author/gerrie/">Gerrie Smits</a></li>      
-                        <!--li></li-->      
-                        <li><a href="http://wewillraakyou.com/author/wessel/">Wessel van Rensburg</a></li>      
-                    </ul>
-                </div><!-- whitebox_secondary -->
-            </div><!-- whitebox-secondary -->
+<?php do_shortcode('[authors]'); ?>
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>

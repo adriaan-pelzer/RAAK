@@ -1105,16 +1105,57 @@ add_shortcode('rel_posts', 'related_blog_posts');
 /*************************/
 
 function big_title_box() {
+    extract(shortcode_atts(array('page_type' => ''), $atts));
+    switch($page_type) {
+    case 'tag':
+        $page_title = single_tag_title('Blog Archive: ');
+        break;
+    case 'author' :
+        $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
+        $page_title = 'Author: ' . $curauth->display_name;
+        break;
+    default:
+        $page_title = get_the_title();
+        break;
+    }
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
-    <h2 class="din-schrift blue_20"><?php the_title(); ?></h2>
+    <h2 class="din-schrift blue_20"><?php echo $page_title; ?></h2>
     </header>
 </div>
 <?php
 }
 
 add_shortcode('title', 'big_title_box');
+
+/*************************/
+
+function big_tag_title_box() {
+?>
+<div class="whitebox_big whitebox box big_box rounded-corners">
+    <header>
+    <h2 class="din-schrift blue_20"><?php single_tag_title('Blog Archive: '); ?></h2>
+    </header>
+</div>
+<?php
+}
+
+add_shortcode('tag_title', 'big_tag_title_box');
+
+/*************************/
+
+function big_author_title_box() {
+?>
+<div class="whitebox_big whitebox box big_box rounded-corners">
+    <header>
+    <h2 class="din-schrift blue_20"><?php single_tag_title('Blog Archive: '); ?></h2>
+    </header>
+</div>
+<?php
+}
+
+add_shortcode('author_title', 'big_author_title_box');
 
 /*************************/
 
@@ -1244,21 +1285,8 @@ function post_authors() {
 add_shortcode ('authors', 'post_authors');
 
 /*************************/
-
-function big_tag_title_box() {
-?>
-<div class="whitebox_big whitebox box big_box rounded-corners">
-    <header>
-    <h2 class="din-schrift blue_20"><?php single_tag_title('Blog Archive: '); ?></h2>
-    </header>
-</div>
-<?php
-}
-
-add_shortcode('tag_title', 'big_tag_title_box');
 ?>
 <?php 
-
 /***************************** copy/paste from net to track post views as meta **************************/
 
 function get_post_by_name($page_name) {
