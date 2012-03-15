@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Tag Archive
+Template Name: Author Archive
  */
 ?>
 <?php get_header(); ?>
@@ -8,7 +8,7 @@ Template Name: Tag Archive
     <div class="container rounded-corners blog_archive">
         <div class="content">
 <?php do_shortcode('[tag_title]'); ?>
-<?php do_shortcode('[archive_list page_type="tag"]'); ?>
+<?php do_shortcode('[archive_list page_type="author"]'); ?>
 <?php do_shortcode('[tags all_tags="1"]'); ?>
             <div class="whitebox-secondary tab_container">
                 <div class="blue_tab tab tab108 rounded-corners">

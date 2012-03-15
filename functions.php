@@ -1127,6 +1127,10 @@ function blog_archive_post_list($atts) {
     } else {
         $tag = '';
     }
+    if ($page_type == 'author') {
+        $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
+        print_r($curauth);
+    } 
     $archive_posts = new WP_Query(array('category_name' => 'Blog', 'tag' => $tag, 'posts_per_page' => '20', 'paged' => $page_num));
 ?>
 <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
@@ -1193,8 +1197,8 @@ add_shortcode('archive_list', 'blog_archive_post_list');
 /*************************/
 
 function blog_tag_box($atts) {
-    extract(shortcode_atts(array('page_type' => ''), $atts));
-    if($page_type == 'tag') {
+    extract(shortcode_atts(array('all_tags' => '0'), $atts));
+    if($all_tags != '0') {
         $tag_num = 0;
     } else {
         $tag_num = 60;
