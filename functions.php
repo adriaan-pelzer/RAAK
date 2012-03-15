@@ -387,9 +387,12 @@ add_shortcode('wblp', 'whitebox_logo_project');
 /*************************/
 
 function logo_project_latest_uploads() {
+
 global $wpdb;
-$comment_count = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $wpdb->comments;")); 
-echo '<p>Total comments: ' . $comment_count . '</p>';
+    $result = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE `post_name` = * AND `post_type`='post'", $page_name ));
+    
+    
+    print_r($result);
 
 ?>
 <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
