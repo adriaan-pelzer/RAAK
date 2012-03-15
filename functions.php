@@ -1131,33 +1131,6 @@ add_shortcode('title', 'big_title_box');
 
 /*************************/
 
-function big_tag_title_box() {
-?>
-<div class="whitebox_big whitebox box big_box rounded-corners">
-    <header>
-    <h2 class="din-schrift blue_20"><?php single_tag_title('Blog Archive: '); ?></h2>
-    </header>
-</div>
-<?php
-}
-
-add_shortcode('tag_title', 'big_tag_title_box');
-
-/*************************/
-
-function big_author_title_box() {
-?>
-<div class="whitebox_big whitebox box big_box rounded-corners">
-    <header>
-    <h2 class="din-schrift blue_20"><?php single_tag_title('Blog Archive: '); ?></h2>
-    </header>
-</div>
-<?php
-}
-
-add_shortcode('author_title', 'big_author_title_box');
-
-/*************************/
 
 function blog_archive_post_list($atts) {
     extract(shortcode_atts(array('page_type' => ''), $atts));
@@ -1169,8 +1142,6 @@ function blog_archive_post_list($atts) {
         $tag = '';
     }
     if ($page_type == 'author') {
-        print_r($_GET);
-        $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
         print_r($curauth);
     } 
     $archive_posts = new WP_Query(array('category_name' => 'Blog', 'tag' => $tag, 'posts_per_page' => '20', 'paged' => $page_num));
