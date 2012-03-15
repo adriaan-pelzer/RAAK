@@ -1108,7 +1108,7 @@ function big_title_box($atts) {
     extract(shortcode_atts(array('page_type' => ''), $atts));
     switch($page_type) {
     case 'tag':
-        $page_title = single_tag_title('Blog Archive: ', FALSE);
+        $page_title = 'Blog Archive: ' . single_tag_title('', FALSE);
         break;
     case 'author' :
         $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
