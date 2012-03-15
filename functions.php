@@ -389,7 +389,8 @@ add_shortcode('wblp', 'whitebox_logo_project');
 function logo_project_latest_uploads() {
 
     $result = mysql_query('SELECT DATABASE()');
-    print_r($result);
+    $ping = mysql_fetch_assoc($result);
+    print_r($ping);
 
 ?>
 <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
