@@ -1141,7 +1141,7 @@ function blog_archive_post_list($atts) {
     $blog_archive_page = get_page_by_title('Blog Archive');
     $tag = '';
     $author = '';
-    $cat = '';
+    $cat = 'Blog';
     switch($page_type) {
     case 'tag' :
         $tag = single_tag_title('', FALSE);
@@ -1156,7 +1156,7 @@ function blog_archive_post_list($atts) {
     default:
         break;
     }
-    $archive_posts = new WP_Query(array('category_name' => 'Blog, ' . $cat . '', 'tag' => $tag, 'author' => $author, 'posts_per_page' => '20', 'paged' => $page_num));
+    $archive_posts = new WP_Query(array('category_name' => $cat, 'tag' => $tag, 'author' => $author, 'posts_per_page' => '20', 'paged' => $page_num));
     print_r($archive_posts);
 ?>
 <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
