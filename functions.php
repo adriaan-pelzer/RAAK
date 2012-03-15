@@ -499,7 +499,7 @@ function template_download_box() {
     <div class="whitebox_secondary logo_project_whitebox_secondary whitebox box rounded-corners">
         <ul>
             <li><a href="<?php echo get_blog_info('template_url'); ?>/templates/RAAK-letter-Illustrator-template.zip">Illustrator Template</a></li>
-            <li><a href="<?php echo get_blog_info('template_url'); ?>/raak-letter-PS-template.zip">Photoshop Template</a></li>
+            <li><a href="<?php echo get_blog_info('template_url'); ?>/templates/raak-letter-PS-template.zip">Photoshop Template</a></li>
         </ul>
     </div>
 </aside><!-- whitebox-secondary -->
