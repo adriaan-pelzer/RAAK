@@ -1114,6 +1114,8 @@ function big_title_box($atts) {
         $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
         $page_title = 'Author: ' . $curauth->display_name;
         break;
+    case 'category' :
+        $page_title = 
     default:
         $page_title = get_the_title();
         break;
@@ -1276,10 +1278,11 @@ function get_post_by_name($page_name) {
 function setPostViews($postID) {
     $count_key = 'postviews';
     $count = get_post_meta($postID, $count_key, true);
+    $count = intval($count);
     if($count==''){
         $count = 0;
         delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
+        add_post_meta($postID, $count_key, 0);
     }else{
         $count++;
         update_post_meta($postID, $count_key, $count);
