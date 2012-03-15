@@ -388,11 +388,10 @@ add_shortcode('wblp', 'whitebox_logo_project');
 
 function logo_project_latest_uploads() {
 
-    $result = mysql_query('SELECT * FROM raakstg_wp_posts WHERE post_type = ‘post’ LIMIT 1');
+    $result = $wpdb->get_results ('SELECT * FROM raakstg_wp_posts WHERE post_type = ‘post’ LIMIT 1');
     
     
-    $ping = mysql_fetch_assoc($result);
-    print_r($ping);
+    print_r($result);
 
 ?>
 <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
