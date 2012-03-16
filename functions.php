@@ -448,7 +448,9 @@ function logo_project_latest_uploads() {
 
 
 
+        }
     }
+
 
 
 ?>
