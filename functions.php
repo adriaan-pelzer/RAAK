@@ -668,7 +668,7 @@ function logo_project_upload_letter() {
     }
 ?>
 
-            <section id="whitebox_secondary_upload" class="current">
+    <section id="whitebox_secondary_upload" <?php echo ($state == 0) ? 'class="current"' : ''; ?>>
                 <p>Choose the letter you've designed</p>
 <?php
     if (in_array ('upload_letter', $error)) {
@@ -689,7 +689,7 @@ function logo_project_upload_letter() {
                     <a class="smaller_arial_caps">Next ►</a>
                 </div>
             </section><!-- whitebox_secondary_upload -->
-            <section id="whitebox_secondary_submit">
+            <section id="whitebox_secondary_submit" <?php echo ($state == 1) ? 'class="current"' : ''; ?>>
 <?php
     foreach ($error as $errkey) {
         if (preg_match ("/upload_db/", $errkey)) {

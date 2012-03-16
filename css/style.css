@@ -1210,6 +1210,7 @@ form li.error {
     font-weight: bold;
     font-size: 12px;
     color: #f00f00;
+    height: auto!important;
 }
 
 /************** LOGO ARCHIVE *************/
