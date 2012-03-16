@@ -622,16 +622,16 @@ function logo_project_upload_letter() {
 <div class="whitebox-secondary tab_container">
     <div class="multiple_tabs">
         <header>
-            <div id="letter_upload" class="tab rounded-corners tab112 active">
+            <div id="letter_upload" class="tab rounded-corners tab112 <?php echo ($state == 0) ? 'active' : ''; ?>">
                 <h2>Upload a letter</h2>
             </div>
-            <div id="letter_submit" class="tab rounded-corners tab75">
+            <div id="letter_submit" class="tab rounded-corners tab75 <?php echo ($state == 1) ? 'active' : ''; ?>">
                 <h2>Submit</h2>
             </div>
-            <div id="letter_preview" class="tab rounded-corners tab75">
+            <div id="letter_preview" class="tab rounded-corners tab75 <?php echo ($state == 2) ? 'active' : ''; ?>">
                 <h2>Preview</h2>
             </div>
-            <div id="letter_finsh" class="tab rounded-corners tab74">
+            <div id="letter_finsh" class="tab rounded-corners tab74 <?php echo ($state == 3) ? 'active' : ''; ?>">
                 <h2>Finish</h2>
             </div>
         </header>
