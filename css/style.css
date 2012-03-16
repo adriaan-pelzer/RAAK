@@ -1059,6 +1059,17 @@ hr.lightblue_hr {
     display: inline-block;
 }
 
+.letter a {
+    opacity: 0.3;
+}
+
+
+.letter a.selected {
+    opacity: 1;
+}
+
+
+
 #letter_R, #letter_A {
     margin-right: 13px;
 }
