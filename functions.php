@@ -397,8 +397,8 @@ add_shortcode('wblp', 'whitebox_logo_project');
 function logo_project_latest_uploads() {
     $different_letters = array('r', 'a', 'k');
     foreach ($different_letters as $letter) {
-       /* $get_letters = new WP_Query(array('post_type' => 'post', 'meta_query' => array(array('key' => 'character', 'value' => $letter), array('key' => 'approved', 'value' => '1')))); */
-        print_r(get_post_types());
+        $get_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_query' => array(array('key' => 'character', 'value' => $letter), array('key' => 'approved', 'value' => '1'))));
+        print_r($get_letters);
     }
 
 
