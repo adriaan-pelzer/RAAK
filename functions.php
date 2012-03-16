@@ -5,7 +5,7 @@
 add_action('init', 'create_post_type');
 
 function create_post_type () {
-    register_post_type('raak_logo_letter', array('labels' => array('name' => __('Letters'), 'singular' => __('Letter')), 'public' => TRUE, 'has_archive' => TRUE, 'rewrite' => array('slug' => 'letters'), supports => array('author', 'thumbnail', 'custom-fields'));
+    register_post_type('raak_logo_letter', array('labels' => array('name' => __('Letters'), 'singular' => __('Letter')), 'public' => TRUE, 'has_archive' => TRUE, 'rewrite' => array('slug' => 'letters'), supports => array('author', 'thumbnail', 'custom-fields')));
 }
 
 /*******************************/
