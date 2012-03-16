@@ -1119,6 +1119,7 @@ hr.lightblue_hr {
     width: 203px;
     height: 25px;
     display: inline-block;
+    position: relative;
 }
 
 #whitebox_secondary_submit input#upload_file {
@@ -1129,6 +1130,15 @@ hr.lightblue_hr {
     filter: alpha(opacity = 0);
 }
 
+#dummy_file_text {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    overflow: hidden;
+    width: 173px;
+    margin-top: 4px;
+}
+    
     #whitebox_secondary_submit_file label {
     vertical-align: bottom;
 }
