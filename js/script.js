@@ -205,6 +205,14 @@ var uploadLetterSelect = function() {
             $(this).addClass('selected');
         }
     });
+    $('#whitebox_secondary_upload_next a').click(function() {
+        if($('#upload_letter').attr('value') !== '') {
+            $('#letter_upload').removeClass('active');
+            $('#letter_submit').addClass('active');
+            $('#whitebox_secondary_upload').removeClass('current');
+            $('#whitebox_secondary_submit').addClass('current');
+        }
+    });
 }
 
 
@@ -222,5 +230,5 @@ $(document).ready(function() {
     galleryShowImg();
     ourWorkCatDisplay();
     viewLettersPagination();
-    uploadLetterSelect();
+    uploadLetter();
 });

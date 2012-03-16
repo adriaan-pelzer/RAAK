@@ -507,9 +507,9 @@ function logo_project_upload_letter() {
             </div>
         </header>
     </div><!-- multiple_tabs -->
-    <div class="whitebox_secondary whitebox box rounded-corners">
+    <div class="whitebox_secondary whitebox box letter_upload rounded-corners">
         <form method="post" enctype="multipart/form-data">
-            <section id="whitebox_secondary_upload">
+            <section id="whitebox_secondary_upload" class="current">
                 <p>Choose the letter you've designed</p>
                 <div id="whitebox_secondary_upload_letters">
                     <input id="upload_letter" type="hidden" name="upload_letter" value="R">
@@ -521,7 +521,7 @@ function logo_project_upload_letter() {
                     <a class="smaller_arial_caps">Next ►</a>
                 </div>
             </section><!-- whitebox_secondary_upload -->
-            <section id="whitebox_secondary_submit" style="display: none;"> 
+            <section id="whitebox_secondary_submit"> 
                 <ul class="smaller_arial_caps">
                     <li id="whitebox_secondary_submit_name">
                         <label for="upload_name">Your Name</label>
@@ -550,7 +550,7 @@ function logo_project_upload_letter() {
                     </li>
                 </ul>
             </section><!-- #whitebox_secondary_submit -->
-            <section id="whitebox_secondary_preview" class="smaller_arial_caps" style="display: none;">
+            <section id="whitebox_secondary_preview" class="smaller_arial_caps">
                 <div id="whitebox_secondary_preview_letters">
                     <span id="preview_letter_R"><img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&amp;width=70&amp;height=82"></span>
                     <span id="preview_letter_A1"><img alt="logo a" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/45d36d1d36846e6a7210254b7c10b1e0.png&amp;width=70&amp;height=82"></span>
@@ -564,7 +564,7 @@ function logo_project_upload_letter() {
                     <a>◄ Go back</a>
                 </div>
             </section><!-- #whitebox_secondary_preview -->
-            <section id="whitebox_secondary_finish" style="display: none;">
+            <section id="whitebox_secondary_finish">
                 <p class="big_and_bold">THANKS for taking part!</p>
                 <p>Your letter is now part of the loop.</p>
                 <button id="again">Upload another letter</button>
