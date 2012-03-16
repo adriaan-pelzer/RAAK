@@ -215,7 +215,7 @@ var uploadLetter = function() {
     });
     $('#upload_file').change(function() {
         console.log($this).attr('value');
-    }
+    });
 }
 
 
