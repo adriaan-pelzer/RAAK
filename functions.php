@@ -513,9 +513,9 @@ function logo_project_upload_letter() {
                 <p>Choose the letter you've designed</p>
                 <div id="whitebox_secondary_upload_letters">
                     <input id="upload_letter" type="hidden" name="upload_letter" value="R">
-                    <span class="letter"><a id="letter_R" class="selected"><img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/ar.jpg"></a></span>
-                    <span class="letter"><a id="letter_A"><img alt="logo a" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/ay1.jpg"></a></span>
-                    <span class="letter"><a id="letter_K"><img alt="logo k" src="http://wewillraakyou.com/wp-content/themes/RAAK/images/kay.jpg"></a></span>
+                    <span class="letter"><a id="letter_R" class="selected"><img alt="logo r" src="<?php echo get_bloginfo('template_url'); ?>/images/ar.jpg"></a></span>
+                    <span class="letter"><a id="letter_A"><img alt="logo a" src="<?php echo get_bloginfo('template_url'); ?>/images/ay1.jpg"></a></span>
+                    <span class="letter"><a id="letter_K"><img alt="logo k" src="<?php echo get_bloginfo('template_url'); ?>/images/kay.jpg"></a></span>
                 </div>
                 <div id="whitebox_secondary_upload_next">
                     <a class="smaller_arial_caps">Next ►</a>
