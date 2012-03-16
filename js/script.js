@@ -164,7 +164,6 @@ var ourWorkCatDisplay = function() {
             $(this).addClass('active');
             var splitPoint = $(this).attr('id').lastIndexOf('_');
             var currentID = $(this).attr('id').substring(splitPoint + 1);
-            console.log(currentID);
             $('.whitebox_big_category.current').removeClass('current');
             $('#whitebox_big_' + currentID).addClass('current');
         }
@@ -189,6 +188,7 @@ var viewLettersPagination = function() {
             $('.logo_project_bluebox_nav_item_left a.active').removeClass('active');
             var splitPoint = $(this).attr('id').lastIndexOf('_');
             var currentID = $(this).attr('id').substring(splitPoint + 1);
+            console.log(currentID);
             $('.logo_project_bluebox_primary .bluebox_content.current').removeClass('current');
             $('#blue_content' + currentID).addClass('current');
             $(this).addClass('active');

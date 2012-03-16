@@ -975,7 +975,7 @@ hr.lightblue_hr {
 }
 
 .logo_project_bluebox_primary .bluebox_content.current {
-    display: none;
+    display: block;
 }
 
 .logo_project_letter_image  {
