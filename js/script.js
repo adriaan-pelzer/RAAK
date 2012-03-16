@@ -190,7 +190,7 @@ var viewLettersPagination = function() {
             var currentID = $(this).attr('id').substring(splitPoint + 1);
             console.log(currentID);
             $('.logo_project_bluebox_primary .bluebox_content.current').removeClass('current');
-            $('#blue_content' + currentID).addClass('current');
+            $('#bluebox_content' + currentID).addClass('current');
             $(this).addClass('active');
         }
     });
