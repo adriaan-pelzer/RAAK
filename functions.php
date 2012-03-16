@@ -421,7 +421,7 @@ function logo_project_latest_uploads() {
     </div>
     <hr class="solid blue_hr">
 <?php
-    foreach ($different_letters as $letter) {
+    foreach ($different_letters as $letter_obj) {
         $get_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => '6', 'paged' => '1', 'orderby' => 'date', 'meta_query' => array(array('key' => 'character', 'value' => $letter), array('key' => 'approved', 'value' => '1'))));
         for($position = 0; $position < 6; $position++) {
             switch ($position) {
@@ -444,7 +444,7 @@ function logo_project_latest_uploads() {
                $suffix = 'bottom_right'; 
                break;
             }
-            print_r($letter);
+            print_r($letter_obj);
 
 
 
