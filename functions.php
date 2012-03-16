@@ -489,88 +489,106 @@ add_shortcode('lplu', 'logo_project_latest_uploads');
 /*************************/
 
 function logo_project_upload_letter() {
-$width = 700;
-$height = 840;
-$error_messages = array (
-    'upload_letter'=>"Please choose a letter to upload",
-    'upload_email'=>"Please enter a valid email address",
-    'upload_url'=>"Please enter a valid url",
-    'upload_name'=>"Please enter your name",
-    'upload_agree'=>"Please tick to agree to the terms & conditions",
-    'upload_file'=>"Please select a file to upload",
-    'upload_file_type'=>"Picture type should be jpg or png",
-    'upload_file_size'=>"Picture size too big",
-    'upload_file_dim'=>"Picture dimensions wrong - it should be ".$width."x".$height,
-    'upload_file_copy'=>"Picture can not be copied",
-    'upload_db_insert'=>"Picture cannot be inserted into the database",
-    'upload_db_update'=>"Picture confirmation state cannot be updated"
-);
-$error = array();
-$state = 0;
+    $width = 700;
+    $height = 840;
+    $error_messages = array (
+        'upload_letter'=>"Please choose a letter to upload",
+        'upload_email'=>"Please enter a valid email address",
+        'upload_url'=>"Please enter a valid url",
+        'upload_name'=>"Please enter your name",
+        'upload_agree'=>"Please tick to agree to the terms & conditions",
+        'upload_file'=>"Please select a file to upload",
+        'upload_file_type'=>"Picture type should be jpg or png",
+        'upload_file_size'=>"Picture size too big",
+        'upload_file_dim'=>"Picture dimensions wrong - it should be ".$width."x".$height,
+        'upload_file_copy'=>"Picture can not be copied",
+        'upload_db_insert'=>"Picture cannot be inserted into the database",
+        'upload_db_update'=>"Picture confirmation state cannot be updated"
+    );
+    $error = array();
+    $state = 0;
 
-if (isset ($_POST['upload_submit'])) {
-    /* required fields */
-    foreach (array ('upload_letter', 'upload_email', 'upload_name', 'upload_agree') as $errkey) {
-        if (!(isset ($_POST[$errkey])) || ($_POST[$errkey] == "")) {
-            array_push ($error, $errkey);
+    if (isset ($_POST['upload_submit'])) {
+        /* required fields */
+        foreach (array ('upload_letter', 'upload_email', 'upload_name', 'upload_agree') as $errkey) {
+            if (!(isset ($_POST[$errkey])) || ($_POST[$errkey] == "")) {
+                array_push ($error, $errkey);
+            }
         }
-    }
-    /* /required fields */
+        /* /required fields */
 
-    /* validation */
-    $regex_url = "((https?|ftp)\:\/\/)?"; // SCHEME 
-    $regex_url .= "([a-z0-9+!*(),;?&=\$_.-]+(\:[a-z0-9+!*(),;?&=\$_.-]+)?@)?"; // User and Pass 
-    $regex_url .= "([a-z0-9-.]*)\.([a-z]{2,3})"; // Host or IP 
-    $regex_url .= "(\:[0-9]{2,5})?"; // Port 
-    $regex_url .= "(\/([a-z0-9+\$_-]\.?)+)*\/?"; // Path 
-    $regex_url .= "(\?[a-z+&\$_.-][a-z0-9;:@&%=+\/\$_.-]*)?"; // GET Query 
-    $regex_url .= "(#[a-z_.-][a-z0-9+\$_.-]*)?"; // Anchor 
+        /* validation */
+        $regex_url = "((https?|ftp)\:\/\/)?"; // SCHEME 
+        $regex_url .= "([a-z0-9+!*(),;?&=\$_.-]+(\:[a-z0-9+!*(),;?&=\$_.-]+)?@)?"; // User and Pass 
+        $regex_url .= "([a-z0-9-.]*)\.([a-z]{2,3})"; // Host or IP 
+        $regex_url .= "(\:[0-9]{2,5})?"; // Port 
+        $regex_url .= "(\/([a-z0-9+\$_-]\.?)+)*\/?"; // Path 
+        $regex_url .= "(\?[a-z+&\$_.-][a-z0-9;:@&%=+\/\$_.-]*)?"; // GET Query 
+        $regex_url .= "(#[a-z_.-][a-z0-9+\$_.-]*)?"; // Anchor 
 
-    if ((isset ($_POST['upload_url']) && ($_POST['upload_url'] != "")) && (!(preg_match ("/^".$regex_url."$/", $_POST['upload_url'])))) {
-        array_push ($error, 'upload_url');
-    }
+        if ((isset ($_POST['upload_url']) && ($_POST['upload_url'] != "")) && (!(preg_match ("/^".$regex_url."$/", $_POST['upload_url'])))) {
+            array_push ($error, 'upload_url');
+        }
 
-    $regex_email = "([a-z0-9-.]*)\@([a-z0-9-.]*)";
+        $regex_email = "([a-z0-9-.]*)\@([a-z0-9-.]*)";
 
-    if ((isset ($_POST['upload_email']) && ($_POST['upload_email'] != "")) && (!(preg_match ("/^".$regex_email."$/", $_POST['upload_email'])))) {
-        array_push ($error, 'upload_email');
-    }
-    /* /validation */
+        if ((isset ($_POST['upload_email']) && ($_POST['upload_email'] != "")) && (!(preg_match ("/^".$regex_email."$/", $_POST['upload_email'])))) {
+            array_push ($error, 'upload_email');
+        }
+        /* /validation */
 
-    if (($_FILES['upload_file']["name"] == "") && !(isset ($_POST['uploaded_file']))) {
-        array_push ($error, 'upload_file');
-    }
+        if (($_FILES['upload_file']["name"] == "") && !(isset ($_POST['uploaded_file']))) {
+            array_push ($error, 'upload_file');
+        }
 
-    if ($_POST['upload_agree'] != 'on') {
-        array_push ($error, 'upload_agree');
-    }
+        if ($_POST['upload_agree'] != 'on') {
+            array_push ($error, 'upload_agree');
+        }
 
-    if ($_FILES['upload_file']["name"] != "") {
-        unset ($_POST['index']);
-        unset ($_POST['uploaded_file']);
-        unset ($_POST['filename']);
+        if ($_FILES['upload_file']["name"] != "") {
+            unset ($_POST['index']);
+            unset ($_POST['uploaded_file']);
+            unset ($_POST['filename']);
 
-        $imagesize = getimagesize ($_FILES["upload_file"]["tmp_name"]);
+            $imagesize = getimagesize ($_FILES["upload_file"]["tmp_name"]);
 
-        if (($_FILES["upload_file"]["type"] != "image/jpeg") && ($_FILES["upload_file"]["type"] != "image/pjpeg") && ($_FILES["upload_file"]["type"] != "image/png") && ($_FILES["upload_file"]["type"] != "image/x-png")) {
-            array_push ($error, 'upload_file_type');
-        } else if ($_FILES['upload_file']['size'] > $_POST['MAX_FILE_SIZE']) {
-            array_push ($error, 'upload_file_size');
-        } else if (!(($imagesize[0] == $width) && ($imagesize[1] == $height))) {
-            array_push ($error, 'upload_file_dim');
-        } else {
-            $filename = md5 ($_FILES["upload_file"]["name"].time()).((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
-            if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], "wp-content/themes/RAAK/logo_uploads/".$filename))) {
-                array_push ($error, 'upload_file_copy');
+            if (($_FILES["upload_file"]["type"] != "image/jpeg") && ($_FILES["upload_file"]["type"] != "image/pjpeg") && ($_FILES["upload_file"]["type"] != "image/png") && ($_FILES["upload_file"]["type"] != "image/x-png")) {
+                array_push ($error, 'upload_file_type');
+            } else if ($_FILES['upload_file']['size'] > $_POST['MAX_FILE_SIZE']) {
+                array_push ($error, 'upload_file_size');
+            } else if (!(($imagesize[0] == $width) && ($imagesize[1] == $height))) {
+                array_push ($error, 'upload_file_dim');
             } else {
-                $uploaded_file = $filename;
+                $filename = md5 ($_FILES["upload_file"]["name"].time()).((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
+                if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], "wp-content/themes/RAAK/logo_uploads/".$filename))) {
+                    array_push ($error, 'upload_file_copy');
+                } else {
+                    $uploaded_file = $filename;
 
+                    if (sizeof ($error) == 0) {
+                        //global $wpdb;
+
+                        $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
+
+                        $data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>$_FILES["upload_file"]["name"], 'letter'=>$_POST["upload_letter"]);
+                        if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
+                            array_push ($error, 'upload_db_insert');
+                        } else {
+                            //$index = $wpdb->insert_id;
+                            $state = 2;
+                        }
+                    }
+                }
+            }
+        } else {
+            if (isset ($_POST['uploaded_file'])) {
                 if (sizeof ($error) == 0) {
-                    //global $wpdb;
+                    global $wpdb;
 
+                    $uploaded_file = $_POST['uploaded_file'];
                     $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
 
-                    $data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>$_FILES["upload_file"]["name"], 'letter'=>$_POST["upload_letter"]);
+                    $data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>(isset ($_POST['filename'])?$_POST['filename']:'unavailable (inserted on second try)'), 'letter'=>$_POST["upload_letter"]);
                     if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
                         array_push ($error, 'upload_db_insert');
                     } else {
@@ -580,45 +598,26 @@ if (isset ($_POST['upload_submit'])) {
                 }
             }
         }
-    } else {
-        if (isset ($_POST['uploaded_file'])) {
-            if (sizeof ($error) == 0) {
-                global $wpdb;
+    }
+    if (isset ($_POST['preview_submit']) && isset ($_POST['index']) && isset ($_POST['uploaded_file'])) {
+        //global $wpdb;
 
-                $uploaded_file = $_POST['uploaded_file'];
-                $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
+        $data = array ('confirmed'=>1);
+        $where = array ('index'=>$_POST['index']);
 
-                $data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>(isset ($_POST['filename'])?$_POST['filename']:'unavailable (inserted on second try)'), 'letter'=>$_POST["upload_letter"]);
-                if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
-                    array_push ($error, 'upload_db_insert');
-                } else {
-                    //$index = $wpdb->insert_id;
-                    $state = 2;
-                }
-            }
+        if (!($wpdb->update( "wp_logo_uploads", $data, $where))) {
+            array_push ($error, 'upload_db_update');
+        } else {
+            $state = 3;
         }
     }
-}
 
-if (isset ($_POST['preview_submit']) && isset ($_POST['index']) && isset ($_POST['uploaded_file'])) {
-    //global $wpdb;
-
-    $data = array ('confirmed'=>1);
-    $where = array ('index'=>$_POST['index']);
-
-    if (!($wpdb->update( "wp_logo_uploads", $data, $where))) {
-        array_push ($error, 'upload_db_update');
-    } else {
-        $state = 3;
+    if (sizeof ($error) > 0) {
+        $state = 1;
+         if (in_array ('upload_letter', $error)) {
+             $state = 0;
+         }
     }
-}
-
-if (sizeof ($error) > 0) {
-    $state = 1;
-     if (in_array ('upload_letter', $error)) {
-         $state = 0;
-     }
-}
 ?>
 <div class="whitebox-secondary tab_container">
     <div class="multiple_tabs">
@@ -639,8 +638,47 @@ if (sizeof ($error) > 0) {
     </div><!-- multiple_tabs -->
     <div class="whitebox_secondary whitebox box letter_upload rounded-corners">
         <form method="post" enctype="multipart/form-data">
+<?php
+    if (isset ($_POST['filename'])) {
+?>
+        <input id="filename" type="hidden" name="filename" value="<?php echo $_POST['filename']; ?>" />
+<?php
+    } else if (isset ($_FILES["upload_file"]["name"]) && ($_FILES["upload_file"]["name"] != "")) {
+?>
+        <input id="filename" type="hidden" name="filename" value="<?php echo $_FILES["upload_file"]["name"]; ?>" />
+<?php
+    }
+    if (isset ($index) && ($index != 0)) {
+?>
+        <input id="index" type="hidden" name="index" value="<?php echo $index; ?>" />
+<?php
+    } else if (isset ($_POST['index'])) {
+?>
+        <input id="index" type="hidden" name="index" value="<?php echo $_POST['index']; ?>" />
+<?php
+    }
+    if (isset ($uploaded_file) && ($uploaded_file != "")) {
+?>
+        <input id="uploaded_file" type="hidden" name="uploaded_file" value="<?php echo $uploaded_file; ?>" />
+<?php
+    } else if (isset ($_POST['uploaded_file'])) {
+?>
+        <input id="uploaded_file" type="hidden" name="uploaded_file" value="<?php echo $_POST['uploaded_file']; ?>" />
+<?php
+    }
+?>
+
             <section id="whitebox_secondary_upload" class="current">
                 <p>Choose the letter you've designed</p>
+<?php
+    if (in_array ('upload_letter', $error)) {
+?>
+                <div class="error">
+                    <?php echo $error_messages ['upload_letter']; ?>
+                </div>
+<?php
+    }
+?>
                 <div id="whitebox_secondary_upload_letters">
                     <input id="upload_letter" type="hidden" name="upload_letter" value="R">
                     <span class="letter"><a id="letter_R" class="selected"><img alt="logo r" src="<?php echo get_bloginfo('template_url'); ?>/images/ar.jpg"></a></span>
@@ -651,25 +689,87 @@ if (sizeof ($error) > 0) {
                     <a class="smaller_arial_caps">Next ►</a>
                 </div>
             </section><!-- whitebox_secondary_upload -->
-            <section id="whitebox_secondary_submit"> 
+            <section id="whitebox_secondary_submit">
+<?php
+    foreach ($error as $errkey) {
+        if (preg_match ("/upload_db/", $errkey)) {
+?>
+                <li class="error"><?php echo $error_messages [$errkey]; ?></li>
+<?php
+        }
+    }
+?>
                 <ul class="smaller_arial_caps">
+<?php
+    if (in_array ('upload_name', $error)) {
+?>
+                <li class="error"><?php echo $error_messages ['upload_name']; ?></li>
+<?php
+    }
+?>
                     <li id="whitebox_secondary_submit_name">
                         <label for="upload_name">Your Name</label>
                         <input id="upload_name" name="upload_name" type="text" maxlength="40">
                     </li>
+<?php
+    if (in_array ('upload_email', $error)) {
+?>
+                    <li class="error"><?php echo $error_messages ['upload_email']; ?></li>
+<?php
+    }
+?>
                     <li id="whitebox_secondary_submit_email">
                         <label for="upload_email">Email</label>
                         <input id="upload_email" name="upload_email" type="text" maxlength="255">
                     </li>
+<?php
+    if (in_array ('upload_url', $error)) {
+?>
+                    <li class="error"><?php echo $error_messages ['upload_url']; ?></li>
+<?php
+    }
+?>
                     <li id="whitebox_secondary_submit_url">
                         <label for="upload_url">URL</label>
                         <input id="upload_url" name="upload_url" type="text" maxlength="255">
                     </li>
+<?php
+    foreach ($error as $errkey) {
+        if (preg_match ("/upload_file/", $errkey)) {
+            if ($errkey == "upload_file_type") {
+?>
+                    <li class="error"><?php echo $error_messages [$errkey].": file type: ".$_FILES["upload_file"]["type"]; ?></li>
+<?php
+            } else {
+?>
+                    <li class="error"><?php echo $error_messages [$errkey]; ?></li>
+<?php
+            }
+        }
+    }
+?>
+
                     <li id="whitebox_secondary_submit_file">
                         <input type="hidden" name="MAX_FILE_SIZE" value="2000000">
                         <label for="upload_file">Browse for file</label>
                         <div id="file_replace"><input id="upload_file" name="upload_file" type="file"><p id="dummy_file_text"></p></div>
                     </li>
+<?php
+    foreach ($error as $errkey) {
+        if (preg_match ("/upload_file/", $errkey)) {
+            if ($errkey == "upload_file_type") {
+?>
+                    <li class="error"><?php echo $error_messages [$errkey].": file type: ".$_FILES["upload_file"]["type"]; ?></li>
+<?php
+            } else {
+?>
+                    <li class="error"><?php echo $error_messages [$errkey]; ?></li>
+<?php
+            }
+        }
+    }
+?>
+
                     <li id="whitebox_secondary_submit_agree">
                     <label for="upload_agree">I agree to the <a href="http://wewillraakyou.com/logo-project/terms-and-conditions/">terms &amp; conditions</a></label>
                         <input id="upload_agree" name="upload_agree" type="checkbox">
