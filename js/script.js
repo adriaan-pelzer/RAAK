@@ -194,6 +194,21 @@ var viewLettersPagination = function() {
         }
     });
 }
+
+var uploadLetterSelect = function() {
+    $('#whitebox_secondary_upload_letters a').click(function() {
+        if(!$(this).hasClass('selected')) {
+            $('#whitebox_secondary_upload_letters a.selected').removeClass('selected');
+            var splitPoint = $(this).attr('id').lastIndexOf('_');
+            var selectedID = $(this).attr('id').substring(splotPoint + 1);
+            $('#upload_letter').attr('value') = selectedID;
+            $(this).addClass('selected');
+        }
+    });
+}
+
+
+            
             
 
 
@@ -207,4 +222,5 @@ $(document).ready(function() {
     galleryShowImg();
     ourWorkCatDisplay();
     viewLettersPagination();
+    uploadLetterSelect();
 });
