@@ -537,6 +537,7 @@ function logo_project_upload_letter() {
                     </li>
                     <li id="whitebox_secondary_submit_file">
                         <input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+                        <input type="file" name="file_to_upload" size="60" />
                         <label for="upload_file">Browse for file</label>
                         <div id="file_replace"><input id="upload_file" name="upload_file" type="file"><p id="dummy_file_text"></p></div>
                     </li>
