@@ -397,7 +397,10 @@ add_shortcode('wblp', 'whitebox_logo_project');
 function logo_project_latest_uploads() {
     $different_letters = array('r', 'a', 'k');
     foreach ($different_letters as $letter) {
-        $get_letters = new WP_Query(array('post_type' => 'letter', 
+        $get_letters = new WP_Query(array('post_type' => 'letter', 'meta_query' => array(array('key' => 'letter', 'value' => $letter), array('key' => 'approved', 'value' => '1'))));
+        print_r($get_letters);
+    }
+
 
 ?>
 <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
