@@ -397,7 +397,8 @@ add_shortcode('wblp', 'whitebox_logo_project');
 function logo_project_latest_uploads() {
     $different_letters = array('r', 'a', 'k');
     foreach ($different_letters as $letter) {
-        $get_letters = new WP_Query(array('post_type' => 'letter', 'meta_query' => array(array('key' => 'letter', 'value' => $letter), array('key' => 'approved', 'value' => '1'))));
+        /*$get_letters = new WP_Query(array('post_type' => 'letter', 'meta_query' => array(array('key' => 'letter', 'value' => $letter), array('key' => 'approved', 'value' => '1')))); */
+        $get_letters = new WP_Query(array('post_type' => 'letter', 'meta_key' => 'letter'));
         print_r($get_letters);
     }
 
