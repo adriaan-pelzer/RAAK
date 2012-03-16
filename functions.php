@@ -404,17 +404,17 @@ function logo_project_latest_uploads() {
     <hr>
     <div class="smaller_arial_caps logo_project_bluebox_nav">
         <span class="logo_project_bluebox_nav_item">
-            <span class="logo_project_bluebox_nav_item_left"><a id="expand_R" class="active">R</a></span>
+            <span class="logo_project_bluebox_nav_item_left"><a id="expand_r" class="active">R</a></span>
             <span class="seperator">|</span>
             <span class="logo_project_bluebox_nav_item_right"><a href="http://stage.wewillraakyou.com/logo-project-2/logo-archive/">View All</a></span>
         </span>
         <span class="logo_project_bluebox_nav_item">
-            <span class="logo_project_bluebox_nav_item_left"><a id="expand_A">A</a></span>
+            <span class="logo_project_bluebox_nav_item_left"><a id="expand_a">A</a></span>
             <span class="seperator">|</span>
             <span class="logo_project_bluebox_nav_item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=A">View All</a></span>
         </span>
         <span class="logo_project_bluebox_nav_item">
-            <span class="logo_project_bluebox_nav_item_left"><a id="expand_K">K</a></span>
+            <span class="logo_project_bluebox_nav_item_left"><a id="expand_k">K</a></span>
             <span class="seperator">|</span>
             <span class="logo_project_bluebox_nav_item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=K">View All</a></span>
         </span>
