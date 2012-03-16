@@ -449,7 +449,7 @@ function logo_project_latest_uploads() {
                break;
             }
             $current_letter = $get_letters->posts[$position];
-            if(sizeof($current_letter > 0)) {
+            if(($current_letter > 0)) {
                 print_r ($current_letter);
 ?>
             <div class="bluebox_content_<?php echo $suffix; ?> logo_project_letter">
