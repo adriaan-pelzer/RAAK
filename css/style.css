@@ -1206,6 +1206,12 @@ input[name="upload_submit"] {
     width: 143px;
 }
 
+form li.error {
+    font-weight: bold;
+    font-size: 12px;
+    color: #f00f00;
+}
+
 /************** LOGO ARCHIVE *************/
 
 .bluebox_big_content_row {

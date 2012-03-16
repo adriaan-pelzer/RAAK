@@ -755,21 +755,12 @@ function logo_project_upload_letter() {
                         <div id="file_replace"><input id="upload_file" name="upload_file" type="file"><p id="dummy_file_text"></p></div>
                     </li>
 <?php
-    foreach ($error as $errkey) {
-        if (preg_match ("/upload_file/", $errkey)) {
-            if ($errkey == "upload_file_type") {
+    if (in_array ('upload_agree', $error)) {
 ?>
-                    <li class="error"><?php echo $error_messages [$errkey].": file type: ".$_FILES["upload_file"]["type"]; ?></li>
+                            <li class="error"><?php echo $error_messages ['upload_agree']; ?></li>
 <?php
-            } else {
-?>
-                    <li class="error"><?php echo $error_messages [$errkey]; ?></li>
-<?php
-            }
-        }
     }
 ?>
-
                     <li id="whitebox_secondary_submit_agree">
                     <label for="upload_agree">I agree to the <a href="http://wewillraakyou.com/logo-project/terms-and-conditions/">terms &amp; conditions</a></label>
                         <input id="upload_agree" name="upload_agree" type="checkbox">
