@@ -404,17 +404,17 @@ function logo_project_latest_uploads() {
     <hr>
     <div class="smaller_arial_caps logo_project_bluebox_nav">
         <span class="logo_project_bluebox_nav_item">
-            <span id="expand_R" class="logo_project_bluebox_nav_item_left"><a>R</a></span>
+            <span class="logo_project_bluebox_nav_item_left"><a id="expand_R" class="active">R</a></span>
             <span class="seperator">|</span>
             <span class="logo_project_bluebox_nav_item_right"><a href="http://stage.wewillraakyou.com/logo-project-2/logo-archive/">View All</a></span>
         </span>
         <span class="logo_project_bluebox_nav_item">
-            <span id="expand_A" class="logo_project_bluebox_nav_item_left"><a>A</a></span>
+            <span class="logo_project_bluebox_nav_item_left"><a id="expand_A">A</a></span>
             <span class="seperator">|</span>
             <span class="logo_project_bluebox_nav_item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=A">View All</a></span>
         </span>
         <span class="logo_project_bluebox_nav_item">
-            <span id="expand_K" class="logo_project_bluebox_nav_item_left"><a>K</a></span>
+            <span class="logo_project_bluebox_nav_item_left"><a id="expand_K">K</a></span>
             <span class="seperator">|</span>
             <span class="logo_project_bluebox_nav_item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=K">View All</a></span>
         </span>
@@ -423,7 +423,7 @@ function logo_project_latest_uploads() {
 <?php
     foreach ($different_letters as $letter) {
 ?>
-    <div id="bluebox_content_<?php echo $letter ?>" class="bluebox_content smaller_arial_caps">
+    <div id="bluebox_content_<?php echo $letter ?>" class="bluebox_content smaller_arial_caps<?php echo($letter == 'r') ? ' current' : ''; ?>">
         <div class="bluebox_content_top">
 <?php
         $get_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => '6', 'paged' => '1', 'orderby' => 'date', 'meta_query' => array(array('key' => 'character', 'value' => $letter), array('key' => 'approved', 'value' => '1'))));

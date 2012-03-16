@@ -183,7 +183,19 @@ var blogHomeCatBoxPagination = function() {
     });
 }
 
-
+var viewLettersPagination = function() {
+    $('.logo_project_bluebox_nav_item_left a').click(function() {
+        if (!$(this).hasClass('active')) {
+            $('.logo_project_bluebox_nav_item_left a.active').removeClass('active');
+            var splitPoint = $(this).attr('id').lastIndexOf('_');
+            var currentID = $(this).attr('id').substring(splitPoint + 1);
+            $('.logo_project_bluebox_primary .bluebox_content.current').removeClass('current');
+            $('#blue_content' + currentID).addClass('current');
+            $(this).addClass('active');
+        }
+    });
+}
+            
 
 
 $(document).ready(function() {
@@ -195,4 +207,5 @@ $(document).ready(function() {
     projectHover();
     galleryShowImg();
     ourWorkCatDisplay();
+    viewLettersPagination();
 });

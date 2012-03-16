@@ -970,6 +970,14 @@ hr.lightblue_hr {
     margin: 0 4px;
 }
 
+.logo_project_bluebox_primary .bluebox_content {
+    display: none;
+}
+
+.logo_project_bluebox_primary .bluebox_content.current {
+    display: none;
+}
+
 .logo_project_letter_image  {
     background: #ffffff;
     width: 71px;
