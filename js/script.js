@@ -195,7 +195,7 @@ var viewLettersPagination = function() {
     });
 }
 
-var uploadLetterSelect = function() {
+var uploadLetter = function() {
     $('#whitebox_secondary_upload_letters a').click(function() {
         if(!$(this).hasClass('selected')) {
             $('#whitebox_secondary_upload_letters a.selected').removeClass('selected');
