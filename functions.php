@@ -448,19 +448,22 @@ function logo_project_latest_uploads() {
                $suffix = 'bottom_right'; 
                break;
             }
+            $current_letter = $get_letters->posts[$position];
+            if(sizeof($current_letter != 0)) {
 ?>
             <div class="bluebox_content_<?php echo $suffix; ?> logo_project_letter">
                 <div class="logo_project_letter_image rounded-corners">
-                <img alt="logo <?php echo $letter ?>" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/<?php echo get_post_meta($get_letters->posts[$positon]->ID, 'file', TRUE); ?>&amp;width=70&amp;height=82">
+                    <img alt="logo <?php echo $letter ?>" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/<?php echo get_post_meta($current_letter->ID, 'file', TRUE); ?>&amp;width=70&amp;height=82">
                 </div>
                 <div class="logo_project_letter_blurp">
                     Submitted by
                 </div>
                 <div class="logo_project_letter_name">
-                <a href="<?php echo get_post_meta($get_letters->posts[$positon]->ID, 'creatorurl', TRUE); ?>"><?php echo get_post_meta($get_letters->posts[$positon]->ID, 'creatorname', TRUE); ?></a>                                </div>
+                    <a href="<?php echo get_post_meta($current_letter->ID, 'creatorurl', TRUE); ?>"><?php echo get_post_meta($current_letter->ID, 'creatorname', TRUE); ?></a>                                </div>
             </div><!-- bluebox_content_top_left -->
 
 <?php
+            }
             if($position == 2) {
 ?>
         </div><!-- bluebox_content_top -->
