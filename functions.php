@@ -489,6 +489,136 @@ add_shortcode('lplu', 'logo_project_latest_uploads');
 /*************************/
 
 function logo_project_upload_letter() {
+$width = 700;
+$height = 840;
+$error_messages = array (
+    'upload_letter'=>"Please choose a letter to upload",
+    'upload_email'=>"Please enter a valid email address",
+    'upload_url'=>"Please enter a valid url",
+    'upload_name'=>"Please enter your name",
+    'upload_agree'=>"Please tick to agree to the terms & conditions",
+    'upload_file'=>"Please select a file to upload",
+    'upload_file_type'=>"Picture type should be jpg or png",
+    'upload_file_size'=>"Picture size too big",
+    'upload_file_dim'=>"Picture dimensions wrong - it should be ".$width."x".$height,
+    'upload_file_copy'=>"Picture can not be copied",
+    'upload_db_insert'=>"Picture cannot be inserted into the database",
+    'upload_db_update'=>"Picture confirmation state cannot be updated"
+);
+$error = array();
+$state = 0;
+
+if (isset ($_POST['upload_submit'])) {
+    /* required fields */
+    foreach (array ('upload_letter', 'upload_email', 'upload_name', 'upload_agree') as $errkey) {
+        if (!(isset ($_POST[$errkey])) || ($_POST[$errkey] == "")) {
+            array_push ($error, $errkey);
+        }
+    }
+    /* /required fields */
+
+    /* validation */
+    $regex_url = "((https?|ftp)\:\/\/)?"; // SCHEME 
+    $regex_url .= "([a-z0-9+!*(),;?&=\$_.-]+(\:[a-z0-9+!*(),;?&=\$_.-]+)?@)?"; // User and Pass 
+    $regex_url .= "([a-z0-9-.]*)\.([a-z]{2,3})"; // Host or IP 
+    $regex_url .= "(\:[0-9]{2,5})?"; // Port 
+    $regex_url .= "(\/([a-z0-9+\$_-]\.?)+)*\/?"; // Path 
+    $regex_url .= "(\?[a-z+&\$_.-][a-z0-9;:@&%=+\/\$_.-]*)?"; // GET Query 
+    $regex_url .= "(#[a-z_.-][a-z0-9+\$_.-]*)?"; // Anchor 
+
+    if ((isset ($_POST['upload_url']) && ($_POST['upload_url'] != "")) && (!(preg_match ("/^".$regex_url."$/", $_POST['upload_url'])))) {
+        array_push ($error, 'upload_url');
+    }
+
+    $regex_email = "([a-z0-9-.]*)\@([a-z0-9-.]*)";
+
+    if ((isset ($_POST['upload_email']) && ($_POST['upload_email'] != "")) && (!(preg_match ("/^".$regex_email."$/", $_POST['upload_email'])))) {
+        array_push ($error, 'upload_email');
+    }
+    /* /validation */
+
+    if (($_FILES['upload_file']["name"] == "") && !(isset ($_POST['uploaded_file']))) {
+        array_push ($error, 'upload_file');
+    }
+
+    if ($_POST['upload_agree'] != 'on') {
+        array_push ($error, 'upload_agree');
+    }
+
+    if ($_FILES['upload_file']["name"] != "") {
+        unset ($_POST['index']);
+        unset ($_POST['uploaded_file']);
+        unset ($_POST['filename']);
+
+        $imagesize = getimagesize ($_FILES["upload_file"]["tmp_name"]);
+
+        if (($_FILES["upload_file"]["type"] != "image/jpeg") && ($_FILES["upload_file"]["type"] != "image/pjpeg") && ($_FILES["upload_file"]["type"] != "image/png") && ($_FILES["upload_file"]["type"] != "image/x-png")) {
+            array_push ($error, 'upload_file_type');
+        } else if ($_FILES['upload_file']['size'] > $_POST['MAX_FILE_SIZE']) {
+            array_push ($error, 'upload_file_size');
+        } else if (!(($imagesize[0] == $width) && ($imagesize[1] == $height))) {
+            array_push ($error, 'upload_file_dim');
+        } else {
+            $filename = md5 ($_FILES["upload_file"]["name"].time()).((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
+            if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], "wp-content/themes/RAAK/logo_uploads/".$filename))) {
+                array_push ($error, 'upload_file_copy');
+            } else {
+                $uploaded_file = $filename;
+
+                if (sizeof ($error) == 0) {
+                    //global $wpdb;
+
+                    $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
+
+                    $data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>$_FILES["upload_file"]["name"], 'letter'=>$_POST["upload_letter"]);
+                    if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
+                        array_push ($error, 'upload_db_insert');
+                    } else {
+                        //$index = $wpdb->insert_id;
+                        $state = 2;
+                    }
+                }
+            }
+        }
+    } else {
+        if (isset ($_POST['uploaded_file'])) {
+            if (sizeof ($error) == 0) {
+                global $wpdb;
+
+                $uploaded_file = $_POST['uploaded_file'];
+                $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
+
+                $data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>(isset ($_POST['filename'])?$_POST['filename']:'unavailable (inserted on second try)'), 'letter'=>$_POST["upload_letter"]);
+                if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
+                    array_push ($error, 'upload_db_insert');
+                } else {
+                    //$index = $wpdb->insert_id;
+                    $state = 2;
+                }
+            }
+        }
+    }
+}
+
+if (isset ($_POST['preview_submit']) && isset ($_POST['index']) && isset ($_POST['uploaded_file'])) {
+    //global $wpdb;
+
+    $data = array ('confirmed'=>1);
+    $where = array ('index'=>$_POST['index']);
+
+    if (!($wpdb->update( "wp_logo_uploads", $data, $where))) {
+        array_push ($error, 'upload_db_update');
+    } else {
+        $state = 3;
+    }
+}
+
+if (sizeof ($error) > 0) {
+    $state = 1;
+     if (in_array ('upload_letter', $error)) {
+         $state = 0;
+     }
+}
 ?>
 <div class="whitebox-secondary tab_container">
     <div class="multiple_tabs">
