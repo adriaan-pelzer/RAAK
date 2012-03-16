@@ -213,6 +213,9 @@ var uploadLetter = function() {
             $('#whitebox_secondary_submit').addClass('current');
         }
     });
+    $('#upload_file').change(function() {
+        console.log($this).attr('value');
+    }
 }
 
 
