@@ -493,7 +493,7 @@ function logo_project_upload_letter() {
 <div class="whitebox-secondary tab_container">
     <div class="multiple_tabs">
         <header>
-            <div id="letter_upload" class="tab rounded-corners tab112">
+            <div id="letter_upload" class="tab rounded-corners tab112 active">
                 <h2>Upload a letter</h2>
             </div>
             <div id="letter_submit" class="tab rounded-corners tab75">
@@ -502,14 +502,14 @@ function logo_project_upload_letter() {
             <div id="letter_preview" class="tab rounded-corners tab75">
                 <h2>Preview</h2>
             </div>
-            <div id="letter_finsh" class="tab rounded-corners tab74 active">
+            <div id="letter_finsh" class="tab rounded-corners tab74">
                 <h2>Finish</h2>
             </div>
         </header>
     </div><!-- multiple_tabs -->
     <div class="whitebox_secondary whitebox box rounded-corners">
         <form method="post" enctype="multipart/form-data">
-            <section id="whitebox_secondary_upload" style="display: none;">
+            <section id="whitebox_secondary_upload">
                 <p>Choose the letter you've designed</p>
                 <div id="whitebox_secondary_upload_letters">
                     <input id="upload_letter" type="hidden" name="upload_letter" value="R">
@@ -564,7 +564,7 @@ function logo_project_upload_letter() {
                     <a>◄ Go back</a>
                 </div>
             </section><!-- #whitebox_secondary_preview -->
-            <section id="whitebox_secondary_finish">
+            <section id="whitebox_secondary_finish" style="display: none;">
                 <p class="big_and_bold">THANKS for taking part!</p>
                 <p>Your letter is now part of the loop.</p>
                 <button id="again">Upload another letter</button>
