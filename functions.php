@@ -444,7 +444,7 @@ function logo_project_latest_uploads() {
                $suffix = 'bottom_right'; 
                break;
             }
-            print_r($letter_obj);
+            print_r($get_letters->posts[$position]);
 
 
 
