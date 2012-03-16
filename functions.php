@@ -460,7 +460,8 @@ function logo_project_latest_uploads() {
                     Submitted by
                 </div>
                 <div class="logo_project_letter_name">
-                    <a href="<?php echo get_post_meta($current_letter->ID, 'creatorurl', TRUE); ?>"><?php echo get_post_meta($current_letter->ID, 'creatorname', TRUE); ?></a>                                </div>
+                    <a href="<?php echo get_post_meta($current_letter->ID, 'creatorurl', TRUE); ?>"><?php echo get_post_meta($current_letter->ID, 'creatorname', TRUE); ?></a>
+                </div>
             </div><!-- bluebox_content_top_left -->
 
 <?php
@@ -474,6 +475,7 @@ function logo_project_latest_uploads() {
         }
 ?>
         </div><!-- bluebox_content_bottom -->
+    </div><!-- bluebox_content -->
 <?php
     }
 ?>
