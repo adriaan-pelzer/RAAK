@@ -5,7 +5,7 @@
 add_action('init', 'create_post_type');
 
 function create_post_type () {
-    register_post_type('raak_logo_letter', array('labels' => array('name' => __('Letters'), 'singular' => __('Letter')), 'public' => TRUE, 'has_archive' => TRUE, 'rewrite' => array('slug' => 'letters'), supports => array('custom-fields', 'title', 'editor')));
+    register_post_type('raak_logo_letter', array('labels' => array('name' => __('letters'), 'singular' => __('letter')), 'public' => TRUE, 'has_archive' => TRUE, 'rewrite' => array('slug' => 'letters'), supports => array('custom-fields', 'title', 'editor')));
 }
 
 /*******************************/
@@ -397,8 +397,7 @@ add_shortcode('wblp', 'whitebox_logo_project');
 function logo_project_latest_uploads() {
     $different_letters = array('r', 'a', 'k');
     foreach ($different_letters as $letter) {
-        /*$get_letters = new WP_Query(array('post_type' => 'letter', 'meta_query' => array(array('key' => 'letter', 'value' => $letter), array('key' => 'approved', 'value' => '1')))); */
-        $get_letters = new WP_Query(array('post_type' => 'letter', 'meta_key' => 'letter'));
+        $get_letters = new WP_Query(array('post_type' => 'letter', 'meta_query' => array(array('key' => 'character', 'value' => $letter), array('key' => 'approved', 'value' => '1'))));
         print_r($get_letters);
     }
 
