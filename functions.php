@@ -546,7 +546,7 @@ function logo_project_upload_letter() {
         }
 
         if ($_FILES['upload_file']["name"] != "") {
-            unset ($_POST['index']);
+            unset ($_POST['new_letter_id']);
             unset ($_POST['uploaded_file']);
             unset ($_POST['filename']);
 
@@ -593,7 +593,7 @@ function logo_project_upload_letter() {
                     }
                 }
             }
-        } else {
+        } /*else {
             if (isset ($_POST['uploaded_file'])) {
                 if (sizeof ($error) == 0) {
                     //global $wpdb;
@@ -602,21 +602,24 @@ function logo_project_upload_letter() {
                     $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
 
                     $data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>(isset ($_POST['filename'])?$_POST['filename']:'unavailable (inserted on second try)'), 'letter'=>$_POST["upload_letter"]);
-                    /*if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
+                    if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
                         array_push ($error, 'upload_db_insert');
                     } else {
                         //$index = $wpdb->insert_id;
                         $state = 2;
-                    }*/
+                    }
                 }
             }
-        }
+        } */
     }
-    if (isset ($_POST['preview_submit']) && isset ($_POST['index']) && isset ($_POST['uploaded_file'])) {
+    if (isset ($_POST['preview_submit']) && isset ($_POST['new_letter_id']) && isset ($_POST['uploaded_file'])) {
         //global $wpdb;
+        $letter_publish = array('ID' => $_POST['new_letter_id'], 'post_status' => 'publish');
+        wp_update_post($letter_publish);
+        $state = 3;
 
         $data = array ('confirmed'=>1);
-        $where = array ('index'=>$_POST['index']);
+        $where = array ('new_letter_id'=>$_POST['new_letter_id']);
 
         /*if (!($wpdb->update( "wp_logo_uploads", $data, $where))) {
             array_push ($error, 'upload_db_update');
@@ -668,13 +671,13 @@ function logo_project_upload_letter() {
         <input id="filename" type="hidden" name="filename" value="<?php echo $_FILES["upload_file"]["name"]; ?>" />
 <?php
     }
-    if (isset ($index) && ($index != 0)) {
+    if (isset ($new_letter_id) && ($new_letter_id != 0)) {
 ?>
-        <input id="index" type="hidden" name="index" value="<?php echo $index; ?>" />
+        <input id="new_letter_id" type="hidden" name="new_letter_id" value="<?php echo $new_letter_id; ?>" />
 <?php
-    } else if (isset ($_POST['index'])) {
+    } else if (isset ($_POST['new_letter_id'])) {
 ?>
-        <input id="index" type="hidden" name="index" value="<?php echo $_POST['index']; ?>" />
+        <input id="new_letter_id" type="new_letter_id" name="new_letter_id" value="<?php echo $_POST['new_letter_id']; ?>" />
 <?php
     }
     if (isset ($uploaded_file) && ($uploaded_file != "")) {
@@ -794,7 +797,7 @@ function logo_project_upload_letter() {
             <section id="whitebox_secondary_preview" class="smaller_arial_caps<?php echo ($state == 2) ? ' current' : ''; ?>">
                 <div id="whitebox_secondary_preview_letters">
 <?php
-    $letters = array('R'=>'/images/ar.jpg', 'A1'=>'/images/ay1.jpg', 'A2'=>'/images/ay1.jpg', 'K'=>'/images/kay.jpg');
+    $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
     if ($_POST['upload_letter'] == 'A') {
         $letters[$_POST['upload_letter'] . '1'] = '/logo_uploads/'.$filename;
     } else {
@@ -816,7 +819,7 @@ function logo_project_upload_letter() {
                     <a>◄ Go back</a>
                 </div>
             </section><!-- #whitebox_secondary_preview -->
-            <section id="whitebox_secondary_finish">
+            <section id="whitebox_secondary_finish" <?php echo ($state == 3) ? 'class="current"' : ''; ?>>
                 <p class="big_and_bold">THANKS for taking part!</p>
                 <p>Your letter is now part of the loop.</p>
                 <button id="again">Upload another letter</button>
