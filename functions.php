@@ -644,7 +644,7 @@ function logo_project_upload_letter() {
     echo 'POST: ';
     print_r($_POST);
     echo 'FILE: ';
-    print_r($_FILE);
+    print_r($_FILES);
     echo 'state: ' . $state;
     if (isset ($_POST['filename'])) {
 ?>
