@@ -639,7 +639,12 @@ function logo_project_upload_letter() {
     <div class="whitebox_secondary whitebox box letter_upload rounded-corners">
         <form method="post" enctype="multipart/form-data">
 <?php
+    echo 'error: ';
     print_r($error);
+    echo 'POST: ';
+    print_r($_POST);
+    echo 'FILE: ';
+    print_r($_FILE);
     echo 'state: ' . $state;
     if (isset ($_POST['filename'])) {
 ?>
