@@ -605,11 +605,11 @@ function logo_project_upload_letter() {
         $data = array ('confirmed'=>1);
         $where = array ('index'=>$_POST['index']);
 
-        if (!($wpdb->update( "wp_logo_uploads", $data, $where))) {
+        /*if (!($wpdb->update( "wp_logo_uploads", $data, $where))) {
             array_push ($error, 'upload_db_update');
         } else {
             $state = 3;
-        }
+        } */
     }
 
     if (sizeof ($error) > 0) {
@@ -640,6 +640,9 @@ function logo_project_upload_letter() {
         <form method="post" enctype="multipart/form-data">
 <?php
     print_r($_POST);
+    print_r($_FILE);
+    print_r($data);
+    print_r($where);
     if (isset ($_POST['filename'])) {
 ?>
         <input id="filename" type="hidden" name="filename" value="<?php echo $_POST['filename']; ?>" />
@@ -670,27 +673,27 @@ function logo_project_upload_letter() {
 ?>
 
     <section id="whitebox_secondary_upload" <?php echo ($state == 0) ? 'class="current"' : ''; ?>>
-                <p>Choose the letter you've designed</p>
+        <p>Choose the letter you've designed</p>
 <?php
     if (in_array ('upload_letter', $error)) {
 ?>
-                <div class="error">
-                    <?php echo $error_messages ['upload_letter']; ?>
-                </div>
+        <div class="error">
+<?php echo $error_messages ['upload_letter']; ?>
+        </div>
 <?php
     }
 ?>
-                <div id="whitebox_secondary_upload_letters">
-                    <input id="upload_letter" type="hidden" name="upload_letter" value="R">
-                    <span class="letter"><a id="letter_R" class="selected"><img alt="logo r" src="<?php echo get_bloginfo('template_url'); ?>/images/ar.jpg"></a></span>
-                    <span class="letter"><a id="letter_A"><img alt="logo a" src="<?php echo get_bloginfo('template_url'); ?>/images/ay1.jpg"></a></span>
-                    <span class="letter"><a id="letter_K"><img alt="logo k" src="<?php echo get_bloginfo('template_url'); ?>/images/kay.jpg"></a></span>
-                </div>
-                <div id="whitebox_secondary_upload_next">
-                    <a class="smaller_arial_caps">Next ►</a>
-                </div>
-            </section><!-- whitebox_secondary_upload -->
-            <section id="whitebox_secondary_submit" <?php echo ($state == 1) ? 'class="current"' : ''; ?>>
+        <div id="whitebox_secondary_upload_letters">
+            <input id="upload_letter" type="hidden" name="upload_letter" value="R">
+            <span class="letter"><a id="letter_R" class="selected"><img alt="logo r" src="<?php echo get_bloginfo('template_url'); ?>/images/ar.jpg"></a></span>
+            <span class="letter"><a id="letter_A"><img alt="logo a" src="<?php echo get_bloginfo('template_url'); ?>/images/ay1.jpg"></a></span>
+            <span class="letter"><a id="letter_K"><img alt="logo k" src="<?php echo get_bloginfo('template_url'); ?>/images/kay.jpg"></a></span>
+        </div>
+        <div id="whitebox_secondary_upload_next">
+            <a class="smaller_arial_caps">Next ►</a>
+        </div>
+    </section><!-- whitebox_secondary_upload -->
+    <section id="whitebox_secondary_submit" <?php echo ($state == 1) ? 'class="current"' : ''; ?>>
 <?php
     foreach ($error as $errkey) {
         if (preg_match ("/upload_db/", $errkey)) {
