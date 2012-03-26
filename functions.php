@@ -639,6 +639,7 @@ function logo_project_upload_letter() {
     <div class="whitebox_secondary whitebox box letter_upload rounded-corners">
         <form method="post" enctype="multipart/form-data">
 <?php
+    print_r($_POST);
     if (isset ($_POST['filename'])) {
 ?>
         <input id="filename" type="hidden" name="filename" value="<?php echo $_POST['filename']; ?>" />
