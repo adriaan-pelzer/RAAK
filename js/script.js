@@ -209,10 +209,11 @@ var uploadLetter = function() {
     $('#whitebox_secondary_upload_next a').click(function() {
         if($('#upload_letter').attr('value') !== '') {
             $('#letter_upload').removeClass('active');
-            $('#whitebox_secondary_upload').animate({opacity: 0}, 1000, function() {
+            $('#whitebox_secondary_upload').animate({opacity: 0}, 200, function() {
                 $('#whitebox_secondary_upload').removeClass('current');
                 $('#whitebox_secondary_submit').addClass('current');
-                $('#whitebox_secodary_submit').animate({opacity: 1}, 1000);
+            });
+            $('#whitebox_secodary_submit').animate({opacity: 1}, 200, function(){
                 $('#letter_submit').addClass('active');
             });
         }
