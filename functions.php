@@ -571,30 +571,30 @@ function logo_project_upload_letter() {
                         $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
 
                         $data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>$_FILES["upload_file"]["name"], 'letter'=>$_POST["upload_letter"]);
-                        if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
+                        /*if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
                             array_push ($error, 'upload_db_insert');
                         } else {
                             //$index = $wpdb->insert_id;
                             $state = 2;
-                        }
+                        }*/
                     }
                 }
             }
         } else {
             if (isset ($_POST['uploaded_file'])) {
                 if (sizeof ($error) == 0) {
-                    global $wpdb;
+                    //global $wpdb;
 
                     $uploaded_file = $_POST['uploaded_file'];
                     $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
 
                     $data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>(isset ($_POST['filename'])?$_POST['filename']:'unavailable (inserted on second try)'), 'letter'=>$_POST["upload_letter"]);
-                    if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
+                    /*if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
                         array_push ($error, 'upload_db_insert');
                     } else {
                         //$index = $wpdb->insert_id;
                         $state = 2;
-                    }
+                    }*/
                 }
             }
         }
@@ -1623,6 +1623,22 @@ function setPostViews($postID) {
 }
 
 /***************************** From local functions on old site **************************/
+
+function get_ip () {
+    if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
+    {
+      $ip=$_SERVER['HTTP_CLIENT_IP'];
+    }
+    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check ip is pass from proxy
+    {
+      $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+    }
+    else
+    {
+      $ip=$_SERVER['REMOTE_ADDR'];
+    }
+    return $ip;
+}
 
 function get_post_by_name($page_name) {
     global $wpdb;
