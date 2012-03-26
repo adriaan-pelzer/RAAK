@@ -580,6 +580,7 @@ function logo_project_upload_letter() {
                             add_post_meta($new_letter_id, 'creatorname', $_POST['upload_name']);
                             add_post_meta($new_letter_id, 'creatorurl', $_POST['upload_url']);
                             add_post_meta($new_letter_id, 'file', $filename);
+                        }
                         print_r ($new_letter_id);
                         $state = 2;
 
