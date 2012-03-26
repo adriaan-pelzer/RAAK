@@ -643,6 +643,7 @@ function logo_project_upload_letter() {
     print_r($_FILE);
     print_r($data);
     print_r($where);
+    echo 'state: ' . $state;
     if (isset ($_POST['filename'])) {
 ?>
         <input id="filename" type="hidden" name="filename" value="<?php echo $_POST['filename']; ?>" />
