@@ -208,13 +208,13 @@ var uploadLetter = function() {
     });
     $('#whitebox_secondary_upload_next a').click(function() {
         if($('#upload_letter').attr('value') !== '') {
-            $('#letter_upload, #whitebox_secondary_upload').animate({opacity: 0}, 1000, function() {
-                $('#letter_upload').removeClass('active');
+            $('#letter_upload').removeClass('active');
+            $('#whitebox_secondary_upload').animate({opacity: 0}, 1000, function() {
                 $('#whitebox_secondary_upload').removeClass('current');
-                $('#letter_submit').addClass('active');
                 $('#whitebox_secondary_submit').addClass('current');
-                $('#letter_submit, #letter_upload, #whitebox_secodary_submit').animate({opacity: 1}, 1000);
+                $('#whitebox_secodary_submit').animate({opacity: 1}, 1000);
             });
+            $('#letter_submit').addClass('active');
         }
     });
     $('#upload_file').change(function() {
