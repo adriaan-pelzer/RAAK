@@ -208,8 +208,6 @@ var uploadLetter = function() {
     });
     $('#whitebox_secondary_upload_next a').click(function() {
         if($('#upload_letter').attr('value') !== '') {
-            $('#letter_upload').removeClass('active');
-            $('#whitebox_secondary_upload').removeClass('current');
             $('#letter_upload, #whitebox_secondary_upload').animate({opacity: 0}, 1000, function() {
                 $('#letter_upload').removeClass('active');
                 $('#whitebox_secondary_upload').removeClass('current');
