@@ -784,19 +784,30 @@ function logo_project_upload_letter() {
                     <li id="whitebox_secondary_submit_agree">
                     <label for="upload_agree">I agree to the <a href="http://wewillraakyou.com/logo-project/terms-and-conditions/">terms &amp; conditions</a></label>
                         <input id="upload_agree" name="upload_agree" type="checkbox">
-                        <input name="upload_submit" type="submit" value="Submit ►">
+                        <input name="upload_submit" type="submit" value="Submit &#9658;">
                     </li>
                     <li class="whitebox_secondary_back" id="whitebox_secondary_submit_back">
-                        <a>◄ Go back</a>
+                        <a>&#9668; Go back</a>
                     </li>
                 </ul>
             </section><!-- #whitebox_secondary_submit -->
             <section id="whitebox_secondary_preview" class="smaller_arial_caps<?php echo ($state == 2) ? ' current' : ''; ?>">
                 <div id="whitebox_secondary_preview_letters">
-                    <span id="preview_letter_R"><img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&amp;width=70&amp;height=82"></span>
-                    <span id="preview_letter_A1"><img alt="logo a" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/45d36d1d36846e6a7210254b7c10b1e0.png&amp;width=70&amp;height=82"></span>
-                    <span id="preview_letter_A2"><img alt="logo a" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/27027cdc0a51f42ce66c576cb4916fa1.png&amp;width=70&amp;height=82"></span>
-                    <span id="preview_letter_K"><img alt="logo k" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/94f1cb321eb37b70e6f4a789514aee55.jpg&amp;width=70&amp;height=82"></span>
+<?php
+    $letters = array('R'=>'/images/ar.jpg', 'A1'=>'/images/ay1.jpg', 'A2'=>'/images/ay1.jpg', 'K'=>'/images/kay.jpg');
+    if ($_POST['upload_letter'] == 'A') {
+        $letters[$_POST['upload_letter'] . '1'] = '/logo_uploads/'.$filename;
+    } else {
+        $letters[$_POST['upload_letter']] = '/logo_uploads/'.$filename;
+    }
+        
+
+    foreach($letters as $letter => $letter_img) {
+?>
+                    <span id="preview_letter_<?php echo $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo get_bloginfo('template_url') . $letter_img; ?>"></span>
+<?php
+    }
+?>
                 </div>
                 <div id="whitebox_secondary_preview_submit">
                     <input name="preview_submit" type="submit" value="HAPPY? Then SUBMIT your letter ►">
