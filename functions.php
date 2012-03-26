@@ -636,7 +636,7 @@ function logo_project_upload_letter() {
     }
 ?>
 <div class="whitebox-secondary tab_container">
-    <div class="multiple_tabs">
+    <div class="multiple_tabs logo_letter_upload_tabs">
         <header>
             <div id="letter_upload" class="tab rounded-corners tab112 <?php echo ($state == 0) ? 'active' : ''; ?>">
                 <h2>Upload a letter</h2>

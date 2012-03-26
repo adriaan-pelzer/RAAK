@@ -229,6 +229,7 @@ var uploadLetter = function() {
 
         location.reload ();
     });
+    $('.logo_letter_upload_tabs .tab').unbind('click');
     
 }
 
