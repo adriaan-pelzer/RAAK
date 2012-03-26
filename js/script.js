@@ -211,7 +211,7 @@ var uploadLetter = function() {
             $('#letter_upload').removeClass('active');
             $('#whitebox_secondary_upload').animate({opacity: 0}, 400, function() {
                 $('#whitebox_secondary_upload').removeClass('current');
-                $('#whitebox_secondary_submit').addClass('current');
+                //$('#whitebox_secondary_submit').addClass('current');
             });
             $('#whitebox_secondary_submit').animate({opacity: 1}, 400, function(){
                 $('#letter_submit').addClass('active');
