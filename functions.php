@@ -581,6 +581,10 @@ function logo_project_upload_letter() {
                         }
                         $state = 2;
 
+                    }
+                }
+            }
+        } 
     }
     if (isset ($_POST['preview_submit']) && isset ($_POST['new_letter_id']) && isset ($_POST['uploaded_file'])) {
         $letter_publish = array('ID' => $_POST['new_letter_id'], 'post_status' => 'publish');
@@ -589,6 +593,7 @@ function logo_project_upload_letter() {
 
         $data = array ('confirmed'=>1);
         $where = array ('new_letter_id'=>$_POST['new_letter_id']);
+
     }
 
     if (sizeof ($error) > 0) {
