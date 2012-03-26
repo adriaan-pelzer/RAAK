@@ -231,6 +231,20 @@ var uploadLetter = function() {
         location.reload ();
     });
     $('.logo_letter_upload_tabs .tab').unbind('click');
+    $('.whitebox_secondary_logo_project_back a').click(function() {
+        if($(this).attr('id') === 'logo_project_submit_back') {
+            $('#whitebox_secondary_submit').removeClass('current');
+            $('#letter_submit').removeClass('active');
+            $('#whitebox_secondary_upload').addClass('current');
+            $('#letter_upload').addClass('active');
+        } else {
+            $('#whitebox_secondary_preview').removeClass('current');
+            $('#letter_preview').removeClass('active');
+            $('#whitebox_secondary_submit').addClass('current');
+            $('#letter_submit').addClass('active');
+        }
+    });
+
     
 }
 

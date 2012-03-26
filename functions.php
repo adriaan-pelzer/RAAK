@@ -782,8 +782,8 @@ function logo_project_upload_letter() {
                         <input id="upload_agree" name="upload_agree" type="checkbox">
                         <input name="upload_submit" type="submit" value="Submit &#9658;">
                     </li>
-                    <li class="whitebox_secondary_back" id="whitebox_secondary_submit_back">
-                        <a>&#9668; Go back</a>
+                    <li class="whitebox_secondary_logo_project_back">
+                        <a id="logo_project_submit_back">&#9668; Go back</a>
                     </li>
                 </ul>
             </section><!-- #whitebox_secondary_submit -->
@@ -808,8 +808,8 @@ function logo_project_upload_letter() {
                 <div id="whitebox_secondary_preview_submit">
                     <input name="preview_submit" type="submit" value="HAPPY? Then SUBMIT your letter ►">
                 </div>
-                <div class="whitebox_secondary_back" id="whitebox_secondary_preview_back">
-                    <a>&#9668; Go back</a>
+                <div class="whitebox_secondary_logo_project_back">
+                    <a id="logo_project_preview_back">&#9668; Go back</a>
                 </div>
             </section><!-- #whitebox_secondary_preview -->
             <section id="whitebox_secondary_finish" <?php echo ($state == 3) ? 'class="current"' : ''; ?>>
