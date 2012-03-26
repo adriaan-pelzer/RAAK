@@ -784,7 +784,7 @@ function logo_project_upload_letter() {
                     </li>
                 </ul>
             </section><!-- #whitebox_secondary_submit -->
-            <section id="whitebox_secondary_preview" class="smaller_arial_caps">
+            <section id="whitebox_secondary_preview" class="smaller_arial_caps<?php echo ($state == 2) ? ' current' : ''; ?>">
                 <div id="whitebox_secondary_preview_letters">
                     <span id="preview_letter_R"><img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&amp;width=70&amp;height=82"></span>
                     <span id="preview_letter_A1"><img alt="logo a" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/45d36d1d36846e6a7210254b7c10b1e0.png&amp;width=70&amp;height=82"></span>
