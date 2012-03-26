@@ -198,11 +198,12 @@ var viewLettersPagination = function() {
 var uploadLetter = function() {
     $('#whitebox_secondary_upload_letters a').click(function() {
         if(!$(this).hasClass('selected')) {
-            $('#whitebox_secondary_upload_letters a.selected').removeClass('selected');
-            var splitPoint = $(this).attr('id').lastIndexOf('_');
-            var selectedID = $(this).attr('id').substring(splitPoint + 1);
-            $('#upload_letter').attr('value', selectedID);
-            $(this).addClass('selected');
+            $('#whitebox_secondary_upload_letters a.selected').removeClass('selected').animate({opacity: 0}, 1000, function() {
+                var splitPoint = $(this).attr('id').lastIndexOf('_');
+                var selectedID = $(this).attr('id').substring(splitPoint + 1);
+                $('#upload_letter').attr('value', selectedID);
+                $(this).addClass('selected').animate({opacity: 1}, 1000);
+            });
         }
     });
     $('#whitebox_secondary_upload_next a').click(function() {
@@ -216,6 +217,16 @@ var uploadLetter = function() {
     $('#upload_file').change(function() {
         $('#dummy_file_text').html($(this).attr('value'));
     });
+    $("#again").click ( function () {
+        $("#filename").val ('');
+        $("#index").val ('');
+        $("#uploaded_file").val ('');
+        $("#upload_file").val ('');
+        $("#upload_letter").val ('R');
+
+        location.reload ();
+    });
+    
 }
 
 

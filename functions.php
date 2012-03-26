@@ -655,13 +655,6 @@ function logo_project_upload_letter() {
     <div class="whitebox_secondary whitebox box letter_upload rounded-corners">
         <form method="post" enctype="multipart/form-data">
 <?php
-    echo 'error: ';
-    print_r($error);
-    echo 'POST: ';
-    print_r($_POST);
-    echo 'FILE: ';
-    print_r($_FILES);
-    echo 'state: ' . $state;
     if (isset ($_POST['filename'])) {
 ?>
         <input id="filename" type="hidden" name="filename" value="<?php echo $_POST['filename']; ?>" />
@@ -677,7 +670,7 @@ function logo_project_upload_letter() {
 <?php
     } else if (isset ($_POST['new_letter_id'])) {
 ?>
-        <input id="new_letter_id" type="new_letter_id" name="new_letter_id" value="<?php echo $_POST['new_letter_id']; ?>" />
+        <input id="new_letter_id" type="hidden" name="new_letter_id" value="<?php echo $_POST['new_letter_id']; ?>" />
 <?php
     }
     if (isset ($uploaded_file) && ($uploaded_file != "")) {
