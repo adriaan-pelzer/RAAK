@@ -809,7 +809,7 @@ function logo_project_upload_letter() {
                     <input name="preview_submit" type="submit" value="HAPPY? Then SUBMIT your letter ►">
                 </div>
                 <div class="whitebox_secondary_back" id="whitebox_secondary_preview_back">
-                    <a>◄ Go back</a>
+                    <a>&#9668; Go back</a>
                 </div>
             </section><!-- #whitebox_secondary_preview -->
             <section id="whitebox_secondary_finish" <?php echo ($state == 3) ? 'class="current"' : ''; ?>>
