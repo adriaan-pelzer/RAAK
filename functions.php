@@ -567,11 +567,9 @@ function logo_project_upload_letter() {
                     $uploaded_file = $filename;
 
                     if (sizeof ($error) == 0) {
-                        //global $wpdb;
 
                         $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
 
-                        /*$data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>$_FILES["upload_file"]["name"], 'letter'=>$_POST["upload_letter"]);*/
                         $new_letter = array('post_title' => $file_just_name,  'post_type' => 'raak_logo_letter');
                         $new_letter_id = wp_insert_post($new_letter);
                         if ($new_letter_id != 0) {
@@ -581,51 +579,16 @@ function logo_project_upload_letter() {
                             add_post_meta($new_letter_id, 'creatorurl', $_POST['upload_url']);
                             add_post_meta($new_letter_id, 'file', $filename);
                         }
-                        print_r ($new_letter_id);
                         $state = 2;
 
-                        /*if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
-                            array_push ($error, 'upload_db_insert');
-                        } else {
-                            //$index = $wpdb->insert_id;
-                            $state = 2;
-                        }*/
-                    }
-                }
-            }
-        } /*else {
-            if (isset ($_POST['uploaded_file'])) {
-                if (sizeof ($error) == 0) {
-                    //global $wpdb;
-
-                    $uploaded_file = $_POST['uploaded_file'];
-                    $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
-
-                    $data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>(isset ($_POST['filename'])?$_POST['filename']:'unavailable (inserted on second try)'), 'letter'=>$_POST["upload_letter"]);
-                    if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
-                        array_push ($error, 'upload_db_insert');
-                    } else {
-                        //$index = $wpdb->insert_id;
-                        $state = 2;
-                    }
-                }
-            }
-        } */
     }
     if (isset ($_POST['preview_submit']) && isset ($_POST['new_letter_id']) && isset ($_POST['uploaded_file'])) {
-        //global $wpdb;
         $letter_publish = array('ID' => $_POST['new_letter_id'], 'post_status' => 'publish');
         wp_update_post($letter_publish);
         $state = 3;
 
         $data = array ('confirmed'=>1);
         $where = array ('new_letter_id'=>$_POST['new_letter_id']);
-
-        /*if (!($wpdb->update( "wp_logo_uploads", $data, $where))) {
-            array_push ($error, 'upload_db_update');
-        } else {
-            $state = 3;
-        } */
     }
 
     if (sizeof ($error) > 0) {
@@ -702,7 +665,7 @@ function logo_project_upload_letter() {
             <span class="letter"><a id="letter_K"><img alt="logo k" src="<?php echo get_bloginfo('template_url'); ?>/images/kay.jpg"></a></span>
         </div>
         <div id="whitebox_secondary_upload_next">
-            <a class="smaller_arial_caps">Next ►</a>
+            <a class="smaller_arial_caps">Next &#9658;</a>
         </div>
     </section><!-- whitebox_secondary_upload -->
     <section id="whitebox_secondary_submit" <?php echo ($state == 1) ? 'class="current"' : ''; ?>>
