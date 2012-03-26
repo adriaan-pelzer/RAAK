@@ -559,7 +559,8 @@ function logo_project_upload_letter() {
             } else if (!(($imagesize[0] == $width) && ($imagesize[1] == $height))) {
                 array_push ($error, 'upload_file_dim');
             } else {
-                $filename = md5 ($_FILES["upload_file"]["name"].time()).((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
+                $file_just_name = md5 ($_FILES["upload_file"]["name"].time());
+                $filename = $file_just_name.((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
                 if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], "wp-content/themes/RAAK/logo_uploads/".$filename))) {
                     array_push ($error, 'upload_file_copy');
                 } else {
@@ -570,7 +571,12 @@ function logo_project_upload_letter() {
 
                         $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
 
-                        $data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>$_FILES["upload_file"]["name"], 'letter'=>$_POST["upload_letter"]);
+                        /*$data = array ('ipaddress'=>get_ip(), 'username'=>$_POST['upload_name'], 'useremail'=>$_POST['upload_email'], 'userurl'=>$upload_url, 'filename'=>$uploaded_file, 'originalname'=>$_FILES["upload_file"]["name"], 'letter'=>$_POST["upload_letter"]);*/
+                        $new_letter = array('post_title' => $file_just_name,  'post_type' => 'raak_logo_letter');
+                        $new_letter_id = wp_insert_post($new_letter, TRUE);
+                        print_r ($new_letter_id);
+                        $state = 2;
+
                         /*if (!($wpdb->insert( "wp_logo_uploads", $data ))) {
                             array_push ($error, 'upload_db_insert');
                         } else {
