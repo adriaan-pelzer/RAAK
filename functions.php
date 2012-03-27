@@ -821,10 +821,11 @@ function logo_project_archive() {
         $all_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' => strtolower($letter)));
         while($all_letters->have_posts()) {
             $all_letters->the_post();
+            setup_postdata($post);
             print_r ($post);
             $content .= '
     <section id="bluebox_big_content_' . $letter .'" class="bluebox_big_content smaller_arial_caps">
-        <h3 id="expanded_letter_' . strtolower($letter) . '" class="expanded_letter smaller_arial_caps">Letter' . $letter .' </h3>
+        <h3 id="expanded_letter_' . strtolower($letter) . '" class="expanded_letter smaller_arial_caps">Letter ' . $letter .' </h3>
         <hr class="solid blue_hr" />
         <div class="bluebox_big_content_row">
             <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
