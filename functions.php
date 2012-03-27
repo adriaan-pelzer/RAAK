@@ -807,6 +807,7 @@ function logo_project_archive() {
     }
     $letters = array('R', 'A', 'K');
     $content = '';
+    $logo_project_page = get_page_by_title('Logo Project');
 ?>
 <div class="bluebox_big bluebox box big_box rounded-corners">
     <header>
@@ -866,7 +867,7 @@ function logo_project_archive() {
     </section><!-- bluebox_big_content -->';
     }
 ?>
-            <a id="bluebox_big_nav_back" href="http://wewillraakyou.com/logo-project/">Back</a>
+    <a id="bluebox_big_nav_back" href="<?php echo get_permalink($logo_project_page->ID); ?>">Back</a>
         </nav>
     </header>
     <hr />

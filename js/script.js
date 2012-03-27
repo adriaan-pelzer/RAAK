@@ -258,7 +258,7 @@ var uploadLetter = function() {
 
 var logoArchivePagination = function() {
     $('#bluebox_big_nav a').click(function() {
-        if(!$(this).hasClass('active')) {
+        if((!$(this).hasClass('active')) && ($(this).attr('id') !== 'bluebox_big_nav_back')) {
             $('#bluebox_big_nav a.active').removeClass('active');
             var splitPoint = $(this).attr('id').lastIndexOf('_');
             var selectedID = $(this).attr('id').substring(splitPoint + 1);
