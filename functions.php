@@ -852,7 +852,7 @@ function logo_project_archive() {
                 </div>
                 </div><!-- bluebox_big_content_row_item -->';
                 $row_counter++;
-                echo $row_counter;
+                $content .= $row_counter;
         }
         $content .= '
         </div><!-- .bluebox_big_content_row -->
