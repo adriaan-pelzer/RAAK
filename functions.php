@@ -404,29 +404,19 @@ function logo_project_latest_uploads() {
     </header>
     <hr>
     <div class="smaller_arial_caps logo_project_bluebox_nav">
-        <span class="logo_project_bluebox_nav_item">
-            <span class="logo_project_bluebox_nav_item_left"><a id="expand_r" class="active">R</a></span>
-            <span class="seperator">|</span>
-            <span class="logo_project_bluebox_nav_item_right"><a href="<?php echo get_permalink($logo_archive->ID); ?>?letter=R">View All</a></span>
-        </span>
-        <span class="logo_project_bluebox_nav_item">
-            <span class="logo_project_bluebox_nav_item_left"><a id="expand_a">A</a></span>
-            <span class="seperator">|</span>
-            <span class="logo_project_bluebox_nav_item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=A">View All</a></span>
-        </span>
-        <span class="logo_project_bluebox_nav_item">
-            <span class="logo_project_bluebox_nav_item_left"><a id="expand_k">K</a></span>
-            <span class="seperator">|</span>
-            <span class="logo_project_bluebox_nav_item_right"><a href="http://wewillraakyou.com/logo-project//logo-archive/?letter=K">View All</a></span>
-        </span>
-    </div>
-    <hr class="solid blue_hr">
 <?php
+    $content = '';
     foreach ($different_letters as $letter) {
 ?>
-    <div id="bluebox_content_<?php echo $letter ?>" class="bluebox_content smaller_arial_caps<?php echo($letter == 'r') ? ' current' : ''; ?>">
-        <div class="bluebox_content_top">
+        <span class="logo_project_bluebox_nav_item">
+        <span class="logo_project_bluebox_nav_item_left"><a id="expand_<?php echo $letter; ?>" class="active"><?php echo strtoupper($letter); ?></a></span>
+            <span class="seperator">|</span>
+            <span class="logo_project_bluebox_nav_item_right"><a href="<?php echo get_permalink($logo_archive->ID); ?>?letter=<?php echo strtoupper($letter); ?>">View All</a></span>
+        </span>
 <?php
+        $content .= '
+    <div id="bluebox_content_' . $letter . '" class="bluebox_content smaller_arial_caps' . (($letter == 'r') ? ' current' : '';) . '">
+        <div class="bluebox_content_top">';
         $get_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => '6', 'paged' => '1', 'orderby' => 'date', 'meta_query' => array(array('key' => 'character', 'value' => $letter), array('key' => 'approved', 'value' => '1'))));
         for($position = 0; $position < 6; $position++) {
             switch ($position) {
@@ -451,45 +441,44 @@ function logo_project_latest_uploads() {
             }
             $current_letter = $get_letters->posts[$position];
             if(($current_letter > 0)) {
-?>
-            <div class="bluebox_content_<?php echo $suffix; ?> logo_project_letter">
+                $content .= '
+            <div class="bluebox_content_' . $suffix . ' logo_project_letter">
                 <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo <?php echo $letter ?>" src="<?php echo bloginfo('template_url'); ?>/resize.php?filename=logo_uploads/<?php echo get_post_meta($current_letter->ID, 'file', TRUE); ?>&amp;width=70&amp;height=82">
+                    <img alt="logo ' . $letter . '" src="' . bloginfo('template_url'); . '/resize.php?filename=logo_uploads/' . get_post_meta($current_letter->ID, 'file', TRUE) . '&amp;width=70&amp;height=82" />
                 </div>
                 <div class="logo_project_letter_blurp">
                     Submitted by
                 </div>
-                <div class="logo_project_letter_name">
-<?php
+                <div class="logo_project_letter_name">';
                 $user_url = get_post_meta($current_letter->ID, 'creatorurl', TRUE);
                 if ($user_url != '') {
                     if ((substr_count($user_url, 'http://') == 0) && (substr_count($user_url, 'https://') == 0)) { 
                         $user_url = 'http://' . $user_url;
                     }
-?>
-                    <a href="<?php echo $user_url; ?>" target="_blank"><?php echo get_post_meta($current_letter->ID, 'creatorname', TRUE); ?></a>
-<?php
+                    $content .= '
+                    <a href="' . $user_url . '" target="_blank">' . get_post_meta($current_letter->ID, 'creatorname', TRUE) . '</a>';
                 } else {
-                    echo get_post_meta($current_letter->ID, 'creatorname', TRUE);
+                    $content .= get_post_meta($current_letter->ID, 'creatorname', TRUE);
                 }
-?>
+                $content .= '
                 </div>
-            </div><!-- bluebox_content_top_left -->
-
-<?php
+            </div><!-- bluebox_content_' . $suffix . ' -->';
             }
             if($position == 2) {
-?>
+                $content .= '
         </div><!-- bluebox_content_top -->
-        <div class="bluebox_content_bottom">
-<?php
+        <div class="bluebox_content_bottom">';
             }
         }
-?>
+        $content .= '
         </div><!-- bluebox_content_bottom -->
-    </div><!-- bluebox_content -->
-<?php
+    </div><!-- bluebox_content -->';
     }
+?>
+    </div>
+    <hr class="solid blue_hr">
+<?php
+    echo $content;
 ?>
 </div>
 <?php
