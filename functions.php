@@ -821,8 +821,7 @@ function logo_project_archive() {
         $all_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' => strtolower($letter)));
         while($all_letters->have_posts()) {
             $all_letters->the_post();
-            setup_postdata($post);
-            print_r ($post);
+            $current_letter_id = get_the_ID();
             $content .= '
     <section id="bluebox_big_content_' . $letter .'" class="bluebox_big_content smaller_arial_caps">
         <h3 id="expanded_letter_' . strtolower($letter) . '" class="expanded_letter smaller_arial_caps">Letter ' . $letter .' </h3>
@@ -830,75 +829,26 @@ function logo_project_archive() {
         <div class="bluebox_big_content_row">
             <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
                 <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo ' . strtolower($letter) . '" src="' . get_bloginfo('template_url') . '/resize.php?filename=logo_uploads/3326823e578cbe72c52ca50e5b338494.jpg&amp;width=70&amp;height=84">
+                    <img alt="logo ' . strtolower($letter) . '" src="' . get_bloginfo('template_url') . '/resize.php?filename=logo_uploads/'. get_post_meta($current_letter_id, 'file', TRUE) . '&amp;width=70&amp;height=84">
                 </div>
                 <div class="logo_project_letter_blurp">
                     Submitted by
                 </div>
-                <div class="logo_project_letter_name">
+                <div class="logo_project_letter_name">';
+                $user_url = get_post_meta($current_letter_id, 'creatorurl', TRUE);
+                if ($user_url != '') {
+                    if ((substr_count($user_url, 'http://') == 0) && (substr_count($user_url, 'https://') == 0)) { 
+                        $user_url = 'http://' . $user_url;
+                    }
+                    $content .= '
+                    <a href="' . $user_url . '" target="_blank">' . get_post_meta($current_letter->ID, 'creatorname', TRUE) . '</a>';
+                } else {
+                    $content .= get_post_meta($current_letter_id, 'creatorname', TRUE);
+                }
+                $content .= '
                     <a href="http://www.steve-baker.co.uk">Steve Baker</a>
                 </div>
-            </div>
-            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
-                <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a8b2a4f4c69564aa9f11381c0c260235.jpg&amp;width=70&amp;height=84">
-                </div>
-                <div class="logo_project_letter_blurp">
-                    Submitted by
-                </div>
-                <div class="logo_project_letter_name">
-                    PSED                                </div>
-            </div>
-            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
-                <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/2dcfb0448f8b53e4a913a16c8f3413f2.jpg&amp;width=70&amp;height=84">
-                </div>
-                <div class="logo_project_letter_blurp">
-                    Submitted by
-                </div>
-                <div class="logo_project_letter_name">
-                    PSED                                </div>
-            </div>
-            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
-                <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/7832f12fb6b6af543b029481f0b7baa4.png&amp;width=70&amp;height=84">
-                </div>
-                <div class="logo_project_letter_blurp">
-                    Submitted by
-                </div>
-                <div class="logo_project_letter_name">
-                    <a href="http://serdarozyigit.com">Serdar Ozyigit</a>                                </div>
-            </div>
-            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
-                <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/5196b17d8503c6ad7a7accfefbdeda83.jpg&amp;width=70&amp;height=84">
-                </div>
-                <div class="logo_project_letter_blurp">
-                    Submitted by
-                </div>
-                <div class="logo_project_letter_name">
-                    <a href="http://www.prostress.com">Han Hoogerbrugge</a>                                </div>
-            </div>
-            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
-                <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&amp;width=70&amp;height=84">
-                </div>
-                <div class="logo_project_letter_blurp">
-                    Submitted by
-                </div>
-                <div class="logo_project_letter_name">
-                    <a href="http://www.cowafrica.co.za">Steyn</a>                                </div>
-            </div>
-            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
-                <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/241eca044d005504eabcaa5d3e6b9068.jpg&amp;width=70&amp;height=84">
-                </div>
-                <div class="logo_project_letter_blurp">
-                    Submitted by
-                </div>
-                <div class="logo_project_letter_name">
-                    Adriaan Pelzer                                </div>
-            </div>
+            </div>';
         </div><!-- .bluebox_big_content_row -->
         <div class="bluebox_big_content_row">
             <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
