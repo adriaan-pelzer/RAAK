@@ -453,7 +453,7 @@ function logo_project_latest_uploads() {
 ?>
             <div class="bluebox_content_<?php echo $suffix; ?> logo_project_letter">
                 <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo <?php echo $letter ?>" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/<?php echo get_post_meta($current_letter->ID, 'file', TRUE); ?>&amp;width=70&amp;height=82">
+                    <img alt="logo <?php echo $letter ?>" src="<?php echo bloginfo('template_url'); ?>/resize.php?filename=logo_uploads/<?php echo get_post_meta($current_letter->ID, 'file', TRUE); ?>&amp;width=70&amp;height=82">
                 </div>
                 <div class="logo_project_letter_blurp">
                     Submitted by
