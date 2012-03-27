@@ -849,22 +849,10 @@ function logo_project_archive() {
                     <a href="http://www.steve-baker.co.uk">Steve Baker</a>
                 </div>
                 </div>';
-?>
-        </div><!-- .bluebox_big_content_row -->
-        <div class="bluebox_big_content_row">
-            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
-                <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/4bd891a62ea023f66c37176c84d4a7fa.png&amp;width=70&amp;height=84">
-                </div>
-                <div class="logo_project_letter_blurp">
-                    Submitted by
-                </div>
-                <div class="logo_project_letter_name">
-                    <a href="http://mhambi.com">Kameraad Mhambi</a>                                </div>
-            </div>
+                $content = '
+
         </div><!-- .bluebox_big_content_row -->
     </section><!-- bluebox_big_content -->';
-<?php
         }
     }
 ?>
