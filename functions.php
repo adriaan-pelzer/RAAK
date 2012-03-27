@@ -409,7 +409,7 @@ function logo_project_latest_uploads() {
     foreach ($different_letters as $letter) {
 ?>
         <span class="logo_project_bluebox_nav_item">
-        <span class="logo_project_bluebox_nav_item_left"><a id="expand_<?php echo $letter; ?>" class="active"><?php echo strtoupper($letter); ?></a></span>
+        <span class="logo_project_bluebox_nav_item_left"><a id="expand_<?php echo $letter; ?>"<?php echo ($letter == 'r') ? ' class="active"' : ''; ?>><?php echo strtoupper($letter); ?></a></span>
             <span class="seperator">|</span>
             <span class="logo_project_bluebox_nav_item_right"><a href="<?php echo get_permalink($logo_archive->ID); ?>?letter=<?php echo strtoupper($letter); ?>">View All</a></span>
         </span>
