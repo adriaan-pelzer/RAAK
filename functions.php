@@ -851,12 +851,12 @@ function logo_project_archive() {
                 </div>';
                 }if ($row_counter == 6) {
                     $content .= '
-            </div><!-- bluebox_big_content_row_item -->' . $row_counter . '
+            </div><!-- bluebox_big_content_row_item -->
         </div><!-- .bluebox_big_content_row -->
         <div class="bluebox_big_content_row">';
                 } else {
                     $content .= '
-            </div><!-- bluebox_big_content_row_item -->' . $row_counter;
+            </div><!-- bluebox_big_content_row_item -->';
                 }
 
                 $row_counter++;
