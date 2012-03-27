@@ -796,6 +796,138 @@ function logo_project_upload_letter() {
 
 add_shortcode('upload', 'logo_project_upload_letter');
 
+
+/*************************/
+
+function logo_project_archive() {
+    if(isset($_GET['letter'])) {
+        $current_letter = $_GET['letter'];
+    } else {
+        $current_letter = 'R';
+    }
+    $letters = array('R', 'A', 'K');
+    $content = '';
+?>
+<div class="bluebox_big bluebox box big_box rounded-corners">
+    <header>
+        <h2 class="din-schrift blue_20">Logo Project</h2>
+        <nav id="bluebox_big_nav" class="smaller_arial_caps box_nav">
+<?php
+    foreach($letters as $letter) {
+?>
+            <a id="expand_<?php echo $letter; ?>"<? echo ($current_letter == $letter) ? ' class="active"' : ''; ?>><?php echo $letter; ?></a>
+            <span class="seperator seperator_smaller">|</span>
+<?php
+        $all_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' => strtolower($letter)));
+        while($all_letters->have_posts()) {
+            $all_letters->the_post();
+            print_r ($post);
+            $content .= '
+    <section id="bluebox_big_content_' . $letter .'" class="bluebox_big_content smaller_arial_caps">
+        <h3 id="expanded_letter_' . strtolower($letter) . '" class="expanded_letter smaller_arial_caps">Letter' . $letter .' </h3>
+        <hr class="solid blue_hr" />
+        <div class="bluebox_big_content_row">
+            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
+                <div class="logo_project_letter_image rounded-corners">
+                    <img alt="logo ' . strtolower($letter) . '" src="' . get_bloginfo('template_url') . '/resize.php?filename=logo_uploads/3326823e578cbe72c52ca50e5b338494.jpg&amp;width=70&amp;height=84">
+                </div>
+                <div class="logo_project_letter_blurp">
+                    Submitted by
+                </div>
+                <div class="logo_project_letter_name">
+                    <a href="http://www.steve-baker.co.uk">Steve Baker</a>
+                </div>
+            </div>
+            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
+                <div class="logo_project_letter_image rounded-corners">
+                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a8b2a4f4c69564aa9f11381c0c260235.jpg&amp;width=70&amp;height=84">
+                </div>
+                <div class="logo_project_letter_blurp">
+                    Submitted by
+                </div>
+                <div class="logo_project_letter_name">
+                    PSED                                </div>
+            </div>
+            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
+                <div class="logo_project_letter_image rounded-corners">
+                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/2dcfb0448f8b53e4a913a16c8f3413f2.jpg&amp;width=70&amp;height=84">
+                </div>
+                <div class="logo_project_letter_blurp">
+                    Submitted by
+                </div>
+                <div class="logo_project_letter_name">
+                    PSED                                </div>
+            </div>
+            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
+                <div class="logo_project_letter_image rounded-corners">
+                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/7832f12fb6b6af543b029481f0b7baa4.png&amp;width=70&amp;height=84">
+                </div>
+                <div class="logo_project_letter_blurp">
+                    Submitted by
+                </div>
+                <div class="logo_project_letter_name">
+                    <a href="http://serdarozyigit.com">Serdar Ozyigit</a>                                </div>
+            </div>
+            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
+                <div class="logo_project_letter_image rounded-corners">
+                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/5196b17d8503c6ad7a7accfefbdeda83.jpg&amp;width=70&amp;height=84">
+                </div>
+                <div class="logo_project_letter_blurp">
+                    Submitted by
+                </div>
+                <div class="logo_project_letter_name">
+                    <a href="http://www.prostress.com">Han Hoogerbrugge</a>                                </div>
+            </div>
+            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
+                <div class="logo_project_letter_image rounded-corners">
+                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/a5605d2e128aaa3779904d517d211942.png&amp;width=70&amp;height=84">
+                </div>
+                <div class="logo_project_letter_blurp">
+                    Submitted by
+                </div>
+                <div class="logo_project_letter_name">
+                    <a href="http://www.cowafrica.co.za">Steyn</a>                                </div>
+            </div>
+            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
+                <div class="logo_project_letter_image rounded-corners">
+                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/241eca044d005504eabcaa5d3e6b9068.jpg&amp;width=70&amp;height=84">
+                </div>
+                <div class="logo_project_letter_blurp">
+                    Submitted by
+                </div>
+                <div class="logo_project_letter_name">
+                    Adriaan Pelzer                                </div>
+            </div>
+        </div><!-- .bluebox_big_content_row -->
+        <div class="bluebox_big_content_row">
+            <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
+                <div class="logo_project_letter_image rounded-corners">
+                    <img alt="logo r" src="http://wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/4bd891a62ea023f66c37176c84d4a7fa.png&amp;width=70&amp;height=84">
+                </div>
+                <div class="logo_project_letter_blurp">
+                    Submitted by
+                </div>
+                <div class="logo_project_letter_name">
+                    <a href="http://mhambi.com">Kameraad Mhambi</a>                                </div>
+            </div>
+        </div><!-- .bluebox_big_content_row -->
+    </section><!-- bluebox_big_content -->';
+        }
+    }
+?>
+            <a id="bluebox_big_nav_back" href="http://wewillraakyou.com/logo-project/">Back</a>
+        </nav>
+    </header>
+    <hr />
+<?php
+    echo $content;
+?>
+</div>
+<?php
+}
+
+add_shortcode('logo_archive', 'logo_project_archive');
+
 /*************************/
 
 function template_download_box() {
