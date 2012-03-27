@@ -818,15 +818,17 @@ function logo_project_archive() {
             <a id="expand_<?php echo $letter; ?>"<? echo ($current_letter == $letter) ? ' class="active"' : ''; ?>><?php echo $letter; ?></a>
             <span class="seperator seperator_smaller">|</span>
 <?php
+        $content .= '
+    <section id="bluebox_big_content_' . $letter .'" class="bluebox_big_content smaller_arial_caps">
+        <h3 id="expanded_letter_' . strtolower($letter) . '" class="expanded_letter smaller_arial_caps">Letter ' . $letter .' </h3>
+        <hr class="solid blue_hr" />
+        <div class="bluebox_big_content_row">';
         $all_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' => strtolower($letter)));
+        $total_rows = (ceil($all_letters->post_count / 6));
         while($all_letters->have_posts()) {
             $all_letters->the_post();
             $current_letter_id = get_the_ID();
             $content .= '
-    <section id="bluebox_big_content_' . $letter .'" class="bluebox_big_content smaller_arial_caps">
-        <h3 id="expanded_letter_' . strtolower($letter) . '" class="expanded_letter smaller_arial_caps">Letter ' . $letter .' </h3>
-        <hr class="solid blue_hr" />
-        <div class="bluebox_big_content_row">
             <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
                 <div class="logo_project_letter_image rounded-corners">
                     <img alt="logo ' . strtolower($letter) . '" src="' . get_bloginfo('template_url') . '/resize.php?filename=logo_uploads/'. get_post_meta($current_letter_id, 'file', TRUE) . '&amp;width=70&amp;height=84">
@@ -841,18 +843,17 @@ function logo_project_archive() {
                         $user_url = 'http://' . $user_url;
                     }
                     $content .= '
-                    <a href="' . $user_url . '" target="_blank">' . get_post_meta($current_letter->ID, 'creatorname', TRUE) . '</a>';
+                    <a href="' . $user_url . '" target="_blank">' . get_post_meta($current_letter_id, 'creatorname', TRUE) . '</a>';
                 } else {
                     $content .= get_post_meta($current_letter_id, 'creatorname', TRUE);
                 }
                 $content .= '
                 </div>
-            </div>';
-                $content .= '
-
+            </div><!-- bluebox_big_content_row_item -->';
+        }
+        $content .= '
         </div><!-- .bluebox_big_content_row -->
     </section><!-- bluebox_big_content -->';
-        }
     }
 ?>
             <a id="bluebox_big_nav_back" href="http://wewillraakyou.com/logo-project/">Back</a>
