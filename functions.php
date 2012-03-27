@@ -589,8 +589,7 @@ function logo_project_upload_letter() {
         } 
     }
     if (isset ($_POST['preview_submit']) && isset ($_POST['new_letter_id']) && isset ($_POST['uploaded_file'])) {
-        $letter_publish = array('ID' => $_POST['new_letter_id'], 'post_status' => 'publish');
-        wp_update_post($letter_publish);
+        add_post_meta($_POST['new_letter_id'], 'creatorapproved', 1 );
         $state = 3;
 
         $data = array ('confirmed'=>1);
