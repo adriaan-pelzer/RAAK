@@ -844,7 +844,8 @@ function logo_project_archive() {
                         $user_url = 'http://' . $user_url;
                     }
                     $content .= '
-                    <a href="' . $user_url . '" target="_blank">' . get_post_meta($current_letter_id, 'creatorname', TRUE) . '</a>';
+                    <a href="' . $user_url . '" target="_blank">' . get_post_meta($current_letter_id, 'creatorname', TRUE) . '</a>
+                </div>';
                 } else {
                     $content .= get_post_meta($current_letter_id, 'creatorname', TRUE) . '
                 </div>';
