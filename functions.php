@@ -462,7 +462,9 @@ function logo_project_latest_uploads() {
 <?php
                 $user_url = get_post_meta($current_letter->ID, 'creatorurl', TRUE);
                 if ($user_url != '') {
-                    echo $user_url;
+                    if ((strpos($user_url, 'http://') === 0) || (strpos($user_url, 'https://') === 0)) {
+                        $user_url .= 'http://' . $user_url;
+                    }
 ?>
                     <a href="<?php echo $user_url; ?>"><?php echo get_post_meta($current_letter->ID, 'creatorname', TRUE); ?></a>
 <?php
