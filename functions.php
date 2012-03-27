@@ -825,6 +825,7 @@ function logo_project_archive() {
         <div class="bluebox_big_content_row">';
         $all_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' => strtolower($letter)));
         $total_rows = (ceil($all_letters->post_count / 6));
+        $row_counter = 0;
         while($all_letters->have_posts()) {
             $all_letters->the_post();
             $current_letter_id = get_the_ID();
@@ -849,7 +850,9 @@ function logo_project_archive() {
                 }
                 $content .= '
                 </div>
-            </div><!-- bluebox_big_content_row_item -->';
+                </div><!-- bluebox_big_content_row_item -->';
+                $row_counter++;
+                echo $row_counter;
         }
         $content .= '
         </div><!-- .bluebox_big_content_row -->
