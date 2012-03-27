@@ -819,7 +819,7 @@ function logo_project_archive() {
             <span class="seperator seperator_smaller">|</span>
 <?php
         $content .= '
-    <section id="bluebox_big_content_' . $letter .'" class="bluebox_big_content smaller_arial_caps">
+    <section id="bluebox_big_content_' . $letter .'" class="bluebox_big_content smaller_arial_caps' . (($current_letter == $letter) ? ' current' : '') . '">
         <h3 id="expanded_letter_' . strtolower($letter) . '" class="expanded_letter smaller_arial_caps">Letter ' . $letter .' </h3>
         <hr class="solid blue_hr" />
         <div class="bluebox_big_content_row">';
