@@ -444,7 +444,7 @@ function logo_project_latest_uploads() {
                 $content .= '
             <div class="bluebox_content_' . $suffix . ' logo_project_letter">
                 <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo ' . $letter . '" src="' . echo bloginfo('template_url') . '/resize.php?filename=logo_uploads/' . get_post_meta($current_letter->ID, 'file', TRUE) . '&amp;width=70&amp;height=82" />
+                    <img alt="logo ' . $letter . '" src="' .  get_bloginfo('template_url') . '/resize.php?filename=logo_uploads/' . get_post_meta($current_letter->ID, 'file', TRUE) . '&amp;width=70&amp;height=82" />
                 </div>
                 <div class="logo_project_letter_blurp">
                     Submitted by
