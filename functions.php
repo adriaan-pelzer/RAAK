@@ -846,10 +846,9 @@ function logo_project_archive() {
                     $content .= get_post_meta($current_letter_id, 'creatorname', TRUE);
                 }
                 $content .= '
-                    <a href="http://www.steve-baker.co.uk">Steve Baker</a>
                 </div>
-                </div>';
-                $content = '
+            </div>';
+                $content .= '
 
         </div><!-- .bluebox_big_content_row -->
     </section><!-- bluebox_big_content -->';
