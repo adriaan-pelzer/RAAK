@@ -846,8 +846,7 @@ function logo_project_archive() {
                     $content .= '
                     <a href="' . $user_url . '" target="_blank">' . get_post_meta($current_letter_id, 'creatorname', TRUE) . '</a>';
                 } else {
-                    $content .= get_post_meta($current_letter_id, 'creatorname', TRUE);
-                    $content .= '
+                    $content .= get_post_meta($current_letter_id, 'creatorname', TRUE) . '
                 </div>';
                 }if ($row_counter == 6) {
                     $content .= '
