@@ -848,7 +848,8 @@ function logo_project_archive() {
                 $content .= '
                     <a href="http://www.steve-baker.co.uk">Steve Baker</a>
                 </div>
-            </div>';
+                </div>';
+?>
         </div><!-- .bluebox_big_content_row -->
         <div class="bluebox_big_content_row">
             <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
@@ -863,6 +864,7 @@ function logo_project_archive() {
             </div>
         </div><!-- .bluebox_big_content_row -->
     </section><!-- bluebox_big_content -->';
+<?php
         }
     }
 ?>
