@@ -847,12 +847,19 @@ function logo_project_archive() {
                     <a href="' . $user_url . '" target="_blank">' . get_post_meta($current_letter_id, 'creatorname', TRUE) . '</a>';
                 } else {
                     $content .= get_post_meta($current_letter_id, 'creatorname', TRUE);
+                    $content .= '
+                </div>';
+                }if ($row_counter == 6) {
+                    $content .= '
+            </div><!-- bluebox_big_content_row_item -->
+        </div><!-- .bluebox_big_content_row -->
+        <div class="bluebox_big_content_row">';
+                } else {
+                    $content .= '
+            </div><!-- bluebox_big_content_row_item -->';
                 }
-                $content .= '
-                </div>
-                </div><!-- bluebox_big_content_row_item -->';
+
                 $row_counter++;
-                $content .= $row_counter;
         }
         $content .= '
         </div><!-- .bluebox_big_content_row -->
