@@ -395,6 +395,7 @@ add_shortcode('wblp', 'whitebox_logo_project');
 /*************************/
 
 function logo_project_latest_uploads() {
+    $logo_archive = get_page_by_title('Logo Archive');
     $different_letters = array('r', 'a', 'k');
 ?>
 <div class="bluebox logo_project_bluebox_primary bluebox_primary box rounded-corners">
@@ -406,7 +407,7 @@ function logo_project_latest_uploads() {
         <span class="logo_project_bluebox_nav_item">
             <span class="logo_project_bluebox_nav_item_left"><a id="expand_r" class="active">R</a></span>
             <span class="seperator">|</span>
-            <span class="logo_project_bluebox_nav_item_right"><a href="http://stage.wewillraakyou.com/logo-project-2/logo-archive/">View All</a></span>
+            <span class="logo_project_bluebox_nav_item_right"><a href="<?php echo get_permalink($logo_archive->ID); ?>?letter=R">View All</a></span>
         </span>
         <span class="logo_project_bluebox_nav_item">
             <span class="logo_project_bluebox_nav_item_left"><a id="expand_a">A</a></span>
@@ -462,7 +463,7 @@ function logo_project_latest_uploads() {
 <?php
                 $user_url = get_post_meta($current_letter->ID, 'creatorurl', TRUE);
                 if ($user_url != '') {
-                    if (strpos($user_url, 'http://') !== 0) {
+                    if ((substr_count($user_url, 'http://') == 0) && (substr_count($user_url, 'https://') == 0)) { 
                         $user_url = 'http://' . $user_url;
                     }
 ?>
