@@ -415,7 +415,7 @@ function logo_project_latest_uploads() {
         </span>
 <?php
         $content .= '
-    <div id="bluebox_content_' . $letter . '" class="bluebox_content smaller_arial_caps' . (($letter == 'r') ? ' current' : '';) . '">
+    <div id="bluebox_content_' . $letter . '" class="bluebox_content smaller_arial_caps' . (($letter == 'r') ? ' current' : '') . '">
         <div class="bluebox_content_top">';
         $get_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => '6', 'paged' => '1', 'orderby' => 'date', 'meta_query' => array(array('key' => 'character', 'value' => $letter), array('key' => 'approved', 'value' => '1'))));
         for($position = 0; $position < 6; $position++) {
