@@ -256,6 +256,18 @@ var uploadLetter = function() {
     
 }
 
+var logoArchivePagination = function() {
+    $('.bluebox_big_nav a').click(function() {
+        if(!$(this).hasClass('active')) {
+            $('.bluebox_big_nav a.active').removeClass('active');
+            var splitPoint = $(this).attr('id').lastIndexOf('_');
+            var selectedID = $(this).attr('id').substring(splitPoint + 1);
+            $('.bluebox_big_content.current').removeClass('current');
+            $('#bluebox_big_content_' + selectedID).addClass('current');
+            $(this).addClass('active');
+        }
+    });
+}
 
             
             
@@ -272,4 +284,5 @@ $(document).ready(function() {
     ourWorkCatDisplay();
     viewLettersPagination();
     uploadLetter();
+    logoArchivePagination();
 });
