@@ -411,7 +411,7 @@ function logo_project_latest_uploads() {
         <span class="logo_project_bluebox_nav_item">
         <span class="logo_project_bluebox_nav_item_left"><a id="expand_<?php echo $letter; ?>" class="active"><?php echo strtoupper($letter); ?></a></span>
             <span class="seperator">|</span>
-            <span class="logo_project_bluebox_nav_item_right"><a href="<?php echo get_permalink($logo_archive->ID); ?>?letter=<?php echo strtoupper($letter); ?>">View All</a></span>
+            <span class="logo_project_bluebox_nav_item_right"><a href="<?php get_permalink($logo_archive->ID); ?>?letter=<?php echo strtoupper($letter); ?>">View All</a></span>
         </span>
 <?php
         $content .= '
@@ -444,7 +444,7 @@ function logo_project_latest_uploads() {
                 $content .= '
             <div class="bluebox_content_' . $suffix . ' logo_project_letter">
                 <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo ' . $letter . '" src="' . bloginfo('template_url') . '/resize.php?filename=logo_uploads/' . get_post_meta($current_letter->ID, 'file', TRUE) . '&amp;width=70&amp;height=82" />
+                    <img alt="logo ' . $letter . '" src="' . echo bloginfo('template_url') . '/resize.php?filename=logo_uploads/' . get_post_meta($current_letter->ID, 'file', TRUE) . '&amp;width=70&amp;height=82" />
                 </div>
                 <div class="logo_project_letter_blurp">
                     Submitted by
