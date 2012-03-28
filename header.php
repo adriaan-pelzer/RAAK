@@ -18,7 +18,7 @@
 <div class="wrapper hfeed">
     <header class="rounded-corners din-schrift site_header">
 <?php
-$letters = new WP_Query(array('post_type' => 'raak_logo_leter'));
+$letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => -1));
 print_r($letters);
 ?>
         <h1>RAAK</h1>
