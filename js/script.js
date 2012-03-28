@@ -51,7 +51,7 @@ var preloadImages = function() {
 
 var load_next = function() {
     var letterNumber = (Math.floor(Math.random()*4));
-    conole.log(letterNumber);
+    console.log(letterNumber);
     var letter = (letterNumber === 0)?'R':((letterNumber === 3)?'K':'A');
     console.log(letter);
     console.log((letters[letter]).length);
