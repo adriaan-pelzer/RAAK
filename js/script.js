@@ -1,4 +1,4 @@
-var letters = {
+/*var letters = {
     'R':[
         '2dcfb0448f8b53e4a913a16c8f3413f2.jpg',
         '4bd891a62ea023f66c37176c84d4a7fa.png',
@@ -33,7 +33,8 @@ var letters = {
          'ba0c3f6be22d07916abf6ca1f7d37d8a.jpg',
          'c6a513db33554763c49386bed4673bc3.jpg'
       ]
-};
+};*/
+
 var images = Array();
 var i = 0;
 
