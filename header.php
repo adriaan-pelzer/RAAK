@@ -17,7 +17,7 @@ foreach($different_letters as $different_letter) {
         $each_letter->the_post();
 ?>
         <script>
-        letters['<?php echo $array_name; ?>'] =[];
+        letters['<?php echo $array_name; ?>'] ={};
         letters['<?php echo $array_name; ?>'].push('<?php echo get_post_meta(get_the_ID(), 'file', TRUE); ?>');
         </script>
 <?php
