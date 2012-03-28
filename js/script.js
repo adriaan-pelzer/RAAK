@@ -62,8 +62,6 @@ var load_next = function() {
     });
 }
 
-preloadImages();
-
 var latestPostsPagination = function() {
     $('.pagination .previous').click(function() {
         if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
@@ -275,6 +273,7 @@ var logoArchivePagination = function() {
 
 
 $(document).ready(function() {
+    preloadImages();
     setInterval(load_next, 5000);
     latestPostsPagination();
     ourWorkPagination();
