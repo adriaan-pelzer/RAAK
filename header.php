@@ -41,7 +41,9 @@ foreach($different_letters as $different_letter) {
 }
 ?>
 <script>
-console.log(letters);
+each(letters, function(index, value) {
+    console.log(index + ' ' + value);
+}
 </script>
         <h1>RAAK</h1>
         <a id="title" href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
