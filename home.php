@@ -14,3 +14,36 @@ Template Name:Home
         </div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
+<script>
+    $('.our_work_nav h3 a').click(function() {
+        if(!$(this).hasClass('active')) {
+            $('.our_work_nav h3 a.active').removeClass('active');
+            $('.our_work_bluebox_content.current').removeClass('current');
+            var current_class = $(this).attr('class');
+            $('.our_work_bluebox_content#' + current_class).addClass('current');
+            $(this).addClass('active');
+        } 
+    });
+    $('.pagination .previous').click(function() {
+        if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
+            $('.whitebox_primary_post.current').removeClass('current').next('div').addClass('current');
+            if (($('.whitebox_primary_post.current').prev('div').length) !== 0) {
+                $('.pagination .next').addClass('active');
+            }
+            if (($('.whitebox_primary_post.current').next('div').length) === 0) {
+                $('.pagination .previous').removeClass('active');
+            }
+        }
+    });
+    $('.pagination .next').click(function() {
+        if (($('.whitebox_primary_post.current').prev('div').length) !== 0) {
+            $('.whitebox_primary_post.current').removeClass('current').prev('div').addClass('current');
+            if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
+                $('.pagination .previous').addClass('active');
+            }
+            if (($('.whitebox_primary_post.current').prev('div').length) === 0) {
+                $('.pagination .next').removeClass('active');
+            }
+        }
+    });
+</script>
