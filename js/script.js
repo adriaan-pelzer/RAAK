@@ -254,7 +254,7 @@ var uploadLetter = function() {
     });
 
     
-}*/
+}
 
 var logoArchivePagination = function() {
     $('#bluebox_big_nav a').click(function() {
@@ -267,7 +267,7 @@ var logoArchivePagination = function() {
             $(this).addClass('active');
         }
     });
-}
+}*/
 
             
             
