@@ -17,6 +17,10 @@
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
 <div class="wrapper hfeed">
     <header class="rounded-corners din-schrift site_header">
+<?php
+$letters = new WP_Query(array('post_type' => 'raak_logo_leter'));
+print_r($letters);
+?>
         <h1>RAAK</h1>
         <a id="title" href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
             <span id="logo_letter_1" class="logo_letter">
