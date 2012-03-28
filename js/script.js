@@ -182,7 +182,7 @@ var blogHomeCatBoxPagination = function() {
     });
 }
 
-var viewLettersPagination = function() {
+/*var viewLettersPagination = function() {
     $('.logo_project_bluebox_nav_item_left a').click(function() {
         if (!$(this).hasClass('active')) {
             $('.logo_project_bluebox_nav_item_left a.active').removeClass('active');
@@ -254,7 +254,7 @@ var uploadLetter = function() {
     });
 
     
-}
+}*/
 
 var logoArchivePagination = function() {
     $('#bluebox_big_nav a').click(function() {
