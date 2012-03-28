@@ -509,6 +509,7 @@ function logo_project_upload_letter() {
     );
     $error = array();
     $state = 0;
+    $terms = get_page_by_title('Terms and conditions');
 
     if (isset ($_POST['upload_submit'])) {
         /* required fields */
@@ -749,7 +750,7 @@ function logo_project_upload_letter() {
     }
 ?>
                     <li id="whitebox_secondary_submit_agree">
-                    <label for="upload_agree">I agree to the <a href="http://wewillraakyou.com/logo-project/terms-and-conditions/">terms &amp; conditions</a></label>
+                    <label for="upload_agree">I agree to the <a href="<?php echo get_permalink($terms->ID); ?>">terms &amp; conditions</a></label>
                         <input id="upload_agree" name="upload_agree" type="checkbox">
                         <input name="upload_submit" type="submit" value="Submit &#9658;">
                     </li>
