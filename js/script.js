@@ -155,7 +155,7 @@ var galleryShowImg = function() {
     $('.ngg-gallery-thumbnail a').mouseover(function() {
         $('.bluebox_bigpic').html('<img width="315" height="203" title="' + $(this).find('img').attr('title') + '" alt="' + $(this).find('img').attr('alt') + '" src="' + $(this).attr('href') + '">');
     });
-}*/
+}
 
 var ourWorkCatDisplay = function() {
     $('a.whitebox_big_nav_item').click(function() {
@@ -182,7 +182,7 @@ var blogHomeCatBoxPagination = function() {
     });
 }
 
-/*var viewLettersPagination = function() {
+var viewLettersPagination = function() {
     $('.logo_project_bluebox_nav_item_left a').click(function() {
         if (!$(this).hasClass('active')) {
             $('.logo_project_bluebox_nav_item_left a.active').removeClass('active');

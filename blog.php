@@ -14,3 +14,14 @@ Template Name: Blog
         </div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
+<script>
+    $('.whitebox-secondary .multiple_tabs .tab').click(function() {
+        if (!$(this).hasClass('active')) {
+            $('.whitebox-secondary .multiple_tabs .tab.active').removeClass('active');
+            var currentID = $(this).attr('id');
+            $('.whitebox_secondary_item.current').removeClass('current');
+            $('#whitebox_secondary_item_' + currentID).addClass('current');
+            $(this).addClass('active');
+        }
+    });
+</script>
