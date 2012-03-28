@@ -54,7 +54,7 @@ var load_next = function() {
     console.log(letterNumber);
     var letter = (letterNumber === 0)?'R':((letterNumber === 3)?'K':'A');
     console.log(letter);
-    console.log((letters[letter]).length);
+    console.log(letters[letter].length);
     var variant = Math.floor(Math.random()*(((letters[letter]).length)));
     console.log(variant);
 
