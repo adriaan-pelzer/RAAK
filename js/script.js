@@ -51,11 +51,8 @@ var preloadImages = function() {
 
 var load_next = function() {
     var letterNumber = (Math.floor(Math.random()*4));
-    console.log(letterNumber);
     var letter = (letterNumber === 0)?'R':((letterNumber === 3)?'K':'A');
-    console.log(letter);
     var variant = Math.floor(Math.random()*(((letters[letter]).length)));
-    console.log(variant);
 
     $('#logo_letter_' + (letterNumber + 1) + ' img').animate({opacity: 0}, 1000, function() {
         $(this).attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/' + letters[letter][variant] + '&width=35&height=42');
@@ -64,6 +61,8 @@ var load_next = function() {
         });
     });
 }
+
+preloadImages();
 
 var latestPostsPagination = function() {
     $('.pagination .previous').click(function() {
@@ -276,7 +275,6 @@ var logoArchivePagination = function() {
 
 
 $(document).ready(function() {
-    preloadImages();
     setInterval(load_next, 5000);
     latestPostsPagination();
     ourWorkPagination();
