@@ -973,49 +973,49 @@ function big_whitebox_products() {
 <?php
     $item_count = 0;
 ?>
-                    <div id="whitebox_big_all-products" class="whitebox_big_category smaller_arial_caps current">
+        <div id="whitebox_big_all-products" class="whitebox_big_category smaller_arial_caps current">
 <?php
     for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
 ?>
-                        <div id="whitebox_big_category_row<?php echo $row_count; ?>" class="whitebox_big_category_row">
+            <div id="whitebox_big_category_row<?php echo $row_count; ?>" class="whitebox_big_category_row">
 <?php
         for($row_item = 0; $row_item < 3; $row_item++) {
             if ($current_page_posts_loop->posts[$item_count]) {
 ?>
-                            <div class="whitebox_big_category_entry" id="category_entry_<?echo $item_count; ?>">
-                                <header>
-                                    <h3 class="whitebox_big_category_entry_title">
-                                    <span class="whitebox_big_category_entry_title_label">product:</span>
-                                        <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Product', TRUE); ?></span>
-                                    </h3><!-- .whitebox_big_category_entry_title -->
-                                </header>
-                                <hr class="solid">
-                                <a class="whitebox_big_category_entry_content" href="<?php echo get_permalink($current_page_posts_loop->posts[$item_count]->ID); ?>">
-                                    <div id="post_all-products_<?php echo $item_count; ?>_picture" class="whitebox_big_category_entry_content_picture current">
-                                        <?php echo get_image ($current_page_posts_loop->posts[$item_count]->post_content, 220, 142); ?>
-                                    </div><!-- post_all-products_<?php echo $item_count; ?>_picture -->
-                                    <div id="post_all-products_<?php echo $item_count; ?>_overview" class="whitebox_big_category_entry_content_overview">
-                                        <p><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Overview', TRUE); ?></p>
-                                    </div><!-- #post_<?php echo $item_count; ?>_overview -->
-                                </a>
-                            </div><!-- .whitebox_big_category_entry -->
+                <div class="whitebox_big_category_entry" id="category_entry_<?echo $item_count; ?>">
+                    <header>
+                        <h3 class="whitebox_big_category_entry_title">
+                        <span class="whitebox_big_category_entry_title_label">product:</span>
+                            <span class="whitebox_big_category_entry_title_name"><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Product', TRUE); ?></span>
+                        </h3><!-- .whitebox_big_category_entry_title -->
+                    </header>
+                    <hr class="solid">
+                    <a class="whitebox_big_category_entry_content" href="<?php echo get_permalink($current_page_posts_loop->posts[$item_count]->ID); ?>">
+                        <div id="post_all-products_<?php echo $item_count; ?>_picture" class="whitebox_big_category_entry_content_picture current">
+                            <?php echo get_image ($current_page_posts_loop->posts[$item_count]->post_content, 220, 142); ?>
+                        </div><!-- post_all-products_<?php echo $item_count; ?>_picture -->
+                        <div id="post_all-products_<?php echo $item_count; ?>_overview" class="whitebox_big_category_entry_content_overview">
+                            <p><?php echo get_post_meta($current_page_posts_loop->posts[$item_count]->ID, 'Overview', TRUE); ?></p>
+                        </div><!-- #post_<?php echo $item_count; ?>_overview -->
+                    </a>
+                </div><!-- .whitebox_big_category_entry -->
 <?php
             } else {
 ?>
-                            <div class="whitebox_big_category_entry">
-                            </div><!-- .whitebox_big_category_entry -->
+                <div class="whitebox_big_category_entry">
+                </div><!-- .whitebox_big_category_entry -->
 <?php
             }
             $item_count++;
         }
 ?>
-                        </div><!-- #whitebox_big_category_row<?php echo $row_count; ?> -->
+            </div><!-- #whitebox_big_category_row<?php echo $row_count; ?> -->
 <?php
     }
 ?>
-                    </div><!-- #whitebox_big_all-products -->
-                </div><!-- #whitebox_big_all-items -->
-            </div>
+        </div><!-- #whitebox_big_all-products -->
+    </div><!-- #whitebox_big_all-items -->
+</div>
 <?php
     wp_reset_query();
 }
@@ -1688,6 +1688,19 @@ function post_authors() {
 add_shortcode ('authors', 'post_authors');
 
 /*************************/
+
+function default_page_function() {
+?>
+<div class="whitebox_big whitebox box big_box rounded-corners">
+    <header>
+        <h2 class="din-schrift blue_20"><?php echo the_title(); ?></h2>
+    </header>
+    <hr />
+<?php the_content(); ?>
+</div>
+<?php
+}
+add_shortcode('default', 'default_page_function'); 
 ?>
 <?php 
 /***************************** copy/paste from net to track post views as meta **************************/
