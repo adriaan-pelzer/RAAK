@@ -21,13 +21,13 @@
 $different_letters = array('r', 'a', 'k');
 foreach($different_letters as $different_letter) {
     $array_name = strtoupper($different_letter);
-    ${$array_name} = new array;
+    ${$array_name} = array();
     $each_letter = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => -1, 'meta_value' => $different_letter));
     while($each_letter->have_posts()) {
         $each_letter->the_post();
         array_push(${$array_name}, get_post_meta(the_ID(), 'file', TRUE));
     }
-    print($($array_name));
+    print(${$array_name});
 }
 ?>
         <h1>RAAK</h1>
