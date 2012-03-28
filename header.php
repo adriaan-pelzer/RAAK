@@ -12,7 +12,7 @@ foreach($different_letters as $different_letter) {
     ${$array_name} = array();
 ?>
     <script>
-    var letters = [];
+    var letters = {};
     </script>
 <?php
     $each_letter = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => -1, 'meta_value' => $different_letter));
