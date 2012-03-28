@@ -22,4 +22,7 @@ Template Name: Our Work
             $('#whitebox_big_' + currentID).addClass('current');
         }
     });
+    $('.whitebox_big_category_entry_content').hover(function() {
+        $(this).find('div').toggleClass('current');
+    });
 </script>
