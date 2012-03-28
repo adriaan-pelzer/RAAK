@@ -417,7 +417,7 @@ function logo_project_latest_uploads() {
         $content .= '
     <div id="bluebox_content_' . $letter . '" class="bluebox_content smaller_arial_caps' . (($letter == 'r') ? ' current' : '') . '">
         <div class="bluebox_content_top">';
-        $get_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => '6', 'paged' => '1', 'orderby' => 'date', 'meta_query' => array(array('key' => 'character', 'value' => $letter), array('key' => 'approved', 'value' => '1'))));
+        $get_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => '6', 'paged' => '1', 'orderby' => 'date', 'meta_query' => array(array('key' => 'character', 'value' => $letter))));
         for($position = 0; $position < 6; $position++) {
             switch ($position) {
             case 0:
@@ -580,6 +580,7 @@ function logo_project_upload_letter() {
                             add_post_meta($new_letter_id, 'creatorname', $_POST['upload_name']);
                             add_post_meta($new_letter_id, 'creatorurl', $_POST['upload_url']);
                             add_post_meta($new_letter_id, 'file', $filename);
+                            add_post_meta($new_letter_id, 'creatorip', (get_ip()));
                         }
                         $state = 2;
 
