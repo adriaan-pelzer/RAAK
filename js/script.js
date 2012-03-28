@@ -98,7 +98,7 @@ var ourWorkPagination = function() {
             $(this).addClass('active');
         } 
     });
-}*/
+}
     
 var aboutPagination = function() {
     $('.about_nav a').click(function() {
@@ -139,7 +139,7 @@ var aboutPagination = function() {
             $(this).addClass('active');
         }
     });
-}
+}*/
 
 var projectHover = function() {
     $('.whitebox_big_category_entry_content').hover(function() {
