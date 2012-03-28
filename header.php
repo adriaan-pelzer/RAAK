@@ -20,9 +20,7 @@
 <?php
 $different_letters = array('r', 'a', 'k');
 foreach($different_letters as $different_letter) {
-    echo '$different_letter: ' . $different_letter;
     $array_name = strtoupper($different_letter);
-    echo '$array_name: ' . $array_name;
     ${$array_name} = array();
     $each_letter = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => -1, 'meta_value' => $different_letter));
     while($each_letter->have_posts()) {
