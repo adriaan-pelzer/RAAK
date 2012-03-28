@@ -1708,7 +1708,7 @@ function default_page_function() {
 <?php
         }
     }
-?>§
+?>
 </div>
 <?php
 }
