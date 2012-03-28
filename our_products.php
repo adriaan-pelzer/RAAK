@@ -11,3 +11,8 @@ Template Name: Our Products
 		</div><!-- content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
+<script>
+    $('.whitebox_big_category_entry_content').hover(function() {
+        $(this).find('div').toggleClass('current');
+    });
+</script>

@@ -139,13 +139,13 @@ var aboutPagination = function() {
             $(this).addClass('active');
         }
     });
-}*/
+}
 
 var projectHover = function() {
     $('.whitebox_big_category_entry_content').hover(function() {
         $(this).find('div').toggleClass('current');
     });
-}
+}*/
 
 var galleryShowImg = function() {
     $('.bluebox_bigpic').html('<img width="315" height="203" title="' + $('.ngg-gallery-thumbnail a img').first().attr('title') + '" alt="' + $('.ngg-gallery-thumbnail a img').first().attr('alt') + '" src="' + $('.ngg-gallery-thumbnail a').first().attr('href') + '">');
