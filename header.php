@@ -6,21 +6,24 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>
-    var letters = [];
+    var letters = {};
     </script>
 <?php
 $different_letters = array('r', 'a', 'k');
 foreach($different_letters as $different_letter) {
     $array_name = strtoupper($different_letter);
     $each_letter = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => -1, 'meta_value' => $different_letter));
+    $i = 0;
     while($each_letter->have_posts()) {
         $each_letter->the_post();
 ?>
         <script>
         letters['<?php echo $array_name; ?>'] =[];
-        letters['<?php echo $array_name; ?>'].push('<?php echo get_post_meta(get_the_ID(), 'file', TRUE); ?>');
+        letters['<?php echo $array_name; ?>'][<?php echo $i; ?>] = <?php echo get_post_meta(get_the_ID(), 'file', TRUE); ?>;
+        //letters['<?php echo $array_name; ?>'].push('<?php echo get_post_meta(get_the_ID(), 'file', TRUE); ?>');
         </script>
 <?php
+        $i++;
     }
 }
 ?>
