@@ -33,6 +33,7 @@ foreach($different_letters as $different_letter) {
         array_push(${$array_name}, get_post_meta(get_the_ID(), 'file', TRUE));
 ?>
         <script>
+        letters['<?php echo $array_name; ?>'] =[];
         letters['<?php echo $array_name; ?>'].push('<?php echo get_post_meta(get_the_ID(), 'file', TRUE); ?>');
         </script>
 <?php
