@@ -5,16 +5,14 @@
     <meta name="google-site-verification" content="59Ab_0-HL7eVdNQ4CqiLOeiQisQgb2Vwg8046N__ng0" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+    var letters = [];
+    </script>
 <?php
 $different_letters = array('r', 'a', 'k');
 foreach($different_letters as $different_letter) {
     $array_name = strtoupper($different_letter);
     ${$array_name} = array();
-?>
-    <script>
-    var letters = [];
-    </script>
-<?php
     $each_letter = new WP_Query(array('post_type' => 'raak_logo_letter', 'posts_per_page' => -1, 'meta_value' => $different_letter));
     while($each_letter->have_posts()) {
         $each_letter->the_post();
