@@ -145,7 +145,7 @@ var projectHover = function() {
     $('.whitebox_big_category_entry_content').hover(function() {
         $(this).find('div').toggleClass('current');
     });
-}*/
+}
 
 var galleryShowImg = function() {
     $('.bluebox_bigpic').html('<img width="315" height="203" title="' + $('.ngg-gallery-thumbnail a img').first().attr('title') + '" alt="' + $('.ngg-gallery-thumbnail a img').first().attr('alt') + '" src="' + $('.ngg-gallery-thumbnail a').first().attr('href') + '">');
@@ -155,7 +155,7 @@ var galleryShowImg = function() {
     $('.ngg-gallery-thumbnail a').mouseover(function() {
         $('.bluebox_bigpic').html('<img width="315" height="203" title="' + $(this).find('img').attr('title') + '" alt="' + $(this).find('img').attr('alt') + '" src="' + $(this).attr('href') + '">');
     });
-}
+}*/
 
 var ourWorkCatDisplay = function() {
     $('a.whitebox_big_nav_item').click(function() {
