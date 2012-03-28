@@ -575,7 +575,6 @@ function logo_project_upload_letter() {
                         $new_letter = array('post_title' => $file_just_name,  'post_type' => 'raak_logo_letter');
                         $new_letter_id = wp_insert_post($new_letter);
                         if ($new_letter_id != 0) {
-                            print($_FILES);
                             add_post_meta($new_letter_id, 'character', strtolower($_POST['upload_letter']));
                             add_post_meta($new_letter_id, 'creatormail', $_POST['upload_email']);
                             add_post_meta($new_letter_id, 'creatorname', $_POST['upload_name']);
@@ -627,6 +626,7 @@ function logo_project_upload_letter() {
     <div class="whitebox_secondary whitebox box letter_upload rounded-corners">
         <form method="post" enctype="multipart/form-data">
 <?php
+                            print($_FILES);
     if (isset ($_POST['filename'])) {
 ?>
         <input id="filename" type="hidden" name="filename" value="<?php echo $_POST['filename']; ?>" />
