@@ -1692,11 +1692,23 @@ add_shortcode ('authors', 'post_authors');
 function default_page_function() {
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
-    <header>
-        <h2 class="din-schrift blue_20"><?php echo the_title(); ?></h2>
-    </header>
-    <hr />
+<?php
+    if (have_posts()) {
+        while(have_posts()) {
+            the_post();
+?>
+                <header>
+                    <h2 class="din-schrift blue_20"><?php the_title(); ?></h2>
+                </header>
+                <hr>
+                <div class="whitebox_primary_content">
 <?php the_content(); ?>
+                </div><!-- .whitebox_primary_content -->
+
+<?php
+        }
+    }
+?>§
 </div>
 <?php
 }
