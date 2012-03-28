@@ -1029,6 +1029,8 @@ function big_whitebox_projects() {
     $current_page = get_page_by_title('Our Work');
     if($_GET['category']) {
         $active = $_GET['category'];
+    } else {
+        $active = 'all-projects';
     }
 
 ?>
