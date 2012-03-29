@@ -934,7 +934,7 @@ add_shortcode('tmplt_dl_b', 'template_download_box');
 
 /************************/
 
-function contact_whitebox() {
+function basic_whitebox() {
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
 <?php
@@ -957,7 +957,7 @@ function contact_whitebox() {
     }
 }
 
-add_shortcode('contactwb', 'contact_whitebox');
+add_shortcode('basic_wb', 'contact_whitebox');
 
 
 /*************************/

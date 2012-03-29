@@ -1,15 +1,12 @@
 <?php
 /*
-Template Name: Contact 
- */
+Template Name: theraakonteur
+*/
 ?>
 <?php get_header() ?>
-
-
-	<div class="container rounded-corners contact">
+	<div class="container rounded-corners about">
 		<div class="content">
 <?php do_shortcode('[basic_wb]'); ?>
-<?php do_shortcode('[contactbb]'); ?>
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
