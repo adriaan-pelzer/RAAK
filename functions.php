@@ -260,6 +260,8 @@ function who_we_are_what_we_do() {
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
     $who_we_are_content = '';
+    $current_page = get_page();
+    $current_page_title = $current_page->post_title;
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
     <header>
@@ -269,10 +271,10 @@ function who_we_are_what_we_do() {
         <h2 class="din-schrift blue_20">About</h2>
     </header>
     <hr>
-    <div id="what-we-do" class="whitebox_primary_content about_content current">
+    <div id="what-we-do" class="whitebox_primary_content about_content<?php echo ($current_page_titile == 'About') ? ' current' : ''; ?>">
 <?php echo $what_we_do->post_content; ?>
     </div><!-- whitebox_primary_content -->
-    <div id="who-we-are" class="whitebox_primary_content about_content">
+    <div id="who-we-are" class="whitebox_primary_content about_content<?php echo ($current_page_titile != 'About') ? ' current' : ''; ?>">
         <nav class="whitebox_primary_content_nav smaller_arial_caps box_nav">
 <?php
     $founder = 0;
