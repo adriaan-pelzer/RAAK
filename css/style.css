@@ -718,7 +718,7 @@ margin: 25px 0 9px;
 }
 
 
-.blog_category_bluebox_primary a, .whitebox_secondary a {
+.blog_category_bluebox_primary a, .whitebox_secondary a, .raakonteur_bluebox_primary a {
     color: #666666;
 }
 
@@ -1730,6 +1730,10 @@ h2.subTitle {
 
 .theraakonteur_whitebox_primary hr.solid {
     margin: 10px 0 15px;
+}
+
+.raakonteur_bluebox_primary ul {
+    margin: 10px 0;
 }
 
 /************** Sidebar ***************/

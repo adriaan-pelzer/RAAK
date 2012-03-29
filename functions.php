@@ -1011,6 +1011,7 @@ function theraakonteur_bluebox() {
     }
 ?>
         </ul>
+        <hr class="blue_hr" />
     </div>
 </div>
 <?php
