@@ -989,6 +989,7 @@ add_shortcode('raak_wb', 'theraakonteur_whitebox');
 /*************************/
 
 function theraakonteur_bluebox() {
+    $the_raakonteurs = new WP_Query(array('cat'=> get_cat_id('RAAKonteur'), 'posts_per_page' => 10);
 
 ?>
 <div class="tab_container bluebox-primary">
@@ -998,12 +999,24 @@ function theraakonteur_bluebox() {
         </header>
     </div><!-- bluebox_tab -->
     <div class="bluebox_primary bluebox box rounded-corners">
+        <ul>
+<?php
+    if($the_raakonteurs->have_posts()) {
+        while($the_raakonteurs->have_posts()) {
+            $the_raakonteurs->the_post();
+?>
+            <li><a href="<?php echo get_permalink(the_ID()); ?>"><?php the_title(); ?></a></li>
+<?php
+        }
+    }
+?>
+        </ul>
     </div>
 </div>
 <?php
 }
 
-add_shortcode('raakbb', 'theraakonteur_bluebox');
+add_shortcode('raak_bb', 'theraakonteur_bluebox');
 
 /*************************/
 
