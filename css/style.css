@@ -723,12 +723,12 @@ margin: 25px 0 9px;
 }
 
 
-.blog_category_bluebox_primary li, .other_posts li, .blog_whitebox_secondary li {
+.blog_category_bluebox_primary li, .other_posts li, .blog_whitebox_secondary li, .raakonteur_bluebox_primary li {
     padding-left:16px;
 }
 
 
-.blog_category_bluebox_primary li, .blog_whitebox_secondary li, .other_posts_content_one li {
+.blog_category_bluebox_primary li, .blog_whitebox_secondary li, .other_posts_content_one li, .raakonteur_bluebox_primary li {
     background: url(../images/whitebox_secondary_body_content_one_list.png) no-repeat 0px 5px;
 }
 
@@ -774,7 +774,7 @@ margin: 25px 0 9px;
 }
 
 
-.blog_category_bluebox_primary ul, .whitebox_secondary ul, .other_posts ul {
+.blog_category_bluebox_primary ul, .whitebox_secondary ul, .other_posts ul, .raakonteur_bluebox_primary ul {
     line-height: 19px;
     margin-top: 5px;
 }
@@ -1493,7 +1493,7 @@ form.wpcf7-form span {
     font-size: 24px;
 }
 
-.blog_bluebox_primary {
+.blog_bluebox_primary, .raakonteur_bluebox_primary {
     margin-left: 0;
 }
 

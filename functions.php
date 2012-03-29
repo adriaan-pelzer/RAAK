@@ -998,7 +998,7 @@ function theraakonteur_bluebox() {
             <h3>Raakonteurs</h3>
         </header>
     </div><!-- bluebox_tab -->
-    <div class="bluebox_primary bluebox box rounded-corners">
+    <div class="raakonteur_bluebox_primary bluebox_primary bluebox box rounded-corners">
         <ul>
 <?php
     if($the_raakonteurs->have_posts()) {
