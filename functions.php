@@ -963,7 +963,7 @@ add_shortcode('basic_wb', 'basic_whitebox');
 
 function theraakonteur_whitebox() {
 ?>
-<div class="whitebox whitebox_primary theraakonteur_whitebox_primary whitebox-primary box rounded-corners">
+<div class="whitebox whitebox_primary top_margin theraakonteur_whitebox_primary whitebox-primary box rounded-corners">
 <?php
     if (have_posts()) {
         while(have_posts()) {
