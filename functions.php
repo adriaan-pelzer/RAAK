@@ -1630,7 +1630,6 @@ function big_title_box($atts) {
     case 'theraakonteur' :
         $page_title = 'The Raakonteur';
         break;
-        case 'blog_archive'
     default:
         if(have_posts()) {
             while(have_posts()){
