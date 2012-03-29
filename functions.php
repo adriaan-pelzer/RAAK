@@ -275,7 +275,7 @@ function who_we_are_what_we_do() {
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
     <header>
         <nav class="whitebox_primary_nav smaller_arial_caps about_nav box_nav">
-            <a class="active">What we do</a><span class="seperator seperator_smaller">|</span><a>Who we are</a>
+        <a<?php echo ($current_page == 'about') ? ' class="active"' : ''; ?>>What we do</a><span class="seperator seperator_smaller">|</span><a><?php echo ($current_page != 'about') ? ' class="active"' : ''; ?>Who we are</a>
         </nav><!-- whitebox_primary_nav -->
         <h2 class="din-schrift blue_20">About</h2>
     </header>
@@ -292,10 +292,10 @@ function who_we_are_what_we_do() {
         $who_we_are_query->the_post();
 ?>
 
-                        <?php echo ($founder_num != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_<?php echo $post->post_name; ?>" class="whitebox_primary_content_nav_item <?php echo ($founder_num == 0) ? 'active' : ''; ?>" ><?php the_title(); ?></a>
+                        <?php echo ($founder_num != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_<?php echo $post->post_name; ?>" class="whitebox_primary_content_nav_item <?php echo (($current_page == 'about') && ($founder_num == 0)) ? 'active' : (($current_page == $post->post_name) ? 'active' : '';); ?>" ><?php the_title(); ?></a>
 <?php
         $who_we_are_content .= '<section id="whitebox_primary_content_' . $post->post_name . '" class="whitebox_primary_content_founder'; 
-        if(($current_page = 'about') && ($founder_num == 0)) {
+        if(($current_page == 'about') && ($founder_num == 0)) {
             $who_we_are_content .= ' current';
         } else if($current_page == $post->post_name) {
             $who_we_are_content .= ' current';
