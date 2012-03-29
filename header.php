@@ -44,7 +44,7 @@ foreach($different_letters as $different_letter) {
 <div class="wrapper hfeed">
     <header class="rounded-corners din-schrift site_header">
         <h1>RAAK</h1>
-        <a id="title" href="http://wewillraakyou.com/" title="RAAK | Digital &amp; Social Media Agency London" rel="home">
+        <a href="<?php bloginfo('home') ?>/" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home">
             <span id="logo_letter_1" class="logo_letter">
                 <img alt="logo r" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/r.jpeg" />
             </span>
@@ -57,9 +57,9 @@ foreach($different_letters as $different_letter) {
             <span id="logo_letter_4" class="logo_letter">
                 <img alt="logo k" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/k.jpeg" />
             </span>
-            </a>
+        </a>
         <div id="blog-description">Putting you in touch with your crowds</div>
-            <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+            <div class="skip-link"><a href=".content" title="Skip to content">Skip to content</a></div>
             <nav class="menu">
                 <ul>
                     <li class="first-page-item">
