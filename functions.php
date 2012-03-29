@@ -989,7 +989,7 @@ add_shortcode('raak_wb', 'theraakonteur_whitebox');
 /*************************/
 
 function theraakonteur_bluebox() {
-    $the_raakonteurs = new WP_Query(array('cat'=> get_cat_id('RAAKonteur'), 'posts_per_page' => 10);
+    $the_raakonteurs = new WP_Query(array('cat'=> get_cat_id('RAAKonteur'), 'posts_per_page' => 10));
 
 ?>
 <div class="tab_container bluebox-primary">
