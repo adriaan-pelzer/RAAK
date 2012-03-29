@@ -1726,6 +1726,12 @@ h2.subTitle {
     color: #585858;
 }
 
+/************** what others have said about the raakonteur ************/
+
+.theraakonteur_whitebox_primary hr.solid {
+    margin: 10px 0 15px;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
