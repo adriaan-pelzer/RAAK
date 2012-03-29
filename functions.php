@@ -13,7 +13,7 @@ function create_post_type () {
 function logo_call_to_action() {
     $letters = array('r', 'a', 'k');
     foreach($letters as $letter) {
-        $current_query = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' = $letter));
+        $current_query = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' => $letter));
         ${$letter . '_num'} = $current_query->post_count();
     } 
     $logo_story = get_page_by_title('The perpetually changing crowdsourced RAAK logo', 'OBJECT', 'post');
