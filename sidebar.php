@@ -162,7 +162,7 @@ $current_page = 'about';
 if(is_page_template('about.php')) {
     $current_uri = $_SERVER['REQUEST_URI'];
     $uri_array = explode('/', $current_uri);
-    $founder_names = array('adriaan-pelzer', 'gerrie-smits', 'wessel-van-rensburg');
+    $founder_names = array('adriaan-pelzer', 'wessel-van-rensburg');
     foreach($founder_names as $founder_name) {
         if (in_array($founder_name, $uri_array)) {
             $current_page = $founder_name;
