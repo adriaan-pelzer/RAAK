@@ -959,6 +959,33 @@ function basic_whitebox() {
 
 add_shortcode('basic_wb', 'basic_whitebox');
 
+/************************/
+
+function theraakonteur_whitebox() {
+?>
+<div class="whitebox whitebox_primary theraakonteur_whitebox_primary whitebox-primary box rounded-corners">
+<?php
+    if (have_posts()) {
+        while(have_posts()) {
+            the_post();
+?>
+                <header>
+                    <h2 class="din-schrift blue_20"><?php the_title(); ?></h2>
+                </header>
+                <hr>
+                <div class="whitebox_primary_content">
+<?php the_content(); ?>
+                </div><!-- .whitebox_primary_content -->
+            </div>
+
+<?php
+        }
+        wp_reset_query();
+    }
+}
+
+add_shortcode('raak_wb', 'basic_whitebox');
+
 
 /*************************/
 
