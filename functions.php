@@ -258,7 +258,6 @@ add_shortcode('other_posts', 'display_other_posts');
 
 function who_we_are_what_we_do() {
     global $post;
-    $_GLOBALS['current_page'] = $current_page;
     $current_uri = $_SERVER['REQUEST_URI'];
     $uri_array = explode('/', $current_uri);
     $founders = array('adriaan-pelzer', 'gerrie-smits', 'wessel-van-rensburg');
@@ -268,7 +267,6 @@ function who_we_are_what_we_do() {
             $current_page = $founder;
         }
     }
-    $_GLOBALS['current_page'] = $current_page;
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
     $who_we_are_content = '';
@@ -356,11 +354,19 @@ add_shortcode('who_what', 'who_we_are_what_we_do');
 /*************************/
 
 function founder_quotes() {
-    print_r($_GLOBALS);
+    $current_uri = $_SERVER['REQUEST_URI'];
+    $uri_array = explode('/', $current_uri);
+    $founders = array('adriaan-pelzer', 'gerrie-smits', 'wessel-van-rensburg');
+    $current_page = 'about';
+    foreach($founders as $founder) {
+        if (in_array($founder, $uri_array)) {
+            $current_page = $founder;
+        }
+    }
 ?>
 <aside class="bluebox bluebox_primary about_bluebox box rounded-corners">
     <header>
-        <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps">What we do</h3>
+    <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps"><?php echo($current_page = 'about') ? 'What we do' : 'Who we are'; ?></h3>
     </header>
     <hr class="blue_hr">
     <div id="bluebox_content_what-we-do" class="bluebox_content_item bluebox_container current">
