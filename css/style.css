@@ -627,7 +627,7 @@ address a {
     display: block;
 }
 
-.whitebox_primary_post h3 {
+.whitebox_primary_post h3, .theraakonteur_whitebox_primary h3 {
     font-size: 19px;
     line-height: 30px;
     margin: 0 0 6px;
@@ -1489,7 +1489,7 @@ form.wpcf7-form span {
 }
 
 
-.blog_whitebox_primary .whitebox_primary_post h3 {
+.blog_whitebox_primary .whitebox_primary_post h3, .theraakonteur_whitebox_primary h3 {
     font-size: 24px;
 }
 

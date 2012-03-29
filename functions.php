@@ -970,7 +970,7 @@ function theraakonteur_whitebox() {
             the_post();
 ?>
                 <header>
-                    <h2 class="din-schrift blue_20"><?php the_title(); ?></h2>
+                    <h3><?php the_title(); ?></h3>
                 </header>
                 <hr>
                 <div class="whitebox_primary_content">
@@ -1594,7 +1594,10 @@ function big_title_box($atts) {
         break;
     case 'category' :
         $page_title = 'Category: ' . single_cat_title('', FALSE);
-        break; 
+        break;
+    case 'theraakonteur' :
+        $page_title = 'The Raakonteur';
+        break;
     default:
         $page_title = get_the_title();
         break;
