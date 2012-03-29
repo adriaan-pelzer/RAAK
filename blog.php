@@ -24,4 +24,26 @@ Template Name: Blog
             $(this).addClass('active');
         }
     });
+    $('.pagination .previous').click(function() {
+        if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
+            $('.whitebox_primary_post.current').removeClass('current').next('div').addClass('current');
+            if (($('.whitebox_primary_post.current').prev('div').length) !== 0) {
+                $('.pagination .next').addClass('active');
+            }
+            if (($('.whitebox_primary_post.current').next('div').length) === 0) {
+                $('.pagination .previous').removeClass('active');
+            }
+        }
+    });
+    $('.pagination .next').click(function() {
+        if (($('.whitebox_primary_post.current').prev('div').length) !== 0) {
+            $('.whitebox_primary_post.current').removeClass('current').prev('div').addClass('current');
+            if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
+                $('.pagination .previous').addClass('active');
+            }
+            if (($('.whitebox_primary_post.current').prev('div').length) === 0) {
+                $('.pagination .next').removeClass('active');
+            }
+        }
+    });
 </script>
