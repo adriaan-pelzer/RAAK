@@ -984,7 +984,7 @@ function theraakonteur_whitebox() {
     }
 }
 
-add_shortcode('raak_wb', 'basic_whitebox');
+add_shortcode('raak_wb', 'theraakonteur_whitebox');
 
 
 /*************************/
