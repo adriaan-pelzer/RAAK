@@ -261,15 +261,16 @@ function who_we_are_what_we_do() {
     $current_uri = $_SERVER['REQUEST_URI'];
     $uri_array = explode('/', $current_uri);
     $founders = array('adriaan-pelzer', 'gerrie-smits', 'wessel-van-rensburg');
-    foreach($founders as $founder) {
-        if (in_array($founder, $uri_array)) {
-            $current_page = $founder;
-            break;
-        } else {
-            $current_page = 'about';
+    if(!in_array('about', $uri_array) {
+        foreach($founders as $founder) {
+            if (in_array($founder, $uri_array)) {
+                $current_page = $founder;
+            }
         }
-        echo $current_page;
+    } else {
+            $current_page = 'about';
     }
+    echo $current_page;
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
     $who_we_are_content = '';
