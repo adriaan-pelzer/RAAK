@@ -1736,6 +1736,10 @@ h2.subTitle {
     margin: 10px 0;
 }
 
+.raakonteur_bluebox_primary hr {
+    margin-bottom: 5px;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/
