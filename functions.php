@@ -369,7 +369,7 @@ function founder_quotes() {
     <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps"><?php echo($current_page == 'about') ? 'What we do' : 'Who we are'; ?></h3>
     </header>
     <hr class="blue_hr">
-    <div id="bluebox_content_what-we-do" class="bluebox_content_item bluebox_container<?php echo($current_page == 'about') ? 'current' : ''; ?>">
+    <div id="bluebox_content_what-we-do" class="bluebox_content_item bluebox_container<?php echo($current_page == 'about') ? ' current' : ''; ?>">
         If advertising is a tax on mediocrity, you've come to a tax free zone.
     </div><!-- bluebox_content_item -->
     <div id="bluebox_content_who-we-are" class="bluebox_container founder_quotes">
@@ -381,7 +381,7 @@ function founder_quotes() {
         while ($who_we_are_pages->have_posts()) {
             $who_we_are_pages->the_post();
 ?>
-        <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item<?php echo (($current_page == 'about') && ($founder_num == 0)) ? 'active' : (($current_page == $post->post_name) ? 'active' : ''); ?>">
+        <div id="bluebox_content_<?php echo $post->post_name; ?>" class="bluebox_content_item<?php echo (($current_page == 'about') && ($founder_num == 0)) ? ' current' : (($current_page == $post->post_name) ? ' current' : ''); ?>">
 <?php
             echo get_post_meta(get_the_ID(), 'excerpt', TRUE);
 ?> 
