@@ -957,7 +957,7 @@ function basic_whitebox() {
     }
 }
 
-add_shortcode('basic_wb', 'contact_whitebox');
+add_shortcode('basic_wb', 'basic_whitebox');
 
 
 /*************************/
