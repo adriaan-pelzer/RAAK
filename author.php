@@ -14,3 +14,10 @@ Template Name: Author Archive
 		</div><!-- #content -->
 <?php get_sidebar() ?>
 <?php get_footer() ?>
+<script>
+$('.whitebox_primary_footer_right a').click(function(event) {
+    if(!$(this).hasClass('active')) {
+        event.preventDefault();
+    }
+});
+</script>

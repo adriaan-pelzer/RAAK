@@ -15,7 +15,7 @@ Template Name: Author Archive
 <?php get_sidebar() ?>
 <?php get_footer() ?>
 <script>
-$('.whitebox_primary_footer_right a').click(function() {
+$('.whitebox_primary_footer_right a').click(function(event) {
     if(!$(this).hasClass('active')) {
         event.preventDefault();
     }
