@@ -261,6 +261,7 @@ function who_we_are_what_we_do() {
     $current_uri = $_SERVER['REQUEST_URI'];
     $uri_array = explode('/', $current_uri);
     $founders = array('adriaan-pelzer', 'gerrie-smits', 'wessel-van-rensburg');
+    print_r($uri_array);
     if(!in_array('about', $uri_array)) {
         foreach($founders as $founder) {
             if (in_array($founder, $uri_array)) {
