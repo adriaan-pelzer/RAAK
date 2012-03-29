@@ -45,6 +45,7 @@ Template Name: About
                 $('.twitter.current').removeClass('current');
                 $('#twitter_' + current_id).addClass('current');
             } else if (!($('#twitter_raakonteurs').hasClass('current'))) {
+                $('.twitter.current').removeClass('current');
                 $('#twitter_raakonteurs').addClass('current');
             }
             $(this).addClass('active');
