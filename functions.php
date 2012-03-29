@@ -257,12 +257,11 @@ add_shortcode('other_posts', 'display_other_posts');
 /*******************************/
 
 function who_we_are_what_we_do() {
-    the_ID();
+    global $post;
+    print($_SERVER);
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
     $who_we_are_content = '';
-    $current_page = get_page();
-    $current_page_title = $current_page->post_title;
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
     <header>
