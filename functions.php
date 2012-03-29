@@ -986,6 +986,24 @@ function theraakonteur_whitebox() {
 
 add_shortcode('raak_wb', 'theraakonteur_whitebox');
 
+/*************************/
+
+function theraakonteur_bluebox() {
+
+?>
+<div class="tab_container bluebox-primary other_posts">
+    <div class="blue_tab tab tab108 rounded-corners">
+        <header>
+            <h3>Raakonteurs</h3>
+        </header>
+    </div><!-- bluebox_tab -->
+    <div class="bluebox_primary  bluebox box rounded-corners">
+    </div>
+</div>
+<?php
+}
+
+add_shortcode('raakbb', 'theraakonteur_bluebox');
 
 /*************************/
 
