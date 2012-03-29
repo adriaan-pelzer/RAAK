@@ -6,7 +6,7 @@ Template Name: About
 <?php get_header() ?>
 
 	<div class="container rounded-corners about">
-		<div class="content">
+		<div class="content" id="content">
 <?php do_shortcode('[who_what]'); ?>
 <?php do_shortcode('[quotes]'); ?>
 		</div><!-- #content -->

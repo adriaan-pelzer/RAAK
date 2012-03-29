@@ -6,7 +6,7 @@ Template Name: Our Products
 <?php get_header() ?>
 
 	<div class="container rounded-corners our_products">
-		<div class="content">
+		<div class="content" id="content">
 <?php do_shortcode('[bwb_prod]'); ?>
 		</div><!-- content -->
 <?php get_sidebar() ?>

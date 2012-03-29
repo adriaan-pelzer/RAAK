@@ -6,7 +6,7 @@ Template Name:Home
 <?php get_header() ?>
 
     <div class="container rounded-corners home">
-        <div class="content">
+        <div class="content" id="content">
 <?php do_shortcode('[logo_cta]'); ?>
 <?php do_shortcode('[our_work]'); ?>
 <?php do_shortcode('[latest_posts category="Blog" posts_per_page="2" num_pages="10" tab="1" ]'); ?>

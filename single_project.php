@@ -6,7 +6,7 @@ Template Name Posts: Single Project
 <?php get_header() ?>
 
 	<div class="container rounded-corners single_product">
-		<div class="content">
+		<div class="content" id="content">
 <?php do_shortcode('[sp_wb]'); ?>
 <?php do_shortcode('[sp_bb]'); ?>
 		</div><!-- #content -->

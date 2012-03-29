@@ -6,7 +6,7 @@ Template Name:Logo Project
 <?php get_header() ?>
 
 	<div class="container rounded-corners logo_project">
-		<div class="content">
+		<div class="content" id="content">
 <?php
 do_shortcode('[wblp]');
 do_shortcode('[lplu]');

@@ -7,7 +7,7 @@ Template Name: Contact
 
 
 	<div class="container rounded-corners contact">
-		<div class="content">
+		<div class="content" id="content">
 <?php do_shortcode('[basic_wb]'); ?>
 <?php do_shortcode('[contactbb]'); ?>
 		</div><!-- #content -->

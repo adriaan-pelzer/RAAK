@@ -6,7 +6,7 @@ Template Name: Author Archive
 <?php get_header(); ?>
 
     <div class="container rounded-corners blog_archive">
-        <div class="content">
+        <div class="content" id="content">
 <?php do_shortcode('[title page_type="category"]'); ?>
 <?php do_shortcode('[archive_list page_type="category"]'); ?>
 <?php do_shortcode('[tags all_tags="1"]'); ?>
