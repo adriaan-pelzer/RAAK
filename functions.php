@@ -267,7 +267,6 @@ function who_we_are_what_we_do() {
             $current_page = $founder;
         }
     }
-    echo $current_page;
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
     $who_we_are_content = '';
@@ -275,7 +274,7 @@ function who_we_are_what_we_do() {
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
     <header>
         <nav class="whitebox_primary_nav smaller_arial_caps about_nav box_nav">
-        <a<?php echo ($current_page == 'about') ? ' class="active"' : ''; ?>>What we do</a><span class="seperator seperator_smaller">|</span><a><?php echo ($current_page != 'about') ? ' class="active"' : ''; ?>Who we are</a>
+        <a<?php echo ($current_page == 'about') ? ' class="active"' : ''; ?>>What we do</a><span class="seperator seperator_smaller">|</span><a<?php echo ($current_page != 'about') ? ' class="active"' : ''; ?>>Who we are</a>
         </nav><!-- whitebox_primary_nav -->
         <h2 class="din-schrift blue_20">About</h2>
     </header>
@@ -355,6 +354,7 @@ add_shortcode('who_what', 'who_we_are_what_we_do');
 /*************************/
 
 function founder_quotes() {
+    echo $current_page;
 ?>
 <aside class="bluebox bluebox_primary about_bluebox box rounded-corners">
     <header>
