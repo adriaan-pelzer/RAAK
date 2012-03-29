@@ -258,7 +258,7 @@ add_shortcode('other_posts', 'display_other_posts');
 
 function who_we_are_what_we_do() {
     global $post;
-    global $current_page;
+    $_GLOBALS['current_page'] = $current_page;
     $current_uri = $_SERVER['REQUEST_URI'];
     $uri_array = explode('/', $current_uri);
     $founders = array('adriaan-pelzer', 'gerrie-smits', 'wessel-van-rensburg');
@@ -268,6 +268,8 @@ function who_we_are_what_we_do() {
             $current_page = $founder;
         }
     }
+    $_GLOBALS['current_page'] = $current_page;
+    print_r($_GLOBALS);
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
     $who_we_are_content = '';
