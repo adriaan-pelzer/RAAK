@@ -366,7 +366,7 @@ function founder_quotes() {
 ?>
 <aside class="bluebox bluebox_primary about_bluebox box rounded-corners">
     <header>
-    <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps"><?php echo($current_page = 'about') ? 'What we do' : 'Who we are'; ?></h3>
+    <h3 class="box_nav_no_title bluebox_primary_nav box_nav smaller_arial_caps"><?php echo($current_page == 'about') ? 'What we do' : 'Who we are'; ?></h3>
     </header>
     <hr class="blue_hr">
     <div id="bluebox_content_what-we-do" class="bluebox_content_item bluebox_container current">
