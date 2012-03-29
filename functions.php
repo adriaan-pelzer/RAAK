@@ -372,7 +372,7 @@ function founder_quotes() {
     <div id="bluebox_content_what-we-do" class="bluebox_content_item bluebox_container<?php echo($current_page == 'about') ? ' current' : ''; ?>">
         If advertising is a tax on mediocrity, you've come to a tax free zone.
     </div><!-- bluebox_content_item -->
-    <div id="bluebox_content_who-we-are" class="bluebox_container founder_quotes">
+    <div id="bluebox_content_who-we-are" class="bluebox_container founder_quotes<?php echo($current_page != 'about') ? ' current' : ''; ?>">
 <?php
     $who_we_are = get_page_by_title('Who we are');
     global $post;
