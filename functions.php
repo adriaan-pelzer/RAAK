@@ -997,7 +997,7 @@ function theraakonteur_bluebox() {
             <h3>Raakonteurs</h3>
         </header>
     </div><!-- bluebox_tab -->
-    <div class="bluebox_primary  bluebox box rounded-corners">
+    <div class="bluebox_primary bluebox box rounded-corners">
     </div>
 </div>
 <?php
