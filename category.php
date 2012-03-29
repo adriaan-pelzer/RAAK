@@ -19,5 +19,5 @@ $('.whitebox_primary_footer_right a').click(function() {
     if(!$(this).hasClass('active')) {
         $(this).preventDefault();
     }
-}
+});
 </script>
