@@ -15,7 +15,6 @@ function logo_call_to_action() {
     foreach($letters as $letter) {
         $current_query = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' => $letter));
         ${$letter . '_num'} = $current_query->post_count;
-        echo $current_query->post_count;
     } 
     $logo_story = get_page_by_title('The perpetually changing crowdsourced RAAK logo', 'OBJECT', 'post');
     $logo_project = get_page_by_title('Logo Project');
