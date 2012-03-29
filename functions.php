@@ -264,7 +264,7 @@ function who_we_are_what_we_do() {
     foreach($founders as $founder) {
         if (in_array($founder, $uri_array)) {
             $current_page = $founder;
-            break 2;
+            break;
         } else {
             $current_page = 'about';
         }
