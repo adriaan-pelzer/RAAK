@@ -258,7 +258,16 @@ add_shortcode('other_posts', 'display_other_posts');
 
 function who_we_are_what_we_do() {
     global $post;
-    print_r($_SERVER);
+    $current_uri = $_SERVER['REQUEST_URI'];
+    $uri_array = explode('/', $current_uri);
+    $founders = array('adriaan-pelzer', 'gerrie-smits', 'wessel-van-rensburg');
+    foreach($founders as $founder) {
+        if (in_array($founder, $uri_array) {
+            $current_page = $founder;
+        } else {
+            $current_page = 'about';
+        }
+    }
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
     $who_we_are_content = '';
@@ -271,22 +280,24 @@ function who_we_are_what_we_do() {
         <h2 class="din-schrift blue_20">About</h2>
     </header>
     <hr>
-    <div id="what-we-do" class="whitebox_primary_content about_content<?php echo ($current_page_titile == 'About') ? ' current' : ''; ?>">
+    <div id="what-we-do" class="whitebox_primary_content about_content<?php echo ($current_page == 'about') ? ' current' : ''; ?>">
 <?php echo $what_we_do->post_content; ?>
     </div><!-- whitebox_primary_content -->
-    <div id="who-we-are" class="whitebox_primary_content about_content<?php echo ($current_page_titile != 'About') ? ' current' : ''; ?>">
+    <div id="who-we-are" class="whitebox_primary_content about_content<?php echo ($current_page != 'about') ? ' current' : ''; ?>">
         <nav class="whitebox_primary_content_nav smaller_arial_caps box_nav">
 <?php
-    $founder = 0;
+    $founder_num = 0;
     $who_we_are_query = new WP_Query('post_parent=' . $who_we_are->ID . '&post_type=page&order=ASC');
     while($who_we_are_query->have_posts()) {
         $who_we_are_query->the_post();
 ?>
 
-                        <?php echo ($founder != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_<?php echo $post->post_name; ?>" class="whitebox_primary_content_nav_item <?php echo ($founder == 0) ? 'active' : ''; ?>" ><?php the_title(); ?></a>
+                        <?php echo ($founder_num != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_<?php echo $post->post_name; ?>" class="whitebox_primary_content_nav_item <?php echo ($founder_num == 0) ? 'active' : ''; ?>" ><?php the_title(); ?></a>
 <?php
         $who_we_are_content .= '<section id="whitebox_primary_content_' . $post->post_name . '" class="whitebox_primary_content_founder'; 
-        if($founder == 0) {
+        if(($current_page = 'about') && ($founder_num == 0)) {
+            $who_we_are_content .= ' current';
+        } else if($current_page == $post->post_name) {
             $who_we_are_content .= ' current';
         }
         $who_we_are_content .= '"><div class="whitebox_primary_content_founder_info smaller_arial_caps box_nav">
@@ -324,7 +335,7 @@ function who_we_are_what_we_do() {
         $who_we_are_content .= preg_replace ("/<a[^>]+><img[^>]+><\/a>/", "", $post->post_content);
         $who_we_are_content .= '</div><!-- .whitebox_primary_content_founder_text -->
                         </section><!-- whitebox_primary_content_founder -->';
-        $founder++;
+        $founder_num++;
     }
 ?>
         </nav><!-- whitebox_primary_content_nav -->
