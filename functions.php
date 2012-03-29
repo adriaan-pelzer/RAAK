@@ -267,6 +267,7 @@ function who_we_are_what_we_do() {
         } else {
             $current_page = 'about';
         }
+        echo $current_page;
     }
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
