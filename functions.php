@@ -257,7 +257,7 @@ add_shortcode('other_posts', 'display_other_posts');
 
 function who_we_are_what_we_do() {
     global $post;
-    the_ID();
+    print_r($post);
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
     $who_we_are_content = '';
