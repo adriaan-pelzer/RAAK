@@ -258,10 +258,11 @@ add_shortcode('other_posts', 'display_other_posts');
 
 function who_we_are_what_we_do() {
     global $post;
+    global $current_page;
     $current_uri = $_SERVER['REQUEST_URI'];
     $uri_array = explode('/', $current_uri);
     $founders = array('adriaan-pelzer', 'gerrie-smits', 'wessel-van-rensburg');
-    global $current_page = 'about';
+    $current_page = 'about';
     foreach($founders as $founder) {
         if (in_array($founder, $uri_array)) {
             $current_page = $founder;
