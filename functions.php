@@ -15,7 +15,7 @@ function logo_call_to_action() {
     foreach($letters as $letter) {
         $current_query = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' => $letter));
         ${$letter . '_num'} = $current_query->post_count;
-        wp_reset_postdata();
+        wp_reset_query();
     } 
     $logo_story = get_page_by_title('The perpetually changing crowdsourced RAAK logo', 'OBJECT', 'post');
     $logo_project = get_page_by_title('Logo Project');
@@ -93,7 +93,7 @@ function display_latest_posts($atts) {
 ?>
         </div><!-- whitebox_primary_post -->
 <?php
-        wp_reset_postdata();
+        wp_reset_query();
     
     }
 ?>
@@ -157,7 +157,7 @@ function our_work()
         $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Project:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Project', true) . '</span></li>';
         $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Overview:</span><span class="overview">' . get_post_meta ($current_our_work_post_id, 'Overview', true) . '</span></li>';
         $our_work_bluebox_content .= '<li class="bluebox_content_link"><a href="' . get_category_link($current_our_work_post_cat) . '" rel="nofollow">More Projects &#9660;</a></li></ul></section>';
-        wp_reset_postdata();
+        wp_reset_query();
     }
 ?>
     </nav>
@@ -221,7 +221,7 @@ function display_other_posts($atts) {
             </footer>
         </section><!-- other_posts_content_one -->
 <?php
-            wp_reset_postdata();
+            wp_reset_query();
         } else {
 ?>
         <section class="other_posts_content_<?php echo ($cat_num == 'category2') ? 'two' : 'three'; ?>">
@@ -244,7 +244,7 @@ function display_other_posts($atts) {
             </footer>
         </section><!-- other_posts_content_<?php echo ($cat_num == 'category2') ? 'two' : 'three'; ?> -->
 <?php
-            wp_reset_postdata();
+            wp_reset_query();
         }
     }
 ?>
@@ -338,7 +338,7 @@ function who_we_are_what_we_do() {
 </div>
 
 <?php
-    wp_reset_postdata();
+    wp_reset_query();
 }
 
 add_shortcode('who_what', 'who_we_are_what_we_do'); 
@@ -373,7 +373,7 @@ function founder_quotes() {
             $founder++;
 
         }
-    wp_reset_postdata();
+    wp_reset_query();
 ?>
     </div>
 </aside>
@@ -876,7 +876,7 @@ function logo_project_archive() {
         $content .= '
         </div><!-- .bluebox_big_content_row -->
     </section><!-- bluebox_big_content -->';
-        wp_reset_postdata();
+        wp_reset_query();
     }
 ?>
     <a id="bluebox_big_nav_back" href="<?php echo get_permalink($logo_project_page->ID); ?>">Back</a>
@@ -936,7 +936,7 @@ function contact_whitebox() {
 
 <?php
         }
-        wp_reset_postdata();
+        wp_reset_query();
     }
 }
 
@@ -1029,7 +1029,7 @@ function big_whitebox_products() {
     </div><!-- #whitebox_big_all-items -->
 </div>
 <?php
-    wp_reset_postdata();
+    wp_reset_query();
 }
 
 add_shortcode('bwb_prod', 'big_whitebox_products');
@@ -1098,7 +1098,7 @@ function big_whitebox_projects() {
                 $children_cats .= '</div><!-- #whitebox_big_category_row' . $row_count . ' -->';
             }
             $children_cats .= '</div><!-- whitebox_big_' . $work_category->category_nicename . ' -->';
-            wp_reset_postdata();
+            wp_reset_query();
         }
 ?>
         </nav>
@@ -1157,7 +1157,7 @@ function big_whitebox_projects() {
                 </div><!-- #whitebox_big_all-items -->
             </div>
 <?php
-    wp_reset_postdata();
+    wp_reset_query();
 }
 
 add_shortcode('bwb_proj', 'big_whitebox_projects');
@@ -1248,7 +1248,7 @@ function single_project_whitebox() {
 </div><!-- whitebox_primary -->
 <?php
         }
-        wp_reset_postdata();
+        wp_reset_query();
     }
 }
 
@@ -1334,7 +1334,7 @@ function category_box($atts) {
                 <li><a href="<?php echo get_permalink($viewed_post->ID); ?>"><?php echo $viewed_post->post_title; ?></a></li>
 <?php
     }
-    wp_reset_postdata();
+    wp_reset_query();
 ?>
             </ul>
 
@@ -1446,7 +1446,7 @@ function single_blog_post() {
             </div>
 <?php
         }
-        wp_reset_postdata();
+        wp_reset_query();
     }
 }
 
@@ -1648,7 +1648,7 @@ function blog_archive_post_list($atts) {
     </footer><!-- .whitebox_primary_footer -->
 </div><!-- whitebox_primary -->
 <?php
-    wp_reset_postdata();
+    wp_reset_query();
 }
 
 add_shortcode('archive_list', 'blog_archive_post_list');
@@ -1722,7 +1722,7 @@ function default_page_function() {
 
 <?php
         }
-        wp_reset_postdata();
+        wp_reset_query();
     }
 ?>
 </div>
