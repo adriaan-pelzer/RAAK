@@ -157,7 +157,19 @@ function mce_success_cb(resp){
                     <!--End mc_embed_signup-->
                 </div><!-- mailchimp_body -->
             </aside><!-- mailchimp -->
-            <aside class="twitter current" id="twitter_raakonteurs">
+<?php
+if(is_page_template('about.php')) {
+    $current_uri = $_SERVER['REQUEST_URI'];
+    $uri_array = explode('/', $current_uri);
+    $founder_names = array('adriaan-pelzer', 'gerrie-smits', 'wessel-van-rensburg');
+    $current_page = 'about';
+    foreach($founder_names as $founder_name) {
+        if (in_array($founder_name, $uri_array)) {
+            $current_page = $founder_name;
+        }
+    }
+?>
+    <aside class="twitter<?php echo ((!isset($current_page)) || ($current_page == 'about')) ? ' current' : ''; ?>" id="twitter_raakonteurs">
                 <div class="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
                 <div class="twitter_body rounded-corners_bottom">
                     <div class="twitter_follow">
@@ -200,7 +212,7 @@ if(is_page_template('about.php')) {
     foreach($founders->posts as $founder) {
         $twitter_handle = get_post_meta($founder->ID, 'twitterhandle', TRUE);
    ?>
-    <aside class="twitter" id="twitter_<?php echo $founder->post_name; ?>">
+    <aside class="twitter<?php echo($current_page == $founder->post_name) ? ' current' : ''; ?>" id="twitter_<?php echo $founder->post_name; ?>">
         <div class="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/<?php echo $twitter_handle; ?>"><?php echo $twitter_handle; ?></a></h2></div>
         <div class="twitter_body rounded-corners_bottom">
             <div class="twitter_follow">
