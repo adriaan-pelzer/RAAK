@@ -1210,7 +1210,7 @@ form li.error, #mc_embed_signup .mce_inline_error {
     font-weight: bold;
     font-size: 12px!important;
     color: #f00f00!important;
-    height: auto!important;
+    height: auto;
 }
 
 /************** LOGO ARCHIVE *************/
