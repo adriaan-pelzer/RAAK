@@ -269,7 +269,6 @@ function who_we_are_what_we_do() {
         }
     }
     $_GLOBALS['current_page'] = $current_page;
-    print_r($_GLOBALS);
     $what_we_do = get_page_by_title('What we do');
     $who_we_are = get_page_by_title('Who we are');
     $who_we_are_content = '';
@@ -357,7 +356,7 @@ add_shortcode('who_what', 'who_we_are_what_we_do');
 /*************************/
 
 function founder_quotes() {
-    echo $current_page;
+    print_r($_GLOBALS);
 ?>
 <aside class="bluebox bluebox_primary about_bluebox box rounded-corners">
     <header>
