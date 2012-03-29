@@ -292,7 +292,7 @@ function who_we_are_what_we_do() {
         $who_we_are_query->the_post();
 ?>
 
-                        <?php echo ($founder_num != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_<?php echo $post->post_name; ?>" class="whitebox_primary_content_nav_item <?php echo (($current_page == 'about') && ($founder_num == 0)) ? 'active' : (($current_page == $post->post_name) ? 'active' : '';); ?>" ><?php the_title(); ?></a>
+                        <?php echo ($founder_num != 0) ? '<span class="seperator seperator_smaller">|</span>' : ''; ?><a id="whitebox_primary_content_nav_<?php echo $post->post_name; ?>" class="whitebox_primary_content_nav_item <?php echo (($current_page == 'about') && ($founder_num == 0)) ? 'active' : (($current_page == $post->post_name) ? 'active' : ''); ?>" ><?php the_title(); ?></a>
 <?php
         $who_we_are_content .= '<section id="whitebox_primary_content_' . $post->post_name . '" class="whitebox_primary_content_founder'; 
         if(($current_page == 'about') && ($founder_num == 0)) {
