@@ -41,7 +41,6 @@ Template Name: About
             current_id = current_id.replace(/ /g , '-');
             $('#whitebox_primary_content_' + current_id).addClass('current');
             $('#bluebox_content_' + current_id).addClass('current');
-            console.log(current_id);
             if($('#twitter_' + current_id).length) {
                 $('.twitter.current').removeClass('current');
                 $('#twitter_' + current_id).addClass('current');
