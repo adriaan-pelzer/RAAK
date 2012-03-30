@@ -1678,10 +1678,8 @@ function blog_archive_post_list($atts) {
     default:
         break;
     }
-    echo $cat;
-    echo $tag;
-    echo $author;
-    $archive_posts = new WP_Query(array('category_name' => $cat, 'tag' => $tag, /*'author' => $author,*/ 'posts_per_page' => '20', 'paged' => $page_num));
+    
+    $archive_posts = new WP_Query(array('category_name' => $cat, 'tag' => '+1'/*$tag*/, 'author' => $author, 'posts_per_page' => '20', 'paged' => $page_num));
 ?>
 <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
 <?php
