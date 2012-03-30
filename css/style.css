@@ -1700,6 +1700,13 @@ h2.subTitle {
     font-weight: bold;
 }
 
+.opengraphprotocoltools-div {
+    width: 92px;
+    height: 20px;
+    padding: 0!important;
+    margin: 10px 0 0 0px!important;
+}
+
 /************** COMMENTS ****************/
 
 .comments {
