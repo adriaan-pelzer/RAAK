@@ -1407,7 +1407,7 @@ function category_box($atts) {
             <ul>
 <?php
     
-    $most_viewed = new WP_Query(array('orderby' => 'meta_valuea_num', 'meta_key' => 'postviews', 'posts_per_page' => 6, 'paged' => 1));
+    $most_viewed = new WP_Query(array('orderby' => 'meta_value_num', 'meta_key' => 'postviews', 'posts_per_page' => 6, 'paged' => 1));
     foreach(($most_viewed->posts) as $viewed_post) {
 ?>
 
