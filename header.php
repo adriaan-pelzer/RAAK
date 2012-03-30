@@ -61,7 +61,7 @@ foreach($different_letters as $different_letter) {
         <div id="blog-description">Putting you in touch with your crowds</div>
             <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
 <?php 
-wp_nav_menu(array('container'=>'nav', 'container_class'=>'menu', 'menu_class'=> '', 'before'=>'<div class="topmenu_top"></div><div class="topmenu_body">', 'after'=>'</div>'); 
+wp_nav_menu(array('container'=>'nav', 'container_class'=>'menu', 'menu_class'=> '', 'before'=>'<div class="topmenu_top"></div><div class="topmenu_body">', 'after'=>'</div>')); 
 ?> 
             <nav class="menu">
                 <ul>
