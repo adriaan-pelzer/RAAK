@@ -12,6 +12,7 @@ Template Name: Our Work
 <?php get_sidebar() ?>
 <?php get_footer() ?>
 <script>
+$(document).ready(function() {
     $('a.whitebox_big_nav_item').click(function() {
         if(!$(this).hasClass('active')) {
             $('a.whitebox_big_nav_item.active').removeClass('active');
@@ -25,4 +26,5 @@ Template Name: Our Work
     $('.whitebox_big_category_entry_content').hover(function() {
         $(this).find('div').toggleClass('current');
     });
+});
 </script>
