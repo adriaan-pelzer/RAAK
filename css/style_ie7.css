@@ -146,3 +146,11 @@ address {
 .about_content img {
     display: block;
 }
+
+.letter a {
+    filter: alpha(opacity=30); /*ie7*/
+}
+
+.letter a.selected {
+    filter: alpha(opacity=100); /*ie7*/
+}

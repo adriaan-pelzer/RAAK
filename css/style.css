@@ -1069,14 +1069,12 @@ hr.lightblue_hr {
 .letter a {
     opacity: 0.3;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"; /*ie8*/
-    filter: alpha(opacity=30); /*ie7*/
 }
 
 
 .letter a.selected {
     opacity: 1;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /*ie8*/
-    filter: alpha(opacity=100); /*ie7*/
 }
 
 .letter a img { /*for ie*/
