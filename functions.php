@@ -1767,7 +1767,9 @@ function blog_tag_box($atts) {
             }
         }
     }*/
-    query_posts('cat_name=blog&posts_per_page=-1');
+    $cat_id = get_cat_id('blog');
+    echo $cat_id;
+    query_posts('cat=' . $cat_id . '&posts_per_page=-1');
     if(have_posts()): while (have_posts()) : the_post();
         $all_tag_objects = get_the_tags();
         if($all_tag_objects){
