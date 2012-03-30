@@ -31,7 +31,7 @@ foreach($different_letters as $different_letter) {
     }
 }
 ?>
-    <!-- script src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/js/script.js"></script -->
+    <script src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/js/script.js"></script>
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style_ie7.css" />
@@ -39,6 +39,7 @@ foreach($different_letters as $different_letter) {
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+<?php wp_head(); ?>
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
 <div class="wrapper hfeed">
@@ -99,5 +100,4 @@ wp_nav_menu(array('container'=>'nav', 'container_class'=>'menu', 'before'=>'<div
                     </li>
                 </ul>
             </nav-->
-<?php wp_head(); ?>
     </header><!--  header -->
