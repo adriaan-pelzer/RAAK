@@ -686,6 +686,7 @@ address a {
     font: 9px arial, sans-serif;
     text-transform: uppercase;
     float: right;
+    overflow: hidden; /*to stop ff36 adding a scroll bar to containing container */
 }
 
 
