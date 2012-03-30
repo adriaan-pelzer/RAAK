@@ -1666,7 +1666,6 @@ function blog_archive_post_list($atts) {
     $cat = 'Blog';
     switch($page_type) {
     case 'tag' :
-        //$tag = single_tag_title('', FALSE);
         $tag = get_query_var('tag');
         break;
     case 'author' :
@@ -1679,7 +1678,6 @@ function blog_archive_post_list($atts) {
     default:
         break;
     }
-    echo $tag;
     $archive_posts = new WP_Query(array('category_name' => $cat, 'tag' => $tag, 'author' => $author, 'posts_per_page' => '20', 'paged' => $page_num));
 ?>
 <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
