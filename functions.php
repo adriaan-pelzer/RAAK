@@ -1673,8 +1673,7 @@ function blog_archive_post_list($atts) {
         $author = $curauth->ID;
         break;
     case 'category' :
-        //$cat = strtolower(single_cat_title('', FALSE));
-        $cat = get_query_var('cat');
+        $cat = strtolower(single_cat_title('', FALSE));
         break;
     default:
         break;
