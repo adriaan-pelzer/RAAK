@@ -1752,9 +1752,9 @@ function blog_tag_box($atts) {
         $tag_num = 60;
     }
     $blog_tag_query = new WP_Query(array('cat_name'=>'blog', 'posts_per_page'=> -1));
-    if($blog_tag_query=>have_posts()) {
-        while ($blog_tag_query=>have_posts()) {
-            $blog_tag_query=>the_post();
+    if($blog_tag_query->have_posts()) {
+        while ($blog_tag_query->have_posts()) {
+            $blog_tag_query->the_post();
             $blog_tag_objects = get_the_tags();
             if($blog_tag_objects){
                 foreach($blog_tag_objects as $blog_tag) {
