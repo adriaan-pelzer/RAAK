@@ -1499,7 +1499,11 @@ function single_blog_post() {
  * or on your blogs main page to include a Facebook "Like" iframe
  */
             if (function_exists('the_opengraphprotocoltools_like_code')):
+                ob_start();
                 the_opengraphprotocoltools_like_code();
+                $likecode = ob_get_contents();
+                ob_end_clean();
+                echo str_replace ("layout=standard", "layout=button_count", $likecode);
             else:
                 echo "<!-- opengraphprotocoltools is not activated -->";
 endif;
