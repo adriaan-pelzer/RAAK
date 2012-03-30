@@ -12,12 +12,6 @@ Template Name: Our Products
 <?php get_sidebar() ?>
 <?php get_footer() ?>
 <script>
-    if(!$('.whitebox_big_category_entry_content_picture').hasClass('current')) {
-        $('.whitebox_big_category_entry_content_picture').addClass('current');
-    }
-    if ($('.whitebox_big_category_entry_content_overview').hasClass('current')) {
-        $('.whitebox_big_category_entry_content_overview').removeClass('current');
-    }
     $('.whitebox_big_category_entry_content').hover(function() {
         $(this).find('.whitebox_big_category_entry_content_picture').removeClass('current')
         $(this).find('.whitebox_big_category_entry_content_overview').addClass('current');
