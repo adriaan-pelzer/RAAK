@@ -1494,7 +1494,7 @@ span.wpcf7-not-valid-tip {
 div.wpcf7-response-output {
     margin: 0 auto!important;
     width: 300px!important;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     padding: 0.2em 1em;
 }
 
