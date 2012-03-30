@@ -8,7 +8,11 @@ function create_post_type () {
     register_post_type('raak_logo_letter', array('labels' => array('name' => __('letters'), 'singular' => __('letter')), 'public' => TRUE, 'has_archive' => TRUE, 'rewrite' => array('slug' => 'letters'), supports => array('custom-fields', 'title', 'editor')));
 }
 
-/*******************************/
+/********************* use wp menu *******************/
+
+register_nav_menus( array('primary' => 'Primary Navigation'));
+
+/*****************************************************/
 
 function logo_call_to_action() {
     $letters = array('r', 'a', 'k');
