@@ -21,5 +21,4 @@ Template Name: Our Products
         $(this).find('.whitebox_big_category_entry_content_overview').removeClass('current');
         $(this).find('.whitebox_big_category_entry_content_picture').addClass('current');
     });
-    
 </script>
