@@ -142,6 +142,7 @@ function our_work()
 <?php
     foreach($work_categories as $cat_number => $work_category)
     {
+        print_r($work_category);
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
         <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
