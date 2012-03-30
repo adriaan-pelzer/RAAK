@@ -53,7 +53,7 @@ input[name="upload_submit"] {
     display: inline;
 }
 
-#twitter_body #twtr-widget-1 a.twtr-join-conv {
+.twitter_body #twtr-widget-1 a.twtr-join-conv {
     text-align: right;
     padding-left: 45px;
 }
