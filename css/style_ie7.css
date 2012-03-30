@@ -55,6 +55,7 @@ input[name="upload_submit"] {
 
 #twitter_body #twtr-widget-1 a.twtr-join-conv {
     text-align: right;
+    padding-left: 45px;
 }
 
 #who-we-are .whitebox_primary_content_nav_item {
