@@ -147,10 +147,10 @@ address {
     display: block;
 }
 
-.letter a {
+.letter a img {
     filter: alpha(opacity=30); /*ie7*/
 }
 
-.letter a.selected {
+.letter a.selected img {
     filter: alpha(opacity=100); /*ie7*/
 }
