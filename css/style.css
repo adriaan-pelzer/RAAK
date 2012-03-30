@@ -1618,9 +1618,9 @@ div.wpcf7-response-output {
     margin-bottom: 10px;
 }
 
-#___plusone_0 {
+/*#___plusone_0 {
     margin-top: 5px!important;
-}
+}*/
 
 
 .blog-single .whitebox_primary_post .solid {
@@ -1704,7 +1704,7 @@ h2.subTitle {
     width: 92px;
     height: 20px;
     padding: 0!important;
-    margin: 10px 0 0 0px!important;
+    margin: 8px 0 0 0px!important;
 }
 
 .fb_iframe_widget {
