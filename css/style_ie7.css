@@ -157,6 +157,6 @@ address {
     filter: alpha(opacity=100); /*ie7*/
 }
 
-input#upload_file {
+#whitebox_secondary_submit input#upload_file{
     width: 25px;
 }
