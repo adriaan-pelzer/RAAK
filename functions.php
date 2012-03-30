@@ -1751,6 +1751,7 @@ function blog_tag_box($atts) {
     } else {
         $tag_num = 60;
     }
+    $blog_tag_ids = [];
     $blog_tag_query = new WP_Query(array('cat_name'=>'blog', 'posts_per_page'=> -1));
     if($blog_tag_query->have_posts()) {
         while ($blog_tag_query->have_posts()) {
@@ -1761,7 +1762,6 @@ function blog_tag_box($atts) {
                 foreach($blog_tag_objects as $blog_tag) {
                     if($blog_tag->count > 0) {
                         $blog_tag_ids[] = $tag -> term_id;
-                        print_r($blog_tag_ids);
                     }
                 }
             }
