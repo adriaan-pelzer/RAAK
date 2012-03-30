@@ -1466,14 +1466,38 @@ form.wpcf7-form span {
     position: relative;
 }
 form.wpcf7-form span.wpcf7-not-valid-tip-no-ajax {
-    left: 0;
-    top: 0;
-    display: block;
-    color: #f00f00;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 100;
+    background: #ffffff;
+    border: 1px solid #f00f00;
+    font-size: 10pt;
+    width: 280px;
+    padding: 2px;
 }
 
-.wpcf7-validation-errors {
+/*.wpcf7-validation-errors {
     color: #f00f00;
+}*/
+
+span.wpcf7-not-valid-tip {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 100;
+    background: #ffffff;
+    border: 1px solid #f00f00;
+    font-size: 10pt;
+    width: 280px;
+    padding: 2px;
+}
+
+div.wpcf7-response-output {
+    margin: 30px auto -20px!important;
+    width: 300px!important;
+    border: 2px solid red;
+    padding: 0.2em 1em;
 }
 
 #bluebox_map {
