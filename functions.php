@@ -1452,6 +1452,7 @@ function single_blog_post() {
     if(have_posts()) {
         while(have_posts()) {
             the_post();
+            setPostViews(get_the_ID());
             $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
             $author_page = get_page_by_title($author_full_name);
 ?>
@@ -1751,36 +1752,19 @@ function blog_tag_box($atts) {
     } else {
         $tag_num = 60;
     }
-    /*$blog_tag_ids = array();
-    $blog_tag_query = new WP_Query(array('cat_name'=>'blog', 'posts_per_page'=> -1));
-    if($blog_tag_query->have_posts()) {
-        while ($blog_tag_query->have_posts()) {
-            $blog_tag_query->the_post();
-            $blog_tag_objects = get_the_tags();
-            if($blog_tag_objects){
-                $array_size = count($blog_tag_objects);
-                foreach($blog_tag_objects as $blog_tag) {
-                    if($blog_tag->count > 0) {
-                        $blog_tag_ids[] = $tag -> term_id;
-                    }
+    $blog_tags = new WP_Query(array('category_name'=>'blog', 'posts_per_page'=>-1));
+    if($blog_tags->have_posts()){
+        while ($blog_tags->have_posts()) {
+            $blog_tags->the_post();
+            $all_tag_objects = get_the_tags();
+            if($all_tag_objects){
+                foreach($all_tag_objects as $tag) {
+                    if($tag->count > 0) {$all_tag_ids[] = $tag -> term_id;}
                 }
             }
         }
-    }*/
-    $blog_tags = new WP_Query(array('category_name'=>'blog', 'posts_per_page'=>-1));
-    if($blog_tags->have_posts()): while ($blog_tags->have_posts()) : $blog_tags->the_post();
-        $all_tag_objects = get_the_tags();
-        if($all_tag_objects){
-            foreach($all_tag_objects as $tag) {
-                if($tag->count > 0) {$all_tag_ids[] = $tag -> term_id;}
-            }
-        }
-    endwhile;endif;
+    }
     $tag_ids_unique = array_unique($all_tag_ids);
-    /*$tag_ids_blog = array_unique($blog_tag_ids);
-    print_r($tag_ids_blog);*/
-    //print_r($tag_ids_unique);
-    
 ?>
 <div class="tab_container bluebox-primary other_posts">
     <div class="blue_tab tab tab108 rounded-corners">
@@ -1790,8 +1774,7 @@ function blog_tag_box($atts) {
     </div><!-- blue_tab -->
     <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <?php
-    //wp_tag_cloud('number=' . $tag_num . '');
-wp_tag_cloud('include=' . implode(',', $tag_ids_unique) . '&number=' . $tag_num . '');
+    wp_tag_cloud('include=' . implode(',', $tag_ids_unique) . '&number=' . $tag_num . '');
 ?>
     </div><!-- bluebox_primary -->
 </div><!-- bluebox-primary -->
