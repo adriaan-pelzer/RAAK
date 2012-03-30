@@ -1663,7 +1663,7 @@ function blog_archive_post_list($atts) {
     $blog_archive_page = get_page_by_title('Blog Archive');
     $tag = '';
     $author = '';
-    $cat = 'Blog';
+    $cat = 'blog';
     switch($page_type) {
     case 'tag' :
         $tag = get_query_var('tag');
@@ -1678,8 +1678,7 @@ function blog_archive_post_list($atts) {
     default:
         break;
     }
-    echo $cat;
-    $archive_posts = new WP_Query(array('category_name' => 'blog'/*$cat*/, 'tag' => $tag, 'author' => $author, 'posts_per_page' => '20', 'paged' => $page_num));
+    $archive_posts = new WP_Query(array('category_name' => $cat, 'tag' => $tag, 'author' => $author, 'posts_per_page' => '20', 'paged' => $page_num));
 ?>
 <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
 <?php
@@ -1752,6 +1751,23 @@ function blog_tag_box($atts) {
     } else {
         $tag_num = 60;
     }
+    $blog_tag_query = new WP_Query(array('cat_name'=>'blog', 'posts_per_page'=> -1);
+    if($blog_tag_query=>have_posts()) {
+        while ($blog_tag_query=>have_posts()) {
+            $blog_tag_query=>the_post();
+            $blog_tag_objects = get_the_tags();
+            if($blog_tag_objects){
+                foreach($blog_tag_objects as $blog_tag) {
+                    if($blog_tag->count > 0) {
+                        $blog_tag_ids[] = $tag -> term_id;
+                    }
+                }
+            }
+        }
+    }
+    $tag_ids_blog = array_unique($blog_tag_ids);
+    print_r($tag_ids_blog);
+    
 ?>
 <div class="tab_container bluebox-primary other_posts">
     <div class="blue_tab tab tab108 rounded-corners">
