@@ -1791,7 +1791,7 @@ function blog_tag_box($atts) {
     <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <?php
     //wp_tag_cloud('number=' . $tag_num . '');
-wp_tag_cloud('include=' . implode(',', $tag_ids_unique)'&number=' . $tag_num . '');
+wp_tag_cloud('include=' . implode(',', $tag_ids_unique) . '&number=' . $tag_num . '');
 ?>
     </div><!-- bluebox_primary -->
 </div><!-- bluebox-primary -->
