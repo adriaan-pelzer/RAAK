@@ -31,7 +31,7 @@ foreach($different_letters as $different_letter) {
     }
 }
 ?>
-    <script src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/js/script.js"></script>
+    <!-- script src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/js/script.js"></script -->
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style_ie7.css" />
