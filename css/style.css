@@ -1465,6 +1465,16 @@ form.wpcf7-form span {
     top: -23px;
     position: relative;
 }
+form.wpcf7-form span.wpcf7-not-valid-tip-no-ajax {
+    left: 0;
+    top: 0;
+    display: block;
+    color: #f00f00;
+}
+
+.wpcf7-validation-errors {
+    color: #f00f00;
+}
 
 #bluebox_map {
     margin-top: 10px;
