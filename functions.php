@@ -1493,7 +1493,18 @@ function single_blog_post() {
                         }
                         (document, 'script', 'facebook-jssdk'));
                         </script>
-                            <fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like>
+<?php
+/**
+ * Include this code on your theme for single blog posts (for example, in your single.php file)
+ * or on your blogs main page to include a Facebook "Like" iframe
+ */
+            if (function_exists('the_opengraphprotocoltools_like_code')):
+                the_opengraphprotocoltools_like_code();
+            else:
+                echo "<!-- opengraphprotocoltools is not activated -->";
+endif;
+?>
+                            <!--fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like-->
                         <!-- div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div -->
                         <fb:send></fb:send>
                         <!-- Place this tag where you want the +1 button to render -->
