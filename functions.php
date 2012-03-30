@@ -1751,7 +1751,7 @@ function blog_tag_box($atts) {
     } else {
         $tag_num = 60;
     }
-    $blog_tag_ids = array();
+    /*$blog_tag_ids = array();
     $blog_tag_query = new WP_Query(array('cat_name'=>'blog', 'posts_per_page'=> -1));
     if($blog_tag_query->have_posts()) {
         while ($blog_tag_query->have_posts()) {
@@ -1766,9 +1766,20 @@ function blog_tag_box($atts) {
                 }
             }
         }
-    }
-    $tag_ids_blog = array_unique($blog_tag_ids);
-    print_r($tag_ids_blog);
+    }*/
+    query_posts('cat=1&posts_per_page=-1');
+    if(have_posts()): while (have_posts()) : the_post();
+        $all_tag_objects = get_the_tags();
+        if($all_tag_objects){
+            foreach($all_tag_objects as $tag) {
+                if($tag->count > 0) {$all_tag_ids[] = $tag -> term_id;}
+            }
+        }
+    endwhile;endif;
+    $tag_ids_unique = array_unique($all_tag_ids);
+    /*$tag_ids_blog = array_unique($blog_tag_ids);
+    print_r($tag_ids_blog);*/
+    print_r($tag_ids_unique);
     
 ?>
 <div class="tab_container bluebox-primary other_posts">
