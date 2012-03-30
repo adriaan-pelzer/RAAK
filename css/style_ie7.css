@@ -154,3 +154,7 @@ address {
 .letter a.selected img {
     filter: alpha(opacity=100); /*ie7*/
 }
+
+.whitebox_secondary_submit_agree {
+    width: 323px;
+}
