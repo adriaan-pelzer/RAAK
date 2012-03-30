@@ -1779,7 +1779,7 @@ function blog_tag_box($atts) {
     $tag_ids_unique = array_unique($all_tag_ids);
     /*$tag_ids_blog = array_unique($blog_tag_ids);
     print_r($tag_ids_blog);*/
-    print_r($tag_ids_unique);
+    //print_r($tag_ids_unique);
     
 ?>
 <div class="tab_container bluebox-primary other_posts">
@@ -1791,7 +1791,7 @@ function blog_tag_box($atts) {
     <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <?php
     //wp_tag_cloud('number=' . $tag_num . '');
-wp_tag_cloud('include=' . implode(',', $tag_ids_unique));
+wp_tag_cloud('include=' . implode(',', $tag_ids_unique)'&number=' . $tag_num . '');
 ?>
     </div><!-- bluebox_primary -->
 </div><!-- bluebox-primary -->
