@@ -1751,7 +1751,7 @@ function blog_tag_box($atts) {
     } else {
         $tag_num = 60;
     }
-    $blog_tag_ids = [];
+    $blog_tag_ids = array();
     $blog_tag_query = new WP_Query(array('cat_name'=>'blog', 'posts_per_page'=> -1));
     if($blog_tag_query->have_posts()) {
         while ($blog_tag_query->have_posts()) {
