@@ -394,7 +394,7 @@ address a {
     color: #c30c30;
 }
 
-.whitebox_primary_body_content pre {
+.whitebox_primary_content pre {
     font-family: monospace;
     white-space: pre-wrap;
     line-height: 19px;
