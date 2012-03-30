@@ -99,4 +99,5 @@ wp_nav_menu(array('container'=>'nav', 'container_class'=>'menu', 'before'=>'<div
                     </li>
                 </ul>
             </nav-->
+<?php wp_head(); ?>
     </header><!--  header -->

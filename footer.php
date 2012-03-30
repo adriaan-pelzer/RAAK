@@ -13,6 +13,7 @@
         <span class="footer_link"><a href="http://www.flickr.com">RAAK on Flickr</a></span-->
     </footer><!-- footer -->
 </div><!-- .wrapper .hfeed -->
+<?php wp_footer(); ?>
 </body>
 </html>
 
