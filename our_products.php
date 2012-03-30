@@ -19,6 +19,13 @@ Template Name: Our Products
         $('.whitebox_big_category_entry_content_overview').removeClass('current');
     }
     $('.whitebox_big_category_entry_content').hover(function() {
-        $(this).find('div').toggleClass('current');
+        $(this).find('.whitebox_big_category_entry_content_picture').removeClass('current')
+        $(this).find('.whitebox_big_category_entry_content_overview').addClass('current');
+        //$(this).find('div').toggleClass('current');
+    },
+        function() {
+        $(this).find('.whitebox_big_category_entry_content_overview').removeClass('current');
+        $(this).find('.whitebox_big_category_entry_content_picture').addClass('current');
     });
+    
 </script>
