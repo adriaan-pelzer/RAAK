@@ -60,6 +60,9 @@ foreach($different_letters as $different_letter) {
         </a>
         <div id="blog-description">Putting you in touch with your crowds</div>
             <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+<?php 
+wp_nav_menu(); 
+?> 
             <nav class="menu">
                 <ul>
                     <li class="first-page-item">
