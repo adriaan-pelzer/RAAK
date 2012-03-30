@@ -21,11 +21,13 @@
 
 li#whitebox_secondary_submit_agree {
     position: relative;
+    width: 323px;
 }
 
 input[name="upload_submit"] {
     position: absolute;
     right: 0;
+    width: 59px;
 }
 
 .bluebox_primary_no_margin .bluebox_nav {
@@ -153,8 +155,4 @@ address {
 
 .letter a.selected img {
     filter: alpha(opacity=100); /*ie7*/
-}
-
-#whitebox_secondary_submit_agree {
-    width: 323px;
 }
