@@ -1756,8 +1756,9 @@ function blog_tag_box($atts) {
         while ($blog_tag_query->have_posts()) {
             $blog_tag_query->the_post();
             $blog_tag_objects = get_the_tags();
-           print_r($blog_tag_objects); 
             if($blog_tag_objects){
+                $array_size = count($blog_tag_objects);
+                echo $array_size;
                 foreach($blog_tag_objects as $blog_tag) {
                     if($blog_tag->count > 0) {
                         $blog_tag_ids[] = $tag -> term_id;
