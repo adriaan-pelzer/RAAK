@@ -99,5 +99,11 @@ wp_nav_menu(array('container'=>'nav', 'container_class'=>'menu', 'before'=>'<div
                     </li>
                 </ul>
             </nav-->
+<?php
+	if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
+		wpcf7_enqueue_scripts();
+		wpcf7_enqueue_styles();
+	}
+?>
 <?php wp_head(); ?>
     </header><!--  header -->
