@@ -156,3 +156,7 @@ address {
 .letter a.selected img {
     filter: alpha(opacity=100); /*ie7*/
 }
+
+input#upload_file {
+    width: 25px;
+}
