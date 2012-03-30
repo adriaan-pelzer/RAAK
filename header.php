@@ -63,7 +63,7 @@ foreach($different_letters as $different_letter) {
 <?php 
 wp_nav_menu(array('container'=>'nav', 'container_class'=>'menu', 'before'=>'<div class="topmenu_top"></div><div class="topmenu_body">', 'after'=>'</div>')); 
 ?> 
-            <nav class="menu">
+            <!--nav class="menu">
                 <ul>
                     <li class="first-page-item">
                         <div class="first_topmenu_top"></div>
@@ -98,5 +98,5 @@ wp_nav_menu(array('container'=>'nav', 'container_class'=>'menu', 'before'=>'<div
                         <div class="topmenu_body"><a href="<?php echo get_page_link(5229); ?>" title="Contact" rel="nofollow">Contact</a></div>
                     </li>
                 </ul>
-            </nav>
+            </nav-->
     </header><!--  header -->
