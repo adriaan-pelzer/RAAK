@@ -214,6 +214,10 @@ em {
     line-height: 13px;
 }
 
+.overview a {
+    color: #444444;
+}
+
 strong, .bold {
     font-weight: bold;
 }
