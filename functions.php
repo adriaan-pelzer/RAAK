@@ -18,6 +18,7 @@ function logo_call_to_action() {
     $letters = array('r', 'a', 'k');
     foreach($letters as $letter) {
         $current_query = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' => $letter));
+        print_r ($current_query);
         ${$letter . '_num'} = $current_query->post_count;
         wp_reset_query();
     } 
