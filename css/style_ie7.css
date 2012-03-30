@@ -142,3 +142,7 @@ margin-bottom: 7px;
 address {
     font-style: normal;
 }
+
+.about_content img {
+    display: block;
+}
