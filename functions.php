@@ -1790,7 +1790,8 @@ function blog_tag_box($atts) {
     </div><!-- blue_tab -->
     <div class="bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
 <?php
-    wp_tag_cloud('number=' . $tag_num . '');
+    //wp_tag_cloud('number=' . $tag_num . '');
+wp_tag_cloud('include=' . implode(',', $tag_ids_unique));
 ?>
     </div><!-- bluebox_primary -->
 </div><!-- bluebox-primary -->
