@@ -457,7 +457,7 @@ address a {
     height: 12px;
 }
 
-#main-menu-navigation li { /*fixing nav menu display in ie8 */
+#menu-main-navigation li { /*fixing nav menu display in ie8 */
     padding: 0 1px;
 }
 
