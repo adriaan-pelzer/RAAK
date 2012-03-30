@@ -12,7 +12,6 @@ Template Name: Our Work
 <?php get_sidebar() ?>
 <?php get_footer() ?>
 <script>
-$(document).ready(function() {
     $('a.whitebox_big_nav_item').click(function() {
         if(!$(this).hasClass('active')) {
             $('a.whitebox_big_nav_item.active').removeClass('active');
@@ -23,8 +22,13 @@ $(document).ready(function() {
             $('#whitebox_big_' + currentID).addClass('current');
         }
     });
+if(!$('.whitebox_big_category_entry_content_picture').hasClass('current')) {
+    $('.whitebox_big_category_entry_content_picture').addClass('current');
+}
+if ($('.whitebox_big_category_entry_content_overview').hasClass('current')) {
+    $('.whitebox_big_category_entry_content_overview').removeClass('current');
+}
     $('.whitebox_big_category_entry_content').hover(function() {
         $(this).find('div').toggleClass('current');
     });
-});
 </script>

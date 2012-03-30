@@ -12,13 +12,9 @@ Template Name: Our Products
 <?php get_sidebar() ?>
 <?php get_footer() ?>
 <script>
-if(!$('.whitebox_big_category_entry_content_picture').hasClass('current')) {
-    $('.whitebox_big_category_entry_content_picture').addClass('current');
-}
-if ($('.whitebox_big_category_entry_content_overview').hasClass('current')) {
-    $('.whitebox_big_category_entry_content_overview').removeClass('current');
-}
+$(document).ready(function() {
     $('.whitebox_big_category_entry_content').hover(function() {
         $(this).find('div').toggleClass('current');
     });
+}
 </script>
