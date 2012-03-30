@@ -142,7 +142,6 @@ function our_work()
 <?php
     foreach($work_categories as $cat_number => $work_category)
     {
-        print_r($work_category);
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
         <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
@@ -161,7 +160,7 @@ function our_work()
         $our_work_bluebox_content .= '<ul><li class="bluebox_content_sub"><span class="label">Client:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Client', true) . '</span></li>';
         $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Project:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Project', true) . '</span></li>';
         $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Overview:</span><span class="overview">' . get_post_meta ($current_our_work_post_id, 'Overview', true) . '</span></li>';
-        $our_work_bluebox_content .= '<li class="bluebox_content_link"><a href="' . get_permalink($our_work->ID) . '?category=' . $work_category->name . '" rel="nofollow">More Projects &#9660;</a></li></ul></section>';
+        $our_work_bluebox_content .= '<li class="bluebox_content_link"><a href="' . get_permalink($our_work->ID) . '?category=' . $work_category->nice_name . '" rel="nofollow">More Projects &#9660;</a></li></ul></section>';
         wp_reset_query();
     }
 ?>
