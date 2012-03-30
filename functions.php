@@ -1673,11 +1673,13 @@ function blog_archive_post_list($atts) {
         $author = $curauth->ID;
         break;
     case 'category' :
-        $cat = single_cat_title('', FALSE);
+        //$cat = strtolower(single_cat_title('', FALSE));
+        $cat = get_query_var('cat');
         break;
     default:
         break;
     }
+    echo $cat;
     $archive_posts = new WP_Query(array('category_name' => $cat, 'tag' => $tag, 'author' => $author, 'posts_per_page' => '20', 'paged' => $page_num));
 ?>
 <div class="whitebox whitebox_primary blog_whitebox_primary_title_only blog_whitebox_primary whitebox-primary box rounded-corners">
