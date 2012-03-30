@@ -448,7 +448,7 @@ address a {
     border-top: 2px solid #00aeff;
 }
 
-.page_item {
+.page_item, .menu-item {
     display: inline-block;
 }
 
