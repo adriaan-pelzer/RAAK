@@ -285,28 +285,4 @@ $(document).ready(function() {
     viewLettersPagination();
     uploadLetter();
     logoArchivePagination();*/
-	try {
-		jQuery('div.wpcf7 > form').ajaxForm({
-			beforeSubmit: wpcf7BeforeSubmit,
-			dataType: 'json',
-			success: wpcf7ProcessJson
-		});
-	} catch (e) {
-	}
-
-	try {
-		jQuery('div.wpcf7 > form').each(function(i, n) {
-			wpcf7ToggleSubmit(jQuery(n));
-		});
-	} catch (e) {
-	}
-
-	try {
-		if (_wpcf7.cached) {
-			jQuery('div.wpcf7 > form').each(function(i, n) {
-				wpcf7OnloadRefill(n);
-			});
-		}
-	} catch (e) {
-	}
 });
