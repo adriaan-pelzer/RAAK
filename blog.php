@@ -13,7 +13,6 @@ Template Name: Blog
 <?php do_shortcode('[cat_box tab1="most-viewed" tab2="category" ]'); ?>
         </div><!-- #content -->
 <?php get_sidebar() ?>
-<?php get_footer() ?>
 <script>
     $('.whitebox-secondary .multiple_tabs .tab').click(function() {
         if (!$(this).hasClass('active')) {
@@ -47,3 +46,4 @@ Template Name: Blog
         }
     });
 </script>
+<?php get_footer() ?>
