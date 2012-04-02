@@ -150,25 +150,18 @@ if (have_posts()) {
         }
 ?>
 	<div id="container">
-        <div id="container_top"></div>
 		<div id="content">
-            <div id="whitebox_big">
-                <div id="whitebox_big_top">
-                </div><!-- #whitebox_big_top -->
-                <div id="whitebox_big_body">
-                <div id="whitebox_big_body_title"><?php echo $maxid?"Twitter now has ".$maxid." registered users.":"Twitter Users"; ?></div>
+            <div class="whitebox_big whitebox box rounded-corners">
+<header>
+    <h2 class="din-schrift blue_20"><?php echo $maxid?"Twitter now has ".$maxid." registered users.":"Twitter Users"; ?></h2>
+                </header>
                     <div class="whitebox_big_body_nav">
                     </div><!-- whitebox_big_body_nav -->
                     <hr />
                     <?php echo $content; ?>
-                </div><!-- #whitebox_big_body -->
-                <div id="whitebox_big_bottom">
-                </div><!-- #whitebox_big_bottom -->
             </div><!-- #whitebox_big -->
 		</div><!-- #content -->
         <?php get_sidebar() ?>
-        <div id="container_bottom"></div>
-	</div><!-- #container -->
 <?php
         $text_size = 15;
         $width = 1700;
