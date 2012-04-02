@@ -10,7 +10,6 @@ Template Name: Our Products
 <?php do_shortcode('[bwb_prod]'); ?>
 		</div><!-- content -->
 <?php get_sidebar() ?>
-<?php get_footer() ?>
 <script>
     $('.whitebox_big_category_entry_content').hover(function() {
         $(this).find('.whitebox_big_category_entry_content_picture').removeClass('current')
@@ -22,3 +21,4 @@ Template Name: Our Products
         $(this).find('.whitebox_big_category_entry_content_picture').addClass('current');
     });
 </script>
+<?php get_footer() ?>
