@@ -698,7 +698,7 @@ function logo_project_upload_letter() {
     }
 ?>
         <div id="whitebox_secondary_upload_letters">
-        <input id="upload_letter" type="hidden" name="upload_letter" value="<?php echo(isset($_POST['upload_letter']) ? $_POST['upload_letter'] : 'R'); ?> ">
+            <input id="upload_letter" type="hidden" name="upload_letter" value="<?php echo(isset($_POST['upload_letter']) ? $_POST['upload_letter'] : 'R'); ?> ">
             <span class="letter"><a id="letter_R" class="selected"><img alt="logo r" src="<?php echo get_bloginfo('template_url'); ?>/images/ar.jpg"></a></span>
             <span class="letter"><a id="letter_A"><img alt="logo a" src="<?php echo get_bloginfo('template_url'); ?>/images/ay1.jpg"></a></span>
             <span class="letter"><a id="letter_K"><img alt="logo k" src="<?php echo get_bloginfo('template_url'); ?>/images/kay.jpg"></a></span>
@@ -795,14 +795,16 @@ function logo_project_upload_letter() {
     $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
     if ($_POST['upload_letter'] == 'A') {
         $letters[$_POST['upload_letter'] . '1'] = '/logo_uploads/'.$filename;
+        $my_letter = $_POST['upload_letter'] . '1';
     } else {
         $letters[$_POST['upload_letter']] = '/logo_uploads/'.$filename;
+        $my_letter = $_POST['upload_letter'];
     }
         
 
     foreach($letters as $letter => $letter_img) {
 ?>
-                    <span id="preview_letter_<?php echo $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo get_bloginfo('template_url') . $letter_img; ?>"></span>
+                    <span id="<?php echo ($letter == $my_letter) ? 'my_letter_' . $letter : 'preview_letter_' . $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo get_bloginfo('template_url') . $letter_img; ?>"></span>
 <?php
     }
 ?>
