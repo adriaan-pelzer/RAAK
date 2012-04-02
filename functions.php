@@ -1365,7 +1365,7 @@ function search_box() {
             <input type="hidden"  name="sitesearch" value="wewillraakyou.com" />
         </form>
         <!-- span class="whitebox_big_search smaller_arial_caps"><a onclick="javascript: google_search();">Search</a><input type="text" id="searchtext"></span -->
-        <h2 class="din-schrift blue_20">Our Blog</h2>
+        <h2 class="din-schrift blue_20"><?php echo (is_page_template('404.php')) ? 'Oops ... you\'ve hit a 404!' : 'Our Blog'; ?></h2>
     </header>
 </div>
 
@@ -1821,6 +1821,32 @@ function post_authors() {
 <?php
 }
 add_shortcode ('authors', 'post_authors');
+
+/*************************/
+
+function whitebox_404_page_function() {
+?>
+<div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
+    <div class="whitebox_primary_body_post post error404 not-found">
+        <h3 class="whitebox_primary_title">Did you know?</h3>
+        <hr />
+            <p>'RAAK' means 'Spot-on' in Afrikaans. This time, though, it's not really applicable. The page you were looking for, is nowhere to be found. Hmmm ... we're feeling a bit uncomfortable now. What are we going to say next?</p>
+            <p>Ah! How about a random fortune?</p>
+            <blockquote>
+<?php
+$ch = curl_init ("http://www.fortunefortoday.com/getfortuneonly.php");
+curl_exec($ch);
+?>
+            </blockquote>
+        <hr class="solid" />
+    </div>
+    <div class="whitebox_primary_body_footer">
+        <span id="whitebox_primary_body_footer_archive" class="whitebox_primary_body_footer_item"><a href="<?php echo get_bloginfo ('url'); ?>/blog-archive/">All blog posts</a></span>
+    </div><!-- .whitebox_primary_body_footer -->
+</div>
+<?php
+}
+add_shortcode('wb_404', 'whitebox_404_page_function'); 
 
 /*************************/
 
