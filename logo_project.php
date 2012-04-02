@@ -20,8 +20,8 @@ do_shortcode('[upload]');
     var letterNumber = (Math.floor(Math.random()*4));
     var letter = (letterNumber === 0)?'R':((letterNumber === 3)?'K':(letterNumber === 1) ? 'A1' : 'A2');
     var variant = Math.floor(Math.random()*(((letters[letter]).length)));
-    if($('#preview_letter' + letter)) {
-        $('#preview_letter' + letter + ' img').animate({opacity: 0}, 1000, function() {
+    if($('#preview_letter_' + letter)) {
+        $('#preview_letter_' + letter + ' img').animate({opacity: 0}, 1000, function() {
             $(this).attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/' + letters[letter][variant] + '&width=35&height=42');
             $(this).load(function() {
                 $(this).animate({opacity: 1}, 1000);
