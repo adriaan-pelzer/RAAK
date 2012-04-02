@@ -10,7 +10,6 @@ Template Name: Our Work
 <?php do_shortcode('[bwb_proj]'); ?>
 		</div><!-- content -->
 <?php get_sidebar() ?>
-<?php get_footer() ?>
 <script>
     $('a.whitebox_big_nav_item').click(function() {
         if(!$(this).hasClass('active')) {
@@ -32,3 +31,4 @@ Template Name: Our Work
         $(this).find('.whitebox_big_category_entry_content_picture').addClass('current');
     });
 </script>
+<?php get_footer() ?>

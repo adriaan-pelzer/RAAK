@@ -1149,7 +1149,7 @@ function big_whitebox_projects() {
             $children_cats_item_count = 0;
             $children_cats .= '<div id="whitebox_big_' . $work_category->category_nicename . '" class="whitebox_big_category smaller_arial_caps'. (($active == $work_category->category_nicename) ? ' current' : '') . '">';
             for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
-                $children_cats .= '<div id="whitebox_big_category_row' . $row_count . '" class="whitebox_big_category_row">';
+                $children_cats .= '<div id="whitebox_big_category_row_' . $work_category . $row_count . '" class="whitebox_big_category_row">';
                 for($row_item = 0; $row_item < 3; $row_item++) {
                     if ($current_cat_loop->posts[$children_cats_item_count]) {
                         $children_cats .= '<div class="whitebox_big_category_entry" id="category_entry_' .$children_cats_item_count . '">
@@ -1161,10 +1161,10 @@ function big_whitebox_projects() {
                                 </header>
                                 <hr class="solid">
                                 <a class="whitebox_big_category_entry_content" href="' . get_permalink($current_cat_loop->posts[$children_cats_item_count]->ID) . '">
-                                    <div id="post_all-products_' . $children_cats_item_count . '_picture" class="whitebox_big_category_entry_content_picture current">';
+                                    <div id="post_all-products_' . $row_count . $children_cats_item_count . '_picture" class="whitebox_big_category_entry_content_picture current">';
                         $children_cats .= get_image ($current_cat_loop->posts[$children_cats_item_count]->post_content, 220, 142);
                         $children_cats .= '</div><!-- post_all-products_' . $children_cats_item_count . '_picture -->
-                                    <div id="post_all-products_' . $children_cats_item_count . '_overview" class="whitebox_big_category_entry_content_overview">
+                                    <div id="post_all-products_' . $row_count . $children_cats_item_count . '_overview" class="whitebox_big_category_entry_content_overview">
                                         <p>' . get_post_meta($current_cat_loop->posts[$children_cats_item_count]->ID, 'Overview', TRUE) . '</p>
                                     </div><!-- #post_' . $children_cats_item_count . '_overview -->
                                 </a>
@@ -1177,7 +1177,7 @@ function big_whitebox_projects() {
                     }
                     $children_cats_item_count++;
                 }
-                $children_cats .= '</div><!-- #whitebox_big_category_row' . $row_count . ' -->';
+                $children_cats .= '</div><!-- #whitebox_big_category_row' . $work_category . $row_count . ' -->';
             }
             $children_cats .= '</div><!-- whitebox_big_' . $work_category->category_nicename . ' -->';
             wp_reset_query();
