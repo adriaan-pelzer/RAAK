@@ -148,8 +148,6 @@ if (have_posts()) {
                 $content = str_replace("[see_yourself]", "", $content);
             }
         }
-        $current_browser = get_browser(null, true);
-        print_r $current_browser;
 ?>
 	<div id="container">
         <div id="container_top"></div>
