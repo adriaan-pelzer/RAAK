@@ -149,7 +149,7 @@ if (have_posts()) {
             }
         }
 ?>
-	<div class="container">
+	<div class="container rounded-corners">
 		<div class="content">
             <div class="whitebox_big whitebox box rounded-corners big_box">
                 <header>
