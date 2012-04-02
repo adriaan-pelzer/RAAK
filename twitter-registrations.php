@@ -149,15 +149,13 @@ if (have_posts()) {
             }
         }
 ?>
-	<div id="container">
-		<div id="content">
-            <div class="whitebox_big whitebox box rounded-corners">
-<header>
-    <h2 class="din-schrift blue_20"><?php echo $maxid?"Twitter now has ".$maxid." registered users.":"Twitter Users"; ?></h2>
+	<div class="container">
+		<div class="content">
+            <div class="whitebox_big whitebox box rounded-corners big_box">
+                <header>
+                    <h2 class="din-schrift blue_20"><?php echo $maxid?"Twitter now has ".$maxid." registered users.":"Twitter Users"; ?></h2>
                 </header>
-                    <div class="whitebox_big_body_nav">
-                    </div><!-- whitebox_big_body_nav -->
-                    <hr />
+                <hr />
                     <?php echo $content; ?>
             </div><!-- #whitebox_big -->
 		</div><!-- #content -->
