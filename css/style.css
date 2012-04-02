@@ -1813,6 +1813,13 @@ h2.subTitle {
     margin-bottom: 5px;
 }
 
+/*************** 404 *******************/
+
+.not-found blockquote {
+    margin-top: 16px;
+    color: #888888;
+}
+
 /************** Sidebar ***************/
 
 /************** Mail Chimp **************/

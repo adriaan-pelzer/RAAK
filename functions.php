@@ -1827,7 +1827,7 @@ add_shortcode ('authors', 'post_authors');
 function whitebox_404_page_function() {
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
-    <div class="whitebox_primary_blog whitebox_primary_body_post post error404 not-found">
+    <div class="blog_whitebox_primary whitebox_primary_body_post post error404 not-found">
         <h3 class="whitebox_primary_title">Did you know?</h3>
         <hr />
             <p>'RAAK' means 'Spot-on' in Afrikaans. This time, though, it's not really applicable. The page you were looking for, is nowhere to be found. Hmmm ... we're feeling a bit uncomfortable now. What are we going to say next?</p>
@@ -1840,9 +1840,9 @@ curl_exec($ch);
             </blockquote>
         <hr class="solid" />
     </div>
-    <div class="whitebox_primary_body_footer">
-        <span id="whitebox_primary_body_footer_archive" class="whitebox_primary_body_footer_item"><a href="<?php echo get_bloginfo ('url'); ?>/blog-archive/">All blog posts</a></span>
-    </div><!-- .whitebox_primary_body_footer -->
+        <footer class="whitebox_primary_footer box_nav small_arial_caps">
+            <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
+        </footer><!-- .whitebox_primary_footer -->
 </div>
 <?php
 }
