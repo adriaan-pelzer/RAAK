@@ -7,7 +7,7 @@
 <?php wp_head(); ?>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>
-    var letters = [];
+    letters = [];
     </script>
 <?php
 $different_letters = array('r', 'a', 'k');
