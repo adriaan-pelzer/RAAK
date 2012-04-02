@@ -5,7 +5,15 @@
     <meta name="google-site-verification" content="59Ab_0-HL7eVdNQ4CqiLOeiQisQgb2Vwg8046N__ng0" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <?php wp_head(); ?>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<?php
+function my_scripts_method() {
+    wp_deregister_script( 'jquery' );
+    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js');
+    wp_enqueue_script( 'jquery' );
+}    
+ 
+add_action('wp_enqueue_scripts', 'my_scripts_method');
+?>
     <script>
     var letters = [];
     </script>
@@ -32,7 +40,7 @@ foreach($different_letters as $different_letter) {
     }
 }
 ?>
-    <script src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/js/script.js"></script>
+<script src="<?php bloginfo ("template_url"); ?>/js/script.js"></script>
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style_ie7.css" />
