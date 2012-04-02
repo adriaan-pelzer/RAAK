@@ -13,7 +13,6 @@ Template Name: Tag Archive
 <?php do_shortcode('[authors]'); ?>
 		</div><!-- #content -->
 <?php get_sidebar() ?>
-<?php get_footer() ?>
 <script>
 $('.whitebox_primary_footer_right a').click(function(event) {
     if(!$(this).hasClass('active')) {
@@ -21,3 +20,4 @@ $('.whitebox_primary_footer_right a').click(function(event) {
     }
 });
 </script>
+<?php get_footer() ?>
