@@ -11,7 +11,6 @@ Template Name: About
 <?php do_shortcode('[quotes]'); ?>
 		</div><!-- #content -->
 <?php get_sidebar() ?>
-<?php get_footer() ?>
 <script>
     $('.about_nav a').click(function() {
         if(!$(this).hasClass('active')) {
@@ -52,3 +51,4 @@ Template Name: About
         }
     });
 </script>
+<?php get_footer() ?>
