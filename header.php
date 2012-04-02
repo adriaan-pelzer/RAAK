@@ -6,7 +6,9 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <?php wp_head(); ?>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>
+<script>
+    is_logo_page = <?php echo (is_page_template('logo_project.php') ? 'yes' : 'no'; ?>;
+
     letters = [];
     </script>
 <?php
