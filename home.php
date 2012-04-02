@@ -13,7 +13,6 @@ Template Name:Home
 <?php do_shortcode('[other_posts category1="Must Read" category2="Worth a look" category3="RAAKonteur" colourscheme="white" ]'); ?>
         </div><!-- #content -->
 <?php get_sidebar() ?>
-<?php get_footer() ?>
 <script>
     $('.our_work_nav h3 a').click(function() {
         if(!$(this).hasClass('active')) {
@@ -47,3 +46,4 @@ Template Name:Home
         }
     });
 </script>
+<?php get_footer() ?>
