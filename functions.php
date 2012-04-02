@@ -1161,12 +1161,12 @@ function big_whitebox_projects() {
                                 </header>
                                 <hr class="solid">
                                 <a class="whitebox_big_category_entry_content" href="' . get_permalink($current_cat_loop->posts[$children_cats_item_count]->ID) . '">
-                                    <div id="post_all-products_' . $row_count . $children_cats_item_count . '_picture" class="whitebox_big_category_entry_content_picture current">';
+                                    <div id="post_all-products_'. $work_category->category_nicename . $row_count . $children_cats_item_count . '_picture" class="whitebox_big_category_entry_content_picture current">';
                         $children_cats .= get_image ($current_cat_loop->posts[$children_cats_item_count]->post_content, 220, 142);
-                        $children_cats .= '</div><!-- post_all-products_' . $children_cats_item_count . '_picture -->
-                                    <div id="post_all-products_' . $row_count . $children_cats_item_count . '_overview" class="whitebox_big_category_entry_content_overview">
+                        $children_cats .= '</div><!-- post_all-products_'. $work_category->category_nicename . $children_cats_item_count . '_picture -->
+                                    <div id="post_all-products_'. $work_category->category_nicename . $row_count . $children_cats_item_count . '_overview" class="whitebox_big_category_entry_content_overview">
                                         <p>' . get_post_meta($current_cat_loop->posts[$children_cats_item_count]->ID, 'Overview', TRUE) . '</p>
-                                    </div><!-- #post_' . $children_cats_item_count . '_overview -->
+                                    </div><!-- #post_'. $work_category->category_nicename . $children_cats_item_count . '_overview -->
                                 </a>
                                 </div><!-- .whitebox_big_category_entry -->
                                 ';
@@ -1198,7 +1198,7 @@ function big_whitebox_projects() {
 <?php
     for($row_count = 0; $row_count < (($total_rows > 3) ? $total_rows : 3); $row_count++) {
 ?>
-                        <div id="whitebox_big_category_row<?php echo $row_count; ?>" class="whitebox_big_category_row">
+                        <div id="whitebox_big_category_row_all-projects<?php echo $row_count; ?>" class="whitebox_big_category_row">
 <?php
         for($row_item = 0; $row_item < 3; $row_item++) {
             if ($all_projects_loop->posts[$item_count]) {
@@ -1230,7 +1230,7 @@ function big_whitebox_projects() {
             $item_count++;
         }
 ?>
-                        </div><!-- #whitebox_big_category_row<?php echo $row_count; ?> -->
+                        </div><!-- #whitebox_big_category_row_all-projects<?php echo $row_count; ?> -->
 <?php
     }
 ?>
