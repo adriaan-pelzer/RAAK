@@ -15,7 +15,6 @@ do_shortcode('[upload]');
 ?>
 		</div><!-- #content -->
 <?php get_sidebar() ?>
-<?php get_footer() ?>
 <script>
     $('.logo_project_bluebox_nav_item_left a').click(function() {
         if (!$(this).hasClass('active')) {
@@ -84,3 +83,4 @@ do_shortcode('[upload]');
         }
     });
 </script>
+<?php get_footer() ?>
