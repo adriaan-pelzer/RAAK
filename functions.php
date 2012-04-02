@@ -1827,7 +1827,7 @@ add_shortcode ('authors', 'post_authors');
 function whitebox_404_page_function() {
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
-    <div class="whitebox_primary_body_post post error404 not-found">
+    <div class="whitebox_primary_blog whitebox_primary_body_post post error404 not-found">
         <h3 class="whitebox_primary_title">Did you know?</h3>
         <hr />
             <p>'RAAK' means 'Spot-on' in Afrikaans. This time, though, it's not really applicable. The page you were looking for, is nowhere to be found. Hmmm ... we're feeling a bit uncomfortable now. What are we going to say next?</p>

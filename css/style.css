@@ -639,7 +639,7 @@ address a {
     display: block;
 }
 
-.whitebox_primary_post h3, .theraakonteur_whitebox_primary h3 {
+.whitebox_primary_post h3, .theraakonteur_whitebox_primary h3, .not-found h3 {
     font-size: 19px;
     line-height: 30px;
     margin: 0 0 6px;
@@ -1549,7 +1549,7 @@ div.wpcf7-response-output {
 }
 
 
-.blog_whitebox_primary .whitebox_primary_post h3, .theraakonteur_whitebox_primary h3 {
+.blog_whitebox_primary .whitebox_primary_post h3, .theraakonteur_whitebox_primary h3, .not-found h3 {
     font-size: 24px;
 }
 
