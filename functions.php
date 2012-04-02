@@ -1355,7 +1355,8 @@ add_shortcode('sp_bb', 'single_project_bluebox');
 
 /*************************/
 
-function search_box() {
+function search_box($atts) {
+    extract(shortcode_atts(array('page' => 'blog'), $atts));
 ?>
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
@@ -1365,7 +1366,7 @@ function search_box() {
             <input type="hidden"  name="sitesearch" value="wewillraakyou.com" />
         </form>
         <!-- span class="whitebox_big_search smaller_arial_caps"><a onclick="javascript: google_search();">Search</a><input type="text" id="searchtext"></span -->
-        <h2 class="din-schrift blue_20"><?php echo (is_page_template('404.php')) ? 'Oops ... you\'ve hit a 404!' : 'Our Blog'; ?></h2>
+        <h2 class="din-schrift blue_20"><?php echo ($page == '404') ? 'Oops ... you\'ve hit a 404!' : 'Our Blog'; ?></h2>
     </header>
 </div>
 
@@ -1826,23 +1827,21 @@ add_shortcode ('authors', 'post_authors');
 
 function whitebox_404_page_function() {
 ?>
-<div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
-    <div class="blog_whitebox_primary whitebox_primary_body_post post error404 not-found">
-        <h3 class="whitebox_primary_title">Did you know?</h3>
-        <hr />
-            <p>'RAAK' means 'Spot-on' in Afrikaans. This time, though, it's not really applicable. The page you were looking for, is nowhere to be found. Hmmm ... we're feeling a bit uncomfortable now. What are we going to say next?</p>
-            <p>Ah! How about a random fortune?</p>
-            <blockquote>
+<div class="blog_whitebox_primary whitebox whitebox_primary error404 not-found whitebox-primary box rounded-corners">
+    <h3 class="whitebox_primary_title">Did you know?</h3>
+    <hr />
+        <p>'RAAK' means 'Spot-on' in Afrikaans. This time, though, it's not really applicable. The page you were looking for, is nowhere to be found. Hmmm ... we're feeling a bit uncomfortable now. What are we going to say next?</p>
+        <p>Ah! How about a random fortune?</p>
+        <blockquote>
 <?php
 $ch = curl_init ("http://www.fortunefortoday.com/getfortuneonly.php");
 curl_exec($ch);
 ?>
-            </blockquote>
-        <hr class="solid" />
-    </div>
-        <footer class="whitebox_primary_footer box_nav small_arial_caps">
-            <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
-        </footer><!-- .whitebox_primary_footer -->
+        </blockquote>
+    <hr class="solid" />
+    <footer class="whitebox_primary_footer box_nav small_arial_caps">
+        <a class="whitebox_primary_footer_left" href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
+    </footer><!-- .whitebox_primary_footer -->
 </div>
 <?php
 }
