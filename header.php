@@ -7,9 +7,8 @@
 <?php wp_head(); ?>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
-    is_logo_page = <?php echo (is_page_template('logo_project.php') ? 'yes' : 'no'); ?>;
-
-    letters = [];
+    var is_logo_page = '<?php echo (is_page_template('logo_project.php') ? 'yes' : 'no'); ?>';
+    var letters = [];
     </script>
 <?php
 $different_letters = array('r', 'a', 'k');
