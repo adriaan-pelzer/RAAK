@@ -621,17 +621,6 @@ function logo_project_upload_letter() {
                             add_post_meta($new_letter_id, 'file', $filename);
                             add_post_meta($new_letter_id, 'creatorip', (get_ip()));
                             add_post_meta($new_letter_id, 'originalname', $_FILES["upload_file"]["name"]);
-    require_once(ABSPATH . "wp-admin" . '/includes/image.php');
-    require_once(ABSPATH . "wp-admin" . '/includes/file.php');
-    require_once(ABSPATH . "wp-admin" . '/includes/media.php');
-$file_handler = 'upload_file';
- 
-    $attach_id = media_handle_upload( $file_handler, $post_id );
-                            //$the_file = $_FILES['upload_file'];
-                            //$image_id = insert_attachment('upload_file', $new_letter_id);
-    update_post_meta($new_letter_id,'_thumbnail_id',$attach_id)
-                            print_r($attach_id);
-                            get_the_post_thumbnail($new_letter_id);
                         }
                         $state = 2;
 
@@ -655,7 +644,8 @@ $file_handler = 'upload_file';
              $state = 0;
          }
     }
-    print_r($_FILES);
+    $upldir = wp_upload_dir();
+    print_r($upldir);
     
 ?>
 <div class="whitebox-secondary tab_container">
