@@ -822,7 +822,7 @@ function logo_project_upload_letter() {
 
     foreach($letters as $letter => $letter_img) {
 ?>
-                    <span id="<?php echo ($letter == $my_letter) ? 'my_letter_' . $letter : 'preview_letter_' . $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo ($letter == $my_letter) ? get_the_post_thumbnail($_POST['new_letter_id'], 'logo-archive') : get_bloginfo('template_url') . $letter_img; ?>"></span>
+                    <span id="<?php echo ((string)$letter == $my_letter) ? 'my_letter_' . $letter : 'preview_letter_' . $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo ($letter == $my_letter) ? get_the_post_thumbnail($_POST['new_letter_id'], 'logo-archive') : get_bloginfo('template_url') . $letter_img; ?>"></span>
 <?php
     }
 ?>
