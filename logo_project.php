@@ -51,7 +51,7 @@ do_shortcode('[upload]');
     $('#upload_file').change(function() {
         $('#dummy_file_text').html($(this).attr('value'));
     });
-    $("#again").click ( function () {
+    $("#again", "#logo_project_preview_back").click ( function () {
         $("#filename").val ('');
         $("#index").val ('');
         $("#uploaded_file").val ('');

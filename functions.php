@@ -603,7 +603,7 @@ function logo_project_upload_letter() {
 
                         $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
 
-                        $new_letter = array('post_title' => $file_just_name,  'post_type' => 'raak_logo_letter');
+                        $new_letter = array('post_title' => ($_POST['upload_letter'] . ' - ' . $_POST['upload_name']),  'post_type' => 'raak_logo_letter');
                         print_r($_POST);
                         $new_letter_id = wp_insert_post($new_letter);
                         if ($new_letter_id != 0) {
