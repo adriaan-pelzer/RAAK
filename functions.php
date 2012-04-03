@@ -604,6 +604,7 @@ function logo_project_upload_letter() {
                         $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
 
                         $new_letter = array('post_title' => $file_just_name,  'post_type' => 'raak_logo_letter');
+                        print_r($_POST);
                         $new_letter_id = wp_insert_post($new_letter);
                         if ($new_letter_id != 0) {
                             add_post_meta($new_letter_id, 'character', strtolower($_POST['upload_letter']));
@@ -622,7 +623,7 @@ function logo_project_upload_letter() {
         } 
     }
     if (isset ($_POST['preview_submit']) && isset ($_POST['new_letter_id']) && isset ($_POST['uploaded_file'])) {
-        add_post_meta($_POST['new_letter_id'], 'creatorapproved', 1 );
+        wp_publish_post($_POST['new_letter_id']);
         $state = 3;
 
         $data = array ('confirmed'=>1);
