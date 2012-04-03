@@ -607,7 +607,7 @@ function logo_project_upload_letter() {
                     array_push ($error, 'upload_file_copy');
                 } else {
                     $file_info = array('guid' => $upldir['url'].$filename, 'post_mime_type' => $FILES['upload_file']['type'], 'post_title' => $filename, 'post_status' => 'inherit', 'post_content' => '');
-                    $inserted_file = wp_insert_attachemnt($file_info);
+                    $inserted_file = wp_insert_attachment($file_info);
 
                     $uploaded_file = $filename;
 
