@@ -602,9 +602,14 @@ function logo_project_upload_letter() {
             } else {
                 $file_just_name = md5 ($_FILES["upload_file"]["name"].time());
                 $filename = $file_just_name.((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
-                if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], "wp-content/themes/RAAK/logo_uploads/".$filename))) {
+                $upldir = wp_upload_dir();
+                print_r($upldir);
+                if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], ($upldir['url'].$filename)))) {
                     array_push ($error, 'upload_file_copy');
                 } else {
+                    $file_info = array('guid' => $upldir['url'].$filename, 'post_mime_type' => $FILES['upload_file']['type'], 'post_title' => $filename, 'post_status' => 'inherit', 'post_content' => '');
+                    $inserted_file = wp_insert_attachemnt($file_info);
+
                     $uploaded_file = $filename;
 
                     if (sizeof ($error) == 0) {
@@ -621,6 +626,7 @@ function logo_project_upload_letter() {
                             add_post_meta($new_letter_id, 'file', $filename);
                             add_post_meta($new_letter_id, 'creatorip', (get_ip()));
                             add_post_meta($new_letter_id, 'originalname', $_FILES["upload_file"]["name"]);
+                            add_post_meta($new_letter_id,'_thumbnail_id', $inserted_file)
                         }
                         $state = 2;
 
@@ -644,8 +650,6 @@ function logo_project_upload_letter() {
              $state = 0;
          }
     }
-    $upldir = wp_upload_dir();
-    print_r($upldir);
     
 ?>
 <div class="whitebox-secondary tab_container">
