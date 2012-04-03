@@ -887,9 +887,7 @@ function logo_project_archive() {
             $current_letter_id = get_the_ID();
             $content .= '
             <div class="bluebox_big_content_row_item logo_archive_logo_project_letter logo_project_letter">
-                <div class="logo_project_letter_image rounded-corners">
-                    <img alt="logo ' . strtolower($letter) . '" src="' . get_bloginfo('template_url') . '/resize.php?filename=logo_uploads/'. get_post_meta($current_letter_id, 'file', TRUE) . '&amp;width=70&amp;height=84">
-                </div>
+                <div class="logo_project_letter_image rounded-corners">' . get_the_post_thumbnail($current_letter_id) . '</div>
                 <div class="logo_project_letter_blurp">
                     Submitted by
                 </div>
