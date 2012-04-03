@@ -603,15 +603,14 @@ function logo_project_upload_letter() {
                 $file_just_name = md5 ($_FILES["upload_file"]["name"].time());
                 $filename = $file_just_name.((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
                 $upldir = wp_upload_dir();
-                print_r($upldir);
-                if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], '/home/raakstg/public_html/wp-content/uploads/2012/04/'.$filename))) {
+                if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], ($upldir['path'].'/'.$filename)))) {
                     array_push ($error, 'upload_file_copy');
                 } else {
                     $file_info = array('guid' => $upldir['url'].$filename, 'post_mime_type' => $FILES['upload_file']['type'], 'post_title' => $filename, 'post_status' => 'inherit', 'post_content' => '');
                     $inserted_file = wp_insert_attachment($file_info);
                     require_once(ABSPATH . 'wp-admin/includes/image.php');
-                    //$attach_data = wp_generate_attachment_metadata( $attach_id, $filename );
-                    //wp_update_attachment_metadata( $attach_id, $attach_data );
+                    $attach_data = wp_generate_attachment_metadata( $nserted_file, ($upldir['path'].'/'.$filename) );
+                    wp_update_attachment_metadata( $inserted_file, $attach_data );
                     print_r($inserted_file);
 
                     $uploaded_file = $filename;
