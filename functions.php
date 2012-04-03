@@ -818,7 +818,6 @@ function logo_project_upload_letter() {
     } else {
         $my_letter = 3;
     }
-    echo get_the_post_thumbnail($new_letter_id);
     $curr_letter = 0;
     $preview_content = '';
     foreach($letters as $letter => $letter_img) {
@@ -829,6 +828,7 @@ function logo_project_upload_letter() {
         }
         $curr_letter++;
     }
+    echo $preview_current;
 ?>
                 </div>
                 <div id="whitebox_secondary_preview_submit">
