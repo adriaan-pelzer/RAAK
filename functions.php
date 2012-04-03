@@ -809,12 +809,15 @@ function logo_project_upload_letter() {
             <section id="whitebox_secondary_preview" class="smaller_arial_caps<?php echo ($state == 2) ? ' current' : ''; ?>">
                 <div id="whitebox_secondary_preview_letters">
 <?php
+    echo($_POST['upload_letter'];
     $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
     if ($_POST['upload_letter'] == 'A') {
         $my_letter = $_POST['upload_letter'] . '1';
     } else {
         $my_letter = $_POST['upload_letter'];
     }
+    echo $letter;
+    echo $my_letter;
         
 
     foreach($letters as $letter => $letter_img) {
