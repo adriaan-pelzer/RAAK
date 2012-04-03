@@ -816,6 +816,7 @@ function logo_project_upload_letter() {
     } else {
         $my_letter = $_POST['upload_letter'];
     }
+    $letters[$my_letter] = get_the_post_thumbnail($_POST['new_letter_id'], 'logo-archive');
     foreach($letters as $letter => $letter_img) {
         if((string)$my_letter == (string)$letter){
             echo 'ping';
