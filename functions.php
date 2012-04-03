@@ -804,6 +804,8 @@ function logo_project_upload_letter() {
         
 
     foreach($letters as $letter => $letter_img) {
+        echo $letter;
+        echo $my_letter;
 ?>
                     <span id="<?php echo ($letter == $my_letter) ? 'my_letter_' . $letter : 'preview_letter_' . $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo get_bloginfo('template_url') . $letter_img; ?>"></span>
 <?php
