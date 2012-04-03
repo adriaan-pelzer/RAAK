@@ -811,13 +811,16 @@ function logo_project_upload_letter() {
 <?php
     $my_letter = 0;
     $input_letter = $_POST['upload_letter'];
-    $input_letter = 'A';
-    if ($input_letter == 'A') {
+    switch($input_letter) {
+    case 'A':
         $my_letter = 1;
-    } else if($input_letter == 'R') {
+        break;
+    case 'R':
         $my_letter = 0;
-    } else {
+        break;
+    default:
         $my_letter = 3;
+        break;
     }
     $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
     $curr_letter = 0;
