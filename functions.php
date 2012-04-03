@@ -600,22 +600,17 @@ function logo_project_upload_letter() {
             } else if (!(($imagesize[0] == $width) && ($imagesize[1] == $height))) {
                 array_push ($error, 'upload_file_dim');
             } else {
-                $file_just_name = md5 ($_FILES["upload_file"]["name"].time());
-                $filename = $file_just_name.((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
+                //$file_just_name = md5 ($_FILES["upload_file"]["name"].time());
+                $filename = md5 ($_FILES["upload_file"]["name"].time()).((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
                 $upldir = wp_upload_dir();
-                //$filename = $upldir['path'] . $filename;
                 if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], $upldir['path'] .'/' . $filename))) {
                     array_push ($error, 'upload_file_copy');
                 } else {
-                    echo $_FILES['upload_file']['type'];
                     $file_info = array('guid' => $upldir['url'] .'/' .$filename, 'post_mime_type' => ($_FILES['upload_file']['type']), 'post_title' => $_FILES['upload_file']['name'], 'post_status' => 'inherit', 'post_content' => '');
-                    $inserted_file = wp_insert_attachment($file_info, $upldir['path'] . '/' . $filename, 5671);
+                    $inserted_file = wp_insert_attachment($file_info, $upldir['path'] . '/' . $filename);
                     require_once(ABSPATH . 'wp-admin/includes/image.php');
-                    $file_place = $upldir['url'] . '/' . $filename;
-                    echo $file_place;
-                    $file_data = wp_generate_attachment_metadata($inserted_file, $file_place);
-                    print_r($file_data);
-                    wp_update_attachment_metadata( $inserted_file, $attach_data );
+                    $file_data = wp_generate_attachment_metadata($inserted_file, $upldir['url'] . '/' . $filename);
+                    wp_update_attachment_metadata( $inserted_file, $file_data );
 
                     $uploaded_file = $filename;
 
@@ -824,7 +819,7 @@ function logo_project_upload_letter() {
 
     foreach($letters as $letter => $letter_img) {
 ?>
-                    <span id="<?php echo ($letter == $my_letter) ? 'my_letter_' . $letter : 'preview_letter_' . $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo ($letter == $my_letter) ? get_the_post_thumbnail($new_letter_id, 'logo-archive') : get_bloginfo('template_url') . $letter_img; ?>"></span>
+                    <span id="<?php echo ($letter == $my_letter) ? 'my_letter_' . $letter : 'preview_letter_' . $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo ($letter == $my_letter) ? get_the_post_thumbnail($_POST['new_letter_id'], 'logo-archive') : get_bloginfo('template_url') . $letter_img; ?>"></span>
 <?php
     }
 ?>
