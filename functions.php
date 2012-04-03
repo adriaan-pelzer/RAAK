@@ -609,6 +609,9 @@ function logo_project_upload_letter() {
                 } else {
                     $file_info = array('guid' => $upldir['url'].$filename, 'post_mime_type' => $FILES['upload_file']['type'], 'post_title' => $filename, 'post_status' => 'inherit', 'post_content' => '');
                     $inserted_file = wp_insert_attachment($file_info);
+                    require_once(ABSPATH . 'wp-admin/includes/image.php');
+                    //$attach_data = wp_generate_attachment_metadata( $attach_id, $filename );
+                    //wp_update_attachment_metadata( $attach_id, $attach_data );
                     print_r($inserted_file);
 
                     $uploaded_file = $filename;
