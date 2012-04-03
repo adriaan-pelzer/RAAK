@@ -816,17 +816,15 @@ function logo_project_upload_letter() {
 <?php
     $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
     if ($_POST['upload_letter'] == 'A') {
-        $letters[$_POST['upload_letter'] . '1'] = '/logo_uploads/'.$filename;
         $my_letter = $_POST['upload_letter'] . '1';
     } else {
-        $letters[$_POST['upload_letter']] = '/logo_uploads/'.$filename;
         $my_letter = $_POST['upload_letter'];
     }
         
 
     foreach($letters as $letter => $letter_img) {
 ?>
-                    <span id="<?php echo ($letter == $my_letter) ? 'my_letter_' . $letter : 'preview_letter_' . $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo get_bloginfo('template_url') . $letter_img; ?>"></span>
+                    <span id="<?php echo ($letter == $my_letter) ? 'my_letter_' . $letter : 'preview_letter_' . $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo ($letter == $my_letter) ? get_the_post_thumbnail($new_letter_id, 'logo-archive') : get_bloginfo('template_url') . $letter_img; ?>"></span>
 <?php
     }
 ?>
