@@ -817,7 +817,7 @@ function logo_project_upload_letter() {
         $my_letter = $_POST['upload_letter'];
     }
     foreach($letters as $letter => $letter_img) {
-        if($my_letter == $letter){
+        if((string)$my_letter == (string)$letter){
             echo 'ping';
         }
 ?>
