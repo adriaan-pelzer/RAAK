@@ -810,17 +810,24 @@ function logo_project_upload_letter() {
                 <div id="whitebox_secondary_preview_letters">
 <?php
     $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
+    $my_letter = 0;
     if ($_POST['upload_letter'] == 'A') {
-        $my_letter = $_POST['upload_letter'] . '1';
+        $my_letter = 1;
+    } else if($_POST['upload_letter'] == 'R') {
+        $my_letter = 0;
     } else {
-        $my_letter = $_POST['upload_letter'];
+        $my_letter = 3;
     }
-        
-echo get_the_post_thumbnail($new_letter_id, 'logo-archive');
+    echo get_the_post_thumbnail($new_letter_id);
+    $curr_letter = 0;
+    $preview_content = '';
     foreach($letters as $letter => $letter_img) {
-?>
-                    <span id="<?php echo ($letter == $my_letter) ? 'my_letter_' . $letter : 'preview_letter_' . $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo ($letter == $my_letter) ? get_the_post_thumbnail($new_letter_id, 'logo-archive') : get_bloginfo('template_url') . $letter_img; ?>"></span>
-<?php
+        if ($curr_letter != $my_letter) {
+            $preview_content .= '<span id="preview_letter_' . $letter . '"><img alt="logo ' . $letter .'" src="' . get_bloginfo('template_url') . $letter_img .'"></span>';
+        } else {
+            $preview_current .= '<span id="my_letter_'. $_POST['upload_letter'] . '">' . get_the_post_thumbnail($new_letter_id) . '</span>';
+        }
+        $curr_letter++;
     }
 ?>
                 </div>
