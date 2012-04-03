@@ -622,7 +622,7 @@ function logo_project_upload_letter() {
                             add_post_meta($new_letter_id, 'creatorip', (get_ip()));
                             add_post_meta($new_letter_id, 'originalname', $_FILES["upload_file"]["name"]);
                             $the_file = $_FILES['upload_file'];
-                            $image_id = insert_attachment($the_file, $new_letter_id);
+                            $image_id = insert_attachment('upload_file', $new_letter_id);
                         }
                         $state = 2;
 
