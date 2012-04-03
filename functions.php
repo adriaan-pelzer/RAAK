@@ -809,10 +809,9 @@ function logo_project_upload_letter() {
             <section id="whitebox_secondary_preview" class="smaller_arial_caps<?php echo ($state == 2) ? ' current' : ''; ?>">
                 <div id="whitebox_secondary_preview_letters">
 <?php
-    $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
     $my_letter = 0;
     $input_letter = $_POST['upload_letter'];
-    echo gettype($input_letter);
+    $input_letter = 'A';
     if ($input_letter == 'A') {
         $my_letter = 1;
     } else if($input_letter == 'R') {
@@ -820,14 +819,12 @@ function logo_project_upload_letter() {
     } else {
         $my_letter = 3;
     }
+    $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
     $curr_letter = 0;
     $preview_content = '';
     foreach($letters as $letter => $letter_img) {
-        echo $curr_letter;
-        echo $my_letter;
         if ($curr_letter != $my_letter) {
             $preview_content .= '<span id="preview_letter_' . $letter . '"><img alt="logo ' . $letter .'" src="' . get_bloginfo('template_url') . $letter_img .'"></span>';
-            echo $preview_current;
         } else {
             $preview_content .= '<span id="my_letter_'. $_POST['upload_letter'] . '">' . get_the_post_thumbnail($new_letter_id) . '</span>';
         }
