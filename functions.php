@@ -821,8 +821,11 @@ function logo_project_upload_letter() {
     $curr_letter = 0;
     $preview_content = '';
     foreach($letters as $letter => $letter_img) {
+        echo $curr_letter;
+        echo $my_letter;
         if ($curr_letter != $my_letter) {
             $preview_content .= '<span id="preview_letter_' . $letter . '"><img alt="logo ' . $letter .'" src="' . get_bloginfo('template_url') . $letter_img .'"></span>';
+            echo $preview_current;
         } else {
             $preview_current .= '<span id="my_letter_'. $_POST['upload_letter'] . '">' . get_the_post_thumbnail($new_letter_id) . '</span>';
         }
