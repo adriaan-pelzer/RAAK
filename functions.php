@@ -607,6 +607,7 @@ function logo_project_upload_letter() {
                 if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], $upldir['path'] .'/' . $filename))) {
                     array_push ($error, 'upload_file_copy');
                 } else {
+                    echo $_FILES['upload_file']['type'];
                     $file_info = array('guid' => $upldir['url'] .'/' .$filename, 'post_mime_type' => $FILES['upload_file']['type'], 'post_title' => $_FILES['upload_file']['name'], 'post_status' => 'inherit', 'post_content' => '');
                     $inserted_file = wp_insert_attachment($file_info, $upldir['path'] . '/' . $filename, 5671);
                     require_once(ABSPATH . 'wp-admin/includes/image.php');
