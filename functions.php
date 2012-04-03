@@ -12,7 +12,14 @@ function create_post_type () {
 
 register_nav_menus( array('primary' => 'Primary Navigation'));
 
+/********** adding support for featured images **********/
+
+add_theme_support('post-thumbnails');
+set_post_thumbnail_size(35, 42);
+add_image_size('logo-archive', 70, 82);
+
 /*****************************************************/
+
 
 function logo_call_to_action() {
     $letters = array('r', 'a', 'k');
@@ -604,7 +611,6 @@ function logo_project_upload_letter() {
                         $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
 
                         $new_letter = array('post_title' => ($_POST['upload_letter'] . ' - ' . $_POST['upload_name']),  'post_type' => 'raak_logo_letter');
-                        print_r($_POST);
                         $new_letter_id = wp_insert_post($new_letter);
                         if ($new_letter_id != 0) {
                             add_post_meta($new_letter_id, 'character', strtolower($_POST['upload_letter']));
@@ -804,8 +810,6 @@ function logo_project_upload_letter() {
         
 
     foreach($letters as $letter => $letter_img) {
-        echo $letter;
-        echo $my_letter;
 ?>
                     <span id="<?php echo ($letter == $my_letter) ? 'my_letter_' . $letter : 'preview_letter_' . $letter;?>"><img alt="logo <?php echo $letter;?>" src="<?php echo get_bloginfo('template_url') . $letter_img; ?>"></span>
 <?php
