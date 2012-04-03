@@ -620,6 +620,7 @@ function logo_project_upload_letter() {
                             add_post_meta($new_letter_id, 'file', $filename);
                             add_post_meta($new_letter_id, 'creatorip', (get_ip()));
                             add_post_meta($new_letter_id, 'originalname', $_FILES["upload_file"]["name"]);
+                            $image_id = media_handle_upload($_FILES["upload_file"], $new_letter_id);
                         }
                         $state = 2;
 
@@ -644,6 +645,7 @@ function logo_project_upload_letter() {
          }
     }
     print_r($_FILES);
+    
 ?>
 <div class="whitebox-secondary tab_container">
     <div class="multiple_tabs logo_letter_upload_tabs">
