@@ -615,6 +615,8 @@ function logo_project_upload_letter() {
                     print_r($file_data);
                     wp_update_attachment_metadata( $inserted_file, $attach_data );
                     print_r($inserted_file);
+                    $thing = get_post($inserted_file);
+                    print_r($thing);
 
                     $uploaded_file = $filename;
 
