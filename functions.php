@@ -643,6 +643,7 @@ function logo_project_upload_letter() {
              $state = 0;
          }
     }
+    print_r($_FILES);
 ?>
 <div class="whitebox-secondary tab_container">
     <div class="multiple_tabs logo_letter_upload_tabs">
