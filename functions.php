@@ -812,7 +812,7 @@ function logo_project_upload_letter() {
     $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
     $my_letter = 0;
     $input_letter = $_POST['upload_letter'];
-    echo $input_letter;
+    echo gettype($input_letter);
     if ($input_letter == 'A') {
         $my_letter = 1;
     } else if($input_letter == 'R') {
