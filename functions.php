@@ -603,13 +603,15 @@ function logo_project_upload_letter() {
                 $file_just_name = md5 ($_FILES["upload_file"]["name"].time());
                 $filename = $file_just_name.((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
                 $upldir = wp_upload_dir();
-                if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], ($upldir['path'].'/'.$filename)))) {
+                $filename = $upldir['path'] . $filename;
+                if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], $filename))) {
                     array_push ($error, 'upload_file_copy');
                 } else {
-                    $file_info = array('guid' => $upldir['url'].$filename, 'post_mime_type' => $FILES['upload_file']['type'], 'post_title' => $filename, 'post_status' => 'inherit', 'post_content' => '');
+                    $file_info = array('guid' => $upldir['url'].$filename, 'post_mime_type' => $FILES['upload_file']['type'], 'post_title' => $_FILES['upload_file']['name'], 'post_status' => 'inherit', 'post_content' => '');
+                    print_r($file_info);
                     $inserted_file = wp_insert_attachment($file_info);
                     require_once(ABSPATH . 'wp-admin/includes/image.php');
-                    $attach_data = wp_generate_attachment_metadata( $inserted_file, 'home/raakstg/public_html/wp-content/uploads/2012/04/'.$filename);
+                    $attach_data = wp_generate_attachment_metadata( $inserted_file, 'http://stage.wewillraakyou.com/wp-content/uploads/2012/04/' . $filneame);
                     print_r($attach_data);
                     wp_update_attachment_metadata( $inserted_file, $attach_data );
                     print_r($inserted_file);
