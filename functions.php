@@ -611,8 +611,8 @@ function logo_project_upload_letter() {
                     print_r($file_info);
                     $inserted_file = wp_insert_attachment($file_info);
                     require_once(ABSPATH . 'wp-admin/includes/image.php');
-                    $attach_data = wp_generate_attachment_metadata( $inserted_file, 'http://stage.wewillraakyou.com/wp-content/uploads/2012/04/' . $filneame);
-                    print_r($attach_data);
+                    $file_data = wp_generate_attachment_metadata($inserted_file, $filneame);
+                    print_r($file_data);
                     wp_update_attachment_metadata( $inserted_file, $attach_data );
                     print_r($inserted_file);
 
