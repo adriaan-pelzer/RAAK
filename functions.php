@@ -611,12 +611,12 @@ function logo_project_upload_letter() {
                     print_r($file_info);
                     $inserted_file = wp_insert_attachment($file_info, $upldir['path'] . '/' . $filename);
                     require_once(ABSPATH . 'wp-admin/includes/image.php');
-                    $file_data = wp_generate_attachment_metadata($inserted_file, $upldir['path'] . '/' . $filename);
-                    print_r($file_data);
                     wp_update_attachment_metadata( $inserted_file, $attach_data );
                     print_r($inserted_file);
                     $thing = get_post($inserted_file);
                     print_r($thing);
+                    $file_data = wp_generate_attachment_metadata($thing, $upldir['path'] . '/' . $filename);
+                    print_r($file_data);
 
                     $uploaded_file = $filename;
 
