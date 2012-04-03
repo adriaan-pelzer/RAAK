@@ -811,9 +811,10 @@ function logo_project_upload_letter() {
 <?php
     $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
     $my_letter = 0;
-    if ($_POST['upload_letter'] == 'A') {
+    $input_letter = $_POST['upload_letter']
+    if ($input_letter == 'A') {
         $my_letter = 1;
-    } else if($_POST['upload_letter'] == 'R') {
+    } else if($input_letter == 'R') {
         $my_letter = 0;
     } else {
         $my_letter = 3;
@@ -827,11 +828,11 @@ function logo_project_upload_letter() {
             $preview_content .= '<span id="preview_letter_' . $letter . '"><img alt="logo ' . $letter .'" src="' . get_bloginfo('template_url') . $letter_img .'"></span>';
             echo $preview_current;
         } else {
-            $preview_current .= '<span id="my_letter_'. $_POST['upload_letter'] . '">' . get_the_post_thumbnail($new_letter_id) . '</span>';
+            $preview_content .= '<span id="my_letter_'. $_POST['upload_letter'] . '">' . get_the_post_thumbnail($new_letter_id) . '</span>';
         }
         $curr_letter++;
     }
-    echo $preview_current;
+    echo $preview_content;
 ?>
                 </div>
                 <div id="whitebox_secondary_preview_submit">
