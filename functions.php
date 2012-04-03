@@ -603,7 +603,7 @@ function logo_project_upload_letter() {
                 $file_just_name = md5 ($_FILES["upload_file"]["name"].time());
                 $filename = $file_just_name.((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
                 $upldir = wp_upload_dir();
-                $filename = $upldir['path'] . $filename;
+                //$filename = $upldir['path'] . $filename;
                 if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], $filename))) {
                     array_push ($error, 'upload_file_copy');
                 } else {
@@ -611,7 +611,7 @@ function logo_project_upload_letter() {
                     print_r($file_info);
                     $inserted_file = wp_insert_attachment($file_info);
                     require_once(ABSPATH . 'wp-admin/includes/image.php');
-                    $file_data = wp_generate_attachment_metadata($inserted_file, $filename);
+                    $file_data = wp_generate_attachment_metadata($inserted_file, $upldir['path'] . $filename);
                     print_r($file_data);
                     wp_update_attachment_metadata( $inserted_file, $attach_data );
                     print_r($inserted_file);
