@@ -481,7 +481,7 @@ function logo_project_latest_uploads() {
             if(($current_letter > 0)) {
                 $content .= '
             <div class="bluebox_content_' . $suffix . ' logo_project_letter">
-                <div class="logo_project_letter_image rounded-corners">' . get_the_post_thumbnail($current_letter_id, 'logo-archive') . '</div>
+                <div class="logo_project_letter_image rounded-corners">' . get_the_post_thumbnail($current_letter->ID, 'logo-archive') . '</div>
                 <div class="logo_project_letter_blurp">
                     Submitted by
                 </div>
