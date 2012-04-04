@@ -1214,6 +1214,10 @@ input[name="upload_submit"] {
     width: auto;
     margin: 0 4px -4px;
 }
+#whitebox_secondary_preview_letters .container {
+    display: inline-block;
+    width: 43px;
+}
 
 #whitebox_secondary_finish .big_and_bold {
     font-size: 15px;
