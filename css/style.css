@@ -439,6 +439,9 @@ address a {
     background: #ffffff;
 }
 
+.logo_container img {
+    background: #ffffff;
+}
 
 #blog-description {
     color: #00aeef;
