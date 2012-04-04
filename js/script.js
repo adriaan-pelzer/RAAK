@@ -72,10 +72,10 @@ var loadNextLogo = function() {
     var variant = Math.floor(Math.random()*(((letters[logoLetter]).length)));
     console.log(variant);
     if($('#preview_letter_' + logoLetterName)) {
-        $('#preview_letter_' + logoLetter + ' span').animate({opacity: 0}, 1000, function() {
+        $('#preview_letter_' + logoLetterName + ' span').animate({opacity: 0}, 1000, function() {
             $(this).html(letters[logoLetter][variant]);
-            $('#preview_letter_' + logoLetter + ' span img').load(function() {
-                $('#preview_letter_' + logoLetter + ' span').animate({opacity: 1}, 1000);
+            $('#preview_letter_' + logoLetterName + ' span img').load(function() {
+                $('#preview_letter_' + logoLetterName + ' span').animate({opacity: 1}, 1000);
             });
         });
     }
