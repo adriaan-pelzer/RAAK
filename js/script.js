@@ -64,9 +64,13 @@ var load_next = function() {
 
 var loadNextLogo = function() {
     var logoLetterNumber = (Math.floor(Math.random()*4));
+    console.log(logoLetterNumber);
     var logoLetter = (logoLetterNumber === 0)?'R':((logoLetterNumber === 3)?'K':'A');
+    console.log(logoLetter);
     var logoLetterName = (logoLetterNumber === 0)?'R':((logoLetterNumber === 3)?'K':(logoLetterNumber === 1) ? 'A1' : 'A2');
+    console.log(logoLetterName);
     var variant = Math.floor(Math.random()*(((letters[logoLetter]).length)));
+    console.log(variant);
     if($('#preview_letter_' + logoLetterName)) {
         $('#preview_letter_' + logoLetter + ' span').animate({opacity: 0}, 1000, function() {
             $(this).html(letters[logoLetter][variant]);
