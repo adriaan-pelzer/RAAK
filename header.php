@@ -48,16 +48,24 @@ foreach($different_letters as $different_letter) {
         <h1>RAAK</h1>
         <a id="title" href="<?php bloginfo('home') ?>/" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home">
             <span id="logo_letter_1" class="logo_letter">
-                <img alt="logo r" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/r.jpeg" />
+                <span>
+                    <img alt="logo r" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/r.jpeg" />
+                </span>
             </span>
             <span id="logo_letter_2" class="logo_letter">
-                <img alt="logo a" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/a1.jpeg" />
+                <span>
+                    <img alt="logo a" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/a1.jpeg" />
+                </span>
             </span>
             <span id="logo_letter_3" class="logo_letter">
-                <img alt="logo a" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/a2.jpeg" />
+                <span>
+                    <img alt="logo a" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/a2.jpeg" />
+                </span>
             </span>
             <span id="logo_letter_4" class="logo_letter">
-                <img alt="logo k" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/k.jpeg" />
+                <span>
+                    <img alt="logo k" src="http://stage.wewillraakyou.com/wp-content/themes/RAAK/images/k.jpeg" />
+                </span>
             </span>
         </a>
         <div id="blog-description">Putting you in touch with your crowds</div>
