@@ -457,6 +457,7 @@ address a {
     border-top: 2px solid #00aeff;
     position: relative;
     z-index: 1;
+    padding-right: 10px;
 }
 
 .page_item, .menu-item {
