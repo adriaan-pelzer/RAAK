@@ -71,7 +71,7 @@ do_shortcode('[upload]');
                     $('#letter_upload').addClass('active');
                 });
             });
-        } else {
+        } /*else {
             $('#letter_preview').removeClass('active');
             $('#whitebox_secondary_preview').fadeOut(400, function() {
                 $(this).removeClass('current');
@@ -80,7 +80,22 @@ do_shortcode('[upload]');
                     $('#letter_submit').addClass('active');
                 });
             });
-        }
+        }*/
     });
+    var loadNextLogo = function() {
+        var logoLetterNumber = (Math.floor(Math.random()*4));
+        var logoLetter = (logoLetterNumber === 0)?'R':((logoLetterNumber === 3)?'K':'A');
+        var logoLetterName = (logoLetterNumber === 0)?'R':((logoLetterNumber === 3)?'K':(logoLetterNumber === 1) ? 'A1' : 'A2');
+        var variant = Math.floor(Math.random()*(((letters[logoLetter]).length)));
+        if($('#preview_letter_' + logoLetterName)) {
+            $('#preview_letter_' + logoLetterName + ' span').animate({opacity: 0}, 1000, function() {
+                $(this).html(letters[logoLetter][variant]);
+                $('#preview_letter_' + logoLetterName + ' span img').load(function() {
+                    $('#preview_letter_' + logoLetterName + ' span').animate({opacity: 1}, 1000);
+                });
+            });
+        }
+    }
+    setInterval(loadNextLogo, 5000);
 </script>
 <?php get_footer() ?>

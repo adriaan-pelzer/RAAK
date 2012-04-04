@@ -62,15 +62,13 @@ var load_next = function() {
     });
 }
 
-var loadNextLogo = function() {
+preloadImages();
+
+/*var loadNextLogo = function() {
     var logoLetterNumber = (Math.floor(Math.random()*4));
-    console.log(logoLetterNumber);
     var logoLetter = (logoLetterNumber === 0)?'R':((logoLetterNumber === 3)?'K':'A');
-    console.log(logoLetter);
     var logoLetterName = (logoLetterNumber === 0)?'R':((logoLetterNumber === 3)?'K':(logoLetterNumber === 1) ? 'A1' : 'A2');
-    console.log(logoLetterName);
     var variant = Math.floor(Math.random()*(((letters[logoLetter]).length)));
-    console.log(variant);
     if($('#preview_letter_' + logoLetterName)) {
         $('#preview_letter_' + logoLetterName + ' span').animate({opacity: 0}, 1000, function() {
             $(this).html(letters[logoLetter][variant]);
@@ -83,9 +81,8 @@ var loadNextLogo = function() {
 
 
 
-preloadImages();
 
-/*var latestPostsPagination = function() {
+var latestPostsPagination = function() {
     $('.pagination .previous').click(function() {
         if (($('.whitebox_primary_post.current').next('div').length) !== 0) {
             $('.whitebox_primary_post.current').removeClass('current').next('div').addClass('current');
@@ -297,10 +294,10 @@ var logoArchivePagination = function() {
 
 $(document).ready(function() {
     setInterval(load_next, 5000);
-    if (is_logo_page === 'yes') {
+    /*if (is_logo_page === 'yes') {
         setInterval(loadNextLogo, 5000);
     }
-    /*latestPostsPagination();
+    latestPostsPagination();
     ourWorkPagination();
     blogHomeCatBoxPagination();
     aboutPagination();
