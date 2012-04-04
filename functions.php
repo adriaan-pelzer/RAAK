@@ -819,9 +819,9 @@ function logo_project_upload_letter() {
     $preview_content = '';
     foreach($letters as $letter => $letter_img) {
         if ($curr_letter != $my_letter) {
-            $preview_content .= '<span class="container" id="preview_letter_' . $letter . '"><span><img alt="logo ' . $letter .'" src="' . get_bloginfo('template_url') . $letter_img .'" /></span></span>';
+            $preview_content .= '<span class="logo_container" id="preview_letter_' . $letter . '"><span><img alt="logo ' . $letter .'" src="' . get_bloginfo('template_url') . $letter_img .'" /></span></span>';
         } else {
-            $preview_content .= '<span class="container" id="my_letter_'. $_POST['upload_letter'] . '"><span>' . get_the_post_thumbnail($new_letter_id) . '</span></span>';
+            $preview_content .= '<span class="logo_container" id="my_letter_'. $_POST['upload_letter'] . '"><span>' . get_the_post_thumbnail($new_letter_id) . '</span></span>';
         }
         $curr_letter++;
     }

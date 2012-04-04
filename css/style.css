@@ -1214,7 +1214,7 @@ input[name="upload_submit"] {
     width: auto;
     margin: 0 4px -4px;
 }
-#whitebox_secondary_preview_letters .container {
+#whitebox_secondary_preview_letters .logo_container {
     display: inline-block;
     width: 43px;
 }
