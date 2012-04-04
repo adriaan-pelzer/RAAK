@@ -53,13 +53,11 @@ var load_next = function() {
     var letterNumber = (Math.floor(Math.random()*4));
     var letter = (letterNumber === 0)?'R':((letterNumber === 3)?'K':'A');
     var variant = Math.floor(Math.random()*(((letters[letter]).length)));
-    //$('#logo_letter_' + (letterNumber + 1) + ' span').animate({opacity: 0}, 1000, function() {  using fadeOut for the benefit if IE
-    $('#logo_letter_' + (letterNumber + 1) + ' span').fadeOut( 1000, function() {
+    $('#logo_letter_' + (letterNumber + 1) + ' span').animate({opacity: 0}, 1000, function() {
         $(this).html(letters[letter][variant]);
         //$(this).attr('src', 'http://stage.wewillraakyou.com/wp-content/themes/RAAK/resize.php?filename=logo_uploads/' + letters[letter][variant] + '&width=35&height=42');
         $('#logo_letter_' + (letterNumber + 1) + ' span img').load(function() {
-            //$('#logo_letter_' + (letterNumber + 1) + ' span').animate({opacity: 1}, 1000); using fadeIn for the benefit of IE
-            $('#logo_letter_' + (letterNumber + 1) + ' span').fadeIn( 1000);
+            $('#logo_letter_' + (letterNumber + 1) + ' span').animate({opacity: 1}, 1000);
         });
     });
 }
