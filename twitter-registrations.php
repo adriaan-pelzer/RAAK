@@ -195,9 +195,9 @@ if (have_posts()) {
 
     $(document).ready(function() {
         var graph = new Image();
-        var imgttl = $('#whitebox_big_body img').attr('title');
-        var imgalt = $('#whitebox_big_body img').attr('alt');
-        var imgsrc = $('#whitebox_big_body img').attr('src');
+        var imgttl = $('.whitebox_big img').attr('title');
+        var imgalt = $('.whitebox_big img').attr('alt');
+        var imgsrc = $('.whitebox_big img').attr('src');
         var ctx;
 
         graph.src = imgsrc;
@@ -207,8 +207,8 @@ if (have_posts()) {
                 ctx = document.getElementById('graph').getContext('2d');
                 ctx.clearRect(0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
             } else {
-                $('#whitebox_big_body img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
-            $('#whitebox_big_body img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+                $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+            $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
                 ctx = document.getElementById('graph').getContext('2d');
             }
 
@@ -238,9 +238,9 @@ if (have_posts()) {
 
     $(document).ready(function() {
         var graph = new Image();
-        var imgttl = $('#whitebox_big_body img').attr('title');
-        var imgalt = $('#whitebox_big_body img').attr('alt');
-        var imgsrc = $('#whitebox_big_body img').attr('src');
+        var imgttl = $('.whitebox_big img').attr('title');
+        var imgalt = $('.whitebox_big img').attr('alt');
+        var imgsrc = $('.whitebox_big img').attr('src');
         var ctx;
         var graphsize = $('#graph').length;
 
@@ -251,8 +251,8 @@ if (have_posts()) {
                 ctx = document.getElementById('graph').getContext('2d');
                 ctx.clearRect(0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
             } else {
-                $('#whitebox_big_body img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
-            $('#whitebox_big_body img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+                $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+            $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
                 ctx = document.getElementById('graph').getContext('2d');
             }
 
