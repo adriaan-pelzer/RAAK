@@ -443,7 +443,7 @@ address a {
     font-size: 10px;
     float: left;
     border-top: 2px solid #00aeff;
-    width: 308px;
+    width: 408px;
     padding: 13px 0 0 20px;
     position: absolute;
     top: 77px;
@@ -455,6 +455,8 @@ address a {
     float: right;
     font-size: 11px;
     border-top: 2px solid #00aeff;
+    position: relative;
+    z-index: 1;
 }
 
 .page_item, .menu-item {
@@ -471,7 +473,7 @@ address a {
 }
 
 .topmenu_body {
-    padding: 0 19px; /*fixing nav menu display in ie8 */
+    padding: 0 6px 0 16px; /*fixing nav menu display in ie8 */
 }
 
 .topmenu_body a {
