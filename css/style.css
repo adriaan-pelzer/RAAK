@@ -1826,6 +1826,10 @@ h2.subTitle {
 
 /************** Twitter Users ************/
 
+#see_yourself_form input {
+    vertical-align: top;
+}
+
 #see_yourself_form input[name="screen_name"] {
     padding: 5px;
 }
