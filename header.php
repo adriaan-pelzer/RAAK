@@ -26,7 +26,7 @@ foreach($different_letters as $different_letter) {
 ?>
         <script>
         //letters['<?php echo $array_name; ?>'][<?php echo $i; ?>] = '<?php echo get_post_meta(get_the_ID(), 'file', TRUE); ?>';
-        letters['<?php echo $array_name; ?>'].push('<?php echo get_post_meta(get_the_ID(), 'file', TRUE); ?>');
+        letters['<?php echo $array_name; ?>'].push('<?php echo get_the_post_thumbnail(get_the_ID()); ?>');
         </script>
 <?php
         $i++;
