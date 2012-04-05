@@ -821,7 +821,7 @@ function logo_project_upload_letter() {
         if ($curr_letter != $my_letter) {
             $preview_content .= '<span class="logo_container" id="preview_letter_' . $letter . '"><span><img alt="logo ' . $letter .'" src="' . get_bloginfo('template_url') . $letter_img .'" /></span></span>';
         } else {
-            $preview_content .= '<span class="logo_container" id="my_letter_'. $_POST['upload_letter'] . '"><span>' . get_the_post_thumbnail($new_letter_id) . '</span></span>';
+            $preview_content .= '<span class="logo_/*for iphone*ocontainer" id="my_letter_'. $_POST['upload_letter'] . '"><span>' . get_the_post_thumbnail($new_letter_id) . '</span></span>';
         }
         $curr_letter++;
     }
@@ -1074,9 +1074,9 @@ function big_whitebox_products() {
 <div class="whitebox_big whitebox box big_box rounded-corners">
     <header>
     <h2 class="din-schrift blue_20"><?php echo $current_page->post_title; ?></h2>
-        <nav class="box_nav smaller_arial_caps">
+        <!-- nav class="box_nav smaller_arial_caps">
             <a id="whitebox_big_nav_all-products" class="whitebox_big_nav_item active">All Products</a>
-        </nav>
+        </nav -->
     </header>
     <hr />
     <div class="whitebox_big_all_items">
