@@ -1387,7 +1387,7 @@ function single_project_bluebox() {
     $link_start = strpos($page_contents, '<a');
     $start_pos = strpos($page_contents, '"', $link_start);
     $end_pos = strpos($page_contents, '"', ($start_pos + 1));
-    $img_tag = substr($page_contents, ($start_pos +1), ($end_pos - ($start_pos -1)));
+    $img_tag = substr($page_contents, ($start_pos +1), (($end_pos - $start_pos) -1)));
     echo $img_tag;
 ?>
     </div>
