@@ -1629,9 +1629,9 @@ div.wpcf7-response-output {
     height: 20px;
     padding: 0!important;
     margin: 10px 0 0 0px!important;
-}*/
+}
 
-/*.fb_iframe_widget {
+.fb_iframe_widget {
     margin: 6px 44px 4px 0;
 }*/
 
@@ -1729,15 +1729,13 @@ h2.subTitle {
     width: 92px;
     height: 20px;
     padding: 0!important;
-    margin: 8px 0 0px 0px!important;
-    border: 1px solid black;
-    position: absolute;
+    margin: 8px 0 0 0px!important;
 }
 
 .fb_iframe_widget {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    /*margin-right: 44px;*/
+    margin-right: 44px;
 }
 
 /************** COMMENTS ****************/
