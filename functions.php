@@ -1504,6 +1504,9 @@ add_shortcode('cat_box', 'category_box');
 /*************************/
 
 function single_blog_post() {
+    $useragent=$_SERVER['HTTP_USER_AGENT'];
+    $iphone = (strpos($useragent, 'iPhone') !== FALSE);
+    echo $iphone;
     if(have_posts()) {
         while(have_posts()) {
             the_post();
