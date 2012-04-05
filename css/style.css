@@ -1727,9 +1727,9 @@ h2.subTitle {
 
 .opengraphprotocoltools-div {
     width: 92px;
-    /*height: 24px;*/
+    height: 20px;
     padding: 0!important;
-    margin: 8px 0 -63px 0px!important;
+    margin: 8px 0 0 0px!important;
 }
 
 .fb_iframe_widget {

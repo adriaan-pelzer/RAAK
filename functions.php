@@ -1506,7 +1506,11 @@ add_shortcode('cat_box', 'category_box');
 function single_blog_post() {
     $useragent=$_SERVER['HTTP_USER_AGENT'];
     $iphone = (strpos($useragent, 'iPhone') !== FALSE);
-    echo $iphone;
+    if($iphone) {
+?>
+<style>.opengraphprotocoltools-div{height:24px;}</style>
+<?php
+    }
     if(have_posts()) {
         while(have_posts()) {
             the_post();
@@ -1568,7 +1572,7 @@ endif;
 ?>
                             <!--fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like-->
                         <!-- div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div -->
-                        <fb:send<?php echo ($iphone)? ' class="iphone"' : ''; ?> ></fb:send>
+                        <fb:send></fb:send>
                         <!-- Place this tag where you want the +1 button to render -->
                         <g:plusone size="medium"></g:plusone>
 
