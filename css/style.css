@@ -1729,11 +1729,11 @@ h2.subTitle {
     width: 92px;
     height: 20px;
     padding: 0!important;
-    margin: 8px 0 10px 0px!important;
+    margin: 8px 0 0px 0px!important;
 }
 
 .fb_iframe_widget {
-    margin-top: 100px;
+    margin-top: 0px;
     margin-bottom: 10px;
     /*margin-right: 44px;*/
     display: none;
