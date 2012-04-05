@@ -1383,21 +1383,21 @@ function single_project_bluebox() {
     the_content();
     $gallery_contents = ob_get_contents();
     ob_end_clean();
-    $img_count = substr_count($page_contents, 'img');
+    $img_count = substr_count($gallery_contents, 'img');
     echo $img_count;
     $img_array = array();
-    $link_start = strpos($page_contents, '<a');
+    $link_start = strpos($gallery_contents, '<a');
     echo $link_start;
     for($img_counter = 0; $img_counter < $img_count; $img_counter++) {
         echo $img_counter;
-        $start_pos = strpos($page_contents, '"', $link_start);
+        $start_pos = strpos($gallery_contents, '"', $link_start);
         echo $start_pos;
-        $end_pos = strpos($page_contents, '"', ($start_pos + 1));
+        $end_pos = strpos($gallery_contents, '"', ($start_pos + 1));
         echo $end_pos;
-        $img_tag = substr($page_contents, ($start_pos +1), (($end_pos - $start_pos) -1));
+        $img_tag = substr($gallery_contents, ($start_pos +1), (($end_pos - $start_pos) -1));
         echo $img_tag;
         $img_array[$counter] = substr($page_contents, ($start_pos +1), (($end_pos - $start_pos) -1));
-        $link_start = strpos($page_contents, '<a', $end_pos);
+        $link_start = strpos($gallery_contents, '<a', $end_pos);
         echo $link_start;
     }
     print_r($img_array);
