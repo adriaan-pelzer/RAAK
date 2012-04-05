@@ -1384,8 +1384,10 @@ function single_project_bluebox() {
     $gallery_contents = ob_get_contents();
     ob_end_clean();
     $img_count = substr_count($page_contents, 'img');
+    echo $img_count;
     $img_array = array();
     $link_start = strpos($page_contents, '<a');
+    echo $link_start;
     for($img_counter = 0; $img_counter < $img_count; $img_counter++) {
         echo $img_counter;
         $start_pos = strpos($page_contents, '"', $link_start);
