@@ -1383,7 +1383,7 @@ function single_project_bluebox() {
     the_content();
     $page_contents = ob_get_contents();
     ob_end_clean();
-    $img_array = [];
+    $img_array = ();
     $link_start = strpos($page_contents, '<a');
     $start_pos = strpos($page_contents, '"', $link_start);
     $end_pos = strpos($page_contents, '"', ($start_pos + 1));
