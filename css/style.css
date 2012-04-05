@@ -1134,18 +1134,18 @@ hr.lightblue_hr {
 
 
 #whitebox_secondary_submit label {
-    /*width: 113px;*/   /* all for iphone */
-    height: 22px;
+    width: 113px;  /* all for iphone */
+    /*height: 22px;
     float: left;
-    padding-top: 5px;
+    padding-top: 5px;*/
 }
 
 
 #whitebox_secondary_submit input[type="text"] {
     width: 199px;
     height: 23px;
-    float: right;       /*for iphone*/
-    margin-right: 7px;  /*for iphone*/
+    /*float: right;       /*for iphone*/
+    /*margin-right: 7px;  /*for iphone*/
 }
 
 #file_replace {
@@ -1188,8 +1188,8 @@ hr.lightblue_hr {
 }
 
 #upload_agree {
-    /*vertical-align: bottom;*/
-    vertical-align: -6px; /* for iphone */
+    vertical-align: bottom;
+    /*vertical-align: -6px; /* for iphone */
     border: none;
 }
 
