@@ -1736,6 +1736,7 @@ h2.subTitle {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 44px;
+    display: block;
 }
 
 /************** COMMENTS ****************/
