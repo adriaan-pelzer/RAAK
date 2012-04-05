@@ -527,129 +527,132 @@ add_shortcode('lplu', 'logo_project_latest_uploads');
 /*************************/
 
 function logo_project_upload_letter() {
-    $width = 700;
-    $height = 840;
-    $error_messages = array (
-        'upload_letter'=>"Please choose a letter to upload",
-        'upload_email'=>"Please enter a valid email address",
-        'upload_url'=>"Please enter a valid url",
-        'upload_name'=>"Please enter your name",
-        'upload_agree'=>"Please tick to agree to the terms & conditions",
-        'upload_file'=>"Please select a file to upload",
-        'upload_file_type'=>"Picture type should be jpg or png",
-        'upload_file_size'=>"Picture size too big",
-        'upload_file_dim'=>"Picture dimensions wrong - it should be ".$width."x".$height,
-        'upload_file_copy'=>"Picture can not be copied",
-        'upload_db_insert'=>"Picture cannot be inserted into the database",
-        'upload_db_update'=>"Picture confirmation state cannot be updated"
-    );
-    $error = array();
-    $state = 0;
-    $terms = get_page_by_title('Terms and conditions');
+    $useragent=$_SERVER['HTTP_USER_AGENT'];
+    if(preg_match('/android.+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i',$useragent)||preg_match('/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|e\-|e\/|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(di|rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|xda(\-|2|g)|yas\-|your|zeto|zte\-/i',substr($useragent,0,4))) {
+    } else {
+        $width = 700;
+        $height = 840;
+        $error_messages = array (
+            'upload_letter'=>"Please choose a letter to upload",
+            'upload_email'=>"Please enter a valid email address",
+            'upload_url'=>"Please enter a valid url",
+            'upload_name'=>"Please enter your name",
+            'upload_agree'=>"Please tick to agree to the terms & conditions",
+            'upload_file'=>"Please select a file to upload",
+            'upload_file_type'=>"Picture type should be jpg or png",
+            'upload_file_size'=>"Picture size too big",
+            'upload_file_dim'=>"Picture dimensions wrong - it should be ".$width."x".$height,
+            'upload_file_copy'=>"Picture can not be copied",
+            'upload_db_insert'=>"Picture cannot be inserted into the database",
+            'upload_db_update'=>"Picture confirmation state cannot be updated"
+        );
+        $error = array();
+        $state = 0;
+        $terms = get_page_by_title('Terms and conditions');
 
-    if (isset ($_POST['upload_submit'])) {
-        /* required fields */
-        foreach (array ('upload_letter', 'upload_email', 'upload_name', 'upload_agree') as $errkey) {
-            if (!(isset ($_POST[$errkey])) || ($_POST[$errkey] == "")) {
-                array_push ($error, $errkey);
-            }
-        }
-        /* /required fields */
-
-        /* validation */
-        $regex_url = "((https?|ftp)\:\/\/)?"; // SCHEME 
-        $regex_url .= "([a-z0-9+!*(),;?&=\$_.-]+(\:[a-z0-9+!*(),;?&=\$_.-]+)?@)?"; // User and Pass 
-        $regex_url .= "([a-z0-9-.]*)\.([a-z]{2,3})"; // Host or IP 
-        $regex_url .= "(\:[0-9]{2,5})?"; // Port 
-        $regex_url .= "(\/([a-z0-9+\$_-]\.?)+)*\/?"; // Path 
-        $regex_url .= "(\?[a-z+&\$_.-][a-z0-9;:@&%=+\/\$_.-]*)?"; // GET Query 
-        $regex_url .= "(#[a-z_.-][a-z0-9+\$_.-]*)?"; // Anchor 
-
-        if ((isset ($_POST['upload_url']) && ($_POST['upload_url'] != "")) && (!(preg_match ("/^".$regex_url."$/", $_POST['upload_url'])))) {
-            array_push ($error, 'upload_url');
-        }
-
-        $regex_email = "([a-z0-9-.]*)\@([a-z0-9-.]*)";
-
-        if ((isset ($_POST['upload_email']) && ($_POST['upload_email'] != "")) && (!(preg_match ("/^".$regex_email."$/", $_POST['upload_email'])))) {
-            array_push ($error, 'upload_email');
-        }
-        /* /validation */
-
-        if (($_FILES['upload_file']["name"] == "") && !(isset ($_POST['uploaded_file']))) {
-            array_push ($error, 'upload_file');
-        }
-
-        if ($_POST['upload_agree'] != 'on') {
-            array_push ($error, 'upload_agree');
-        }
-
-        if ($_FILES['upload_file']["name"] != "") {
-            unset ($_POST['new_letter_id']);
-            unset ($_POST['uploaded_file']);
-            unset ($_POST['filename']);
-
-            $imagesize = getimagesize ($_FILES["upload_file"]["tmp_name"]);
-
-            if (($_FILES["upload_file"]["type"] != "image/jpeg") && ($_FILES["upload_file"]["type"] != "image/pjpeg") && ($_FILES["upload_file"]["type"] != "image/png") && ($_FILES["upload_file"]["type"] != "image/x-png")) {
-                array_push ($error, 'upload_file_type');
-            } else if ($_FILES['upload_file']['size'] > $_POST['MAX_FILE_SIZE']) {
-                array_push ($error, 'upload_file_size');
-            } else if (!(($imagesize[0] == $width) && ($imagesize[1] == $height))) {
-                array_push ($error, 'upload_file_dim');
-            } else {
-                //$file_just_name = md5 ($_FILES["upload_file"]["name"].time());
-                $filename = md5 ($_FILES["upload_file"]["name"].time()).((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
-                $upldir = wp_upload_dir();
-                if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], $upldir['path'] .'/' . $filename))) {
-                    array_push ($error, 'upload_file_copy');
-                } else {
-                    $file_info = array('guid' => $upldir['url'] .'/' .$filename, 'post_mime_type' => ($_FILES['upload_file']['type']), 'post_title' => $_FILES['upload_file']['name'], 'post_status' => 'inherit', 'post_content' => '');
-                    $inserted_file = wp_insert_attachment($file_info, $upldir['path'] . '/' . $filename);
-                    require_once(ABSPATH . 'wp-admin/includes/image.php');
-                    $file_data = wp_generate_attachment_metadata($inserted_file, $upldir['url'] . '/' . $filename);
-                    wp_update_attachment_metadata( $inserted_file, $file_data );
-
-                    $uploaded_file = $filename;
-
-                    if (sizeof ($error) == 0) {
-
-                        $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
-
-                        $new_letter = array('post_title' => ($_POST['upload_letter'] . ' - ' . $_POST['upload_name']),  'post_type' => 'raak_logo_letter');
-                        $new_letter_id = wp_insert_post($new_letter);
-                        if ($new_letter_id != 0) {
-                            add_post_meta($new_letter_id, 'character', strtolower($_POST['upload_letter']));
-                            add_post_meta($new_letter_id, 'creatormail', $_POST['upload_email']);
-                            add_post_meta($new_letter_id, 'creatorname', $_POST['upload_name']);
-                            add_post_meta($new_letter_id, 'creatorurl', $_POST['upload_url']);
-                            add_post_meta($new_letter_id, 'file', $filename);
-                            add_post_meta($new_letter_id, 'creatorip', (get_ip()));
-                            add_post_meta($new_letter_id, 'originalname', $_FILES["upload_file"]["name"]);
-                            add_post_meta($new_letter_id,'_thumbnail_id', $inserted_file);
-                        }
-                        $state = 2;
-
-                    }
+        if (isset ($_POST['upload_submit'])) {
+            /* required fields */
+            foreach (array ('upload_letter', 'upload_email', 'upload_name', 'upload_agree') as $errkey) {
+                if (!(isset ($_POST[$errkey])) || ($_POST[$errkey] == "")) {
+                    array_push ($error, $errkey);
                 }
             }
-        } 
-    }
-    if (isset ($_POST['preview_submit']) && isset ($_POST['new_letter_id']) && isset ($_POST['uploaded_file'])) {
-        wp_publish_post($_POST['new_letter_id']);
-        $state = 3;
+            /* /required fields */
 
-        $data = array ('confirmed'=>1);
-        $where = array ('new_letter_id'=>$_POST['new_letter_id']);
+            /* validation */
+            $regex_url = "((https?|ftp)\:\/\/)?"; // SCHEME 
+            $regex_url .= "([a-z0-9+!*(),;?&=\$_.-]+(\:[a-z0-9+!*(),;?&=\$_.-]+)?@)?"; // User and Pass 
+            $regex_url .= "([a-z0-9-.]*)\.([a-z]{2,3})"; // Host or IP 
+            $regex_url .= "(\:[0-9]{2,5})?"; // Port 
+            $regex_url .= "(\/([a-z0-9+\$_-]\.?)+)*\/?"; // Path 
+            $regex_url .= "(\?[a-z+&\$_.-][a-z0-9;:@&%=+\/\$_.-]*)?"; // GET Query 
+            $regex_url .= "(#[a-z_.-][a-z0-9+\$_.-]*)?"; // Anchor 
 
-    }
+            if ((isset ($_POST['upload_url']) && ($_POST['upload_url'] != "")) && (!(preg_match ("/^".$regex_url."$/", $_POST['upload_url'])))) {
+                array_push ($error, 'upload_url');
+            }
 
-    if (sizeof ($error) > 0) {
-        $state = 1;
-         if (in_array ('upload_letter', $error)) {
-             $state = 0;
-         }
-    }
+            $regex_email = "([a-z0-9-.]*)\@([a-z0-9-.]*)";
+
+            if ((isset ($_POST['upload_email']) && ($_POST['upload_email'] != "")) && (!(preg_match ("/^".$regex_email."$/", $_POST['upload_email'])))) {
+                array_push ($error, 'upload_email');
+            }
+            /* /validation */
+
+            if (($_FILES['upload_file']["name"] == "") && !(isset ($_POST['uploaded_file']))) {
+                array_push ($error, 'upload_file');
+            }
+
+            if ($_POST['upload_agree'] != 'on') {
+                array_push ($error, 'upload_agree');
+            }
+
+            if ($_FILES['upload_file']["name"] != "") {
+                unset ($_POST['new_letter_id']);
+                unset ($_POST['uploaded_file']);
+                unset ($_POST['filename']);
+
+                $imagesize = getimagesize ($_FILES["upload_file"]["tmp_name"]);
+
+                if (($_FILES["upload_file"]["type"] != "image/jpeg") && ($_FILES["upload_file"]["type"] != "image/pjpeg") && ($_FILES["upload_file"]["type"] != "image/png") && ($_FILES["upload_file"]["type"] != "image/x-png")) {
+                    array_push ($error, 'upload_file_type');
+                } else if ($_FILES['upload_file']['size'] > $_POST['MAX_FILE_SIZE']) {
+                    array_push ($error, 'upload_file_size');
+                } else if (!(($imagesize[0] == $width) && ($imagesize[1] == $height))) {
+                    array_push ($error, 'upload_file_dim');
+                } else {
+                    //$file_just_name = md5 ($_FILES["upload_file"]["name"].time());
+                    $filename = md5 ($_FILES["upload_file"]["name"].time()).((($_FILES["upload_file"]["type"] == "image/jpeg") || ($_FILES["upload_file"]["type"] == "image/pjpeg"))?".jpg":".png");
+                    $upldir = wp_upload_dir();
+                    if (!(move_uploaded_file ($_FILES["upload_file"]["tmp_name"], $upldir['path'] .'/' . $filename))) {
+                        array_push ($error, 'upload_file_copy');
+                    } else {
+                        $file_info = array('guid' => $upldir['url'] .'/' .$filename, 'post_mime_type' => ($_FILES['upload_file']['type']), 'post_title' => $_FILES['upload_file']['name'], 'post_status' => 'inherit', 'post_content' => '');
+                        $inserted_file = wp_insert_attachment($file_info, $upldir['path'] . '/' . $filename);
+                        require_once(ABSPATH . 'wp-admin/includes/image.php');
+                        $file_data = wp_generate_attachment_metadata($inserted_file, $upldir['url'] . '/' . $filename);
+                        wp_update_attachment_metadata( $inserted_file, $file_data );
+
+                        $uploaded_file = $filename;
+
+                        if (sizeof ($error) == 0) {
+
+                            $upload_url = ($_POST['upload_url'] == "")?NULL:$_POST['upload_url'];
+
+                            $new_letter = array('post_title' => ($_POST['upload_letter'] . ' - ' . $_POST['upload_name']),  'post_type' => 'raak_logo_letter');
+                            $new_letter_id = wp_insert_post($new_letter);
+                            if ($new_letter_id != 0) {
+                                add_post_meta($new_letter_id, 'character', strtolower($_POST['upload_letter']));
+                                add_post_meta($new_letter_id, 'creatormail', $_POST['upload_email']);
+                                add_post_meta($new_letter_id, 'creatorname', $_POST['upload_name']);
+                                add_post_meta($new_letter_id, 'creatorurl', $_POST['upload_url']);
+                                add_post_meta($new_letter_id, 'file', $filename);
+                                add_post_meta($new_letter_id, 'creatorip', (get_ip()));
+                                add_post_meta($new_letter_id, 'originalname', $_FILES["upload_file"]["name"]);
+                                add_post_meta($new_letter_id,'_thumbnail_id', $inserted_file);
+                            }
+                            $state = 2;
+
+                        }
+                    }
+                }
+            } 
+        }
+        if (isset ($_POST['preview_submit']) && isset ($_POST['new_letter_id']) && isset ($_POST['uploaded_file'])) {
+            wp_publish_post($_POST['new_letter_id']);
+            $state = 3;
+
+            $data = array ('confirmed'=>1);
+            $where = array ('new_letter_id'=>$_POST['new_letter_id']);
+
+        }
+
+        if (sizeof ($error) > 0) {
+            $state = 1;
+             if (in_array ('upload_letter', $error)) {
+                 $state = 0;
+             }
+        }
     
 ?>
 <div class="whitebox-secondary tab_container">
@@ -672,45 +675,45 @@ function logo_project_upload_letter() {
     <div class="whitebox_secondary whitebox box letter_upload rounded-corners">
         <form method="post" enctype="multipart/form-data">
 <?php
-    if (isset ($_POST['filename'])) {
+        if (isset ($_POST['filename'])) {
 ?>
         <input id="filename" type="hidden" name="filename" value="<?php echo $_POST['filename']; ?>" />
 <?php
-    } else if (isset ($_FILES["upload_file"]["name"]) && ($_FILES["upload_file"]["name"] != "")) {
+        } else if (isset ($_FILES["upload_file"]["name"]) && ($_FILES["upload_file"]["name"] != "")) {
 ?>
         <input id="filename" type="hidden" name="filename" value="<?php echo $_FILES["upload_file"]["name"]; ?>" />
 <?php
-    }
-    if (isset ($new_letter_id) && ($new_letter_id != 0)) {
+        }
+        if (isset ($new_letter_id) && ($new_letter_id != 0)) {
 ?>
         <input id="new_letter_id" type="hidden" name="new_letter_id" value="<?php echo $new_letter_id; ?>" />
 <?php
-    } else if (isset ($_POST['new_letter_id'])) {
+        } else if (isset ($_POST['new_letter_id'])) {
 ?>
         <input id="new_letter_id" type="hidden" name="new_letter_id" value="<?php echo $_POST['new_letter_id']; ?>" />
 <?php
-    }
-    if (isset ($uploaded_file) && ($uploaded_file != "")) {
+        }
+        if (isset ($uploaded_file) && ($uploaded_file != "")) {
 ?>
         <input id="uploaded_file" type="hidden" name="uploaded_file" value="<?php echo $uploaded_file; ?>" />
 <?php
-    } else if (isset ($_POST['uploaded_file'])) {
+        } else if (isset ($_POST['uploaded_file'])) {
 ?>
         <input id="uploaded_file" type="hidden" name="uploaded_file" value="<?php echo $_POST['uploaded_file']; ?>" />
 <?php
-    }
+        }
 ?>
 
     <section id="whitebox_secondary_upload" <?php echo ($state == 0) ? 'class="current"' : ''; ?>>
         <p>Choose the letter you've designed</p>
 <?php
-    if (in_array ('upload_letter', $error)) {
+        if (in_array ('upload_letter', $error)) {
 ?>
         <div class="error">
 <?php echo $error_messages ['upload_letter']; ?>
         </div>
 <?php
-    }
+        }
 ?>
         <div id="whitebox_secondary_upload_letters">
             <input id="upload_letter" type="hidden" name="upload_letter" value="<?php echo(isset($_POST['upload_letter']) ? $_POST['upload_letter'] : 'R'); ?> ">
@@ -724,62 +727,62 @@ function logo_project_upload_letter() {
     </section><!-- whitebox_secondary_upload -->
     <section id="whitebox_secondary_submit" <?php echo ($state == 1) ? 'class="current"' : ''; ?>>
 <?php
-    foreach ($error as $errkey) {
-        if (preg_match ("/upload_db/", $errkey)) {
+        foreach ($error as $errkey) {
+            if (preg_match ("/upload_db/", $errkey)) {
 ?>
                 <li class="error"><?php echo $error_messages [$errkey]; ?></li>
 <?php
+            }
         }
-    }
 ?>
                 <ul class="smaller_arial_caps">
 <?php
-    if (in_array ('upload_name', $error)) {
+        if (in_array ('upload_name', $error)) {
 ?>
                 <li class="error"><?php echo $error_messages ['upload_name']; ?></li>
 <?php
-    }
+        }
 ?>
                     <li id="whitebox_secondary_submit_name">
                         <label for="upload_name">Your Name</label>
                         <input id="upload_name" name="upload_name" type="text" maxlength="40">
                     </li>
 <?php
-    if (in_array ('upload_email', $error)) {
+        if (in_array ('upload_email', $error)) {
 ?>
                     <li class="error"><?php echo $error_messages ['upload_email']; ?></li>
 <?php
-    }
+        }
 ?>
                     <li id="whitebox_secondary_submit_email">
                         <label for="upload_email">Email</label>
                         <input id="upload_email" name="upload_email" type="text" maxlength="255">
                     </li>
 <?php
-    if (in_array ('upload_url', $error)) {
+        if (in_array ('upload_url', $error)) {
 ?>
                     <li class="error"><?php echo $error_messages ['upload_url']; ?></li>
 <?php
-    }
+        }
 ?>
                     <li id="whitebox_secondary_submit_url">
                         <label for="upload_url">URL</label>
                         <input id="upload_url" name="upload_url" type="text" maxlength="255">
                     </li>
 <?php
-    foreach ($error as $errkey) {
-        if (preg_match ("/upload_file/", $errkey)) {
-            if ($errkey == "upload_file_type") {
+        foreach ($error as $errkey) {
+            if (preg_match ("/upload_file/", $errkey)) {
+                if ($errkey == "upload_file_type") {
 ?>
                     <li class="error"><?php echo $error_messages [$errkey].": file type: ".$_FILES["upload_file"]["type"]; ?></li>
 <?php
-            } else {
+                } else {
 ?>
                     <li class="error"><?php echo $error_messages [$errkey]; ?></li>
 <?php
+                }
             }
         }
-    }
 ?>
 
                     <li id="whitebox_secondary_submit_file">
@@ -788,11 +791,11 @@ function logo_project_upload_letter() {
                         <div id="file_replace"><input id="upload_file" name="upload_file" type="file"><p id="dummy_file_text"></p></div>
                     </li>
 <?php
-    if (in_array ('upload_agree', $error)) {
+        if (in_array ('upload_agree', $error)) {
 ?>
                             <li class="error"><?php echo $error_messages ['upload_agree']; ?></li>
 <?php
-    }
+        }
 ?>
                     <li id="whitebox_secondary_submit_agree">
                     <label for="upload_agree">I agree to the <a href="<?php echo get_permalink($terms->ID); ?>">terms &amp; conditions</a></label>
@@ -807,25 +810,25 @@ function logo_project_upload_letter() {
             <section id="whitebox_secondary_preview" class="smaller_arial_caps<?php echo ($state == 2) ? ' current' : ''; ?>">
                 <div id="whitebox_secondary_preview_letters">
 <?php
-    $my_letter = 0;
-    $input_letter = $_POST['upload_letter'];
-    if ($input_letter == 'A') {
-        $my_letter = 1;
-    } else if ($input_letter == 'K') {
-        $my_letter = 3;
-    }
-    $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
-    $curr_letter = 0;
-    $preview_content = '';
-    foreach($letters as $letter => $letter_img) {
-        if ($curr_letter != $my_letter) {
-            $preview_content .= '<span class="logo_container" id="preview_letter_' . $letter . '"><span><img alt="logo ' . $letter .'" src="' . get_bloginfo('template_url') . $letter_img .'" /></span></span>';
-        } else {
-            $preview_content .= '<span class="logo_/*for iphone*ocontainer" id="my_letter_'. $_POST['upload_letter'] . '"><span>' . get_the_post_thumbnail($new_letter_id) . '</span></span>';
+        $my_letter = 0;
+        $input_letter = $_POST['upload_letter'];
+        if ($input_letter == 'A') {
+            $my_letter = 1;
+        } else if ($input_letter == 'K') {
+            $my_letter = 3;
         }
-        $curr_letter++;
-    }
-    echo $preview_content;
+        $letters = array('R'=>'/images/r.jpeg', 'A1'=>'/images/a1.jpeg', 'A2'=>'/images/a2.jpeg', 'K'=>'/images/k.jpeg');
+        $curr_letter = 0;
+        $preview_content = '';
+        foreach($letters as $letter => $letter_img) {
+            if ($curr_letter != $my_letter) {
+                $preview_content .= '<span class="logo_container" id="preview_letter_' . $letter . '"><span><img alt="logo ' . $letter .'" src="' . get_bloginfo('template_url') . $letter_img .'" /></span></span>';
+            } else {
+                $preview_content .= '<span class="logo_/*for iphone*ocontainer" id="my_letter_'. $_POST['upload_letter'] . '"><span>' . get_the_post_thumbnail($new_letter_id) . '</span></span>';
+            }
+            $curr_letter++;
+        }
+        echo $preview_content;
 ?>
                 </div>
                 <div id="whitebox_secondary_preview_submit">
@@ -845,6 +848,7 @@ function logo_project_upload_letter() {
 </div>
 
 <?php
+    }
 }
 
 add_shortcode('upload', 'logo_project_upload_letter');
