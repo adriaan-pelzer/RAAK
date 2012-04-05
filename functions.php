@@ -1391,8 +1391,8 @@ function single_project_bluebox() {
         $end_pos = strpos($page_contents, '"', ($start_pos + 1));
         $img_array[$counter] = substr($page_contents, ($start_pos +1), (($end_pos - $start_pos) -1));
         $link_start = strpos($page_contents, '<a', $end_pos);
-        echo $img_tag;
     }
+    print_r($img_array);
     foreach($img_array as $img_src) {
         echo '<img class="preloaded_img" src="' . $img_src . '" />';
     }
