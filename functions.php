@@ -1381,10 +1381,9 @@ function single_project_bluebox() {
 <?php
     ob_start();
     the_content();
-    $page_contents = ob_get_contents();
+    $gallery_contents = ob_get_contents();
     ob_end_clean();
     $img_count = substr_count($page_contents, 'img');
-    echo $img_count;
     $img_array = array();
     $link_start = strpos($page_contents, '<a');
     for($counter = 0; $counter < $img_count; $counter++) {
@@ -1394,9 +1393,10 @@ function single_project_bluebox() {
         $link_start = strpos($page_contents, '<a', $end_pos);
         echo $img_tag;
     }
-    echo $page_contents;
-
-
+    foreach($img_array as $img_src) {
+        echo '<img class="preloaded_img" src="' . $img_src . '" />';
+    }
+    echo $gallery_contents;
 ?>
     </div>
 </div><!-- #bluebox -->
