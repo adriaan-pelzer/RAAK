@@ -1378,7 +1378,18 @@ function single_project_bluebox() {
     </div>
     <hr class="solid blue_hr" />
     <div class="bluebox_thumbpic">
-<?php the_content(); ?>
+<?php
+    ob_start();
+    the_content();
+    $page_contents = ob_get_contents();
+    ob_end_clean();
+    $img_array = [];
+    $link_start = strpos($page_contents, '<a');
+    $start_pos = strpos($page_contents, '"', $link_start);
+    $end_pos = strpos($page_contents, '"', ($start_pos + 1));
+    $img_tag = substr($page_contents, ($start_pos +1), ($end_pos - ($start_pos -1)));
+    echo $img_tag;
+?>
     </div>
 </div><!-- #bluebox -->
 <?php
