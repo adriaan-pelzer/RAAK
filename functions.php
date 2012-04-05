@@ -1389,16 +1389,11 @@ function single_project_bluebox() {
     $link_start = strpos($gallery_contents, '<a');
     echo $link_start;
     for($img_counter = 0; $img_counter < $img_count; $img_counter++) {
-        echo $img_counter;
         $start_pos = strpos($gallery_contents, '"', $link_start);
-        echo $start_pos;
         $end_pos = strpos($gallery_contents, '"', ($start_pos + 1));
-        echo $end_pos;
         $img_tag = substr($gallery_contents, ($start_pos +1), (($end_pos - $start_pos) -1));
-        echo $img_tag;
-        $img_array[$counter] = substr($page_contents, ($start_pos +1), (($end_pos - $start_pos) -1));
+        array_push($img_array, (substr($page_contents, ($start_pos +1), (($end_pos - $start_pos) -1))));
         $link_start = strpos($gallery_contents, '<a', $end_pos);
-        echo $link_start;
     }
     print_r($img_array);
     foreach($img_array as $img_src) {
