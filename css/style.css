@@ -1624,12 +1624,12 @@ div.wpcf7-response-output {
     margin: 10px 0 0 75px;
 }
 
-.opengraphprotocoltools-div {
+/*.opengraphprotocoltools-div {
     width: 92px;
     height: 20px;
     padding: 0!important;
     margin: 10px 0 0 0px!important;
-}
+}*/
 
 /*.fb_iframe_widget {
     margin: 6px 44px 4px 0;
@@ -1727,13 +1727,13 @@ h2.subTitle {
 
 .opengraphprotocoltools-div {
     width: 92px;
-    /*height: 20px;*/
+    height: 30px;
     padding: 0!important;
     margin: 8px 0 0px 0px!important;
 }
 
 .fb_iframe_widget {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     margin-bottom: 10px;
     /*margin-right: 44px;*/
     display: none;
