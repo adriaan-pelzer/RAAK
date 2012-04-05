@@ -404,6 +404,10 @@ address a {
     display: inline-block;
 }
 
+.preloaded_img {
+    display: none;
+}
+
 /************** header ***************/
 
 .site_header {

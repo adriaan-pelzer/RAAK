@@ -1384,10 +1384,8 @@ function single_project_bluebox() {
     $gallery_contents = ob_get_contents();
     ob_end_clean();
     $img_count = substr_count($gallery_contents, 'img');
-    echo $img_count;
     $img_array = array();
     $link_start = strpos($gallery_contents, '<a');
-    echo $link_start;
     for($img_counter = 0; $img_counter < $img_count; $img_counter++) {
         $start_pos = strpos($gallery_contents, '"', $link_start);
         $end_pos = strpos($gallery_contents, '"', ($start_pos + 1));
@@ -1395,7 +1393,6 @@ function single_project_bluebox() {
         array_push($img_array, $img_tag);
         $link_start = strpos($gallery_contents, '<a', $end_pos);
     }
-    print_r($img_array);
     foreach($img_array as $img_src) {
         echo '<img class="preloaded_img" src="' . $img_src . '" />';
     }
