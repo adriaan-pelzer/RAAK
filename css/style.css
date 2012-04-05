@@ -1631,9 +1631,9 @@ div.wpcf7-response-output {
     margin: 10px 0 0 0px!important;
 }
 
-.fb_iframe_widget {
+/*.fb_iframe_widget {
     margin: 6px 44px 4px 0;
-}
+}*/
 
 .twitter-share-button {
     width: 96px!important;
@@ -1729,11 +1729,11 @@ h2.subTitle {
     width: 92px;
     height: 20px;
     padding: 0!important;
-    margin: 8px 0 4px 0px!important;
+    margin: 8px 0 0 0px!important;
 }
 
 .fb_iframe_widget {
-    /*margin-top: 10px;*/
+    margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 44px;
 }
