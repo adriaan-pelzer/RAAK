@@ -485,7 +485,7 @@ address a {
 }
 
 .topmenu_body {
-    padding: 0 6px 0 16px; /*fixing nav menu display in ie8 */
+    padding: 0 10px; /*fixing nav menu display in ie8 */
 }
 
 .topmenu_body a {
