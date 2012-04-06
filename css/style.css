@@ -1454,7 +1454,7 @@ p.top_margin_22px {
 }
 
 form.wpcf7-form {
-    font: 10px arial, sans-serif!important;
+    font: 10px 'arial-narrow', sans-serif!important;
     text-transform: uppercase;
     margin-top: 20px;
 }
