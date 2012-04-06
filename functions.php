@@ -973,10 +973,20 @@ add_shortcode('tmplt_dl_b', 'template_download_box');
 
 /************************/
 
-function basic_whitebox() {
+function basic_whitebox($atts) {
+    extract(shortcode_atts(array('page' => ''), $atts));
 ?>
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
 <?php
+    if ($page = 'contact') {
+        $useragent=$_SERVER['HTTP_USER_AGENT'];
+        $iphone = (strpos($useragent, 'iPhone') !== FALSE);
+        if($iphone) {
+?>
+<style>form.wpcf7-form {font-size: 6px;}</style>
+<?php
+        }
+    }
     if (have_posts()) {
         while(have_posts()) {
             the_post();
