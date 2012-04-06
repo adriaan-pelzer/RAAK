@@ -979,13 +979,11 @@ function basic_whitebox($atts) {
 <div class="whitebox whitebox_primary whitebox-primary box rounded-corners">
 <?php
     if ($page == 'contact') {
-        echo 'contact';
         $useragent=$_SERVER['HTTP_USER_AGENT'];
         $iphone = (strpos($useragent, 'iPhone') !== FALSE);
         if($iphone) {
-            echo 'iphone';
 ?>
-<style>form.wpcf7-form {font-size: 6px;}</style>
+<style>form.wpcf7-form p {font-size: 6px!important;}</style>
 <?php
         }
     }
