@@ -8,7 +8,7 @@ Template Name: Contact
 
 	<div class="container rounded-corners contact">
 		<div class="content" id="content">
-<?php do_shortcode('[basic_wb]'); ?>
+<?php do_shortcode('[basic_wb page="content"]'); ?>
 <?php do_shortcode('[contactbb]'); ?>
 		</div><!-- #content -->
 <?php get_sidebar() ?>
