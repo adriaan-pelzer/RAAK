@@ -19,8 +19,7 @@ function create_post_type () {
 function my_cpt_post_types( $post_types ) {
     $post_types[] = 'raak_product';
     $post_types[] = 'raak_project';
-    print_r ($post_types);
-    return $post_types;
+    //return $post_types;
 }
 add_filter( 'cpt_post_types', 'my_cpt_post_types' );
 /********************* use wp menu *******************/
