@@ -17,8 +17,8 @@ function create_post_type () {
  * @return array The array of post type names that the templates be used by
  **/
 function my_cpt_post_types( $post_types ) {
-    $post_types[] = 'raak_products';
-    $post_types[] = 'raak_projects';
+    $post_types[] = 'raak_product';
+    $post_types[] = 'raak_project';
     print_r ($post_types);
     return $post_types;
 }
