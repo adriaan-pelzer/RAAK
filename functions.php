@@ -1,6 +1,6 @@
 <?php
 
-/***** function for creating logo letter posts *********/
+/***** function for creating logo letter posts and product posts *********/
 
 add_action('init', 'create_post_type');
 
@@ -9,6 +9,19 @@ function create_post_type () {
     register_post_type('raak_product', array('labels' => array('name' => __('products'), 'singular' => __('product')), 'public' => TRUE, 'has_archive' => TRUE, 'rewrite' => array('slug' => 'products'), supports => array('custom-fields', 'title', 'editor')));
 }
 
+
+/**
+ * Hooks the WP cpt_post_types filter 
+ *
+ * @param array $post_types An array of post type names that the templates be used by
+ * @return array The array of post type names that the templates be used by
+ **/
+function my_cpt_post_types( $post_types ) {
+    $post_types[] = 'raak_products';
+    $post_types[] = 'raak_projects';
+    return $post_types;
+}
+add_filter( 'cpt_post_types', 'my_cpt_post_types' );
 /********************* use wp menu *******************/
 
 register_nav_menus( array('primary' => 'Primary Navigation'));
