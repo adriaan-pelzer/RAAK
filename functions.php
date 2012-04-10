@@ -16,12 +16,12 @@ function create_post_type () {
  * @param array $post_types An array of post type names that the templates be used by
  * @return array The array of post type names that the templates be used by
  **/
-function my_cpt_post_types( $post_types ) {
+function my_cpt_post_types($post_types) {
     $post_types[] = 'raak_product';
     $post_types[] = 'raak_project';
-    //return $post_types;
+    return $post_types;
 }
-add_filter( 'cpt_post_types', 'my_cpt_post_types' );
+add_filter('cpt_post_types', 'my_cpt_post_types');
 /********************* use wp menu *******************/
 
 register_nav_menus( array('primary' => 'Primary Navigation'));
