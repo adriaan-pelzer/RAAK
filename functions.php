@@ -1107,7 +1107,7 @@ add_shortcode('contactbb', 'contact_bluebox');
 
 function big_whitebox_products() {
     $current_page = get_page_by_title('Our Products');
-    $current_page_posts_loop = new WP_Query(array('post_type' => 'raak-product', 'posts_per_page' => -1));
+    $current_page_posts_loop = new WP_Query(array('post_type' => 'raak_product', 'posts_per_page' => -1));
 
     $total_rows = (ceil($current_page_posts_loop->post_count / 3));
 ?>
