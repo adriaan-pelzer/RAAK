@@ -1425,6 +1425,7 @@ a.page-numbers, .ngg-navigation span {
 
 .ngg-navigation a.next:hover, .ngg-navigation a.prev:hover {
     color: #ffffff!important;
+    background-color: #B9E5FB!important;
 }
 
 .ngg-navigation .next {
