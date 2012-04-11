@@ -6,7 +6,7 @@ add_action('init', 'create_post_type');
 
 function create_post_type () {
     register_post_type('raak_logo_letter', array('labels' => array('name' => __('letters'), 'singular' => __('letter')), 'public' => TRUE, 'has_archive' => TRUE, 'rewrite' => array('slug' => 'letters'), supports => array('custom-fields', 'title', 'editor', 'thumbnail')));
-    register_post_type('raak_product', array('labels' => array('name' => __('products'), 'singular' => __('product')), 'public' => TRUE, 'has_archive' => TRUE, supports => array('custom-fields', 'title', 'editor')));
+    register_post_type('raak_product', array('labels' => array('name' => __('products'), 'singular' => __('product')), 'public' => TRUE, 'has_archive' => TRUE, 'rewrite' => array('slug' => 'our-products'), supports => array('custom-fields', 'title', 'editor')));
 }
 
 
