@@ -170,7 +170,7 @@ function our_work()
         <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <?php
         $current_our_work_post_cat = get_cat_id ($work_category->name);
-        $current_our_work_query = new WP_Query(array('cat' => get_cat_id($work_category->name), 'posts_per_page' => 1, 'paged' => 1, 'post_type' => 'raak_project');
+        $current_our_work_query = new WP_Query(array('cat' => get_cat_id($work_category->name), 'posts_per_page' => 1, 'paged' => 1, 'post_type' => 'raak_project'));
         $current_our_work_post = $current_our_work_query->post;
         $current_our_work_post_id = ($current_our_work_post->ID);
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
