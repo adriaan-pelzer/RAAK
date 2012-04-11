@@ -69,7 +69,7 @@ function display_latest_posts($atts) {
     extract(shortcode_atts(array('category' => '0', 'posts_per_page' => '2', 'num_pages' => '10', 'tab' => '1'), $atts));
     $blog_archive_page = get_page_by_title('Blog Archive');
     if ($tab == 1) {
-<?php if ( function_exists('stats_get_csv') && $top_posts = stats_get_csv('postviews', 'days=-1&limit=4') ) : ?>
+if ( function_exists('stats_get_csv') && $top_posts = stats_get_csv('postviews', 'days=-1&limit=4') ) : ?>
     <ol>
 <?php foreach ( $top_posts as $p ) : ?>
         <li><a href="<?php echo $p['post_permalink']; ?>"><?php echo $p['post_title']; ?></a></li>
