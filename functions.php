@@ -1318,6 +1318,7 @@ function single_project_whitebox() {
             } else {
                 $page_title = 'Our Work';
             }
+            print_r($_SERVER);
 
             
 ?>
