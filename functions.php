@@ -1313,12 +1313,11 @@ function single_project_whitebox() {
             for($count = 0; $count < $num_cats; $count++) {
                 $poss_cats[$count] = $cats[$count]->cat_name;
             }
-            if (in_array('RAAK products', $poss_cats)) {
+            if (strpos($_SERVER['REQUEST_URI'], 'raak-products') !== false) {
                 $page_title = 'Our Products';
             } else {
                 $page_title = 'Our Work';
             }
-            print_r($_SERVER);
 
             
 ?>
