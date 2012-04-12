@@ -577,14 +577,16 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
     
 }
-foreach($posts_views as $key => $value) {
-    echo '<li>' . $key . ' ' . $value . '</li>';
-}
 $all_posts = new WP_Query(array('posts_per_page' => -1));
 foreach(($all_posts->posts) as $cur_post) {
-    $key = $cur_post->post_title;
-    $the_id = $cur_post->ID;
-    echo '<li>' . $key . ' ' . $the_id . ' ' . $posts_views[$key] . '</li>';
+    $cur_post_title = $cur_post->post_title;
+    $cur_post_id = $cur_post->ID;
+    foreach($posts_views as $key => $value) {
+        if ($key == $cur_post_title) {
+            update_post_meta($cur_post_id, 'postviews', $value);
+            echo '<li>' . $value . 'post view(s) added to ' . $key . '</li>';
+        }
+    }
     /*if (in_array($key, $posts_views)) {
         update_post_meta($the_id, 'postviews', $posts_views[$key]);
         echo '<li>' . $posts_views[$key] . 'post views added to ' . $key . '</li>';
