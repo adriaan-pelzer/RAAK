@@ -609,6 +609,7 @@ ob_start();
 <?php
 $stats_page = ob_get_contents();
 ob_end_clean;
+$stats_page = (string)$stats_page;
 $table_start = stripos($stats_page, '<table');
 echo 'table start: ' . $table_start;
 $table_end = strripos($stats_page, '</table>');
