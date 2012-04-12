@@ -1,5 +1,10 @@
 <?php
-$stats_table = '<table class="statsDay"><tr><th>Title</th><th class="views">Views</th><th class="more"></th></tr><tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/" target="_blank">Home</a></td><td class="views">12,865</td><td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=4&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td></tr>';
+$stats_table = '
+   <table class="statsDay">
+    <tr><th>Title</th><th class="views">Views</th><th class="more"></th></tr>
+    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/" target="_blank">Home</a></td><td class="views">12,865</td>
+	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=4&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
+    </tr>';
 $somrthing_else = '
     <tr><td class="label"><a href="http://wewillraakyou.com/2010/12/klout-is-broken/" target="_blank">Klout is broken</a></td><td class="views">7,451</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=3429&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
@@ -602,12 +607,12 @@ $somrthing_else = '
 $posts_amount =  1; //substr_count($stats_table, '<tr>');
 $offset = 0;
 //for($i = 0; $i <= $posts_amount;$i++) {
-    $initial_offset = strpos($stats_table, '<tr>', $offset);
+    $initial_offset = stripos($stats_table, '<tr>', $offset);
     $first_title_offset = stripos($stats_table, 'blank">', $initial_offset);
     $second_title_offset = stripos($stats_table, '</a>', $first_title_offset);
     $first_title_offset = $first_title_offset + 7;
-    $length = $second_title_offset - ($first_titile_offset + 7);
-    $post_title = substr($stats_table, ($first_title_offset + 7), $length);
+    $length = $second_title_offset - $first_titile_offset;
+    $post_title = substr($stats_table, $first_title_offset, $length);
     echo '<li>' . $post_title . '</li>';
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
 //} 
