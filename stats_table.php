@@ -604,6 +604,7 @@ $stats_table = '
     </table>';
 
 $stats_page = file_get_contents('http://wordpress.com/my-stats/?blog=14895691&view=postviews&summarize&numdays=-1');
+echo $stats_page;
 $table_start = stripos($stats_page, '<table');
 echo 'table start: ' . $table_start;
 $table_end = strripos($stats_page, '</table>');
