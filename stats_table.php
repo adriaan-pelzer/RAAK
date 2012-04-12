@@ -611,7 +611,7 @@ for($i; $i <= $posts_amount;$i++) {
     $second_title_offset = stripos($stats_table, '</a>', $first_title_offset);
     $post_title = substr($stats_table, ($first_title_offset + 7), ($second_title_offset - ($first_titile_offset + 7)));
     echo '<li>' . $post_title . '</li>';
-    $offset = $second_title_offset;
+    $offset = stripos($stats_table, '</tr>', $second_title_offset);
 } 
 
 ?>
