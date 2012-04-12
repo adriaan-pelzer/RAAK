@@ -578,6 +578,12 @@ for($i = 0; $i <= $posts_amount;$i++) {
     
 }
 print_r($posts_views);
-//$all_posts = new WP_Query(
+$all_posts = new WP_Query(array('posts_per_page' => -1));
+print_r($all_posts);
+/*foreach($all_posts[post] as $cur_post) {
+    if in_array($cur_post->name, $posts_views) {
+        update_post_meta($cur_post->ID, 'postviews', $posts_views[$cur_post->name]);
+    }
+}*/ 
 ?>
 
