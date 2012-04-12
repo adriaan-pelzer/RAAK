@@ -581,10 +581,13 @@ $all_posts = new WP_Query(array('posts_per_page' => -1));
 foreach(($all_posts->posts) as $cur_post) {
     $cur_post_title = $cur_post->post_title;
     $cur_post_id = $cur_post->ID;
-    foreach($posts_views as $key => $value) {
-        if ($key == 'The RAAKonteur #79 - Does Klout measure social capital like Kickstarter attracts monetary capital?') {
-            update_post_meta($cur_post_id, 'postviews', $value);
-            echo '<li>' . $value . 'post view(s) added to ' . $key . '</li>';
+    if ($cur_post_title == 'The RAAKonteur #79 - Does Klout measure social capital like Kickstarter attracts monetary capital?') {
+        foreach($posts_views as $key => $value) {
+            if ($key == 'The RAAKonteur #79 - Does Klout measure social capital like Kickstarter attracts monetary capital?') {
+
+                update_post_meta($cur_post_id, 'postviews', $value);
+                echo '<li>' . $value . 'post view(s) added to ' . $key . '</li>';
+            }
         }
     }
     /*if (in_array($key, $posts_views)) {
