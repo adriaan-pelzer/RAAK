@@ -580,6 +580,7 @@ for($i = 0; $i <= $posts_amount;$i++) {
 $all_posts = new WP_Query(array('posts_per_page' => -1));
 foreach(($all_posts->posts) as $cur_post) {
     $key = $cur_post->post_title;
+    echo $key;
     $the_id = $cur_post->ID;
     if (in_array($key, $posts_views)) {
         update_post_meta($the_id, 'postviews', $posts_views[$key]);
