@@ -577,22 +577,19 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
     
 }
-print_r($posts_views);
 $all_posts = new WP_Query(array('posts_per_page' => -1));
 foreach(($all_posts->posts) as $cur_post) {
     $cur_post_title = $cur_post->post_title;
     $cur_post_id = $cur_post->ID;
-    if ($cur_post_title == 'The RAAKonteur #79 - Does Klout measure social capital like Kickstarter attracts monetary capital?') {
-        echo 'ping';
-        foreach($posts_views as $key => $value) {
-            if ($key == 'The RAAKonteur #79 - Does Klout measure social capital like Kickstarter attracts monetary capital?') {
-                echo 'pong';
-
-                update_post_meta($cur_post_id, 'postviews', $value);
-                echo '<li>' . $value . 'post view(s) added to ' . $key . '</li>';
-            }
-        }
+    if(array_key_exists($cur_post_title, $posts_views) {
+        echo $posts_views[$cur_post_title];
     }
+    /*foreach($posts_views as $key => $value) {
+        if ($key == $cur_post_title) {
+            update_post_meta($cur_post_id, 'postviews', $value);
+            echo '<li>' . $value . 'post view(s) added to ' . $key . '</li>';
+        }
+    }*/
     /*if (in_array($key, $posts_views)) {
         update_post_meta($the_id, 'postviews', $posts_views[$key]);
         echo '<li>' . $posts_views[$key] . 'post views added to ' . $key . '</li>';
