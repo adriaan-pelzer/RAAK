@@ -584,8 +584,11 @@ foreach(($all_posts->posts) as $cur_post) {
     $cur_post_title = $cur_post->post_title;
 
     $cur_post_id = $cur_post->ID;
+    foreach($post_views as $single_array) {
+        echo $single_array[post_id];
     if(array_search($cur_post_id, $posts_views)) {
         echo $cur_post_title;
+    }
     }
     /*foreach($posts_views as $key => $value) {
         if ($key == $cur_post_title) {
