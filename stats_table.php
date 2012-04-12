@@ -585,9 +585,9 @@ foreach(($all_posts->posts) as $cur_post) {
 
     $cur_post_id = $cur_post->ID;
     foreach($posts_views as $single_array) {
-        echo $single_array[post_id];
         if ($cur_post_id == $single_array[post_id]) {
-            echo $cur_post_title;
+            update_post_meta($cur_post_id, 'postviews', $single_array[post_views]);
+            echo '<li>' . $single_array[post_views] . 'post view(s) added to ' . $cur_post_title . '</li>';
         }
     }
     /*foreach($posts_views as $key => $value) {
