@@ -567,7 +567,7 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $post_views = (int)$post_views;
     $posts_views[$i]['post_id'] = $post_id;
     $posts_views[$i]['post_views'] = $post_views;
-    $offset = stripos = $second_views_offset;
+    $offset = $second_views_offset;
     
 }
 print_r ($posts_views);
