@@ -577,8 +577,9 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
     
 }
-print_r($posts_views);
-echo $posts_views[1];
+foreach($posts_views as $key => $value) {
+    echo '<li>' . $key . ' ' . $value . '</li>';
+}
 $all_posts = new WP_Query(array('posts_per_page' => -1));
 foreach(($all_posts->posts) as $cur_post) {
     $key = $cur_post->post_title;
