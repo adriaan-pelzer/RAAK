@@ -610,8 +610,15 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $second_title_offset = stripos($stats_table, '</a>', $first_title_offset);
     $first_title_offset = $first_title_offset + 7;
     $title_length = $second_title_offset - $first_title_offset;
+    $first_views_offset = stripos($stats_table, 'views">', $second_title_offset);
+    $first_views_offset = $first_views_offset + 7;
+    $second_views_offset = stripos($stats_table, '</td>', $first_views_offset);
+    $views_length = $second_views_offset - $first_views_offset);
+    
     $post_title = substr($stats_table, $first_title_offset, $title_length);
-    echo '<li>' . $post_title . '</li>';
+    $post_views = substr($stats_table, $first_views_offset, $views_length);
+    $post_views = int($post_views)
+    echo '<li>' . $post_title . ' views: ' . $post_views . '</li>';
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
 } 
 
