@@ -577,6 +577,7 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
     
 }
-print_r($posts_view);
+print_r($posts_views);
+$all_posts = new WP_Query(
 ?>
 
