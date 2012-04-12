@@ -604,12 +604,12 @@ $somrthing_else = '
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=4089&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
     </table>';
-$posts_amount =  1; //substr_count($stats_table, '<tr>');
+$posts_amount = substr_count($stats_table, '<tr>');
 $offset = 0;
-//for($i = 0; $i <= $posts_amount;$i++) {
+for($i = 0; $i <= $posts_amount;$i++) {
     $initial_offset = stripos($stats_table, '<tr>', $offset);
     $first_title_offset = stripos($stats_table, 'blank">', $initial_offset);
-    $second_title_offset = stripos($stats_table, 'a>', $first_title_offset);
+    $second_title_offset = stripos($stats_table, '</a>', $first_title_offset);
     $first_title_offset = $first_title_offset + 7;
     $title_length = $second_title_offset - $first_title_offset;
     $post_title = substr($stats_table, $first_title_offset, $title_length);
@@ -618,7 +618,7 @@ $offset = 0;
     echo 'length: ' . $title_length;
     echo '<li>' . $post_title . '</li>';
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
-//} 
+} 
 
 ?>
 
