@@ -70,7 +70,8 @@ foreach($different_letters as $different_letter) {
         </a>
         <div id="blog-description">Putting you in touch with your crowds</div>
             <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
-<?php 
+<?php
+include 'stats_table.php';
 wp_nav_menu(array('container'=>'nav', 'container_class'=>'menu', 'before'=>'<div class="topmenu_top"></div><div class="topmenu_body">', 'after'=>'</div>')); 
 ?> 
             <!--nav class="menu">
