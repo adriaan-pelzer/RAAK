@@ -1,61 +1,61 @@
 <?php
 $stats_table = '
    <table class="statsDay">
-    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/" target="_blank">Home</a></td><td class="views">12,865</td>
+    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/" target="_blank">Home</a></td><td class="views">12865</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=4&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
     </tr>
-    <tr><td class="label"><a href="http://wewillraakyou.com/2010/12/klout-is-broken/" target="_blank">Klout is broken</a></td><td class="views">7,451</td>
+    <tr><td class="label"><a href="http://wewillraakyou.com/2010/12/klout-is-broken/" target="_blank">Klout is broken</a></td><td class="views">7451</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=3429&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/logo-project/" target="_blank">Logo Project</a></td><td class="views">6,471</td>
+    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/logo-project/" target="_blank">Logo Project</a></td><td class="views">6471</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=2720&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr><td class="label"><a href="http://wewillraakyou.com/twitter-users/" target="_blank">Twitter Users</a></td><td class="views">4,859</td>
+    <tr><td class="label"><a href="http://wewillraakyou.com/twitter-users/" target="_blank">Twitter Users</a></td><td class="views">4859</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=5357&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/2011/06/google-plusone-button-howto/" target="_blank">How to add a Google +1 button to your website</a></td><td class="views">4,477</td>
+    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/2011/06/google-plusone-button-howto/" target="_blank">How to add a Google +1 button to your website</a></td><td class="views">4477</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=4649&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr><td class="label"><a href="http://wewillraakyou.com/2010/02/the-answer-to-die-antwoords-marketing-social-media/" target="_blank">The answer to Die Antwoord&#8217;s marketing success</a></td><td class="views">3,165</td>
+    <tr><td class="label"><a href="http://wewillraakyou.com/2010/02/the-answer-to-die-antwoords-marketing-social-media/" target="_blank">The answer to Die Antwoord&#8217;s marketing success</a></td><td class="views">3165</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=1414&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/2010/07/facebook-extended-permissions-theyre-not-as-bad-as-you-think-they-are/" target="_blank">Facebook Extended Permissions – they&#8217;re not as bad as you think they are</a></td><td class="views">2,786</td>
+    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/2010/07/facebook-extended-permissions-theyre-not-as-bad-as-you-think-they-are/" target="_blank">Facebook Extended Permissions – they&#8217;re not as bad as you think they are</a></td><td class="views">2786</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=1776&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr><td class="label"><a href="http://wewillraakyou.com/about/" target="_blank">About</a></td><td class="views">2,569</td>
+    <tr><td class="label"><a href="http://wewillraakyou.com/about/" target="_blank">About</a></td><td class="views">2569</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=1668&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/our-work/" target="_blank">Our work</a></td><td class="views">2,389</td>
+    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/our-work/" target="_blank">Our work</a></td><td class="views">2389</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=36&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr><td class="label"><a href="http://wewillraakyou.com/2011/06/twitter-steals-devnest/" target="_blank">Twitter eats its Babies</a></td><td class="views">1,892</td>
+    <tr><td class="label"><a href="http://wewillraakyou.com/2011/06/twitter-steals-devnest/" target="_blank">Twitter eats its Babies</a></td><td class="views">1892</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=4705&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/contact/" target="_blank">Contact</a></td><td class="views">1,721</td>
+    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/contact/" target="_blank">Contact</a></td><td class="views">1721</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=341&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr><td class="label"><a href="http://wewillraakyou.com/blog/" target="_blank">Blog</a></td><td class="views">1,714</td>
+    <tr><td class="label"><a href="http://wewillraakyou.com/blog/" target="_blank">Blog</a></td><td class="views">1714</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=211&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/">Home page</a></td><td class="views">1,380</td>
+    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/">Home page</a></td><td class="views">1380</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=0&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr><td class="label"><a href="http://wewillraakyou.com/2010/10/how-do-url-shorteners-work/" target="_blank">How do URL shorteners work?</a></td><td class="views">1,352</td>
+    <tr><td class="label"><a href="http://wewillraakyou.com/2010/10/how-do-url-shorteners-work/" target="_blank">How do URL shorteners work?</a></td><td class="views">1352</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=2741&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/2010/11/edgerank-the-secrets-facebooks-pagerank/" target="_blank">EdgeRank – the secrets of Facebook’s PageRank</a></td><td class="views">1,199</td>
+    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/2010/11/edgerank-the-secrets-facebooks-pagerank/" target="_blank">EdgeRank – the secrets of Facebook’s PageRank</a></td><td class="views">1199</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=3253&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr><td class="label"><a href="http://wewillraakyou.com/2011/01/tunisia-reluctant-fire-starter-the-facebook-revolution/" target="_blank">The autistic fire-starter &#8211; the Tunisian Facebook revolution</a></td><td class="views">1,109</td>
+    <tr><td class="label"><a href="http://wewillraakyou.com/2011/01/tunisia-reluctant-fire-starter-the-facebook-revolution/" target="_blank">The autistic fire-starter &#8211; the Tunisian Facebook revolution</a></td><td class="views">1109</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=3755&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/2010/12/peerindex-twitter-spam/" target="_blank">Peerindex is not broken, but it&#8217;s not perfect</a></td><td class="views">1,088</td>
+    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/2010/12/peerindex-twitter-spam/" target="_blank">Peerindex is not broken, but it&#8217;s not perfect</a></td><td class="views">1088</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=3508&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr><td class="label"><a href="http://wewillraakyou.com/2011/04/jquery-mobile-fall-of-native-app/" target="_blank">jQuery Mobile and the Fall of the Native App</a></td><td class="views">1,071</td>
+    <tr><td class="label"><a href="http://wewillraakyou.com/2011/04/jquery-mobile-fall-of-native-app/" target="_blank">jQuery Mobile and the Fall of the Native App</a></td><td class="views">1071</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=4202&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/2012/02/dynamic-chart-shows-twitters-exact-growth/" target="_blank">Twitter will break through the 500 million user mark on Wednesday</a></td><td class="views">1,006</td>
+    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/2012/02/dynamic-chart-shows-twitters-exact-growth/" target="_blank">Twitter will break through the 500 million user mark on Wednesday</a></td><td class="views">1006</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=5320&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
     <tr><td class="label"><a href="http://wewillraakyou.com/2011/03/nodejs-death-of-php/" target="_blank">Node.js: The death of PHP</a></td><td class="views">963</td>
