@@ -550,7 +550,7 @@ $stats_table = '
 			<td class="more"><a href="/my-stats/?view=post&amp;post=7&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.png?m=1352284099g" alt="More stats" /></a></td><td class="views">1</td></tr>
 					</table>';
 $offset = stripos($stats_table, '</tr>');
-$posts_amount = (substr_count($stats_table, '<tr>')) - 1;
+$posts_amount = (substr_count($stats_table, 'post-'));
 $posts_views = array();
 for($i = 0; $i <= $posts_amount;$i++) {
     $initial_offset = stripos($stats_table, '<tr>', $offset);
