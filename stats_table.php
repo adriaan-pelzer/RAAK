@@ -603,6 +603,7 @@ $stats_table = '
 	</tr>
     </table>';
 $posts_amount = substr_count($stats_table, '<tr>');
+$posts_views = array();
 $offset = 0;
 for($i = 0; $i <= $posts_amount;$i++) {
     $initial_offset = stripos($stats_table, '<tr>', $offset);
@@ -617,9 +618,10 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $post_title = substr($stats_table, $first_title_offset, $title_length);
     $post_views = substr($stats_table, $first_views_offset, $views_length);
     $post_views = (int)$post_views;
-    echo '<li>' . $post_title . ' views: ' . $post_views . '</li>';
+    $posts_views[$post_title] = $post_views;
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
+    
 } 
-
+print_r($posts_views);
 ?>
 
