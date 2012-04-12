@@ -611,7 +611,7 @@ $offset = 0;
     $first_title_offset = stripos($stats_table, 'blank">', $initial_offset);
     $second_title_offset = stripos($stats_table, 'a>', $first_title_offset);
     $first_title_offset = $first_title_offset + 7;
-    $title_length = $second_title_offset - $first_titile_offset;
+    $title_length = $second_title_offset - $first_title_offset;
     $post_title = substr($stats_table, $first_title_offset, $title_length);
     echo '1st: ' . $first_title_offset;
     echo '2nd: ' . $second_title_offset;
