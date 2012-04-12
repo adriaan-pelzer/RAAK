@@ -112,7 +112,7 @@ $stats_table = '
     <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/2010/11/blogger-relations-shes-a-blogger-and-shes-looking-good/" target="_blank">Blogger relations: She&#8217;s a blogger and she&#8217;s looking good</a></td><td class="views">332</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=3121&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
-    <tr><td class="label"><a href="http://wewillraakyou.com/logo-project/logo-archive/" target="_blank">Logo Archive/a></td><td class="views">327</td>
+    <tr><td class="label"><a href="http://wewillraakyou.com/logo-project/logo-archive/" target="_blank">Logo Archive</a></td><td class="views">327</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=3314&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
     <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/our-products/" target="_blank">Our Products</a></td><td class="views">326</td>
