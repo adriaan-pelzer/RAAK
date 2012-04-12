@@ -577,7 +577,7 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
     
 }
-$all_posts = new WP_Query(array('posts_per_page' => -1));
+$all_posts = new WP_Query(array('posts_per_page' => -1, 'post_type' => 'post'));
 foreach(($all_posts->posts) as $cur_post) {
     $cur_post_title = $cur_post->post_title;
     $cur_post_id = $cur_post->ID;
