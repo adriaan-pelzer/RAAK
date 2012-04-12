@@ -603,7 +603,7 @@ $stats_table = '
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=4089&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
     </table>';
-$posts_amount = substr_count($stats_table, '<tr>');
+$posts_amount =  1; //substr_count($stats_table, '<tr>');
 $offset = 0;
 for($i; $i <= $posts_amount;$i++) {
     $initial_offset = strpos($stats_table, '<tr>', $offset);
