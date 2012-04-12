@@ -607,9 +607,11 @@ $posts_amount =  1; //substr_count($stats_table, '<tr>');
 $offset = 0;
 for($i = 0; $i <= $posts_amount;$i++) {
     $initial_offset = strpos($stats_table, '<tr>', $offset);
-    echo 'intial_offset' . $initial_offset;
+    echo 'intial_offset ' . $initial_offset;
     $first_title_offset = stripos($stats_table, 'blank">', $initial_offset);
+    echo 'first_title_offset ' . $first_title_offset;
     $second_title_offset = stripos($stats_table, '</a>', $first_title_offset);
+    echo 'second_title_offset ' . $second_title_offset;
     $post_title = substr($stats_table, ($first_title_offset + 7), ($second_title_offset - ($first_titile_offset + 7)));
     echo '<li>' . $post_title . '</li>';
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
