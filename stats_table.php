@@ -581,7 +581,7 @@ $all_posts = new WP_Query(array('posts_per_page' => -1));
 foreach(($all_posts->posts) as $cur_post) {
     if (in_array($cur_post->post_title, $posts_views)) {
         update_post_meta($cur_post->ID, 'postviews', $posts_views[$cur_post->post_title]);
-        echo '<li>' . $posts_views[$cur_post->post_title] . 'post views added to ' $cur_post->post_title . '</li>';
+        echo '<li>' . $posts_views[$cur_post->post_title] . 'post views added to ' . $cur_post->post_title . '</li>';
     }
 } 
 ?>
