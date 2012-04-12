@@ -578,6 +578,7 @@ for($i = 0; $i <= $posts_amount;$i++) {
     
 }
 print_r($posts_views);
+echo $posts_views['Klout is broken'];
 $all_posts = new WP_Query(array('posts_per_page' => -1));
 foreach(($all_posts->posts) as $cur_post) {
     $key = $cur_post->post_title;
