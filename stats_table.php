@@ -1,10 +1,5 @@
 <?php
-$stats_table = '
-   <table class="statsDay">
-    <tr><th>Title</th><th class="views">Views</th><th class="more"></th></tr>
-    <tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/" target="_blank">Home</a></td><td class="views">12,865</td>
-	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=4&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
-    </tr>';
+$stats_table = '<table class="statsDay"><tr><th>Title</th><th class="views">Views</th><th class="more"></th></tr><tr class="alternate"><td class="label"><a href="http://wewillraakyou.com/" target="_blank">Home</a></td><td class="views">12,865</td><td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=4&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td></tr>';
 $somrthing_else = '
     <tr><td class="label"><a href="http://wewillraakyou.com/2010/12/klout-is-broken/" target="_blank">Klout is broken</a></td><td class="views">7,451</td>
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=3429&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
