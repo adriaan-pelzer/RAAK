@@ -602,9 +602,14 @@ $stats_table = '
 	<td class="more"><a href="index.php?page=stats&amp;view=post&amp;post=4089&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.gif" alt="More stats" /></a></td>
 	</tr>
     </table>';
+ob_start();
+
 ?>
 <iframe src="http://wordpress.com/my-stats/?blog=14895691&view=postviews&summarize&numdays=-1"></iframe>
 <?php
+$stats_page = ob_get_contents();
+ob_end_clean;
+echo $stats_page;
 $posts_amount = substr_count($stats_table, '<tr>');
 $posts_views = array();
 $offset = 0;
