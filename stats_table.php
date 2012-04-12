@@ -616,7 +616,7 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $views_length = $second_views_offset - $first_views_offset;
     $post_title = substr($stats_table, $first_title_offset, $title_length);
     $post_views = substr($stats_table, $first_views_offset, $views_length);
-    $post_views = int($post_views)
+    $post_views = int($post_views);
     echo '<li>' . $post_title . ' views: ' . $post_views . '</li>';
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
 } 
