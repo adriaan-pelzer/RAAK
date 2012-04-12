@@ -610,12 +610,17 @@ ob_start();
 $stats_page = ob_get_contents();
 ob_end_clean;
 $table_start = stripos($stats_page, '<table');
+echo 'table start: ' . $table_start;
 $table_end = strripos($stats_page, '</table>');
 $table_end = $table_end + 8;
+echo 'table end: ' . $table_end;
 $stats_table = substr($stats_page, $table_start, $table_end);
+echo 'stats table: ' . $stats_table;
 $posts_amount = (substr_count($stats_table, '<tr>')) - 1;
+echo 'posts amount: ' . $post_amount;
 $posts_views = array();
 $offset = stripos($stats_table, '</tr>');
+echo 'offset: ' . $offset;
 for($i = 0; $i <= $posts_amount;$i++) {
     $initial_offset = stripos($stats_table, '<tr>', $offset);
     $first_title_offset = stripos($stats_table, 'blank">', $initial_offset);
