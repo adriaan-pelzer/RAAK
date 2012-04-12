@@ -605,14 +605,17 @@ $stats_table = '
 ob_start();
 
 ?>
-<iframe src="http://wordpress.com/my-stats/?blog=14895691&view=postviews&summarize&numdays=-1"></iframe>
+<iframe style="display:none;" src="http://wordpress.com/my-stats/?blog=14895691&view=postviews&summarize&numdays=-1"></iframe>
 <?php
 $stats_page = ob_get_contents();
 ob_end_clean;
-echo $stats_page;
-$posts_amount = substr_count($stats_table, '<tr>');
+$table_start = stripos($stats_page, '<table');
+$table_end = strripos($stats_page, '</table>');
+$table_end = $table_end + 8;
+$stats_table = substr($stats_page, $table_start, $table_end);
+$posts_amount = (substr_count($stats_table, '<tr>')) - 1;
 $posts_views = array();
-$offset = 0;
+$offset = stripos($stats_table, '</tr>');
 for($i = 0; $i <= $posts_amount;$i++) {
     $initial_offset = stripos($stats_table, '<tr>', $offset);
     $first_title_offset = stripos($stats_table, 'blank">', $initial_offset);
@@ -629,7 +632,7 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $posts_views[$post_title] = $post_views;
     $offset = stripos($stats_table, '</tr>', $second_title_offset);
     
-} 
-print_r($posts_views);
+}
+print_r($posts_view);
 ?>
 
