@@ -578,6 +578,6 @@ for($i = 0; $i <= $posts_amount;$i++) {
     
 }
 print_r($posts_views);
-$all_posts = new WP_Query(
+//$all_posts = new WP_Query(
 ?>
 
