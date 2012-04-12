@@ -581,6 +581,7 @@ $all_posts = new WP_Query(array('posts_per_page' => -1));
 foreach(($all_posts->posts) as $cur_post) {
     $cur_post_title = $cur_post->post_title;
     $cur_post_id = $cur_post->ID;
+    echo $posts_views[$cur_post_title];
     if(array_key_exists($cur_post_title, $posts_views)) {
         echo $posts_views[$cur_post_title];
     }
