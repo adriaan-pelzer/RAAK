@@ -585,6 +585,7 @@ foreach(($all_posts->posts) as $cur_post) {
         echo 'ping';
         foreach($posts_views as $key => $value) {
             if ($key == 'The RAAKonteur #79 - Does Klout measure social capital like Kickstarter attracts monetary capital?') {
+                echo 'pong';
 
                 update_post_meta($cur_post_id, 'postviews', $value);
                 echo '<li>' . $value . 'post view(s) added to ' . $key . '</li>';
