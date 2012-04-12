@@ -582,6 +582,7 @@ foreach(($all_posts->posts) as $cur_post) {
     $cur_post_title = $cur_post->post_title;
     $cur_post_id = $cur_post->ID;
     if ($cur_post_title == 'The RAAKonteur #79 - Does Klout measure social capital like Kickstarter attracts monetary capital?') {
+        echo 'ping';
         foreach($posts_views as $key => $value) {
             if ($key == 'The RAAKonteur #79 - Does Klout measure social capital like Kickstarter attracts monetary capital?') {
 
