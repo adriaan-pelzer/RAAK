@@ -549,15 +549,7 @@ $stats_table = '
 						<tr class="alternate"><td class="label"><span class="post-7-link"><a href="http://wewillraakyou.com/-0001/11/30/" target="_blank">What we&nbsp;do</a></span></td>
 			<td class="more"><a href="/my-stats/?view=post&amp;post=7&amp;blog=14895691"><img src="http://dashboard.wordpress.com/i/stats-icon.png?m=1352284099g" alt="More stats" /></a></td><td class="views">1</td></tr>
 					</table>';
-
-/*$stats_page = file_get_contents('http://wordpress.com/my-stats/?blog=14895691&view=postviews&summarize&numdays=-1');
-echo $stats_page;
-$table_start = stripos($stats_page, '<table');
-echo 'table start: ' . $table_start;
-$table_end = strripos($stats_page, '</table>');
-$table_end = $table_end + 8;
-echo 'table end: ' . $table_end;
-$stats_table = substr($stats_page, $table_start, $table_end);*/
+$offset = stripos($stats_table, '</tr>');
 $posts_amount = (substr_count($stats_table, '<tr>')) - 1;
 $posts_views = array();
 for($i = 0; $i <= $posts_amount;$i++) {
@@ -566,16 +558,16 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $second_id_offset = stripos($stats_table, '-link', $first_id_offset);
     $first_id_offset = $first_id_offset + 5;
     $id_length = $second_id_offset - $first_id_offset;
+    $post_id = substr($stats_table, $first_id_offset, $id_length);
     $first_views_offset = stripos($stats_table, 'views">', $second_id_offset);
     $first_views_offset = $first_views_offset + 7;
     $second_views_offset = stripos($stats_table, '</td>', $first_views_offset);
     $views_length = $second_views_offset - $first_views_offset;
-    $post_id = substr($stats_table, $first_id_offset, $id_length);
     $post_views = substr($stats_table, $first_views_offset, $views_length);
     $post_views = (int)$post_views;
     $posts_views[$i]['post_id'] = $post_id;
     $posts_views[$i]['post_views'] = $post_views;
-    $offset = stripos($stats_table, '</tr>', $second_id_offset);
+    $offset = stripos = $second_views_offset;
     
 }
 print_r ($posts_views);
@@ -589,16 +581,6 @@ foreach(($all_posts->posts) as $cur_post) {
             update_post_meta($cur_post_id, 'postviews', $single_array[post_views]);
             echo '<li>' . $single_array[post_views] . 'post view(s) added to ' . $cur_post_title . '</li>';
         }
-    }*/
-    /*foreach($posts_views as $key => $value) {
-        if ($key == $cur_post_title) {
-            update_post_meta($cur_post_id, 'postviews', $value);
-            echo '<li>' . $value . 'post view(s) added to ' . $key . '</li>';
-        }
-    }*/
-    /*if (in_array($key, $posts_views)) {
-        update_post_meta($the_id, 'postviews', $posts_views[$key]);
-        echo '<li>' . $posts_views[$key] . 'post views added to ' . $key . '</li>';
     }*/
 } 
 ?>
