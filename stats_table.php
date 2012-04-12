@@ -582,6 +582,7 @@ foreach(($all_posts->posts) as $cur_post) {
     $cur_post_title = $cur_post->post_title;
     $cur_post_id = $cur_post->ID;
     foreach($posts_views as $key => $value) {
+        echo '<li>' . $value . ' ' . $key . ' ' . $cur_post_title . ' ' . $cur_post_id . '</li>';
         if ($key == $cur_post_title) {
             update_post_meta($cur_post_id, 'postviews', $value);
             echo '<li>' . $value . 'post view(s) added to ' . $key . '</li>';
