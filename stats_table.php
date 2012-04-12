@@ -578,14 +578,13 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $offset = stripos($stats_table, '</tr>', $second_id_offset);
     
 }
-print_r ($posts_views);
 
 $all_posts = new WP_Query(array('posts_per_page' => -1));
 foreach(($all_posts->posts) as $cur_post) {
     $cur_post_title = $cur_post->post_title;
 
     $cur_post_id = $cur_post->ID;
-    if(array_search($cur_post_title, $posts_views)) {
+    if(array_search($cur_post_id, $posts_views)) {
         echo $cur_post_title;
     }
     /*foreach($posts_views as $key => $value) {
