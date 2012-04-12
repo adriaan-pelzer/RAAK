@@ -564,7 +564,7 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $initial_offset = stripos($stats_table, '<tr>', $offset);
     $first_id_offset = stripos($stats_table, 'post-', $initial_offset);
     $second_id_offset = stripos($stats_table, '-link', $first_title_offset);
-    $first_id_offset = $first_title_offset + 5;
+    $first_id_offset = $first_id_offset + 5;
     $id_length = $second_id_offset - $first_id_offset;
     $first_views_offset = stripos($stats_table, 'views">', $second_id_offset);
     $first_views_offset = $first_views_offset + 7;
