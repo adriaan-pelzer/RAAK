@@ -566,7 +566,7 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $second_id_offset = stripos($stats_table, '-link', $first_title_offset);
     $first_id_offset = $first_title_offset + 5;
     $id_length = $second_id_offset - $first_id_offset;
-    $first_views_offset = stripos($stats_table, 'views">', $second_title_offset);
+    $first_views_offset = stripos($stats_table, 'views">', $second_id_offset);
     $first_views_offset = $first_views_offset + 7;
     $second_views_offset = stripos($stats_table, '</td>', $first_views_offset);
     $views_length = $second_views_offset - $first_views_offset;
@@ -578,7 +578,7 @@ for($i = 0; $i <= $posts_amount;$i++) {
     $offset = stripos($stats_table, '</tr>', $second_id_offset);
     
 }
-print_r $posts_views;
+print_r ($posts_views);
 
 $all_posts = new WP_Query(array('posts_per_page' => -1));
 foreach(($all_posts->posts) as $cur_post) {
