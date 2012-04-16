@@ -1095,7 +1095,7 @@ function contact_bluebox() {
     </header>
     <hr />
     <div id="bluebox_map">
-        <a target="_blank" href="http://maps.google.com/maps?hl=en&amp;q=<?php echo get_post_meta ($contact_page->ID, 'latitude', true); ?>,<?php echo get_post_meta ($contact_page->ID, 'longitude', true); ?>&amp;ie=UTF8&amp;z=14"><img alt="map to RAAK" id="gimg" src="<?php echo get_bloginfo ('template_directory'); ?>/images/map.png" /></a>
+        <a target="_blank" href="http://maps.google.com/maps?hl=en&amp;q=<?php echo get_post_meta ($contact_page->ID, 'latitude', true); ?>,<?php echo get_post_meta ($contact_page->ID, 'longitude', true); ?>&amp;ie=UTF8&amp;z=14"><img alt="map to RAAK" id="gimg" src="<?php echo get_bloginfo ('template_directory'); ?>/images/map2.png" /></a>
     </div>
 </div>
 <?php
