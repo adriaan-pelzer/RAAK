@@ -1095,7 +1095,7 @@ function contact_bluebox() {
     </header>
     <hr />
     <div id="bluebox_map">
-        <a target="_blank" href="<?php echo get_post_meta ($contact_page->ID, 'googlemaplink', true); ?>"><img alt="map to RAAK" id="gimg" src="<?php echo get_bloginfo ('template_directory'); ?>/images/map.png" /></a>
+        <a target="_blank" href="<?php echo get_post_meta ($contact_page->ID, 'googlemaplink', true); ?>"><img alt="map to RAAK" id="gimg" src="<?php echo get_bloginfo ('template_directory'); ?>/images/map2.png" /></a>
     </div>
 </div>
 <?php
@@ -1620,7 +1620,7 @@ endif;
                         <span><em>Posted by <a rel="author" href="<?php echo get_permalink($author_page->ID);  ?>"><?php echo $author_full_name; ?></a></em></span>
                     </p>
                     <div class="whitebox_primary_flwbtn">
-                        <a href="https://twitter.com/<?php echo get_post_meta($author_page->ID, 'twitterhandle', TRUE); ?>" class="twitter-follow-button" data-show-count="true">Follow @<?php echo get_post_meta($athour_page->ID, 'twitterhandle', TRUE); ?></a>
+                        <a href="https://twitter.com/<?php echo get_post_meta($author_page->ID, 'twitterhandle', TRUE); ?>" class="twitter-follow-button" data-show-count="true">Follow @<?php echo get_post_meta($author_page->ID, 'twitterhandle', TRUE); ?></a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div>
                 </article><!-- .whitebox_primary_post -->
@@ -1655,6 +1655,9 @@ function related_blog_posts() {
         array_push ($r_posts, get_post_by_name ($page_name));
     }
 ?>
+    <div style="display: none;"><?php print_r($r_posts); ?></div>
+<?php
+?>
 <div class="tab_container bluebox-primary other_posts">
     <div class="blue_tab tab tab108 rounded-corners">
         <header>
@@ -1664,22 +1667,31 @@ function related_blog_posts() {
     <div class="bluebox_primary blog_single_bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
         <div class="bluebox_content_top">
 <?php
+    $post_number = 0;
     if (sizeof ($r_posts) > 0) {
+        while(!$r_posts[$post_number]) {
+            $post_number++;
+        }
 ?>
             <div class="bluebox_content_quarter bluebox_content_top_left">
-                <a href="<?php echo get_permalink($r_posts[0]->ID); ?>"><?php echo get_image_or_video ($r_posts[0]->post_content, 120, 85); ?></a>
-                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[0]->ID); ?>"><?php echo $r_posts[0]->post_title; ?></a></h4>
+                <a href="<?php echo get_permalink($r_posts[$post_number]->ID); ?>"><?php echo get_image_or_video ($r_posts[$post_number]->post_content, 120, 85); ?></a>
+                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[$post_number]->ID); ?>"><?php echo $r_posts[$post_number]->post_title; ?></a></h4>
             </div>
 <?php
+        $post_number++;
     }
     if (sizeof ($r_posts) > 1) {
+        while(!$r_posts[$post_number]) {
+            $post_number++;
+        }
 ?>
 
             <div class="bluebox_content_quarter bluebox_content_top_right">
-                <a href="<?php echo get_permalink($r_posts[1]->ID); ?>"><?php echo get_image_or_video ($r_posts[1]->post_content, 120, 85); ?></a>
-                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[1]->ID); ?>"><?php echo $r_posts[1]->post_title; ?></a></h4>
+                <a href="<?php echo get_permalink($r_posts[$post_number]->ID); ?>"><?php echo get_image_or_video ($r_posts[$post_number]->post_content, 120, 85); ?></a>
+                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[$post_number]->ID); ?>"><?php echo $r_posts[$post_number]->post_title; ?></a></h4>
             </div>
 <?php
+        $post_number++;
     }
 ?>
         </div><!-- bluebox_content_top -->
@@ -1694,18 +1706,25 @@ function related_blog_posts() {
         <div class="bluebox_content_bottom">
 <?php
     if (sizeof($r_posts) > 2) {
+        while(!$r_posts[$post_number]) {
+            $post_number++;
+        }
 ?>
             <div class="bluebox_content_quarter bluebox_content_bottom_left">
-                <a href="<?php echo get_permalink($r_posts[2]->ID); ?>"><?php echo get_image_or_video ($r_posts[2]->post_content, 120, 85); ?></a>
-                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[2]->ID); ?>"><?php echo $r_posts[2]->post_title; ?></a></h4>
+                <a href="<?php echo get_permalink($r_posts[$post_number]->ID); ?>"><?php echo get_image_or_video ($r_posts[$post_number]->post_content, 120, 85); ?></a>
+                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[$post_number]->ID); ?>"><?php echo $r_posts[$post_number]->post_title; ?></a></h4>
             </div>
 <?php
+        $post_number++;
     }
     if(sizeof($r_posts) > 3) {
+        while(!$r_posts[$post_number]) {
+            $post_number++;
+        }
 ?>
             <div class="bluebox_content_quarter bluebox_content_bottom_right">
-                <a href="<?php echo get_permalink($r_posts[3]->ID); ?>"><?php echo get_image_or_video ($r_posts[3]->post_content, 120, 85); ?></a>
-                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[3]->ID); ?>"><?php echo $r_posts[3]->post_title; ?></a></h4>
+                <a href="<?php echo get_permalink($r_posts[$post_number]->ID); ?>"><?php echo get_image_or_video ($r_posts[$post_number]->post_content, 120, 85); ?></a>
+                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[$post_number]->ID); ?>"><?php echo $r_posts[$post_number]->post_title; ?></a></h4>
             </div>
 <?php
     }

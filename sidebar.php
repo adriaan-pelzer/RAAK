@@ -160,7 +160,7 @@ $current_page = 'about';
 if(is_page_template('about.php')) {
     $current_uri = $_SERVER['REQUEST_URI'];
     $uri_array = explode('/', $current_uri);
-    $founder_names = array('adriaan-pelzer', 'gerrie-smits', 'wessel-van-rensburg');
+    $founder_names = array('adriaan-pelzer'/*, 'gerrie-smits'*/, 'wessel-van-rensburg');
     foreach($founder_names as $founder_name) {
         if (in_array($founder_name, $uri_array)) {
             $current_page = $founder_name;
@@ -210,6 +210,7 @@ if(is_page_template('about.php')) {
     $founders = new WP_Query(array('meta_key' => 'twitterhandle', 'post_type' => 'page'));
     foreach($founders->posts as $founder) {
         $twitter_handle = get_post_meta($founder->ID, 'twitterhandle', TRUE);
+        if ($twitter_handle != 'gerriesmits') {
    ?>
     <aside class="twitter<?php echo($current_page == $founder->post_name) ? ' current' : ''; ?>" id="twitter_<?php echo $founder->post_name; ?>">
         <div class="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/<?php echo $twitter_handle; ?>"><?php echo $twitter_handle; ?></a></h2></div>
@@ -249,6 +250,10 @@ if(is_page_template('about.php')) {
         </div>
     </aside><!-- twitter -->
 <?php
+        } else {
+?>
+<?php
+        }
     }
     wp_reset_query();
 }
