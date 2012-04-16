@@ -1654,7 +1654,9 @@ function related_blog_posts() {
         }
         array_push ($r_posts, get_post_by_name ($page_name));
     }
-    echo '<div style="display:none;">' . $related_posts . '</div>';
+?>
+    <div style="display: none;"><?php print_r($r_posts); ?></div>
+<?php
 ?>
 <div class="tab_container bluebox-primary other_posts">
     <div class="blue_tab tab tab108 rounded-corners">
