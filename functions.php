@@ -1667,57 +1667,6 @@ function related_blog_posts() {
     <div class="bluebox_primary blog_single_bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
         <div class="bluebox_content_top">
 <?php
-    if (sizeof ($r_posts) > 0) {
-?>
-            <div class="bluebox_content_quarter bluebox_content_top_left">
-                <a href="<?php echo get_permalink($r_posts[0]->ID); ?>"><?php echo get_image_or_video ($r_posts[0]->post_content, 120, 85); ?></a>
-                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[0]->ID); ?>"><?php echo $r_posts[0]->post_title; ?></a></h4>
-            </div>
-<?php
-    }
-    if (sizeof ($r_posts) > 1) {
-?>
-
-            <div class="bluebox_content_quarter bluebox_content_top_right">
-                <a href="<?php echo get_permalink($r_posts[1]->ID); ?>"><?php echo get_image_or_video ($r_posts[1]->post_content, 120, 85); ?></a>
-                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[1]->ID); ?>"><?php echo $r_posts[1]->post_title; ?></a></h4>
-            </div>
-<?php
-    }
-?>
-        </div><!-- bluebox_content_top -->
-<?php
-    if (sizeof($r_posts) > 2) {
-?>
-        <hr id="left_related_posts_hr" class="solid blue_hr related_posts_hr" />
-        <hr id="right_related_posts_hr" class="solid blue_hr related_posts_hr" />
-<?php
-    }
-?>
-        <div class="bluebox_content_bottom">
-<?php
-    if (sizeof($r_posts) > 2) {
-?>
-            <div class="bluebox_content_quarter bluebox_content_bottom_left">
-                <a href="<?php echo get_permalink($r_posts[2]->ID); ?>"><?php echo get_image_or_video ($r_posts[2]->post_content, 120, 85); ?></a>
-                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[2]->ID); ?>"><?php echo $r_posts[2]->post_title; ?></a></h4>
-            </div>
-<?php
-    }
-    if(sizeof($r_posts) > 3) {
-?>
-            <div class="bluebox_content_quarter bluebox_content_bottom_right">
-                <a href="<?php echo get_permalink($r_posts[3]->ID); ?>"><?php echo get_image_or_video ($r_posts[3]->post_content, 120, 85); ?></a>
-                <h4><a class="grey_text" href="<?php echo get_permalink($r_posts[3]->ID); ?>"><?php echo $r_posts[3]->post_title; ?></a></h4>
-            </div>
-<?php
-    }
-?>
-        </div><!-- bluebox_content_bottom -->
-    </div><!-- bluebox_primary -->
-    <div style="display:none;" class="bluebox_primary blog_single_bluebox_primary blog_bluebox_primary bluebox box rounded-corners">
-        <div class="bluebox_content_top">
-<?php
     $post_number = 0;
     if (sizeof ($r_posts) > 0) {
         while(!$r_posts[$post_number]) {
