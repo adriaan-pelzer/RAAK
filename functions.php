@@ -2177,4 +2177,4 @@ function get_image_or_video ($post_content, $width=NULL, $height=NULL) {
         return null;
     }
 }
-?>
+/**/?>
