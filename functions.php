@@ -1642,6 +1642,7 @@ function related_blog_posts() {
     ob_start();
     wp_related_posts();
     $related_posts = ob_get_contents();
+    echo '<div style="display:none;">' . $related_posts . '</div>';
     ob_end_clean();
     $r_posts = array();
     foreach (explode ("</a></li><li><a href=\"", $related_posts) as $post_carcass) {
