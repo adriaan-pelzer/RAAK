@@ -1642,7 +1642,6 @@ function related_blog_posts() {
     ob_start();
     wp_related_posts();
     $related_posts = ob_get_contents();
-    echo '<div style="display:none;">' . $related_posts . '</div>';
     ob_end_clean();
     $r_posts = array();
     foreach (explode ("</a></li><li><a href=\"", $related_posts) as $post_carcass) {
@@ -1655,6 +1654,7 @@ function related_blog_posts() {
         }
         array_push ($r_posts, get_post_by_name ($page_name));
     }
+    echo '<div style="display:none;">' . $related_posts . '</div>';
 ?>
 <div class="tab_container bluebox-primary other_posts">
     <div class="blue_tab tab tab108 rounded-corners">
