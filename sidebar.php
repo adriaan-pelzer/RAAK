@@ -210,7 +210,6 @@ if(is_page_template('about.php')) {
     $founders = new WP_Query(array('meta_key' => 'twitterhandle', 'post_type' => 'page'));
     foreach($founders->posts as $founder) {
         $twitter_handle = get_post_meta($founder->ID, 'twitterhandle', TRUE);
-        ?><div style="display:none;"><?php echo $twitter_handle; ?></div><?php
         if ($twitter_handle != 'gerriesmits') {
    ?>
     <aside class="twitter<?php echo($current_page == $founder->post_name) ? ' current' : ''; ?>" id="twitter_<?php echo $founder->post_name; ?>">
