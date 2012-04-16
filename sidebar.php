@@ -210,6 +210,7 @@ if(is_page_template('about.php')) {
     $founders = new WP_Query(array('meta_key' => 'twitterhandle', 'post_type' => 'page'));
     foreach($founders->posts as $founder) {
         $twitter_handle = get_post_meta($founder->ID, 'twitterhandle', TRUE);
+        ?><div style="display:none;"><?php echo $twitter_handle; ?></div><?php
         if ($twitter_handle != 'gerriesmits') {
    ?>
     <aside class="twitter<?php echo($current_page == $founder->post_name) ? ' current' : ''; ?>" id="twitter_<?php echo $founder->post_name; ?>">
@@ -252,43 +253,6 @@ if(is_page_template('about.php')) {
 <?php
         } else {
 ?>
-    <aside class="twitter<?php echo ((!isset($current_page)) || ($current_page == 'about')) ? ' current' : ''; ?>" id="twitter_raakonteurs">
-                <div class="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
-                <div class="twitter_body rounded-corners_bottom">
-                    <div class="twitter_follow">
-                        <a href="https://twitter.com/RAAKonteurs" class="twitter-follow-button" data-show-count="false">Follow @RAAKonteurs</a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                    </div>
-                    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-                    <script>
-                    new TWTR.Widget({
-                      version: 2,
-                      type: 'profile',
-                      rpp: 4,
-                      interval: 30000,
-                      width: 181,
-                      height: 300,
-                      theme: {
-                        shell: {
-                          background: '#bebebe',
-                          color: '#ffffff'
-                        },
-                        tweets: {
-                          background: '#bebebe',
-                          color: '#ffffff',
-                          links: '#b9e5fb'
-                        }
-                      },
-                      features: {
-                        scrollbar: false,
-                        loop: false,
-                        live: false,
-                        behavior: 'all'
-                      }
-                    }).render().setUser('RAAKonteurs').start();
-                    </script>
-                </div>
-            </aside><!-- twitter -->
 <?php
         }
     }
