@@ -1404,7 +1404,7 @@ h3.expanded_letter {
 
 .ngg-gallery-thumbnail-box {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 7px;
 }
 
 a.page-numbers, .ngg-navigation span {
@@ -1413,7 +1413,7 @@ a.page-numbers, .ngg-navigation span {
 
 .ngg-galleryoverview {
     margin-top: 8px!important;
-    margin-left: -5px;
+    margin-left: -7px;
     width: 328px!important;
 }
 
@@ -1451,6 +1451,10 @@ a.page-numbers, .ngg-navigation span {
 .homepage_link {
     display: block;
     margin: 4px 0;
+}
+
+.single_project_bluebox_hr {
+    width: 315px;
 }
 
 /************** CONTACT ****************/

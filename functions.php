@@ -1408,7 +1408,7 @@ function single_project_bluebox() {
 <?php
     }
 ?>
-    <hr class="solid blue_hr" />
+    <hr class="solid blue_hr single_project_bluebox_hr" />
     <div class="bluebox_thumbpic">
 <?php
     ob_start();
