@@ -1402,7 +1402,8 @@ function single_project_bluebox() {
     <div class="bluebox_bigpic">
     </div>
 <?php
-    if (($homepage = get_post_meta ($post->ID, 'homepage', true)) != '') {
+    echo '<div style="display:none;">' . get_post_meta($post->ID, 'homepage', true) . '</div>';
+    if (($homepage = get_post_meta($post->ID, 'homepage', true)) != '') {
 ?>
         <a class="bigger_arial_no_caps" href="<?php echo $homepage; ?>">Website home page</a>
 <?php
