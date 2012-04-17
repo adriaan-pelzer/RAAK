@@ -908,7 +908,7 @@ function logo_project_archive() {
         <h3 id="expanded_letter_' . strtolower($letter) . '" class="expanded_letter smaller_arial_caps">Letter ' . $letter .' </h3>
         <hr class="solid blue_hr" />
         <div class="bluebox_big_content_row">';
-        $all_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' => strtolower($letter)));
+        $all_letters = new WP_Query(array('post_type' => 'raak_logo_letter', 'meta_value' => strtolower($letter), 'post_status' => 'publish'));
         $total_rows = (ceil($all_letters->post_count / 6));
         $row_counter = 0;
         while($all_letters->have_posts()) {
