@@ -1329,7 +1329,7 @@ function single_project_whitebox() {
 <?php 
             if ($page_title == 'Our Work') {
                 $our_work = get_page_by_title('Our Work');
-                $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
+                $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc', 'posts_per_page' => -1));
 
 ?>
         <nav class="box_nav smaller_arial_caps">
