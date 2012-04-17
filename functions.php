@@ -1839,18 +1839,6 @@ function blog_archive_post_list($atts) {
         <a class="whitebox_primary_footer_left"  href="<?php echo get_permalink($blog_archive_page->ID); ?>">All blog posts</a>
         <div class="whitebox_primary_footer_right">
 <?php
-    if($page_num > 1) {
-?>
-            <a class="active" href="?page=<?php echo ($page_num - 1); ?>"><span class="arrow">&#9668;</span>Previous</a>
-<?php
-    } else {
-?>
-            <a href=""><span class="arrow">&#9668;</span>Previous</a>
-<?php
-    }
-?>
-<span class="seperator">|</span>
-<?php
     if($page_num < $archive_posts->max_num_pages) {
 ?>
 
@@ -1858,7 +1846,19 @@ function blog_archive_post_list($atts) {
 <?php
     } else {
 ?>
-            <a href="">Next<span class="arrow">&#9658;</span></a>
+            <a href=""><span class="arrow">&#9658;</span>Previous</a>
+<?php
+    }
+?>
+<span class="seperator">|</span>
+<?php
+    if($page_num > 1) {
+?>
+            <a class="active" href="?page=<?php echo ($page_num - 1); ?>"><span class="arrow">&#9668;</span>Previous</a>
+<?php
+    } else {
+?>
+            <a href="">Next<span class="arrow">&#9668;</span></a>
 <?php
     }
 ?>
