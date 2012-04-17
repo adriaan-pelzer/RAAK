@@ -1991,10 +1991,8 @@ add_shortcode('default', 'default_page_function');
 
 function twitter_users_page() {
     require_once 'Browser.php';
-
     function is_ie678(){
         $browser = new Browser ();
-
         switch ($browser->getBrowser()) {
         case Browser::BROWSER_IE:
             if ($browser->getVersion() >= 9) {
@@ -2013,7 +2011,6 @@ function twitter_users_page() {
             return FALSE;
         }
     }
-
     class TwitterState {
         const START = 0;
         const INIT = 1;
@@ -2021,32 +2018,24 @@ function twitter_users_page() {
         const RESP = 3;
         const ERR = 4;
     }
-
     $twitter_status = TwitterState::START;
-
     if (is_ie678()) {
         $enable_see_yourself = false;
     } else {
         $enable_see_yourself = true;
     }
-
     if ($enable_see_yourself && !empty($_REQUEST['screen_name'])) {
         require_once (dirname(__FILE__)."/tmhOAuth.php");
-
         $twitter_status = TwitterState::INIT;
-
         $twitter = new tmhOAuth(array(
             'consumer_key' => 'j3ipoBsLRTURQKsClTw1Q',
             'consumer_secret' => 'c4zwwzhuTJNBWfRzEHKwHY8ESowH2Zb52e3SwjL3kM',
             'user_token' => '169026281-8AagsypAkgOpKPyM5SA8MFTeosfYQ2lMyAEfIfDi',
             'user_secret' => 'oPZgstaEPsQzul2q3d0CVOs096vXd30lMonG7w9c'
         ));
-
         if ($twitter) {
             $twitter_status = TwitterState::AUTH;
-
             $code = $twitter->request('GET', $twitter->url('1/users/lookup'), array('screen_name' => $_REQUEST['screen_name']));
-
             if ($code == 200) {
                 $user = json_decode($twitter->response['response']);
                 $twitter_status = TwitterState::RESP;
@@ -2062,7 +2051,6 @@ function twitter_users_page() {
                 } else if ($code = 406) {
                     $error = "Twitter returned a \"not acceptable\" error. My God, they're weird ...";
                 }
-
                 $twitter_status = TwitterState::ERR;
             }
         } else {
@@ -2071,13 +2059,10 @@ function twitter_users_page() {
         }
     }
     echo "<!--".is_ie678()."-->\n";
-
     if (have_posts()) {
         while (have_posts()) {
             the_post();
-
             $maxid = 0;
-
             if ($msql = mysql_connect("localhost", "twats_twats", "tW4Ts!")) {
                 if (mysql_select_db("twats_twats", $msql)) {
                     if ($resource = mysql_query("SELECT MAX(`id`) FROM `users`;", $msql)) {
@@ -2085,19 +2070,16 @@ function twitter_users_page() {
                             $maxid = $row[0];
                         }
                     }
-
                     if ($resource = mysql_query("SELECT `time` FROM `users` WHERE `id`=".$maxid.";", $msql)) {
                         if ($row = mysql_fetch_array($resource)) {
                             $maxtime = $row[0];
                         }
                     }
-
                     if ($resource = mysql_query("SELECT MIN(`id`) FROM `users`;", $msql)) {
                         if ($row = mysql_fetch_array($resource)) {
                             $minid = $row[0];
                         }
                     }
-
                     if ($resource = mysql_query("SELECT `time` FROM `users` WHERE `id`=".$minid.";", $msql)) {
                         if ($row = mysql_fetch_array($resource)) {
                             $mintime = $row[0];
@@ -2105,12 +2087,10 @@ function twitter_users_page() {
                     }
                 }
             }
-
             ob_start();
             the_content();
             $content = ob_get_contents();
             ob_end_clean();
-
             if ($enable_see_yourself) {
                 $html_to_replace = '<div id="see_yourself_form">';
                 $html_to_replace .= empty($error)?'':'<p class="error">'.$error.'</p>';
@@ -2124,7 +2104,6 @@ function twitter_users_page() {
                 $html_to_replace .= '</form>';
                 $html_to_replace .= '</p>';
                 $html_to_replace .= '</div>';
-
                 $content = str_replace("[see_yourself]", $html_to_replace, $content);
             } else {
                 if (is_ie678()) {
@@ -2133,14 +2112,14 @@ function twitter_users_page() {
                     $content = str_replace("[see_yourself]", "", $content);
                 }
             }
-    ?>
-                       <div class="whitebox_big whitebox box rounded-corners big_box">
-                    <header>
-                        <h2 class="din-schrift blue_20"><?php echo $maxid?"Twitter now has ".$maxid." registered users.":"Twitter Users"; ?></h2>
-                    </header>
-                    <hr />
-                        <?php echo $content; ?>
-                </div><!-- #whitebox_big -->
+?>
+            <div class="whitebox_big whitebox box rounded-corners big_box">
+                <header>
+                    <h2 class="din-schrift blue_20"><?php echo $maxid?"Twitter now has ".$maxid." registered users.":"Twitter Users"; ?></h2>
+                </header>
+                <hr />
+<?php echo $content; ?>
+            </div><!-- #whitebox_big -->
 <?php
             $text_size = 15;
             $width = 1700;
@@ -2149,7 +2128,6 @@ function twitter_users_page() {
             $marginbottom = 50;
             $marginleft = 150;
             $marginright = 50;
-
             $nwidth = 740;
             $nheight = 522;
             $wratio = $nwidth/$width;
@@ -2159,94 +2137,93 @@ function twitter_users_page() {
             $nmarginbottom = $marginbottom * $hratio;
             $nmarginleft = $marginleft * $wratio;
             $nmarginright = $marginright * $wratio;
-
             if ($twitter_status == TwitterState::RESP) {
                 $usery = $nheight - $nmarginbottom - (($user[0]->id - $minid)/($maxid - $minid))*($nheight - $nmarginbottom - $nmargintop);
                 $userx = $nmarginleft + ((strtotime($user[0]->created_at) - $mintime)/($maxtime - $mintime))*($nwidth - $nmarginright - $nmarginleft);
 ?>
-        <script>
-        var addUser = function(ctx, color, x, y, txtcolor, screen_name) {
-            ctx.fillStyle = color;
-            ctx.fillRect(x - 2, y - 2, 4, 4);
-            ctx.fillStyle = txtcolor;
-            ctx.textBaseline = 'bottom';
-            ctx.textAlign = 'right';
-            ctx.fillText(screen_name, x, y);
-        };
+                <script>
+                var addUser = function(ctx, color, x, y, txtcolor, screen_name) {
+                    ctx.fillStyle = color;
+                    ctx.fillRect(x - 2, y - 2, 4, 4);
+                    ctx.fillStyle = txtcolor;
+                    ctx.textBaseline = 'bottom';
+                    ctx.textAlign = 'right';
+                    ctx.fillText(screen_name, x, y);
+                };
 
-        $(document).ready(function() {
-            var graph = new Image();
-            var imgttl = $('.whitebox_big img').attr('title');
-            var imgalt = $('.whitebox_big img').attr('alt');
-            var imgsrc = $('.whitebox_big img').attr('src');
-            var ctx;
+                $(document).ready(function() {
+                    var graph = new Image();
+                    var imgttl = $('.whitebox_big img').attr('title');
+                    var imgalt = $('.whitebox_big img').attr('alt');
+                    var imgsrc = $('.whitebox_big img').attr('src');
+                    var ctx;
 
-            graph.src = imgsrc;
+                    graph.src = imgsrc;
 
-            $(graph).load(function () {
-                if ($('#graph').length > 0) {
-                    ctx = document.getElementById('graph').getContext('2d');
-                    ctx.clearRect(0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
-                } else {
-                    $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
-                $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
-                    ctx = document.getElementById('graph').getContext('2d');
-                }
+                    $(graph).load(function () {
+                        if ($('#graph').length > 0) {
+                            ctx = document.getElementById('graph').getContext('2d');
+                            ctx.clearRect(0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
+                        } else {
+                            $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+                        $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+                            ctx = document.getElementById('graph').getContext('2d');
+                        }
 
-                ctx.drawImage(graph, 0, 0, <?php echo $width; ?>, <?php echo $height; ?>, 0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
+                        ctx.drawImage(graph, 0, 0, <?php echo $width; ?>, <?php echo $height; ?>, 0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
 
-                addUser(ctx, "#0b0", <?php echo $userx; ?>, <?php echo $usery; ?>, '#000', '<?php echo $_REQUEST['screen_name']; ?>');
-                addUser(ctx, "#00b", 122.4, 500.2, '#777', 'scobleizer');
-                addUser(ctx, "#00b", 275.2, 486.6, '#777', 'ladygaga');
-                addUser(ctx, "#00b", 339.9, 484.1, '#777', 'dailymirror');
-                addUser(ctx, "#00b", 531.2, 346.0, '#777', 'lord_sugar');
-                addUser(ctx, "#00b", 701.9, 67.76, '#777', 'rupertmurdoch');
-            });
-        });
-        </script>
+                        addUser(ctx, "#0b0", <?php echo $userx; ?>, <?php echo $usery; ?>, '#000', '<?php echo $_REQUEST['screen_name']; ?>');
+                        addUser(ctx, "#00b", 122.4, 500.2, '#777', 'scobleizer');
+                        addUser(ctx, "#00b", 275.2, 486.6, '#777', 'ladygaga');
+                        addUser(ctx, "#00b", 339.9, 484.1, '#777', 'dailymirror');
+                        addUser(ctx, "#00b", 531.2, 346.0, '#777', 'lord_sugar');
+                        addUser(ctx, "#00b", 701.9, 67.76, '#777', 'rupertmurdoch');
+                    });
+                });
+                </script>
 <?php
             } else {
 ?>
-        <script>
-        var addUser = function(ctx, color, x, y, txtcolor, screen_name) {
-            ctx.fillStyle = color;
-            ctx.fillRect(x - 2, y - 2, 4, 4);
-            ctx.fillStyle = txtcolor;
-            ctx.textBaseline = 'bottom';
-            ctx.textAlign = 'right';
-            ctx.fillText(screen_name, x, y);
-        };
+                <script>
+                var addUser = function(ctx, color, x, y, txtcolor, screen_name) {
+                    ctx.fillStyle = color;
+                    ctx.fillRect(x - 2, y - 2, 4, 4);
+                    ctx.fillStyle = txtcolor;
+                    ctx.textBaseline = 'bottom';
+                    ctx.textAlign = 'right';
+                    ctx.fillText(screen_name, x, y);
+                };
 
-        $(document).ready(function() {
-            var graph = new Image();
-            var imgttl = $('.whitebox_big img').attr('title');
-            var imgalt = $('.whitebox_big img').attr('alt');
-            var imgsrc = $('.whitebox_big img').attr('src');
-            var ctx;
-            var graphsize = $('#graph').length;
+                $(document).ready(function() {
+                    var graph = new Image();
+                    var imgttl = $('.whitebox_big img').attr('title');
+                    var imgalt = $('.whitebox_big img').attr('alt');
+                    var imgsrc = $('.whitebox_big img').attr('src');
+                    var ctx;
+                    var graphsize = $('#graph').length;
 
-            graph.src = imgsrc;
+                    graph.src = imgsrc;
 
-            $(graph).load(function () {
-                if (graphsize > 0) {
-                    ctx = document.getElementById('graph').getContext('2d');
-                    ctx.clearRect(0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
-                } else {
-                    $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
-                $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
-                    ctx = document.getElementById('graph').getContext('2d');
-                }
+                    $(graph).load(function () {
+                        if (graphsize > 0) {
+                            ctx = document.getElementById('graph').getContext('2d');
+                            ctx.clearRect(0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
+                        } else {
+                            $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+                        $('.whitebox_big img').replaceWith('<canvas width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" id="graph"><img alt="' + imgalt + '" src="' + imgsrc + '" title="' + imgttl + '" width="<?php echo $nwidth; ?>" height="<?php echo $nheight; ?>" /></canvas>');
+                            ctx = document.getElementById('graph').getContext('2d');
+                        }
 
-                ctx.drawImage(graph, 0, 0, <?php echo $width; ?>, <?php echo $height; ?>, 0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
+                        ctx.drawImage(graph, 0, 0, <?php echo $width; ?>, <?php echo $height; ?>, 0, 0, <?php echo $nwidth; ?>, <?php echo $nheight; ?>);
 
-                addUser(ctx, "#00b", 122.4, 500.2, '#777', 'scobleizer');
-                addUser(ctx, "#00b", 275.2, 486.6, '#777', 'ladygaga');
-                addUser(ctx, "#00b", 339.9, 484.1, '#777', 'dailymirror');
-                addUser(ctx, "#00b", 531.2, 346.0, '#777', 'lord_sugar');
-                addUser(ctx, "#00b", 701.9, 67.76, '#777', 'rupertmurdoch');
-            });
-        });
-        </script>
+                        addUser(ctx, "#00b", 122.4, 500.2, '#777', 'scobleizer');
+                        addUser(ctx, "#00b", 275.2, 486.6, '#777', 'ladygaga');
+                        addUser(ctx, "#00b", 339.9, 484.1, '#777', 'dailymirror');
+                        addUser(ctx, "#00b", 531.2, 346.0, '#777', 'lord_sugar');
+                        addUser(ctx, "#00b", 701.9, 67.76, '#777', 'rupertmurdoch');
+                    });
+                });
+                </script>
 <?php
             }
         }
