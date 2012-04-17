@@ -2,7 +2,7 @@
 /*
 Template Name: Twitter Registrations
 */
-php get_header() ?>
+get_header() ?>
 	<div class="container rounded-corners">
 		<div class="content">
 <?php do_shortcode('[twit_use]'); ?>
