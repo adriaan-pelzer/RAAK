@@ -1448,6 +1448,11 @@ a.page-numbers, .ngg-navigation span {
     padding-top: 5px!important;
 }
 
+.homepage_link {
+    display: block;
+    margin: 4px 0;
+}
+
 /************** CONTACT ****************/
 
 p.top_margin_22px {
