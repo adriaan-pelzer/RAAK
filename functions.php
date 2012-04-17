@@ -1842,11 +1842,11 @@ function blog_archive_post_list($atts) {
     if($page_num < $archive_posts->max_num_pages) {
 ?>
 
-            <a class="active" href="?page=<?php echo ($page_num + 1); ?>">Next<span class="arrow">&#9658;</span></a>
+            <a class="active" href="?page=<?php echo ($page_num + 1); ?>"><span class="arrow">&#9668;</span>Previous</a>
 <?php
     } else {
 ?>
-            <a href=""><span class="arrow">&#9658;</span>Previous</a>
+            <a href=""><span class="arrow">&#9668;</span>Previous</a>
 <?php
     }
 ?>
@@ -1854,11 +1854,11 @@ function blog_archive_post_list($atts) {
 <?php
     if($page_num > 1) {
 ?>
-            <a class="active" href="?page=<?php echo ($page_num - 1); ?>"><span class="arrow">&#9668;</span>Previous</a>
+            <a class="active" href="?page=<?php echo ($page_num - 1); ?>">Next<span class="arrow">&#9658;</span></a>
 <?php
     } else {
 ?>
-            <a href="">Next<span class="arrow">&#9668;</span></a>
+            <a href="">Next<span class="arrow">&#9658;</span></a>
 <?php
     }
 ?>
