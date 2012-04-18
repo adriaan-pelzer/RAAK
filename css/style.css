@@ -1875,6 +1875,10 @@ h2.subTitle {
     margin: 2px;
 }
 
+#see_yourself_form form {
+    margin-top: 8px;
+}
+
 
 /************** Sidebar ***************/
 
