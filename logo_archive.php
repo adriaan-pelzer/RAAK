@@ -10,7 +10,6 @@ Template Name:Logo Archive
 <?php do_shortcode('[logo_archive]'); ?>
 		</div><!-- content -->
 <?php get_sidebar() ?>
-<?php get_footer() ?>
 <script>
     $('#bluebox_big_nav a').click(function() {
         if((!$(this).hasClass('active')) && ($(this).attr('id') !== 'bluebox_big_nav_back')) {
@@ -23,3 +22,4 @@ Template Name:Logo Archive
         }
     });
 </script>
+<?php get_footer() ?>
