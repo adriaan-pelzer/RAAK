@@ -1341,9 +1341,11 @@ function single_project_whitebox() {
             <a href="<?php echo get_permalink($our_work->ID); ?>?category=<?php echo $work_category->category_nicename; ?>" id="whitebox_big_nav_<?php echo $work_category->category_nicename; ?>" class="whitebox_big_nav_item"><?php echo $work_category->name; ?></a>
 <?php
                 }
-            }
 ?>
         </nav>
+<?php
+            }
+?>
     </header>
         <hr />
 </div><!-- whitebox_big -->
@@ -2236,7 +2238,7 @@ add_shortcode('twit_use', 'twitter_users_page');
 
 /*************************** from http://goldenapplesdesign.com/2010/07/03/front-end-file-uploads-in-wordpress/ *******************/
 
-function insert_attachment($file_handler,$post_id,$setthumb='false') {
+/*function insert_attachment($file_handler,$post_id,$setthumb='false') {
     // check to make sure its a successful upload
     if ($_FILES[$file_handler]['error'] !== UPLOAD_ERR_OK) __return_false();
  
@@ -2248,7 +2250,7 @@ function insert_attachment($file_handler,$post_id,$setthumb='false') {
  
     if ($setthumb) update_post_meta($post_id,'_thumbnail_id',$attach_id);
     return $attach_id;
-}
+}*/
 
 /***************************** copy/paste from net to track post views as meta **************************/
 

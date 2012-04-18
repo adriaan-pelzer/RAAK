@@ -11,7 +11,6 @@ Template Name Posts: Single Project
 <?php do_shortcode('[sp_bb]'); ?>
 		</div><!-- #content -->
 <?php get_sidebar() ?>
-<?php get_footer() ?>
 <script>
     $('.bluebox_bigpic').html('<img width="315" height="203" title="' + $('.ngg-gallery-thumbnail a img').first().attr('title') + '" alt="' + $('.ngg-gallery-thumbnail a img').first().attr('alt') + '" src="' + $('.ngg-gallery-thumbnail a').first().attr('href') + '">');
     $('.ngg-gallery-thumbnail a').click(function(event){
@@ -21,3 +20,4 @@ Template Name Posts: Single Project
         $('.bluebox_bigpic').html('<img width="315" height="203" title="' + $(this).find('img').attr('title') + '" alt="' + $(this).find('img').attr('alt') + '" src="' + $(this).attr('href') + '">');
     });
 </script>
+<?php get_footer() ?>
