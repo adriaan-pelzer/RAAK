@@ -9,6 +9,7 @@ if (have_comments()) {
         if ($comment->comment_approved == 1) {
             $timestamp = strtotime($comment->comment_date);
             if ($comment->comment_type != ('pingback' || 'trackback')) {
+                remove_filter( 'comment_text', 'wpautop' );
                 $comment_content = apply_filters('comment_text', $comment->comment_content);
                 $comments_html .= '
                 <li id="comment-' . $comment->comment_ID . '" class="' . get_comment_type() . '">
