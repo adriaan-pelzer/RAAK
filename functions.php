@@ -2099,7 +2099,7 @@ function twitter_users_page() {
                 $html_to_replace .= 'Do you want to see where you are on the graph below? Type your twitter name in the box below and submit.';
                 $html_to_replace .= '</p>';
                 $html_to_replace .= '<p>';
-                $html_to_replace .= '<form action="" method="get">';
+                $html_to_replace .= '<form action="' . get_page_link() . '" method="get">';
                 $html_to_replace .= '<input type="text" name="screen_name" style="margin-right: 20px;" />';
                 $html_to_replace .= '<input type="submit" name="submit_screen_name" value="See Yourself on the Graph" />';
                 $html_to_replace .= '</form>';
