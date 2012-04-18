@@ -17,7 +17,7 @@ if (have_comments()) {
                     <div class="comment-meta">
                         <div class="comment-meta-author">Posted by <a href="' . $comment->comment_author_url . '" rel="external nofollow" class="url">' . $comment->comment_author . '</a>
                         </div>
-                        <div class="comment-meta-date">' . date('F j, Y \a\t g:i a', $timestamp) . ' <span class="separator>|</span> <a href="#comment-' . $comment->comment_ID . '" title="Permalink to this comment">Permalink</a>
+                        <div class="comment-meta-date">' . date('F j, Y \a\t g:i a', $timestamp) . ' <span class="separator">|</span> <a href="#comment-' . $comment->comment_ID . '" title="Permalink to this comment">Permalink</a>
                         </div>
                     </div><p>' . $comment_content . '</p>
                     </li>';
