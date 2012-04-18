@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html<?php echo (is_single()) ? ' xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Blog"' : ''; ?>>
+<html<?php echo (is_page_template(single.php)) ? ' xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Blog"' : ''; ?>>
 <head>
     <title><?php wp_title( '-', true, 'right' ); echo wp_specialchars( get_bloginfo('name'), 1 ) ?><?php if ($wptitle == "") { echo " - "; bloginfo('description'); } ?></title>
     <meta name="google-site-verification" content="59Ab_0-HL7eVdNQ4CqiLOeiQisQgb2Vwg8046N__ng0" />
@@ -74,40 +74,4 @@ foreach($different_letters as $different_letter) {
 //include 'stats_table.php';
 wp_nav_menu(array('container'=>'nav', 'container_class'=>'menu', 'before'=>'<div class="topmenu_top"></div><div class="topmenu_body">', 'after'=>'</div>')); 
 ?> 
-            <!--nav class="menu">
-                <ul>
-                    <li class="first-page-item">
-                        <div class="first_topmenu_top"></div>
-                        <div class="first_topmenu_body"></div>
-                    </li>
-                    <li class="page_item page-item-4 current_page_item">
-                        <div class="topmenu_top"></div>
-                        <div class="topmenu_body"><a href="<?php bloginfo('url');?>" title="Home">Home</a></div>
-                    </li>
-                    <li class="page_item page-item-1668">
-                        <div class="topmenu_top"></div>
-                        <div class="topmenu_body"><a href="<?php echo get_page_link(5209); ?>" title="About" rel="nofollow">About</a></div>
-                    </li>
-                    <li class="page_item page-item-2720">
-                        <div class="topmenu_top"></div>
-                        <div class="topmenu_body"><a href="<?php echo get_page_link(5212); ?>" title="Logo Project">Logo Project</a></div>
-                    </li>
-                    <li class="page_item page-item-5169">
-                        <div class="topmenu_top"></div>
-                        <div class="topmenu_body"><a href="<?php echo get_page_link(5219); ?>" title="Our Products">Our Products</a></div>
-                    </li>
-                    <li class="page_item page-item-36">
-                        <div class="topmenu_top"></div>
-                        <div class="topmenu_body"><a href="<?php echo get_page_link(5223); ?>" title="Our work" rel="nofollow">Our work</a></div>
-                    </li>
-                    <li class="page_item page-item-211">
-                        <div class="topmenu_top"></div>
-                        <div class="topmenu_body"><a href="<?php echo get_page_link(5233); ?>" title="Blog">Blog</a></div>
-                    </li>
-                    <li class="page_item page-item-341">
-                        <div class="topmenu_top"></div>
-                        <div class="topmenu_body"><a href="<?php echo get_page_link(5229); ?>" title="Contact" rel="nofollow">Contact</a></div>
-                    </li>
-                </ul>
-            </nav-->
     </header><!--  header -->
