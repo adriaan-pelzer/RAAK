@@ -2099,7 +2099,7 @@ function twitter_users_page() {
                 $html_to_replace .= 'Do you want to see where you are on the graph below? Type your twitter name in the box below and submit.';
                 $html_to_replace .= '</p>';
                 $html_to_replace .= '<p>';
-                $html_to_replace .= '<form action="" method="get">';
+                $html_to_replace .= '<form action="twitter-registrations.php" method="get">';
                 $html_to_replace .= '<input type="text" name="screen_name" style="margin-right: 20px;" />';
                 $html_to_replace .= '<input type="submit" name="submit_screen_name" value="See Yourself on the Graph" />';
                 $html_to_replace .= '</form>';
@@ -2114,7 +2114,6 @@ function twitter_users_page() {
                 }
             }
 ?>
-    <div style="display:none;"><?php echo get_page_link(); ?></div>
             <div class="whitebox_big whitebox box rounded-corners big_box">
                 <header>
                     <h2 class="din-schrift blue_20"><?php echo $maxid?"Twitter now has ".$maxid." registered users.":"Twitter Users"; ?></h2>
