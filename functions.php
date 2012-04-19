@@ -2413,7 +2413,6 @@ function get_image_or_video ($post_content, $width=NULL, $height=NULL) {
     $gallerymatch = preg_match ("/\[nggallery id=(\d+)\]/", $post_content, $gallerytext, PREG_OFFSET_CAPTURE);
     $videomatch = preg_match ("/<object.*<\/object>/", $post_content, $videotext, PREG_OFFSET_CAPTURE);
     $imagematch = preg_match ("/<img[^>]+>/", $post_content, $imagetext, PREG_OFFSET_CAPTURE);
-    echo '<div style="display:none;"' . $imagematch . '</div>';
 
     if ($gallerymatch && $videomatch && $imagematch) {
         if (($gallerytext[0][1] < $videotext[0][1]) && ($gallerytext[0][1] < $imagetext[0][1])) {
