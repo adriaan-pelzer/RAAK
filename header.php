@@ -2,7 +2,7 @@
 <html<?php echo ((is_single()) && ('post' == get_post_type())) ? ' xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Blog"' : ''; ?>>
 <head>
     <title><?php wp_title( '-', true, 'right' ); echo wp_specialchars( get_bloginfo('name'), 1 ) ?><?php if ($wptitle == "") { echo " - "; bloginfo('description'); } ?></title>
-    <meta name="google-site-verification" content="59Ab_0-HL7eVdNQ4CqiLOeiQisQgb2Vwg8046N__ng0" />
+    <meta name="google-site-verification" content="gopVig1vD9ASr_RMvJGPk5w2Rk9dQ16tJY4v7-5E5dc" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="description" content="RAAK is a social & digital media plug-in. We put you in touch with people, be it your customers, your suppliers, or employees." />
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
@@ -18,6 +18,19 @@
 <?php wp_head(); ?>
     <script src="<?php bloginfo ("template_url"); ?>/js/script.js"></script>
 <!--script type="text/javascript" src="/min/f=wp-content/themes/RAAK/js/script.js"></script-->
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-350036-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
 <div class="wrapper hfeed">
