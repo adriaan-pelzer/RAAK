@@ -12,7 +12,6 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-<?php wp_head(); ?>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>
     var is_logo_page = '<?php echo (is_page_template('logo_project.php') ? 'yes' : 'no'); ?>';
@@ -41,6 +40,7 @@ foreach($different_letters as $different_letter) {
     }
 }
 ?>
+<?php wp_head(); ?>
     <script src="<?php bloginfo ("template_url"); ?>/js/script.js"></script>
 <!--script type="text/javascript" src="/min/f=wp-content/themes/RAAK/js/script.js"></script-->
 </head>
