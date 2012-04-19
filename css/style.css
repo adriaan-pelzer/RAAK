@@ -251,7 +251,13 @@ strong, .bold {
 
 .multiple_tabs .tab {
     display: inline-block;
+    margin-left: 4px;
 }
+
+.multiple_tabs .tab:first-child {
+    margin-left: 0;
+}
+
 
 .tab74 {
     width: 74px;
@@ -1068,14 +1074,6 @@ hr.lightblue_hr {
 .logo_project_whitebox_secondary ul a {
     text-decoration: underline;
     color: #666666;
-}
-
-.multiple_tabs .tab {
-    margin-left: 1px;
-}
-
-.multiple_tabs .tab:first-child {
-    margin-left: 0;
 }
 
 #whitebox_secondary_upload, #whitebox_secondary_finish {
