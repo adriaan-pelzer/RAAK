@@ -3,7 +3,8 @@
 <head>
     <title><?php wp_title( '-', true, 'right' ); echo wp_specialchars( get_bloginfo('name'), 1 ) ?><?php if ($wptitle == "") { echo " - "; bloginfo('description'); } ?></title>
     <meta name="google-site-verification" content="59Ab_0-HL7eVdNQ4CqiLOeiQisQgb2Vwg8046N__ng0" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="RAAK is a social & digital media plug-in. We put you in touch with people, be it your customers, your suppliers, or employees." />
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
 <!-- link type="text/css" rel="stylesheet" href="/min/f=wp-content/themes/RAAK/css/style.css" /-->
     <!--[if lt IE 8]>
