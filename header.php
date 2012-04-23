@@ -4,7 +4,7 @@
     <title><?php wp_title( '-', true, 'right' ); echo wp_specialchars( get_bloginfo('name'), 1 ) ?><?php if ($wptitle == "") { echo " - "; bloginfo('description'); } ?></title>
     <meta name="google-site-verification" content="gopVig1vD9ASr_RMvJGPk5w2Rk9dQ16tJY4v7-5E5dc" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="<?php echo (get_post_meta(get_the_id(), 'pagedescrition', true) != '') ? (get_post_meta(get_the_id(), 'pagedescrition', true)) : 'RAAK is a social & digital media plug-in. We put you in touch with people, be it your customers, your suppliers, or employees.' ?>" />
+    <meta name="description" content="<?php echo (get_post_meta(get_the_id(), 'pagedescription', true) != '') ? (get_post_meta(get_the_id(), 'pagedescription', true)) : 'RAAK is a social & digital media plug-in. We put you in touch with people, be it your customers, your suppliers, or employees.' ?>" />
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
 <!-- link type="text/css" rel="stylesheet" href="/min/f=wp-content/themes/RAAK/css/style.css" /-->
     <!--[if lt IE 8]>
