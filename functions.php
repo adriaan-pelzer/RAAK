@@ -41,6 +41,7 @@ function page_description() {
     } else {
         $description = 'RAAK is a social & digital media plug-in. We put you in touch with people, be it your customers, your suppliers, or employees.';
     }
+    $description .= ' ' . get_the_title();
     return $description;
 }
 
