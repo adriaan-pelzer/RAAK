@@ -33,6 +33,17 @@ add_theme_support('post-thumbnails');
 set_post_thumbnail_size(35, 42);
 add_image_size('logo-archive', 70, 82);
 
+
+function page_description() {
+    $description = '';
+    if(get_post_meta(get_the_id(), 'pagedescription', true) != '') {
+        $description = get_post_meta(get_the_id(), 'pagedescription', true);
+    } else {
+        $description = 'RAAK is a social & digital media plug-in. We put you in touch with people, be it your customers, your suppliers, or employees.';
+    }
+    return $description;
+}
+
 /*****************************************************/
 
 
