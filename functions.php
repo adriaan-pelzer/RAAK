@@ -1656,7 +1656,7 @@ if ($post->post_title == "Twitter will break through the 500 million user mark o
                 echo str_replace ("layout=standard", "layout=button_count", $likecode);
             else:
                 echo "<!-- opengraphprotocoltools is not activated -->";
-    endif;*/
+endif;
 ?>
                             <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:send font=""></fb:send>
                             <!--fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like-->
