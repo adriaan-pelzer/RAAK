@@ -4,6 +4,7 @@
     </script>
 <?php
 $different_letters = array('r', 'a', 'k');
+$save_post = $post;
 foreach($different_letters as $different_letter) {
     $array_name = strtoupper($different_letter);
 ?>
@@ -24,4 +25,5 @@ foreach($different_letters as $different_letter) {
         $i++;
     }
 }
+$post = $save_post;
 ?>
