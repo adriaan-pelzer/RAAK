@@ -1588,6 +1588,18 @@ function single_blog_post() {
                             }
                         (document,"script","twitter-wjs");
                         </script>
+                                    <div id="fb-root"></div>
+                        <script>
+                        (function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                        (document, 'script', 'facebook-jssdk'));
+                        </script>
 <?php
 /**
  * Include this code on your theme for single blog posts (for example, in your single.php file)
@@ -1603,18 +1615,9 @@ function single_blog_post() {
                 echo "<!-- opengraphprotocoltools is not activated -->";
 endif;
 ?>
-<div style="display:none"><?php echo get_permalink($post->ID); ?></div>
-                       <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!--div class="fb-send" data-href="<?php echo get_permalink($post->ID); ?>"></div-->
-<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:send font=""></fb:send>
-                        <!--fb:send></fb:send-->
+                            <!--fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like-->
+                        <!-- div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div -->
+                        <fb:send></fb:send>
                         <!-- Place this tag where you want the +1 button to render -->
                         <g:plusone size="medium"></g:plusone>
 
