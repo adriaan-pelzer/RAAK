@@ -68,7 +68,7 @@ function insert_fb_in_head() {
     echo '<meta property="og:site_name" content="' . get_bloginfo('name') . '"/>';
 
     if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
-        echo '<meta property="og:image" content="' . $src . '"/>';
+        //echo '<meta property="og:image" content="' . $src . '"/>';
     } else {
         $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
         echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
