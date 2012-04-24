@@ -14,7 +14,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<!--?php include 'letter_array_create.php'; ?-->
+<?php include 'letter_array_create.php'; ?>
 <?php wp_head(); ?>
     <script src="<?php bloginfo ("template_url"); ?>/js/script.js"></script>
 <!--script type="text/javascript" src="/min/f=wp-content/themes/RAAK/js/script.js"></script-->
