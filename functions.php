@@ -53,7 +53,7 @@ add_filter('language_attributes', 'add_opengraph_doctype');
 //Lets add Open Graph Meta Info
 function insert_fb_in_head() {
     global $post;
-    if ( !is_singular()) //if it is not a post or a page
+    if ($post->post_type != 'post') //if it is not a post or a page
         return;
 
     $image_tag = get_image ($post->post_content, 75, 50);
@@ -64,22 +64,22 @@ function insert_fb_in_head() {
     //$src_end = strpos($image_tag, '"', $src_strt);
     //$src_length = $src_end - $src_strt;
     //$src = substr($image_tag, $src_strt, $src_length);
-    echo '<meta name="og:title" content="' . get_the_title() . '"/>';
-    echo '<meta name="og:type" content="article"/>';
-    echo '<meta name="og:url" content="' . get_permalink() . '"/>';
-    echo '<meta name="og:site_name" content="' . get_bloginfo('name') . '"/>';
+    echo '<meta property="og:title" content="' . get_the_title() . '"/>';
+    echo '<meta property="og:type" content="article"/>';
+    echo '<meta property="og:url" content="' . get_permalink() . '"/>';
+    echo '<meta property="og:site_name" content="' . get_bloginfo('name') . '"/>';
 
     if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
         if (!empty($src)) {
-            echo '<meta name="og:image" content="' . $src . '"/>';
+            echo '<meta property="og:image" content="' . $src . '"/>';
         }
     } else {
         $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
-        echo '<meta name="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
+        echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
     }
 
-    echo '<meta name="fb:admins" content="544207149"/>';
-    echo '<meta name="fb:app_id" content="101262553270969" />';
+    echo '<meta property="fb:admins" content="544207149"/>';
+    echo '<meta property="fb:app_id" content="101262553270969" />';
     echo "\n";
 }
 
