@@ -1667,7 +1667,7 @@ if ($post->post_title == "Twitter will break through the 500 million user mark o
     endif;*/
 ?>
                             <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:send font=""></fb:send>
-                            <!--fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like-->
+                            <fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like>
                         <!-- div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div -->
                         <!--fb:send></fb:send-->
                         <!-- Place this tag where you want the +1 button to render -->
