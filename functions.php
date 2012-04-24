@@ -55,7 +55,7 @@ function insert_fb_in_head() {
     $image_tag = get_image_or_video ($post->post_content, 50, 33);
     $src_strt = strpos($image_tag, 'src="');
     $src_strt = $src_strt = 5;
-    $src_end = strpos($image_tag, '"', $src_strt);
+    //$src_end = strpos($image_tag, '"', $src_strt);
     $src_length = $src_end - $src_strt;
     $src = substr($image_tag, $src_strt, $src_length);
     if ( !is_singular()) //if it is not a post or a page
