@@ -52,9 +52,7 @@ function add_opengraph_doctype( $output ) {
 add_filter('language_attributes', 'add_opengraph_doctype');
 //Lets add Open Graph Meta Info
 function insert_fb_in_head() {
-    echo "<!--";
-    echo $post->post_content;
-    echo "-->\n";
+    global $post;
     $image_tag = get_image ($post->post_content, 50, 33);
     $src_strt = strpos($image_tag, 'src="');
     $src_strt = $src_strt = 5;
