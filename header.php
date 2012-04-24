@@ -5,8 +5,8 @@
     <meta name="google-site-verification" content="gopVig1vD9ASr_RMvJGPk5w2Rk9dQ16tJY4v7-5E5dc" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <?php echo !((is_single()) && ('post' == get_post_type())) ? '<meta name="description" content="' . page_description() . '" />' : ''; ?>
+<?php wp_head(); ?>
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style.css" />
-<!-- link type="text/css" rel="stylesheet" href="/min/f=wp-content/themes/RAAK/css/style.css" /-->
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="<?php bloginfo ("template_url"); ?>/css/style_ie7.css" />
     <![endif]-->
@@ -15,10 +15,8 @@
     <![endif]-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <?php include 'letter_array_create.php'; ?>
-<?php wp_head(); ?>
     <script src="<?php bloginfo ("template_url"); ?>/js/script.js"></script>
-<!--script type="text/javascript" src="/min/f=wp-content/themes/RAAK/js/script.js"></script-->
-	<script type="text/javascript">
+    <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-350036-10']);
@@ -30,7 +28,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
+    </script>
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
 <div class="wrapper hfeed">
