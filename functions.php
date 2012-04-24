@@ -1593,7 +1593,7 @@ function single_blog_post() {
  * Include this code on your theme for single blog posts (for example, in your single.php file)
  * or on your blogs main page to include a Facebook "Like" iframe
  */
-            if (function_exists('the_opengraphprotocoltools_like_code')):
+  /*          if (function_exists('the_opengraphprotocoltools_like_code')):
                 ob_start();
                 the_opengraphprotocoltools_like_code();
                 $likecode = ob_get_contents();
@@ -1602,9 +1602,8 @@ function single_blog_post() {
             else:
                 echo "<!-- opengraphprotocoltools is not activated -->";
 endif;
+*/
 ?>
-                            <!--fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like-->
-                        <!-- div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div -->
 <div style="display:none"><?php echo get_permalink($post->ID); ?></div>
                        <div id="fb-root"></div>
 <script>(function(d, s, id) {
