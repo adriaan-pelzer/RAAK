@@ -1576,7 +1576,7 @@ function single_blog_post() {
                         <div class="whitebox_primary_post_attr_item comments_count"><img class="commenticon" src="<?php echo get_bloginfo('template_url'); ?>/images/whitebox_primary_body_attr_comment_icon.png"><?php comments_number('0 comments', '1 comment', '% comments'); ?></div>
                     </div><!-- .whitebox_primary_post_attr -->
                     <div class="whitebox_primary_share">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-via="<?php echo $twittername; ?>" data-related="RAAKonteurs" data-text="<?php the_title(); ?> &#9733; RAAK">Tweet</a>
+                        <!--a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-via="<?php echo $twittername; ?>" data-related="RAAKonteurs" data-text="<?php the_title(); ?> &#9733; RAAK">Tweet</a>
                         <script>
                             !function(d,s,id){
                                 var js,fjs=d.getElementsByTagName(s)[0];
@@ -1587,7 +1587,7 @@ function single_blog_post() {
                                 }
                             }
                         (document,"script","twitter-wjs");
-                        </script>
+                        </script-->
                                     <div id="fb-root"></div>
                         <script>
                         (function(d, s, id) {
