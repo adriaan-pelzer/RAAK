@@ -1613,7 +1613,8 @@ endif;
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <!--div class="fb-send" data-href="<?php echo get_permalink($post->ID); ?>"></div-->
-                        <fb:send></fb:send>
+<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:send font=""></fb:send>
+                        <!--fb:send></fb:send-->
                         <!-- Place this tag where you want the +1 button to render -->
                         <g:plusone size="medium"></g:plusone>
 
