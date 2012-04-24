@@ -56,7 +56,7 @@ function insert_fb_in_head() {
     if ( !is_singular()) //if it is not a post or a page
         return;
 
-    $image_tag = get_image ($post->post_content, 50, 33);
+    $image_tag = get_image ($post->post_content, 75, 50);
     preg_match('/src="([^"]+)"/', $image_tag, $srcs);
     $src = $srcs[1];
     //$src_strt = strpos($image_tag, 'src="');
