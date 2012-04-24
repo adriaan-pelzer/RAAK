@@ -1587,7 +1587,7 @@ function single_blog_post() {
                                 }
                             }
                         (document,"script","twitter-wjs");
-                        </script-->
+                        </script>
                                     <div id="fb-root"></div>
                         <script>
                         (function(d, s, id) {
@@ -1599,8 +1599,17 @@ function single_blog_post() {
                             fjs.parentNode.insertBefore(js, fjs);
                         }
                         (document, 'script', 'facebook-jssdk'));
-                        </script>
+                        </script-->
 <?php
+if ($post->post_title == "Twitter will break through the 500 million user mark on Wednesday") {
+?>
+                            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo $twittername; ?>" data-related="RAAKonteurs" data-text="Twitter through 500 mil ceiling on Wednesday &#9733; RAAK">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<?php
+} else {
+?>
+                            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo $twittername; ?>" data-related="RAAKonteurs" data-text="<?php the_title(); ?> &#9733; RAAK">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<?php
+}
 /**
  * Include this code on your theme for single blog posts (for example, in your single.php file)
  * or on your blogs main page to include a Facebook "Like" iframe
@@ -1615,9 +1624,10 @@ function single_blog_post() {
                 echo "<!-- opengraphprotocoltools is not activated -->";
 endif;
 ?>
+                            <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:send font=""></fb:send>
                             <!--fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like-->
                         <!-- div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div -->
-                        <fb:send></fb:send>
+                        <!--fb:send></fb:send-->
                         <!-- Place this tag where you want the +1 button to render -->
                         <g:plusone size="medium"></g:plusone>
 
