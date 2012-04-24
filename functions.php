@@ -1614,7 +1614,8 @@ endif;
                             <!--fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like-->
                         <!-- div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div -->
 <div style="display:none"><?php echo get_permalink($post->ID); ?></div>
-                        <fb:send></fb:send>
+<div class="fb-send" data-href="<?php echo get_permalink($post->ID); ?>"></div>
+                        <!--fb:send></fb:send-->
                         <!-- Place this tag where you want the +1 button to render -->
                         <g:plusone size="medium"></g:plusone>
 
