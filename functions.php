@@ -61,7 +61,6 @@ function insert_fb_in_head() {
     if ( !is_singular()) //if it is not a post or a page
         return;
         echo '<meta property="fb:admins" content="544207149"/>';
-<!-- meta property="og:image" content="<?php echo get_image_or_video ($post->post_content, 50, 33); ?>" / -->
     
         echo 'meta property="fb:app_id" content="101262553270969" />';
         echo '<meta property="og:title" content="' . get_the_title() . '"/>';
@@ -1658,7 +1657,7 @@ if ($post->post_title == "Twitter will break through the 500 million user mark o
                 echo str_replace ("layout=standard", "layout=button_count", $likecode);
             else:
                 echo "<!-- opengraphprotocoltools is not activated -->";
-    endif;*/
+endif;
 ?>
                             <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:send font=""></fb:send>
                             <!--fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like-->
