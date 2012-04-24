@@ -6,7 +6,7 @@
 $different_letters = array('r', 'a', 'k');
 $save_post = $post;
 ?>
-    <div style="display:none;"><?php print_r $post; ?></div>
+    <div style="display:none;"><?php print_r ($post); ?></div>
 <?php
 foreach($different_letters as $different_letter) {
     $array_name = strtoupper($different_letter);
@@ -30,6 +30,6 @@ foreach($different_letters as $different_letter) {
 }
 $post = $save_post;
 ?>
-    <div style="display:none;"><?php print_r $post; ?></div>
+    <div style="display:none;"><?php print_r ($post); ?></div>
 <?php
 ?>
