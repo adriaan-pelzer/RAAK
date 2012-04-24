@@ -14,7 +14,7 @@ foreach($different_letters as $different_letter) {
     while($each_letter->have_posts()) {
         $each_letter->the_post();
 ?>
-        letters['<?php echo $array_name; ?>'].push('<?php echo get_the_post_thumbnail(get_the_ID()); ?>');
+    letters['<?php echo $array_name; ?>'].push('<?php echo get_the_post_thumbnail(get_the_ID()); ?>');
 <?php
         $i++;
     }
