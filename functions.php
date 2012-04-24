@@ -53,22 +53,26 @@ add_filter('language_attributes', 'add_opengraph_doctype');
 //Lets add Open Graph Meta Info
 function insert_fb_in_head() {
     global $post;
-    $image_tag = get_image ($post->post_content, 50, 33);
-    $src_strt = strpos($image_tag, 'src="');
-    $src_strt = $src_strt = 5;
-    //$src_end = strpos($image_tag, '"', $src_strt);
-    $src_length = $src_end - $src_strt;
-    $src = substr($image_tag, $src_strt, $src_length);
     if ( !is_singular()) //if it is not a post or a page
         return;
 
+    $image_tag = get_image ($post->post_content, 50, 33);
+    preg_match('/src="([^"]+)"/', $image_tag, $srcs);
+    $src = $srcs[1];
+    //$src_strt = strpos($image_tag, 'src="');
+    //$src_strt = $src_strt = 5;
+    //$src_end = strpos($image_tag, '"', $src_strt);
+    //$src_length = $src_end - $src_strt;
+    //$src = substr($image_tag, $src_strt, $src_length);
     echo '<meta property="og:title" content="' . get_the_title() . '"/>';
     echo '<meta property="og:type" content="article"/>';
     echo '<meta property="og:url" content="' . get_permalink() . '"/>';
     echo '<meta property="og:site_name" content="' . get_bloginfo('name') . '"/>';
 
     if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
-        echo '<meta property="og:image" content="' . $src . '"/>';
+        if (!empty($src)) {
+            echo '<meta property="og:image" content="' . $src . '"/>';
+        }
     } else {
         $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
         echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
