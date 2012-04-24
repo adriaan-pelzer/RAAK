@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html<?php echo ((is_single()) && ('post' == get_post_type())) ? <?php language_attributes() ?> : ''; ?>>
+<html<?php echo ((is_single()) && ('post' == get_post_type())) ? language_attributes() : ''; ?>>
 <head>
     <title><?php wp_title( '-', true, 'right' ); echo wp_specialchars( get_bloginfo('name'), 1 ) ?><?php if ($wptitle == "") { echo " - "; bloginfo('description'); } ?></title>
     <meta name="google-site-verification" content="gopVig1vD9ASr_RMvJGPk5w2Rk9dQ16tJY4v7-5E5dc" />
