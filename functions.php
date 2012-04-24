@@ -56,7 +56,7 @@ function insert_fb_in_head() {
     if ( !is_singular()) //if it is not a post or a page
         return;
 
-    $image_tag = get_image ($post->post_content, 50, 33);
+    $image_tag = get_image ($post->post_content, 75, 50);
     preg_match('/src="([^"]+)"/', $image_tag, $srcs);
     $src = $srcs[1];
     //$src_strt = strpos($image_tag, 'src="');
@@ -1666,9 +1666,9 @@ if ($post->post_title == "Twitter will break through the 500 million user mark o
                 echo "<!-- opengraphprotocoltools is not activated -->";
     endif;*/
 ?>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
                             <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:send font=""></fb:send>
                             <!--fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like-->
-                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
                         <!--fb:send></fb:send-->
                         <!-- Place this tag where you want the +1 button to render -->
                         <g:plusone size="medium"></g:plusone>
