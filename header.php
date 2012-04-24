@@ -31,7 +31,7 @@
   })();
 
 </script>
-<!-- meta property="og:image" content="<?php echo get_image_or_video ($post->post_content, 50, 33); ?>" / -->
+<meta property="og:image" content="http://wewillraakyou.com/wp-content/uploads/2012/04/klout-social-capital.png" />
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
 <div class="wrapper hfeed">
