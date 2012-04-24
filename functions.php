@@ -63,7 +63,7 @@ function insert_fb_in_head() {
     echo '<meta property="og:type" content="article" />';
     echo '<meta property="og:url" content="' . get_permalink() . '" />';
     echo '<meta property="og:site_name" content="' . get_bloginfo('name') . '" />';
-    echo '<meta property="og:description" content="' . the_excerpt() . '" />';
+    echo '<meta property="og:description" content="' . get_the_excerpt() . '" />';
 
     if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
         if (!empty($src)) {
