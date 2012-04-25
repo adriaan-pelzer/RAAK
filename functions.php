@@ -59,11 +59,17 @@ function insert_fb_in_head() {
     $image_tag = get_image ($post->post_content, 75, 50);
     preg_match('/src="([^"]+)"/', $image_tag, $srcs);
     $src = $srcs[1];
+
+    ob_start();
+    the_excerpt();
+    $excerpt = ob_get_contents();
+    ob_end_clean();
+
     echo '<meta property="og:title" content="' . get_the_title() . '" />';
     echo '<meta property="og:type" content="article" />';
     echo '<meta property="og:url" content="' . get_permalink() . '" />';
     echo '<meta property="og:site_name" content="' . get_bloginfo('name') . '" />';
-    echo '<meta property="og:description" content="' . get_the_excerpt() . '" />';
+    echo '<meta property="og:description" content="' . strip_tags($excerpt) . '" />';
 
     if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
         if (!empty($src)) {
