@@ -1887,7 +1887,6 @@ h2.subTitle {
 /************** Mail Chimp **************/
 
 #mailchimp_top {
-                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
     background: url(../images/sidebar_raakonteur_top.png);
     height: 41px;
 }
