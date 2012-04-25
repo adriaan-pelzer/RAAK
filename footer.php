@@ -2,7 +2,7 @@
         <span class="footer_copyright">&copy; RAAK 2011</span>
         <a title="RAAK.it URL shortener" href="http://raak.it">RAAK.it</a>
         <span class="seperator">|</span>
-        <a rel="nofollow" href="http://www.youtube.com/user/wewillRAAKyou">RAAK on Youtube</a>
+        <a rel="nofollow" href="https://plus.google.com/105267258589882942377">RAAK on Google+</a>
         <span class="seperator">|</span>
         <a rel="nofollow" href="http://www.twitter.com/RAAKonteurs">RAAK on Twitter</a>
         <span class="seperator">|</span>
