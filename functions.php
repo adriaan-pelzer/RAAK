@@ -1681,6 +1681,7 @@ if ($post->post_title == "Twitter will break through the 500 million user mark o
                             <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
                             <!--fb:like send="false" href="<?php the_permalink(); ?>" width="450" show_faces="false" layout="button_count" class="fb-like"></fb:like>
                             <fb:send font=""></fb:send-->
+                            <?php the_flattr_permalink() ?>
                         <!-- Place this tag where you want the +1 button to render -->
                         <g:plusone size="medium"></g:plusone>
 
