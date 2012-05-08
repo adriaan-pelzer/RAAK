@@ -29,20 +29,6 @@
   })();
 
     </script>
-    <script type="text/javascript">
-    /* <![CDATA[ */
-    (function() {
-        var s = document.createElement('script');
-        var t = document.getElementsByTagName('script')[0];
-
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-
-        t.parentNode.insertBefore(s, t);
-     })();
-    /* ]]> */
-    </script>
 </head>
 <body class="wordpress y2011 m12 d07 h07  page pageid-4 page-author-admin page-template page-template-home-php">
 <div class="wrapper hfeed">
