@@ -1756,7 +1756,11 @@ h2.subTitle {
 }
 
 #___plusone_0 {
-    margin-top: 9px;
+    margin-top: 5px;
+}
+
+.FlattrButton {
+    margin-top: 10px;
 }
 
 /************** COMMENTS ****************/
