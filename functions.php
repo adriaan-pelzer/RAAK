@@ -1622,30 +1622,6 @@ function single_blog_post() {
                         <div class="whitebox_primary_post_attr_item comments_count"><img class="commenticon" src="<?php echo get_bloginfo('template_url'); ?>/images/whitebox_primary_body_attr_comment_icon.png"><?php comments_number('0 comments', '1 comment', '% comments'); ?></div>
                     </div><!-- .whitebox_primary_post_attr -->
                     <div class="whitebox_primary_share">
-                        <!--a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-via="<?php echo $twittername; ?>" data-related="RAAKonteurs" data-text="<?php the_title(); ?> &#9733; RAAK">Tweet</a>
-                        <script>
-                            !function(d,s,id){
-                                var js,fjs=d.getElementsByTagName(s)[0];
-                                if(!d.getElementById(id)){
-                                    js=d.createElement(s);
-                                    js.id=id;js.src="//platform.twitter.com/widgets.js";
-                                    fjs.parentNode.insertBefore(js,fjs);
-                                }
-                            }
-                        (document,"script","twitter-wjs");
-                        </script>
-                                    <div id="fb-root"></div>
-                        <script>
-                        (function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0];
-                            if (d.getElementById(id)) return;
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                        (document, 'script', 'facebook-jssdk'));
-                        </script-->
 <?php
 if ($post->post_title == "Twitter will break through the 500 million user mark on Wednesday") {
 ?>
@@ -1656,19 +1632,6 @@ if ($post->post_title == "Twitter will break through the 500 million user mark o
                             <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo $twittername; ?>" data-related="RAAKonteurs" data-text="<?php the_title(); ?> &#9733; RAAK">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 <?php
 }
-/**
- * Include this code on your theme for single blog posts (for example, in your single.php file)
- * or on your blogs main page to include a Facebook "Like" iframe
- */
-           /* if (function_exists('the_opengraphprotocoltools_like_code')):
-                ob_start();
-                the_opengraphprotocoltools_like_code();
-                $likecode = ob_get_contents();
-                ob_end_clean();
-                echo str_replace ("layout=standard", "layout=button_count", $likecode);
-            else:
-                echo "<!-- opengraphprotocoltools is not activated -->";
-    endif;*/
 ?>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -1679,12 +1642,8 @@ if ($post->post_title == "Twitter will break through the 500 million user mark o
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
                             <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
-                            <!--fb:like send="false" href="<?php the_permalink(); ?>" width="450" show_faces="false" layout="button_count" class="fb-like"></fb:like>
-                            <fb:send font=""></fb:send-->
-                            <?php the_flattr_permalink() ?>
                         <!-- Place this tag where you want the +1 button to render -->
                         <g:plusone size="medium"></g:plusone>
-
                         <!-- Place this render call where appropriate -->
                         <script type="text/javascript">
                           (function() {
@@ -1693,6 +1652,7 @@ if ($post->post_title == "Twitter will break through the 500 million user mark o
                             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
                           })();
                         </script>
+                            <?php the_flattr_permalink() ?>
                     </div><!-- .whitebox_primary_share -->
                     <hr class="solid">
                     <div class="whitebox_primary_content">
