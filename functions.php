@@ -46,10 +46,10 @@ function page_description() {
 
 
 //Adding the Open Graph in the Language Attributes
-function add_opengraph_doctype( $output ) {
+/*function add_opengraph_doctype( $output ) {
         return $output . ' xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Blog" ';
     }
-add_filter('language_attributes', 'add_opengraph_doctype');
+add_filter('language_attributes', 'add_opengraph_doctype');*/
 //Lets add Open Graph Meta Info
 function insert_fb_in_head() {
     global $post;
@@ -1668,12 +1668,17 @@ if ($post->post_title == "Twitter will break through the 500 million user mark o
                 echo "<!-- opengraphprotocoltools is not activated -->";
     endif;*/
 ?>
-                            <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
-                            <!--div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div-->
-                            <fb:like send="false" href="<?php the_permalink(); ?>" width="450" show_faces="false" layout="button_count" class="fb-like"></fb:like>
-                            <fb:send font=""></fb:send>
-                            <!--fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="450" show_faces="false"></fb:like-->
-                        <!--fb:send></fb:send-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+                            <!--fb:like send="false" href="<?php the_permalink(); ?>" width="450" show_faces="false" layout="button_count" class="fb-like"></fb:like>
+                            <fb:send font=""></fb:send-->
                         <!-- Place this tag where you want the +1 button to render -->
                         <g:plusone size="medium"></g:plusone>
 
