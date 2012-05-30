@@ -212,7 +212,7 @@ function our_work()
 ?>
 <div id="bluebox_home_left" class="bluebox box rounded-corners">
     <header>
-        <h2 class="din-schrift"><a href="<?php get_permalink($our_work->ID); ?>">Our Work</a></h2>
+        <h2 class="din-schrift"><a href="<?php echo get_permalink($our_work->ID); ?>">Our Work</a></h2>
     </header>
     <hr>
 <?php echo $home->post_content; ?>    
