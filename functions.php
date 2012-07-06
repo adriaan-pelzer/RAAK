@@ -2513,7 +2513,7 @@ function mailchimp_inner_custom_box( $post ) {
 ?>
     <button id="mcbutton">Publish to Mailchimp</button>
     <script>
-    $(documenbt).ready(function(){
+    $(document).ready(function(){
         $('#mcbutton').click(function(){
             console.log('works');
             return false;
