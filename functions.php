@@ -2525,7 +2525,7 @@ function get_campaigns ($api) {
 }
 
 function create_mc_campaign ($api, $list_id, $subject, $title, $html_content) {
-    $cid = $api->campaignReplicate('2741653');
+    $cid = $api->campaignReplicate('a5f0ad37cf');
 
     if ($api->errorCode) {
         print_r($api);
