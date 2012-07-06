@@ -37,7 +37,10 @@ for ($i = 0; $i < $lists['total']; $i++) {
     echo $lists['data'][$i]['id']." - ".$lists['data'][$i]['name']."<br />\n";
 }
 
-$retval = create_mc_campaign($api, '9b809ef490', 'Test letter', 'Test letter title', '<h2 class="subTitle">Hallo hallo</h2>');
+$campaigns = get_campaigns($api);
 
-echo "Return value: ".$retval;
+print_r($campaigns);
+//$retval = create_mc_campaign($api, '9b809ef490', 'Test letter', 'Test letter title', '<h2 class="subTitle">Hallo hallo</h2>');
+
+//echo "Return value: ".$retval;
 ?>

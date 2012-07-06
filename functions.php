@@ -2514,6 +2514,16 @@ function get_lists ($api) {
     return $lists;
 }
 
+function get_campaigns ($api) {
+    $retval = $api->campaigns();
+
+    if ($api->errorCode) {
+        return false;
+    }
+
+    return $retval;
+}
+
 function create_mc_campaign ($api, $list_id, $subject, $title, $html_content) {
     $cid = $api->campaignReplicate('2741653');
 
