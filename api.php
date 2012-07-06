@@ -7,5 +7,5 @@ $api = create_mc();
 
 $lists = get_lists($api);
 
-print_r($lists->data);
+print_r($lists);
 ?>
