@@ -12,6 +12,7 @@ function return_json ($arr) {
         header("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['id']."&action=edit&mc_error=".urlencode($arr['error']));
     } else {
         header("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['id']."&action=edit&mc_success=1");
+    }
     die ();
 }
 
