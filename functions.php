@@ -2510,17 +2510,20 @@ function mailchimp_add_custom_box() {
 }
 
 function mailchimp_inner_custom_box( $post ) {
+    if (isset($_GET['mc_error'])) {
 ?>
-    <button id="mcbutton">Publish to Mailchimp</button>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $('#mcbutton').click(function(){
-            console.log('works');
-            return false;
-        });
-    });
-    </script>
+<p><?php echo $_GET['mc_error']; ?></p>
+<?php
+    } else if (isset($_GET['mc_success'])) {
+?>
+<p>Mailchimp Campaign created successfully</p>
+<?php
+    }
+?>
+<form method="post" action="/custom-api">
+<input type="hidden" name="apikey" value="38544aba9766e74cc67a07fd3ad16f03-us1" />
+<input type="hidden" name="pid" value="<?php echo $post->ID; ?>" />
+<input type="submit" name="mc_submit" value="Publich to Mailchimp" />
 <?php
 }
 

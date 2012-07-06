@@ -4,30 +4,33 @@ Template Name: API
  */
 
 function return_json ($arr) {
-    header('Cache-Control: no-cache, must-revalidate');
+    /*header('Cache-Control: no-cache, must-revalidate');
     header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
     header('Content-type: application/json');
-    echo json_encode ($arr);
+    echo json_encode ($arr);*/
+    if ($arr['code'] < 0) {
+        header("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['id']."&action=edit&mc_error=".urlencode($arr['error']));
+    } else {
+        header("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['id']."&action=edit&mc_success=1");
     die ();
 }
 
-/*if (empty($_GET['apikey'])) {
-    return_json(array('code' => -1, 'error' => 'Please specify a mailchimp API key'));
-} else {
-    $apikey = $_GET['apikey'];
-}*/
-
-if (empty($_GET['pid'])) {
+if (empty($_POST['pid'])) {
     return_json(array('code' => -1, 'error' => 'Please specify a mailchimp postid'));
 } else {
-    $postid = $_GET['pid'];
+    $postid = $_POST['pid'];
+}
+
+if (empty($_POST['apikey'])) {
+    return_json(array('id' => $postid, 'code' => -1, 'error' => 'Please specify a mailchimp API key'));
+} else {
+    $apikey = $_POST['apikey'];
 }
 
 $post = get_post($pid);
 $content = $post->post_content;
 
 require_once(dirname(__FILE__)."/MCAPI.class.php");
-$apikey = "38544aba9766e74cc67a07fd3ad16f03-us1";
 $api = new MCAPI($apikey);
 
 $campaigns = $api->campaigns();
@@ -51,8 +54,8 @@ $campaign['subject'] = $post->post_title;
 $retval = $api->campaignCreate('regular', $campaign, array('html_main' => $content, 'html_header' => $title, 'text' => ""));
 
 if (!$retval) {
-    return_json(array('code' => -1, 'error' => $api->errorMessage));
+    return_json(array('id' => $postid, 'code' => -1, 'error' => $api->errorMessage));
 }
 
-return_json(array('code' => 0, 'id' => $retval));
+return_json(array('id' => $postid, 'code' => 0, 'id' => $retval));
 ?>
