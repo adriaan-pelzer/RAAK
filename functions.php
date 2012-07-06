@@ -2520,12 +2520,7 @@ function mailchimp_inner_custom_box( $post ) {
 <?php
     }
 ?>
-<form method="post" action="/custom-api">
-<input type="hidden" name="apikey" value="38544aba9766e74cc67a07fd3ad16f03-us1" />
-<input type="hidden" name="pid" value="<?php echo $post->ID; ?>" />
-<input type="submit" name="mc_submit" value="Publish to Mailchimp" />
-</form>
+<a href="<?php bloginfo('url'); ?>/custom-api/?apikey=38544aba9766e74cc67a07fd3ad16f03-us1&pid=<?php echo $post->ID; ?>">Publish to Mailchimp</a> 
 <?php
 }
-
 ?>
