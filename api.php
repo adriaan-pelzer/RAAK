@@ -36,7 +36,6 @@ if (empty($_GET['pid'])) {
 }
 
 $post = get_post($pid);
-print_r($post);
 $content = $post->post_content;
 
 require_once(dirname(__FILE__)."/MCAPI.class.php");
@@ -55,7 +54,7 @@ foreach (array('id', 'web_id', 'folder_id', 'create_time', 'send_time', 'status'
     unset($campaign[$key]);
 }
 
-preg_match("/(The RAAKonteur #\d+)/", $post->post_title, $matches);
+preg_match("/The RAAKonteur #\d+/", $post->post_title, $matches);
 print_r($matches);
 die();
 $campaign['title'] = $post->post_title;
