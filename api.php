@@ -55,12 +55,12 @@ foreach (array('id', 'web_id', 'folder_id', 'create_time', 'send_time', 'status'
 }
 
 preg_match("/The RAAKonteur #\d+/", $post->post_title, $matches);
-print_r($matches);
-die();
-$campaign['title'] = $post->post_title;
+$title = $matches[0];
+
+$campaign['title'] = $title;
 $campaign['subject'] = $post->post_title;
 
-$retval = $api->campaignCreate('regular', $campaign, array('html_main' => $content, 'html_header' => "Test Header", 'text' => ""));
+$retval = $api->campaignCreate('regular', $campaign, array('html_main' => $content, 'html_header' => $title, 'text' => ""));
 
 if (!$retval) {
     return_json(array('code' => -1, 'error' => $api->errorMessage));
