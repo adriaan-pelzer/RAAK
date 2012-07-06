@@ -36,6 +36,7 @@ if (!empty($_GET['postid'])) {
 }
 
 $post = get_post($postid);
+print_r($post);
 
 /*require_once(dirname(__FILE__)."/MCAPI.class.php");
 $apikey = "38544aba9766e74cc67a07fd3ad16f03-us1";
