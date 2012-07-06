@@ -15,7 +15,7 @@ function return_json ($arr) {
     return_json(array('code' => -1, 'error' => 'Please specify a mailchimp API key'));
 } else {
     $apikey = $_GET['apikey'];
-}*/
+}
 
 if (empty($_GET['title'])) {
     return_json(array('code' => -1, 'error' => 'Please specify a mailchimp title'));
@@ -27,7 +27,7 @@ if (empty($_GET['subject'])) {
     return_json(array('code' => -1, 'error' => 'Please specify a mailchimp subject'));
 } else {
     $subject = $_GET['subject'];
-}
+}*/
 
 if (empty($_GET['pid'])) {
     return_json(array('code' => -1, 'error' => 'Please specify a mailchimp postid'));
@@ -55,8 +55,11 @@ foreach (array('id', 'web_id', 'folder_id', 'create_time', 'send_time', 'status'
     unset($campaign[$key]);
 }
 
-$campaign['title'] = $title;
-$campaign['subject'] = $subject;
+preg_match("/(The RAAKonteur #\d+)/", $post->post_title, $matches);
+print_r($matches);
+die();
+$campaign['title'] = $post->post_title;
+$campaign['subject'] = $post->post_title;
 
 $retval = $api->campaignCreate('regular', $campaign, array('html_main' => $content, 'html_header' => "Test Header", 'text' => ""));
 
