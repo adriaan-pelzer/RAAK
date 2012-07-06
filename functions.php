@@ -1713,7 +1713,7 @@ function related_blog_posts() {
 <?php
     $post_number = 0;
     if (sizeof ($r_posts) > 0) {
-        for (; !$r_posts[$post_number]; $post_number++) {if($post_number >= sizeof($r_posts) { break; }}
+        for (; !$r_posts[$post_number]; $post_number++) {if($post_number >= sizeof($r_posts)) { break; }}
 ?>
             <div class="bluebox_content_quarter bluebox_content_top_left">
                 <a href="<?php echo get_permalink($r_posts[$post_number]->ID); ?>"><?php echo get_image_or_video ($r_posts[$post_number]->post_content, 120, 85); ?></a>
@@ -1724,7 +1724,7 @@ function related_blog_posts() {
     }
 
     if (sizeof ($r_posts) > $post_number) {
-        for (; !$r_posts[$post_number]; $post_number++) {if($post_number >= sizeof($r_posts) { break; }}
+        for (; !$r_posts[$post_number]; $post_number++) {if($post_number >= sizeof($r_posts)) { break; }}
 ?>
 
             <div class="bluebox_content_quarter bluebox_content_top_right">
@@ -1747,7 +1747,11 @@ function related_blog_posts() {
         <div class="bluebox_content_bottom">
 <?php
     if (sizeof($r_posts) > $post_number) {
-        for (; !$r_posts[$post_number]; $post_number++) {if($post_number >= sizeof($r_posts) { break; }}
+        for (; !$r_posts[$post_number]; $post_number++) {
+            if($post_number >= sizeof($r_posts)) { 
+                    break; 
+            }
+        }
 ?>
             <div class="bluebox_content_quarter bluebox_content_bottom_left">
                 <a href="<?php echo get_permalink($r_posts[$post_number]->ID); ?>"><?php echo get_image_or_video ($r_posts[$post_number]->post_content, 120, 85); ?></a>
@@ -1758,7 +1762,7 @@ function related_blog_posts() {
     }
 
     if(sizeof($r_posts) > $post_number) {
-        for (; !$r_posts[$post_number]; $post_number++) {if($post_number >= sizeof($r_posts) { break; }}
+        for (; !$r_posts[$post_number]; $post_number++) {if($post_number >= sizeof($r_posts)) { break; }}
 ?>
             <div class="bluebox_content_quarter bluebox_content_bottom_right">
                 <a href="<?php echo get_permalink($r_posts[$post_number]->ID); ?>"><?php echo get_image_or_video ($r_posts[$post_number]->post_content, 120, 85); ?></a>
