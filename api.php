@@ -2,6 +2,7 @@
 /*
 Template Name: API
  */
+get_header();
 
 $api = create_mc();
 
@@ -11,4 +12,5 @@ echo "Lists\n";
 //print_r($lists);
 echo "API\n";
 //print_r($api);
+get_footer();
 ?>
