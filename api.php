@@ -50,7 +50,7 @@ foreach (array('id', 'web_id', 'folder_id', 'create_time', 'send_time', 'status'
 $campaign['title'] = "Test title";
 $campaign['subject'] = "Test subject";
 
-$retval = $api->campaignCreate('regular', $campaign, array('html' => "<h2 class=\"subTitle\">test Title</h2>"));
+$retval = $api->campaignCreate('regular', $campaign, array('html' => "<h2 class=\"subTitle\">test Title</h2>", 'text' => "test Title"));
 
 if (!$retval) {
     print_r($api);
