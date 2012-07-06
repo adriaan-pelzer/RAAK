@@ -29,24 +29,25 @@ if (!empty($_GET['subject'])) {
     $apikey = $_GET['subject'];
 }*/
 
-$api = create_mc();
+require_once(dirname(__FILE__)."/MCAPI.class.php");
+$apikey = "38544aba9766e74cc67a07fd3ad16f03-us1";
+$api = new MCAPI($apikey);
 
-$lists = get_lists($api);
+$campaigns = $api->campaigns();
 
-for ($i = 0; $i < $lists['total']; $i++) {
-    echo $lists['data'][$i]['id']." - ".$lists['data'][$i]['name']."<br />\n";
-}
-
-$campaigns = get_campaigns($api);
-
-for ($i = 0; $i < $campaigns['total']; $i++) {
-    echo $campaigns['data'][$i]['id']." - ".$campaigns['data'][$i]['title']."<br />\n";
-    if ($campaigns['data'][$i]['title'] == "The RAAKonteur #92") {
-        print_r($campaigns['data'][$i]);
+foreach($campaigns['data'] as $campaign) {
+    if ($campaign['title'] == 'The RAAKonteur #92') {
+        break;
     }
 }
 
-//$retval = create_mc_campaign($api, '9b809ef490', 'Test letter', 'Test letter title', '<h2 class="subTitle">Hallo hallo</h2>');
+for (array('id', 'web_id', 'folder_id', 'create_time', 'send_time', 'status', 'archive_url', 'emails_sent', 'inline_css', 'analytics', 'analytics_tag') as $key) {
+    unset($campaign[$key]);
+}
 
-//echo "Return value: ".$retval;
+$campaign['title'] = "Test title";
+$campaign['subject'] = "Test subject";
+
+$retval = $api->campaignCreate('regular', $campaign, "<h2 class=\"subTitle\">test Title</h2>");
+echo "Return value: ".$retval;
 ?>
