@@ -2496,4 +2496,43 @@ function get_image_or_video ($post_content, $width=NULL, $height=NULL) {
         return null;
     }
 }
+
+function create_mc() {
+    require_once(dirname(__FILE__)."/MCAPI.class.php");
+    $apikey = "38544aba9766e74cc67a07fd3ad16f03-us1";
+    $api = new MCAPI($apikey);
+    return $api;
+}
+
+function get_lists ($api) {
+    return $api->lists();
+}
+
+function create_mc_campaign ($api, $list_id, $subject, $title, $html_content) {
+    $cid = $api->campaignReplicate('2741653');
+
+    if ($api->errorCode) {
+        return false;
+    }
+
+    $retval = $api->campaignUpdate($cid, 'subject', $subject);
+
+    if ($api->errorCode) {
+        return false;
+    }
+
+    $retval = $api->campaignUpdate($cid, 'title', $title);
+
+    if ($api->errorCode) {
+        return false;
+    }
+
+    $retval = $api->campaignUpdate($cid, 'content', array('html'=>$html_content));
+
+    if ($api->errorCode) {
+        return false;
+    }
+
+    return true;
+}
 ?>
