@@ -41,9 +41,12 @@ $campaigns = get_campaigns($api);
 
 for ($i = 0; $i < $campaigns['total']; $i++) {
     echo $campaigns['data'][$i]['id']." - ".$campaigns['data'][$i]['title']."<br />\n";
+    if ($campaigns['data'][$i]['title'] == "The RAAKonteur #92") {
+        print_r($campaigns['data'][$i]);
+    }
 }
 
-$retval = create_mc_campaign($api, '9b809ef490', 'Test letter', 'Test letter title', '<h2 class="subTitle">Hallo hallo</h2>');
+//$retval = create_mc_campaign($api, '9b809ef490', 'Test letter', 'Test letter title', '<h2 class="subTitle">Hallo hallo</h2>');
 
-echo "Return value: ".$retval;
+//echo "Return value: ".$retval;
 ?>
