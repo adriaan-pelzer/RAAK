@@ -2521,6 +2521,7 @@ function create_mc_campaign ($api, $list_id, $subject, $title, $html_content) {
         return false;
     }
 
+    echo "New campaign id: ".$cid;
     $retval = $api->campaignUpdate($cid, 'subject', $subject);
 
     if ($api->errorCode) {
