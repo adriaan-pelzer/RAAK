@@ -2508,7 +2508,7 @@ function mailchimp_add_custom_box() {
     );
 }
 
-function myplugin_inner_custom_box( $post ) {
+function mailchimp_inner_custom_box( $post ) {
 ?>
     <button>Publish to Mailchimp</button>
 <?php
