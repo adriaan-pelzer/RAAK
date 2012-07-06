@@ -29,7 +29,8 @@ if (empty($_POST['apikey'])) {
 
 $post = get_post($pid);
 $content = $post->post_content;
-
+print_r($post);
+die();
 require_once(dirname(__FILE__)."/MCAPI.class.php");
 $api = new MCAPI($apikey);
 
