@@ -29,13 +29,13 @@ if (!empty($_GET['subject'])) {
     $subject = $_GET['subject'];
 }*/
 
-if (!empty($_GET['postid'])) {
+if (!empty($_GET['pid'])) {
     return_json(array('code' => -1, 'error' => 'Please specify a mailchimp postid'));
 } else {
-    $postid = $_GET['postid'];
+    $postid = $_GET['pid'];
 }
 
-$post = get_post($postid);
+$post = get_post($pid);
 print_r($post);
 
 /*require_once(dirname(__FILE__)."/MCAPI.class.php");
