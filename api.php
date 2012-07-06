@@ -29,7 +29,7 @@ if (!empty($_GET['subject'])) {
     $subject = $_GET['subject'];
 }*/
 
-if (!empty($_GET['pid'])) {
+if (empty($_GET['pid'])) {
     return_json(array('code' => -1, 'error' => 'Please specify a mailchimp postid'));
 } else {
     $postid = $_GET['pid'];
