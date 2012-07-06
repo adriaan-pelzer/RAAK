@@ -2518,6 +2518,7 @@ function create_mc_campaign ($api, $list_id, $subject, $title, $html_content) {
     $cid = $api->campaignReplicate('2741653');
 
     if ($api->errorCode) {
+        print_r($api);
         return false;
     }
 
