@@ -2515,7 +2515,8 @@ function mailchimp_inner_custom_box( $post ) {
     <script>
     $(documenbt).ready(function(){
         $('#mcbutton').click(function(){
-            alert('mcbutton');
+            console.log('works');
+            return false;
         });
     });
     </script>
