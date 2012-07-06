@@ -9,9 +9,9 @@ function return_json ($arr) {
     header('Content-type: application/json');
     echo json_encode ($arr);*/
     if ($arr['code'] < 0) {
-        echo ("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['id']."&action=edit&mc_error=".urlencode($arr['error']));
+        header("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['pid']."&action=edit&mc_error=".urlencode($arr['error']));
     } else {
-        echo ("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['id']."&action=edit&mc_success=1");
+        header("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['pid']."&action=edit&mc_success=1");
     }
     die ();
 }
@@ -23,7 +23,7 @@ if (empty($_REQUEST['pid'])) {
 }
 
 if (empty($_REQUEST['apikey'])) {
-    return_json(array('id' => $postid, 'code' => -1, 'error' => 'Please specify a mailchimp API key'));
+    return_json(array('pid' => $postid, 'code' => -1, 'error' => 'Please specify a mailchimp API key'));
 } else {
     $apikey = $_REQUEST['apikey'];
 }
@@ -55,8 +55,8 @@ $campaign['subject'] = $post->post_title;
 $retval = $api->campaignCreate('regular', $campaign, array('html_main' => $content, 'html_header' => $title, 'text' => ""));
 
 if (!$retval) {
-    return_json(array('id' => $postid, 'code' => -1, 'error' => $api->errorMessage));
+    return_json(array('pid' => $postid, 'code' => -1, 'error' => $api->errorMessage));
 }
 
-return_json(array('id' => $postid, 'code' => 0, 'id' => $retval));
+return_json(array('pid' => $postid, 'code' => 0, 'id' => $retval));
 ?>
