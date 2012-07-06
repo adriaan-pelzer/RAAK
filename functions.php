@@ -2505,7 +2505,13 @@ function create_mc() {
 }
 
 function get_lists ($api) {
-    return $api->lists();
+    $lists = $api->lists();
+
+    if ($api->errorCode) {
+        return false;
+    }
+
+    return $lists;
 }
 
 function create_mc_campaign ($api, $list_id, $subject, $title, $html_content) {
