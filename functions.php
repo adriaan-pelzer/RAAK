@@ -2497,60 +2497,21 @@ function get_image_or_video ($post_content, $width=NULL, $height=NULL) {
     }
 }
 
-function create_mc() {
-    require_once(dirname(__FILE__)."/MCAPI.class.php");
-    $apikey = "38544aba9766e74cc67a07fd3ad16f03-us1";
-    $api = new MCAPI($apikey);
-    return $api;
+add_action( 'add_meta_boxes', 'mailchimp_add_custom_box' );
+
+function mailchimp_add_custom_box() {
+    add_meta_box( 
+        'mailchimp_sectionid',
+        __( 'Publish to Mailchimp', 'mailchimp_textdomain' ),
+        'mailchimp_inner_custom_box',
+        'post' 
+    );
 }
 
-function get_lists ($api) {
-    $lists = $api->lists();
-
-    if ($api->errorCode) {
-        return false;
-    }
-
-    return $lists;
+function myplugin_inner_custom_box( $post ) {
+?>
+    <button>Publish to Mailchimp</button>
+<?php
 }
 
-function get_campaigns ($api) {
-    $retval = $api->campaigns();
-
-    if ($api->errorCode) {
-        return false;
-    }
-
-    return $retval;
-}
-
-function create_mc_campaign ($api, $list_id, $subject, $title, $html_content) {
-    $cid = $api->campaignReplicate('a5f0ad37cf');
-
-    if ($api->errorCode) {
-        print_r($api);
-        return false;
-    }
-
-    echo "New campaign id: ".$cid;
-    $retval = $api->campaignUpdate($cid, 'subject', $subject);
-
-    if ($api->errorCode) {
-        return false;
-    }
-
-    $retval = $api->campaignUpdate($cid, 'title', $title);
-
-    if ($api->errorCode) {
-        return false;
-    }
-
-    $retval = $api->campaignUpdate($cid, 'content', array('html'=>$html_content));
-
-    if ($api->errorCode) {
-        return false;
-    }
-
-    return true;
-}
 ?>

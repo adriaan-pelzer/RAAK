@@ -15,18 +15,6 @@ function return_json ($arr) {
     return_json(array('code' => -1, 'error' => 'Please specify a mailchimp API key'));
 } else {
     $apikey = $_GET['apikey'];
-}
-
-if (empty($_GET['title'])) {
-    return_json(array('code' => -1, 'error' => 'Please specify a mailchimp title'));
-} else {
-    $title = $_GET['title'];
-}
-
-if (empty($_GET['subject'])) {
-    return_json(array('code' => -1, 'error' => 'Please specify a mailchimp subject'));
-} else {
-    $subject = $_GET['subject'];
 }*/
 
 if (empty($_GET['pid'])) {
