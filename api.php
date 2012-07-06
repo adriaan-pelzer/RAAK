@@ -49,5 +49,10 @@ $campaign['title'] = "Test title";
 $campaign['subject'] = "Test subject";
 
 $retval = $api->campaignCreate('regular', $campaign, "<h2 class=\"subTitle\">test Title</h2>");
+
+if (!$retval) {
+    print_r($api);
+}
+
 echo "Return value: ".$retval;
 ?>
