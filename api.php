@@ -41,6 +41,8 @@ foreach($campaigns['data'] as $campaign) {
     }
 }
 
+print_r($campaign);
+
 foreach (array('id', 'web_id', 'folder_id', 'create_time', 'send_time', 'status', 'archive_url', 'emails_sent', 'inline_css', 'analytics', 'analytics_tag') as $key) {
     unset($campaign[$key]);
 }
