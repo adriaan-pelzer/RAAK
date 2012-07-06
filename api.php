@@ -17,19 +17,27 @@ function return_json ($arr) {
     $apikey = $_GET['apikey'];
 }
 
-if (!empty($_GET['listid'])) {
-    return_json(array('code' => -1, 'error' => 'Please specify a mailchimp list id'));
+if (!empty($_GET['title'])) {
+    return_json(array('code' => -1, 'error' => 'Please specify a mailchimp title'));
 } else {
-    $listid = $_GET['listid'];
+    $title = $_GET['title'];
 }
 
 if (!empty($_GET['subject'])) {
     return_json(array('code' => -1, 'error' => 'Please specify a mailchimp subject'));
 } else {
-    $apikey = $_GET['subject'];
+    $subject = $_GET['subject'];
 }*/
 
-require_once(dirname(__FILE__)."/MCAPI.class.php");
+if (!empty($_GET['postid'])) {
+    return_json(array('code' => -1, 'error' => 'Please specify a mailchimp postid'));
+} else {
+    $postid = $_GET['postid'];
+}
+
+$post = get_post($postid);
+
+/*require_once(dirname(__FILE__)."/MCAPI.class.php");
 $apikey = "38544aba9766e74cc67a07fd3ad16f03-us1";
 $api = new MCAPI($apikey);
 
@@ -45,8 +53,8 @@ foreach (array('id', 'web_id', 'folder_id', 'create_time', 'send_time', 'status'
     unset($campaign[$key]);
 }
 
-$campaign['title'] = "Test title";
-$campaign['subject'] = "Test subject";
+$campaign['title'] = $title;
+$campaign['subject'] = $subject;
 
 $retval = $api->campaignCreate('regular', $campaign, array('html_main' => "<h2 class=\"subTitle\">Test Title</h2>", 'html_header' => "Test Header", 'text' => "Test Title"));
 
@@ -54,5 +62,5 @@ if (!$retval) {
     print_r($api);
 }
 
-echo "Return value: ".$retval;
+echo "Return value: ".$retval;*/
 ?>
