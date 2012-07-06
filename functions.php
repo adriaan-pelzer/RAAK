@@ -2504,7 +2504,8 @@ function mailchimp_add_custom_box() {
         'mailchimp_sectionid',
         __( 'Publish to Mailchimp', 'mailchimp_textdomain' ),
         'mailchimp_inner_custom_box',
-        'post' 
+        'post',
+        'side'
     );
 }
 
