@@ -9,29 +9,28 @@ function return_json ($arr) {
     header('Content-type: application/json');
     echo json_encode ($arr);*/
     if ($arr['code'] < 0) {
-        header("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['id']."&action=edit&mc_error=".urlencode($arr['error']));
+        echo ("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['id']."&action=edit&mc_error=".urlencode($arr['error']));
     } else {
-        header("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['id']."&action=edit&mc_success=1");
+        echo ("Location: ".get_bloginfo('url')."/wp-admin/post.php?post=".$arr['id']."&action=edit&mc_success=1");
     }
     die ();
 }
 
-if (empty($_POST['pid'])) {
+if (empty($_REQUEST['pid'])) {
     return_json(array('code' => -1, 'error' => 'Please specify a mailchimp postid'));
 } else {
-    $postid = $_POST['pid'];
+    $postid = $_REQUEST['pid'];
 }
 
-if (empty($_POST['apikey'])) {
+if (empty($_REQUEST['apikey'])) {
     return_json(array('id' => $postid, 'code' => -1, 'error' => 'Please specify a mailchimp API key'));
 } else {
-    $apikey = $_POST['apikey'];
+    $apikey = $_REQUEST['apikey'];
 }
 
 $post = get_post($pid);
+
 $content = $post->post_content;
-print_r($post);
-die();
 require_once(dirname(__FILE__)."/MCAPI.class.php");
 $api = new MCAPI($apikey);
 
