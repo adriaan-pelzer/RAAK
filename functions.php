@@ -2511,7 +2511,14 @@ function mailchimp_add_custom_box() {
 
 function mailchimp_inner_custom_box( $post ) {
 ?>
-    <button>Publish to Mailchimp</button>
+    <button id="mcbutton">Publish to Mailchimp</button>
+    <script>
+    $(documenbt).ready(function(){
+        $('#mcbutton').click(function(){
+            alert('mcbutton');
+        });
+    });
+    </script>
 <?php
 }
 
