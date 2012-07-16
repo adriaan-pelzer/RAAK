@@ -227,9 +227,6 @@ function our_work()
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
         <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == $cat_array[$cat_key]){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
-<div style="display:none;" class="testing">
-<?php echo $cat_array[$cat_key]; ?>
-</div>
 <?php
         $current_our_work_post_cat = get_cat_id ($work_category->name);
         $current_our_work_query = new WP_Query(array('cat' => get_cat_id($work_category->name), 'posts_per_page' => 1, 'paged' => 1, 'post_type' => 'raak_project'));
