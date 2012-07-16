@@ -236,7 +236,7 @@ function our_work()
         $current_our_work_post = $current_our_work_query->post;
         $current_our_work_post_id = ($current_our_work_post->ID);
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
-        if($cat_number == 0){
+        if($cat_number == $cat_array[$cat_key]){
             $our_work_bluebox_content .= ' current';
         }
         $our_work_bluebox_content .= '" id="' . $work_category->category_nicename . '">';
