@@ -2504,4 +2504,31 @@ function get_image_or_video ($post_content, $width=NULL, $height=NULL) {
         return null;
     }
 }
+
+add_action( 'add_meta_boxes', 'mailchimp_add_custom_box' );
+
+function mailchimp_add_custom_box() {
+    add_meta_box( 
+        'mailchimp_sectionid',
+        __( 'Publish to Mailchimp', 'mailchimp_textdomain' ),
+        'mailchimp_inner_custom_box',
+        'post',
+        'side'
+    );
+}
+
+function mailchimp_inner_custom_box( $post ) {
+    if (isset($_GET['mc_error'])) {
+?>
+<p><?php echo $_GET['mc_error']; ?></p>
+<?php
+    } else if (isset($_GET['mc_success'])) {
+?>
+<p>Mailchimp Campaign created successfully</p>
+<?php
+    }
+?>
+<a href="<?php bloginfo('url'); ?>/custom-api/?apikey=38544aba9766e74cc67a07fd3ad16f03-us1&pid=<?php echo $post->ID; ?>">Publish to Mailchimp</a> 
+<?php
+}
 ?>
