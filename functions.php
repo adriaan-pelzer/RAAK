@@ -220,13 +220,15 @@ function our_work()
 <div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
     <nav class="bluebox_nav box_nav our_work_nav">
 <?php
+    $cat_array = array(0, 1, 2);
+    $cat_key = array_rand($cat_array, 1);
     foreach($work_categories as $cat_number => $work_category)
     {
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
         <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <div style="display:none;" class="testing">
-<?php echo $cat_number; ?>
+<?php echo $cat_key; ?>
 </div>
 <?php
         $current_our_work_post_cat = get_cat_id ($work_category->name);
