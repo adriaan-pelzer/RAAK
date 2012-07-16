@@ -235,8 +235,8 @@ function our_work()
         $current_work_post_id = array_rand($work_post_array, 1);
 
         $current_our_work_query = new WP_Query(array('cat' => get_cat_id($work_category->name), 'posts_per_page' => 1, 'paged' => 1, 'post_type' => 'raak_project'));
-        //$current_our_work_post = $current_our_work_query->post;
-        $current_our_work_post = get_post($current_work_post_id);
+        $current_our_work_post = $current_our_work_query->post;
+        //$current_our_work_post = get_post($current_work_post_id);
         $current_our_work_post_id = ($current_our_work_post->ID);
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
         if($cat_number == 0){
