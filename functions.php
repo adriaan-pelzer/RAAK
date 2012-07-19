@@ -210,15 +210,12 @@ function our_work()
     $our_work_bluebox_content = '';
     
 ?>
-<div id="bluebox_home_left" class="bluebox box rounded-corners">
+<div id="bluebox_home_our_work" class="bluebox box rounded-corners">
     <header>
         <h2 class="din-schrift"><a href="<?php echo get_permalink($our_work->ID); ?>">Our Work</a></h2>
-    </header>
-    <hr>
-<?php echo $home->post_content; ?>    
-</div><!-- bluebox_home_left -->
-<div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
-    <nav class="bluebox_nav box_nav our_work_nav">
+<!--/div--><!-- bluebox_home_left -->
+<!-- div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners" -->
+        <nav class="bluebox_nav box_nav our_work_nav">
 <?php
     $cat_array = array(0, 1, 2);
     $cat_key = array_rand($cat_array, 1);
@@ -246,12 +243,21 @@ function our_work()
         wp_reset_query();
     }
 ?>
-    </nav>
+        </nav>
+    </header>
+    <hr>
+    <div id="bluebox_home_our_work_left">
+<?php
+    echo $home->post_content;
+?>
+    </div>
+    <div id="bluebox_home_our_work_right">
 <?php
     echo $our_work_bluebox_content;
 ?>
+    </div>
     
-</div><!-- bluebox_home_right -->
+</div><!-- bluebox_home_our_work -->
 
 <?php
 }

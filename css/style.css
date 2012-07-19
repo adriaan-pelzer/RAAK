@@ -611,6 +611,41 @@ address a {
     margin-left: -33px;
 }
 
+#bluebox_home_our_work {
+    width: 572px;
+    float: right;
+}
+
+#bluebox_home_our_work p {
+    width: 225px;
+}
+
+#bluebox_home_our_work h2 {
+    font-size: 24px;
+    display: inline-block;
+}
+
+#bluebox_home_our_work nav {
+    float: right;
+}
+
+#bluebox_home_our_work .bluebox_content {
+    margin-top: 12px;
+}
+
+#bluebox_home_our_work nav, #bluebox_home_our_work .bluebox_content {
+    font: 9px arial, sans-serif;
+}
+
+#bluebox_home_our_work_left, #bluebox_home_our_work_right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#bluebox_home_our_work_right {
+    float: right;
+}
+
 .bluebox_nav {
     margin-top: 7px;
 }
