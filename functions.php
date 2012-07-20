@@ -206,7 +206,8 @@ function our_work()
 {
     $home = get_page_by_title('Home');
     $our_work = get_page_by_title('Our Work');
-    $work_categories = get_categories(array('child_of'=>get_cat_id ('RAAK projects'), 'order'=>'desc'));
+    $exclude = get_cat_id('impact projects');
+    $work_categories = get_categories(array('child_of'=>get_cat_id ('RAAK projects'), 'order'=>'desc', 'exclude'=> $exclude));
     $our_work_bluebox_content = '';
     
 ?>
@@ -217,7 +218,7 @@ function our_work()
 <!-- div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners" -->
         <nav class="bluebox_nav box_nav our_work_nav">
 <?php
-    $cat_array = array(0, 1, 2);
+    $cat_array = array(0, 1);
     $cat_key = array_rand($cat_array, 1);
     foreach($work_categories as $cat_number => $work_category)
     {
@@ -255,6 +256,9 @@ function our_work()
 <?php
     echo $our_work_bluebox_content;
 ?>
+    <script>
+    setInterval(bindElementAnimation($('#bluebox_home_our_work_right')), 5000);
+    </script>
     </div>
     
 </div><!-- bluebox_home_our_work -->

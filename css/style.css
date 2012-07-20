@@ -460,7 +460,7 @@ address a {
     font-size: 10px;
     float: left;
     border-top: 2px solid #00aeff;
-    width: 408px;
+    width: 458px;
     padding: 13px 0 0 20px;
     position: absolute;
     top: 77px;
@@ -627,6 +627,7 @@ address a {
 
 #bluebox_home_our_work nav {
     float: right;
+    text-align: right;
 }
 
 #bluebox_home_our_work .bluebox_content {
