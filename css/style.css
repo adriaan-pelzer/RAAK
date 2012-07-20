@@ -643,9 +643,32 @@ address a {
     vertical-align: top;
 }
 
-#bluebox_home_our_work_right {
-    float: right;
+#bluebox_home_our_work_left {
+    margin-right: 30px;
 }
+
+#bluebox_home_our_work_right {
+    position: relative;
+    height: 330px;
+    padding-bottom: 10px;
+}
+
+
+#bluebox_home_our_work_right .overview {
+    height: 52px;
+}
+
+#bluebox_home_our_work_right .bluebox_content {
+    position: absolute;
+    z-index: 1;
+    background: #B9E5FB;
+    height: 330px;
+}
+
+#bluebox_home_our_work_right .bluebox_content.current {
+    z-index: 3;
+}
+
 
 .bluebox_nav {
     margin-top: 7px;
@@ -677,13 +700,13 @@ address a {
     text-align: right;
 }
 
-.our_work_bluebox_content {
+/*.our_work_bluebox_content {
     display: none;
 }
 
 .our_work_bluebox_content.current {
     display: block;
-}
+}*/
 
 /*************** Latest Posts **************/
 

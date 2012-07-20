@@ -256,10 +256,10 @@ function our_work()
 <?php
     echo $our_work_bluebox_content;
 ?>
-    <script>
-    setInterval(bindElementAnimation($('#bluebox_home_our_work_right')), 5000);
-    </script>
     </div>
+    <script>
+    setInterval(function() {bindElementAnimation($('#bluebox_home_our_work_right'));}, 5000);
+    </script>
     
 </div><!-- bluebox_home_our_work -->
 

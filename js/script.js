@@ -24,18 +24,32 @@ var load_next = function() {
 }
 
 function bindElementAnimation(element) {
-    var containers = element.find('.bluebox_content');
+    var activeBox = element.find('.bluebox_content.current');
+    var nextBox = (activeBox.next().length > 0) ? activeBox.next() : element.find('.bluebox_content:first');
+    nextBox.css('z-index',2);
+    activeBox.animate({opacity: 0}, 1500, 'swing', function() {
+        activeBox.css('z-index',1).css('opacity', '1').removeClass('current');
+        $('.our_work_nav .' + activeBox.attr('id')).removeClass('active');
+        nextBox.css('z-index',3).addClass('current');
+        $('.our_work_nav .' + nextBox.attr('id')).addClass('active');
+    });
+    /*var containers = element.find('.bluebox_content');
     containers.each(function(index) {
         if($(this).hasClass('current')) {
             $(this).animate({opacity: 0}, 2000, function() {
                 $(this).removeClass('current');
+                console.log($(this).attr('id'));
+                $('.our_work_nav .' + $(this).attr('id')). removeClass('active');
+
             });
         } else {
             $(this).animate({opacity: 1}, 2000, function() {
                 $(this).addClass('current');
+                $('.our_work_nav .' + $(this).attr('id')). addClass('active');
             });
         }
-    });
+    });*/
+
 }
 
 preloadImages();
