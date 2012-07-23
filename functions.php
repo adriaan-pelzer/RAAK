@@ -1316,7 +1316,7 @@ function big_whitebox_projects() {
             <span class="seperator seperator_smaller">|</span>
             <a id="whitebox_big_nav_<?php echo $work_category->category_nicename; ?>" class="whitebox_big_nav_item <?php echo ($active == $work_category->category_nicename) ? 'active' : ''; ?>"><?php echo $work_category->name; ?></a>
 <?php
-            $current_cat_loop = new WP_Query(array('category_name' => ($work_category->name), 'post_type' => 'raak_project', 'posts_per_page' => -1, 'orderby' => 'date'));
+            $current_cat_loop = new WP_Query(array('cat' => ($work_category->cat_ID), 'post_type' => 'raak_project', 'posts_per_page' => -1, 'orderby' => 'date'));
             $total_rows = (ceil($current_cat_loop->post_count / 3));
             $children_cats_item_count = 0;
             $children_cats .= '<div id="whitebox_big_' . $work_category->category_nicename . '" class="whitebox_big_category smaller_arial_caps'. (($active == $work_category->category_nicename) ? ' current' : '') . '">';
