@@ -706,7 +706,7 @@ address a {
     margin-top: 12px;
 }
 
-#bluebox_home_our_work_right .bluebox_content.current {
+#bluebox_home_our_work_right .bluebox_content.active {
     z-index: 3;
 }
 
@@ -744,13 +744,13 @@ address a {
     bottom: 0;
 }
 
-/*.our_work_bluebox_content {
+.bluebox_cat_container {
     display: none;
 }
 
-.our_work_bluebox_content.current {
+.bluebox_cat_container.current {
     display: block;
-}*/
+}
 
 /*************** Latest Posts **************/
 

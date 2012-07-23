@@ -145,7 +145,7 @@ function display_latest_posts($atts) {
 ?>
         <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 1) { echo " current"; } ?>">
 <?php
-        $latest_posts_loop = new WP_Query(array('cat' => get_cat_id($category), 'posts_per_page' => $posts_per_page, 'paged' => $page));
+        $latest_posts_loop = new WP_Query(array('cat' => get_cat_ID($category), 'posts_per_page' => $posts_per_page, 'paged' => $page));
         while ($latest_posts_loop->have_posts()) {
             $latest_posts_loop->the_post();
             $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
@@ -228,8 +228,8 @@ function our_work()
 {
     $home = get_page_by_title('Home');
     $our_work = get_page_by_title('Our Work');
-    $exclude = get_cat_id('impact projects');
-    $work_categories = get_categories(array('child_of'=>get_cat_id ('RAAK projects'), 'order'=>'desc', 'exclude'=> $exclude));
+    $exclude = get_cat_ID('impact projects');
+    $work_categories = get_categories(array('child_of'=>get_cat_ID ('RAAK projects'), 'order'=>'desc', 'exclude'=> $exclude));
     $our_work_bluebox_content = '';
     
 ?>
@@ -242,14 +242,14 @@ function our_work()
 <?php
     $cat_array = array(0, 1);
     $cat_key = array_rand($cat_array, 1);
-    foreach($work_categories as $cat_number => $work_category)
+/*    foreach($work_categories as $cat_number => $work_category)
     {
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
         <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == $cat_array[$cat_key]){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <?php
-        $current_our_work_post_cat = get_cat_id ($work_category->name);
-        $current_our_work_query = new WP_Query(array('cat' => get_cat_id($work_category->name), 'posts_per_page' => 1, 'paged' => 1, 'post_type' => 'raak_project'));
+        $current_our_work_post_cat = get_cat_ID ($work_category->name);
+        $current_our_work_query = new WP_Query(array('cat' => get_cat_ID($work_category->name), 'posts_per_page' => 1, 'paged' => 1, 'post_type' => 'raak_project'));
         $current_our_work_post = $current_our_work_query->post;
         $current_our_work_post_id = ($current_our_work_post->ID);
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
@@ -263,6 +263,29 @@ function our_work()
         $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Project:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Project', true) . '</span></li>';
         $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Overview:</span><span class="overview"><a href="' . get_permalink($current_our_work_post_id) . '">' . get_post_meta ($current_our_work_post_id, 'Overview', true) . '</a></span></li>';
         $our_work_bluebox_content .= '<li class="bluebox_content_link"><a href="' . get_permalink($our_work->ID) . '?category=' . $work_category->category_nicename . '" rel="nofollow">More Projects &#9660;</a></li></ul></section>';
+        wp_reset_query();
+    }*/
+    foreach($work_categories as $cat_number => $work_category) {
+?>
+            <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
+        <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename; echo ($cat_number == $cat_array[$cat_key] ? ' active' : ''); ?>"><?php echo $work_category->name; ?></a></h3>
+<?php
+        $current_our_work_post_cat = $work_category->cat_id;
+        $current_our_work_querys = new WP_Query(array('cat' => get_cat_ID($work_category->name), 'posts_per_page' => -1, 'post_type' => 'raak_project'));
+        $our_work_bluebox_content .='<div class="bluebox_cat_container' . ($cat_number == $cat_array[$cat_key] ? ' current' : '') . '" id="bluebox_cat_' . $work_category->category_nicename . '">';
+        $active_project = 0;
+        foreach($current_our_work_querys->posts as $current_our_work_post) {
+            $current_our_work_post_id = ($current_our_work_post->ID);
+            $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content' . ($active_project == 0 ? ' active' : '') . '">';
+            $our_work_bluebox_content .= '<a href="' . get_permalink($current_our_work_post_id) . '">';
+            $our_work_bluebox_content .= get_image_or_video ($current_our_work_post->post_content, 315) . '</a>';
+            $our_work_bluebox_content .= '<ul><li class="bluebox_content_sub"><span class="label">Client:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Client', true) . '</span></li>';
+            $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Project:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Project', true) . '</span></li>';
+            $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Overview:</span><span class="overview"><a href="' . get_permalink($current_our_work_post_id) . '">' . get_post_meta ($current_our_work_post_id, 'Overview', true) . '</a></span></li>';
+            $our_work_bluebox_content .= '<li class="bluebox_content_link"><a href="' . get_permalink($our_work->ID) . '?category=' . $work_category->category_nicename . '" rel="nofollow">More Projects &#9660;</a></li></ul></section>';
+            $active_project++;
+        }
+        $our_work_bluebox_content .='</div>';
         wp_reset_query();
     }
 ?>
@@ -280,7 +303,7 @@ function our_work()
 ?>
     </div>
     <script>
-    setInterval(function() {bindElementAnimation($('#bluebox_home_our_work_right'));}, 5000);
+    setInterval(function() {bindElementAnimation($('.bluebox_cat_container.current'));}, 5000);
     </script>
     
 </div><!-- bluebox_home_our_work -->
@@ -335,7 +358,7 @@ function display_other_posts($atts) {
 ?>
             </ul>
             <footer>
-                <a class="more_link" href="<?php echo get_category_link(get_cat_id($cat)); ?>" rel="nofollow">More ▼</a>
+                <a class="more_link" href="<?php echo get_category_link(get_cat_ID($cat)); ?>" rel="nofollow">More ▼</a>
             </footer>
         </section><!-- other_posts_content_one -->
 <?php
@@ -1144,7 +1167,7 @@ add_shortcode('raak_wb', 'theraakonteur_whitebox');
 /*************************/
 
 function theraakonteur_bluebox() {
-    $the_raakonteurs = new WP_Query(array('cat'=> get_cat_id('RAAKonteur'), 'posts_per_page' => 10));
+    $the_raakonteurs = new WP_Query(array('cat'=> get_cat_ID('RAAKonteur'), 'posts_per_page' => 10));
 
 ?>
 <div class="tab_container bluebox-primary">
@@ -1281,7 +1304,7 @@ function big_whitebox_projects() {
     <header>
     <h2 class="din-schrift blue_20"><?php echo $current_page->post_title; ?></h2>
 <?php
-        $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
+        $work_categories = get_categories (array ('child_of'=>get_cat_ID ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
 
 ?>
         <nav class="box_nav smaller_arial_caps">
@@ -1420,7 +1443,7 @@ function single_project_whitebox() {
 <?php 
             if ($page_title == 'Our Work') {
                 $our_work = get_page_by_title('Our Work');
-                $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
+                $work_categories = get_categories (array ('child_of'=>get_cat_ID ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
 
 ?>
         <nav class="box_nav smaller_arial_caps">
@@ -1609,7 +1632,7 @@ function category_box($atts) {
         foreach ($cat_array as $category) {
 ?>
 
-                <li><a href="<?php echo get_category_link(get_cat_id($category)); ?>"><?php echo $category; ?></a></li>
+                <li><a href="<?php echo get_category_link(get_cat_ID($category)); ?>"><?php echo $category; ?></a></li>
 <?php 
         }
 ?>

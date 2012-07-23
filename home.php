@@ -18,9 +18,9 @@ Template Name:Home
     $('.our_work_nav h3 a').click(function() {
         if(!$(this).hasClass('active')) {
             $('.our_work_nav h3 a.active').removeClass('active');
-            $('.our_work_bluebox_content.current').removeClass('current');
+            $('.bluebox_cat_container.current').removeClass('current');
             var current_class = $(this).attr('class');
-            $('.our_work_bluebox_content#' + current_class).addClass('current');
+            $('#bluebox_cat_' + current_class).addClass('current');
             $(this).addClass('active');
         } 
     });
