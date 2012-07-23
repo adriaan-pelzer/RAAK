@@ -596,6 +596,7 @@ address a {
 .bluebox_product_link {
     display: block;
     margin:12px 0 00;
+    height: 74px;
 }
 
 .bluebox_product_title {

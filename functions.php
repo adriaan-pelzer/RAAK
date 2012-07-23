@@ -210,7 +210,7 @@ function our_products() {
     <div class="bluebox_product bluebox rounded-corners">
         <header>
             <h2 class="din-schrift bluebox_product_title"><a href="<?php echo get_permalink($products_page->ID); ?>">Our Products</a></h2>
-
+        </header>
 <?php
     foreach($products->posts as $product) {
 ?>
