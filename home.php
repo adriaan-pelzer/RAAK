@@ -9,6 +9,7 @@ Template Name:Home
         <div class="content" id="content">
 <?php do_shortcode('[logo_cta]'); ?>
 <?php do_shortcode('[our_work]'); ?>
+<?php our_products(); ?>
 <?php do_shortcode('[latest_posts category="Blog" posts_per_page="2" num_pages="10" tab="1" ]'); ?>
 <?php do_shortcode('[other_posts category1="Must Read" category2="Worth a look" category3="RAAKonteur" colourscheme="white" ]'); ?>
         </div><!-- #content -->

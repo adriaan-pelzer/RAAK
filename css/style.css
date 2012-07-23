@@ -460,7 +460,7 @@ address a {
     font-size: 10px;
     float: left;
     border-top: 2px solid #00aeff;
-    width: 458px;
+    width: 558px;
     padding: 13px 0 0 20px;
     position: absolute;
     top: 77px;
@@ -491,7 +491,7 @@ address a {
 }
 
 .topmenu_body {
-    padding: 0 10px; /*fixing nav menu display in ie8 */
+    padding: 0 15px; /*fixing nav menu display in ie8 */
 }
 
 .topmenu_body a {
@@ -583,9 +583,27 @@ address a {
     margin-top: 10px;
 }
 
+/************* blue box products **************/
+
+.bluebox_product {
+    padding: 14px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 110px;
+    display: inline-block;
+}
+
+.bluebox_product_link {
+    display: block;
+    margin:12px 0 00;
+}
+
+.bluebox_product_title {
+    font-size: 14px;
+}
 /************* our work container *************/
 
-#bluebox_home_left {
+/*#bluebox_home_left {
     width: 241px;
     margin-left: 17px;
     float: left;
@@ -609,7 +627,7 @@ address a {
     font: 9px arial, sans-serif;
     float: right;
     margin-left: -33px;
-}
+}*/
 
 #bluebox_home_our_work {
     width: 572px;
@@ -631,7 +649,6 @@ address a {
 }
 
 #bluebox_home_our_work .bluebox_content {
-    margin-top: 12px;
 }
 
 #bluebox_home_our_work nav, #bluebox_home_our_work .bluebox_content {
@@ -646,10 +663,33 @@ address a {
 #bluebox_home_our_work_left {
     margin-right: 30px;
 }
+#bluebox_home_our_work_left p {
+    font: 18px din_schrift, arial_narrow, 'Arial Narrow', sans-serif;
+    color: #00aeef;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*#bluebox_home_our_work_left_products {
+    padding-top: 20px;
+    border-top: 1px dashed #fff;
+    margin-top: 10px;
+}
+
+.bluebox_home_our_work_left_products_heading {
+    font-size: 16px;
+}
+
+.bluebox_home_our_work_left_products_product {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}*/
 
 #bluebox_home_our_work_right {
     position: relative;
-    height: 330px;
+    height: 309px;
     padding-bottom: 10px;
 }
 
@@ -662,7 +702,8 @@ address a {
     position: absolute;
     z-index: 1;
     background: #B9E5FB;
-    height: 330px;
+    height: 309px;
+    margin-top: 12px;
 }
 
 #bluebox_home_our_work_right .bluebox_content.current {
@@ -698,6 +739,9 @@ address a {
     margin-bottom: 0;
     text-transform: uppercase;
     text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 /*.our_work_bluebox_content {

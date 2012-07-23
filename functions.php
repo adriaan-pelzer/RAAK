@@ -202,6 +202,28 @@ add_shortcode('latest_posts', 'display_latest_posts');
 
 /*******************************/
 
+function our_products() {
+    $products_page = get_page_by_title('Our Products');
+    $products = new WP_Query(array('post_type'=>'raak_product', 'posts_per_page'=>2, 'post_status'=>'publish'));
+?>
+
+    <div class="bluebox_product bluebox rounded-corners">
+        <header>
+            <h2 class="din-schrift bluebox_product_title"><a href="<?php echo get_permalink($products_page->ID); ?>">Our Products</a></h2>
+
+<?php
+    foreach($products->posts as $product) {
+?>
+                <a class="bluebox_product_link" href="<?php echo get_permalink($product->ID); ?>" title="<?php echo $product->post_title; ?>"><?php echo get_image_or_video ($product->post_content, 110);?></a>
+<?php
+    }
+?>
+    </div>
+<?php
+}
+
+/*******************************/
+
 function our_work()
 {
     $home = get_page_by_title('Home');
