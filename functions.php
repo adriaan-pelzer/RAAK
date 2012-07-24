@@ -316,7 +316,7 @@ add_shortcode('our_work', 'our_work');
 /*******************************/
 
 function display_other_posts($atts) {
-    extract(shortcode_atts(array('category1' => '', 'category2' => '', 'category3' => '', 'colourscheme' => 'white'), $atts));
+    extract(shortcode_atts(array('category1' => '', 'category2' => '', 'category3' => '', 'colourscheme' => 'white', 'qty1'=>5, 'qty2'=>3), $atts));
     $cats_array = array();
     foreach($atts as $key => $value) {
         if ((strpos($key, 'category')) !== FALSE) {
@@ -348,7 +348,7 @@ function display_other_posts($atts) {
             </header>
             <ul>
 <?php
-            $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> 5, 'paged'=> 1));
+            $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> $qty1, 'paged'=> 1));
                 while($other_posts_query->have_posts()) {
                     $other_posts_query->the_post();
 ?>
@@ -371,7 +371,7 @@ function display_other_posts($atts) {
             </header>
             <ul>
 <?php
-            $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> 3, 'paged'=> 1));
+            $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> $qty2, 'paged'=> 1));
                 while($other_posts_query->have_posts()) {
             $other_posts_query->the_post();
 ?>
