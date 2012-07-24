@@ -591,6 +591,11 @@ address a {
     margin-top: 20px;
     width: 110px;
     display: inline-block;
+    height: 189px;
+}
+
+.bluebox_product header {
+    height: 17px;
 }
 
 .bluebox_product_link {
