@@ -168,7 +168,7 @@ if(is_page_template('about.php')) {
     }
 }
 $twit_qty = 4;
-if(is_page_template('home.php')) {
+if(is_front_page()) {
     $twit_qty = 6;
 }
 ?>
