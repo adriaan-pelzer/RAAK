@@ -278,7 +278,7 @@ function our_work()
 ?>
     </div>
     <script>
-    setInterval(function() {bindElementAnimation($('.bluebox_cat_container.current'));}, 5000);
+    setInterval(function() {bindElementAnimation($('.bluebox_cat_container.current'));}, 6000);
     </script>
     
 </div><!-- bluebox_home_our_work -->
