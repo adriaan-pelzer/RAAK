@@ -145,7 +145,7 @@ function display_latest_posts($atts) {
 ?>
         <div id="whitebox_primary_post_<?php echo $page; ?>" class="whitebox_primary_post<?php if ($page == 1) { echo " current"; } ?>">
 <?php
-        $latest_posts_loop = new WP_Query(array('cat' => get_cat_id($category), 'posts_per_page' => $posts_per_page, 'paged' => $page));
+        $latest_posts_loop = new WP_Query(array('cat' => get_cat_ID($category), 'posts_per_page' => $posts_per_page, 'paged' => $page));
         while ($latest_posts_loop->have_posts()) {
             $latest_posts_loop->the_post();
             $author_full_name = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
@@ -202,36 +202,58 @@ add_shortcode('latest_posts', 'display_latest_posts');
 
 /*******************************/
 
+function our_products() {
+    $products_page = get_page_by_title('Our Products');
+    $products = new WP_Query(array('post_type'=>'raak_product', 'posts_per_page'=>2, 'post_status'=>'publish'));
+?>
+
+    <div class="bluebox_product bluebox rounded-corners">
+        <header>
+            <h2 class="din-schrift bluebox_product_title"><a href="<?php echo get_permalink($products_page->ID); ?>">Our Products</a></h2>
+        </header>
+<?php
+    foreach($products->posts as $product) {
+?>
+                <a class="bluebox_product_link" href="<?php echo get_permalink($product->ID); ?>" title="<?php echo $product->post_title; ?>"><?php echo get_image_or_video ($product->post_content, 110);?></a>
+<?php
+    }
+?>
+    </div>
+<?php
+}
+
+/*******************************/
+
 function our_work()
 {
     $home = get_page_by_title('Home');
     $our_work = get_page_by_title('Our Work');
-    $work_categories = get_categories(array('child_of'=>get_cat_id ('RAAK projects'), 'order'=>'desc'));
+    $exclude = get_cat_ID('impact projects');
+    $work_categories = get_categories(array('child_of'=>get_cat_ID ('RAAK projects'), 'order'=>'desc', 'exclude'=> $exclude));
     $our_work_bluebox_content = '';
     
 ?>
-<div id="bluebox_home_left" class="bluebox box rounded-corners">
+<div id="bluebox_home_our_work" class="bluebox box rounded-corners">
     <header>
         <h2 class="din-schrift"><a href="<?php echo get_permalink($our_work->ID); ?>">Our Work</a></h2>
-    </header>
-    <hr>
-<?php echo $home->post_content; ?>    
-</div><!-- bluebox_home_left -->
-<div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners">
-    <nav class="bluebox_nav box_nav our_work_nav">
+<!--/div--><!-- bluebox_home_left -->
+<!-- div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners" -->
+        <nav class="bluebox_nav box_nav our_work_nav">
 <?php
-    foreach($work_categories as $cat_number => $work_category)
+    $cat_array = array(0, 1);
+    $cat_key = array_rand($cat_array, 1);
+/*    foreach($work_categories as $cat_number => $work_category)
     {
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
-        <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == 0){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
+        <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == $cat_array[$cat_key]){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
 <?php
-        $current_our_work_post_cat = get_cat_id ($work_category->name);
-        $current_our_work_query = new WP_Query(array('cat' => get_cat_id($work_category->name), 'posts_per_page' => 1, 'paged' => 1, 'post_type' => 'raak_project'));
+        $current_our_work_post_cat = get_cat_ID ($work_category->name);
+        $current_our_work_query = new WP_Query(array('cat' => get_cat_ID($work_category->name), 'posts_per_page' => 1, 'paged' => 1, 'post_type' => 'raak_project'));
         $current_our_work_post = $current_our_work_query->post;
         $current_our_work_post_id = ($current_our_work_post->ID);
         $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
-        if($cat_number == 0){
+        if($cat_number == $cat_array[$cat_key]){
             $our_work_bluebox_content .= ' current';
         }
         $our_work_bluebox_content .= '" id="' . $work_category->category_nicename . '">';
@@ -242,14 +264,49 @@ function our_work()
         $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Overview:</span><span class="overview"><a href="' . get_permalink($current_our_work_post_id) . '">' . get_post_meta ($current_our_work_post_id, 'Overview', true) . '</a></span></li>';
         $our_work_bluebox_content .= '<li class="bluebox_content_link"><a href="' . get_permalink($our_work->ID) . '?category=' . $work_category->category_nicename . '" rel="nofollow">More Projects &#9660;</a></li></ul></section>';
         wp_reset_query();
+    }*/
+    foreach($work_categories as $cat_number => $work_category) {
+?>
+            <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
+        <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename; echo ($cat_number == $cat_array[$cat_key] ? ' active' : ''); ?>"><?php echo $work_category->name; ?></a></h3>
+<?php
+        $current_our_work_post_cat = $work_category->cat_id;
+        $current_our_work_querys = new WP_Query(array('cat' => get_cat_ID($work_category->name), 'posts_per_page' => -1, 'post_type' => 'raak_project'));
+        $our_work_bluebox_content .='<div class="bluebox_cat_container' . ($cat_number == $cat_array[$cat_key] ? ' current' : '') . '" id="bluebox_cat_' . $work_category->category_nicename . '">';
+        $active_project = 0;
+        foreach($current_our_work_querys->posts as $current_our_work_post) {
+            $current_our_work_post_id = ($current_our_work_post->ID);
+            $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content' . ($active_project == 0 ? ' active' : '') . '">';
+            $our_work_bluebox_content .= '<a href="' . get_permalink($current_our_work_post_id) . '">';
+            $our_work_bluebox_content .= get_image_or_video ($current_our_work_post->post_content, 315) . '</a>';
+            $our_work_bluebox_content .= '<ul><li class="bluebox_content_sub"><span class="label">Client:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Client', true) . '</span></li>';
+            $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Project:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Project', true) . '</span></li>';
+            $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Overview:</span><span class="overview"><a href="' . get_permalink($current_our_work_post_id) . '">' . get_post_meta ($current_our_work_post_id, 'Overview', true) . '</a></span></li>';
+            $our_work_bluebox_content .= '<li class="bluebox_content_link"><a href="' . get_permalink($our_work->ID) . '?category=' . $work_category->category_nicename . '" rel="nofollow">More Projects &#9660;</a></li></ul></section>';
+            $active_project++;
+        }
+        $our_work_bluebox_content .='</div>';
+        wp_reset_query();
     }
 ?>
-    </nav>
+        </nav>
+    </header>
+    <hr>
+    <div id="bluebox_home_our_work_left">
+<?php
+    echo $home->post_content;
+?>
+    </div>
+    <div id="bluebox_home_our_work_right">
 <?php
     echo $our_work_bluebox_content;
 ?>
+    </div>
+    <script>
+    setInterval(function() {bindElementAnimation($('.bluebox_cat_container.current'));}, 5000);
+    </script>
     
-</div><!-- bluebox_home_right -->
+</div><!-- bluebox_home_our_work -->
 
 <?php
 }
@@ -259,7 +316,7 @@ add_shortcode('our_work', 'our_work');
 /*******************************/
 
 function display_other_posts($atts) {
-    extract(shortcode_atts(array('category1' => '', 'category2' => '', 'category3' => '', 'colourscheme' => 'white'), $atts));
+    extract(shortcode_atts(array('category1' => '', 'category2' => '', 'category3' => '', 'colourscheme' => 'white', 'qty1'=>5, 'qty2'=>3), $atts));
     $cats_array = array();
     foreach($atts as $key => $value) {
         if ((strpos($key, 'category')) !== FALSE) {
@@ -291,7 +348,7 @@ function display_other_posts($atts) {
             </header>
             <ul>
 <?php
-            $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> 5, 'paged'=> 1));
+            $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> $qty1, 'paged'=> 1));
                 while($other_posts_query->have_posts()) {
                     $other_posts_query->the_post();
 ?>
@@ -301,7 +358,7 @@ function display_other_posts($atts) {
 ?>
             </ul>
             <footer>
-                <a class="more_link" href="<?php echo get_category_link(get_cat_id($cat)); ?>" rel="nofollow">More ▼</a>
+                <a class="more_link" href="<?php echo get_category_link(get_cat_ID($cat)); ?>" rel="nofollow">More ▼</a>
             </footer>
         </section><!-- other_posts_content_one -->
 <?php
@@ -314,7 +371,7 @@ function display_other_posts($atts) {
             </header>
             <ul>
 <?php
-            $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> 3, 'paged'=> 1));
+            $other_posts_query = new WP_Query(array('cat'=> get_cat_ID($cat), 'posts_per_page'=> $qty2, 'paged'=> 1));
                 while($other_posts_query->have_posts()) {
             $other_posts_query->the_post();
 ?>
@@ -1110,7 +1167,7 @@ add_shortcode('raak_wb', 'theraakonteur_whitebox');
 /*************************/
 
 function theraakonteur_bluebox() {
-    $the_raakonteurs = new WP_Query(array('cat'=> get_cat_id('RAAKonteur'), 'posts_per_page' => 10));
+    $the_raakonteurs = new WP_Query(array('cat'=> get_cat_ID('RAAKonteur'), 'posts_per_page' => 10));
 
 ?>
 <div class="tab_container bluebox-primary">
@@ -1247,7 +1304,7 @@ function big_whitebox_projects() {
     <header>
     <h2 class="din-schrift blue_20"><?php echo $current_page->post_title; ?></h2>
 <?php
-        $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
+        $work_categories = get_categories (array ('child_of'=>get_cat_ID ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
 
 ?>
         <nav class="box_nav smaller_arial_caps">
@@ -1259,7 +1316,7 @@ function big_whitebox_projects() {
             <span class="seperator seperator_smaller">|</span>
             <a id="whitebox_big_nav_<?php echo $work_category->category_nicename; ?>" class="whitebox_big_nav_item <?php echo ($active == $work_category->category_nicename) ? 'active' : ''; ?>"><?php echo $work_category->name; ?></a>
 <?php
-            $current_cat_loop = new WP_Query(array('category_name' => ($work_category->name), 'post_type' => 'raak_project', 'posts_per_page' => -1, 'orderby' => 'date'));
+            $current_cat_loop = new WP_Query(array('cat' => ($work_category->cat_ID), 'post_type' => 'raak_project', 'posts_per_page' => -1, 'orderby' => 'date'));
             $total_rows = (ceil($current_cat_loop->post_count / 3));
             $children_cats_item_count = 0;
             $children_cats .= '<div id="whitebox_big_' . $work_category->category_nicename . '" class="whitebox_big_category smaller_arial_caps'. (($active == $work_category->category_nicename) ? ' current' : '') . '">';
@@ -1386,7 +1443,7 @@ function single_project_whitebox() {
 <?php 
             if ($page_title == 'Our Work') {
                 $our_work = get_page_by_title('Our Work');
-                $work_categories = get_categories (array ('child_of'=>get_cat_id ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
+                $work_categories = get_categories (array ('child_of'=>get_cat_ID ('RAAK projects'), 'orderby'=>'slug', 'order'=>'desc'));
 
 ?>
         <nav class="box_nav smaller_arial_caps">
@@ -1575,7 +1632,7 @@ function category_box($atts) {
         foreach ($cat_array as $category) {
 ?>
 
-                <li><a href="<?php echo get_category_link(get_cat_id($category)); ?>"><?php echo $category; ?></a></li>
+                <li><a href="<?php echo get_category_link(get_cat_ID($category)); ?>"><?php echo $category; ?></a></li>
 <?php 
         }
 ?>
@@ -2510,18 +2567,17 @@ function mailchimp_add_custom_box() {
 }
 
 function mailchimp_inner_custom_box( $post ) {
+    if (isset($_GET['mc_error'])) {
 ?>
-    <button id="mcbutton">Publish to Mailchimp</button>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $('#mcbutton').click(function(){
-            console.log('works');
-            return false;
-        });
-    });
-    </script>
+<p><?php echo $_GET['mc_error']; ?></p>
+<?php
+    } else if (isset($_GET['mc_success'])) {
+?>
+<p>Mailchimp Campaign created successfully</p>
+<?php
+    }
+?>
+<a href="<?php bloginfo('url'); ?>/custom-api/?apikey=38544aba9766e74cc67a07fd3ad16f03-us1&pid=<?php echo $post->ID; ?>">Publish to Mailchimp</a> 
 <?php
 }
-
 ?>

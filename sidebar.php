@@ -167,6 +167,10 @@ if(is_page_template('about.php')) {
         }
     }
 }
+$twit_qty = 4;
+if(is_front_page()) {
+    $twit_qty = 6;
+}
 ?>
     <aside class="twitter<?php echo ((!isset($current_page)) || ($current_page == 'about')) ? ' current' : ''; ?>" id="twitter_raakonteurs">
                 <div class="twitter_top"><h2><a target="_blank" href="http://www.twitter.com/RAAKonteurs">RAAKonteurs</a></h2></div>
@@ -180,7 +184,7 @@ if(is_page_template('about.php')) {
                     new TWTR.Widget({
                       version: 2,
                       type: 'profile',
-                      rpp: 4,
+                      rpp: <?php echo $twit_qty; ?>,
                       interval: 30000,
                       width: 181,
                       height: 300,
