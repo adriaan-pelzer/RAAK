@@ -236,35 +236,10 @@ function our_work()
 <div id="bluebox_home_our_work" class="bluebox box rounded-corners">
     <header>
         <h2 class="din-schrift"><a href="<?php echo get_permalink($our_work->ID); ?>">Our Work</a></h2>
-<!--/div--><!-- bluebox_home_left -->
-<!-- div id="bluebox_home_right" class="bluebox bluebox_primary_no_margin box rounded-corners" -->
         <nav class="bluebox_nav box_nav our_work_nav">
 <?php
     $cat_array = array(0, 1);
     $cat_key = array_rand($cat_array, 1);
-/*    foreach($work_categories as $cat_number => $work_category)
-    {
-?>
-            <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
-        <h3 class="bluebox_nav_item small_arial_caps"><a class="<?php echo $work_category->category_nicename . ' '; if($cat_number == $cat_array[$cat_key]){?>active<?php } ?>"><?php echo $work_category->name; ?></a></h3>
-<?php
-        $current_our_work_post_cat = get_cat_ID ($work_category->name);
-        $current_our_work_query = new WP_Query(array('cat' => get_cat_ID($work_category->name), 'posts_per_page' => 1, 'paged' => 1, 'post_type' => 'raak_project'));
-        $current_our_work_post = $current_our_work_query->post;
-        $current_our_work_post_id = ($current_our_work_post->ID);
-        $our_work_bluebox_content .= '<section class="bluebox_content our_work_bluebox_content';
-        if($cat_number == $cat_array[$cat_key]){
-            $our_work_bluebox_content .= ' current';
-        }
-        $our_work_bluebox_content .= '" id="' . $work_category->category_nicename . '">';
-        $our_work_bluebox_content .= '<a href="' . get_permalink($current_our_work_post_id) . '">';
-        $our_work_bluebox_content .= get_image_or_video ($current_our_work_post->post_content, 315) . '</a>';
-        $our_work_bluebox_content .= '<ul><li class="bluebox_content_sub"><span class="label">Client:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Client', true) . '</span></li>';
-        $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Project:</span><span class="title">' . get_post_meta ($current_our_work_post_id, 'Project', true) . '</span></li>';
-        $our_work_bluebox_content .= '<li class="bluebox_content_sub"><span class="label">Overview:</span><span class="overview"><a href="' . get_permalink($current_our_work_post_id) . '">' . get_post_meta ($current_our_work_post_id, 'Overview', true) . '</a></span></li>';
-        $our_work_bluebox_content .= '<li class="bluebox_content_link"><a href="' . get_permalink($our_work->ID) . '?category=' . $work_category->category_nicename . '" rel="nofollow">More Projects &#9660;</a></li></ul></section>';
-        wp_reset_query();
-    }*/
     foreach($work_categories as $cat_number => $work_category) {
 ?>
             <?php if($cat_number != 0){?><span class="seperator">|</span><?php } ?>
