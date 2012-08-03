@@ -52,7 +52,7 @@ $title = $matches[0];
 $campaign['title'] = $title;
 $campaign['subject'] = $post->post_title;
 
-$retval = $api->campaignCreate('regular', $campaign, array('html_main' => $content, 'html_header' => $title, 'text' => ""));
+$retval = $api->campaignCreate('regular', $campaign, array('html_main' => "<p>Hello *|FNAME|*,</p>".$content, 'html_header' => $title, 'text' => ""));
 
 if (!$retval) {
     return_json(array('pid' => $postid, 'code' => -1, 'error' => $api->errorMessage));
